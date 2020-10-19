@@ -17,8 +17,7 @@ export const TableData = [
 	},
 	{
 		id: 2,
-		detail:
-			"Number Available5 minute sponsor pitch on the main live stream",
+		detail: "5 minute sponsor pitch on the main live stream",
 		platinum: "Yes",
 		gold: "No",
 		silver: "No",

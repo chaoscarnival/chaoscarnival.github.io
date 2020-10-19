@@ -73,7 +73,7 @@ export const useStyles = makeStyles((theme) => ({
 		marginLeft: "10%",
 		[theme.breakpoints.down("xs")]: {
 			width: "100%",
-			marginLeft: 0,
+			marginLeft: 10,
 			flexDirection: "column",
 			justifyContent: "left",
 		},
@@ -93,5 +93,8 @@ export const useStyles = makeStyles((theme) => ({
 		marginTop: 20,
 		textAlign: "left",
 		marginLeft: "12%",
+		[theme.breakpoints.down("xs")]: {
+			marginLeft: 30,
+		},
 	},
 }));
