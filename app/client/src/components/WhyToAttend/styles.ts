@@ -9,10 +9,10 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     background: 'linear-gradient(180deg, #070E23 56.2%, #000000 100%)',
     [theme.breakpoints.down("sm")]: {
-      height: "120vh",
+      height: "123vh",
     },
     [theme.breakpoints.down("xs")]: {
-      height: "120vh",
+      height: "123vh",
     },
   },
   heading: {
@@ -33,11 +33,11 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: '20vh',
     [theme.breakpoints.down("sm")]: {
       width: '100vw',
-      marginTop: '3vh',
+      marginTop: '10vh',
     },
     [theme.breakpoints.down("xs")]: {
       width: '100vw',
-      marginTop: '3vh',
+      marginTop: '10vh',
     },
   },
 
@@ -92,13 +92,13 @@ export const useStyles = makeStyles((theme) => ({
       width: '50vw',
 		},
     [theme.breakpoints.down("sm")]: {
-      marginTop: '-10vh',
+      marginTop: '-12vh',
       marginLeft: '3vw',
       marginRight: '3vw',
       width: '90vw',
 		},
 		[theme.breakpoints.down("xs")]: {
-      marginTop: '-10vh',
+      marginTop: '-12vh',
       marginLeft: '3vw',
       marginRight: '3vw',
       width: '90vw',
@@ -173,8 +173,14 @@ export const useStyles = makeStyles((theme) => ({
   },
   advantageInfo: {
     color: '#8193B2',
-    fontSize: '1rem',
+    fontSize: '2rem',
     textAlign: 'left',
+    [theme.breakpoints.down("xl")]: {
+      fontSize: '1.5rem',
+    },
+    [theme.breakpoints.down("lg")]: {
+      fontSize: '1rem',
+		},
     [theme.breakpoints.down("md")]: {
       fontSize: '0.8rem',
 		},

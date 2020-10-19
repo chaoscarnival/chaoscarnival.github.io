@@ -33,13 +33,16 @@ export const useStyles = makeStyles((theme) => ({
   callForPapers: {
     width: '80vw',
     marginTop: '20vh',
+    marginLeft: '-8vw',
     [theme.breakpoints.down("sm")]: {
       width: '100vw',
       marginTop: '3vh',
+      marginLeft: '3vw',
     },
     [theme.breakpoints.down("xs")]: {
       width: '100vw',
       marginTop: '3vh',
+      marginLeft: '3vw',
     },
   },
 
@@ -87,7 +90,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   info: {
     marginTop: '5vh',
-    marginLeft: '7vw',
+    marginLeft: '8vw',
     width: '34vw',
     marginRight: '8vw',
     [theme.breakpoints.down("md")]: {
@@ -109,16 +112,16 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   infoButton: {
-    marginLeft: '-4.5vw',
+    marginLeft: '-3vw',
     width: '34vw',
     marginRight: '8vw',
     [theme.breakpoints.down("sm")]: {
       marginRight: '3vw',
-      marginLeft: '-5vw',
+      marginLeft: '-2vw',
 		},
 		[theme.breakpoints.down("xs")]: {
       marginRight: '3vw',
-      marginLeft: '-5vw',
+      marginLeft: '-2vw',
     },
   },
   infoText: {

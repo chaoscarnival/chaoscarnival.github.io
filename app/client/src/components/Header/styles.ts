@@ -13,14 +13,15 @@ const useStyles = makeStyles((theme: Theme) => ({
 	},
 	menu: {
 		paddingLeft: "40vw",
+		marginTop: theme.spacing(2),
 		[theme.breakpoints.down("md")]: {
-			paddingLeft: "30vw",
+			paddingLeft: "32vw",
 		},
 		[theme.breakpoints.down("sm")]: {
-			paddingLeft: "25vw",
+			paddingLeft: "27vw",
 		},
 		[theme.breakpoints.down("xs")]: {
-			paddingLeft: "15vw",
+			paddingLeft: "17vw",
 		},
 	},
 	mainLogo: {

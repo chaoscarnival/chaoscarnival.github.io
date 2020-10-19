@@ -225,32 +225,8 @@ export const useStyles = makeStyles((theme) => ({
 			marginRight: 0,
 		},
 	},
-	chartsDiv: {
-		marginTop: -80,
-		marginLeft: "8.55%",
-		marginRight: "8.55%",
+	speakersDiv: {
 		backgroundColor: theme.palette.common.white,
-		//border: "1px solid rgba(0, 0, 0, 0.05)",
-		borderRadius: "3px",
-		[theme.breakpoints.up("xl")]: {
-			width: 1550,
-			margin: "0 auto",
-			marginTop: -80,
-		},
-		[theme.breakpoints.down("md")]: {
-			marginTop: -60,
-		},
-		[theme.breakpoints.down("sm")]: {
-			marginTop: -80,
-		},
-		[theme.breakpoints.down(600)]: {
-			marginTop: -90,
-		},
-		[theme.breakpoints.down(378)]: {
-			marginTop: -30,
-			marginLeft: "6%",
-			marginRight: "6%",
-		},
 	},
 
 	whyToAttend: {

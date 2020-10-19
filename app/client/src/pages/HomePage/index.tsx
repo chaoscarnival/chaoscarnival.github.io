@@ -1,6 +1,5 @@
 import { Typography, Hidden, Button } from "@material-ui/core";
 import * as React from "react";
-import { Charts } from "../../components";
 import Footer from "../../components/Footer";
 import { useStyles } from "./styles";
 import MainHeader from "../../components/Header";
@@ -8,6 +7,7 @@ import "../../scrollbar.css";
 import WhyToAttend from "../../components/WhyToAttend";
 import Sponsors from "../../components/Sponsors";
 import CallForPapers from "../../components/CallForPapers";
+import { Speakers } from '../../components/Speakers';
 
 function HomePage() {
 	const classes = useStyles();
@@ -94,22 +94,22 @@ function HomePage() {
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
-						{/* Speakers Div */}
-						<div className={classes.chartsDiv}></div>
+
+						<div className={classes.speakersDiv}>
+						<Speakers/>
+						</div>
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
 						{/* JoinTheChaosCarnival Div */}
-						<div className={classes.chartsDiv}></div>
+						<div className={classes.speakersDiv}></div>
 					</div>
 				</div>
 
-				{/* PreFooter */}
 				<div style={{ marginTop: "auto" }}>
 					<Sponsors />
 				</div>
 
-				{/* Footer */}
 				<div style={{ marginTop: "auto" }}>{/*		<Footer /> */}</div>
 			</div>
 		</div>

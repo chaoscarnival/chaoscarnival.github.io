@@ -1,6 +1,5 @@
 import { Typography, Hidden } from "@material-ui/core";
 import * as React from "react";
-import { Charts } from "../../components";
 import Footer from "../../components/Footer";
 import { useStyles } from "./styles";
 import MainHeader from "../../components/Header";
@@ -15,8 +14,6 @@ function SponsorshipPage() {
 	React.useEffect(() => {
 		window.scrollTo(0, 0);
 	});
-
-	const [searchToken, setsearchToken] = React.useState("");
 
 	return (
 		<div className="scrollbar scrollbar-primary">
