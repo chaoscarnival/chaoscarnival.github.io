@@ -87,16 +87,6 @@ function HomePage() {
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
-						<div className={classes.callForPapers}></div>
-					</div>
-
-					<div style={{ marginTop: "auto" }}>
-						<div className={classes.whyToAttend}>
-							<WhyToAttend />
-						</div>
-					</div>
-
-					<div style={{ marginTop: "auto" }}>
 						<div className={classes.callForPapers}>
 							<CallForPapers />
 						</div>
