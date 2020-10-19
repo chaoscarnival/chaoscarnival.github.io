@@ -3,23 +3,29 @@ import { makeStyles } from "@material-ui/core/styles";
 // Component styles
 export const useStyles = makeStyles((theme) => ({
 	root: {
-		height: "100vh",
+		height: "62rem",
 		display: "flex",
 		flexDirection: "column",
     justifyContent: "center",
-    background: 'linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.874483) 27.89%, rgba(0, 0, 0, 0) 92.18%), url(/images/callForPapersWide.png)',
+    background: 'url(/images/cfpbg.png)',
+    backgroundColor: '#000',
     backgroundRepeat: 'no-repeat',
-    backgroundSize: '66.66% 100%',
+    backgroundSize: '100%',
     backgroundPosition: 'right',
     [theme.breakpoints.down("sm")]: {
-      backgroundSize: '100% 100%',
+      backgroundColor: "#000",
+      backgroundSize: '250%',
+      height: "69rem",
     },
     [theme.breakpoints.down("xs")]: {
-      backgroundSize: '100% 100%',
+      backgroundColor: "#000",
+      backgroundSize: '300%',
+      height: "70rem",
     },
   },
   heading: {
     display: "flex",
+    position:"relative",
     flexDirection: "row",
     justifyContent: "center",
 		[theme.breakpoints.down("sm")]: {
@@ -32,7 +38,8 @@ export const useStyles = makeStyles((theme) => ({
   },
   callForPapers: {
     width: '80vw',
-    marginTop: '20vh',
+    position:"absolute",
+    marginTop: '25vh',
     marginLeft: '-8vw',
     [theme.breakpoints.down("sm")]: {
       width: '100vw',
@@ -48,7 +55,7 @@ export const useStyles = makeStyles((theme) => ({
 
   callForPapersText: {
     fontWeight: 700, 
-    marginTop: '-40vh',
+    marginTop: '-47vh',
     textAlign: 'left',
     fontSize: '70px',
     marginLeft: '7vw',
@@ -90,7 +97,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   info: {
     marginTop: '5vh',
-    marginLeft: '8vw',
+    marginLeft: '7vw',
     width: '34vw',
     marginRight: '8vw',
     [theme.breakpoints.down("md")]: {
@@ -112,8 +119,9 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   infoButton: {
-    marginLeft: '-3vw',
+    marginLeft: '-5vw',
     width: '34vw',
+    float: 'left',
     marginRight: '8vw',
     [theme.breakpoints.down("sm")]: {
       marginRight: '3vw',

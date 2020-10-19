@@ -9,7 +9,11 @@ const useStyles = makeStyles((theme: Theme) => ({
 	toolbarDiv: {
 		width: "100vw",
 		margin: "auto",
-		paddingLeft: "5vw",
+		// paddingLeft: "5vw",
+		display: "flex",
+		flexDirection: "row",
+		justifyContent: "center",
+		alignItems: "center",
 	},
 	menu: {
 		paddingLeft: "40vw",
