@@ -13,11 +13,11 @@ const imgLink = [
 		alt: "intuit",
 		link: "https://www.intuit.com/",
 	},
-	{
-		img: "/icons/Okteto.svg",
-		alt: "okteto",
-		link: "https://okteto.com/",
-	},
+	// {
+	// 	img: "/icons/Okteto.svg",
+	// 	alt: "okteto",
+	// 	link: "https://okteto.com/",
+	// },
 ];
 
 const Sponsor = () => {
