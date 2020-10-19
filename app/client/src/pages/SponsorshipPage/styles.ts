@@ -143,5 +143,18 @@ export const useStyles = makeStyles((theme) => ({
 			maxWidth: 1420,
 			margin: "0 auto",
 		},
+		[theme.breakpoints.down("sm")]: {
+			maxWidth: 600,
+			marginTop: 30,
+			marginLeft: 100,
+			marginRight: 100,
+			margin: "0 auto",
+		},
+		[theme.breakpoints.down("xs")]: {
+			marginTop: 30,
+			marginLeft: 10,
+			marginRight: 10,
+			margin: "0 auto",
+		},
 	},
 }));

@@ -31,7 +31,7 @@ function SponsorshipPage() {
 								Benefits
 							</Typography>
 							<Typography className={classes.headerDesc}>
-								Check below the about the different types of
+								Check below about the different types of
 								sponsorships and their benifits
 							</Typography>
 						</div>

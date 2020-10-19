@@ -12,17 +12,22 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
-import { TableFooter } from "@material-ui/core";
+import { TableFooter, Typography } from "@material-ui/core";
+import { TableData } from "../TableContent/TableData";
+import { useStyles } from "./styles";
 
 const StyledTableCell = withStyles((theme: Theme) =>
 	createStyles({
+		root: {
+			borderBottom: "none",
+		},
 		head: {
 			fontSize: "26px",
 			color: theme.palette.common.white,
 		},
 		body: {
 			color: theme.palette.common.black,
-			backgroundColor: "#FFFFFF",
+			borderRadius: 4,
 			fontSize: 18,
 		},
 		footer: {
@@ -32,41 +37,33 @@ const StyledTableCell = withStyles((theme: Theme) =>
 	})
 )(TableCell);
 
-function createData(
-	name: string,
-	calories: number,
-	fat: number,
-	carbs: number,
-	protein: number
-) {
-	return { name, calories, fat, carbs, protein };
-}
-
-const rows = [
-	createData("Number available", 159, 6.0, 24, 4.0),
-	createData("Sponsor logo on the live stream", 237, 9.0, 37, 4.3),
-	createData(
-		"5 minute sponsor pitch on the main live stream",
-		262,
-		16.0,
-		24,
-		6.0
-	),
-	createData("Virtual sponsor booth ", 305, 3.7, 67, 4.3),
-	createData("Recognition on website (Logo and Link)", 356, 16.0, 49, 3.9),
-];
-
-const useStyles = makeStyles({
-	table: {
-		maxWidth: 1500,
-	},
-});
+const textFormatter = (text: string) => {
+	const value = text.split(",");
+	const val = value[0];
+	const valText = value[1];
+	return (
+		<div>
+			{val === "Yes" ? (
+				<img src="/icons/tick.svg" style={{ width: 26, height: 26 }} />
+			) : val === "No" ? (
+				<img src="/icons/cross.svg" style={{ width: 26, height: 26 }} />
+			) : (
+				<Typography>{val}</Typography>
+			)}
+			{valText !== "" || valText !== undefined ? (
+				<Typography>{valText}</Typography>
+			) : (
+				<Typography>""</Typography>
+			)}
+		</div>
+	);
+};
 
 export default function CustomizedTables() {
 	const classes = useStyles();
 
 	return (
-		<TableContainer component={Paper}>
+		<TableContainer>
 			<Table className={classes.table} aria-label="customized table">
 				<TableHead
 					style={{
@@ -75,48 +72,88 @@ export default function CustomizedTables() {
 					}}
 				>
 					<TableRow>
-						<StyledTableCell>Sponsorship details</StyledTableCell>
+						<StyledTableCell
+							style={{
+								borderTopLeftRadius: 10,
+								borderBottomLeftRadius: 10,
+								paddingLeft: 20,
+							}}
+						>
+							Sponsorship details
+						</StyledTableCell>
 						<StyledTableCell align="center">
 							Platinum
 						</StyledTableCell>
 						<StyledTableCell align="center">Gold</StyledTableCell>
 						<StyledTableCell align="center">Silver</StyledTableCell>
-						<StyledTableCell align="center">Bronze</StyledTableCell>
+						<StyledTableCell
+							style={{
+								borderTopRightRadius: 10,
+								borderBottomRightRadius: 10,
+							}}
+							align="center"
+						>
+							Bronze
+						</StyledTableCell>
 					</TableRow>
 				</TableHead>
-				<TableBody style={{}}>
-					{rows.map((row) => (
-						<TableRow key={row.name}>
+				<TableBody>
+					{TableData.map((row) => (
+						<TableRow hover key={row.id}>
 							<StyledTableCell component="th" scope="row">
-								{row.name}
+								<Typography
+									style={{
+										maxWidth: 360,
+										fontSize: 18,
+										paddingLeft: 10,
+									}}
+								>
+									{row.detail}
+								</Typography>
 							</StyledTableCell>
 							<StyledTableCell align="center">
-								{row.calories}
+								{textFormatter(row.platinum)}
 							</StyledTableCell>
 							<StyledTableCell align="center">
-								{row.fat}
+								{textFormatter(row.gold)}
 							</StyledTableCell>
 							<StyledTableCell align="center">
-								{row.carbs}
+								{textFormatter(row.silver)}
 							</StyledTableCell>
 							<StyledTableCell align="center">
-								{row.protein}
+								{textFormatter(row.bronze)}
 							</StyledTableCell>
 						</TableRow>
 					))}
 				</TableBody>
 				<TableFooter
 					style={{
+						marginTop: 10,
 						background:
 							"linear-gradient(270.8deg, #C94CA8 8.38%, #2C84F9 96.25%)",
 					}}
 				>
 					<TableRow>
-						<StyledTableCell>Price (ex-VAT)</StyledTableCell>
+						<StyledTableCell
+							style={{
+								borderTopLeftRadius: 10,
+								borderBottomLeftRadius: 10,
+							}}
+						>
+							Price (ex-VAT)
+						</StyledTableCell>
 						<StyledTableCell align="center">$10000</StyledTableCell>
 						<StyledTableCell align="center">$5000</StyledTableCell>
 						<StyledTableCell align="center">$2000</StyledTableCell>
-						<StyledTableCell align="center">$1000</StyledTableCell>
+						<StyledTableCell
+							style={{
+								borderTopRightRadius: 10,
+								borderBottomRightRadius: 10,
+							}}
+							align="center"
+						>
+							$1000
+						</StyledTableCell>
 					</TableRow>
 				</TableFooter>
 			</Table>

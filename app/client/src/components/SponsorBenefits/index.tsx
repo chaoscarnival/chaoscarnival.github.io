@@ -54,15 +54,7 @@ const SponsorBenefits = () => {
 				<Typography variant="h3" className={classes.headerText}>
 					Benefits of Sponsoring
 				</Typography>
-				<div
-					style={{
-						display: "flex",
-						flexDirection: "row",
-						flexWrap: "wrap",
-						justifyContent: "space-between",
-						alignItems: "left",
-					}}
-				>
+				<div className={classes.sponsorDiv}>
 					{imgLink.map((data) => (
 						<div className={classes.sponsorData}>
 							<img
