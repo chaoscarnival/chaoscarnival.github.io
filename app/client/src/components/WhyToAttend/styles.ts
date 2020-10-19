@@ -2,27 +2,17 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // Component styles
 export const useStyles = makeStyles((theme) => ({
-  flex: {
-    display: "flex",
-		flexDirection: "row",
-    justifyContent: "center",
-    width:"100vw",
-    background: 'linear-gradient(180deg, #070E23 56.2%, #000000 100%)',
-  },
-  root: {
-    height: "55rem",
-    width: "70vw",
+	root: {
+		height: "100vh",
 		display: "flex",
 		flexDirection: "column",
     justifyContent: "center",
     background: 'linear-gradient(180deg, #070E23 56.2%, #000000 100%)',
     [theme.breakpoints.down("sm")]: {
       height: "123vh",
-      width: "95vw",
     },
     [theme.breakpoints.down("xs")]: {
       height: "123vh",
-      width: "95vw",
     },
   },
   heading: {
@@ -56,10 +46,10 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: '-40vh',
     textAlign: 'left',
     fontSize: '70px',
-    marginLeft: '3vw',
+    marginLeft: '10vw',
     [theme.breakpoints.down("md")]: {
       fontSize: '50px',
-      marginLeft: '3vw',
+      marginLeft: '8vw',
 		},
       [theme.breakpoints.down("sm")]: {
         fontSize: '50px',
@@ -77,10 +67,10 @@ export const useStyles = makeStyles((theme) => ({
      WebkitTextFillColor: 'transparent', 
     fontSize: '70px',
     textAlign: 'left',
-    marginLeft: '3vw',
+    marginLeft: '10vw',
     [theme.breakpoints.down("md")]: {
       fontSize: '50px',
-      marginLeft: '3vw',
+      marginLeft: '8vw',
 		},
     [theme.breakpoints.down("sm")]: {
       fontSize: '50px',
@@ -95,8 +85,7 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: '-15vh',
     textAlign: 'left',
     width: '30vw',
-    marginRight: '3vw',
-    marginBottom: "10vh",
+    marginRight: '8vw',
     [theme.breakpoints.down("md")]: {
       marginLeft: '3vw',
       marginRight: '3vw',
@@ -123,12 +112,11 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "row",
     justifyContent: "left",
-    marginLeft: '3vw',
-    marginRight: '3vw',
-    marginTop: '-7vw',
+    marginLeft: '10vw',
+    marginRight: '9vw',
     [theme.breakpoints.down("md")]: {
-      marginLeft: '3vw',
-      marginRight: '3vw',
+      marginLeft: '8vw',
+      marginRight: '6vw',
 		},
     [theme.breakpoints.down("sm")]: {
       marginTop: '5vh',
