@@ -6,6 +6,7 @@ import { useStyles } from "./styles";
 import MainHeader from "../../components/Header";
 import "../../scrollbar.css";
 import WhyToAttend from "../../components/WhyToAttend";
+import Sponsors from "../../components/Sponsors";
 import CallForPapers from "../../components/CallForPapers";
 
 function HomePage() {
@@ -104,7 +105,9 @@ function HomePage() {
 				</div>
 
 				{/* PreFooter */}
-				<div style={{ marginTop: "auto" }}>{/*		<PreFooter /> */}</div>
+				<div style={{ marginTop: "auto" }}>
+					<Sponsors />
+				</div>
 
 				{/* Footer */}
 				<div style={{ marginTop: "auto" }}>{/*		<Footer /> */}</div>
