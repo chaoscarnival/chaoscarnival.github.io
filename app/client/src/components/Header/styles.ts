@@ -13,6 +13,15 @@ const useStyles = makeStyles((theme: Theme) => ({
 	},
 	menu: {
 		paddingLeft: "40vw",
+		[theme.breakpoints.down("md")]: {
+			paddingLeft: "30vw",
+		},
+		[theme.breakpoints.down("sm")]: {
+			paddingLeft: "25vw",
+		},
+		[theme.breakpoints.down("xs")]: {
+			paddingLeft: "15vw",
+		},
 	},
 	mainLogo: {
 		width: 165,
@@ -49,15 +58,15 @@ const useStyles = makeStyles((theme: Theme) => ({
 		flexDirection: "row",
 		marginLeft: "1.5vw",
 		[theme.breakpoints.down("md")]: {
-			marginLeft: "5vw",
+			marginLeft: "3vw",
 		},
 		[theme.breakpoints.down("sm")]: {
 			marginTop: "1.5vh",
-			marginLeft: "4vw",
+			marginLeft: "2vw",
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: "3.5vh",
-			marginLeft: "3vw",
+			marginLeft: "1vw",
 		},
 	},
 	headerHomeDiv: {
