@@ -7,10 +7,7 @@ function CardContainer(props: any) {
 	return (
 		<div
 			key={props.key}
-			className={clsx(
-				props.children.props.title !== "all-experiments"
-					? classes.card
-					: classes.allExpCard,
+			className={clsx(classes.card,
 				classes.mainCard
 			)}
 		>
