@@ -37,7 +37,7 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "column",
 		marginTop: 80,
-		[theme.breakpoints.down("xs")]: {
+		[theme.breakpoints.down("sm")]: {
 			marginTop: 20,
 			marginLeft: 35,
 			marginRight: 35,
