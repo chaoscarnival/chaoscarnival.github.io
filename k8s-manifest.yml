@@ -2,12 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
     name: frontend-svc
+    namespace: chaoscarnival
 spec:
     selector:
         app: frontend
     ports:
         - protocol: TCP
-          port: 80
+          port: 6070
           targetPort: 80
     type: LoadBalancer
 ---
@@ -15,6 +16,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
     name: frontend-deployment
+    namespace: chaoscarnival
     labels:
         app: frontend
 spec:
@@ -29,4 +31,4 @@ spec:
         spec:
             containers:
                 - name: chaoscarnival-client
-                  image: 'mayadata/www-chaoscarnival-io'
+                  image: 'mayadata/www-staging-chaoscarnival-io:ci'

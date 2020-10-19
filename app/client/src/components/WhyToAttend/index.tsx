@@ -24,10 +24,52 @@ function WhyToAttend() {
         
         
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+				<div className={classes.advantageElements}>
+				
+				<Typography className={classes.advantageNumber}> 01 </Typography>
+
+				<div> 
+				<Typography className={classes.advantageHead}> Experts </Typography>
+				<Typography className={classes.advantageInfo}> Hear from experts, innovators and industry leaders that are shaping the Kubernetes ecosystem. </Typography>
+				</div>
+				
+				</div>
+
+
+				<div className={classes.advantageElements}>
+				
+				<Typography className={classes.advantageNumber}> 02 </Typography>
+
+				<div> 
+				<Typography className={classes.advantageHead}> Takeaways </Typography>
+				<Typography className={classes.advantageInfo}> Actionable takeaways to help you further your advancement in the chaos engineering. </Typography>
+				</div>
+				
+				</div>
+
+
+				<div className={classes.advantageElements}>
+				
+				<Typography className={classes.advantageNumber}> 03 </Typography>
+
+				<div> 
+				<Typography className={classes.advantageHead}> Discover </Typography>
+				<Typography className={classes.advantageInfo}> Discover new products and get hands-on to master the latest tools and techniques. </Typography>
+				</div>
+				
+				</div>
+
+
+				<div className={classes.advantageElements}>
+				
+				<Typography className={classes.advantageNumber}> 04 </Typography>
+
+				<div> 
+				<Typography className={classes.advantageHead}> Learn </Typography>
+				<Typography className={classes.advantageInfo}> Learn from your peers and their experiences. </Typography>
+				</div>
+				
+				</div>
 
 				</div>
 				</div>

@@ -8,6 +8,12 @@ export const useStyles = makeStyles((theme) => ({
 		flexDirection: "column",
     justifyContent: "center",
     background: 'linear-gradient(180deg, #070E23 56.2%, #000000 100%)',
+    [theme.breakpoints.down("sm")]: {
+      height: "120vh",
+    },
+    [theme.breakpoints.down("xs")]: {
+      height: "120vh",
+    },
   },
   heading: {
     display: "flex",
@@ -23,59 +29,160 @@ export const useStyles = makeStyles((theme) => ({
     
   },
   whyToAttend: {
-    width: '60vw'
+    width: '60vw',
+    marginTop: '20vh',
+    [theme.breakpoints.down("sm")]: {
+      width: '100vw',
+      marginTop: '3vh',
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: '100vw',
+      marginTop: '3vh',
+    },
   },
 
   whyToAttendText: {
     fontWeight: 700, 
     marginTop: '-40vh',
-    marginLeft: '4vw',
-      fontSize: '70px',
+    textAlign: 'left',
+    fontSize: '70px',
+    marginLeft: '10vw',
+    [theme.breakpoints.down("md")]: {
+      fontSize: '50px',
+      marginLeft: '8vw',
+		},
       [theme.breakpoints.down("sm")]: {
-        fontSize: '45px',
-        marginLeft: '2vw',
+        fontSize: '50px',
+        marginLeft: '3vw',
       },
       [theme.breakpoints.down("xs")]: {
-        fontSize: '30px',
-        marginLeft: '2vw',
+        fontSize: '40px',
+        marginLeft: '3vw',
       },
   },
   chaosCarnivalText: {
     fontWeight: 700, 
-    background: 'linear-gradient(to right, #B4F59E 0%, #71BCF6 100%)', 
+    background: 'linear-gradient(to right, #B4F59E 0%, #71BCF6 55%)', 
     WebkitBackgroundClip: 'text',
      WebkitTextFillColor: 'transparent', 
     fontSize: '70px',
-    marginLeft: '7vw',
+    textAlign: 'left',
+    marginLeft: '10vw',
+    [theme.breakpoints.down("md")]: {
+      fontSize: '50px',
+      marginLeft: '8vw',
+		},
     [theme.breakpoints.down("sm")]: {
-      fontSize: '45px',
-      marginLeft: '5vw',
+      fontSize: '50px',
+      marginLeft: '3vw',
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: '30px',
-      marginLeft: '5vw',
+      fontSize: '40px',
+      marginLeft: '3vw',
     },
   },
   info: {
-    marginTop: '-35vh',
-    marginLeft: '-6vw',
+    marginTop: '-15vh',
+    textAlign: 'left',
     width: '30vw',
+    marginRight: '8vw',
+    [theme.breakpoints.down("md")]: {
+      marginLeft: '3vw',
+      marginRight: '3vw',
+      width: '50vw',
+		},
     [theme.breakpoints.down("sm")]: {
-      marginTop: '5vh',
-      marginLeft: '5vw',
+      marginTop: '-10vh',
+      marginLeft: '3vw',
+      marginRight: '3vw',
       width: '90vw',
 		},
 		[theme.breakpoints.down("xs")]: {
-      marginTop: '5vh',
-      marginLeft: '5vw',
+      marginTop: '-10vh',
+      marginLeft: '3vw',
+      marginRight: '3vw',
       width: '90vw',
     },
   },
   infoText: {
-    fontSize: '1rem'
+    fontSize: '1rem',
+    textAlign: 'left',
   },
   advantages: {
+    display: "flex",
     flexDirection: "row",
-    justifyContent: "center",
+    justifyContent: "left",
+    marginLeft: '10vw',
+    marginRight: '9vw',
+    [theme.breakpoints.down("md")]: {
+      marginLeft: '8vw',
+      marginRight: '6vw',
+		},
+    [theme.breakpoints.down("sm")]: {
+      marginTop: '5vh',
+      flexDirection: "column",
+		},
+		[theme.breakpoints.down("xs")]: {
+      marginTop: '5vh',
+      flexDirection: "column",
+    },
+  },
+  advantageElements: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "left",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: '5vh',
+      marginLeft: '-5vw',
+      marginRight: '3vw',
+		},
+		[theme.breakpoints.down("xs")]: {
+      marginTop: '5vh',
+      marginLeft: '-5vw',
+      marginRight: '3vw',
+    },
+  },
+  advantageNumber: {
+    color: '#71BCF6',
+    fontSize: '1rem',
+    fontWeight: 500,
+    paddingRight: theme.spacing(1),
+    [theme.breakpoints.down("md")]: {
+      fontSize: '0.8rem',
+		},
+    [theme.breakpoints.down("sm")]: {
+      fontSize: '0.8rem',
+		},
+		[theme.breakpoints.down("xs")]: {
+      fontSize: '0.8rem',
+    },
+  },
+  advantageHead: {
+    fontSize: '2rem',
+    fontWeight: 500,
+    textAlign: 'left',
+    [theme.breakpoints.down("md")]: {
+      fontSize: '1.5rem',
+		},
+    [theme.breakpoints.down("sm")]: {
+      fontSize: '1.5rem',
+		},
+		[theme.breakpoints.down("xs")]: {
+      fontSize: '1.5rem',
+    },
+  },
+  advantageInfo: {
+    color: '#8193B2',
+    fontSize: '1rem',
+    textAlign: 'left',
+    [theme.breakpoints.down("md")]: {
+      fontSize: '0.8rem',
+		},
+    [theme.breakpoints.down("sm")]: {
+      fontSize: '0.8rem',
+		},
+		[theme.breakpoints.down("xs")]: {
+      fontSize: '0.8rem',
+    },
   },
 }));

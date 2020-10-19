@@ -13,8 +13,8 @@
 			"type": "image/png"
 		},
 		{
-			"src": "/android-chrome-144x144.png",
-			"sizes": "144x144",
+			"src": "/android-chrome-144x98.png",
+			"sizes": "144x98",
 			"type": "image/png"
 		}
 	],
