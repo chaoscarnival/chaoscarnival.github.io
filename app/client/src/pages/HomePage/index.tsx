@@ -6,6 +6,7 @@ import { useStyles } from "./styles";
 import MainHeader from "../../components/Header";
 import "../../scrollbar.css";
 import WhyToAttend from '../../components/WhyToAttend';
+import CallForPapers from '../../components/CallForPapers';
 
 function HomePage() {
 	const classes = useStyles();
@@ -81,16 +82,35 @@ function HomePage() {
 
 				<div style={{ marginTop: "auto" }}>
 				<div className={classes.callForPapers}>
-					
+					<CallForPapers/>
 				</div>
 				</div>
 
 				<div style={{ marginTop: "auto" }}>
-									{/* Charts Div */}
+									{/* Speakers Div */}
 									<div className={classes.chartsDiv}>
 									</div>
+				</div>
+
+
+				<div style={{ marginTop: "auto" }}>
+									{/* JoinTheChaosCarnival Div */}
+									<div className={classes.chartsDiv}>
+									</div>
+				</div>
+
+
+
+
+
 								</div>
-								</div>
+
+
+								
+								{/* PreFooter */}
+				<div style={{ marginTop: "auto" }}>
+				{/*		<PreFooter /> */}
+					</div>
 
 				{/* Footer */}
 				<div style={{ marginTop: "auto" }}>

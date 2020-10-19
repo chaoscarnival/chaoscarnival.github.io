@@ -11,7 +11,7 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	mainDiv: {
 		marginTop: theme.spacing(-10),
-		background: 'linear-gradient(180deg, rgba(26, 0, 52, 0.08) 0%, #080D24 95.75%, #070E23 101.56%), url(/images/home_bckground.jpg)',
+		background: 'linear-gradient(180deg, rgba(26, 0, 52, 0.08) 0%, #080D24 95.75%, #070E23 101.56%), url(/images/home_background.jpg)',
 		backgroundRepeat: 'no-repeat',
     backgroundSize: '100% 100%',
 		height: "107vh",
@@ -65,10 +65,10 @@ export const useStyles = makeStyles((theme) => ({
 			fontSize: "25px",
 		},
 		[theme.breakpoints.down("sm")]: {
-			fontSize: "15px",
+			fontSize: "20px",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "10px",
+			fontSize: "16px",
 		},
 	},
 	headerDesc: {
@@ -89,10 +89,10 @@ export const useStyles = makeStyles((theme) => ({
 			fontSize: "25px",
 		},
 		[theme.breakpoints.down("sm")]: {
-			fontSize: "15px",
+			fontSize: "20px",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "10px",
+			fontSize: "16px",
 		},
 	},
 	register:{
@@ -114,15 +114,15 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("md")]: {
 			height: '2rem',
-		width: '11.5rem',
+		width: '14.5rem',
 		},
 		[theme.breakpoints.down("sm")]: {
 			height: '1.25rem',
-		width: '7.25rem',
+		width: '9.75rem',
 		},
 		[theme.breakpoints.down("xs")]: {
 			height: '1rem',
-		width: '5rem',
+		width: '7.5rem',
 		},
 	},
 	registerText:{
@@ -134,13 +134,13 @@ export const useStyles = makeStyles((theme) => ({
 			fontSize: "16px",
 		},
 		[theme.breakpoints.down("md")]: {
-			fontSize: "12px",
+			fontSize: "14px",
 		},
 		[theme.breakpoints.down("sm")]: {
-			fontSize: "8px",
+			fontSize: "12px",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "4.5px",
+			fontSize: "8px",
 		},
 	},
 	logoImg: {

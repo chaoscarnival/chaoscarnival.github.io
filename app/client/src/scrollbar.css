@@ -27,3 +27,12 @@
 .scrollbar-primary::-webkit-scrollbar-track {
 	background: linear-gradient(90deg,#201c29,#201c29 1px,#100e17 0,#100e17);
 }
+@media only screen and (max-width: 700px){
+	.scrollbar {
+		-ms-overflow-style: none;  /* IE and Edge */
+		scrollbar-width: none;  /* Firefox */
+	}
+	.scrollbar-primary::-webkit-scrollbar {
+		display: none;
+	}
+}
