@@ -10,14 +10,8 @@ export const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 	},
 	mainDiv: {
-		backgroundImage:
-			"linear-gradient(82.18deg, #5B44BA -6.24%, #858CDD 142.26%)",
-		height: 500,
 		display: "flex",
 		flexDirection: "column",
-		[theme.breakpoints.down("xs")]: {
-			height: 550,
-		},
 	},
 	headerDiv: {
 		display: "flex",
@@ -29,68 +23,64 @@ export const useStyles = makeStyles((theme) => ({
 			width: 1550,
 			margin: "0 auto",
 		},
-		[theme.breakpoints.down("sm")]: {
-			display: "flex",
-			flexDirection: "row",
-			paddingTop: 20,
-			marginLeft: 50,
-			marginRight: 50,
-		},
 		[theme.breakpoints.down("xs")]: {
 			display: "flex",
-			flexDirection: "row",
+			flexDirection: "column-reverse",
 			paddingTop: 20,
 			marginLeft: 20,
 			marginRight: 20,
 		},
 	},
 	headerText: {
-		width: 650,
-		height: 120,
 		[theme.breakpoints.down("sm")]: {
 			width: "100%",
 		},
 	},
 	mainHeader: {
-		fontSize: "40px",
-		fontWeight: 500,
-		color: theme.palette.common.white,
+		fontSize: "50px",
+		fontWeight: 700,
+		color: theme.palette.common.black,
 		textAlign: "left",
-		[theme.breakpoints.down(981)]: {
-			fontSize: "35px",
-		},
+		marginLeft: 70,
+		// [theme.breakpoints.down(981)]: {
+		// 	fontSize: "35px",
+		// },
 		[theme.breakpoints.down("sm")]: {
-			fontSize: "25px",
-			fontWeight: 500,
-			marginBottom: 20,
+			fontWeight: 700,
+			fontSize: "32px",
+			margin: "0 auto",
 		},
-		[theme.breakpoints.down("xs")]: {
-			fontSize: "25px",
-			fontWeight: 500,
-			marginBottom: 10,
-		},
+		// [theme.breakpoints.down("xs")]: {
+		// 	fontSize: "25px",
+		// 	fontWeight: 500,
+		// 	marginBottom: 10,
+		// },
 	},
 	headerDesc: {
-		fontSize: "16px",
+		fontSize: "24px",
 		marginBottom: 20,
-		color: theme.palette.common.white,
+		marginLeft: 70,
+		color: theme.palette.common.black,
 		textAlign: "left",
-		maxWidth: 500,
 		paddingTop: 20,
-		[theme.breakpoints.down("md")]: {
-			paddingTop: 0,
-			maxWidth: "100%",
+		[theme.breakpoints.down("sm")]: {
+			fontSize: "16px",
+			margin: "0 auto",
 		},
 	},
-	headerImg: {
-		marginTop: -50,
+	imgDiv: {
+		marginLeft: "auto",
+		marginTop: -20,
+		maxHeight: 215,
+		maxWidth: 215,
 		marginRight: 50,
-		[theme.breakpoints.down("md")]: {
-			marginTop: -50,
-			marginLeft: 30,
-			marginRight: 0,
+		[theme.breakpoints.down("sm")]: {
+			marginTop: 20,
+			marginBottom: 10,
+			margin: "0 auto",
 		},
 	},
+	headerImg: {},
 	searchBar: {
 		flexGrow: 1,
 		[theme.breakpoints.down("sm")]: {
@@ -145,31 +135,13 @@ export const useStyles = makeStyles((theme) => ({
 			marginRight: 0,
 		},
 	},
-	chartsDiv: {
-		marginTop: -80,
-		marginLeft: "8.55%",
-		marginRight: "8.55%",
-		backgroundColor: theme.palette.common.white,
-		border: "1px solid rgba(0, 0, 0, 0.05)",
-		borderRadius: "3px",
+	customizedTable: {
+		marginLeft: 180,
+		marginRight: 180,
+		marginTop: 30,
 		[theme.breakpoints.up("xl")]: {
-			width: 1550,
+			maxWidth: 1420,
 			margin: "0 auto",
-			marginTop: -80,
-		},
-		[theme.breakpoints.down("md")]: {
-			marginTop: -60,
-		},
-		[theme.breakpoints.down("sm")]: {
-			marginTop: -80,
-		},
-		[theme.breakpoints.down(600)]: {
-			marginTop: -90,
-		},
-		[theme.breakpoints.down(378)]: {
-			marginTop: -30,
-			marginLeft: "6%",
-			marginRight: "6%",
 		},
 	},
 }));
