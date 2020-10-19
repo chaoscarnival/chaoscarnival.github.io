@@ -18,7 +18,7 @@ function SponsorshipPage() {
 	return (
 		<div className="scrollbar scrollbar-primary">
 			<div className={classes.rootContainer}>
-				<MainHeader />
+				<MainHeader inHomePage={false} />
 				<div className={classes.root}>
 					<div className={classes.mainDiv}>
 						{/* Header component */}
@@ -47,15 +47,12 @@ function SponsorshipPage() {
 						</div>
 						{/* SearchBar and Stats */}
 						<div className={classes.searchDiv}>
-							<div className={classes.searchBar}>
-							</div>
-							<div className={classes.statsDiv}>
-							</div>
+							<div className={classes.searchBar}></div>
+							<div className={classes.statsDiv}></div>
 						</div>
 					</div>
 					{/* Charts Div */}
-					<div className={classes.chartsDiv}>
-					</div>
+					<div className={classes.chartsDiv}></div>
 				</div>
 				{/* Footer */}
 				<div style={{ marginTop: "auto" }}>

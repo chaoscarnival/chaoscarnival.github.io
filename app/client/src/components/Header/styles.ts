@@ -2,17 +2,17 @@ import { makeStyles, Theme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme: Theme) => ({
 	appBar: {
-		width: '100vw',
+		width: "100vw",
 		margin: "auto",
-		background: 'rgba(0,0,0,0.001)',
+		background: "rgba(0,0,0,0.001)",
 	},
 	toolbarDiv: {
-		width: '100vw',
+		width: "100vw",
 		margin: "auto",
-		paddingLeft: '5vw',
+		paddingLeft: "5vw",
 	},
 	menu: {
-paddingLeft: '40vw',
+		paddingLeft: "40vw",
 	},
 	mainLogo: {
 		width: 165,
@@ -42,34 +42,34 @@ paddingLeft: '40vw',
 	headerDiv: {
 		display: "flex",
 		flexDirection: "row",
-		marginLeft: '1vw',
+		marginLeft: "1vw",
 	},
 	headerDivCount: {
 		display: "flex",
 		flexDirection: "row",
-		marginLeft: '1.5vw',
+		marginLeft: "1.5vw",
 		[theme.breakpoints.down("md")]: {
-			marginLeft: '5vw',
+			marginLeft: "5vw",
 		},
 		[theme.breakpoints.down("sm")]: {
-			marginTop: '1.5vh',
-			marginLeft: '4vw',
+			marginTop: "1.5vh",
+			marginLeft: "4vw",
 		},
 		[theme.breakpoints.down("xs")]: {
-			marginTop: '3.5vh',
-			marginLeft: '3vw',
+			marginTop: "3.5vh",
+			marginLeft: "3vw",
 		},
 	},
 	headerHomeDiv: {
-		marginLeft: '47vw',
+		marginLeft: "47vw",
 		[theme.breakpoints.down("xl")]: {
-			marginLeft: '37vw',
+			marginLeft: "37vw",
 		},
 		[theme.breakpoints.down("lg")]: {
-			marginLeft: '27vw',
+			marginLeft: "27vw",
 		},
 		[theme.breakpoints.down("md")]: {
-			marginLeft: '13vw',
+			marginLeft: "13vw",
 		},
 	},
 	whiteColor: {
@@ -121,21 +121,22 @@ paddingLeft: '40vw',
 		cursor: "pointer",
 	},
 	headerFont: {
-		color: theme.palette.common.white,
+		color: (props) =>
+			props ? theme.palette.common.white : theme.palette.common.black,
 		marginLeft: theme.spacing(3),
 		marginTop: theme.spacing(0.5),
-		fontSize: '1rem',
+		fontSize: "1rem",
 		fontWeight: 500,
 	},
 	timerBtn: {
-		width: '12.5rem',
+		width: "12.5rem",
 		height: 46,
 		color: theme.palette.common.white,
 		marginLeft: 20,
-		borderWidth: '0.2rem',
+		borderWidth: "0.2rem",
 		borderColor: theme.palette.primary.main,
 		textTransform: "none",
-		fontSize: '1.25rem',
+		fontSize: "1.25rem",
 		fontWeight: 700,
 	},
 	getStarted: {
@@ -160,7 +161,8 @@ paddingLeft: '40vw',
 		border: "2px solid #000000",
 	},
 	backdrop: {
-		background: "linear-gradient(180deg,rgba(255, 136, 0, 0.65),rgba(229, 46, 113, 0.65))",
+		background:
+			"linear-gradient(180deg,rgba(255, 136, 0, 0.65),rgba(229, 46, 113, 0.65))",
 		backdropFilter: "blur(20px)",
 	},
 	menuStarBtn: {

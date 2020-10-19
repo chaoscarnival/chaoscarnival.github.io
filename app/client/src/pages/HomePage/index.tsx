@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 import { useStyles } from "./styles";
 import MainHeader from "../../components/Header";
 import "../../scrollbar.css";
-import WhyToAttend from '../../components/WhyToAttend';
+import WhyToAttend from "../../components/WhyToAttend";
 
 function HomePage() {
 	const classes = useStyles();
@@ -19,83 +19,84 @@ function HomePage() {
 	return (
 		<div className="scrollbar scrollbar-primary">
 			<div className={classes.rootContainer}>
-				<MainHeader />
+				<MainHeader inHomePage={true} />
 				<div className={classes.root}>
 					<div className={classes.mainDiv}>
 						{/* Header component */}
 						<div className={classes.headerDiv}>
-								<div style={{ margin: "auto" }}>
-									<img
-										src="icons/chaoscarnival-header.svg"
-										alt="Chaos Bird Experiment"
-										className={classes.logoImg}
-									/>
-								</div>
-		
-							<Typography className={classes.mainHeader} style={{ margin: "auto" }}>
-							A global two-day virtual conference
+							<div style={{ margin: "auto" }}>
+								<img
+									src="icons/chaoscarnival-header.svg"
+									alt="Chaos Bird Experiment"
+									className={classes.logoImg}
+								/>
+							</div>
+
+							<Typography
+								className={classes.mainHeader}
+								style={{ margin: "auto" }}
+							>
+								A global two-day virtual conference
 							</Typography>
 
-							<Typography className={classes.mainHeader} style={{ margin: "auto" }}>
-							for Cloud Native Chaos Engineering
+							<Typography
+								className={classes.mainHeader}
+								style={{ margin: "auto" }}
+							>
+								for Cloud Native Chaos Engineering
 							</Typography>
 
-							<Typography className={classes.headerDesc} style={{ margin: "auto" }}>
-							January 8-9, 2021
+							<Typography
+								className={classes.headerDesc}
+								style={{ margin: "auto" }}
+							>
+								January 8-9, 2021
 							</Typography>
 
-			
 							<Button
-							className={classes.registerButton}
-							color="primary"
-							variant="contained"
-							style={{ margin: "auto" }}
-							onClick={()=>{window.open(
-								"https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
-							);}}
-						>
-							<Typography className={classes.registerText} style={{textTransform: 'none'}}><b>Register Now for Free</b></Typography>
-						</Button>
-
+								className={classes.registerButton}
+								color="primary"
+								variant="contained"
+								style={{ margin: "auto" }}
+								onClick={() => {
+									window.open(
+										"https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
+									);
+								}}
+							>
+								<Typography
+									className={classes.registerText}
+									style={{ textTransform: "none" }}
+								>
+									<b>Register Now for Free</b>
+								</Typography>
+							</Button>
 						</div>
 						{/* SearchBar and Stats */}
 						<div className={classes.searchDiv}>
-							<div className={classes.searchBar}>
-
-							</div>
-							<div className={classes.statsDiv}>
-
-							</div>
+							<div className={classes.searchBar}></div>
+							<div className={classes.statsDiv}></div>
 						</div>
 					</div>
 
+					<div style={{ marginTop: "auto" }}>
+						<div className={classes.whyToAttend}>
+							<WhyToAttend />
+						</div>
+					</div>
 
+					<div style={{ marginTop: "auto" }}>
+						<div className={classes.callForPapers}></div>
+					</div>
 
-
-				
-				<div style={{ marginTop: "auto" }}>
-				<div className={classes.whyToAttend}>
-					<WhyToAttend/>
+					<div style={{ marginTop: "auto" }}>
+						{/* Charts Div */}
+						<div className={classes.chartsDiv}></div>
+					</div>
 				</div>
-				</div>
-
-				<div style={{ marginTop: "auto" }}>
-				<div className={classes.callForPapers}>
-					
-				</div>
-				</div>
-
-				<div style={{ marginTop: "auto" }}>
-									{/* Charts Div */}
-									<div className={classes.chartsDiv}>
-									</div>
-								</div>
-								</div>
 
 				{/* Footer */}
-				<div style={{ marginTop: "auto" }}>
-			{/*		<Footer /> */}
-				</div>
+				<div style={{ marginTop: "auto" }}>{/*		<Footer /> */}</div>
 			</div>
 		</div>
 	);

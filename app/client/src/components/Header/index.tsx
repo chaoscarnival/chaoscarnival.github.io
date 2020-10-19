@@ -14,11 +14,15 @@ import {
 import React from "react";
 import useStyles from "./styles";
 import CloseIcon from "@material-ui/icons/Close";
-import history from '../../history';
-import CountDown from '../CountDown';
+import history from "../../history";
+import CountDown from "../CountDown";
 
-export default function MainHeader() {
-	const classes = useStyles();
+interface MainHeaderProps {
+	inHomePage: boolean;
+}
+
+const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
+	const classes = useStyles(inHomePage);
 	const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 	const open = Boolean(anchorEl);
 
@@ -51,14 +55,18 @@ export default function MainHeader() {
 				elevation={0}
 			>
 				<Toolbar className={classes.toolbarDiv}>
-				<Hidden smDown>
-					<img
-						src="/icons/chaoscarnival-header.svg"
-						alt="Litmus Logo"
-						className={classes.mainLogo}
-						onClick={() => history.push("/")}
-					/>
-</Hidden>
+					<Hidden smDown>
+						<img
+							src={
+								inHomePage
+									? "/icons/chaoscarnival-header.svg"
+									: "/icons/chaoscarnival-header-dark.svg"
+							}
+							alt="Litmus Logo"
+							className={classes.mainLogo}
+							onClick={() => history.push("/")}
+						/>
+					</Hidden>
 					<Hidden smDown>
 						<div className={classes.headerHomeDiv}>
 							<a
@@ -111,15 +119,19 @@ export default function MainHeader() {
 							</a>
 						</div>
 					</Hidden>
-						<div className={classes.headerDivCount}>
-							<CountDown 
-							timeTillDate="01 08 2021, 6:00 am" 
-							timeFormat="MM DD YYYY, h:mm a" 
+					<div className={classes.headerDivCount}>
+						<CountDown
+							timeTillDate="01 08 2021, 6:00 am"
+							timeFormat="MM DD YYYY, h:mm a"
+							inHomePage={inHomePage}
 						/>
-						</div>
+					</div>
 					<Hidden mdUp>
 						<div className={classes.headerDiv}>
-							<IconButton onClick={handleClick} className={classes.menu}>
+							<IconButton
+								onClick={handleClick}
+								className={classes.menu}
+							>
 								<img src="/icons/menu.svg" alt="menu" />
 							</IconButton>
 							<Menu
@@ -163,18 +175,18 @@ export default function MainHeader() {
 									</Typography>
 								</MenuItem>
 								<MenuItem
-								className={classes.menuItem}
-								button={false}
-								key="contribute"
-							>
-								<Typography
-									className={classes.contributeBtn}
-									onClick={handleContribute}
+									className={classes.menuItem}
+									button={false}
+									key="contribute"
 								>
-									Agenda
-								</Typography>
-							</MenuItem>
-							<MenuItem
+									<Typography
+										className={classes.contributeBtn}
+										onClick={handleContribute}
+									>
+										Agenda
+									</Typography>
+								</MenuItem>
+								<MenuItem
 									className={classes.menuItem}
 									button={false}
 									key="contribute"
@@ -193,4 +205,6 @@ export default function MainHeader() {
 			</AppBar>
 		</div>
 	);
-}
+};
+
+export default MainHeader;
