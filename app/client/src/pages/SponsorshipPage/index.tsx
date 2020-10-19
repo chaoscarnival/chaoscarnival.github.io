@@ -4,6 +4,9 @@ import { Charts } from "../../components";
 import Footer from "../../components/Footer";
 import { useStyles } from "./styles";
 import MainHeader from "../../components/Header";
+import CustomizedTables from "./TableContent";
+import SponsorBenefits from "../../components/SponsorBenefits";
+import Sponsors from "../../components/Sponsors";
 import "../../scrollbar.css";
 
 function SponsorshipPage() {
@@ -20,44 +23,36 @@ function SponsorshipPage() {
 			<div className={classes.rootContainer}>
 				<MainHeader inHomePage={false} />
 				<div className={classes.root}>
-					<div className={classes.mainDiv}>
-						{/* Header component */}
-						<div className={classes.headerDiv}>
-							<div className={classes.headerText}>
-								<Typography className={classes.mainHeader}>
-									Chaos Experiments for Kubernetes
-								</Typography>
-								<Typography className={classes.headerDesc}>
-									Litmus ChaosHub hosts chaos experiments for
-									Kubernetes. The experiments are declarative
-									and tunable. Use the hub interface to tune
-									them to your needs, deploy them and take
-									that step towards resilience.
-								</Typography>
-							</div>
-							<Hidden smDown>
-								<div style={{ marginLeft: "auto" }}>
-									<img
-										src="icons/chaos-bird.png"
-										alt="Chaos Bird Experiment"
-										className={classes.headerImg}
-									/>
-								</div>
-							</Hidden>
+					{/* Header component */}
+					<div className={classes.headerDiv}>
+						<div className={classes.headerText}>
+							<Typography className={classes.mainHeader}>
+								Chaos Carnival <br></br> Sponsorship Details &
+								Benefits
+							</Typography>
+							<Typography className={classes.headerDesc}>
+								Check below the about the different types of
+								sponsorships and their benifits
+							</Typography>
 						</div>
-						{/* SearchBar and Stats */}
-						<div className={classes.searchDiv}>
-							<div className={classes.searchBar}></div>
-							<div className={classes.statsDiv}></div>
+						<div className={classes.imgDiv}>
+							<img
+								src="icons/chaos-carnival-logo.svg"
+								alt="Chaos Carnival Logo"
+								className={classes.headerImg}
+							/>
 						</div>
 					</div>
-					{/* Charts Div */}
-					<div className={classes.chartsDiv}></div>
+					<div className={classes.customizedTable}>
+						<CustomizedTables />
+					</div>
+					<SponsorBenefits />
+					<Sponsors />
 				</div>
 				{/* Footer */}
-				<div style={{ marginTop: "auto" }}>
+				{/* <div style={{ marginTop: "auto" }}>
 					<Footer />
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
