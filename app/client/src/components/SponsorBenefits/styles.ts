@@ -74,6 +74,8 @@ export const useStyles = makeStyles((theme) => ({
 		width: 60,
 		height: 60,
 		[theme.breakpoints.down("sm")]: {
+			width: 90,
+			height: 90,
 			align: "center",
 			display: "flex",
 			flexDirection: "column",
@@ -87,6 +89,7 @@ export const useStyles = makeStyles((theme) => ({
 		fontSize: 18,
 		marginLeft: 30,
 		[theme.breakpoints.down("sm")]: {
+			fontSize: 16,
 			width: "100%",
 			display: "flex",
 			marginLeft: 0,
