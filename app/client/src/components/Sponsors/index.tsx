@@ -23,71 +23,31 @@ const imgLink = [
 const Sponsor = () => {
 	const classes = useStyles();
 	return (
-		<div style={{ width: "100%", backgroundColor: "#FFFFFF", padding: 60 }}>
+		<div className={classes.root}>
 			<div className={classes.mainDiv}>
-				<div
-					style={{
-						width: "50%",
-						marginLeft: 140,
-						paddingLeft: 50,
-						paddingTop: 20,
-					}}
-				>
-					<Typography
-						variant="h1"
-						style={{
-							color: "#000000",
-							fontWeight: 700,
-							fontSize: 60,
-							textAlign: "left",
-						}}
-					>
+				<div className={classes.sponsorDiv}>
+					<Typography variant="h1" className={classes.sponsorText}>
 						Our
 					</Typography>
 					<Typography className={classes.headerText}>
 						Sponsors
 					</Typography>
 				</div>
-				<div
-					style={{
-						width: "50%",
-						display: "flex",
-						flexDirection: "column",
-					}}
-				>
-					<div
-						style={{
-							width: "50%",
-							display: "flex",
-							flexDirection: "row",
-							flexWrap: "wrap",
-							justifyContent: "space-between",
-							alignItems: "left",
-							marginLeft: 40,
-						}}
-					>
+				<div className={classes.sponsorImgMainDiv}>
+					<div className={classes.sponsorImgDiv}>
 						{imgLink.map((sponsor) => (
-							<a href={sponsor.link} target="_blank">
-								<img
-									src={sponsor.img}
-									alt={sponsor.alt}
-									style={{
-										maxWidth: 300,
-										height: 80,
-										padding: 20,
-									}}
-								/>
-							</a>
+							<div style={{ marginRight: 0 }}>
+								<a href={sponsor.link} target="_blank">
+									<img
+										src={sponsor.img}
+										alt={sponsor.alt}
+										className={classes.sponsorImg}
+									/>
+								</a>
+							</div>
 						))}
 					</div>
-					<Typography
-						style={{
-							color: "#8193B2",
-							marginTop: 20,
-							textAlign: "left",
-							marginLeft: 60,
-						}}
-					>
+					<Typography className={classes.footerText}>
 						Interested for sponsorship , Email us at <br></br>
 						<a href="mailto:sponsorship@chaoscarnival.io">
 							sponsorship@chaoscarnival.io
