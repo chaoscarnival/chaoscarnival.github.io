@@ -19,7 +19,7 @@ function SponsorshipPage() {
 		<div className="scrollbar scrollbar-primary">
 			<div className={classes.rootContainer}>
 				<MainHeader inHomePage={false} />
-				<div className={classes.root}>
+				<div>
 					{/* Header component */}
 					<div className={classes.headerDiv}>
 						<div className={classes.headerText}>
@@ -29,7 +29,7 @@ function SponsorshipPage() {
 							</Typography>
 							<Typography className={classes.headerDesc}>
 								Check below about the different types of
-								sponsorships and their benifits
+								sponsorships and their benefits
 							</Typography>
 						</div>
 						<div className={classes.imgDiv}>
@@ -44,7 +44,9 @@ function SponsorshipPage() {
 						<CustomizedTables />
 					</div>
 					<SponsorBenefits />
-					<Sponsors />
+					<div style={{ marginTop: "auto" }}>
+						<Sponsors />
+					</div>
 				</div>
 				{/* Footer */}
 				{/* <div style={{ marginTop: "auto" }}>

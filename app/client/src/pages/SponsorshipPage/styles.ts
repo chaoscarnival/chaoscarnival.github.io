@@ -6,9 +6,6 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "column",
 	},
-	root: {
-		textAlign: "center",
-	},
 	mainDiv: {
 		display: "flex",
 		flexDirection: "column",

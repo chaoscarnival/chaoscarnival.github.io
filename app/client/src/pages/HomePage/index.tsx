@@ -6,6 +6,7 @@ import MainHeader from "../../components/Header";
 import "../../scrollbar.css";
 import WhyToAttend from "../../components/WhyToAttend";
 import Sponsors from "../../components/Sponsors";
+import JoinCarnival from "../../components/JoinCarnival";
 import CallForPapers from "../../components/CallForPapers";
 import { Speakers } from '../../components/Speakers';
 
@@ -102,7 +103,7 @@ function HomePage() {
 
 					<div style={{ marginTop: "auto" }}>
 						{/* JoinTheChaosCarnival Div */}
-						<div className={classes.speakersDiv}></div>
+						<JoinCarnival />
 					</div>
 				</div>
 
