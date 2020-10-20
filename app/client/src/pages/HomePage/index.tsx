@@ -65,7 +65,7 @@ function HomePage() {
 								style={{ margin: "auto" }}
 								onClick={() => {
 									window.open(
-										"https://join.slack.com/t/chaoscarnival"
+										"https://join.slack.com/t/chaoscarnival/shared_invite/zt-ic63h58h-C_G5IwZ1EwhCtDcSpEEd0w"
 									);
 								}}
 							>

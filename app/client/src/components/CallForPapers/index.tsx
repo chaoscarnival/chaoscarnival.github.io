@@ -14,7 +14,7 @@ function CallForPapers() {
 					<Typography className={classes.callForPapersText}>Call for Papers</Typography>
 					<Typography className={classes.isOpenText}>is open</Typography>
 					<div className={classes.info}>
-						<Typography className={classes.infoText}>{`Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mAliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.`}</Typography>
+						<Typography className={classes.infoText}>{`Speaking at this carnival is an opportunity to share your insights to the chaos community. You can speak on wide range of topics such as Chaos in CI/CD, DevOps in general, specific experiments, reliability, SLOs, cloud-native and of course chaos in general. Fill up your application on `}<a href="https://www.papercall.io" target="_blank" style={{ color: '#FFFFFF' }}>papercall.io</a></Typography>
 						<Typography className={classes.dateText}>{`Last date to submit is 10th Dec, 2020`}</Typography>
 					</div>
 					<div className={classes.infoButton}>
@@ -25,7 +25,7 @@ function CallForPapers() {
 							style={{ margin: "auto" }}
 							onClick={() => {
 								window.open(
-									"https://join.slack.com/t/chaoscarnival"
+									"https://join.slack.com/t/chaoscarnival/shared_invite/zt-ic63h58h-C_G5IwZ1EwhCtDcSpEEd0w"
 								);
 							}}
 						>

@@ -73,10 +73,6 @@ const Footer: React.FC = () => {
 								</a>
 							</div>
 							</Hidden>
-
-
-
-
 							<Hidden mdUp>
 							<div className={classes.headerDiv}>
 								<a
@@ -98,8 +94,6 @@ const Footer: React.FC = () => {
 									</Typography>
 								</a>
 							</div>
-
-
 							<div className={classes.headerDiv}>
 								<a
 									href="https://www.linkedin.com/company/chaos-carnival"
@@ -111,7 +105,7 @@ const Footer: React.FC = () => {
 									</Typography>
 								</a>
 								<a
-									href="#team"
+									href="https://chaoscarnival.io/team"
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
@@ -120,12 +114,10 @@ const Footer: React.FC = () => {
 								</a>
 							</div>
 							</Hidden>
-
-
 					</div>
 				</Toolbar>
 				<Typography className={classes.copyRightFont}>
-				Chaos Carnical is a registered trademark of Mayadata, Inc. © 2020 Mayadata, Inc. All Rights Reserved.
+				Chaos Carnival is a registered trademark of Mayadata, Inc. © 2020 Mayadata, Inc. All Rights Reserved.
 			</Typography>
 			</AppBar>
 		</div>
