@@ -48,7 +48,8 @@ const Sponsor = () => {
 						))}
 					</div>
 					<Typography className={classes.footerText}>
-						Interested for sponsorship , Email us at <br></br>
+						Interested in sponsoring?<br></br>
+						Email us at <br></br>
 						<a href="mailto:sponsorship@chaoscarnival.io">
 							sponsorship@chaoscarnival.io
 						</a>

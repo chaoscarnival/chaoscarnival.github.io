@@ -9,7 +9,7 @@ const SponsorBenefits = () => {
 			img: "/icons/speedometer.svg",
 			alt: "speedometer",
 			text:
-				"Foster relationships and engage with the SREs, cloud-native developers, end-users, and vendors.  Make connections with other industry experts, industry analysts, and thought leaders.",
+				"Foster relationships and engage with the SREs, cloud-native developers, end-users, and vendors. Build connections with other industry experts, industry analysts, and thought leaders.",
 		},
 		{
 			img: "/icons/network.svg",
@@ -33,25 +33,25 @@ const SponsorBenefits = () => {
 			img: "/icons/community.svg",
 			alt: "community",
 			text:
-				"Take advantage of a professionally-organized conference run by a neutral nonprofit where content is curated by the community itself.",
+				"Take advantage of a professionally-organized conference run by a neutral & nonprofit where content is curated by the community itself.",
 		},
 		{
 			img: "/icons/cloud.svg",
 			alt: "cloud",
 			text:
-				"Associate your brand with one of the fastest-growing cloud-native technology. community.",
+				"Associate your brand with one of the fastest-growing cloud-native technology, community.",
 		},
 		{
 			img: "/icons/opensource.svg",
 			alt: "opensource",
 			text:
-				"Support and engage with the ecosystem vital in driving some of the brightest upcoming open source projects and open source contributors in the industry.",
+				"Support and engage the ecosystem vital in driving some of the brightest upcoming open source projects and open source contributors in the industry.",
 		},
 	];
 	return (
 		<div className={classes.root}>
 			<div className={classes.mainDiv}>
-				<Typography variant="h3" className={classes.headerText}>
+				<Typography className={classes.headerText}>
 					Benefits of Sponsoring
 				</Typography>
 				<div className={classes.sponsorDiv}>
