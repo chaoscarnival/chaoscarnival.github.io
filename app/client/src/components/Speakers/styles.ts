@@ -25,12 +25,8 @@ export const useStyles = makeStyles((theme: Theme) => ({
 		marginLeft: "12vw",
     marginRight: "12vw",
     [theme.breakpoints.up("xl")]: {
-      marginLeft: "30vw",
-      marginRight: "30vw",
-      },
-    [theme.breakpoints.up("xl")]: {
-		marginLeft: "35vw",
-    marginRight: "35vw",
+		marginLeft: "10vw",
+    marginRight: "9vw",
     },
     [theme.breakpoints.down("sm")]: {
 			marginLeft: "2vw",

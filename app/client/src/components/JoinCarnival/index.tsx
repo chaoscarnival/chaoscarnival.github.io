@@ -11,12 +11,12 @@ const JoinCarnival = () => {
 			<div className={classes.mainDiv}>
 				<Hidden smDown>
 					<Typography className={classes.joinText}>
-						Join the
+						Join&nbsp;the
 					</Typography>
 				</Hidden>
 				<Hidden mdUp>
 					<Typography className={classes.joinTextSM}>
-						Join the
+						Join&nbsp;the
 					</Typography>
 				</Hidden>
 				<div className={classes.imageDiv}>
@@ -26,14 +26,14 @@ const JoinCarnival = () => {
 						className={classes.logoImg}
 					/>
 					<Typography className={classes.descText}>
-					This is the first episode of ChaosCarnival and it will be fun. Chaos engineering practitioners, experts and enthusiasts from all over the global are joining this carnival to share and learn.
+						This is the first episode of ChaosCarnival and it will be fun. Chaos engineering practitioners, experts and enthusiasts from all over the global are joining this carnival to share and learn.
 					</Typography>
 					<div className={classes.regNow}>
 						<Button
 							className={classes.registerButton}
 							color="primary"
 							variant="contained"
-							style={{ margin: "auto" }}
+							style={{ marginRight: "5rem" }}
 							onClick={() => {
 								window.open(
 									"https://join.slack.com/t/chaoscarnival/shared_invite/zt-ic63h58h-C_G5IwZ1EwhCtDcSpEEd0w"
@@ -44,7 +44,7 @@ const JoinCarnival = () => {
 								className={classes.registerText}
 								style={{ textTransform: "none" }}
 							>
-								<b>Register Now</b>
+								<b>Register&nbsp;Now</b>
 							</Typography>
 						</Button>
 						<Timer />
@@ -55,13 +55,13 @@ const JoinCarnival = () => {
 					<Typography className={classes.textDay}>
 						Day 1 - Friday
 					</Typography>
-					<Typography className={classes.textDate} style={{ marginBottom: '2rem'}}>
+					<Typography className={classes.textDate} style={{ marginBottom: '2rem' }}>
 						January 8th, 2021
 					</Typography>
 					<Typography className={classes.textDay}>
 						Day 2 - Saturday
 					</Typography>
-					<Typography className={classes.textDate} style={{ marginBottom: '2rem'}}>
+					<Typography className={classes.textDate} style={{ marginBottom: '2rem' }}>
 						January 9th, 2021
 					</Typography>
 					<Typography className={classes.textDay} style={{ textAlign: "left", fontWeight: 700, marginBottom: '1rem' }}>
@@ -79,9 +79,9 @@ const JoinCarnival = () => {
 					>
 						<Typography
 							className={classes.registerText}
-							style={{ textTransform: "none" }}
+							style={{ textTransform: "none", padding: "3rem" }}
 						>
-							<b>Add to Calender</b>
+							<b>Add&nbsp;to&nbsp;Calender</b>
 						</Typography>
 					</Button>
 				</div>
