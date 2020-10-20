@@ -141,26 +141,26 @@ export const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(5),
   },
   cfpButton: {
-		height: '2.5rem',
+		height: '3.5rem',
 		width: '12rem',
 		[theme.breakpoints.down("xl")]: {
-			height: '3rem',
+			height: '3.5rem',
 		width: '15rem',
 		},
 		[theme.breakpoints.down("lg")]: {
-			height: '2.5rem',
+			height: '3rem',
 		width: '12rem',
 		},
 		[theme.breakpoints.down("md")]: {
-			height: '2rem',
+			height: '2.5rem',
 		width: '10rem',
 		},
 		[theme.breakpoints.down("sm")]: {
-			height: '1.25rem',
+			height: '2rem',
 		width: '8.5rem',
 		},
 		[theme.breakpoints.down("xs")]: {
-			height: '1rem',
+			height: '2rem',
 		width: '6.5rem',
 		},
 	},

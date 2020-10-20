@@ -18,8 +18,6 @@ function CallForPapers() {
 						<Typography className={classes.dateText}>{`Last date to submit is 10th Dec, 2020`}</Typography>
 					</div>
 					<div className={classes.infoButton}>
-
-
 						<Button
 							className={classes.cfpButton}
 							color="primary"

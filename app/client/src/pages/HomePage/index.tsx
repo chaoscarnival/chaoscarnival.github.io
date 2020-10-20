@@ -17,8 +17,6 @@ function HomePage() {
 		window.scrollTo(0, 0);
 	});
 
-	const [searchToken, setsearchToken] = React.useState("");
-
 	return (
 		<div className="scrollbar scrollbar-primary">
 			<div className={classes.rootContainer}>
@@ -34,7 +32,7 @@ function HomePage() {
 									className={classes.logoImg}
 								/>
 							</div>
-
+							<div style={{ margin: "auto" }}>
 							<Typography
 								className={classes.mainHeader}
 								style={{ margin: "auto" }}
@@ -48,14 +46,18 @@ function HomePage() {
 							>
 								for Cloud Native Chaos Engineering
 							</Typography>
-
+							</div>
+							
+							<div style={{ margin: "auto" }}>
 							<Typography
 								className={classes.headerDesc}
 								style={{ margin: "auto" }}
 							>
 								January 8-9, 2021
 							</Typography>
+							</div>
 
+							<div style={{ margin: "auto" }}>
 							<Button
 								className={classes.registerButton}
 								color="primary"
@@ -74,29 +76,20 @@ function HomePage() {
 									<b>Register Now for Free</b>
 								</Typography>
 							</Button>
-						</div>
-						{/* SearchBar and Stats */}
-						<div className={classes.searchDiv}>
-							<div className={classes.searchBar}></div>
-							<div className={classes.statsDiv}></div>
+							</div>
 						</div>
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
-						<div className={classes.whyToAttend}>
 							<WhyToAttend />
-						</div>
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
-						<div className={classes.callForPapers}>
 						<a id="cfp"></a>
 							<CallForPapers />
-						</div>
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
-
 						<div className={classes.speakersDiv}>
 						<a id="speakers"></a>
 						<Speakers/>
