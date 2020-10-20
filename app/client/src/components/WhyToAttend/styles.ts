@@ -19,7 +19,6 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "row",
     justifyContent: "center",
-
 		[theme.breakpoints.down("sm")]: {
 			flexDirection: "column",
 		},
@@ -33,11 +32,11 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: '20vh',
     [theme.breakpoints.down("sm")]: {
       width: '100vw',
-      marginTop: '10vh',
+      marginTop: '20vh',
     },
     [theme.breakpoints.down("xs")]: {
       width: '100vw',
-      marginTop: '10vh',
+      marginTop: '20vh',
     },
   },
 

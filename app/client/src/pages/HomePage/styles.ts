@@ -11,7 +11,7 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	mainDiv: {
 		marginTop: theme.spacing(-10),
-		background: 'linear-gradient(180deg, rgba(26, 0, 52, 0.08) 0%, #080D24 95.75%, #070E23 101.56%), url(/images/home_background.jpg)',
+		background: 'linear-gradient(180deg, rgba(26, 0, 52, 0.08) 0%, #080D24 95.75%, #070E23 101.56%), url(/images/home-background.jpg)',
 		backgroundRepeat: 'no-repeat',
     backgroundSize: '100% 100%',
 		height: "107vh",

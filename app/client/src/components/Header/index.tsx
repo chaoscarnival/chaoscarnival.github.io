@@ -55,76 +55,78 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 				elevation={0}
 			>
 				<Toolbar className={classes.toolbarDiv}>
-					<Hidden smDown>
-						<img
-							src={
-								inHomePage
-									? "/icons/chaoscarnival-header.svg"
-									: "/icons/chaoscarnival-header-dark.svg"
-							}
-							alt="Litmus Logo"
-							className={classes.mainLogo}
-							onClick={() => history.push("/")}
-						/>
-					</Hidden>
-					<Hidden smDown>
-						<div className={classes.headerHomeDiv}>
-							<a
-								href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
-								target="#"
-								style={{ textDecoration: "none" }}
-							>
-								<Typography className={classes.headerFont}>
-									Home
-								</Typography>
-							</a>
+					<div className={classes.toolbarDiv}>
+						<Hidden smDown>
+							<img
+								src={
+									inHomePage
+										? "/icons/chaoscarnival-header.svg"
+										: "/icons/chaoscarnival-header-dark.svg"
+								}
+								alt=" header"
+								className={classes.mainLogo}
+								onClick={() => history.push("/")}
+							/>
+						</Hidden>
+						<Hidden smDown>
+							<div className={classes.headerHomeDiv}>
+								<a
+									href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
+									target="#"
+									style={{ textDecoration: "none" }}
+								>
+									<Typography className={classes.headerFont}>
+										Home
+									</Typography>
+								</a>
+							</div>
+						</Hidden>
+						<Hidden smDown>
+							<div className={classes.headerDiv}>
+								<a
+									href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
+									target="#"
+									style={{ textDecoration: "none" }}
+								>
+									<Typography className={classes.headerFont}>
+										Speakers
+									</Typography>
+								</a>
+							</div>
+						</Hidden>
+						<Hidden smDown>
+							<div className={classes.headerDiv}>
+								<a
+									href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
+									target="#"
+									style={{ textDecoration: "none" }}
+								>
+									<Typography className={classes.headerFont}>
+										CFP
+									</Typography>
+								</a>
+							</div>
+						</Hidden>
+						<Hidden smDown>
+							<div className={classes.headerDiv}>
+								<a
+									href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
+									target="#"
+									style={{ textDecoration: "none" }}
+								>
+									<Typography className={classes.headerFont}>
+										Sponsors
+									</Typography>
+								</a>
+							</div>
+						</Hidden>
+						<div className={classes.headerDivCount}>
+							<CountDown
+								timeTillDate="01 08 2021, 6:00 am"
+								timeFormat="MM DD YYYY, h:mm a"
+								inHomePage={inHomePage}
+							/>
 						</div>
-					</Hidden>
-					<Hidden smDown>
-						<div className={classes.headerDiv}>
-							<a
-								href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
-								target="#"
-								style={{ textDecoration: "none" }}
-							>
-								<Typography className={classes.headerFont}>
-									Speakers
-								</Typography>
-							</a>
-						</div>
-					</Hidden>
-					<Hidden smDown>
-						<div className={classes.headerDiv}>
-							<a
-								href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
-								target="#"
-								style={{ textDecoration: "none" }}
-							>
-								<Typography className={classes.headerFont}>
-									Agenda
-								</Typography>
-							</a>
-						</div>
-					</Hidden>
-					<Hidden smDown>
-						<div className={classes.headerDiv}>
-							<a
-								href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
-								target="#"
-								style={{ textDecoration: "none" }}
-							>
-								<Typography className={classes.headerFont}>
-									Sponsors
-								</Typography>
-							</a>
-						</div>
-					</Hidden>
-					<div className={classes.headerDivCount}>
-						<CountDown
-							timeTillDate="01 08 2021, 6:00 am"
-							timeFormat="MM DD YYYY, h:mm a"
-							inHomePage={inHomePage}
-						/>
 					</div>
 					<Hidden mdUp>
 						<div className={classes.headerDiv}>
@@ -183,7 +185,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										className={classes.contributeBtn}
 										onClick={handleContribute}
 									>
-										Agenda
+										CFP
 									</Typography>
 								</MenuItem>
 								<MenuItem
