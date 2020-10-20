@@ -1,150 +1,130 @@
 import { makeStyles, Theme } from "@material-ui/core/styles";
 
-export const useStyles = makeStyles((theme: Theme) => ({
-	root: {
-		backgroundColor: "#FAFBFD",
-		color: theme.palette.primary.main,
-		width: "100%",
-		padding: 20,
-		marginTop: 40,
-		[theme.breakpoints.up("xl")]: {
-			width: 1550,
-			margin: "0 auto",
-		},
-	},
-
-	footerContainer: {
-		display: "flex",
-		flexDirection: "row",
-		justifyContent: "space-around",
-		marginTop: theme.spacing(4),
-		marginLeft: 60,
-		marginRight: 60,
-		[theme.breakpoints.down("xs")]: {
-			flexDirection: "column",
-			margin: theme.spacing(2),
-		},
-	},
-	footerContainer1: {
+const useStyles = makeStyles((theme: Theme) => ({
+	appBar: {
+		width: "100vw",
+		margin: "auto",
+		height: "10rem",
+		background: "linear-gradient(159.14deg, #042C69 0%, #041739 22.21%, #040D21 51.09%, #1B132F 84.08%, #471F48 101.53%)",
+		boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.05)",
 		display: "flex",
 		flexDirection: "column",
-		justifyContent: "space-around",
-		marginTop: theme.spacing(4),
-		marginLeft: theme.spacing(4),
+		justifyContent: "center",
+		alignItems: "center",
+		[theme.breakpoints.down("sm")]: {
+			height: "15rem",
+		},
+		[theme.breakpoints.down("xs")]: {
+			height: "15rem",
+		},
+	},
+	toolbarDiv: {
+		width: "100vw",
+		margin: "auto",
+		marginTop: theme.spacing(2.75),
+		display: "flex",
+		flexDirection: "row",
+		justifyContent: "center",
+		alignItems: "center",
+		paddingLeft: '2vw',
+		paddingRight: '2vw',
 		[theme.breakpoints.down("sm")]: {
 			flexDirection: "column",
-			marginLeft: theme.spacing(1.5),
-			marginRight: theme.spacing(1.5),
 		},
 	},
-
-	footHeading: {
-		fontWeight: 500,
-		color: theme.palette.text.primary,
-		marginBottom: 32,
-		fontSize: 16,
-		[theme.breakpoints.down("sm")]: {
-			maxWidth: 100,
-			marginBottom: 16,
-		},
-	},
-	footerText: {
-		fontSize: "16px",
-		textAlign: "center",
-		marginTop: 30,
-		marginBottom: 30,
-		color: theme.palette.text.secondary,
-		"& a": {
-			textDecoration: "none",
-			color: theme.palette.text.secondary,
-		},
-	},
-
-	copyright: {
-		maxWidth: "20rem",
-
-		[theme.breakpoints.down("sm")]: {
-			maxWidth: "100%",
-			marginLeft: "20%",
-			marginRight: "20%",
-		},
-		[theme.breakpoints.down("xs")]: {
-			maxWidth: "100%",
-			marginLeft: 0,
-			marginRight: 0,
-		},
-	},
-	copyrightText: {
-		lineHeight: "1.5",
-		marginBottom: theme.spacing(2.125),
-		color: theme.palette.text.disabled,
-		"& a": {
-			textDecoration: "none",
-			color: theme.palette.text.disabled,
-		},
-	},
-
-	logo: {
-		width: "10rem",
-		marginBottom: 50,
+	mainLogo: {
+		width: 165,
+		height: 65,
+		marginLeft: 110,
+		marginRight: 30,
 		cursor: "pointer",
-		[theme.breakpoints.down("xs")]: {
-			width: "7rem",
-		},
-	},
-
-	// Community
-	commData: {
-		display: "inline-block",
-		fontSize: 16,
-		marginBottom: 15,
-		color: theme.palette.text.secondary,
-		[theme.breakpoints.down("sm")]: {
-			marginLeft: 0,
-		},
-	},
-	commList: {
-		display: "flex",
-		alignItems: "center",
-		marginTop: 8,
-	},
-
-	horizontalLine: {
-		marginTop: 40,
-		marginLeft: 60,
-		marginRight: 60,
-		height: 0.3,
-		border: "0.5px solid #C4C4C4",
-		boxSizing: "border-box",
 		[theme.breakpoints.up("xl")]: {
-			marginLeft: 140,
-			marginRight: 140,
+			marginLeft: 0,
+			marginRight: 30,
+		},
+		[theme.breakpoints.down("sm")]: {
+			marginLeft: 10,
+			marginRight: 30,
 		},
 	},
-	footerDiv: {
+	headerDiv: {
 		display: "flex",
 		flexDirection: "row",
-		justifyContent: "space-between",
-		marginBottom: 50,
+		marginLeft: "1vw",
 		[theme.breakpoints.down("sm")]: {
-			marginLeft: "20%",
-			marginRight: "20%",
+			marginTop: "1.5vh",
+			marginLeft: theme.spacing(-6),
 		},
 		[theme.breakpoints.down("xs")]: {
-			marginLeft: 5,
+			marginTop: "1.5vh",
+			marginLeft: theme.spacing(-6),
 		},
 	},
-	footerDiv1: {
-		display: "flex",
-		flexDirection: "row",
-		justifyContent: "space-between",
-		marginBottom: 50,
+	headerHomeDiv: {
+		marginLeft: "47vw",
+		[theme.breakpoints.down("xl")]: {
+			marginLeft: "37vw",
+		},
+		[theme.breakpoints.down("lg")]: {
+			marginLeft: "27vw",
+		},
+		[theme.breakpoints.down("md")]: {
+			marginLeft: "13vw",
+		},
+	},
+	headerFont: {
+		color: theme.palette.common.white,
+		marginLeft: theme.spacing(3),
+		marginTop: theme.spacing(0.5),
+		fontSize: "0.9rem",
+		fontWeight: 500,
+		[theme.breakpoints.down("md")]: {
+			fontSize: "0.8rem",
+		},
 		[theme.breakpoints.down("sm")]: {
-			marginLeft: "20%",
-			marginRight: "15%",
+			fontSize: "0.7rem",
 		},
 		[theme.breakpoints.down("xs")]: {
-			marginLeft: 5,
+			fontSize: "0.7rem",
+		},
+	},
+	copyRightFont: {
+		marginTop: theme.spacing(1),
+		marginBottom: theme.spacing(3),
+		fontSize: "0.7rem",
+		color: 'rgba(255, 255, 255, 0.6)',
+		[theme.breakpoints.down("md")]: {
+			fontSize: "0.6rem",
+		},
+		[theme.breakpoints.down("sm")]: {
+			fontSize: "0.5rem",
+			marginTop: theme.spacing(8),
+			marginBottom: theme.spacing(3),
+		},
+		[theme.breakpoints.down("xs")]: {
+			fontSize: "0.5rem",
+			marginTop: theme.spacing(8),
+			marginBottom: theme.spacing(3),
+		},
+	},
+	timeFont: {
+		color: theme.palette.common.white,
+		marginLeft: theme.spacing(3),
+		marginTop: theme.spacing(0.5),
+		fontSize: "1.5rem",
+		fontWeight: 500,
+		[theme.breakpoints.down("md")]: {
+			fontSize: "1.2rem",
+		},
+		[theme.breakpoints.down("sm")]: {
+			fontSize: "1rem",
+			marginLeft: theme.spacing(-3),
+		},
+		[theme.breakpoints.down("xs")]: {
+			fontSize: "1rem",
+			marginLeft:  theme.spacing(-3),
 		},
 	},
 }));
+
+export default useStyles;

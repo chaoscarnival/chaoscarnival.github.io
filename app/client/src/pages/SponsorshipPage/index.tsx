@@ -48,10 +48,9 @@ function SponsorshipPage() {
 						<Sponsors />
 					</div>
 				</div>
-				{/* Footer */}
-				{/* <div style={{ marginTop: "auto" }}>
+				<div style={{ marginTop: "auto" }}>
 					<Footer />
-				</div> */}
+				</div> 
 			</div>
 		</div>
 	);

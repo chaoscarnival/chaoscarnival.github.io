@@ -111,7 +111,9 @@ function HomePage() {
 					<Sponsors />
 				</div>
 
-				<div style={{ marginTop: "auto" }}>{/*		<Footer /> */}</div>
+				<div style={{ marginTop: "auto" }}>
+					<Footer /> 
+				</div>
 			</div>
 		</div>
 	);
