@@ -9,10 +9,10 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     background: 'linear-gradient(180deg, #070E23 56.2%, #000000 100%)',
     [theme.breakpoints.down("sm")]: {
-      height: "123vh",
+      height: "153vh",
     },
     [theme.breakpoints.down("xs")]: {
-      height: "123vh",
+      height: "153vh",
     },
   },
   heading: {
@@ -32,11 +32,11 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: '20vh',
     [theme.breakpoints.down("sm")]: {
       width: '100vw',
-      marginTop: '20vh',
+      marginTop: '50vh',
     },
     [theme.breakpoints.down("xs")]: {
       width: '100vw',
-      marginTop: '20vh',
+      marginTop: '50vh',
     },
   },
 

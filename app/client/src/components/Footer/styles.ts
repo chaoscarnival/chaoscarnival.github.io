@@ -12,10 +12,10 @@ const useStyles = makeStyles((theme: Theme) => ({
 		justifyContent: "center",
 		alignItems: "center",
 		[theme.breakpoints.down("sm")]: {
-			height: "15rem",
+			height: "23rem",
 		},
 		[theme.breakpoints.down("xs")]: {
-			height: "15rem",
+			height: "23rem",
 		},
 	},
 	toolbarDiv: {
@@ -45,6 +45,8 @@ const useStyles = makeStyles((theme: Theme) => ({
 		[theme.breakpoints.down("sm")]: {
 			marginLeft: 10,
 			marginRight: 30,
+			width: 185,
+		height: 85,
 		},
 	},
 	headerDiv: {
@@ -78,33 +80,24 @@ const useStyles = makeStyles((theme: Theme) => ({
 		marginTop: theme.spacing(0.5),
 		fontSize: "0.9rem",
 		fontWeight: 500,
-		[theme.breakpoints.down("md")]: {
-			fontSize: "0.8rem",
-		},
-		[theme.breakpoints.down("sm")]: {
-			fontSize: "0.7rem",
-		},
-		[theme.breakpoints.down("xs")]: {
-			fontSize: "0.7rem",
-		},
 	},
 	copyRightFont: {
 		marginTop: theme.spacing(1),
 		marginBottom: theme.spacing(3),
 		fontSize: "0.7rem",
 		color: 'rgba(255, 255, 255, 0.6)',
-		[theme.breakpoints.down("md")]: {
-			fontSize: "0.6rem",
-		},
+		textAlign: 'center',
 		[theme.breakpoints.down("sm")]: {
-			fontSize: "0.5rem",
 			marginTop: theme.spacing(8),
 			marginBottom: theme.spacing(3),
+			marginLeft: "15vw",
+			marginRight: "15vw",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "0.5rem",
 			marginTop: theme.spacing(8),
 			marginBottom: theme.spacing(3),
+			marginLeft: "15vw",
+			marginRight: "15vw",
 		},
 	},
 	timeFont: {
@@ -113,15 +106,10 @@ const useStyles = makeStyles((theme: Theme) => ({
 		marginTop: theme.spacing(0.5),
 		fontSize: "1.5rem",
 		fontWeight: 500,
-		[theme.breakpoints.down("md")]: {
-			fontSize: "1.2rem",
-		},
 		[theme.breakpoints.down("sm")]: {
-			fontSize: "1rem",
 			marginLeft: theme.spacing(-3),
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "1rem",
 			marginLeft:  theme.spacing(-3),
 		},
 	},

@@ -2,11 +2,18 @@ import { makeStyles, Theme } from "@material-ui/core";
 
 export const useStyles = makeStyles((theme: Theme) => ({
 	root: {
+    height: "100%",
 		marginTop: '10vh',
 		marginBottom: '15vh',
 		display: "flex",
 		flexDirection: "column",
     justifyContent: "center",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: '40vh',
+		},
+		[theme.breakpoints.down("xs")]: {
+      marginTop: '40vh',
+    },
 	},
 	speakerRoot: {
 		display: "flex",
@@ -14,22 +21,25 @@ export const useStyles = makeStyles((theme: Theme) => ({
 		flexWrap: "wrap",
 		justifyContent: "center",
 		alignItems: "center",
-		marginTop: '-10vh',
+		marginTop: '27vh',
 		marginLeft: "12vw",
     marginRight: "12vw",
     [theme.breakpoints.down("sm")]: {
 			marginLeft: "2vw",
     marginRight: "2vw",
+    marginTop: '-10vh',
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginLeft: "2vw",
     marginRight: "2vw",
+    marginTop: '-10vh',
     },
 	},
 	heading: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "center",
+    position:"relative",
     marginBottom: theme.spacing(3),
 		[theme.breakpoints.down("sm")]: {
 			flexDirection: "column",
@@ -37,10 +47,10 @@ export const useStyles = makeStyles((theme: Theme) => ({
 		[theme.breakpoints.down("xs")]: {
 			flexDirection: "column",
     },
-    
   },
   speakers: {
     width: '40vw',
+    position:"absolute",
     marginTop: '40vh',
     marginLeft: '-52vw',
     [theme.breakpoints.down("md")]: {
@@ -83,10 +93,10 @@ export const useStyles = makeStyles((theme: Theme) => ({
       width: '32vw',
 		},
       [theme.breakpoints.down("sm")]: {
-        width: '38vw',
+        width: '45vw',
       },
       [theme.breakpoints.down("xs")]: {
-        width: '45vw',
+        width: '55vw',
       },
 	},
   speakersText: {

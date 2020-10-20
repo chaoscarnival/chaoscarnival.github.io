@@ -25,30 +25,6 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "column",
 	},
-	headerText: {
-		width: '40vw',
-		height: '7vh',
-		marginLeft: '35vw',
-		[theme.breakpoints.down("sm")]: {
-			width: "100%",
-		},
-	},
-	headerTextDescription: {
-		width: '40vw',
-		height: '7vh',
-		marginLeft: '31.5vw',
-		[theme.breakpoints.down("sm")]: {
-			width: "100%",
-		},
-	},
-	headerTextDate: {
-		width: '20vw',
-		height: '5vh',
-		marginLeft: '41vw',
-		[theme.breakpoints.down("sm")]: {
-			width: "100%",
-		},
-	},
 	mainHeader: {
 		fontSize: "40px",
 		fontWeight: 500,
@@ -89,9 +65,11 @@ export const useStyles = makeStyles((theme) => ({
 			fontSize: "25px",
 		},
 		[theme.breakpoints.down("sm")]: {
+			marginTop: "20vh",
 			fontSize: "20px",
 		},
 		[theme.breakpoints.down("xs")]: {
+			marginTop: "20vh",
 			fontSize: "16px",
 		},
 	},
@@ -113,15 +91,17 @@ export const useStyles = makeStyles((theme) => ({
 		width: '16.5rem',
 		},
 		[theme.breakpoints.down("md")]: {
-			height: '2rem',
+			height: '2.5rem',
 		width: '14.5rem',
 		},
 		[theme.breakpoints.down("sm")]: {
-			height: '1.25rem',
+			marginTop: "20vh",
+			height: '2rem',
 		width: '9.75rem',
 		},
 		[theme.breakpoints.down("xs")]: {
-			height: '1rem',
+			marginTop: "20vh",
+			height: '2rem',
 		width: '7.5rem',
 		},
 	},
@@ -171,69 +151,7 @@ export const useStyles = makeStyles((theme) => ({
 			width: '42.5vh',
 		},
 	},
-	searchBar: {
-		flexGrow: 1,
-		[theme.breakpoints.down("sm")]: {
-			marginRight: 20,
-		},
-		[theme.breakpoints.down("xs")]: {
-			marginRight: 0,
-		},
-	},
-	searchDiv: {
-		display: "flex",
-		flexDirection: "row",
-		marginLeft: 130,
-		marginRight: 80,
-		marginTop: 10,
-		[theme.breakpoints.up("xl")]: {
-			width: 1550,
-			margin: "0 auto",
-		},
-		[theme.breakpoints.down("sm")]: {
-			display: "flex",
-			flexDirection: "column",
-			width: "95%",
-			marginLeft: 30,
-			marginRight: 30,
-			marginTop: 35,
-		},
-		[theme.breakpoints.down("xs")]: {
-			marginTop: "10%",
-			marginLeft: 10,
-		},
-		[theme.breakpoints.down(465)]: {
-			marginTop: 90,
-		},
-		[theme.breakpoints.down(378)]: {
-			marginTop: 135,
-			marginLeft: 10,
-			marginRight: 10,
-		},
-	},
-	statsDiv: {
-		marginTop: -10,
-		flexGrow: 1,
-		marginLeft: 10,
-		[theme.breakpoints.down("sm")]: {
-			width: "100%",
-			marginLeft: -10,
-		},
-		[theme.breakpoints.down("xs")]: {
-			width: "100%",
-			marginLeft: 0,
-			marginRight: 0,
-		},
-	},
 	speakersDiv: {
 		backgroundColor: theme.palette.common.white,
-	},
-
-	whyToAttend: {
-
-	},
-
-	callForPapers:{
-
 	},
 }));
