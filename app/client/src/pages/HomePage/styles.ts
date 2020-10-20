@@ -11,10 +11,10 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	mainDiv: {
 		marginTop: theme.spacing(-10),
-		background: 'url(/images/herobg.png)',
+		background: 'url(/images/herobgcom.jpg)',
 		backgroundColor: "#070e23",
 		backgroundRepeat: 'no-repeat',
-    	backgroundSize: '100%',
+    	backgroundSize: "cover",
 		height: "107vh",
 		display: "flex",
 		flexDirection: "column",

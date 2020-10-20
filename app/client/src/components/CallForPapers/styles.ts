@@ -5,17 +5,19 @@ export const useStyles = makeStyles((theme) => ({
 	root: {
 		height: "60rem",
 		display: "flex",
-		flexDirection: "column",
+		flexDirection: "row",
     justifyContent: "center",
-    background: 'url(/images/cfpbg.png)',
+    alignItems:"center",
+    alignContent:"center",
+    background: 'url(/images/cfpbg.jpg)',
     backgroundColor: '#000',
     backgroundRepeat: 'no-repeat',
-    backgroundSize: '100%',
+    backgroundSize: 'cover',
     backgroundPosition: 'right',
     [theme.breakpoints.down("xs")]: {
       backgroundColor: "#000",
       backgroundRepeat: 'no-repeat',
-      backgroundSize: '100% 100%',
+      backgroundSize: '100%',
       height: "100vh",
       background: 'linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.874483) 37.89%, rgba(0, 0, 0, 0) 133.18%), url(/images/callForPapers.png)',
     },
@@ -25,6 +27,7 @@ export const useStyles = makeStyles((theme) => ({
     position:"relative",
     flexDirection: "row",
     justifyContent: "center",
+    alignItems: "center",
 		[theme.breakpoints.down("sm")]: {
 			flexDirection: "column",
 		},
@@ -35,9 +38,10 @@ export const useStyles = makeStyles((theme) => ({
   },
   callForPapers: {
     width: '80vw',
-    position:"absolute",
-    marginTop: '22vh',
-    marginLeft: '-4vw',
+    height: '50rem',
+    // position:"absolute",
+    // marginTop: '22vh',
+    // marginLeft: '-4vw',
     [theme.breakpoints.down("sm")]: {
       width: '100vw',
       marginTop: '3vh',
@@ -52,7 +56,6 @@ export const useStyles = makeStyles((theme) => ({
 
   callForPapersText: {
     fontWeight: 700, 
-    marginTop: '-47vh',
     textAlign: 'left',
     fontSize: '70px',
     marginLeft: '7vw',

@@ -33,7 +33,7 @@ const JoinCarnival = () => {
 							className={classes.registerButton}
 							color="primary"
 							variant="contained"
-							style={{ marginRight: "5rem" }}
+							style={{ marginRight: "1.5rem" }}
 							onClick={() => {
 								window.open(
 									"https://join.slack.com/t/chaoscarnival/shared_invite/zt-ic63h58h-C_G5IwZ1EwhCtDcSpEEd0w"

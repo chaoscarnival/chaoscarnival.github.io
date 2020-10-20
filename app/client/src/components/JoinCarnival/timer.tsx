@@ -33,8 +33,8 @@ const Timer = () => {
 					{`${days}d ${hours}h ${minutes}m ${seconds}s`}
 				</Typography>
 			) : (
-				<div />
-			)}
+					<div />
+				)}
 		</>
 	);
 };
