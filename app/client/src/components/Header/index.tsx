@@ -1,9 +1,6 @@
 import {
-	Button,
-	FormControl,
 	Hidden,
 	MenuItem,
-	Select,
 	AppBar,
 	Toolbar,
 	Typography,
@@ -28,20 +25,6 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 
 	const handleClick = (event: React.MouseEvent<HTMLElement>) => {
 		setAnchorEl(event.currentTarget);
-	};
-
-	const handleContribute = () => {
-		window.open(
-			"https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
-		);
-	};
-
-	const handleGetStarted = () => {
-		window.open("https://docs.litmuschaos.io/docs/getstarted/");
-	};
-
-	const handleStars = () => {
-		window.open("https://github.com/litmuschaos/litmus");
 	};
 
 	const handleClose = () => {
@@ -71,8 +54,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 						<Hidden smDown>
 							<div className={classes.headerHomeDiv}>
 								<a
-									href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
-									target="#"
+								  href="#home"
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
@@ -84,8 +66,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 						<Hidden smDown>
 							<div className={classes.headerDiv}>
 								<a
-									href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
-									target="#"
+								  href="#speakers"
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
@@ -97,8 +78,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 						<Hidden smDown>
 							<div className={classes.headerDiv}>
 								<a
-									href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
-									target="#"
+									href="#cfp"
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
@@ -110,8 +90,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 						<Hidden smDown>
 							<div className={classes.headerDiv}>
 								<a
-									href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
-									target="#"
+								  href="#sponsors"
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
@@ -167,37 +146,52 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 								<MenuItem
 									className={classes.menuItem}
 									button={false}
-									key="contribute"
+									key="speakers"
 								>
 									<Typography
 										className={classes.contributeBtn}
-										onClick={handleContribute}
+										onClick={handleClose}
 									>
+									<a
+								  href="#speakers"
+									style={{ textDecoration: "none" }}
+								>
 										Speakers
+										</a>
 									</Typography>
 								</MenuItem>
 								<MenuItem
 									className={classes.menuItem}
 									button={false}
-									key="contribute"
+									key="cfp"
 								>
 									<Typography
 										className={classes.contributeBtn}
-										onClick={handleContribute}
+										onClick={handleClose}
 									>
+									<a
+									href="#cfp"
+									style={{ textDecoration: "none" }}
+								>
 										CFP
+										</a>
 									</Typography>
 								</MenuItem>
 								<MenuItem
 									className={classes.menuItem}
 									button={false}
-									key="contribute"
+									key="sponsors"
 								>
 									<Typography
 										className={classes.contributeBtn}
-										onClick={handleContribute}
+										onClick={handleClose}
 									>
+									<a
+								  href="#sponsors"
+									style={{ textDecoration: "none" }}
+								>
 										Sponsors
+										</a>
 									</Typography>
 								</MenuItem>
 							</Menu>

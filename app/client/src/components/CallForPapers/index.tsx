@@ -27,7 +27,7 @@ function CallForPapers() {
 							style={{ margin: "auto" }}
 							onClick={() => {
 								window.open(
-									"https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
+									"https://www.facebook.com/Chaos-Carnival-108128454412853"
 								);
 							}}
 						>

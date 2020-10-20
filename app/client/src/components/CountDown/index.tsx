@@ -42,11 +42,6 @@ const CountDown: React.FC<CountDownProps> = ({
 			{!over ? (
 				<Button
 					variant="outlined"
-					onClick={() => {
-						window.open(
-							"https://docs.litmuschaos.io/docs/getstarted/"
-						);
-					}}
 					className={classes.timerBtn}
 				>
 					{`${days}d ${hours}h ${minutes}m ${seconds}s`}

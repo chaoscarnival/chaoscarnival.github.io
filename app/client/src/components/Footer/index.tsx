@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
 									<Hidden smDown>
 							<div className={classes.headerHomeDiv}>
 								<a
-									href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
+									href="https://www.facebook.com/Chaos-Carnival-108128454412853"
 									target="#"
 									style={{ textDecoration: "none" }}
 								>
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
 							</div>
 							<div className={classes.headerDiv}>
 								<a
-									href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
+									href="https://twitter.com/chaoscarnivalio"
 									target="#"
 									style={{ textDecoration: "none" }}
 								>
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
 							</div>
 							<div className={classes.headerDiv}>
 								<a
-									href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
+									href="https://www.linkedin.com/company/chaos-carnival"
 									target="#"
 									style={{ textDecoration: "none" }}
 								>
@@ -64,8 +64,7 @@ const Footer: React.FC = () => {
 							</div>
 							<div className={classes.headerDiv}>
 								<a
-									href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
-									target="#"
+									href="#team"
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
@@ -81,7 +80,7 @@ const Footer: React.FC = () => {
 							<Hidden mdUp>
 							<div className={classes.headerDiv}>
 								<a
-									href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
+									href="https://www.facebook.com/Chaos-Carnival-108128454412853"
 									target="#"
 									style={{ textDecoration: "none" }}
 								>
@@ -90,7 +89,7 @@ const Footer: React.FC = () => {
 									</Typography>
 								</a>
 								<a
-									href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
+									href="https://twitter.com/chaoscarnivalio"
 									target="#"
 									style={{ textDecoration: "none" }}
 								>
@@ -103,7 +102,7 @@ const Footer: React.FC = () => {
 
 							<div className={classes.headerDiv}>
 								<a
-									href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
+									href="https://www.linkedin.com/company/chaos-carnival"
 									target="#"
 									style={{ textDecoration: "none" }}
 								>
@@ -112,8 +111,7 @@ const Footer: React.FC = () => {
 									</Typography>
 								</a>
 								<a
-									href="https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
-									target="#"
+									href="#team"
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>

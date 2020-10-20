@@ -44,7 +44,7 @@ export const useStyles = makeStyles((theme) => ({
 
 	mainCard: {
 		width: "250px",
-		height: "350px",
+		height: "360px",
 		borderRadius: 3,
 		overflow: "hidden",
 		fontSize: 16,
@@ -60,11 +60,11 @@ export const useStyles = makeStyles((theme) => ({
 		// Above tablet size
 		[theme.breakpoints.down("sm")]: {
 			width: "136px",
-		  height: "200px",
+		  height: "210px",
 		},
 		[theme.breakpoints.down("xs")]: {
 			width: "136px",
-		  height: "200px",
+		  height: "210px",
 		},
 	},
 	mainTitle: {
