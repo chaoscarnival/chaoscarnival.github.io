@@ -3,24 +3,21 @@ import { makeStyles } from "@material-ui/core/styles";
 // Component styles
 export const useStyles = makeStyles((theme) => ({
 	root: {
-		height: "62rem",
+		height: "50rem",
 		display: "flex",
 		flexDirection: "column",
     justifyContent: "center",
     background: 'url(/images/cfpbg.png)',
     backgroundColor: '#000',
     backgroundRepeat: 'no-repeat',
-    backgroundSize: '100%',
+    backgroundSize: '100% 100%',
     backgroundPosition: 'right',
-    [theme.breakpoints.down("sm")]: {
-      backgroundColor: "#000",
-      backgroundSize: '250%',
-      height: "69rem",
-    },
     [theme.breakpoints.down("xs")]: {
       backgroundColor: "#000",
-      backgroundSize: '300%',
-      height: "70rem",
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: '100% 100%',
+      height: "100vh",
+      background: 'linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.874483) 27.89%, rgba(0, 0, 0, 0) 92.18%), url(/images/callForPapers.png)',
     },
   },
   heading: {
