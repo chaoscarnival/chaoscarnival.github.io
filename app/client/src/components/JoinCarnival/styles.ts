@@ -160,9 +160,13 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	timerBtn: {
 		height: 46,
+		width: "fit-content",
 		marginTop: 12,
 		fontSize: "1.45rem",
 		fontWeight: 700,
+		overflow: "hidden",
+		textOverflow: "",
+		whiteSpace: "nowrap",
 		[theme.breakpoints.down("xs")]: {
 			textAlign: "left",
 		},

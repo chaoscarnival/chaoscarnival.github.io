@@ -117,7 +117,7 @@ const Footer: React.FC = () => {
 					</div>
 				</Toolbar>
 				<Typography className={classes.copyRightFont}>
-				Chaos Carnival is a registered trademark of Mayadata, Inc. © 2020 Mayadata, Inc. All Rights Reserved.
+				Chaos Carnival is a registered trademark of MayaData, Inc. © 2020 MayaData, Inc. All Rights Reserved.
 			</Typography>
 			</AppBar>
 		</div>
