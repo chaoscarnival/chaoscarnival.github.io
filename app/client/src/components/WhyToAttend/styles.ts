@@ -10,6 +10,7 @@ export const useStyles = makeStyles((theme) => ({
     background: 'linear-gradient(180deg, #070E23 56.2%, #000000 100%)',
     [theme.breakpoints.down("sm")]: {
       height: "153vh",
+      padding: "2rem",
     },
     [theme.breakpoints.down("xs")]: {
       height: "153vh",
@@ -87,24 +88,24 @@ export const useStyles = makeStyles((theme) => ({
     marginRight: '8vw',
     [theme.breakpoints.down("md")]: {
       marginLeft: '3vw',
-      marginRight: '3vw',
+      paddingRight: '3vw',
       width: '50vw',
 		},
     [theme.breakpoints.down("sm")]: {
       marginTop: '-12vh',
       marginLeft: '3vw',
-      marginRight: '3vw',
+      paddingRight: '3vw',
       width: '90vw',
 		},
 		[theme.breakpoints.down("xs")]: {
       marginTop: '-12vh',
       marginLeft: '3vw',
-      marginRight: '3vw',
+      paddingRight: '3vw',
       width: '90vw',
     },
   },
   infoText: {
-    fontSize: '1rem',
+    fontSize: '18px',
     textAlign: 'left',
   },
   advantages: {

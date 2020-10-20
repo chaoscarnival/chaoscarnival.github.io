@@ -14,6 +14,7 @@ export const useStyles = makeStyles((theme) => ({
 		margin: "0 auto",
 		display: "flex",
 		flexDirection: "row",
+		justifyContent: "center",
 		maxWidth: "1000px",
 		[theme.breakpoints.up("xl")]: {
 			maxWidth: "1100px",
@@ -36,11 +37,12 @@ export const useStyles = makeStyles((theme) => ({
 	dateDiv: {
 		display: "flex",
 		flexDirection: "column",
-		marginTop: 80,
+		paddingTop:"4rem",
 		[theme.breakpoints.down("sm")]: {
 			marginTop: 20,
 			marginLeft: 35,
 			marginRight: 35,
+			paddingTop:"0rem",
 		},
 	},
 	regNow: {
@@ -61,7 +63,7 @@ export const useStyles = makeStyles((theme) => ({
 		fontWeight: 800,
 		fontSize: 100,
 		fontStyle: "italic",
-		marginTop: 80,
+		marginTop: "2rem",
 	},
 	joinTextSM: {
 		fontWeight: 800,
@@ -81,8 +83,10 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "column",
 		width: "450px",
+		paddingTop:"2.3rem",
 		[theme.breakpoints.down("xs")]: {
 			width: "90%",
+			paddingTop:"0rem",
 		},
 	},
 	descText: {
@@ -92,7 +96,6 @@ export const useStyles = makeStyles((theme) => ({
 	logoImg: {
 		height: "200px",
 		width: "400px",
-		marginTop: 50,
 		[theme.breakpoints.up("xl")]: {
 			height: "200px",
 			width: "400px",
@@ -135,7 +138,7 @@ export const useStyles = makeStyles((theme) => ({
 		width: "12.5rem",
 		border: "3px solid #FE1C65",
 		color: "#FFFFFF",
-		marginTop: 30,
+		marginTop: 15,
 		[theme.breakpoints.down("xl")]: {
 			height: "3.5rem",
 			width: "12.5rem",

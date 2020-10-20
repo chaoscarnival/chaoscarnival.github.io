@@ -23,7 +23,7 @@ function HomePage() {
 				<MainHeader inHomePage={true} />
 				<div className={classes.root}>
 					<div className={classes.mainDiv}>
-					<a id="home"></a>
+						<a id="home"></a>
 						<div className={classes.headerDiv}>
 							<div style={{ margin: "auto" }}>
 								<img
@@ -33,66 +33,66 @@ function HomePage() {
 								/>
 							</div>
 							<div style={{ margin: "auto" }}>
-							<Typography
-								className={classes.mainHeader}
-								style={{ margin: "auto" }}
-							>
-								A global two-day virtual conference
-							</Typography>
-
-							<Typography
-								className={classes.mainHeader}
-								style={{ margin: "auto" }}
-							>
-								for Cloud Native Chaos Engineering
-							</Typography>
-							</div>
-							
-							<div style={{ margin: "auto" }}>
-							<Typography
-								className={classes.headerDesc}
-								style={{ margin: "auto" }}
-							>
-								January 8-9, 2021
-							</Typography>
-							</div>
-
-							<div style={{ margin: "auto" }}>
-							<Button
-								className={classes.registerButton}
-								color="primary"
-								variant="contained"
-								style={{ margin: "auto" }}
-								onClick={() => {
-									window.open(
-										"https://join.slack.com/t/chaoscarnival/shared_invite/zt-ic63h58h-C_G5IwZ1EwhCtDcSpEEd0w"
-									);
-								}}
-							>
 								<Typography
-									className={classes.registerText}
-									style={{ textTransform: "none" }}
+									className={classes.mainHeader}
+									style={{ margin: "auto" }}
 								>
-									<b>Register Now for Free</b>
-								</Typography>
-							</Button>
+									A global two-day virtual conference
+							</Typography>
+
+								<Typography
+									className={classes.mainHeader}
+									style={{ margin: "auto" }}
+								>
+									for Cloud Native Chaos Engineering
+							</Typography>
+							</div>
+
+							<div style={{ margin: "auto" }}>
+								<Typography
+									className={classes.headerDesc}
+									style={{ margin: "auto" }}
+								>
+									January 8-9, 2021
+							</Typography>
+							</div>
+
+							<div style={{ margin: "auto" }}>
+								<Button
+									className={classes.registerButton}
+									color="primary"
+									variant="contained"
+									style={{ margin: "auto", padding: "2rem", marginTop: "2rem", width: "fit-content" }}
+									onClick={() => {
+										window.open(
+											"https://join.slack.com/t/chaoscarnival/shared_invite/zt-ic63h58h-C_G5IwZ1EwhCtDcSpEEd0w"
+										);
+									}}
+								>
+									<Typography
+										className={classes.registerText}
+										style={{ textTransform: "none" }}
+									>
+										<b>Register&nbsp;Now&nbsp;for&nbsp;Free</b>
+									</Typography>
+								</Button>
 							</div>
 						</div>
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
-							<WhyToAttend />
+						<WhyToAttend />
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
 						<a id="cfp"></a>
-							<CallForPapers />
+						<CallForPapers />
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
 						<div className={classes.speakersDiv}>
-						<a id="speakers"></a>
-						<Speakers/>
+							<a id="speakers"></a>
+							<Speakers />
 						</div>
 					</div>
 
@@ -102,12 +102,12 @@ function HomePage() {
 				</div>
 
 				<div style={{ marginTop: "auto" }}>
-				<a id="sponsors"></a>
+					<a id="sponsors"></a>
 					<Sponsors />
 				</div>
 
 				<div style={{ marginTop: "auto" }}>
-					<Footer /> 
+					<Footer />
 				</div>
 			</div>
 		</div>

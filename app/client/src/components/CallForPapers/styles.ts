@@ -3,21 +3,21 @@ import { makeStyles } from "@material-ui/core/styles";
 // Component styles
 export const useStyles = makeStyles((theme) => ({
 	root: {
-		height: "50rem",
+		height: "60rem",
 		display: "flex",
 		flexDirection: "column",
     justifyContent: "center",
     background: 'url(/images/cfpbg.png)',
     backgroundColor: '#000',
     backgroundRepeat: 'no-repeat',
-    backgroundSize: '100% 100%',
+    backgroundSize: '100%',
     backgroundPosition: 'right',
     [theme.breakpoints.down("xs")]: {
       backgroundColor: "#000",
       backgroundRepeat: 'no-repeat',
       backgroundSize: '100% 100%',
       height: "100vh",
-      background: 'linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.874483) 27.89%, rgba(0, 0, 0, 0) 92.18%), url(/images/callForPapers.png)',
+      background: 'linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.874483) 37.89%, rgba(0, 0, 0, 0) 133.18%), url(/images/callForPapers.png)',
     },
   },
   heading: {
@@ -36,8 +36,8 @@ export const useStyles = makeStyles((theme) => ({
   callForPapers: {
     width: '80vw',
     position:"absolute",
-    marginTop: '25vh',
-    marginLeft: '-8vw',
+    marginTop: '22vh',
+    marginLeft: '-4vw',
     [theme.breakpoints.down("sm")]: {
       width: '100vw',
       marginTop: '3vh',
@@ -130,7 +130,7 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   infoText: {
-    fontSize: '1rem',
+    fontSize: '18px',
     textAlign: 'left',
     color: '#8193B2',
   },
@@ -140,28 +140,30 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(5),
     marginBottom: theme.spacing(5),
   },
-  cfpButton: {
+ 	cfpButton: {
 		height: '3.5rem',
-		width: '12rem',
+		width: '18.5rem',
 		[theme.breakpoints.down("xl")]: {
 			height: '3.5rem',
-		width: '15rem',
+		width: '18.5rem',
 		},
 		[theme.breakpoints.down("lg")]: {
 			height: '3rem',
-		width: '12rem',
+		width: '16.5rem',
 		},
 		[theme.breakpoints.down("md")]: {
 			height: '2.5rem',
-		width: '10rem',
+		width: '14.5rem',
 		},
 		[theme.breakpoints.down("sm")]: {
+			marginTop: "20vh",
 			height: '2rem',
-		width: '8.5rem',
+		width: '9.75rem',
 		},
 		[theme.breakpoints.down("xs")]: {
+			marginTop: "20vh",
 			height: '2rem',
-		width: '6.5rem',
+		width: '7.5rem',
 		},
 	},
 	cfpText:{

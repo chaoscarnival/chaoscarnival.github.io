@@ -7,6 +7,7 @@ import {
 	IconButton,
 	Menu,
 	Fade,
+	Button,
 } from "@material-ui/core";
 import React from "react";
 import useStyles from "./styles";
@@ -54,7 +55,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 						<Hidden smDown>
 							<div className={classes.headerHomeDiv}>
 								<a
-									href={inHomePage? "#home" : "https://chaoscarnival.io"}
+									href={inHomePage ? "#home" : "https://chaoscarnival.io"}
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
@@ -66,7 +67,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 						<Hidden smDown>
 							<div className={classes.headerDiv}>
 								<a
-								  href={inHomePage? "#speakers" : "https://chaoscarnival.io/#speakers"}
+									href={inHomePage ? "#speakers" : "https://chaoscarnival.io/#speakers"}
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
@@ -78,7 +79,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 						<Hidden smDown>
 							<div className={classes.headerDiv}>
 								<a
-								  href={inHomePage? "#cfp" : "https://chaoscarnival.io/#cfp"}
+									href={inHomePage ? "#cfp" : "https://chaoscarnival.io/#cfp"}
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
@@ -90,7 +91,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 						<Hidden smDown>
 							<div className={classes.headerDiv}>
 								<a
-								  href={inHomePage? "#sponsors" : "https://chaoscarnival.io/#sponsors"}
+									href={inHomePage ? "#sponsors" : "https://chaoscarnival.io/#sponsors"}
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
@@ -128,6 +129,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										width: "100%",
 										backgroundColor: "#FFFFFF",
 										borderRadius: 4,
+										justifyContent: "center",
 									},
 								}}
 							>
@@ -146,17 +148,52 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 								<MenuItem
 									className={classes.menuItem}
 									button={false}
+									key="logo"
+									style={{ justifyContent: "center" }}
+								>
+									<img
+										src={
+											inHomePage
+												? "/icons/chaoscarnival-header-dark.svg"
+												: "/icons/chaoscarnival-header.svg"
+										}
+										style={{ margin: 0 }}
+										alt="logo"
+										className={classes.mainLogo}
+										onClick={() => history.push("/")}
+									/>
+								</MenuItem>
+								<MenuItem
+									className={classes.menuItem}
+									button={false}
+									key="home"
+								>
+									<Typography
+										className={classes.contributeBtn}
+										onClick={handleClose}
+									>
+										<a
+											href={inHomePage ? "#speakers" : "https://chaoscarnival.io/#home"}
+											style={{ textDecoration: "none" }}
+										>
+											Home
+										</a>
+									</Typography>
+								</MenuItem>
+								<MenuItem
+									className={classes.menuItem}
+									button={false}
 									key="speakers"
 								>
 									<Typography
 										className={classes.contributeBtn}
 										onClick={handleClose}
 									>
-									<a
-								  href={inHomePage? "#speakers" : "https://chaoscarnival.io/#speakers"}
-									style={{ textDecoration: "none" }}
-								>
-										Speakers
+										<a
+											href={inHomePage ? "#speakers" : "https://chaoscarnival.io/#speakers"}
+											style={{ textDecoration: "none" }}
+										>
+											Speakers
 										</a>
 									</Typography>
 								</MenuItem>
@@ -169,11 +206,11 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										className={classes.contributeBtn}
 										onClick={handleClose}
 									>
-									<a
-									href={inHomePage? "#cfp" : "https://chaoscarnival.io/#cfp"}
-									style={{ textDecoration: "none" }}
-								>
-										CFP
+										<a
+											href={inHomePage ? "#cfp" : "https://chaoscarnival.io/#cfp"}
+											style={{ textDecoration: "none" }}
+										>
+											CFP
 										</a>
 									</Typography>
 								</MenuItem>
@@ -186,13 +223,40 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										className={classes.contributeBtn}
 										onClick={handleClose}
 									>
-									<a
-									href={inHomePage? "#sponsors" : "https://chaoscarnival.io/#sponsors"}
-									style={{ textDecoration: "none" }}
-								>
-										Sponsors
+										<a
+											href={inHomePage ? "#sponsors" : "https://chaoscarnival.io/#sponsors"}
+											style={{ textDecoration: "none" }}
+										>
+											Sponsors
 										</a>
 									</Typography>
+								</MenuItem>
+								<MenuItem
+									className={classes.menuItem}
+									button={false}
+									key="timer"
+									style={{ justifyContent: "center", color: "#000", margin: 0 }}
+								>
+									<div style={{ margin: "auto" }}>
+										<Button
+											className={classes.registerButton}
+											color="primary"
+											variant="contained"
+											style={{ margin: "auto", padding: "2rem", marginTop: "2rem", width: "fit-content" }}
+											onClick={() => {
+												window.open(
+													"https://join.slack.com/t/chaoscarnival/shared_invite/zt-ic63h58h-C_G5IwZ1EwhCtDcSpEEd0w"
+												);
+											}}
+										>
+											<Typography
+												className={classes.registerText}
+												style={{ textTransform: "none" }}
+											>
+												<b>Register&nbsp;Now&nbsp;for&nbsp;Free</b>
+											</Typography>
+										</Button>
+									</div>
 								</MenuItem>
 							</Menu>
 						</div>
