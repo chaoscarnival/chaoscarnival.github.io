@@ -8,7 +8,7 @@ import WhyToAttend from "../../components/WhyToAttend";
 import Sponsors from "../../components/Sponsors";
 import JoinCarnival from "../../components/JoinCarnival";
 import CallForPapers from "../../components/CallForPapers";
-import { Speakers } from '../../components/Speakers';
+import { Speakers } from "../../components/Speakers";
 
 function HomePage() {
 	const classes = useStyles();
@@ -38,14 +38,14 @@ function HomePage() {
 									style={{ margin: "auto" }}
 								>
 									A global two-day virtual conference
-							</Typography>
+								</Typography>
 
 								<Typography
 									className={classes.mainHeader}
 									style={{ margin: "auto" }}
 								>
 									for Cloud Native Chaos Engineering
-							</Typography>
+								</Typography>
 							</div>
 
 							<div style={{ margin: "auto" }}>
@@ -54,7 +54,7 @@ function HomePage() {
 									style={{ margin: "auto" }}
 								>
 									January 8-9, 2021
-							</Typography>
+								</Typography>
 							</div>
 
 							<div style={{ margin: "auto" }}>
@@ -62,7 +62,12 @@ function HomePage() {
 									className={classes.registerButton}
 									color="primary"
 									variant="contained"
-									style={{ margin: "auto", padding: "2rem", marginTop: "2rem", width: "fit-content" }}
+									style={{
+										margin: "auto",
+										padding: "2rem",
+										marginTop: "2rem",
+										width: "fit-content",
+									}}
 									onClick={() => {
 										window.open(
 											"https://join.slack.com/t/chaoscarnival/shared_invite/zt-ic63h58h-C_G5IwZ1EwhCtDcSpEEd0w"
@@ -73,7 +78,9 @@ function HomePage() {
 										className={classes.registerText}
 										style={{ textTransform: "none" }}
 									>
-										<b>Register&nbsp;Now&nbsp;for&nbsp;Free</b>
+										<b>
+											Register&nbsp;Now&nbsp;for&nbsp;Free
+										</b>
 									</Typography>
 								</Button>
 							</div>
@@ -89,7 +96,7 @@ function HomePage() {
 						<CallForPapers />
 					</div>
 
-					<div style={{ marginTop: "auto" }}>
+					<div>
 						<div className={classes.speakersDiv}>
 							<a id="speakers"></a>
 							<Speakers />
