@@ -26,11 +26,7 @@ const JoinCarnival = () => {
 						className={classes.logoImg}
 					/>
 					<Typography className={classes.descText}>
-						Aliqua id fugiat nostrud irure ex duis ea quis id quis
-						ad et. Sunt qui esse pariatur duis deserunt mAliqua id
-						fugiat nostrud irure ex duis ea quis id quis ad et. Sunt
-						qui esse pariatur duis deserunt mollit dolore cillum
-						minim tempor enim.
+					This is the first episode of ChaosCarnival and it will be fun. Chaos engineering practitioners, experts and enthusiasts from all over the global are joining this carnival to share and learn.
 					</Typography>
 					<div className={classes.regNow}>
 						<Button
@@ -40,7 +36,7 @@ const JoinCarnival = () => {
 							style={{ margin: "auto" }}
 							onClick={() => {
 								window.open(
-									"https://www.facebook.com/Chaos-Carnival-108128454412853"
+									"https://join.slack.com/t/chaoscarnival"
 								);
 							}}
 						>
@@ -59,16 +55,16 @@ const JoinCarnival = () => {
 					<Typography className={classes.textDay}>
 						Day 1 - Friday
 					</Typography>
-					<Typography className={classes.textDate}>
+					<Typography className={classes.textDate} style={{ marginBottom: '2rem'}}>
 						January 8th, 2021
 					</Typography>
 					<Typography className={classes.textDay}>
 						Day 2 - Saturday
 					</Typography>
-					<Typography className={classes.textDate}>
+					<Typography className={classes.textDate} style={{ marginBottom: '2rem'}}>
 						January 9th, 2021
 					</Typography>
-					<Typography style={{ textAlign: "left" }}>
+					<Typography className={classes.textDay} style={{ textAlign: "left", fontWeight: 700, marginBottom: '1rem' }}>
 						8AM-5PM EST
 					</Typography>
 					<Button
@@ -77,7 +73,7 @@ const JoinCarnival = () => {
 						variant="outlined"
 						onClick={() => {
 							window.open(
-								"https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
+								"https://calendar.google.com/calendar/r/eventedit?text=Chaos+Carnival&dates=20210107T230000Z/20210109T030000Z&details=For+updates,+Join:+https://join.slack.com/t/chaoscarnival"
 							);
 						}}
 					>

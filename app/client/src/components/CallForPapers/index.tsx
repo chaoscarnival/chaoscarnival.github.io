@@ -27,7 +27,7 @@ function CallForPapers() {
 							style={{ margin: "auto" }}
 							onClick={() => {
 								window.open(
-									"https://www.facebook.com/Chaos-Carnival-108128454412853"
+									"https://join.slack.com/t/chaoscarnival"
 								);
 							}}
 						>
