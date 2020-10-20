@@ -54,7 +54,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 						<Hidden smDown>
 							<div className={classes.headerHomeDiv}>
 								<a
-								  href="#home"
+									href={inHomePage? "#home" : "https://chaoscarnival.io"}
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
@@ -66,7 +66,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 						<Hidden smDown>
 							<div className={classes.headerDiv}>
 								<a
-								  href="#speakers"
+								  href={inHomePage? "#speakers" : "https://chaoscarnival.io/#speakers"}
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
@@ -78,7 +78,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 						<Hidden smDown>
 							<div className={classes.headerDiv}>
 								<a
-									href="#cfp"
+								  href={inHomePage? "#cfp" : "https://chaoscarnival.io/#cfp"}
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
@@ -90,7 +90,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 						<Hidden smDown>
 							<div className={classes.headerDiv}>
 								<a
-								  href="#sponsors"
+								  href={inHomePage? "#sponsors" : "https://chaoscarnival.io/#sponsors"}
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
@@ -153,7 +153,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										onClick={handleClose}
 									>
 									<a
-								  href="#speakers"
+								  href={inHomePage? "#speakers" : "https://chaoscarnival.io/#speakers"}
 									style={{ textDecoration: "none" }}
 								>
 										Speakers
@@ -170,7 +170,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										onClick={handleClose}
 									>
 									<a
-									href="#cfp"
+									href={inHomePage? "#cfp" : "https://chaoscarnival.io/#cfp"}
 									style={{ textDecoration: "none" }}
 								>
 										CFP
@@ -187,7 +187,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										onClick={handleClose}
 									>
 									<a
-								  href="#sponsors"
+									href={inHomePage? "#sponsors" : "https://chaoscarnival.io/#sponsors"}
 									style={{ textDecoration: "none" }}
 								>
 										Sponsors
