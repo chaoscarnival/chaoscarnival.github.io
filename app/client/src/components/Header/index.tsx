@@ -44,8 +44,8 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 							<img
 								src={
 									inHomePage
-										? "/icons/chaoscarnival-header.svg"
-										: "/icons/chaoscarnival-header-dark.svg"
+										? "/icons/chaoscarnival-header.png"
+										: "/icons/chaoscarnival-header-dark.png"
 								}
 								alt=" header"
 								className={classes.mainLogo}
@@ -114,7 +114,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 								onClick={handleClick}
 								className={classes.menu}
 							>
-								<img src="/icons/menu.svg" alt="menu" />
+								<img src={inHomePage ? "/icons/menu.svg" : "/icons/menud.svg"} alt="menu" />
 							</IconButton>
 							<Menu
 								anchorEl={anchorEl}
@@ -154,8 +154,8 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 									<img
 										src={
 											inHomePage
-												? "/icons/chaoscarnival-header-dark.svg"
-												: "/icons/chaoscarnival-header.svg"
+												? "/icons/chaoscarnival-header-dark.png"
+												: "/icons/chaoscarnival-header-dark.png"
 										}
 										style={{ margin: 0 }}
 										alt="logo"

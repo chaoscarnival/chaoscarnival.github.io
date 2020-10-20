@@ -34,7 +34,7 @@ function SponsorshipPage() {
 						</div>
 						<div className={classes.imgDiv}>
 							<img
-								src="icons/chaos-carnival-logo.svg"
+								src="icons/chaos-carnival-logo.png"
 								alt="Chaos Carnival Logo"
 								className={classes.headerImg}
 							/>
@@ -50,7 +50,7 @@ function SponsorshipPage() {
 				</div>
 				<div style={{ marginTop: "auto" }}>
 					<Footer />
-				</div> 
+				</div>
 			</div>
 		</div>
 	);

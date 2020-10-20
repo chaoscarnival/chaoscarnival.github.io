@@ -9,7 +9,7 @@ const imgLink = [
 		link: "https://mayadata.io/",
 	},
 	{
-		img: "/icons/intuit.svg",
+		img: "/icons/intuit.png",
 		alt: "intuit",
 		link: "https://www.intuit.com/",
 	},

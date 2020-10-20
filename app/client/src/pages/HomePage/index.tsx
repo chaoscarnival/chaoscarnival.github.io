@@ -27,7 +27,7 @@ function HomePage() {
 						<div className={classes.headerDiv}>
 							<div style={{ margin: "auto" }}>
 								<img
-									src="icons/chaoscarnival-header.svg"
+									src="icons/chaoscarnival-header.png"
 									alt="Chaos Bird Experiment"
 									className={classes.logoImg}
 								/>

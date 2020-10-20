@@ -9,16 +9,14 @@ export function Speakers() {
 
 	return (
 		<div className={classes.root}>
-		<div className={classes.heading}>
-		<div className={classes.speakers}>
-		<Typography className={classes.ourExcitingText}>Our Exciting</Typography>
-		<div className={classes.speakersBackground}>
-		<Typography className={classes.speakersText}>Speakers</Typography>
-		</div>
-		</div>
-		</div>
-		<div className={classes.speakerRoot}>
-			{SpeakerData.map((speaker) => (
+			<div className={classes.heading}>
+				<div className={classes.speakers}>
+					<Typography className={classes.ourExcitingText}>Our Exciting</Typography>
+					<Typography className={classes.speakersText}>Speakers</Typography>
+				</div>
+			</div>
+			<div className={classes.speakerRoot}>
+				{SpeakerData.map((speaker) => (
 					<CustomCard
 						key={speaker.id}
 						id={speaker.id}
@@ -27,7 +25,7 @@ export function Speakers() {
 						urlToIcon={speaker.urlToIcon}
 					/>
 				))}
+			</div>
 		</div>
-		</div>		
 	);
 }

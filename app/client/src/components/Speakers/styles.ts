@@ -8,12 +8,14 @@ export const useStyles = makeStyles((theme: Theme) => ({
 		display: "flex",
 		flexDirection: "column",
     justifyContent: "center",
-    [theme.breakpoints.down("sm")]: {
-      marginTop: '40vh',
-		},
-		[theme.breakpoints.down("xs")]: {
-      marginTop: '40vh',
-    },
+    // alignContent: "center",
+    alignItems: "flex-start",
+    // [theme.breakpoints.down("sm")]: {
+    //   marginTop: '40vh',
+		// },
+		// [theme.breakpoints.down("xs")]: {
+    //   marginTop: '40vh',
+    // },
 	},
 	speakerRoot: {
 		display: "flex",
@@ -21,107 +23,110 @@ export const useStyles = makeStyles((theme: Theme) => ({
 		flexWrap: "wrap",
 		justifyContent: "center",
 		alignItems: "center",
-		marginTop: '27vh',
+		marginTop: '7vh',
 		marginLeft: "12vw",
     marginRight: "12vw",
-    [theme.breakpoints.up("xl")]: {
-		marginLeft: "10vw",
-    marginRight: "9vw",
-    },
-    [theme.breakpoints.down("sm")]: {
-			marginLeft: "2vw",
-    marginRight: "2vw",
-    marginTop: '-10vh',
+    // [theme.breakpoints.up("xl")]: {
+		// marginLeft: "10vw",
+    // marginRight: "9vw",
+    // },
+    [theme.breakpoints.down("md")]: {
+			marginLeft: "0vw",
+    marginRight: "0vw",
+    // marginTop: '-10vh',
 		},
-		[theme.breakpoints.down("xs")]: {
-			marginLeft: "2vw",
-    marginRight: "2vw",
-    marginTop: '-10vh',
-    },
 	},
 	heading: {
     display: "flex",
     flexDirection: "row",
-    justifyContent: "center",
+    // justifyContent: "center",
     position:"relative",
+    width: "100%",
+    padding: "0 26rem",
     marginBottom: theme.spacing(3),
+		[theme.breakpoints.down("md")]: {
+      padding: "0 16rem",
+		},
 		[theme.breakpoints.down("sm")]: {
-			flexDirection: "column",
+      padding: "0 5rem",
 		},
 		[theme.breakpoints.down("xs")]: {
-			flexDirection: "column",
-    },
+      padding: "0 4rem",
+		},
+		// [theme.breakpoints.down("xs")]: {
+		// 	flexDirection: "column",
+    // },
   },
   speakers: {
-    width: '40vw',
-    position:"absolute",
-    marginTop: '40vh',
-    marginLeft: '-52vw',
-    [theme.breakpoints.down("md")]: {
-      marginLeft: '-52vw',
-		},
-    [theme.breakpoints.down("sm")]: {
-      width: '100vw',
-      marginTop: '25vh',
-      marginLeft: '3vw',
-    },
-    [theme.breakpoints.down("xs")]: {
-      width: '100vw',
-      marginTop: '25vh',
-      marginLeft: '3vw',
-    },
+    // width: '40vw',
+    // position:"absolute",
+    // marginTop: '40vh',
+    // marginLeft: '-52vw',
+    // [theme.breakpoints.down("md")]: {
+    //   marginLeft: '-52vw',
+		// },
+    // [theme.breakpoints.down("sm")]: {
+    //   width: '100vw',
+    //   marginTop: '25vh',
+    //   marginLeft: '3vw',
+    // },
+    // [theme.breakpoints.down("xs")]: {
+    //   width: '100vw',
+    //   marginTop: '25vh',
+    //   marginLeft: '3vw',
+    // },
   },
   ourExcitingText: {
     fontWeight: 700, 
-    marginTop: '-40vh',
+    // marginTop: '-40vh',
     textAlign: 'left',
     fontSize: '70px',
-		marginLeft: '10vw',
+		// marginLeft: '10vw',
 		color: '#262626',
     [theme.breakpoints.down("md")]: {
       fontSize: '50px',
-      marginLeft: '8vw',
+      // marginLeft: '8vw',
 		},
       [theme.breakpoints.down("sm")]: {
         fontSize: '50px',
-        marginLeft: '3vw',
+        // marginLeft: '3vw',
       },
       [theme.breakpoints.down("xs")]: {
         fontSize: '40px',
-        marginLeft: '3vw',
+        // marginLeft: '3vw',
       },
 	},
-	speakersBackground: {
-    width: '32vw',
-    [theme.breakpoints.down("md")]: {
-      width: '32vw',
-		},
-      [theme.breakpoints.down("sm")]: {
-        width: '45vw',
-      },
-      [theme.breakpoints.down("xs")]: {
-        width: '55vw',
-      },
-	},
+	// speakersBackground: {
+  //   width: '32vw',
+  //   [theme.breakpoints.down("md")]: {
+  //     width: '32vw',
+	// 	},
+  //     [theme.breakpoints.down("sm")]: {
+  //       width: '45vw',
+  //     },
+  //     [theme.breakpoints.down("xs")]: {
+  //       width: '55vw',
+  //     },
+	// },
   speakersText: {
 		fontWeight: 700, 
 		background: 'linear-gradient(270.88deg, #FFDC7E 3.66%, #FF7C71 100.95%)', 
 		borderRadius: '1rem',
     fontSize: '70px',
     textAlign: 'center',
-		marginLeft: '10vw',
+		// marginLeft: '10vw',
     color: '#000000',
     [theme.breakpoints.down("md")]: {
       fontSize: '50px',
-      marginLeft: '8vw',
+      // marginLeft: '8vw',
 		},
     [theme.breakpoints.down("sm")]: {
       fontSize: '50px',
-      marginLeft: '3vw',
+      // marginLeft: '3vw',
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: '40px',
-      marginLeft: '3vw',
+      // marginLeft: '3vw',
     },
   },
 }));

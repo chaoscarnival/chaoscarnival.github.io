@@ -21,8 +21,8 @@ const JoinCarnival = () => {
 				</Hidden>
 				<div className={classes.imageDiv}>
 					<img
-						src="icons/chaoscarnival-header.svg"
-						alt="Chaos Bird Experiment"
+						src="icons/chaoscarnival-header.png"
+						alt="chaos carnival logo"
 						className={classes.logoImg}
 					/>
 					<Typography className={classes.descText}>
