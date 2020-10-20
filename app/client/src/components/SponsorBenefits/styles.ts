@@ -47,9 +47,15 @@ export const useStyles = makeStyles((theme) => ({
 		background: "linear-gradient(270.8deg, #FFDC7E 8.38%, #FF7C71 96.25%)",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
+		fontSize: "52px",
 		[theme.breakpoints.down("sm")]: {
 			width: "100%",
-			paddingLeft: 10,
+			paddingLeft: 0,
+			paddingBottom: 20,
+			fontSize: "42px",
+			textAlign: "center",
+		},
+		[theme.breakpoints.down("xs")]: {
 			textAlign: "center",
 		},
 	},
@@ -84,7 +90,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	sponsorDataText: {
-		width: 600,
+		width: 400,
 		textAlign: "left",
 		fontSize: 18,
 		marginLeft: 30,

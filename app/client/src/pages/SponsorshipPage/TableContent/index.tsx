@@ -140,11 +140,13 @@ export default function CustomizedTables() {
 								borderBottomLeftRadius: 10,
 							}}
 						>
-							Price (ex-VAT)
+							Sponsorship Price
 						</StyledTableCell>
-						<StyledTableCell align="center">$10000</StyledTableCell>
-						<StyledTableCell align="center">$5000</StyledTableCell>
-						<StyledTableCell align="center">$2000</StyledTableCell>
+						<StyledTableCell align="center">
+							$10,000
+						</StyledTableCell>
+						<StyledTableCell align="center">$5,000</StyledTableCell>
+						<StyledTableCell align="center">$2,000</StyledTableCell>
 						<StyledTableCell
 							style={{
 								borderTopRightRadius: 10,
@@ -152,7 +154,7 @@ export default function CustomizedTables() {
 							}}
 							align="center"
 						>
-							$1000
+							$1,000
 						</StyledTableCell>
 					</TableRow>
 				</TableFooter>

@@ -1,7 +1,7 @@
 export const TableData = [
 	{
 		id: 0,
-		detail: "Number Available",
+		detail: "Numbers Available",
 		platinum: "2",
 		gold: "5",
 		silver: "10",
@@ -17,7 +17,7 @@ export const TableData = [
 	},
 	{
 		id: 2,
-		detail: "5 minute sponsor pitch on the main live stream",
+		detail: "5-minute sponsor pitch on the main live stream",
 		platinum: "Yes",
 		gold: "No",
 		silver: "No",
