@@ -25,7 +25,7 @@ function HomePage() {
 				<MainHeader inHomePage={true} />
 				<div className={classes.root}>
 					<div className={classes.mainDiv}>
-						{/* Header component */}
+					<a id="home"></a>
 						<div className={classes.headerDiv}>
 							<div style={{ margin: "auto" }}>
 								<img
@@ -63,7 +63,7 @@ function HomePage() {
 								style={{ margin: "auto" }}
 								onClick={() => {
 									window.open(
-										"https://github.com/litmuschaos/chaos-charts/blob/master/CONTRIBUTING.md"
+										"https://join.slack.com/t/chaoscarnival"
 									);
 								}}
 							>
@@ -90,6 +90,7 @@ function HomePage() {
 
 					<div style={{ marginTop: "auto" }}>
 						<div className={classes.callForPapers}>
+						<a id="cfp"></a>
 							<CallForPapers />
 						</div>
 					</div>
@@ -97,17 +98,18 @@ function HomePage() {
 					<div style={{ marginTop: "auto" }}>
 
 						<div className={classes.speakersDiv}>
+						<a id="speakers"></a>
 						<Speakers/>
 						</div>
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
-						{/* JoinTheChaosCarnival Div */}
 						<JoinCarnival />
 					</div>
 				</div>
 
 				<div style={{ marginTop: "auto" }}>
+				<a id="sponsors"></a>
 					<Sponsors />
 				</div>
 

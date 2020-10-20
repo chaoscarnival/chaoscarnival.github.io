@@ -1,8 +1,8 @@
 .scrollbar {
 	overflow-y: auto;
 	overflow-x: hidden;
-	/*-ms-overflow-style: none;  /* IE and Edge */
-  /*scrollbar-width: none;  /* Firefox */
+	*-ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 .scrollbar-primary {
 	scrollbar-color: linear-gradient(180deg,#ff8a00,#e52e71) transparent;
@@ -10,7 +10,7 @@
 .scrollbar-primary::-webkit-scrollbar {
 	width: 0.5em;
 	background-color: transparent;
-	/*display: none;*/
+	display: none;
 }
 .scrollbar-primary::-webkit-scrollbar-track {
 	width: 0.5em;

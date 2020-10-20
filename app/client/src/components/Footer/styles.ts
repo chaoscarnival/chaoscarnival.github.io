@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 	mainLogo: {
 		width: 165,
 		height: 65,
-		marginLeft: 110,
+		marginLeft: 30,
 		marginRight: 30,
 		cursor: "pointer",
 		[theme.breakpoints.up("xl")]: {
