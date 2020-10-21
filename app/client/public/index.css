@@ -1,5 +1,14 @@
 body>#root>div {
     height: 100vh;
     scroll-behavior: smooth !important;
-    font-family: sans-serif, GT Walsheim Pro !important;
+    font-family: "GT Walsheim Pro" !important;
 }
+
+
+/* html * {
+    font-family: "GT Walsheim Pro" !important;
+}
+
+html>*p {
+    font-family: "GT Walsheim Pro" !important;
+} */

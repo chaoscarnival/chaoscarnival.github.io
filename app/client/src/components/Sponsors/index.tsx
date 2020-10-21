@@ -37,7 +37,7 @@ const Sponsor = () => {
 					<div className={classes.sponsorImgDiv}>
 						{imgLink.map((sponsor) => (
 							<div style={{ marginRight: 0 }}>
-								<a href={sponsor.link} target="_blank">
+								<a href={sponsor.link} target="_blank" rel="noopener noreferrer">
 									<img
 										src={sponsor.img}
 										alt={sponsor.alt}

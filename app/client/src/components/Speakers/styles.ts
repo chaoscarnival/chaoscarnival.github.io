@@ -36,22 +36,25 @@ export const useStyles = makeStyles((theme: Theme) => ({
     // marginTop: '-10vh',
 		},
 	},
-	heading: {
+	headingspeaker: {
     display: "flex",
     flexDirection: "row",
     // justifyContent: "center",
     position:"relative",
-    width: "100%",
-    padding: "0 26rem",
+    width: "70%",
+    padding: "0 1rem",
+    alignSelf:"center",
     marginBottom: theme.spacing(3),
 		[theme.breakpoints.down("md")]: {
-      padding: "0 16rem",
+      // padding: "0 16rem",
+      width: "80%",
 		},
 		[theme.breakpoints.down("sm")]: {
-      padding: "0 5rem",
+      // padding: "0 5rem",
+      // width: "90%",
 		},
 		[theme.breakpoints.down("xs")]: {
-      padding: "0 4rem",
+      // padding: "0 4rem",
 		},
 		// [theme.breakpoints.down("xs")]: {
 		// 	flexDirection: "column",

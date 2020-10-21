@@ -1,4 +1,4 @@
-import { Typography, Hidden, Button } from "@material-ui/core";
+import { Typography, Button } from "@material-ui/core";
 import * as React from "react";
 import Footer from "../../components/Footer";
 import { useStyles } from "./styles";
@@ -23,7 +23,7 @@ function HomePage() {
 				<MainHeader inHomePage={true} />
 				<div className={classes.root}>
 					<div className={classes.mainDiv}>
-						<a id="home"></a>
+						<a id="home" href="home"></a>
 						<div className={classes.headerDiv}>
 							<div style={{ margin: "auto" }}>
 								<img
@@ -62,7 +62,7 @@ function HomePage() {
 									className={classes.registerButton}
 									color="primary"
 									variant="contained"
-									style={{ margin: "auto", padding: "2rem", marginTop: "2rem", width: "fit-content" }}
+									style={{ margin: "auto", padding: "2rem", marginTop: "2rem", width: "100%" }}
 									onClick={() => {
 										window.open(
 											"https://join.slack.com/t/chaoscarnival/shared_invite/zt-ic63h58h-C_G5IwZ1EwhCtDcSpEEd0w"
@@ -71,7 +71,7 @@ function HomePage() {
 								>
 									<Typography
 										className={classes.registerText}
-										style={{ textTransform: "none" }}
+										style={{ textTransform: "none", fontSize: "1.15rem" }}
 									>
 										<b>Register&nbsp;Now&nbsp;for&nbsp;Free</b>
 									</Typography>
@@ -85,13 +85,13 @@ function HomePage() {
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
-						<a id="cfp"></a>
+						<a id="cfp" href="cfp"></a>
 						<CallForPapers />
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
 						<div className={classes.speakersDiv}>
-							<a id="speakers"></a>
+							<a id="speakers" href="speakres"></a>
 							<Speakers />
 						</div>
 					</div>
@@ -102,7 +102,7 @@ function HomePage() {
 				</div>
 
 				<div style={{ marginTop: "auto" }}>
-					<a id="sponsors"></a>
+					<a id="sponsors" href="sponsors"></a>
 					<Sponsors />
 				</div>
 

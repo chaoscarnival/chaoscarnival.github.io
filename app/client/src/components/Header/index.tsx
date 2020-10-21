@@ -242,7 +242,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 											className={classes.registerButton}
 											color="primary"
 											variant="contained"
-											style={{ margin: "auto", padding: "2rem", marginTop: "2rem", width: "fit-content" }}
+											style={{ margin: "auto", padding: "2rem", marginTop: "2rem", width: "100%" }}
 											onClick={() => {
 												window.open(
 													"https://join.slack.com/t/chaoscarnival/shared_invite/zt-ic63h58h-C_G5IwZ1EwhCtDcSpEEd0w"
@@ -251,7 +251,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										>
 											<Typography
 												className={classes.registerText}
-												style={{ textTransform: "none" }}
+												style={{ textTransform: "none", fontSize: "1.15rem" }}
 											>
 												<b>Register&nbsp;Now&nbsp;for&nbsp;Free</b>
 											</Typography>

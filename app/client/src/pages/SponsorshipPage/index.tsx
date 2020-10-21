@@ -1,4 +1,4 @@
-import { Typography, Hidden } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import * as React from "react";
 import Footer from "../../components/Footer";
 import { useStyles } from "./styles";

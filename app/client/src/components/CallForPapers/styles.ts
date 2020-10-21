@@ -154,28 +154,29 @@ export const useStyles = makeStyles((theme) => ({
   },
  	cfpButton: {
 		height: '3.5rem',
-		width: '18.5rem',
+		width: "fit-content",
+    minWidth: '18.5rem',
 		[theme.breakpoints.down("xl")]: {
-			height: '3.5rem',
-		width: '18.5rem',
+      height: '3.5rem',
 		},
 		[theme.breakpoints.down("lg")]: {
+      width: "70%",
 			height: '3rem',
-		width: '16.5rem',
+		// width: '16.5rem',
 		},
 		[theme.breakpoints.down("md")]: {
 			height: '2.5rem',
-		width: '14.5rem',
+		// width: '14.5rem',
 		},
 		[theme.breakpoints.down("sm")]: {
 			marginTop: "20vh",
 			height: '2rem',
-		width: '9.75rem',
+		// width: '9.75rem',
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: "20vh",
 			height: '2rem',
-		width: '7.5rem',
+		// width: '7.5rem',
 		},
 	},
 	cfpText:{

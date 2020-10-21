@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 		width: 165,
 		marginLeft: 110,
 		marginRight: 30,
-		padding: "1rem",
+		padding: "0.5rem",
 		cursor: "pointer",
 		[theme.breakpoints.up("xl")]: {
 			marginLeft: 0,
