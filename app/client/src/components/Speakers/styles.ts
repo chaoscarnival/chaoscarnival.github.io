@@ -23,17 +23,30 @@ export const useStyles = makeStyles((theme: Theme) => ({
 		flexWrap: "wrap",
 		justifyContent: "center",
 		alignItems: "center",
+		alignSelf: "center",
 		marginTop: '7vh',
-		marginLeft: "12vw",
-    marginRight: "12vw",
+		// marginLeft: "12vw",
+    // marginRight: "12vw",
+    width: "80%",
+
     // [theme.breakpoints.up("xl")]: {
 		// marginLeft: "10vw",
     // marginRight: "9vw",
     // },
+    [theme.breakpoints.down("xl")]: {
+			// marginLeft: "12vw",
+      // marginRight: "12vw",
+      width: "90%",
+    },
+    [theme.breakpoints.down("lg")]: {
+			// marginLeft: "12vw",
+      // marginRight: "12vw",
+      width: "75%",
+		},
     [theme.breakpoints.down("md")]: {
-			marginLeft: "0vw",
-    marginRight: "0vw",
-    // marginTop: '-10vh',
+			// marginLeft: "0vw",
+      // marginRight: "0vw",
+      width: "95%",
 		},
 	},
 	headingspeaker: {

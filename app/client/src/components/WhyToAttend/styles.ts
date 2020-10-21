@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // Component styles
 export const useStyles = makeStyles((theme) => ({
 	root: {
-		height: "100vh",
+		minHeight: "110vh",
 		display: "flex",
 		flexDirection: "column",
     justifyContent: "center",
@@ -11,9 +11,6 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       height: "fit-content",
     },
-    // [theme.breakpoints.down("xs")]: {
-      // height: "153vh",
-    // },
   },
   heading: {
     display: "flex",
