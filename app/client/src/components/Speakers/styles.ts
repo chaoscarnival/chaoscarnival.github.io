@@ -56,6 +56,7 @@ export const useStyles = makeStyles((theme: Theme) => ({
     position:"relative",
     width: "70%",
     padding: "0 1rem",
+    paddingTop: "5rem",
     alignSelf:"center",
     marginBottom: theme.spacing(3),
 		[theme.breakpoints.down("md")]: {
