@@ -19,24 +19,24 @@ const useStyles = makeStyles((theme: Theme) => ({
 		},
 	},
 	menu: {
-		paddingLeft: "40vw",
+		// paddingLeft: "40vw",
 		marginTop: theme.spacing(2),
 		[theme.breakpoints.down("md")]: {
-			paddingLeft: "32vw",
+			// paddingLeft: "32vw",
 			textAlign: "center",
 		},
 		[theme.breakpoints.down("sm")]: {
-			paddingLeft: "27vw",
+			// paddingLeft: "27vw",
 		},
 		[theme.breakpoints.down("xs")]: {
-			paddingLeft: "17vw",
+			// paddingLeft: "17vw",
 		},
 	},
 	mainLogo: {
 		width: 165,
-		height: 65,
 		marginLeft: 110,
 		marginRight: 30,
+		padding: "0.5rem",
 		cursor: "pointer",
 		[theme.breakpoints.up("xl")]: {
 			marginLeft: 0,

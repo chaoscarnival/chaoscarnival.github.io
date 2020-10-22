@@ -44,8 +44,8 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 							<img
 								src={
 									inHomePage
-										? "/icons/chaoscarnival-header.svg"
-										: "/icons/chaoscarnival-header-dark.svg"
+										? "/icons/chaoscarnival-header.png"
+										: "/icons/chaoscarnival-header-dark.png"
 								}
 								alt=" header"
 								className={classes.mainLogo}
@@ -114,7 +114,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 								onClick={handleClick}
 								className={classes.menu}
 							>
-								<img src="/icons/menu.svg" alt="menu" />
+								<img src={inHomePage ? "/icons/menu.svg" : "/icons/menud.svg"} alt="menu" />
 							</IconButton>
 							<Menu
 								anchorEl={anchorEl}
@@ -154,8 +154,8 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 									<img
 										src={
 											inHomePage
-												? "/icons/chaoscarnival-header-dark.svg"
-												: "/icons/chaoscarnival-header.svg"
+												? "/icons/chaoscarnival-header-dark.png"
+												: "/icons/chaoscarnival-header-dark.png"
 										}
 										style={{ margin: 0 }}
 										alt="logo"
@@ -242,7 +242,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 											className={classes.registerButton}
 											color="primary"
 											variant="contained"
-											style={{ margin: "auto", padding: "2rem", marginTop: "2rem", width: "fit-content" }}
+											style={{ margin: "auto", padding: "2rem", marginTop: "2rem", width: "100%" }}
 											onClick={() => {
 												window.open(
 													"https://join.slack.com/t/chaoscarnival/shared_invite/zt-ic63h58h-C_G5IwZ1EwhCtDcSpEEd0w"
@@ -251,7 +251,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										>
 											<Typography
 												className={classes.registerText}
-												style={{ textTransform: "none" }}
+												style={{ textTransform: "none", fontSize: "1.15rem" }}
 											>
 												<b>Register&nbsp;Now&nbsp;for&nbsp;Free</b>
 											</Typography>

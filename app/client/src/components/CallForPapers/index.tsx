@@ -20,14 +20,14 @@ function CallForPapers() {
 							className={classes.cfpButton}
 							color="primary"
 							variant="contained"
-							style={{ float: "left", padding: "2rem", marginTop: "2rem", width: "fit-content" }}
+							style={{ float: "left", padding: "2rem", marginTop: "2rem" }}
 							onClick={() => {
 								window.open(
 									"https://join.slack.com/t/chaoscarnival/shared_invite/zt-ic63h58h-C_G5IwZ1EwhCtDcSpEEd0w"
 								);
 							}}
 						>
-							<Typography className={classes.cfpText} style={{ textTransform: 'none' }}><b>Submit&nbsp;your&nbsp;CFP</b></Typography>
+							<Typography className={classes.cfpText} style={{ textTransform: 'none', fontSize: "1.15rem" }}><b>Submit&nbsp;your&nbsp;CFP</b></Typography>
 						</Button>
 					</div>
 					{/* <div className={classes.infoButton}> */}

@@ -1,15 +1,19 @@
 import React from "react";
 import CustomCard from "../CustomCard";
 import { useStyles } from "./styles";
-import { SpeakerData } from "./SpeakerData";
+import { SpeakerData } from './SpeakerData';
 
 export function Speakers() {
 	const classes = useStyles();
 
 	return (
 		<div className={classes.root}>
-			<div className={classes.ourExcitingText}>Our Exciting</div>
-			<div className={classes.speakersText}>Speakers</div>
+			<div className={classes.headingspeaker}>
+				<div>
+					<div className={classes.ourExcitingText}>Our Exciting</div>
+					<div className={classes.speakersText}>Speakers</div>
+				</div>
+			</div>
 			<div className={classes.speakerRoot}>
 				{SpeakerData.map((speaker) => (
 					<CustomCard

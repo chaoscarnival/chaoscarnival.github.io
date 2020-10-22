@@ -2,7 +2,7 @@ import { Button } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import moment from "moment";
 import useStyles from "./styles";
-import { Console } from "console";
+// import { Console } from "console";
 
 interface CountDownProps {
 	timeTillDate: string;
@@ -47,8 +47,8 @@ const CountDown: React.FC<CountDownProps> = ({
 					{`${days}d ${hours}h ${minutes}m ${seconds}s`}
 				</Button>
 			) : (
-				<div />
-			)}
+					<div />
+				)}
 		</div>
 	);
 };

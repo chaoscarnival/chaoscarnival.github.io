@@ -3,7 +3,6 @@ import {
 	withStyles,
 	Theme,
 	createStyles,
-	makeStyles,
 } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
@@ -11,7 +10,7 @@ import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
-import Paper from "@material-ui/core/Paper";
+// import Paper from "@material-ui/core/Paper";
 import { TableFooter, Typography } from "@material-ui/core";
 import { TableData } from "../TableContent/TableData";
 import { useStyles } from "./styles";
@@ -44,17 +43,17 @@ const textFormatter = (text: string) => {
 	return (
 		<div>
 			{val === "Yes" ? (
-				<img src="/icons/tick.svg" style={{ width: 26, height: 26 }} />
+				<img src="/icons/tick.svg" alt="Yes" style={{ width: 26, height: 26 }} />
 			) : val === "No" ? (
-				<img src="/icons/cross.svg" style={{ width: 26, height: 26 }} />
+				<img src="/icons/cross.svg" alt="No" style={{ width: 26, height: 26 }} />
 			) : (
-				<Typography>{val}</Typography>
-			)}
+						<Typography>{val}</Typography>
+					)}
 			{valText !== "" || valText !== undefined ? (
 				<Typography>{valText}</Typography>
 			) : (
-				<Typography>""</Typography>
-			)}
+					<Typography>""</Typography>
+				)}
 		</div>
 	);
 };

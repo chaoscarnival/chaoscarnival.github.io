@@ -3,17 +3,13 @@ import { makeStyles } from "@material-ui/core/styles";
 // Component styles
 export const useStyles = makeStyles((theme) => ({
 	root: {
-		height: "100vh",
+		minHeight: "110vh",
 		display: "flex",
 		flexDirection: "column",
     justifyContent: "center",
     background: 'linear-gradient(180deg, #070E23 56.2%, #000000 100%)',
     [theme.breakpoints.down("sm")]: {
-      height: "153vh",
-      padding: "2rem",
-    },
-    [theme.breakpoints.down("xs")]: {
-      height: "153vh",
+      height: "fit-content",
     },
   },
   heading: {
@@ -121,6 +117,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       marginTop: '5vh',
       flexDirection: "column",
+      marginBottom: "14rem",
 		},
 		[theme.breakpoints.down("xs")]: {
       marginTop: '5vh',
@@ -173,22 +170,22 @@ export const useStyles = makeStyles((theme) => ({
   },
   advantageInfo: {
     color: '#8193B2',
-    fontSize: '2rem',
+    fontSize: '1.25rem',
     textAlign: 'left',
     [theme.breakpoints.down("xl")]: {
-      fontSize: '1.5rem',
+      fontSize: '1.25rem',
     },
     [theme.breakpoints.down("lg")]: {
-      fontSize: '1rem',
+      fontSize: '1.25rem',
 		},
-    [theme.breakpoints.down("md")]: {
-      fontSize: '0.8rem',
-		},
-    [theme.breakpoints.down("sm")]: {
-      fontSize: '0.8rem',
-		},
-		[theme.breakpoints.down("xs")]: {
-      fontSize: '0.8rem',
-    },
+    // [theme.breakpoints.down("md")]: {
+    //   fontSize: '0.8rem',
+		// },
+    // [theme.breakpoints.down("sm")]: {
+    //   fontSize: '0.8rem',
+		// },
+		// [theme.breakpoints.down("xs")]: {
+    //   fontSize: '0.8rem',
+    // },
   },
 }));

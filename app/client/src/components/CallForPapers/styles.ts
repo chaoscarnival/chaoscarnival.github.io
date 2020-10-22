@@ -3,7 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 // Component styles
 export const useStyles = makeStyles((theme) => ({
 	root: {
-		height: "100vh",
+    minHeight: 'fit-content',
+		height: "60rem",
 		display: "flex",
 		flexDirection: "row",
     justifyContent: "center",
@@ -12,14 +13,16 @@ export const useStyles = makeStyles((theme) => ({
     background: 'url(/images/cfpbg.jpg)',
     backgroundColor: '#000',
     backgroundRepeat: 'no-repeat',
+    backgroundPosition: "center",
     backgroundSize: 'cover',
-    backgroundPosition: 'right',
     [theme.breakpoints.down("xs")]: {
       backgroundColor: "#000",
       backgroundRepeat: 'no-repeat',
-      backgroundSize: '100%',
-      height: "100vh",
-      background: 'linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.874483) 37.89%, rgba(0, 0, 0, 0) 133.18%), url(/images/callForPapers.png)',
+      backgroundSize: 'cover',
+      backgroundPosition: "60%",
+      height: "120vh",
+      // background: 'linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.874483) 37.89%, rgba(0, 0, 0, 0) 133.18%), url(/images/callForPapers.png)',
+      background: 'url(/images/cfpbg.jpg)',
     },
   },
   heading: {
@@ -29,7 +32,7 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
 		[theme.breakpoints.down("sm")]: {
-			flexDirection: "column",
+      flexDirection: "column",
 		},
 		[theme.breakpoints.down("xs")]: {
 			flexDirection: "column",
@@ -38,19 +41,25 @@ export const useStyles = makeStyles((theme) => ({
   },
   callForPapers: {
     width: '80vw',
-    height: '50rem',
+    minHeight: 'fit-content',
     // position:"absolute",
     // marginTop: '22vh',
     // marginLeft: '-4vw',
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("lg")]: {
+      height: "70vh",
       width: '100vw',
       marginTop: '3vh',
-      marginLeft: '3vw',
+      padding: '3vw',
+    },
+    [theme.breakpoints.down("md")]: {
+      height: "60vh",
+    },
+    [theme.breakpoints.down("sm")]: {
+      height: "80vh",
     },
     [theme.breakpoints.down("xs")]: {
-      width: '100vw',
+      height: "100vh",
       marginTop: '3vh',
-      marginLeft: '3vw',
     },
   },
 
@@ -133,40 +142,41 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   infoText: {
-    fontSize: '18px',
+    fontSize: '1.25rem',
     textAlign: 'left',
     color: '#8193B2',
   },
   dateText: {
-    fontSize: '1rem',
+    fontSize: '1.25rem',
     textAlign: 'left',
     marginTop: theme.spacing(5),
     marginBottom: theme.spacing(5),
   },
  	cfpButton: {
 		height: '3.5rem',
-		width: '18.5rem',
+		width: "fit-content",
+    minWidth: '18.5rem',
 		[theme.breakpoints.down("xl")]: {
-			height: '3.5rem',
-		width: '18.5rem',
+      height: '3.5rem',
 		},
 		[theme.breakpoints.down("lg")]: {
+      // width: "70%",
 			height: '3rem',
-		width: '16.5rem',
+		// width: '16.5rem',
 		},
 		[theme.breakpoints.down("md")]: {
 			height: '2.5rem',
-		width: '14.5rem',
+		// width: '14.5rem',
 		},
 		[theme.breakpoints.down("sm")]: {
 			marginTop: "20vh",
 			height: '2rem',
-		width: '9.75rem',
+		// width: '9.75rem',
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: "20vh",
 			height: '2rem',
-		width: '7.5rem',
+		// width: '7.5rem',
 		},
 	},
 	cfpText:{

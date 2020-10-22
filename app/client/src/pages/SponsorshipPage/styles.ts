@@ -72,7 +72,7 @@ export const useStyles = makeStyles((theme) => ({
 		maxWidth: 215,
 		marginRight: 50,
 		[theme.breakpoints.down("sm")]: {
-			marginTop: 20,
+			marginTop: "6rem",
 			marginBottom: 10,
 			margin: "0 auto",
 		},

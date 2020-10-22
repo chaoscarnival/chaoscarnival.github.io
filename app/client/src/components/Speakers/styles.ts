@@ -5,11 +5,8 @@ export const useStyles = makeStyles((theme: Theme) => ({
 		height: "100%",
 		display: "flex",
 		flexDirection: "column",
-		justifyContent: "center",
-		[theme.breakpoints.up("lg")]: {
-			width: 1400,
-			margin: "0 auto",
-		},
+    justifyContent: "center",
+    alignItems: "flex-start",
 	},
 	speakerRoot: {
 		display: "flex",
@@ -17,66 +14,63 @@ export const useStyles = makeStyles((theme: Theme) => ({
 		flexWrap: "wrap",
 		justifyContent: "center",
 		alignItems: "center",
-		width: 1400,
-		margin: "0 auto",
-		[theme.breakpoints.down("sm")]: {
-			width: "100%",
-			flexDirection: "cloumn",
+		alignSelf: "center",
+		marginTop: '7vh',
+    width: "80%",
+    [theme.breakpoints.down("xl")]: {
+      width: "90%",
+    },
+    [theme.breakpoints.down("lg")]: {
+      width: "75%",
+		},
+    [theme.breakpoints.down("md")]: {
+      width: "95%",
 		},
 	},
-	heading: {
-		display: "flex",
-		flexDirection: "row",
-		justifyContent: "center",
-		position: "relative",
-		marginBottom: theme.spacing(3),
-		[theme.breakpoints.down("sm")]: {
-			flexDirection: "column",
+	headingspeaker: {
+    display: "flex",
+    flexDirection: "row",
+    position:"relative",
+    width: "70%",
+    padding: "0 1rem",
+    alignSelf:"center",
+    marginBottom: theme.spacing(3),
+		[theme.breakpoints.down("md")]: {
+      width: "80%",
 		},
+  },
+
+  ourExcitingText: {
+    fontWeight: 700, 
+    textAlign: 'left',
+    fontSize: '70px',
+		color: '#262626',
+    [theme.breakpoints.down("md")]: {
+      fontSize: '50px',
+		},
+      [theme.breakpoints.down("sm")]: {
+        fontSize: '50px',
+      },
+      [theme.breakpoints.down("xs")]: {
+        fontSize: '40px',
+      },
 	},
-	speakers: {
-		width: "40vw",
-		marginTop: "40vh",
-	},
-	ourExcitingText: {
-		fontWeight: 700,
-		textAlign: "left",
-		fontSize: "70px",
-		marginLeft: 200,
-		marginTop: 50,
-		color: "#262626",
-		[theme.breakpoints.up("lg")]: {
-			marginLeft: 140,
+
+  speakersText: {
+		fontWeight: 700, 
+		background: 'linear-gradient(270.88deg, #FFDC7E 3.66%, #FF7C71 100.95%)', 
+		borderRadius: '1rem',
+    fontSize: '70px',
+    textAlign: 'center',
+    color: '#000000',
+    [theme.breakpoints.down("md")]: {
+      fontSize: '50px',
 		},
-		[theme.breakpoints.down("sm")]: {
-			fontSize: 50,
-			marginLeft: 100,
-		},
-		[theme.breakpoints.down("xs")]: {
-			marginLeft: 50,
-		},
-	},
-	speakersText: {
-		fontWeight: 700,
-		width: 300,
-		marginBottom: 50,
-		background:
-			"linear-gradient(270.88deg, #FFDC7E 3.66%, #FF7C71 100.95%)",
-		borderRadius: "1rem",
-		fontSize: "60px",
-		textAlign: "center",
-		marginLeft: 200,
-		color: "#000000",
-		[theme.breakpoints.up("lg")]: {
-			marginLeft: 140,
-		},
-		[theme.breakpoints.down("sm")]: {
-			fontSize: "50px",
-			marginLeft: 100,
-		},
-		[theme.breakpoints.down("xs")]: {
-			fontSize: "40px",
-			marginLeft: 50,
-		},
-	},
+    [theme.breakpoints.down("sm")]: {
+      fontSize: '50px',
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: '40px',
+    },
+  },
 }));

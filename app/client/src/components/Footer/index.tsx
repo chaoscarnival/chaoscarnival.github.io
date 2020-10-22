@@ -19,16 +19,16 @@ const Footer: React.FC = () => {
 			>
 				<Toolbar className={classes.toolbarDiv}>
 					<div className={classes.toolbarDiv}>
-							<img
-								src={"/icons/chaoscarnival-header.svg"}
-								alt=" header"
-								className={classes.mainLogo}
-							/>
+						<img
+							src={"/icons/chaoscarnival-header.png"}
+							alt=" header"
+							className={classes.mainLogo}
+						/>
 
-							<Typography className={classes.timeFont}>
+						<Typography className={classes.timeFont}>
 							January 8-9, 2021
 									</Typography>
-									<Hidden smDown>
+						<Hidden smDown>
 							<div className={classes.headerHomeDiv}>
 								<a
 									href="https://www.facebook.com/Chaos-Carnival-108128454412853"
@@ -72,8 +72,8 @@ const Footer: React.FC = () => {
 									</Typography>
 								</a>
 							</div>
-							</Hidden>
-							<Hidden mdUp>
+						</Hidden>
+						<Hidden mdUp>
 							<div className={classes.headerDiv}>
 								<a
 									href="https://www.facebook.com/Chaos-Carnival-108128454412853"
@@ -113,11 +113,11 @@ const Footer: React.FC = () => {
 									</Typography>
 								</a>
 							</div>
-							</Hidden>
+						</Hidden>
 					</div>
 				</Toolbar>
 				<Typography className={classes.copyRightFont}>
-				Chaos Carnival is a registered trademark of MayaData, Inc. © 2020 MayaData, Inc. All Rights Reserved.
+					Chaos Carnival is a registered trademark of MayaData, Inc. © 2020 MayaData, Inc. All Rights Reserved.
 			</Typography>
 			</AppBar>
 		</div>

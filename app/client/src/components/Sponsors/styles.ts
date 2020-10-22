@@ -91,6 +91,7 @@ export const useStyles = makeStyles((theme) => ({
 	footerText: {
 		color: "#8193B2",
 		marginTop: 20,
+		fontSize: "1.2rem",
 		textAlign: "left",
 		marginLeft: "12%",
 		[theme.breakpoints.down("xs")]: {

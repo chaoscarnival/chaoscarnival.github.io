@@ -4,19 +4,13 @@ const useStyles = makeStyles((theme: Theme) => ({
 	appBar: {
 		width: "100vw",
 		margin: "auto",
-		height: "10rem",
+		height: "fit-content",
 		background: "linear-gradient(159.14deg, #042C69 0%, #041739 22.21%, #040D21 51.09%, #1B132F 84.08%, #471F48 101.53%)",
 		boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.05)",
 		display: "flex",
 		flexDirection: "column",
 		justifyContent: "center",
 		alignItems: "center",
-		[theme.breakpoints.down("sm")]: {
-			height: "23rem",
-		},
-		[theme.breakpoints.down("xs")]: {
-			height: "23rem",
-		},
 	},
 	toolbarDiv: {
 		width: "100vw",
@@ -34,7 +28,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 	},
 	mainLogo: {
 		width: 165,
-		height: 65,
+		padding: "1.4rem",
 		marginLeft: 30,
 		marginRight: 30,
 		cursor: "pointer",
@@ -46,7 +40,6 @@ const useStyles = makeStyles((theme: Theme) => ({
 			marginLeft: 10,
 			marginRight: 30,
 			width: 185,
-		height: 85,
 		},
 	},
 	headerDiv: {
@@ -82,8 +75,8 @@ const useStyles = makeStyles((theme: Theme) => ({
 		fontWeight: 500,
 	},
 	copyRightFont: {
-		marginTop: theme.spacing(1),
-		marginBottom: theme.spacing(3),
+		marginTop: "1rem",
+		paddingBottom: "34px",
 		fontSize: "0.7rem",
 		color: 'rgba(255, 255, 255, 0.6)',
 		textAlign: 'center',

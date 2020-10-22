@@ -59,11 +59,11 @@ export const useStyles = makeStyles((theme) => ({
 		cursor: "pointer",
 		// Above tablet size
 		[theme.breakpoints.down("sm")]: {
-			width: "136px",
+			width: "156px",
 		  height: "210px",
 		},
 		[theme.breakpoints.down("xs")]: {
-			width: "136px",
+			width: "125px",
 		  height: "210px",
 		},
 	},

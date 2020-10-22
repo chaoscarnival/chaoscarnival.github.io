@@ -92,16 +92,17 @@ export const useStyles = makeStyles((theme) => ({
 	descText: {
 		textAlign: "left",
 		marginLeft: 30,
+		fontSize: "1.2rem",
 	},
 	logoImg: {
-		height: "200px",
+		// height: "200px",
+		padding: "1rem 2rem",
 		width: "400px",
 		[theme.breakpoints.up("xl")]: {
-			height: "200px",
+			// height: "200px",
 			width: "400px",
 		},
 		[theme.breakpoints.down("xs")]: {
-			marginTop: -40,
 			width: "100%",
 		},
 	},
