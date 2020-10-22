@@ -4,7 +4,7 @@ import { useStyles } from "./styles";
 
 function CardContent(props: CardProps) {
 	const {
-		id,
+		// id,
 		name,
 		title,
 		urlToIcon,
@@ -26,13 +26,13 @@ function CardContent(props: CardProps) {
 						/>
 					</div>
 				) : (
-					<div>Image</div>
-				)}
+						<div>Image</div>
+					)}
 				<div >
 					<div
 						className={classes.mainTitle}
 					>
-					<div
+						<div
 							className={name !== 'Interested in Speaking ?' ? classes.speakerName : classes.dummyName}>
 							{name}
 						</div>

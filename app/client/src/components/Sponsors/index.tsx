@@ -36,7 +36,7 @@ const Sponsor = () => {
 				<div className={classes.sponsorImgMainDiv}>
 					<div className={classes.sponsorImgDiv}>
 						{imgLink.map((sponsor) => (
-							<div style={{ marginRight: 0 }}>
+							<div style={{ marginRight: 0 }} key={Math.random() * 99999}>
 								<a href={sponsor.link} target="_blank" rel="noopener noreferrer">
 									<img
 										src={sponsor.img}

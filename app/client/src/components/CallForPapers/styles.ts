@@ -160,7 +160,7 @@ export const useStyles = makeStyles((theme) => ({
       height: '3.5rem',
 		},
 		[theme.breakpoints.down("lg")]: {
-      width: "70%",
+      // width: "70%",
 			height: '3rem',
 		// width: '16.5rem',
 		},

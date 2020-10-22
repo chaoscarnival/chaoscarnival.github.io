@@ -23,7 +23,7 @@ function HomePage() {
 				<MainHeader inHomePage={true} />
 				<div className={classes.root}>
 					<div className={classes.mainDiv}>
-						<a id="home" href="home"></a>
+						<a id="home" href="home">&nbsp;</a>
 						<div className={classes.headerDiv}>
 							<div style={{ margin: "auto" }}>
 								<img
@@ -85,13 +85,13 @@ function HomePage() {
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
-						<a id="cfp" href="cfp"></a>
+						<a id="cfp" href="cfp">&nbsp;</a>
 						<CallForPapers />
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
 						<div className={classes.speakersDiv}>
-							<a id="speakers" href="speakres"></a>
+							<a id="speakers" href="speakres">&nbsp;</a>
 							<Speakers />
 						</div>
 					</div>
@@ -102,7 +102,7 @@ function HomePage() {
 				</div>
 
 				<div style={{ marginTop: "auto" }}>
-					<a id="sponsors" href="sponsors"></a>
+					<a id="sponsors" href="sponsors">&nbsp;</a>
 					<Sponsors />
 				</div>
 

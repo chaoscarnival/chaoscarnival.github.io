@@ -1,7 +1,5 @@
 import { Button, Hidden, Typography } from "@material-ui/core";
-import moment from "moment";
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React from "react";
 import { useStyles } from "./styles";
 import Timer from "./timer";
 const JoinCarnival = () => {
