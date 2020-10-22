@@ -11,7 +11,7 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	mainDiv: {
 		marginTop: theme.spacing(-10),
-		background: 'url(/images/herobgcom.jpg)',
+		background: 'url(/images/herobgcom.jpeg)',
 		backgroundColor: "#070e23",
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: "cover",
