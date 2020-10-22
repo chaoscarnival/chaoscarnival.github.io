@@ -7,7 +7,8 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "column",
     justifyContent: "center",
-    background: 'linear-gradient(180deg, #070E23 56.2%, #000000 100%)',
+    marginTop: "-4px",
+    background: 'linear-gradient(180deg, #070d1d 56.2%, #000000 100%)',
     [theme.breakpoints.down("sm")]: {
       height: "fit-content",
     },
