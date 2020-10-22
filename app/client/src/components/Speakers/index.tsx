@@ -9,7 +9,7 @@ export function Speakers() {
 	return (
 		<div className={classes.root}>
 			<div className={classes.headingspeaker}>
-				<div className={classes.speakers}>
+				<div>
 					<div className={classes.ourExcitingText}>Our Exciting</div>
 					<div className={classes.speakersText}>Speakers</div>
 				</div>
