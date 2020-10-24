@@ -1,6 +1,7 @@
 import React from "react";
 import { CardProps } from "./model";
 import { useStyles } from "./styles";
+import LazyLoad from 'react-lazy-load';
 
 function CardContent(props: CardProps) {
 	const {
@@ -19,11 +20,13 @@ function CardContent(props: CardProps) {
 					<div
 						className={classes.cardMedia}
 					>
-						<img
-							src={urlToIcon}
-							className={classes.imgMedia}
-							alt="chart provider logo"
-						/>
+						<LazyLoad offsetTop={100}>
+							<img
+								src={urlToIcon}
+								className={classes.imgMedia}
+								alt="chart provider logo"
+							/>
+						</LazyLoad>
 					</div>
 				) : (
 						<div>Image</div>

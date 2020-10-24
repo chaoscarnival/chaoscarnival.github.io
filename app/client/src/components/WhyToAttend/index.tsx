@@ -15,7 +15,7 @@ function WhyToAttend() {
 					<Typography className={classes.chaosCarnivalText}>Chaos Carnival</Typography>
 				</div>
 				<div className={classes.info}>
-					<Typography className={classes.infoText}>{`Chaos Engineering is a discipline to achieve reliability in systems by breaking things on purpose. ChaosCarnival brings all the chaos practitioners together to share their experiences and learn together.`}</Typography>
+					<Typography className={classes.infoText}>{`Chaos Engineering is a discipline to achieve reliability in systems by breaking things on purpose. Chaos Carnival brings all the chaos practitioners together to share their experiences and learn together.`}</Typography>
 				</div>
 			</div>
 			<div className={classes.advantages}>

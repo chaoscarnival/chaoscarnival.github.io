@@ -6,6 +6,7 @@ import {
 } from "@material-ui/core";
 import React from "react";
 import useStyles from "./styles";
+import LazyLoad from 'react-lazy-load';
 
 const Footer: React.FC = () => {
 	const classes = useStyles();
@@ -19,11 +20,13 @@ const Footer: React.FC = () => {
 			>
 				<Toolbar className={classes.toolbarDiv}>
 					<div className={classes.toolbarDiv}>
-						<img
-							src={"/icons/chaoscarnival-header.png"}
-							alt=" header"
-							className={classes.mainLogo}
-						/>
+						<LazyLoad offsetTop={100}>
+							<img
+								src={"/icons/chaoscarnival-header.png"}
+								alt=" header"
+								className={classes.mainLogo}
+							/>
+						</LazyLoad>
 
 						<Typography className={classes.timeFont}>
 							January 8-9, 2021
@@ -59,6 +62,16 @@ const Footer: React.FC = () => {
 								>
 									<Typography className={classes.headerFont}>
 										Linkedin
+									</Typography>
+								</a>
+							</div>
+							<div className={classes.headerDiv}>
+								<a
+									href="https://www.youtube.com/channel/UCDoH57pQWHU0MCm6Y5Y3LhA"
+									style={{ textDecoration: "none" }}
+								>
+									<Typography className={classes.headerFont}>
+										YouTube
 									</Typography>
 								</a>
 							</div>
@@ -102,6 +115,14 @@ const Footer: React.FC = () => {
 								>
 									<Typography className={classes.headerFont}>
 										Linkedin
+									</Typography>
+								</a>
+								<a
+									href="https://www.youtube.com/channel/UCDoH57pQWHU0MCm6Y5Y3LhA"
+									style={{ textDecoration: "none" }}
+								>
+									<Typography className={classes.headerFont}>
+										YouTube
 									</Typography>
 								</a>
 								<a

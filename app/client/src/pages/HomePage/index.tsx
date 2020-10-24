@@ -8,7 +8,7 @@ import WhyToAttend from "../../components/WhyToAttend";
 import Sponsors from "../../components/Sponsors";
 import JoinCarnival from "../../components/JoinCarnival";
 import CallForPapers from "../../components/CallForPapers";
-import { Speakers } from "../../components/Speakers";
+import { Speakers } from '../../components/Speakers';
 
 function HomePage() {
 	const classes = useStyles();
@@ -38,14 +38,14 @@ function HomePage() {
 									style={{ margin: "auto" }}
 								>
 									A global two-day virtual conference
-								</Typography>
+							</Typography>
 
 								<Typography
 									className={classes.mainHeader}
 									style={{ margin: "auto" }}
 								>
 									for Cloud Native Chaos Engineering
-								</Typography>
+							</Typography>
 							</div>
 
 							<div style={{ margin: "auto" }}>
@@ -54,7 +54,7 @@ function HomePage() {
 									style={{ margin: "auto" }}
 								>
 									January 8-9, 2021
-								</Typography>
+							</Typography>
 							</div>
 
 							<div style={{ margin: "auto" }}>
@@ -73,9 +73,7 @@ function HomePage() {
 										className={classes.registerText}
 										style={{ textTransform: "none", fontSize: "1.15rem" }}
 									>
-										<b>
-											Register&nbsp;Now&nbsp;for&nbsp;Free
-										</b>
+										<b>Register&nbsp;Now&nbsp;for&nbsp;Free</b>
 									</Typography>
 								</Button>
 							</div>
@@ -91,9 +89,9 @@ function HomePage() {
 						<CallForPapers />
 					</div>
 
-					<div>
+					<div style={{ marginTop: "auto" }}>
 						<div className={classes.speakersDiv}>
-							<a id="speakers" href="speakres"></a>
+							<a id="speakers" href="speakers"></a>
 							<Speakers />
 						</div>
 					</div>

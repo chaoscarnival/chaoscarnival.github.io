@@ -1,6 +1,7 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
 import { useStyles } from "./styles";
+import LazyLoad from 'react-lazy-load';
 
 const imgLink = [
 	{
@@ -38,11 +39,13 @@ const Sponsor = () => {
 						{imgLink.map((sponsor) => (
 							<div style={{ marginRight: 0 }} key={Math.random() * 99999}>
 								<a href={sponsor.link} target="_blank" rel="noopener noreferrer">
-									<img
-										src={sponsor.img}
-										alt={sponsor.alt}
-										className={classes.sponsorImg}
-									/>
+									<LazyLoad offsetTop={100}>
+										<img
+											src={sponsor.img}
+											alt={sponsor.alt}
+											className={classes.sponsorImg}
+										/>
+									</LazyLoad>
 								</a>
 							</div>
 						))}

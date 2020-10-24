@@ -11,8 +11,9 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	mainDiv: {
 		marginTop: theme.spacing(-10),
-		background: 'url(/images/herobgdesktop.jpeg)',
-		backgroundColor: "#070e23",
+		background: 'linear-gradient(180deg,rgba(255, 136, 0, 0.65),rgba(229, 46, 113, 0.65))',
+		// backgroundColor: "#070e23",
+		backgroundImage: "url(/images/herobgdesktop.jpeg)",
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: "cover",
 		backgroundPosition: "center",
@@ -20,7 +21,8 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "column",
 		[theme.breakpoints.down("sm")]: {
-			background: 'url(/images/herobgphone.jpeg)',
+			background: 'linear-gradient(180deg,rgba(255, 136, 0, 0.65),rgba(229, 46, 113, 0.65))',
+			backgroundImage: "url(/images/herobgphone.jpeg)",
 			backgroundSize: "cover",
 		},
 		[theme.breakpoints.down("xs")]: {

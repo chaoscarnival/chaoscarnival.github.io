@@ -2,6 +2,8 @@ import { Button, Hidden, Typography } from "@material-ui/core";
 import React from "react";
 import { useStyles } from "./styles";
 import Timer from "./timer";
+import LazyLoad from 'react-lazy-load';
+
 const JoinCarnival = () => {
 	const classes = useStyles();
 	return (
@@ -18,13 +20,15 @@ const JoinCarnival = () => {
 					</Typography>
 				</Hidden>
 				<div className={classes.imageDiv}>
-					<img
-						src="icons/chaoscarnival-header.png"
-						alt="chaos carnival logo"
-						className={classes.logoImg}
-					/>
+					<LazyLoad offsetTop={100}>
+						<img
+							src="icons/chaoscarnival-header.png"
+							alt="chaos carnival logo"
+							className={classes.logoImg}
+						/>
+					</LazyLoad>
 					<Typography className={classes.descText}>
-						This is the first episode of ChaosCarnival and it will be fun. Chaos engineering practitioners, experts and enthusiasts from all over the global are joining this carnival to share and learn.
+						This is the first episode of Chaos Carnival and it will be fun. Chaos engineering practitioners, experts and enthusiasts from all over the global are joining this carnival to share and learn.
 					</Typography>
 					<div className={classes.regNow}>
 						<Button

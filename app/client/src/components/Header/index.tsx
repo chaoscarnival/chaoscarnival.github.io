@@ -14,6 +14,7 @@ import useStyles from "./styles";
 import CloseIcon from "@material-ui/icons/Close";
 import history from "../../history";
 import CountDown from "../CountDown";
+import LazyLoad from 'react-lazy-load';
 
 interface MainHeaderProps {
 	inHomePage: boolean;
@@ -116,149 +117,151 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 							>
 								<img src={inHomePage ? "/icons/menu.svg" : "/icons/menud.svg"} alt="menu" />
 							</IconButton>
-							<Menu
-								anchorEl={anchorEl}
-								keepMounted
-								open={open}
-								onClose={handleClose}
-								TransitionComponent={Fade}
-								className={classes.backdrop}
-								PaperProps={{
-									style: {
-										marginTop: 50,
-										width: "100%",
-										backgroundColor: "#FFFFFF",
-										borderRadius: 4,
-										justifyContent: "center",
-									},
-								}}
-							>
-								<MenuItem
-									className={classes.menuItemClose}
-									button={false}
-									key="close"
+							<LazyLoad offsetTop={100}>
+								<Menu
+									anchorEl={anchorEl}
+									keepMounted
+									open={open}
+									onClose={handleClose}
+									TransitionComponent={Fade}
+									className={classes.backdrop}
+									PaperProps={{
+										style: {
+											marginTop: 50,
+											width: "100%",
+											backgroundColor: "#FFFFFF",
+											borderRadius: 4,
+											justifyContent: "center",
+										},
+									}}
 								>
-									<IconButton onClick={handleClose}>
-										<CloseIcon
-											fontSize="large"
-											className={classes.closeBtn}
+									<MenuItem
+										className={classes.menuItemClose}
+										button={false}
+										key="close"
+									>
+										<IconButton onClick={handleClose}>
+											<CloseIcon
+												fontSize="large"
+												className={classes.closeBtn}
+											/>
+										</IconButton>
+									</MenuItem>
+									<MenuItem
+										className={classes.menuItem}
+										button={false}
+										key="logo"
+										style={{ justifyContent: "center" }}
+									>
+										<img
+											src={
+												inHomePage
+													? "/icons/chaoscarnival-header-dark.png"
+													: "/icons/chaoscarnival-header-dark.png"
+											}
+											style={{ margin: 0 }}
+											alt="logo"
+											className={classes.mainLogo}
+											onClick={() => history.push("/")}
 										/>
-									</IconButton>
-								</MenuItem>
-								<MenuItem
-									className={classes.menuItem}
-									button={false}
-									key="logo"
-									style={{ justifyContent: "center" }}
-								>
-									<img
-										src={
-											inHomePage
-												? "/icons/chaoscarnival-header-dark.png"
-												: "/icons/chaoscarnival-header-dark.png"
-										}
-										style={{ margin: 0 }}
-										alt="logo"
-										className={classes.mainLogo}
-										onClick={() => history.push("/")}
-									/>
-								</MenuItem>
-								<MenuItem
-									className={classes.menuItem}
-									button={false}
-									key="home"
-								>
-									<Typography
-										className={classes.contributeBtn}
-										onClick={handleClose}
+									</MenuItem>
+									<MenuItem
+										className={classes.menuItem}
+										button={false}
+										key="home"
 									>
-										<a
-											href={inHomePage ? "#speakers" : "https://chaoscarnival.io/#home"}
-											style={{ textDecoration: "none" }}
+										<Typography
+											className={classes.contributeBtn}
+											onClick={handleClose}
 										>
-											Home
-										</a>
-									</Typography>
-								</MenuItem>
-								<MenuItem
-									className={classes.menuItem}
-									button={false}
-									key="speakers"
-								>
-									<Typography
-										className={classes.contributeBtn}
-										onClick={handleClose}
-									>
-										<a
-											href={inHomePage ? "#speakers" : "https://chaoscarnival.io/#speakers"}
-											style={{ textDecoration: "none" }}
-										>
-											Speakers
-										</a>
-									</Typography>
-								</MenuItem>
-								<MenuItem
-									className={classes.menuItem}
-									button={false}
-									key="cfp"
-								>
-									<Typography
-										className={classes.contributeBtn}
-										onClick={handleClose}
-									>
-										<a
-											href={inHomePage ? "#cfp" : "https://chaoscarnival.io/#cfp"}
-											style={{ textDecoration: "none" }}
-										>
-											CFP
-										</a>
-									</Typography>
-								</MenuItem>
-								<MenuItem
-									className={classes.menuItem}
-									button={false}
-									key="sponsors"
-								>
-									<Typography
-										className={classes.contributeBtn}
-										onClick={handleClose}
-									>
-										<a
-											href={inHomePage ? "#sponsors" : "https://chaoscarnival.io/#sponsors"}
-											style={{ textDecoration: "none" }}
-										>
-											Sponsors
-										</a>
-									</Typography>
-								</MenuItem>
-								<MenuItem
-									className={classes.menuItem}
-									button={false}
-									key="timer"
-									style={{ justifyContent: "center", color: "#000", margin: 0 }}
-								>
-									<div style={{ margin: "auto" }}>
-										<Button
-											className={classes.registerButton}
-											color="primary"
-											variant="contained"
-											style={{ margin: "auto", padding: "2rem", marginTop: "2rem", width: "100%" }}
-											onClick={() => {
-												window.open(
-													"https://join.slack.com/t/chaoscarnival/shared_invite/zt-ic63h58h-C_G5IwZ1EwhCtDcSpEEd0w"
-												);
-											}}
-										>
-											<Typography
-												className={classes.registerText}
-												style={{ textTransform: "none", fontSize: "1.15rem" }}
+											<a
+												href={inHomePage ? "#speakers" : "https://chaoscarnival.io/#home"}
+												style={{ textDecoration: "none" }}
 											>
-												<b>Register&nbsp;Now&nbsp;for&nbsp;Free</b>
-											</Typography>
-										</Button>
-									</div>
-								</MenuItem>
-							</Menu>
+												Home
+										</a>
+										</Typography>
+									</MenuItem>
+									<MenuItem
+										className={classes.menuItem}
+										button={false}
+										key="speakers"
+									>
+										<Typography
+											className={classes.contributeBtn}
+											onClick={handleClose}
+										>
+											<a
+												href={inHomePage ? "#speakers" : "https://chaoscarnival.io/#speakers"}
+												style={{ textDecoration: "none" }}
+											>
+												Speakers
+										</a>
+										</Typography>
+									</MenuItem>
+									<MenuItem
+										className={classes.menuItem}
+										button={false}
+										key="cfp"
+									>
+										<Typography
+											className={classes.contributeBtn}
+											onClick={handleClose}
+										>
+											<a
+												href={inHomePage ? "#cfp" : "https://chaoscarnival.io/#cfp"}
+												style={{ textDecoration: "none" }}
+											>
+												CFP
+										</a>
+										</Typography>
+									</MenuItem>
+									<MenuItem
+										className={classes.menuItem}
+										button={false}
+										key="sponsors"
+									>
+										<Typography
+											className={classes.contributeBtn}
+											onClick={handleClose}
+										>
+											<a
+												href={inHomePage ? "#sponsors" : "https://chaoscarnival.io/#sponsors"}
+												style={{ textDecoration: "none" }}
+											>
+												Sponsors
+										</a>
+										</Typography>
+									</MenuItem>
+									<MenuItem
+										className={classes.menuItem}
+										button={false}
+										key="timer"
+										style={{ justifyContent: "center", color: "#000", margin: 0 }}
+									>
+										<div style={{ margin: "auto" }}>
+											<Button
+												className={classes.registerButton}
+												color="primary"
+												variant="contained"
+												style={{ margin: "auto", padding: "2rem", marginTop: "2rem", width: "100%" }}
+												onClick={() => {
+													window.open(
+														"https://join.slack.com/t/chaoscarnival/shared_invite/zt-ic63h58h-C_G5IwZ1EwhCtDcSpEEd0w"
+													);
+												}}
+											>
+												<Typography
+													className={classes.registerText}
+													style={{ textTransform: "none", fontSize: "1.15rem" }}
+												>
+													<b>Register&nbsp;Now&nbsp;for&nbsp;Free</b>
+												</Typography>
+											</Button>
+										</div>
+									</MenuItem>
+								</Menu>
+							</LazyLoad>
 						</div>
 					</Hidden>
 				</Toolbar>
