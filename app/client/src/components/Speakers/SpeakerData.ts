@@ -1,15 +1,15 @@
 export const SpeakerData = [
 	{
 		id: 0,
-		name: "Adrian Cockroft",
-		title: "VP Cloud Architecture Strategy AWS",
-		urlToIcon: "/images/real1.jpeg",
-	},
-	{
-		id: 1,
 		name: "Interested in Speaking?",
 		title: "Apply for CFP !",
 		urlToIcon: "/images/dummy2.jpeg",
+	},
+	{
+		id: 1,
+		name: "Uma Mukkara",
+		title: "Co-founder & COO, MayaData",
+		urlToIcon: "/images/uma.jpeg",
 	},
 	{
 		id: 2,
@@ -31,27 +31,27 @@ export const SpeakerData = [
 	},
 	{
 		id: 5,
-		name: "Rachel Obstler",
-		title: "VP, Product Management PagerDuty",
-		urlToIcon: "/images/real1.jpeg",
-	},
-	{
-		id: 6,
 		name: "Interested in Speaking?",
 		title: "Apply for CFP !",
 		urlToIcon: "/images/dummy6.jpeg",
 	},
 	{
-		id: 7,
+		id: 6,
 		name: "Interested in Speaking?",
 		title: "Apply for CFP !",
 		urlToIcon: "/images/dummy7.jpeg",
 	},
 	{
+		id: 7,
+		name: "Ramiro Berrelleza",
+		title: "Co-founder & CEO, Okteto",
+		urlToIcon: "/images/ramiro.jpeg",
+	},
+	{
 		id: 8,
-		name: "Interested in Speaking?",
-		title: "Apply for CFP !",
-		urlToIcon: "/images/dummy4.jpeg",
+		name: "Sumit Nagal",
+		title: "Principal Engineer, Intuit",
+		urlToIcon: "/images/sumit.jpeg",
 	},
 	{
 		id: 9,
@@ -61,9 +61,9 @@ export const SpeakerData = [
 	},
 	{
 		id: 10,
-		name: "Rachel Obstler",
-		title: "VP, Product Management PagerDuty",
-		urlToIcon: "/images/real2.jpeg",
+		name: "Interested in Speaking?",
+		title: "Apply for CFP !",
+		urlToIcon: "/images/dummy4.jpeg",
 	},
 	{
 		id: 11,
@@ -85,14 +85,14 @@ export const SpeakerData = [
 	},
 	{
 		id: 14,
-		name: "Interested in Speaking?",
-		title: "Apply for CFP !",
-		urlToIcon: "/images/dummy6.jpeg",
+		name: "Karthik S",
+		title: "Maintainer, LitmusChaos project",
+		urlToIcon: "/images/karthik.jpeg",
 	},
 	{
 		id: 15,
-		name: "Jon Snow",
-		title: "Author, Researcher, Founder IT Revolution",
-		urlToIcon: "/images/real1.jpeg",
+		name: "Interested in Speaking?",
+		title: "Apply for CFP !",
+		urlToIcon: "/images/dummy5.jpeg",
 	},
 ];

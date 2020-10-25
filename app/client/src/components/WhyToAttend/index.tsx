@@ -30,21 +30,21 @@ function WhyToAttend() {
 					<Typography className={classes.advantageNumber}> 02 </Typography>
 					<div>
 						<Typography className={classes.advantageHead}> Takeaways </Typography>
-						<Typography className={classes.advantageInfo}> Actionable takeaways to help you further your advancement in the chaos engineering. </Typography>
+						<Typography className={classes.advantageInfo}> Actionable takeaways to help you implement Chaos Engineering in your environment. </Typography>
 					</div>
 				</div>
 				<div className={classes.advantageElements}>
 					<Typography className={classes.advantageNumber}> 03 </Typography>
 					<div>
 						<Typography className={classes.advantageHead}> Discover </Typography>
-						<Typography className={classes.advantageInfo}> Discover new products and get hands-on to master the latest tools and techniques. </Typography>
+						<Typography className={classes.advantageInfo}> Discover new chaos engineering tools and talk to the makers directly.  </Typography>
 					</div>
 				</div>
 				<div className={classes.advantageElements}>
 					<Typography className={classes.advantageNumber}> 04 </Typography>
 					<div>
-						<Typography className={classes.advantageHead}> Learn </Typography>
-						<Typography className={classes.advantageInfo}> Learn from your peers and their experiences. </Typography>
+						<Typography className={classes.advantageHead}> Community </Typography>
+						<Typography className={classes.advantageInfo}> Be part of Chaos Engineering slack community, learn from your peers and stay up-to-date even after the conference ends. </Typography>
 					</div>
 				</div>
 			</div>

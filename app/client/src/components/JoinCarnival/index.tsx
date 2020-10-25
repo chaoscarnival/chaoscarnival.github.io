@@ -28,7 +28,7 @@ const JoinCarnival = () => {
 						/>
 					</LazyLoad>
 					<Typography className={classes.descText}>
-						This is the first episode of Chaos Carnival and it will be fun. Chaos engineering practitioners, experts and enthusiasts from all over the global are joining this carnival to share and learn.
+						This is the first episode of Chaos Carnival and it will be fun. Chaos engineering practitioners, experts and enthusiasts from all over the globe are joining this carnival to share and learn.
 					</Typography>
 					<div className={classes.regNow}>
 						<Button
