@@ -30,6 +30,7 @@ export const useStyles = makeStyles((theme) => ({
 	imgMedia: {
 		width: "100%",
 		height: '100%',
+		background: "linear-gradient(180deg,rgba(255, 136, 0, 0.65),rgba(229, 46, 113, 0.65))",
 		objectFit: "scale-down",
 		borderRadius: '10px',
 		[theme.breakpoints.down("sm")]: {
@@ -64,7 +65,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("xs")]: {
 			width: "125px",
-		  height: "210px",
+		  height: "230px",
 		},
 	},
 	mainTitle: {
@@ -83,6 +84,9 @@ color: '#488FDF',
 fontWeight: 700,
 textAlign: 'left',
 marginTop: theme.spacing(2),
+whiteSpace: "nowrap",
+textOverflow: "ellipsis",
+overflow: "hidden",
 [theme.breakpoints.down("md")]: {
 	fontSize: '0.9rem',
 },
@@ -128,6 +132,8 @@ marginTop: theme.spacing(1),
 		color: '#FE1C65',
 		textAlign: 'left',
 		marginTop: theme.spacing(1),
+		whiteSpace: "nowrap",	
+		textOverflow: "ellipsis",
 		[theme.breakpoints.down("md")]: {
 			fontSize: '0.9rem',
 		},

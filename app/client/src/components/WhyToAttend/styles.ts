@@ -102,8 +102,9 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   infoText: {
-    fontSize: '18px',
+    fontSize: '15px',
     textAlign: 'left',
+    color: "#8193B2",
   },
   advantages: {
     display: "flex",
