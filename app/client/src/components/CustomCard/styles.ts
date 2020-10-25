@@ -45,7 +45,7 @@ export const useStyles = makeStyles((theme) => ({
 
 	mainCard: {
 		width: "250px",
-		height: "360px",
+		height: "380px",
 		borderRadius: 3,
 		overflow: "hidden",
 		fontSize: 16,

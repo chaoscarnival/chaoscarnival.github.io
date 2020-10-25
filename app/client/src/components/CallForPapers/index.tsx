@@ -16,7 +16,8 @@ function CallForPapers() {
 						<Typography className={classes.callForPapersText}>Call for Papers</Typography>
 						<Typography className={classes.isOpenText}>is open</Typography>
 						<div className={classes.info}>
-							<Typography className={classes.infoText}>{`Speaking at this carnival is an opportunity to share your insights to the chaos community. You can speak on wide range of topics such as Chaos in CI/CD, DevOps in general, specific experiments, reliability, SLOs, cloud-native and of course chaos in general. Fill up your application on `}<a href="https://www.papercall.io" target="_blank" style={{ color: '#FFFFFF' }}>papercall.io</a></Typography>
+							<Typography className={classes.infoText}>{`You can speak on a wide range of topics such as chaos engineering in general, its benefits, introducing chaos into your DevOps setup, war stories, best practices and tools.`}</Typography>
+							{/* <Typography className={classes.infoText}>{`Speaking at this carnival is an opportunity to share your insights to the chaos community. You can speak on wide range of topics such as Chaos in CI/CD, DevOps in general, specific experiments, reliability, SLOs, cloud-native and of course chaos in general. Fill up your application on `}<a href="https://www.papercall.io" target="_blank" style={{ color: '#FFFFFF' }}>papercall.io</a></Typography> */}
 							<Typography className={classes.dateText}>{`Last date to submit is 10th Dec, 2020`}</Typography>
 							<Button
 								className={classes.cfpButton}
