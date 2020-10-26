@@ -28,9 +28,6 @@ const Routes: React.FC = () => {
 function App() {
 	const classes = useStyles();
 
-	useEffect(() => {
-	});
-
 	return (
 		<Suspense fallback={<Loader />}>
 			<Router history={history}>
