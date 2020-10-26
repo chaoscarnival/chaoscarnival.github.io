@@ -8,6 +8,7 @@ import history from './history';
 const HomePage = lazy(() => import("./pages/HomePage"));
 const SponsorshipPage = lazy(() => import("./pages/SponsorshipPage"));
 const ErrorPage = lazy(() => import("./pages/ErrorPage"));
+const TeamPage = lazy(() => import("./pages/TeamPage"));
 
 
 const Routes: React.FC = () => {
@@ -18,6 +19,7 @@ const Routes: React.FC = () => {
 			<Switch>
 				<Route exact={true} path="/" component={HomePage} />
 				<Route exact={true} path="/Sponsorship" component={SponsorshipPage} />
+				<Route exact={true} path="/Team" component={TeamPage} />
 				<Route exact={true} path="/404" component={ErrorPage} />
 				<Redirect to="/404" />
 			</Switch>

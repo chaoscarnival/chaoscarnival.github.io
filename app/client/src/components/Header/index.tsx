@@ -56,7 +56,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 						<Hidden smDown>
 							<div className={classes.headerHomeDiv}>
 								<a
-									href={inHomePage ? "#home" : "https://chaoscarnival.io"}
+									href={inHomePage ? "#home" : "https://chaoscarnival.io/#home"}
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>

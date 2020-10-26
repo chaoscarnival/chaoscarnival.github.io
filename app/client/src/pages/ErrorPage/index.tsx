@@ -8,15 +8,15 @@ function ErrorPage() {
 		window.scrollTo(0, 0);
 	});
 	return (
-				<div className={classes.root}>
-						<Typography className={classes.mainText}>
-							<strong>
-								404
-								<br />
+		<div className={classes.root}>
+			<Typography className={classes.mainText}>
+				<strong>
+					<span className={classes.text404}>404</span>
+					<br />
 								This page is unavailable
 							</strong>
-						</Typography>	
-				</div>
+			</Typography>
+		</div>
 	);
 }
 
