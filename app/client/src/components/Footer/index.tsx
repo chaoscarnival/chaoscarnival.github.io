@@ -76,16 +76,16 @@ const Footer: React.FC = () => {
 									</Typography>
 								</a>
 							</div>
-							{/* <div className={classes.headerDiv}>
+							<div className={classes.headerDiv}>
 								<a
-									href="#team"
+									href="/team"
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
 										Team
 									</Typography>
 								</a>
-							</div> */}
+							</div>
 						</Hidden>
 						<Hidden mdUp>
 							<div className={classes.headerDiv}>
@@ -127,21 +127,23 @@ const Footer: React.FC = () => {
 										YouTube
 									</Typography>
 								</a>
-								{/* <a
+								<a
 									href="https://chaoscarnival.io/team"
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
 										Team
 									</Typography>
-								</a> */}
+								</a>
 							</div>
 						</Hidden>
 					</div>
 				</Toolbar>
 				<Typography className={classes.copyRightFont}>
+				</Typography>
+				{/* <Typography className={classes.copyRightFont}>
 					Chaos Carnival is a registered trademark of MayaData, Inc. © 2020 MayaData, Inc. All Rights Reserved.
-			</Typography>
+				</Typography> */}
 			</AppBar>
 		</div>
 	);

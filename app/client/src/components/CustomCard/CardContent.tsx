@@ -24,7 +24,7 @@ function CardContent(props: CardProps) {
 							<img
 								src={urlToIcon}
 								className={classes.imgMedia}
-								alt="chart provider logo"
+								alt="Speaker image"
 							/>
 						</LazyLoad>
 					</div>
@@ -35,14 +35,16 @@ function CardContent(props: CardProps) {
 					<div
 						className={classes.mainTitle}
 					>
-						<div
-							className={name !== 'Interested in Speaking ?' ? classes.speakerName : classes.dummyName}>
+						<a
+							className={name !== 'Interested in Speaking?' ? classes.speakerName : classes.dummyName}
+							href={name !== 'Interested in Speaking?' ? "#" : "https://www.papercall.io/chaoscarnival"} target={name !== 'Interested in Speaking ?' ? "" : "_blank"} rel="noopener noreferrer">
 							{name}
-						</div>
-						<div
-							className={name !== 'Interested in Speaking ?' ? classes.speakerTitle : classes.dummyTitle}>
+						</a>
+						<a
+							className={name !== 'Interested in Speaking?' ? classes.speakerTitle : classes.dummyTitle}
+							href={name !== 'Interested in Speaking?' ? "#" : "https://www.papercall.io/chaoscarnival"} target={name !== 'Interested in Speaking ?' ? "" : "_blank"} rel="noopener noreferrer">
 							{title}
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>

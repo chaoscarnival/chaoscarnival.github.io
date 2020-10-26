@@ -6,6 +6,8 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	// CARD MEDIA
 	cardMedia: {
+		minWidth:"150px",
+		minHeight:"150px",
 		borderRadius: '10px',
 		[theme.breakpoints.down("sm")]: {
 			borderRadius: '5px',
@@ -87,6 +89,7 @@ marginTop: theme.spacing(2),
 whiteSpace: "nowrap",
 textOverflow: "ellipsis",
 overflow: "hidden",
+textDecoration:"none",
 [theme.breakpoints.down("md")]: {
 	fontSize: '0.9rem',
 },
@@ -102,6 +105,7 @@ overflow: "hidden",
 color: '#262626',
 textAlign: 'left',
 marginTop: theme.spacing(1),
+textDecoration:"none",
 [theme.breakpoints.down("md")]: {
 	fontSize: '0.9rem',
 },
@@ -117,6 +121,7 @@ marginTop: theme.spacing(1),
 		color: '#8193B2',
 		textAlign: 'left',
 		marginTop: theme.spacing(2),
+		textDecoration:"none",
 		[theme.breakpoints.down("md")]: {
 			fontSize: '0.9rem',
 		},
@@ -133,6 +138,7 @@ marginTop: theme.spacing(1),
 		textAlign: 'left',
 		marginTop: theme.spacing(1),
 		whiteSpace: "nowrap",	
+		textDecoration:"none",
 		textOverflow: "ellipsis",
 		[theme.breakpoints.down("md")]: {
 			fontSize: '0.9rem',

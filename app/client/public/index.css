@@ -7,6 +7,7 @@ body>#root>div {
 @media only screen and (min-width: 1880px) {
     .makeStyles-speakerRoot-72 {
         width: 1400px !important;
+        max-width: 1440px !important;
     }
     .makeStyles-mainCard-81 {
         width: 300px !important;
@@ -14,6 +15,10 @@ body>#root>div {
     }
     .makeStyles-imgMedia-80 {
         width: 300px !important;
+    }
+    .makeStyles-advantages-55 {
+        width: 65% !important;
+        margin: 0 auto !important;
     }
 }
 
@@ -49,7 +54,22 @@ body>#root>div {
 
 @media (max-width: 396px) {
     .makeStyles-mainCard-81 {
-        width: 130px !important;
+        width: 45% !important;
+        margin: 5px !important;
         height: 240px !important;
     }
+}
+
+button:hover {
+    background-color: #2C84F9 !important;
+    border: none !important;
+}
+
+.MuiButton-outlined:hover {
+    background-color: #92929287 !important;
+    border: 3px solid #FE1C65 !important;
+}
+
+img.makeStyles-teamlinkIcon-24:hover {
+    background-color: linear-gradient(180deg, rgba(255, 136, 0, 0.65), rgba(229, 46, 113, 0.65));
 }

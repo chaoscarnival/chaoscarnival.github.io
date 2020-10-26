@@ -82,13 +82,13 @@ const useStyles = makeStyles((theme: Theme) => ({
 		textAlign: 'center',
 		[theme.breakpoints.down("sm")]: {
 			marginTop: theme.spacing(8),
-			marginBottom: theme.spacing(3),
+			// marginBottom: theme.spacing(3),
+			marginBottom: "-26px",
 			marginLeft: "15vw",
 			marginRight: "15vw",
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: theme.spacing(8),
-			marginBottom: theme.spacing(3),
 			marginLeft: "15vw",
 			marginRight: "15vw",
 		},

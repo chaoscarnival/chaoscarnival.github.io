@@ -108,16 +108,21 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   infoText: {
-    fontSize: '15px',
+    fontSize: '18px',
     textAlign: 'left',
     color: "#8193B2",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: '15px',
+    },
   },
   advantages: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "left",
-    marginLeft: '10vw',
-    marginRight: '9vw',
+    // marginLeft: '10vw',
+    // marginRight: '9vw',
+    width: "80%",
+    margin: "0 auto",
     [theme.breakpoints.down("md")]: {
       marginLeft: '8vw',
       marginRight: '6vw',
