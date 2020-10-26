@@ -26,7 +26,7 @@ function CallForPapers() {
 								style={{ float: "left", padding: "2rem", marginTop: "2rem" }}
 								onClick={() => {
 									window.open(
-										"https://join.slack.com/t/chaoscarnival/shared_invite/zt-ic63h58h-C_G5IwZ1EwhCtDcSpEEd0w"
+										"https://www.papercall.io/chaoscarnival"
 									);
 								}}
 							>

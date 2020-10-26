@@ -31,7 +31,7 @@ export const useStyles = makeStyles((theme) => ({
 		width: "100%",
 		height: '100%',
 		background: "linear-gradient(180deg,rgba(255, 136, 0, 0.65),rgba(229, 46, 113, 0.65))",
-		objectFit: "scale-down",
+		// objectFit: "scale-down",
 		borderRadius: '10px',
 		[theme.breakpoints.down("sm")]: {
 			borderRadius: '5px',

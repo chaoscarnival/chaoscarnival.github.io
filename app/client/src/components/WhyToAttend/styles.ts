@@ -26,8 +26,14 @@ export const useStyles = makeStyles((theme) => ({
     
   },
   whyToAttend: {
-    width: '60vw',
+    // width: '60vw',
     marginTop: '20vh',
+    [theme.breakpoints.up("xl")]: {
+      width: '44vw !important',
+    },
+    [theme.breakpoints.down("xl")]: {
+      width: '60vw',
+    },
     [theme.breakpoints.down("sm")]: {
       width: '100vw',
       marginTop: '50vh',
