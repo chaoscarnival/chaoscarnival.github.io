@@ -1,0 +1,98 @@
+export const SpeakerData = [
+	{
+		id: 0,
+		name: "Interested in Speaking?",
+		title: "Apply for CFP !",
+		urlToIcon: "/images/dummy2.jpeg",
+	},
+	{
+		id: 1,
+		name: "Uma Mukkara",
+		title: "Co-founder & COO, MayaData",
+		urlToIcon: "/images/uma.jpeg",
+	},
+	{
+		id: 2,
+		name: "Interested in Speaking?",
+		title: "Apply for CFP !",
+		urlToIcon: "/images/dummy3.jpeg",
+	},
+	{
+		id: 3,
+		name: "Interested in Speaking?",
+		title: "Apply for CFP !",
+		urlToIcon: "/images/dummy4.jpeg",
+	},
+	{
+		id: 4,
+		name: "Interested in Speaking?",
+		title: "Apply for CFP !",
+		urlToIcon: "/images/dummy5.jpeg",
+	},
+	{
+		id: 5,
+		name: "Interested in Speaking?",
+		title: "Apply for CFP !",
+		urlToIcon: "/images/dummy6.jpeg",
+	},
+	{
+		id: 6,
+		name: "Interested in Speaking?",
+		title: "Apply for CFP !",
+		urlToIcon: "/images/dummy7.jpeg",
+	},
+	{
+		id: 7,
+		name: "Ramiro Berrelleza",
+		title: "Co-founder & CEO, Okteto",
+		urlToIcon: "/images/ramiro.jpeg",
+	},
+	{
+		id: 8,
+		name: "Sumit Nagal",
+		title: "Principal Engineer, Intuit",
+		urlToIcon: "/images/sumit.jpeg",
+	},
+	{
+		id: 9,
+		name: "Interested in Speaking?",
+		title: "Apply for CFP !",
+		urlToIcon: "/images/dummy2.jpeg",
+	},
+	{
+		id: 10,
+		name: "Interested in Speaking?",
+		title: "Apply for CFP !",
+		urlToIcon: "/images/dummy4.jpeg",
+	},
+	{
+		id: 11,
+		name: "Interested in Speaking?",
+		title: "Apply for CFP !",
+		urlToIcon: "/images/dummy3.jpeg",
+	},
+	{
+		id: 12,
+		name: "Interested in Speaking?",
+		title: "Apply for CFP !",
+		urlToIcon: "/images/dummy8.jpeg",
+	},
+	{
+		id: 13,
+		name: "Interested in Speaking?",
+		title: "Apply for CFP !",
+		urlToIcon: "/images/dummy5.jpeg",
+	},
+	{
+		id: 14,
+		name: "Karthik S",
+		title: "Maintainer, LitmusChaos project",
+		urlToIcon: "/images/karthik.jpeg",
+	},
+	{
+		id: 15,
+		name: "Interested in Speaking?",
+		title: "Apply for CFP !",
+		urlToIcon: "/images/dummy5.jpeg",
+	},
+];

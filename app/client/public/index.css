@@ -1,0 +1,44 @@
+body>#root>div {
+    height: 100vh;
+    scroll-behavior: smooth !important;
+    font-family: "GT Walsheim Pro" !important;
+}
+
+@media screen and (min-width: 1880px) {
+    .makeStyles-speakerRoot-72 {
+        width: 70% !important;
+    }
+}
+
+@media screen and (max-width: 1504px) {
+    .makeStyles-speakerRoot-72 {
+        width: 85% !important;
+    }
+}
+
+@media screen and (max-width: 1410px) {
+    .makeStyles-speakerRoot-72 {
+        width: 95% !important;
+    }
+}
+
+@media (max-width: 1186px) {
+    .makeStyles-mainCard-81 {
+        width: 196px !important;
+        height: 310px !important;
+    }
+}
+
+@media (max-width: 960px) {
+    .makeStyles-mainCard-81 {
+        width: 156px !important;
+        height: 250px !important;
+    }
+}
+
+@media (max-width: 396px) {
+    .makeStyles-mainCard-81 {
+        width: 130px !important;
+        height: 240px !important;
+    }
+}
