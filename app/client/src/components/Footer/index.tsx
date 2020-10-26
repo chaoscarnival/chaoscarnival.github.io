@@ -68,6 +68,7 @@ const Footer: React.FC = () => {
 							<div className={classes.headerDiv}>
 								<a
 									href="https://www.youtube.com/channel/UCDoH57pQWHU0MCm6Y5Y3LhA"
+									target="#"
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
@@ -75,7 +76,7 @@ const Footer: React.FC = () => {
 									</Typography>
 								</a>
 							</div>
-							<div className={classes.headerDiv}>
+							{/* <div className={classes.headerDiv}>
 								<a
 									href="#team"
 									style={{ textDecoration: "none" }}
@@ -84,7 +85,7 @@ const Footer: React.FC = () => {
 										Team
 									</Typography>
 								</a>
-							</div>
+							</div> */}
 						</Hidden>
 						<Hidden mdUp>
 							<div className={classes.headerDiv}>
@@ -119,20 +120,21 @@ const Footer: React.FC = () => {
 								</a>
 								<a
 									href="https://www.youtube.com/channel/UCDoH57pQWHU0MCm6Y5Y3LhA"
+									target="#"
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
 										YouTube
 									</Typography>
 								</a>
-								<a
+								{/* <a
 									href="https://chaoscarnival.io/team"
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
 										Team
 									</Typography>
-								</a>
+								</a> */}
 							</div>
 						</Hidden>
 					</div>

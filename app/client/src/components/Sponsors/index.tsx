@@ -9,11 +9,11 @@ const imgLink = [
 		alt: "MayaData",
 		link: "https://mayadata.io/",
 	},
-	{
-		img: "/icons/intuit.png",
-		alt: "intuit",
-		link: "https://www.intuit.com/",
-	},
+	// {
+	// 	img: "/icons/intuit.png",
+	// 	alt: "intuit",
+	// 	link: "https://www.intuit.com/",
+	// },
 	// {
 	// 	img: "/icons/Okteto.svg",
 	// 	alt: "okteto",

@@ -4,15 +4,26 @@ body>#root>div {
     font-family: "GT Walsheim Pro" !important;
 }
 
-@media screen and (min-width: 1880px) {
+@media only screen and (min-width: 1880px) {
     .makeStyles-speakerRoot-72 {
-        width: 70% !important;
+        width: 1400px !important;
+    }
+    .makeStyles-mainCard-81 {
+        width: 300px !important;
+        height: 510px !important;
+    }
+    .makeStyles-imgMedia-80 {
+        width: 300px !important;
     }
 }
 
 @media screen and (max-width: 1504px) {
     .makeStyles-speakerRoot-72 {
         width: 85% !important;
+    }
+    .makeStyles-mainCard-81 {
+        width: 296px !important;
+        height: 410px !important;
     }
 }
 
