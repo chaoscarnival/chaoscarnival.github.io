@@ -59,3 +59,17 @@ body>#root>div {
         height: 240px !important;
     }
 }
+
+button:hover {
+    background-color: #2C84F9 !important;
+    border: none !important;
+}
+
+.MuiButton-outlined:hover {
+    background-color: #92929287 !important;
+    border: 3px solid #FE1C65 !important;
+}
+
+img.makeStyles-teamlinkIcon-24:hover {
+    background-color: linear-gradient(180deg, rgba(255, 136, 0, 0.65), rgba(229, 46, 113, 0.65));
+}
