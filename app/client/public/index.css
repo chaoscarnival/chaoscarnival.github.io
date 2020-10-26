@@ -7,6 +7,7 @@ body>#root>div {
 @media only screen and (min-width: 1880px) {
     .makeStyles-speakerRoot-72 {
         width: 1400px !important;
+        max-width: 1440px !important;
     }
     .makeStyles-mainCard-81 {
         width: 300px !important;
@@ -14,6 +15,10 @@ body>#root>div {
     }
     .makeStyles-imgMedia-80 {
         width: 300px !important;
+    }
+    .makeStyles-advantages-55 {
+        width: 65% !important;
+        margin: 0 auto !important;
     }
 }
 
@@ -49,7 +54,8 @@ body>#root>div {
 
 @media (max-width: 396px) {
     .makeStyles-mainCard-81 {
-        width: 130px !important;
+        width: 45% !important;
+        margin: 5px !important;
         height: 240px !important;
     }
 }

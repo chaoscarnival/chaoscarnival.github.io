@@ -6,6 +6,8 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	// CARD MEDIA
 	cardMedia: {
+		minWidth:"150px",
+		minHeight:"150px",
 		borderRadius: '10px',
 		[theme.breakpoints.down("sm")]: {
 			borderRadius: '5px',

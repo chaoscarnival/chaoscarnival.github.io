@@ -24,7 +24,7 @@ function CardContent(props: CardProps) {
 							<img
 								src={urlToIcon}
 								className={classes.imgMedia}
-								alt="chart provider logo"
+								alt="Speaker image"
 							/>
 						</LazyLoad>
 					</div>
