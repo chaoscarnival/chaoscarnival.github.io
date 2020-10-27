@@ -22,6 +22,7 @@ export function Speakers() {
 						name={speaker.name}
 						title={speaker.title}
 						urlToIcon={speaker.urlToIcon}
+						company={speaker.company}
 					/>
 				))}
 			</div>

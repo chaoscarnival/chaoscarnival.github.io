@@ -28,7 +28,7 @@ body>#root>div {
     }
     .makeStyles-mainCard-81 {
         width: 296px !important;
-        height: 410px !important;
+        height: 420px !important;
     }
 }
 
@@ -41,14 +41,14 @@ body>#root>div {
 @media (max-width: 1186px) {
     .makeStyles-mainCard-81 {
         width: 196px !important;
-        height: 310px !important;
+        height: 350px !important;
     }
 }
 
 @media (max-width: 960px) {
     .makeStyles-mainCard-81 {
         width: 156px !important;
-        height: 250px !important;
+        height: 300px !important;
     }
 }
 
@@ -56,7 +56,13 @@ body>#root>div {
     .makeStyles-mainCard-81 {
         width: 45% !important;
         margin: 5px !important;
-        height: 240px !important;
+        height: 319px !important;
+    }
+    .makeStyles-teamName-20 {
+        font-size: 16px !important;
+    }
+    .makeStyles-teamLinks-22 {
+        width: 110% !important;
     }
 }
 
