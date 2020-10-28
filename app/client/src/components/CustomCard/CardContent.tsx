@@ -9,6 +9,7 @@ function CardContent(props: CardProps) {
 		name,
 		title,
 		urlToIcon,
+		company,
 	} = props;
 
 	const classes = useStyles();
@@ -43,7 +44,7 @@ function CardContent(props: CardProps) {
 						<a
 							className={name !== 'Interested in Speaking?' ? classes.speakerTitle : classes.dummyTitle}
 							href={name !== 'Interested in Speaking?' ? "#" : "https://www.papercall.io/chaoscarnival"} target={name !== 'Interested in Speaking ?' ? "" : "_blank"} rel="noopener noreferrer">
-							{title}
+							{title}<br />{company}
 						</a>
 					</div>
 				</div>

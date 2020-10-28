@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 		justifyContent: "center",
 		alignItems: "center",
 		[theme.breakpoints.down("sm")]: {
+			justifyContent: "flex-start",
 			position: "absolute",
 		},
 	},
@@ -236,6 +237,8 @@ const useStyles = makeStyles((theme: Theme) => ({
 	},
 	menuItem: {
 		outline: "none",
+		padding: "16px",
+		color: "#fff",
 		"&:hover": {
 			outline: "none",
 		},

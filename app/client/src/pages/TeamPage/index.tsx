@@ -1,15 +1,9 @@
-import { Typography, Button } from "@material-ui/core";
 import * as React from "react";
 import Footer from "../../components/Footer";
 import { useStyles } from "./styles";
 import MainHeader from "../../components/Header";
 import "../../scrollbar.css";
 import LazyLoad from 'react-lazy-load';
-import WhyToAttend from "../../components/WhyToAttend";
-import Sponsors from "../../components/Sponsors";
-import JoinCarnival from "../../components/JoinCarnival";
-import CallForPapers from "../../components/CallForPapers";
-import { Speakers } from '../../components/Speakers';
 
 const imgLink = [
 	{
@@ -57,9 +51,9 @@ function TeamPage() {
 					<p className={classes.mainHeader}>
 						Behind&nbsp;this&nbsp;great<br />event,&nbsp;there&nbsp;is&nbsp;a<br /><span className={classes.greatTeam}>Great&nbsp;Team.</span>
 					</p>
-					<p className={classes.mainContent}>
+					{/* <p className={classes.mainContent}>
 						Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mAliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-					</p>
+					</p> */}
 				</div>
 				<div className={classes.teamContainer}>
 					{imgLink.map((team) => (
