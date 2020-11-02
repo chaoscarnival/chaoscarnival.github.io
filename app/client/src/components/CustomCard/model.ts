@@ -5,4 +5,5 @@ export interface CardProps {
   name?: string;
   title?: string;
   urlToIcon?: string;
+  company?: string;
 }

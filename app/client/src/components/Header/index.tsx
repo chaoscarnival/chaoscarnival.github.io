@@ -129,8 +129,9 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										style: {
 											marginTop: 50,
 											width: "100%",
-											backgroundColor: "#FFFFFF",
-											borderRadius: 4,
+											backgroundColor: "transparent",
+											filter: "drop-shadow(0)",
+											// borderRadius: 4,
 											justifyContent: "center",
 										},
 									}}
@@ -156,8 +157,8 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										<img
 											src={
 												inHomePage
-													? "/icons/chaoscarnival-header-dark.png"
-													: "/icons/chaoscarnival-header-dark.png"
+													? "/icons/chaoscarnival-header.png"
+													: "/icons/chaoscarnival-header.png"
 											}
 											style={{ margin: 0 }}
 											alt="logo"
@@ -176,7 +177,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										>
 											<a
 												href={inHomePage ? "#speakers" : "https://chaoscarnival.io/#home"}
-												style={{ textDecoration: "none" }}
+												style={{ textDecoration: "none", color: "#fff", fontWeight: "bold" }}
 											>
 												Home
 										</a>
@@ -193,7 +194,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										>
 											<a
 												href={inHomePage ? "#speakers" : "https://chaoscarnival.io/#speakers"}
-												style={{ textDecoration: "none" }}
+												style={{ textDecoration: "none", color: "#fff", fontWeight: "bold" }}
 											>
 												Speakers
 										</a>
@@ -210,7 +211,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										>
 											<a
 												href={inHomePage ? "#cfp" : "https://chaoscarnival.io/#cfp"}
-												style={{ textDecoration: "none" }}
+												style={{ textDecoration: "none", color: "#fff", fontWeight: "bold" }}
 											>
 												CFP
 										</a>
@@ -227,7 +228,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										>
 											<a
 												href={inHomePage ? "#sponsors" : "https://chaoscarnival.io/#sponsors"}
-												style={{ textDecoration: "none" }}
+												style={{ textDecoration: "none", color: "#fff", fontWeight: "bold" }}
 											>
 												Sponsors
 										</a>

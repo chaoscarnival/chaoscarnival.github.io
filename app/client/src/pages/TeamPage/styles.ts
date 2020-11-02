@@ -136,7 +136,7 @@ export const useStyles = makeStyles((theme) => ({
 			borderRadius: '5px',
 		},
 		[theme.breakpoints.down("sm")]: {
-			width: "150px",
+			width: "90%",
 		},
 	},
 	footerText: {
@@ -159,6 +159,9 @@ export const useStyles = makeStyles((theme) => ({
 	teamName: {
 		color: "#488FDF",
 		fontSize: "28px",
+		[theme.breakpoints.down("xs")]: {
+			fontSize: "18px",
+		},
 		textAlign: "left",
 		fontWeight: 600,
 		wordBreak: "break-word",
