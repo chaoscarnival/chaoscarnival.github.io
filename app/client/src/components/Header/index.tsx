@@ -103,7 +103,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 						</Hidden>
 						<div className={classes.headerDivCount}>
 							<CountDown
-								timeTillDate="01 08 2021, 6:00 am"
+								timeTillDate="02 10 2021, 6:00 am"
 								timeFormat="MM DD YYYY, h:mm a"
 								inHomePage={inHomePage}
 							/>

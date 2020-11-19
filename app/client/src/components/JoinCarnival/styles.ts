@@ -120,7 +120,7 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	textDate: {
 		fontWeight: 700,
-		fontSize: 30,
+		fontSize: 29,
 		marginBottom: 10,
 		textAlign: "left",
 		[theme.breakpoints.down("xs")]: {

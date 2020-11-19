@@ -53,7 +53,7 @@ function HomePage() {
 									className={classes.headerDesc}
 									style={{ margin: "auto" }}
 								>
-									January 8-9, 2021
+									February 10-11, 2021
 							</Typography>
 							</div>
 
