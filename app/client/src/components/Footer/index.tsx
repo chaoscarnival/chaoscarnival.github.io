@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
 						</LazyLoad>
 
 						<Typography className={classes.timeFont}>
-							January 8-9, 2021
+							February 10-11, 2021
 									</Typography>
 						<Hidden smDown>
 							<div className={classes.headerHomeDiv}>
