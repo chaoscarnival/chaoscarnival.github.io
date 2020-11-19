@@ -75,7 +75,7 @@ const JoinCarnival = () => {
 						variant="outlined"
 						onClick={() => {
 							window.open(
-								"https://calendar.google.com/calendar/r/eventedit?text=Chaos+Carnival&dates=20210107T230000Z/20210109T030000Z&details=For+updates,+Join:+https://join.slack.com/t/chaoscarnival"
+								"https://calendar.google.com/calendar/r/eventedit?text=Chaos+Carnival&dates=20210209T230000Z/20210211T030000Z&details=For+updates,+Join:+https://join.slack.com/t/chaoscarnival"
 							);
 						}}
 					>
