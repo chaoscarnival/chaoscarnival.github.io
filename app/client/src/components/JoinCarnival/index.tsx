@@ -55,16 +55,16 @@ const JoinCarnival = () => {
 				<hr className={classes.hrLine}></hr>
 				<div className={classes.dateDiv}>
 					<Typography className={classes.textDay}>
-						Day 1 - Friday
+						Day 1 - Wednesday
 					</Typography>
 					<Typography className={classes.textDate} style={{ marginBottom: '2rem' }}>
-						January 8th, 2021
+						February 10th, 2021
 					</Typography>
 					<Typography className={classes.textDay}>
-						Day 2 - Saturday
+						Day 2 - Thursday
 					</Typography>
 					<Typography className={classes.textDate} style={{ marginBottom: '2rem' }}>
-						January 9th, 2021
+						February 11th, 2021
 					</Typography>
 					<Typography className={classes.textDay} style={{ textAlign: "left", fontWeight: 700, marginBottom: '1rem' }}>
 						8AM-5PM EST
