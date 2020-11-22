@@ -1,12 +1,12 @@
 import {
 	AppBar,
-	Toolbar,
 	Hidden,
-	Typography,
+	Toolbar,
+	Typography
 } from "@material-ui/core";
 import React from "react";
-import useStyles from "./styles";
 import LazyLoad from 'react-lazy-load';
+import useStyles from "./styles";
 
 const Footer: React.FC = () => {
 	const classes = useStyles();
@@ -40,6 +40,17 @@ const Footer: React.FC = () => {
 								>
 									<Typography className={classes.headerFont}>
 										Facebook
+									</Typography>
+								</a>
+							</div>
+							<div className={classes.headerDiv}>
+								<a
+									href="https://medium.com/@chaoscarnival"
+									target="#"
+									style={{ textDecoration: "none" }}
+								>
+									<Typography className={classes.headerFont}>
+										Medium
 									</Typography>
 								</a>
 							</div>
@@ -96,6 +107,15 @@ const Footer: React.FC = () => {
 								>
 									<Typography className={classes.headerFont} display='inline'>
 										Facebook
+									</Typography>
+								</a>
+								<a
+									href="https://medium.com/@chaoscarnival"
+									target="#"
+									style={{ textDecoration: "none" }}
+								>
+									<Typography className={classes.headerFont} display='inline'>
+										Medium
 									</Typography>
 								</a>
 								<a
