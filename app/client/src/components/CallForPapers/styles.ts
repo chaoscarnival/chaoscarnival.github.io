@@ -69,7 +69,7 @@ export const useStyles = makeStyles((theme) => ({
     textAlign: 'left',
     fontSize: '70px',
     marginLeft: '7vw',
-    background: 'linear-gradient(to right, #C94CA8 0%, #2C84F9 55%)', 
+    background: 'linear-gradient(to right, #C94CA8 0%, #2C84F9 35%)', 
     WebkitBackgroundClip: 'text',
      WebkitTextFillColor: 'transparent', 
     [theme.breakpoints.down("md")]: {
