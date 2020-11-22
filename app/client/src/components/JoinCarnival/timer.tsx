@@ -8,7 +8,7 @@ const Timer = () => {
 	const [now, setNow] = useState(moment());
 	const [over, setOver] = useState(false);
 
-	const then = moment("01 08 2021, 6:00 am", "MM DD YYYY, h:mm a");
+	const then = moment("02 10 2021, 6:00 am", "MM DD YYYY, h:mm a");
 	const days = then.diff(now, "days");
 	now.add(days, "days");
 	const hours = then.diff(now, "hours");
