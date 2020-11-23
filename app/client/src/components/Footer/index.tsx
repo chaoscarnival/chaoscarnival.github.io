@@ -1,12 +1,12 @@
 import {
 	AppBar,
-	Toolbar,
 	Hidden,
-	Typography,
+	Toolbar,
+	Typography
 } from "@material-ui/core";
 import React from "react";
-import useStyles from "./styles";
 import LazyLoad from 'react-lazy-load';
+import useStyles from "./styles";
 
 const Footer: React.FC = () => {
 	const classes = useStyles();
@@ -40,6 +40,17 @@ const Footer: React.FC = () => {
 								>
 									<Typography className={classes.headerFont}>
 										Facebook
+									</Typography>
+								</a>
+							</div>
+							<div className={classes.headerDiv}>
+								<a
+									href="https://medium.com/@chaoscarnival"
+									target="#"
+									style={{ textDecoration: "none" }}
+								>
+									<Typography className={classes.headerFont}>
+										Medium
 									</Typography>
 								</a>
 							</div>
@@ -99,6 +110,15 @@ const Footer: React.FC = () => {
 									</Typography>
 								</a>
 								<a
+									href="https://medium.com/@chaoscarnival"
+									target="#"
+									style={{ textDecoration: "none" }}
+								>
+									<Typography className={classes.headerFont} display='inline'>
+										Medium
+									</Typography>
+								</a>
+								<a
 									href="https://twitter.com/chaoscarnivalio"
 									target="#"
 									style={{ textDecoration: "none" }}
@@ -140,10 +160,8 @@ const Footer: React.FC = () => {
 					</div>
 				</Toolbar>
 				<Typography className={classes.copyRightFont}>
+					All trademarks and logos are property of their respective owners.
 				</Typography>
-				{/* <Typography className={classes.copyRightFont}>
-					Chaos Carnival is a registered trademark of MayaData, Inc. © 2020 MayaData, Inc. All Rights Reserved.
-				</Typography> */}
 			</AppBar>
 		</div>
 	);

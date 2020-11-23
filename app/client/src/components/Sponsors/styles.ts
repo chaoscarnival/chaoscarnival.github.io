@@ -3,8 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
 	root: {
 		width: "100%",
-		paddingTop: 60,
-		paddingBottom: 60,
+		paddingTop: 120,
+		paddingBottom: 120,
 		backgroundColor: "#FFFFFF",
 		[theme.breakpoints.down("sm")]: {
 			paddingTop: 10,
@@ -14,7 +14,7 @@ export const useStyles = makeStyles((theme) => ({
 		fontWeight: 700,
 		fontSize: 60,
 		textAlign: "left",
-		background: "linear-gradient(to right, #C94CA8 0%, #2C84F9 100%)",
+		background: "linear-gradient(to right, #C94CA8 0%, #2C84F9 50%)",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
 		[theme.breakpoints.down("xs")]: {
