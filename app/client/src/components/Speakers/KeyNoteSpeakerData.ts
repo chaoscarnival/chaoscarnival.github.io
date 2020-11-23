@@ -3,7 +3,7 @@ export const KeyNoteSpeakerData = [
 		id: 0,
 		name: "Adrian Cockcroft",
 		title: "VP Cloud Architecture Strategy",
-		companyIcon: "/images/aws_logo.svg",
+		companyIcon: "/images/aws_logo_color.svg",
 		urlToIcon: "/images/keynote_speaker1.svg",
   },
   {
