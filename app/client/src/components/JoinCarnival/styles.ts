@@ -5,8 +5,8 @@ export const useStyles = makeStyles((theme) => ({
 		width: "100%",
 		background:
 			"rgba(248, 249, 253, 0.98)",
-		paddingTop: 50,
-		paddingBottom: 50,
+		paddingTop: 100,
+		paddingBottom: 100,
 	},
 	mainDiv: {
 		marginTop: 40,
