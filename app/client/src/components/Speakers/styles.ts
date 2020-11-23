@@ -104,12 +104,17 @@ export const useStyles = makeStyles((theme: Theme) => ({
   speakersBackground: {
     marginTop: '10vh',
     paddingTop: '5vh',
-    background: '#0B1229',
+    backgroundColor: '#0B1229',
+    backgroundImage: 'url(/images/world_map.svg)',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: "center",
+    backgroundSize: 'contain',
     width: '100%',
     display: "flex",
 		flexDirection: "column",
     justifyContent: "center",
     paddingBottom: '10vh',
+    objectFit: "scale-down",
   },
 
   featuringChaosExpertsFrom: {
