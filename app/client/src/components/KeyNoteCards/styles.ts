@@ -23,33 +23,33 @@ export const useStyles = makeStyles((theme) => ({
 		marginTop: theme.spacing(5),
 		borderRadius: '10px',
 		[theme.breakpoints.down("md")]: {
-			width: "40%",
+			width: "60%",
 		  height: "90%",
 		},
 		[theme.breakpoints.down("sm")]: {
-			width: "40%",
+			width: "50%",
 		  height: "90%",
 		},
 		[theme.breakpoints.down("xs")]: {
-			width: "30%",
-		  height: "80%",
+			width: "40%",
+		  height: "90%",
 		},
 	},
 
 	imgIcon: {
-		width: "40px",
-		height: '40px',
+		width: "50px",
+		height: '50px',
 		marginTop: theme.spacing(-0.5),
 		objectFit: "scale-down",
 		[theme.breakpoints.down("md")]: {
-			width: "25px",
-			height: '25px',
+			width: "35px",
+			height: '35px',
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: 0,
-			paddingTop: theme.spacing(0.5),
-			width: "20px",
-			height: '20px',
+			paddingTop: theme.spacing(1),
+			width: "25px",
+			height: '25px',
 		},
 	},
 
@@ -66,16 +66,16 @@ export const useStyles = makeStyles((theme) => ({
 		marginLeft: theme.spacing(3),
 		marginRight: theme.spacing(3),
 		[theme.breakpoints.down("md")]: {
-			width: "400px",
-		  height: "150px",
+			width: "450px",
+		  height: "250px",
 		},
 		[theme.breakpoints.down("sm")]: {
-			width: "350px",
-		  height: "150px",
+			width: "450px",
+		  height: "250px",
 		},
 		[theme.breakpoints.down("xs")]: {
-			width: "400px",
-		  height: "150px",
+			width: "450px",
+		  height: "250px",
 		},
 	},
 	mainTitle: {
@@ -87,12 +87,12 @@ export const useStyles = makeStyles((theme) => ({
 		color: theme.palette.common.black,
 		[theme.breakpoints.down("md")]: {
 			fontSize: 12,
-			marginLeft: theme.spacing(-20),
+			marginLeft: theme.spacing(-16.5),
 			marginTop: theme.spacing(8.5),
 		},
 		[theme.breakpoints.down("sm")]: {
 			fontSize: 12,
-			marginLeft: theme.spacing(-20),
+			marginLeft: theme.spacing(-16.5),
 			marginTop: theme.spacing(8.5),
 		},
 		[theme.breakpoints.down("xs")]: {
@@ -112,13 +112,15 @@ export const useStyles = makeStyles((theme) => ({
 		overflow: "hidden",
 		textDecoration:"none",
 		[theme.breakpoints.down("md")]: {
-			fontSize: '0.7rem',
+			fontSize: '0.9rem',
 		},
 		[theme.breakpoints.down("sm")]: {
-			fontSize: '0.7rem',
+			marginTop: theme.spacing(-1),
+			fontSize: '0.8rem',
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: '0.6rem',
+			marginTop: theme.spacing(-1),
+			fontSize: '0.75rem',
 		},
 	},
 
@@ -129,15 +131,15 @@ export const useStyles = makeStyles((theme) => ({
 		textDecoration: "none",
 		fontSize: '1rem',
 		[theme.breakpoints.down("md")]: {
-			fontSize: '0.7rem',
+			fontSize: '0.8rem',
 			marginTop: theme.spacing(-1),
 		},
 		[theme.breakpoints.down("sm")]: {
-			fontSize: '0.7rem',
+			fontSize: '0.75rem',
 			marginTop: theme.spacing(-1),
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: '0.45rem',
+			fontSize: '0.65rem',
 			marginTop: theme.spacing(-1),
 			marginBottom: theme.spacing(0.5),
 		},

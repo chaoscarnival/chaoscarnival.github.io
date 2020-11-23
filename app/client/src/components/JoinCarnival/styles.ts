@@ -121,6 +121,14 @@ export const useStyles = makeStyles((theme) => ({
 	hrLine: {
 		background: "#262626",
 		width: '4px',
+		[theme.breakpoints.down("sm")]: {
+			width: "95%",
+			height: '4px',
+		},
+		[theme.breakpoints.down("sm")]: {
+			width: "77.5%",
+			height: '4px',
+		},
 		marginLeft: 50,
 		marginRight: 70,
 		marginTop: 30,
