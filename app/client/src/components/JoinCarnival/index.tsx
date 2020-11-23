@@ -1,8 +1,8 @@
 import { Button, Hidden, Typography } from "@material-ui/core";
 import React from "react";
+import LazyLoad from 'react-lazy-load';
 import { useStyles } from "./styles";
 import Timer from "./timer";
-import LazyLoad from 'react-lazy-load';
 
 const JoinCarnival = () => {
 	const classes = useStyles();
@@ -22,7 +22,7 @@ const JoinCarnival = () => {
 				<div className={classes.imageDiv}>
 					<LazyLoad offsetTop={100}>
 						<img
-							src="icons/chaoscarnival-header.png"
+							src="images/chaoscarnival_black_logo.svg"
 							alt="chaos carnival logo"
 							className={classes.logoImg}
 						/>
@@ -80,7 +80,7 @@ const JoinCarnival = () => {
 						}}
 					>
 						<Typography
-							className={classes.registerText}
+							className={classes.timerText}
 							style={{ textTransform: "none", padding: "3rem" }}
 						>
 							<b>Add&nbsp;to&nbsp;Calender</b>

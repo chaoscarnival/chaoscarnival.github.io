@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
 	card: {
-		background: theme.palette.common.white,
+		background: 'rgba(0,0,0,0)',
 	},
 	
 	// CARD CONTENT
@@ -11,8 +11,8 @@ export const useStyles = makeStyles((theme) => ({
 	},
 
 	imgMedia: {
-		width: "450px",
-		height: '120px',
+		width: "200px",
+		height: '80px',
 		borderRadius: '10px',
 		[theme.breakpoints.down("md")]: {
 			width: "250px",
@@ -31,8 +31,8 @@ export const useStyles = makeStyles((theme) => ({
 	//Default properties
 
 	mainCard: {
-		width: "500px",
-		height: "200px",
+		width: "300px",
+		height: "150px",
 		borderRadius: 3,
 		overflow: "hidden",
 		fontSize: 16,

@@ -4,14 +4,13 @@ export const useStyles = makeStyles((theme: Theme) => ({
 	root: {
     height: "100%",
 		marginTop: '10vh',
-		marginBottom: '15vh',
 		display: "flex",
 		flexDirection: "column",
     justifyContent: "center",
     alignItems: "flex-start",
   },
   
-  	speakerRoot: {
+  speakerRoot: {
 		display: "flex",
 		flexDirection: "row",
 		flexWrap: "wrap",
@@ -62,6 +61,26 @@ export const useStyles = makeStyles((theme: Theme) => ({
       [theme.breakpoints.down("xs")]: {
         fontSize: '30px',
       },
+  },
+  
+  featuringText: {
+    marginRight: theme.spacing(3),
+    fontWeight: 700, 
+    textAlign: 'left',
+    fontSize: '70px',
+    color: '#FFFFFF',
+    [theme.breakpoints.down("lg")]: {
+      fontSize: '60px',
+		},
+    [theme.breakpoints.down("md")]: {
+      fontSize: '50px',
+		},
+      [theme.breakpoints.down("sm")]: {
+        fontSize: '40px',
+      },
+      [theme.breakpoints.down("xs")]: {
+        fontSize: '30px',
+      },
 	},
 
   speakersText: {
@@ -82,14 +101,30 @@ export const useStyles = makeStyles((theme: Theme) => ({
     },
   },
 
-  chaosExpertsFrom: {
+  speakersBackground: {
+    marginTop: '10vh',
+    paddingTop: '5vh',
+    background: '#0B1229',
+    width: '100%',
+    display: "flex",
+		flexDirection: "column",
+    justifyContent: "center",
+    paddingBottom: '10vh',
+  },
+
+  featuringChaosExpertsFrom: {
 		display: "flex",
 		flexDirection: "row",
 		flexWrap: "wrap",
     justifyContent: "center",
+    marginLeft: '7vw',
     marginBottom: theme.spacing(3),
+    [theme.breakpoints.down(1400)]: {
+      marginLeft: 0,
+    },
     [theme.breakpoints.down("md")]: {
       justifyContent: "left",
+      marginLeft: 0,
 		},
   },
 
@@ -102,11 +137,14 @@ export const useStyles = makeStyles((theme: Theme) => ({
     color: '#FFFFFF',
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
+    [theme.breakpoints.down("lg")]: {
+      fontSize: '60px',
+		},
     [theme.breakpoints.down("md")]: {
       fontSize: '50px',
 		},
     [theme.breakpoints.down("sm")]: {
-      fontSize: '50px',
+      fontSize: '40px',
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: '26px',
@@ -118,16 +156,19 @@ export const useStyles = makeStyles((theme: Theme) => ({
     marginLeft: theme.spacing(3),
     textAlign: 'left',
     fontSize: '70px',
-		color: '#262626',
+    color: '#FFFFFF',
+    [theme.breakpoints.down("lg")]: {
+      fontSize: '60px',
+		},
     [theme.breakpoints.down("md")]: {
       fontSize: '50px',
 		},
       [theme.breakpoints.down("sm")]: {
-        fontSize: '50px',
+        fontSize: '40px',
       },
       [theme.breakpoints.down("xs")]: {
         fontSize: '30px',
-        marginLeft: 0,
+        marginLeft: theme.spacing(1),
       },
   },
   
@@ -147,8 +188,8 @@ export const useStyles = makeStyles((theme: Theme) => ({
 
    moreText: {
     textAlign: 'center',
-    fontSize: '36px',
-		color: '#8193B2',
+    fontSize: '26px',
+    color: '#8193B2',
     [theme.breakpoints.down("md")]: {
       fontSize: '24px',
 		},

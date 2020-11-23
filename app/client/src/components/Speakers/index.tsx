@@ -29,10 +29,11 @@ export function Speakers() {
 					/>
 				))}
 			</div>
+			<div className={classes.speakersBackground}> 
 			<div className={classes.headingspeaker}>
 				<div>
-					<div className={classes.ourExcitingText}>Featuring</div>
-					<div className={classes.chaosExpertsFrom}>
+					<div className={classes.featuringChaosExpertsFrom}>
+						<div className={classes.featuringText}>Featuring</div>
 						<div className={classes.chaosExpertsText}>Chaos Experts</div>
 						<div className={classes.fromText}>from</div>
 					</div>
@@ -65,6 +66,7 @@ export function Speakers() {
 								<Typography className={classes.cfpText} style={{ textTransform: 'none', fontSize: "1.15rem" }}><b>Apply&nbsp;for&nbsp;CFP</b></Typography>
 						</Button>
 						</div>
+				</div>
 				</div>
 			</div>
 		</div>
