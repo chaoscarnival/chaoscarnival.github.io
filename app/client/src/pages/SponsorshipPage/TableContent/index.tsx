@@ -1,8 +1,7 @@
-import React from "react";
+// import Paper from "@material-ui/core/Paper";
+import { TableFooter, Typography } from "@material-ui/core";
 import {
-	withStyles,
-	Theme,
-	createStyles,
+	createStyles, Theme, withStyles
 } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
@@ -10,8 +9,7 @@ import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
-// import Paper from "@material-ui/core/Paper";
-import { TableFooter, Typography } from "@material-ui/core";
+import React from "react";
 import { TableData } from "../TableContent/TableData";
 import { useStyles } from "./styles";
 
@@ -81,10 +79,10 @@ export default function CustomizedTables() {
 							Sponsorship details
 						</StyledTableCell>
 						<StyledTableCell align="center">
-							Platinum
+							Diamond
 						</StyledTableCell>
+						<StyledTableCell align="center">Platinum</StyledTableCell>
 						<StyledTableCell align="center">Gold</StyledTableCell>
-						<StyledTableCell align="center">Silver</StyledTableCell>
 						<StyledTableCell
 							style={{
 								borderTopRightRadius: 10,
@@ -92,7 +90,7 @@ export default function CustomizedTables() {
 							}}
 							align="center"
 						>
-							Bronze
+							Silver
 						</StyledTableCell>
 					</TableRow>
 				</TableHead>
@@ -111,6 +109,9 @@ export default function CustomizedTables() {
 								</Typography>
 							</StyledTableCell>
 							<StyledTableCell align="center">
+								{textFormatter(row.diamond)}
+							</StyledTableCell>
+							<StyledTableCell align="center">
 								{textFormatter(row.platinum)}
 							</StyledTableCell>
 							<StyledTableCell align="center">
@@ -118,9 +119,6 @@ export default function CustomizedTables() {
 							</StyledTableCell>
 							<StyledTableCell align="center">
 								{textFormatter(row.silver)}
-							</StyledTableCell>
-							<StyledTableCell align="center">
-								{textFormatter(row.bronze)}
 							</StyledTableCell>
 						</TableRow>
 					))}
@@ -139,12 +137,12 @@ export default function CustomizedTables() {
 								borderBottomLeftRadius: 10,
 							}}
 						>
-							Sponsorship Price
+							Price (ex-VAT)
 						</StyledTableCell>
 						<StyledTableCell align="center">
-							$10,000
+							Talk to us
 						</StyledTableCell>
-						<StyledTableCell align="center">$5,000</StyledTableCell>
+						<StyledTableCell align="center">$4,000</StyledTableCell>
 						<StyledTableCell align="center">$2,000</StyledTableCell>
 						<StyledTableCell
 							style={{
