@@ -1,13 +1,18 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
-import { useStyles } from "./styles";
 import LazyLoad from 'react-lazy-load';
+import { useStyles } from "./styles";
 
 const imgLink = [
 	{
 		img: "/icons/MayaData.svg",
 		alt: "MayaData",
-		link: "https://mayadata.io/",
+		link: "https://mayadata.io",
+	},
+	{
+		img: "/icons/Elastic.svg",
+		alt: "Elastic",
+		link: "https://www.elastic.co",
 	},
 	// {
 	// 	img: "/icons/intuit.png",
