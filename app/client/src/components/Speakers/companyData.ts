@@ -19,4 +19,8 @@ export const CompanyData = [
 		id: 4,
 		companyIcon: "/images/litmus_logo.svg",
   },
+  {
+		id: 5,
+		companyIcon: "/images/elastic_logo.svg",
+  },
 ];
