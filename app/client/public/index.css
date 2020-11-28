@@ -1,7 +1,7 @@
 body>#root>div {
     height: 100vh;
     scroll-behavior: smooth !important;
-    font-family: "GT Walsheim Pro" !important;
+    font-family: "GT Walsheim Pro", sans-serif !important;
 }
 
 @media only screen and (min-width: 1880px) {
