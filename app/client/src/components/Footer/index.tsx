@@ -5,7 +5,6 @@ import {
 	Typography
 } from "@material-ui/core";
 import React from "react";
-import LazyLoad from 'react-lazy-load';
 import useStyles from "./styles";
 
 const Footer: React.FC = () => {
@@ -20,13 +19,11 @@ const Footer: React.FC = () => {
 			>
 				<Toolbar className={classes.toolbarDiv}>
 					<div className={classes.toolbarDiv}>
-						<LazyLoad offsetTop={100}>
 							<img
 								src={"/icons/chaoscarnival-header.png"}
 								alt=" header"
 								className={classes.mainLogo}
 							/>
-						</LazyLoad>
 
 						<Typography className={classes.timeFont}>
 							February 10-11, 2021

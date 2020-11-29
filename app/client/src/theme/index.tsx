@@ -65,7 +65,7 @@ function customTheme(options: ThemeOptions) {
 		},
 		typography: {
 			fontSize: 12,
-			fontFamily: "GT Walsheim Pro",
+			fontFamily: "GT Walsheim Pro ,sans-serif"
 		},
 		...options,
 	});

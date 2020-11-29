@@ -4,7 +4,7 @@ import { useStyles } from "./styles";
 
 const imgLink = [
 	{
-		img: "/icons/MayaData.svg",
+		img: "/icons/MayadataFoundingSponsor.svg",
 		alt: "MayaData",
 		link: "https://mayadata.io",
 	},
