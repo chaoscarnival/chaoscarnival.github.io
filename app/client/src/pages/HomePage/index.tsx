@@ -65,7 +65,7 @@ function HomePage() {
 									style={{ margin: "auto", padding: "2rem", marginTop: "2rem", width: "100%" }}
 									onClick={() => {
 										window.open(
-											"https://join.slack.com/t/chaoscarnival/shared_invite/zt-ic63h58h-C_G5IwZ1EwhCtDcSpEEd0w"
+											"https://join.slack.com/t/chaoscarnival/shared_invite/zt-jy0q3xxc-EIYmlEXqvqbRRxYQkvdRpw"
 										);
 									}}
 								>
