@@ -13,6 +13,11 @@ const imgLink = [
 		alt: "Elastic",
 		link: "https://www.elastic.co",
 	},
+	{
+		img: "/icons/Wipro.svg",
+		alt: "Wipro",
+		link: "https://www.wipro.com",
+	},
 	// {
 	// 	img: "/icons/intuit.png",
 	// 	alt: "intuit",
