@@ -9,6 +9,11 @@ const imgLink = [
 		link: "https://mayadata.io",
 	},
 	{
+		img: "/icons/CNCF.svg",
+		alt: "CNCF",
+		link: "https://www.cncf.io",
+	},
+	{
 		img: "/icons/Elastic.svg",
 		alt: "Elastic",
 		link: "https://www.elastic.co",
