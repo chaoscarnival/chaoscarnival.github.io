@@ -23,6 +23,11 @@ const imgLink = [
 		alt: "Wipro",
 		link: "https://www.wipro.com",
 	},
+	{
+		img: "/icons/Percona.svg",
+		alt: "Percona",
+		link: "https://www.percona.com",
+	},
 	// {
 	// 	img: "/icons/intuit.png",
 	// 	alt: "intuit",
@@ -41,10 +46,10 @@ const Sponsor = () => {
 		<div className={classes.root}>
 			<div className={classes.mainDiv}>
 				<div className={classes.sponsorDiv}>
-					<Typography variant="h1" className={classes.sponsorText}>
+					<Typography variant="h1" className={classes.sponsorText} display="inline">
 						Our
 					</Typography>
-					<Typography className={classes.headerText}>
+					<Typography className={classes.headerText} display="inline">
 						Sponsors
 					</Typography>
 				</div>
@@ -63,8 +68,7 @@ const Sponsor = () => {
 						))}
 					</div>
 					<Typography className={classes.footerText}>
-						Interested in sponsoring?<br></br>
-						Email us at <br></br>
+						Interested in sponsoring? Email us at <br></br>
 						<a href="mailto:sponsorship@chaoscarnival.io">
 							sponsorship@chaoscarnival.io
 						</a>
