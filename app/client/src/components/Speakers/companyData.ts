@@ -23,4 +23,8 @@ export const CompanyData = [
 		id: 5,
 		companyIcon: "/images/elastic_logo.svg",
   },
+  {
+		id: 6,
+		companyIcon: "/images/percona_logo.svg",
+  },
 ];
