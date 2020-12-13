@@ -20,6 +20,7 @@ export const useStyles = makeStyles((theme) => ({
 		marginLeft: theme.spacing(2.5),
 		[theme.breakpoints.down("xs")]: {
 			fontSize: 40,
+			marginLeft: theme.spacing(2),
 		},
 	},
 	sponsorText: {
@@ -83,9 +84,10 @@ export const useStyles = makeStyles((theme) => ({
 		marginLeft: "10%",
 		[theme.breakpoints.down("xs")]: {
 			width: "100%",
-			marginLeft: 10,
+			marginLeft: "-8.5%",
+			alignItems: "center",
 			flexDirection: "column",
-			justifyContent: "left",
+			justifyContent: "center",
 		},
 	},
 	sponsorImg: {
@@ -119,7 +121,7 @@ export const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 		marginLeft: "10%",
 		[theme.breakpoints.down("xs")]: {
-			marginLeft: 30,
+			marginLeft: "-8.5%",
 		},
 	},
 }));
