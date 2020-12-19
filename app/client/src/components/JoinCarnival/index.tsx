@@ -19,13 +19,16 @@ const JoinCarnival = () => {
 					</Typography>
 				</Hidden>
 				<div className={classes.imageDiv}>
-						<img
-							src="images/chaoscarnival_black_logo.svg"
-							alt="chaos carnival logo"
-							className={classes.logoImg}
-						/>
+					<img
+						src="images/chaoscarnival_black_logo.svg"
+						alt="chaos carnival logo"
+						className={classes.logoImg}
+					/>
 					<Typography className={classes.descText}>
-						This is the first episode of Chaos Carnival and it will be fun. Chaos engineering practitioners, experts and enthusiasts from all over the globe are joining this carnival to share and learn.
+						This is the first episode of Chaos Carnival and it will
+						be fun. Chaos engineering practitioners, experts and
+						enthusiasts from all over the globe are joining this
+						carnival to share and learn.
 					</Typography>
 					<div className={classes.regNow}>
 						<Button
@@ -54,16 +57,29 @@ const JoinCarnival = () => {
 					<Typography className={classes.textDay}>
 						Day 1 - Wednesday
 					</Typography>
-					<Typography className={classes.textDate} style={{ marginBottom: '2rem' }}>
+					<Typography
+						className={classes.textDate}
+						style={{ marginBottom: "2rem" }}
+					>
 						February 10th, 2021
 					</Typography>
 					<Typography className={classes.textDay}>
 						Day 2 - Thursday
 					</Typography>
-					<Typography className={classes.textDate} style={{ marginBottom: '2rem' }}>
+					<Typography
+						className={classes.textDate}
+						style={{ marginBottom: "2rem" }}
+					>
 						February 11th, 2021
 					</Typography>
-					<Typography className={classes.textDay} style={{ textAlign: "left", fontWeight: 700, marginBottom: '1rem' }}>
+					<Typography
+						className={classes.textDay}
+						style={{
+							textAlign: "left",
+							fontWeight: 700,
+							marginBottom: "1rem",
+						}}
+					>
 						8AM-5PM EST
 					</Typography>
 					<Button

@@ -65,7 +65,7 @@ function customTheme(options: ThemeOptions) {
 		},
 		typography: {
 			fontSize: 12,
-			fontFamily: "GT Walsheim Pro ,sans-serif"
+			fontFamily: "GT Walsheim Pro ,sans-serif",
 		},
 		...options,
 	});
@@ -96,6 +96,6 @@ const withTheme = (Component: any) => {
 	}
 
 	return WithTheme;
-}
+};
 
 export default withTheme;

@@ -2,9 +2,9 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
 	card: {
-		background: 'rgba(0,0,0,0)',
+		background: "rgba(0,0,0,0)",
 	},
-	
+
 	// CARD CONTENT
 	cardContent: {
 		color: theme.palette.text.primary,
@@ -12,19 +12,19 @@ export const useStyles = makeStyles((theme) => ({
 
 	imgMedia: {
 		width: "200px",
-		height: '80px',
-		borderRadius: '10px',
+		height: "80px",
+		borderRadius: "10px",
 		[theme.breakpoints.down("md")]: {
 			width: "250px",
-		  height: '70px',
+			height: "70px",
 		},
 		[theme.breakpoints.down("sm")]: {
 			width: "250px",
-		  height: '70px',
+			height: "70px",
 		},
 		[theme.breakpoints.down("xs")]: {
-		  width: "200px",
-		  height: '60px',
+			width: "200px",
+			height: "60px",
 		},
 	},
 
@@ -42,14 +42,14 @@ export const useStyles = makeStyles((theme) => ({
 		marginRight: theme.spacing(3),
 		[theme.breakpoints.down("md")]: {
 			width: "300px",
-		  height: "150px",
+			height: "150px",
 		},
 		[theme.breakpoints.down("sm")]: {
 			width: "300px",
-		  height: "150px",
+			height: "150px",
 		},
 		[theme.breakpoints.down("xs")]: {
-		  width: "250px",
+			width: "250px",
 			height: "100px",
 			marginLeft: theme.spacing(10),
 		},

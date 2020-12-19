@@ -2,8 +2,8 @@ import React, { lazy, Suspense } from "react";
 import { Redirect, Route, Router, Switch } from "react-router-dom";
 import { useStyles } from "./App-styles";
 import { Loader } from "./components";
-import history from './history';
-import withTheme from './theme';
+import history from "./history";
+import withTheme from "./theme";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const SponsorshipPage = lazy(() => import("./pages/SponsorshipPage"));
@@ -19,16 +19,28 @@ const Routes: React.FC = () => {
 		<div className={classes.content}>
 			<Switch>
 				<Route exact={true} path="/" component={HomePage} />
-				<Route exact={true} path="/register" component={RegistrationPage} />
-				<Route exact={true} path="/acknowledgement" component={AcknowledgementPage} />
-				<Route exact={true} path="/Sponsorship" component={SponsorshipPage} />
+				<Route
+					exact={true}
+					path="/register"
+					component={RegistrationPage}
+				/>
+				<Route
+					exact={true}
+					path="/acknowledgement"
+					component={AcknowledgementPage}
+				/>
+				<Route
+					exact={true}
+					path="/Sponsorship"
+					component={SponsorshipPage}
+				/>
 				<Route exact={true} path="/Team" component={TeamPage} />
 				<Route exact={true} path="/404" component={ErrorPage} />
 				<Redirect to="/404" />
 			</Switch>
 		</div>
 	);
-}
+};
 
 function App() {
 	const classes = useStyles();

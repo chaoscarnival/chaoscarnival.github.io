@@ -3,20 +3,22 @@ import Footer from "../../components/Footer";
 import { useStyles } from "./styles";
 import MainHeader from "../../components/Header";
 import "../../scrollbar.css";
-import LazyLoad from 'react-lazy-load';
+import LazyLoad from "react-lazy-load";
 
 const imgLink = [
 	{
 		img: "/images/mohan.jpeg",
 		name: "Mohanarangan Muthukumar",
-		description: "Software Engineer at Avalara | Host of podcast.yaml Kubernetes podcast | Organizer of Docker Chennai",
+		description:
+			"Software Engineer at Avalara | Host of podcast.yaml Kubernetes podcast | Organizer of Docker Chennai",
 		githublink: "https://github.com/extrasalt",
 		linkedinlink: "https://www.linkedin.com/in/extrasalt",
 	},
 	{
 		img: "/images/senthil.jpeg",
 		name: "Senthil Raja Chermapandian",
-		description: "Cloud | Big Data/ ML | Kubernetes | OpenShift | Golang | Python | Open Source Contributor",
+		description:
+			"Cloud | Big Data/ ML | Kubernetes | OpenShift | Golang | Python | Open Source Contributor",
 		githublink: "https://github.com/senthilrch",
 		linkedinlink: "https://www.linkedin.com/in/senthil-raja-chermapandian",
 	},
@@ -30,7 +32,8 @@ const imgLink = [
 	{
 		img: "/images/prithvicomp.jpeg",
 		name: "Prithvi Raj",
-		description: "Community Manager at LitmusChaos | Chaos Engineering | Kubernetes | Cloud-Native | Open Source",
+		description:
+			"Community Manager at LitmusChaos | Chaos Engineering | Kubernetes | Cloud-Native | Open Source",
 		githublink: "https://github.com/prithvi1307",
 		linkedinlink: "https://www.linkedin.com/in/prithvi-raj-41b4581a8/",
 	},
@@ -49,7 +52,13 @@ function TeamPage() {
 				<MainHeader inHomePage={false} />
 				<div className={classes.wrapContainer}>
 					<p className={classes.mainHeader}>
-						Behind&nbsp;this&nbsp;great<br />event,&nbsp;there&nbsp;is&nbsp;a<br /><span className={classes.greatTeam}>Great&nbsp;Team.</span>
+						Behind&nbsp;this&nbsp;great
+						<br />
+						event,&nbsp;there&nbsp;is&nbsp;a
+						<br />
+						<span className={classes.greatTeam}>
+							Great&nbsp;Team.
+						</span>
 					</p>
 					{/* <p className={classes.mainContent}>
 						Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mAliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
@@ -57,7 +66,11 @@ function TeamPage() {
 				</div>
 				<div className={classes.teamContainer}>
 					{imgLink.map((team) => (
-						<div className={classes.cardTeam} style={{ marginRight: 0 }} key={Math.random() * 99999}>
+						<div
+							className={classes.cardTeam}
+							style={{ marginRight: 0 }}
+							key={Math.random() * 99999}
+						>
 							{/* <a href={team.githublink} target="_blank" rel="noopener noreferrer"> */}
 							<LazyLoad offsetTop={100}>
 								<img
@@ -75,7 +88,11 @@ function TeamPage() {
 								</p>
 								<div className={classes.teamLinks}>
 									<div className={classes.teamLink}>
-										<a href={team.githublink} target="_blank" rel="noopener noreferrer">
+										<a
+											href={team.githublink}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
 											<img
 												src="/icons/github.svg"
 												alt={team.name}
@@ -84,7 +101,11 @@ function TeamPage() {
 										</a>
 									</div>
 									<div className={classes.teamLink}>
-										<a href={team.linkedinlink} target="_blank" rel="noopener noreferrer">
+										<a
+											href={team.linkedinlink}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
 											<img
 												src="/icons/linkedin.svg"
 												alt={team.name}
@@ -100,8 +121,8 @@ function TeamPage() {
 				<div style={{ marginTop: "auto" }}>
 					<Footer />
 				</div>
-			</div >
-		</div >
+			</div>
+		</div>
 	);
 }
 

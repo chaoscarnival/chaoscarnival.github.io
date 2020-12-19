@@ -40,15 +40,12 @@ const CountDown: React.FC<CountDownProps> = ({
 	return (
 		<div>
 			{!over ? (
-				<Button
-					variant="outlined"
-					className={classes.timerBtn}
-				>
+				<Button variant="outlined" className={classes.timerBtn}>
 					{`${days}d ${hours}h ${minutes}m ${seconds}s`}
 				</Button>
 			) : (
-					<div />
-				)}
+				<div />
+			)}
 		</div>
 	);
 };
