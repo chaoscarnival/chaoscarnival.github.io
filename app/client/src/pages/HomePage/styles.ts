@@ -11,17 +11,18 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	mainDiv: {
 		marginTop: theme.spacing(-10),
-		
+
 		// backgroundColor: "#070e23",
 		background: "#361d13 url(/images/herobgdesktop.jpeg)",
-		backgroundRepeat: 'no-repeat',
+		backgroundRepeat: "no-repeat",
 		backgroundSize: "cover",
 		backgroundPosition: "center",
 		height: "100vh",
 		display: "flex",
 		flexDirection: "column",
 		[theme.breakpoints.down("sm")]: {
-			background: 'linear-gradient(180deg,rgba(255, 136, 0, 0.65),rgba(229, 46, 113, 0.65))',
+			background:
+				"linear-gradient(180deg,rgba(255, 136, 0, 0.65),rgba(229, 46, 113, 0.65))",
 			backgroundImage: "url(/images/herobgphone.jpeg)",
 			backgroundSize: "cover",
 		},
@@ -60,9 +61,9 @@ export const useStyles = makeStyles((theme) => ({
 		marginBottom: 20,
 		textAlign: "left",
 		fontWeight: 600,
-		color: '#FAFF53',
+		color: "#FAFF53",
 		maxWidth: 500,
-		marginTop: '2vh',
+		marginTop: "2vh",
 		[theme.breakpoints.down("xl")]: {
 			fontSize: "45px",
 		},
@@ -81,40 +82,40 @@ export const useStyles = makeStyles((theme) => ({
 			fontSize: "16px",
 		},
 	},
-	register:{
-		width: '40vw',
-		height: '7vh',
-		marginLeft: '31vw',
-		marginTop: '3vw',
+	register: {
+		width: "40vw",
+		height: "7vh",
+		marginLeft: "31vw",
+		marginTop: "3vw",
 	},
 	registerButton: {
-		height: '3.5rem',
-		width: '18.5rem',
+		height: "3.5rem",
+		width: "18.5rem",
 		[theme.breakpoints.down("xl")]: {
-			height: '3.5rem',
-		width: '18.5rem',
+			height: "3.5rem",
+			width: "18.5rem",
 		},
 		[theme.breakpoints.down("lg")]: {
-			height: '3rem',
-		width: '16.5rem',
+			height: "3rem",
+			width: "16.5rem",
 		},
 		[theme.breakpoints.down("md")]: {
-			height: '2.5rem',
-		width: '14.5rem',
+			height: "2.5rem",
+			width: "14.5rem",
 		},
 		[theme.breakpoints.down("sm")]: {
 			marginTop: "20vh",
-			height: '2rem',
-		width: '9.75rem',
+			height: "2rem",
+			width: "9.75rem",
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: "20vh",
-			height: '2rem',
-		width: '7.5rem',
+			height: "2rem",
+			width: "7.5rem",
 		},
 	},
-	registerText:{
-		fontSize: '16px',
+	registerText: {
+		fontSize: "16px",
 		[theme.breakpoints.down("xl")]: {
 			fontSize: "16px",
 		},
@@ -132,32 +133,32 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	logoImg: {
-		marginTop: '22.5vh',
+		marginTop: "22.5vh",
 		// height: '35vh',
 		padding: "1rem",
-		width: '65vh',
+		width: "65vh",
 		[theme.breakpoints.down("xl")]: {
 			// height: '35vh',
-			width: '65vh',
+			width: "65vh",
 		},
 		[theme.breakpoints.down("lg")]: {
 			// height: '35vh',
-			width: '60vh',
+			width: "60vh",
 		},
 		[theme.breakpoints.down("md")]: {
-			marginTop: '32vh',
+			marginTop: "32vh",
 			// height: '30vh',
-			width: '50vh',
+			width: "50vh",
 		},
 		[theme.breakpoints.down("sm")]: {
-			marginTop: '32vh',
+			marginTop: "32vh",
 			// height: '27.5vh',
-			width: '50vh',
+			width: "50vh",
 		},
 		[theme.breakpoints.down("xs")]: {
-			marginTop: '25vh',
+			marginTop: "25vh",
 			// height: '22.5vh',
-			width: '80vw',
+			width: "80vw",
 		},
 	},
 	speakersDiv: {

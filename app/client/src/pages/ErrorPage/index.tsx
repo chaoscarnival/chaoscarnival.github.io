@@ -13,8 +13,8 @@ function ErrorPage() {
 				<strong>
 					<span className={classes.text404}>404</span>
 					<br />
-								This page is unavailable
-							</strong>
+					This page is unavailable
+				</strong>
 			</Typography>
 		</div>
 	);

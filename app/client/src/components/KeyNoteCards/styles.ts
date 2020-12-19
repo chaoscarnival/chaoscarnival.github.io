@@ -17,39 +17,39 @@ export const useStyles = makeStyles((theme) => ({
 
 	imgMedia: {
 		width: "90%",
-		height: '100%',
+		height: "100%",
 		objectFit: "scale-down",
 		marginLeft: theme.spacing(-15),
 		marginTop: theme.spacing(5),
-		borderRadius: '10px',
+		borderRadius: "10px",
 		[theme.breakpoints.down("md")]: {
 			width: "60%",
-		  height: "90%",
+			height: "90%",
 		},
 		[theme.breakpoints.down("sm")]: {
 			width: "50%",
-		  height: "90%",
+			height: "90%",
 		},
 		[theme.breakpoints.down("xs")]: {
 			width: "40%",
-		  height: "90%",
+			height: "90%",
 		},
 	},
 
 	imgIcon: {
 		width: "50px",
-		height: '50px',
+		height: "50px",
 		marginTop: theme.spacing(-0.5),
 		objectFit: "scale-down",
 		[theme.breakpoints.down("md")]: {
 			width: "35px",
-			height: '35px',
+			height: "35px",
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: 0,
 			paddingTop: theme.spacing(1),
 			width: "25px",
-			height: '25px',
+			height: "25px",
 		},
 	},
 
@@ -67,15 +67,15 @@ export const useStyles = makeStyles((theme) => ({
 		marginRight: theme.spacing(3),
 		[theme.breakpoints.down("md")]: {
 			width: "450px",
-		  height: "250px",
+			height: "250px",
 		},
 		[theme.breakpoints.down("sm")]: {
 			width: "450px",
-		  height: "250px",
+			height: "250px",
 		},
 		[theme.breakpoints.down("xs")]: {
 			width: "450px",
-		  height: "250px",
+			height: "250px",
 		},
 	},
 	mainTitle: {
@@ -103,43 +103,43 @@ export const useStyles = makeStyles((theme) => ({
 	},
 
 	speakerName: {
-		color: '#488FDF',
+		color: "#488FDF",
 		fontWeight: 700,
-		textAlign: 'left',
+		textAlign: "left",
 		marginTop: theme.spacing(-2),
 		whiteSpace: "nowrap",
 		textOverflow: "ellipsis",
 		overflow: "hidden",
-		textDecoration:"none",
+		textDecoration: "none",
 		[theme.breakpoints.down("md")]: {
-			fontSize: '0.9rem',
+			fontSize: "0.9rem",
 		},
 		[theme.breakpoints.down("sm")]: {
 			marginTop: theme.spacing(-1),
-			fontSize: '0.8rem',
+			fontSize: "0.8rem",
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: theme.spacing(-1),
-			fontSize: '0.75rem',
+			fontSize: "0.75rem",
 		},
 	},
 
 	speakerTitle: {
-		color: '#262626',
-		textAlign: 'left',
+		color: "#262626",
+		textAlign: "left",
 		marginTop: theme.spacing(-1),
 		textDecoration: "none",
-		fontSize: '1rem',
+		fontSize: "1rem",
 		[theme.breakpoints.down("md")]: {
-			fontSize: '0.8rem',
+			fontSize: "0.8rem",
 			marginTop: theme.spacing(-1),
 		},
 		[theme.breakpoints.down("sm")]: {
-			fontSize: '0.75rem',
+			fontSize: "0.75rem",
 			marginTop: theme.spacing(-1),
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: '0.65rem',
+			fontSize: "0.65rem",
 			marginTop: theme.spacing(-1),
 			marginBottom: theme.spacing(0.5),
 		},

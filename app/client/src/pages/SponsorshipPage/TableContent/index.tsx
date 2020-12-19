@@ -1,8 +1,6 @@
 // import Paper from "@material-ui/core/Paper";
 import { TableFooter, Typography } from "@material-ui/core";
-import {
-	createStyles, Theme, withStyles
-} from "@material-ui/core/styles";
+import { createStyles, Theme, withStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
@@ -41,17 +39,25 @@ const textFormatter = (text: string) => {
 	return (
 		<div>
 			{val === "Yes" ? (
-				<img src="/icons/tick.svg" alt="Yes" style={{ width: 26, height: 26 }} />
+				<img
+					src="/icons/tick.svg"
+					alt="Yes"
+					style={{ width: 26, height: 26 }}
+				/>
 			) : val === "No" ? (
-				<img src="/icons/cross.svg" alt="No" style={{ width: 26, height: 26 }} />
+				<img
+					src="/icons/cross.svg"
+					alt="No"
+					style={{ width: 26, height: 26 }}
+				/>
 			) : (
-						<Typography>{val}</Typography>
-					)}
+				<Typography>{val}</Typography>
+			)}
 			{valText !== "" || valText !== undefined ? (
 				<Typography>{valText}</Typography>
 			) : (
-					<Typography>""</Typography>
-				)}
+				<Typography>""</Typography>
+			)}
 		</div>
 	);
 };
@@ -81,7 +87,9 @@ export default function CustomizedTables() {
 						<StyledTableCell align="center">
 							Diamond
 						</StyledTableCell>
-						<StyledTableCell align="center">Platinum</StyledTableCell>
+						<StyledTableCell align="center">
+							Platinum
+						</StyledTableCell>
 						<StyledTableCell align="center">Gold</StyledTableCell>
 						<StyledTableCell
 							style={{
