@@ -118,7 +118,7 @@ function AcknowledgementPage() {
 											style={{ textTransform: "none" }}
 										>
 											<img
-												src="./icons/Slack.svg"
+												src="./icons/social/Slack.svg"
 												alt="Slack Icon"
 												className={classes.slack}
 											/>
@@ -178,7 +178,7 @@ function AcknowledgementPage() {
 										style={{ textDecoration: "none" }}
 									>
 										<img
-											src="./icons/social/Linkedin.svg"
+											src="./icons/social/LinkedIn.svg"
 											alt="Linkedin"
 											className={classes.footerIconImages}
 										/>
