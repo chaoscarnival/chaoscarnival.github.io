@@ -1,20 +1,27 @@
 import {
-	Hidden,
-	MenuItem,
 	AppBar,
-	Toolbar,
-	Typography,
+
+
+
+
+
+	Button, Fade, Hidden,
+
+
+
+
 	IconButton,
-	Menu,
-	Fade,
-	Button,
+	Menu, MenuItem,
+
+	Toolbar,
+	Typography
 } from "@material-ui/core";
-import React from "react";
-import useStyles from "./styles";
 import CloseIcon from "@material-ui/icons/Close";
+import React from "react";
+import LazyLoad from 'react-lazy-load';
 import history from "../../history";
 import CountDown from "../CountDown";
-import LazyLoad from 'react-lazy-load';
+import useStyles from "./styles";
 
 interface MainHeaderProps {
 	inHomePage: boolean;

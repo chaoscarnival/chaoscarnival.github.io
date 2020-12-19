@@ -1,14 +1,14 @@
-import { Typography, Button } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import * as React from "react";
-import Footer from "../../components/Footer";
-import { useStyles } from "./styles";
-import MainHeader from "../../components/Header";
-import "../../scrollbar.css";
-import WhyToAttend from "../../components/WhyToAttend";
-import Sponsors from "../../components/Sponsors";
-import JoinCarnival from "../../components/JoinCarnival";
 import CallForPapers from "../../components/CallForPapers";
+import Footer from "../../components/Footer";
+import MainHeader from "../../components/Header";
+import JoinCarnival from "../../components/JoinCarnival";
 import { Speakers } from '../../components/Speakers';
+import Sponsors from "../../components/Sponsors";
+import WhyToAttend from "../../components/WhyToAttend";
+import "../../scrollbar.css";
+import { useStyles } from "./styles";
 
 function HomePage() {
 	const classes = useStyles();
@@ -64,9 +64,7 @@ function HomePage() {
 									variant="contained"
 									style={{ margin: "auto", padding: "2rem", marginTop: "2rem", width: "100%" }}
 									onClick={() => {
-										window.open(
-											"https://join.slack.com/t/chaoscarnival/shared_invite/zt-jy0q3xxc-EIYmlEXqvqbRRxYQkvdRpw"
-										);
+										window.location.href='https://chaoscarnival.io/register'
 									}}
 								>
 									<Typography

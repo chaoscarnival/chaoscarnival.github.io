@@ -38,7 +38,7 @@ function customTheme(options: ThemeOptions) {
 			primary: {
 				light: "#FE1C65",
 				main: "#FE1C65",
-				dark: "r#FE1C65",
+				dark: "#FE1C65",
 				contrastText: "#FFFFFF",
 			},
 			secondary: {
