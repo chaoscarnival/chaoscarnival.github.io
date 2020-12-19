@@ -12,8 +12,6 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	mainDiv: {
 		marginTop: theme.spacing(-10),
-
-		// backgroundColor: "#070e23",
 		background:
 			"linear-gradient(160.34deg, #042C69 0%, #041739 21.78%, #040D21 50.11%, #1B132F 82.45%, #471F48 99.57%)",
 		backgroundRepeat: "no-repeat",
@@ -32,64 +30,6 @@ export const useStyles = makeStyles((theme) => ({
 			marginTop: 0,
 			height: "130vh",
 		},
-	},
-	headerDiv: {
-		display: "flex",
-		flexDirection: "column",
-	},
-	mainHeader: {
-		fontSize: "40px",
-		fontWeight: 500,
-		color: theme.palette.common.white,
-		textAlign: "left",
-		marginBottom: 20,
-		[theme.breakpoints.down("xl")]: {
-			fontSize: "45px",
-		},
-		[theme.breakpoints.down("lg")]: {
-			fontSize: "35px",
-		},
-		[theme.breakpoints.down("md")]: {
-			fontSize: "25px",
-		},
-		[theme.breakpoints.down("sm")]: {
-			fontSize: "20px",
-		},
-		[theme.breakpoints.down("xs")]: {
-			fontSize: "16px",
-		},
-	},
-	headerDesc: {
-		fontSize: "40px",
-		marginBottom: 20,
-		textAlign: "left",
-		fontWeight: 600,
-		color: "#FAFF53",
-		maxWidth: 500,
-		marginTop: "2vh",
-		[theme.breakpoints.down("xl")]: {
-			fontSize: "45px",
-		},
-		[theme.breakpoints.down("lg")]: {
-			fontSize: "35px",
-		},
-		[theme.breakpoints.down("md")]: {
-			fontSize: "25px",
-		},
-		[theme.breakpoints.down("sm")]: {
-			marginTop: "20vh",
-			fontSize: "20px",
-		},
-		[theme.breakpoints.down("xs")]: {
-			marginTop: "20vh",
-			fontSize: "16px",
-		},
-	},
-	register: {
-		width: "40vw",
-		height: "7vh",
-		marginLeft: "31vw",
-		marginTop: "3vw",
 	},
 	buttons: {
 		display: "flex",
@@ -194,38 +134,6 @@ export const useStyles = makeStyles((theme) => ({
 			fontSize: "8px",
 			marginTop: theme.spacing(3),
 		},
-	},
-	logoImg: {
-		marginTop: "22.5vh",
-		// height: '35vh',
-		padding: "1rem",
-		width: "65vh",
-		[theme.breakpoints.down("xl")]: {
-			// height: '35vh',
-			width: "65vh",
-		},
-		[theme.breakpoints.down("lg")]: {
-			// height: '35vh',
-			width: "60vh",
-		},
-		[theme.breakpoints.down("md")]: {
-			marginTop: "32vh",
-			// height: '30vh',
-			width: "50vh",
-		},
-		[theme.breakpoints.down("sm")]: {
-			marginTop: "32vh",
-			// height: '27.5vh',
-			width: "50vh",
-		},
-		[theme.breakpoints.down("xs")]: {
-			marginTop: "25vh",
-			// height: '22.5vh',
-			width: "80vw",
-		},
-	},
-	speakersDiv: {
-		backgroundColor: theme.palette.common.white,
 	},
 	formArea: {
 		display: "flex",
