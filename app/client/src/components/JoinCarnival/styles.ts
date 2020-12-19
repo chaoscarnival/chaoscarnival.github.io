@@ -3,8 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
 	root: {
 		width: "100%",
-		background:
-			"rgba(248, 249, 253, 0.98)",
+		background: "rgba(248, 249, 253, 0.98)",
 		paddingTop: 100,
 		paddingBottom: 100,
 	},
@@ -37,12 +36,12 @@ export const useStyles = makeStyles((theme) => ({
 	dateDiv: {
 		display: "flex",
 		flexDirection: "column",
-		paddingTop:"4rem",
+		paddingTop: "4rem",
 		[theme.breakpoints.down("sm")]: {
 			marginTop: 20,
 			marginLeft: 35,
 			marginRight: 35,
-			paddingTop:"0rem",
+			paddingTop: "0rem",
 		},
 	},
 	regNow: {
@@ -85,10 +84,10 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "column",
 		width: "450px",
-		paddingTop:"2.3rem",
+		paddingTop: "2.3rem",
 		[theme.breakpoints.down("xs")]: {
 			width: "90%",
-			paddingTop:"0rem",
+			paddingTop: "0rem",
 		},
 	},
 	descText: {
@@ -120,14 +119,14 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	hrLine: {
 		background: "#262626",
-		width: '4px',
+		width: "4px",
 		[theme.breakpoints.down("sm")]: {
 			width: "95%",
-			height: '4px',
+			height: "4px",
 		},
 		[theme.breakpoints.down("sm")]: {
 			width: "77.5%",
-			height: '4px',
+			height: "4px",
 		},
 		marginLeft: 50,
 		marginRight: 70,

@@ -1,9 +1,4 @@
-import {
-	AppBar,
-	Hidden,
-	Toolbar,
-	Typography
-} from "@material-ui/core";
+import { AppBar, Hidden, Toolbar, Typography } from "@material-ui/core";
 import React from "react";
 import useStyles from "./styles";
 
@@ -19,15 +14,15 @@ const Footer: React.FC = () => {
 			>
 				<Toolbar className={classes.toolbarDiv}>
 					<div className={classes.toolbarDiv}>
-							<img
-								src={"/icons/chaoscarnival-header.png"}
-								alt=" header"
-								className={classes.mainLogo}
-							/>
+						<img
+							src={"/icons/chaoscarnival-header.png"}
+							alt=" header"
+							className={classes.mainLogo}
+						/>
 
 						<Typography className={classes.timeFont}>
 							February 10-11, 2021
-									</Typography>
+						</Typography>
 						<Hidden smDown>
 							<div className={classes.headerHomeDiv}>
 								<a
@@ -102,7 +97,10 @@ const Footer: React.FC = () => {
 									target="#"
 									style={{ textDecoration: "none" }}
 								>
-									<Typography className={classes.headerFont} display='inline'>
+									<Typography
+										className={classes.headerFont}
+										display="inline"
+									>
 										Facebook
 									</Typography>
 								</a>
@@ -111,7 +109,10 @@ const Footer: React.FC = () => {
 									target="#"
 									style={{ textDecoration: "none" }}
 								>
-									<Typography className={classes.headerFont} display='inline'>
+									<Typography
+										className={classes.headerFont}
+										display="inline"
+									>
 										Medium
 									</Typography>
 								</a>
@@ -120,7 +121,10 @@ const Footer: React.FC = () => {
 									target="#"
 									style={{ textDecoration: "none" }}
 								>
-									<Typography className={classes.headerFont} display='inline'>
+									<Typography
+										className={classes.headerFont}
+										display="inline"
+									>
 										Twitter
 									</Typography>
 								</a>
@@ -157,7 +161,8 @@ const Footer: React.FC = () => {
 					</div>
 				</Toolbar>
 				<Typography className={classes.copyRightFont}>
-					All trademarks and logos are property of their respective owners.
+					All trademarks and logos are property of their respective
+					owners.
 				</Typography>
 			</AppBar>
 		</div>

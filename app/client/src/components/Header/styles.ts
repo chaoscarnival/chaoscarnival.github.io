@@ -49,33 +49,33 @@ const useStyles = makeStyles((theme: Theme) => ({
 		},
 	},
 	registerButton: {
-		height: '3.5rem',
-		width: '18.5rem',
+		height: "3.5rem",
+		width: "18.5rem",
 		[theme.breakpoints.down("xl")]: {
-			height: '3.5rem',
-		width: '18.5rem',
+			height: "3.5rem",
+			width: "18.5rem",
 		},
 		[theme.breakpoints.down("lg")]: {
-			height: '3rem',
-		width: '16.5rem',
+			height: "3rem",
+			width: "16.5rem",
 		},
 		[theme.breakpoints.down("md")]: {
-			height: '2.5rem',
-		width: '14.5rem',
+			height: "2.5rem",
+			width: "14.5rem",
 		},
 		[theme.breakpoints.down("sm")]: {
 			marginTop: "20vh",
-			height: '2rem',
-		width: '9.75rem',
+			height: "2rem",
+			width: "9.75rem",
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: "20vh",
-			height: '2rem',
-		width: '7.5rem',
+			height: "2rem",
+			width: "7.5rem",
 		},
 	},
-	registerText:{
-		fontSize: '16px',
+	registerText: {
+		fontSize: "16px",
 		[theme.breakpoints.down("xl")]: {
 			fontSize: "16px",
 		},
@@ -107,7 +107,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 		flexDirection: "row",
 		[theme.breakpoints.down("sm")]: {
 			justifyContent: "flex-end",
-			width:"100vw",
+			width: "100vw",
 		},
 	},
 	headerDivCount: {

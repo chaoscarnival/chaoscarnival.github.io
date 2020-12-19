@@ -10,7 +10,8 @@ export const useStyles = makeStyles((theme) => ({
 		flexFlow: "row wrap",
 		justifyContent: "center",
 		alignContent: "center",
-		background: "linear-gradient(180deg,rgba(255, 136, 0, 0.65),rgba(229, 46, 113, 0.65))",
+		background:
+			"linear-gradient(180deg,rgba(255, 136, 0, 0.65),rgba(229, 46, 113, 0.65))",
 		[theme.breakpoints.down("xs")]: {
 			flexFlow: "row wrap",
 			alignItems: "center",
@@ -38,5 +39,5 @@ export const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("sm")]: {
 			fontSize: "190px",
 		},
-	}
+	},
 }));

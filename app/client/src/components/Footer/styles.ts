@@ -5,7 +5,8 @@ const useStyles = makeStyles((theme: Theme) => ({
 		width: "100vw",
 		margin: "auto",
 		height: "fit-content",
-		background: "linear-gradient(159.14deg, #042C69 0%, #041739 22.21%, #040D21 51.09%, #1B132F 84.08%, #471F48 101.53%)",
+		background:
+			"linear-gradient(159.14deg, #042C69 0%, #041739 22.21%, #040D21 51.09%, #1B132F 84.08%, #471F48 101.53%)",
 		boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.05)",
 		display: "flex",
 		flexDirection: "column",
@@ -20,8 +21,8 @@ const useStyles = makeStyles((theme: Theme) => ({
 		flexDirection: "row",
 		justifyContent: "center",
 		alignItems: "center",
-		paddingLeft: '2vw',
-		paddingRight: '2vw',
+		paddingLeft: "2vw",
+		paddingRight: "2vw",
 		[theme.breakpoints.down("sm")]: {
 			flexDirection: "column",
 		},
@@ -78,8 +79,8 @@ const useStyles = makeStyles((theme: Theme) => ({
 		marginTop: "1rem",
 		paddingBottom: "34px",
 		fontSize: "0.7rem",
-		color: 'rgba(255, 255, 255, 0.6)',
-		textAlign: 'center',
+		color: "rgba(255, 255, 255, 0.6)",
+		textAlign: "center",
 		[theme.breakpoints.down("sm")]: {
 			marginTop: theme.spacing(8),
 			// marginBottom: theme.spacing(3),
@@ -103,7 +104,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 			marginLeft: theme.spacing(-3),
 		},
 		[theme.breakpoints.down("xs")]: {
-			marginLeft:  theme.spacing(-3),
+			marginLeft: theme.spacing(-3),
 		},
 	},
 }));
