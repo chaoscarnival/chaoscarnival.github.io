@@ -28,7 +28,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: 0,
-			height: "125vh",
+			height: "130vh",
 		},
 	},
 	headerDiv: {
@@ -248,47 +248,23 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		width: '45%',
 		flexDirection: "column",
-		marginTop: '37.5%',
-		[theme.breakpoints.down(1600)]: {
-      marginTop: '38.5%',
+		marginTop: '65vh',
+		[theme.breakpoints.down("xl")]: {
+			marginTop: '65vh'
 		},
-		[theme.breakpoints.down(1500)]: {
-      marginTop: '40%',
+		[theme.breakpoints.down("lg")]: {
+			marginTop: '65vh'
 		},
-		[theme.breakpoints.down(1450)]: {
-      marginTop: '41%',
+		[theme.breakpoints.down("md")]: {
+			marginTop: '57.5vh'
 		},
-		[theme.breakpoints.down(1400)]: {
-      marginTop: '41.5%',
+		[theme.breakpoints.down("sm")]: {
+			marginTop: '60vh'
 		},
-    [theme.breakpoints.down("md")]: {
-      marginTop: '70%',
+		[theme.breakpoints.down("xs")]: {
+			width: '93%',
+			marginTop: '50vh',
 		},
-		[theme.breakpoints.down(975)]: {
-      marginTop: '35%',
-		},
-      [theme.breakpoints.down("sm")]: {
-        marginTop: '67.5%',
-		},
-			[theme.breakpoints.down(700)]: {
-      marginTop: '57.5%',
-		},
-      [theme.breakpoints.down("xs")]: {
-				marginTop: '100%',
-				width: '93%',
-		},
-				[theme.breakpoints.down(380)]: {
-				marginTop: '50vh',
-				width: '93%',
-      },
-			[theme.breakpoints.down(365)]: {
-				marginTop: '95%',
-				width: '93%',
-		},
-			[theme.breakpoints.down(290)]: {
-				marginTop: '125%',
-				width: '93%',
-      },
 	},
 	formFields: {
 		display: "flex",
@@ -296,33 +272,11 @@ export const useStyles = makeStyles((theme) => ({
 		width: '50%',
 		marginTop: '15%',
 		marginRight: '-12.5%',
-			[theme.breakpoints.down(975)]: {
-      marginTop: '3%',
+		[theme.breakpoints.down("xs")]: {
+			width: '93%',
+			marginLeft: '12.5%',
+			marginTop: '-10vh',
 		},
-				[theme.breakpoints.down("sm")]: {
-      marginTop: '12.5%',
-		},
-				[theme.breakpoints.down(700)]: {
-			marginTop: '15%',
-			
-		},
-					[theme.breakpoints.down("xs")]: {
-						marginTop: '-25%',
-						width: '93%',
-							marginLeft: '12.5%',
-		},
-					[theme.breakpoints.down(380)]: {
-				marginTop: '-12vh',
-						width: '93%',
-							marginLeft: '12.5%',
-      },
-					[theme.breakpoints.down(365)]: {
-				marginTop: '-15%',
-						width: '93%',
-				marginLeft: '12.5%',
-      },
-				
-			
 	},
 	inputField: {
 		width: '60%',
