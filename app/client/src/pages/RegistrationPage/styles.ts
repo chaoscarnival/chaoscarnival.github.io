@@ -184,7 +184,7 @@ export const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("xs")]: {
 			width: "93%",
 			marginLeft: "12.5%",
-			marginTop: "-10vh",
+			marginTop: "-8vh",
 		},
 	},
 	inputField: {
@@ -274,7 +274,7 @@ export const useStyles = makeStyles((theme) => ({
 			marginLeft: "10vw",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "25px",
+			fontSize: "30px",
 			marginLeft: "10vw",
 		},
 	},
@@ -309,7 +309,7 @@ export const useStyles = makeStyles((theme) => ({
 			marginTop: theme.spacing(-1),
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "25px",
+			fontSize: "30px",
 			marginLeft: "10vw",
 		},
 	},

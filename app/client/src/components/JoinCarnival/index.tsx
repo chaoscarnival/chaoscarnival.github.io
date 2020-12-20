@@ -37,9 +37,8 @@ const JoinCarnival = () => {
 							variant="contained"
 							style={{ marginRight: "1.5rem" }}
 							onClick={() => {
-								window.open(
-									"https://join.slack.com/t/chaoscarnival/shared_invite/zt-jy0q3xxc-EIYmlEXqvqbRRxYQkvdRpw"
-								);
+										window.location.href =
+											"https://chaoscarnival.io/register";
 							}}
 						>
 							<Typography
