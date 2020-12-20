@@ -37,8 +37,8 @@ const JoinCarnival = () => {
 							variant="contained"
 							style={{ marginRight: "1.5rem" }}
 							onClick={() => {
-										window.location.href =
-											"https://chaoscarnival.io/register";
+								window.location.href =
+									"https://chaoscarnival.io/register";
 							}}
 						>
 							<Typography
