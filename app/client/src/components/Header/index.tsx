@@ -7,7 +7,7 @@ import {
 	Menu,
 	MenuItem,
 	Toolbar,
-	Typography,
+	Typography
 } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import React from "react";
@@ -313,9 +313,8 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 													width: "100%",
 												}}
 												onClick={() => {
-													window.open(
-														"https://join.slack.com/t/chaoscarnival/shared_invite/zt-jy0q3xxc-EIYmlEXqvqbRRxYQkvdRpw"
-													);
+													window.location.href =
+														"https://chaoscarnival.io/register";
 												}}
 											>
 												<Typography
