@@ -1,9 +1,9 @@
 import * as React from "react";
+import LazyLoad from "react-lazy-load";
 import Footer from "../../components/Footer";
-import { useStyles } from "./styles";
 import MainHeader from "../../components/Header";
 import "../../scrollbar.css";
-import LazyLoad from "react-lazy-load";
+import { useStyles } from "./styles";
 
 const imgLink = [
 	{
@@ -49,7 +49,7 @@ function TeamPage() {
 	return (
 		<div className="scrollbar scrollbar-primary">
 			<div className={classes.rootContainer}>
-				<MainHeader inHomePage={false} />
+				<MainHeader inHomePage={false} linksActive={true} />
 				<div className={classes.wrapContainer}>
 					<p className={classes.mainHeader}>
 						Behind&nbsp;this&nbsp;great

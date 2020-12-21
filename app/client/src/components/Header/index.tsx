@@ -18,9 +18,10 @@ import useStyles from "./styles";
 
 interface MainHeaderProps {
 	inHomePage: boolean;
+	linksActive: boolean;
 }
 
-const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
+const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 	const classes = useStyles(inHomePage);
 	const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 	const open = Boolean(anchorEl);
@@ -57,7 +58,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 							<div className={classes.headerHomeDiv}>
 								<a
 									href={
-										inHomePage
+										inHomePage && linksActive
 											? "#home"
 											: "https://chaoscarnival.io/#home"
 									}
@@ -73,7 +74,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 							<div className={classes.headerDiv}>
 								<a
 									href={
-										inHomePage
+										inHomePage && linksActive
 											? "#speakers"
 											: "https://chaoscarnival.io/#speakers"
 									}
@@ -89,7 +90,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 							<div className={classes.headerDiv}>
 								<a
 									href={
-										inHomePage
+										inHomePage && linksActive
 											? "#cfp"
 											: "https://chaoscarnival.io/#cfp"
 									}
@@ -105,7 +106,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 							<div className={classes.headerDiv}>
 								<a
 									href={
-										inHomePage
+										inHomePage && linksActive
 											? "#sponsors"
 											: "https://chaoscarnival.io/#sponsors"
 									}
@@ -200,7 +201,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										>
 											<a
 												href={
-													inHomePage
+													inHomePage && linksActive
 														? "#speakers"
 														: "https://chaoscarnival.io/#home"
 												}
@@ -225,7 +226,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										>
 											<a
 												href={
-													inHomePage
+													inHomePage && linksActive
 														? "#speakers"
 														: "https://chaoscarnival.io/#speakers"
 												}
@@ -250,7 +251,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										>
 											<a
 												href={
-													inHomePage
+													inHomePage && linksActive
 														? "#cfp"
 														: "https://chaoscarnival.io/#cfp"
 												}
@@ -275,7 +276,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage }) => {
 										>
 											<a
 												href={
-													inHomePage
+													inHomePage && linksActive
 														? "#sponsors"
 														: "https://chaoscarnival.io/#sponsors"
 												}
