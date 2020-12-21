@@ -9,7 +9,7 @@ import {
 	CustomCheckbox,
 	CustomFormControlLabel,
 	CustomInputField,
-	useStyles,
+	useStyles
 } from "./styles";
 
 interface RegistrationDetails {
@@ -146,12 +146,12 @@ function RegistrationPage() {
 						jobtitle: "",
 						agree: false,
 					});
+					window.location.href =
+				  "https://chaoscarnival.io/acknowledgement";
 				} else {
 					setError(true);
 					setLoading(false);
 				}
-				window.location.href =
-					"https://chaoscarnival.io/acknowledgement";
 			})
 			.catch((err) => {
 				setError(err);
@@ -291,7 +291,7 @@ function RegistrationPage() {
 													textTransform: "none",
 												}}
 											>
-												<b>Submit</b>
+												<b>Register</b>
 											</Typography>
 										</Button>
 										{error ? (
@@ -304,7 +304,7 @@ function RegistrationPage() {
 												<b>
 													There was a problem during
 													registration ! <br />
-													Please try again
+													Please try again.
 												</b>
 											</Typography>
 										) : (
