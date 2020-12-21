@@ -282,7 +282,9 @@ function RegistrationPage() {
 											variant="contained"
 											type="submit"
 											onClick={(event: any) => {
-												submitForm(event);
+												if (registrationDetails.agree) {
+													submitForm(event);
+												}
 											}}
 										>
 											<Typography
