@@ -20,7 +20,7 @@ function HomePage() {
 	return (
 		<div className="scrollbar scrollbar-primary">
 			<div className={classes.rootContainer}>
-				<MainHeader inHomePage={true} />
+				<MainHeader inHomePage={true} linksActive={true} />
 				<div className={classes.root}>
 					<div className={classes.mainDiv}>
 						<a id="home" href="home"></a>

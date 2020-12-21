@@ -1,12 +1,12 @@
 import { Typography } from "@material-ui/core";
 import * as React from "react";
 import Footer from "../../components/Footer";
-import { useStyles } from "./styles";
 import MainHeader from "../../components/Header";
-import CustomizedTables from "./TableContent";
 import SponsorBenefits from "../../components/SponsorBenefits";
 import Sponsors from "../../components/Sponsors";
 import "../../scrollbar.css";
+import { useStyles } from "./styles";
+import CustomizedTables from "./TableContent";
 
 function SponsorshipPage() {
 	const classes = useStyles();
@@ -18,7 +18,7 @@ function SponsorshipPage() {
 	return (
 		<div className="scrollbar scrollbar-primary">
 			<div className={classes.rootContainer}>
-				<MainHeader inHomePage={false} />
+				<MainHeader inHomePage={false} linksActive={true} />
 				<div>
 					{/* Header component */}
 					<div className={classes.headerDiv}>
