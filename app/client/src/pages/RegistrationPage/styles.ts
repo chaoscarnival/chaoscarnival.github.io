@@ -137,8 +137,8 @@ export const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("xs")]: {
 			fontSize: "10px",
 			marginTop: theme.spacing(3),
-			textAlign: 'center',
-			marginLeft: '-15%',
+			textAlign: "center",
+			marginLeft: "-15%",
 			marginRight: 0,
 		},
 	},

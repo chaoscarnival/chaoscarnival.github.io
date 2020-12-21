@@ -9,7 +9,7 @@ import {
 	CustomCheckbox,
 	CustomFormControlLabel,
 	CustomInputField,
-	useStyles
+	useStyles,
 } from "./styles";
 
 interface RegistrationDetails {
@@ -147,7 +147,7 @@ function RegistrationPage() {
 						agree: false,
 					});
 					window.location.href =
-				  "https://chaoscarnival.io/acknowledgement";
+						"https://chaoscarnival.io/acknowledgement";
 				} else {
 					setError(true);
 					setLoading(false);
