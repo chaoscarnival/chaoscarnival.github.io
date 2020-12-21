@@ -146,12 +146,12 @@ function RegistrationPage() {
 						jobtitle: "",
 						agree: false,
 					});
+					window.location.href =
+						"https://chaoscarnival.io/acknowledgement";
 				} else {
 					setError(true);
 					setLoading(false);
 				}
-				window.location.href =
-					"https://chaoscarnival.io/acknowledgement";
 			})
 			.catch((err) => {
 				setError(err);
@@ -162,7 +162,7 @@ function RegistrationPage() {
 	return (
 		<div className="scrollbar scrollbar-primary">
 			<div className={classes.rootContainer}>
-				<MainHeader inHomePage={true} />
+				<MainHeader inHomePage={false} />
 				<div className={classes.root}>
 					<div className={classes.mainDiv}>
 						<div className={classes.formArea}>
@@ -291,7 +291,7 @@ function RegistrationPage() {
 													textTransform: "none",
 												}}
 											>
-												<b>Submit</b>
+												<b>Register</b>
 											</Typography>
 										</Button>
 										{error ? (
@@ -304,7 +304,7 @@ function RegistrationPage() {
 												<b>
 													There was a problem during
 													registration ! <br />
-													Please try again
+													Please try again.
 												</b>
 											</Typography>
 										) : (
