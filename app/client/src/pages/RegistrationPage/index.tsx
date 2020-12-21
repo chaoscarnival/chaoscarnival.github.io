@@ -162,7 +162,7 @@ function RegistrationPage() {
 	return (
 		<div className="scrollbar scrollbar-primary">
 			<div className={classes.rootContainer}>
-				<MainHeader inHomePage={true} />
+				<MainHeader inHomePage={false} />
 				<div className={classes.root}>
 					<div className={classes.mainDiv}>
 						<div className={classes.formArea}>
