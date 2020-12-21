@@ -5,8 +5,8 @@ export const KeyNoteSpeakerData = [
 		title: "VP Cloud Architecture Strategy",
 		companyIcon: "/images/aws_logo_color.svg",
 		urlToIcon: "/images/keynote_speaker1.svg",
-  },
-  {
+	},
+	{
 		id: 1,
 		name: `To be\n announced`,
 		title: "",

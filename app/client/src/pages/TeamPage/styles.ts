@@ -4,19 +4,19 @@ export const useStyles = makeStyles((theme) => ({
 	rootContainer: {
 		display: "flex",
 		flexDirection: "column",
-		alignItems:"center",
+		alignItems: "center",
 	},
 	root: {
 		textAlign: "center",
 	},
 	wrapContainer: {
-		alignItems:"flex-start",
-		justifyContent:"flex-start",
+		alignItems: "flex-start",
+		justifyContent: "flex-start",
 		width: "70vw",
 		display: "flex",
 		flexFlow: "column wrap",
 		[theme.breakpoints.down("md")]: {
-			width:"90vw",
+			width: "90vw",
 		},
 	},
 	mainDiv: {
@@ -77,13 +77,14 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	greatTeam: {
-		background: 'linear-gradient(270.88deg, #2C84F9 70.04%, #C94CA8 100.95%)', 
-		WebkitBackgroundClip: 'text',
-		WebkitTextFillColor: 'transparent', 
+		background:
+			"linear-gradient(270.88deg, #2C84F9 70.04%, #C94CA8 100.95%)",
+		WebkitBackgroundClip: "text",
+		WebkitTextFillColor: "transparent",
 	},
 	teamContainer: {
-		alignItems:"center",
-		justifyContent:"center",
+		alignItems: "center",
+		justifyContent: "center",
 		width: "70vw",
 		display: "flex",
 		flexFlow: "row wrap",
@@ -91,7 +92,7 @@ export const useStyles = makeStyles((theme) => ({
 		minWidth: "1005px",
 		[theme.breakpoints.down("md")]: {
 			minWidth: "105px",
-			width:"90vw",
+			width: "90vw",
 			alignItems: "flex-start",
 		},
 	},
@@ -102,8 +103,8 @@ export const useStyles = makeStyles((theme) => ({
 		overflow: "hidden",
 		fontSize: 16,
 		display: "flex",
-		alignItems:"center",
-		justifyContent:"flex-start",
+		alignItems: "center",
+		justifyContent: "flex-start",
 		textAlign: "center",
 		flexDirection: "row",
 		margin: "10px",
@@ -122,9 +123,10 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	teamImg: {
-		background: "linear-gradient(180deg,rgba(255, 136, 0, 0.65),rgba(229, 46, 113, 0.65))",
+		background:
+			"linear-gradient(180deg,rgba(255, 136, 0, 0.65),rgba(229, 46, 113, 0.65))",
 		margin: "1.2rem 2.6rem 1.2rem 1.2rem",
-		borderRadius: '10px',
+		borderRadius: "10px",
 		width: "300px",
 		[theme.breakpoints.up("xl")]: {
 			width: "300px !important",
@@ -133,7 +135,7 @@ export const useStyles = makeStyles((theme) => ({
 			width: "200px",
 		},
 		[theme.breakpoints.down("md")]: {
-			borderRadius: '5px',
+			borderRadius: "5px",
 		},
 		[theme.breakpoints.down("sm")]: {
 			width: "90%",
@@ -175,8 +177,8 @@ export const useStyles = makeStyles((theme) => ({
 		textAlign: "left",
 	},
 	teamLinks: {
-		alignItems:"flex-start",
-		justifyContent:"flex-start",
+		alignItems: "flex-start",
+		justifyContent: "flex-start",
 		width: "100%",
 		display: "flex",
 		flexFlow: "row wrap",
@@ -185,10 +187,10 @@ export const useStyles = makeStyles((theme) => ({
 		color: "black",
 		fontSize: "16px",
 		textAlign: "left",
-		margin:"11px 21px 11px 0px",
+		margin: "11px 21px 11px 0px",
 	},
 	teamlinkIcon: {
-		borderRadius:"8px",
+		borderRadius: "8px",
 		padding: "10px",
 	},
 }));
