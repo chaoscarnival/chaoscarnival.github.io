@@ -35,6 +35,9 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "row",
 		justifyContent: "space-between",
+		[theme.breakpoints.down("xs")]: {
+			flexDirection: "column",
+		},
 	},
 	registerButtonActive: {
 		height: "3.5rem",
@@ -61,7 +64,7 @@ export const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("xs")]: {
 			marginTop: theme.spacing(3),
 			height: "2rem",
-			width: "7rem",
+			width: "85%",
 		},
 	},
 	registerButton: {
@@ -91,7 +94,7 @@ export const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("xs")]: {
 			marginTop: theme.spacing(3),
 			height: "2rem",
-			width: "7rem",
+			width: "85%",
 		},
 	},
 	registerText: {
@@ -109,13 +112,14 @@ export const useStyles = makeStyles((theme) => ({
 			fontSize: "12px",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "8px",
+			fontSize: "12px",
 		},
 	},
 	errorText: {
 		fontSize: "16px",
 		marginRight: "40%",
-		marginTop: theme.spacing(5),
+		marginTop: theme.spacing(4.5),
+		marginLeft: theme.spacing(3),
 		textAlign: "left",
 		[theme.breakpoints.down("xl")]: {
 			fontSize: "16px",
@@ -131,8 +135,11 @@ export const useStyles = makeStyles((theme) => ({
 			marginTop: theme.spacing(3),
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "8px",
+			fontSize: "10px",
 			marginTop: theme.spacing(3),
+			textAlign: "center",
+			marginLeft: "-15%",
+			marginRight: 0,
 		},
 	},
 	formArea: {
