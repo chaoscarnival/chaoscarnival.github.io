@@ -9,7 +9,7 @@ import {
 	CustomCheckbox,
 	CustomFormControlLabel,
 	CustomInputField,
-	useStyles,
+	useStyles
 } from "./styles";
 
 interface RegistrationDetails {
@@ -59,8 +59,8 @@ function RegistrationPage() {
 		});
 	};
 
-	const portalId: string = "9025048";
-	const formId: string = "ceefe79e-9581-4f27-83f9-39cbb5ee7388";
+	const portalId: string = "5310829";
+	const formId: string = "1e066180-bed9-4200-a68a-5dbaf595a273";
 
 	const submitForm = (e) => {
 		if (e) e.preventDefault();
