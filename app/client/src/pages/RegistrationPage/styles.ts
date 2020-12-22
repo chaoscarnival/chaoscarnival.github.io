@@ -146,6 +146,10 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "row",
 		justifyContent: "space-around",
+		marginTop: "-5vh",
+		[theme.breakpoints.down(1080)]: {
+			marginTop: "15%",
+		},
 		[theme.breakpoints.down("sm")]: {
 			marginTop: "10%",
 		},
@@ -188,6 +192,9 @@ export const useStyles = makeStyles((theme) => ({
 		width: "50%",
 		marginTop: "15%",
 		marginRight: "-12.5%",
+		[theme.breakpoints.down(1080)]: {
+			marginTop: "25%",
+		},
 		[theme.breakpoints.down("xs")]: {
 			width: "93%",
 			marginLeft: "12.5%",
@@ -196,16 +203,16 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	inputField: {
 		width: "60%",
-		marginBottom: theme.spacing(6),
+		marginBottom: theme.spacing(4.5),
 		fontSize: "22.8211px",
 		lineHeight: "150%",
 		letterSpacing: "0.01em",
 		color: "rgba(255, 255, 255, 0.6)",
 		[theme.breakpoints.down(1600)]: {
-			marginBottom: theme.spacing(4),
+			marginBottom: theme.spacing(3),
 		},
 		[theme.breakpoints.down("md")]: {
-			marginBottom: theme.spacing(4),
+			marginBottom: theme.spacing(3),
 		},
 		[theme.breakpoints.down("sm")]: {
 			marginBottom: theme.spacing(2.5),
@@ -258,7 +265,7 @@ export const useStyles = makeStyles((theme) => ({
 		fontWeight: 700,
 		marginTop: "-40vh",
 		textAlign: "left",
-		fontSize: "70px",
+		fontSize: "60px",
 		marginLeft: "10vw",
 		[theme.breakpoints.down(1600)]: {
 			fontSize: "47.5px",
@@ -290,7 +297,7 @@ export const useStyles = makeStyles((theme) => ({
 		background: "linear-gradient(to right, #B4F59E 0%, #71BCF6 55%)",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
-		fontSize: "70px",
+		fontSize: "60px",
 		textAlign: "left",
 		marginLeft: "10vw",
 		marginTop: theme.spacing(-2),
@@ -321,7 +328,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	infoText: {
-		fontSize: "24px",
+		fontSize: "22px",
 		textAlign: "left",
 		color: "#FFFFFF",
 		marginLeft: "10vw",
