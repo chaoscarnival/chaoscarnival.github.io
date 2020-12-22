@@ -9,7 +9,7 @@ import {
 	CustomCheckbox,
 	CustomFormControlLabel,
 	CustomInputField,
-	useStyles
+	useStyles,
 } from "./styles";
 
 interface RegistrationDetails {
