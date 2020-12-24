@@ -17,7 +17,7 @@ export const useStyles = makeStyles((theme) => ({
 		backgroundRepeat: "no-repeat",
 		backgroundSize: "cover",
 		backgroundPosition: "center",
-		height: "101vh",
+		height: "105vh",
 		display: "flex",
 		flexDirection: "column",
 		[theme.breakpoints.down("sm")]: {
@@ -43,7 +43,6 @@ export const useStyles = makeStyles((theme) => ({
 		height: "3.5rem",
 		width: "12.5rem",
 		marginTop: theme.spacing(5),
-		backgroundColor: "#2C84F9",
 		[theme.breakpoints.down("xl")]: {
 			height: "3.5rem",
 			width: "12.5rem",
@@ -63,17 +62,15 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: theme.spacing(3),
-			height: "2rem",
-			width: "85%",
+			height: "3rem",
+			width: "84%",
 		},
 	},
 	registerButton: {
 		height: "3.5rem",
 		width: "12.5rem",
 		marginTop: theme.spacing(5),
-		"&:hover": {
-			backgroundColor: "#5B44BA",
-		},
+		backgroundColor: "grey",
 		[theme.breakpoints.down("xl")]: {
 			height: "3.5rem",
 			width: "12.5rem",
@@ -93,8 +90,8 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: theme.spacing(3),
-			height: "2rem",
-			width: "85%",
+			height: "3rem",
+			width: "84%",
 		},
 	},
 	registerText: {

@@ -2,7 +2,7 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <wide383x261logo src="/ChaosCarnival.png"/>
+            <wide383x261logo src="/preview.png"/>
             <TileColor>#ffc40d</TileColor>
         </tile>
     </msapplication>
