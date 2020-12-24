@@ -1,5 +1,6 @@
 import { Button, FormControl, Typography } from "@material-ui/core";
 import Cookies from "js-cookie";
+import publicIp from "public-ip";
 import React, { useState } from "react";
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/Header";
@@ -23,7 +24,6 @@ interface RegistrationDetails {
 
 function RegistrationPage() {
 	const classes = useStyles();
-
 	React.useEffect(() => {
 		window.scrollTo(0, 0);
 	});
@@ -62,7 +62,7 @@ function RegistrationPage() {
 	const portalId: string = "5310829";
 	const formId: string = "1e066180-bed9-4200-a68a-5dbaf595a273";
 
-	const submitForm = (e) => {
+	const submitForm = async (e) => {
 		if (e) e.preventDefault();
 
 		// following isBrowser variable for contextual data to send
@@ -71,6 +71,7 @@ function RegistrationPage() {
 		// plugin provides this hutk value as a cookie.
 		// pageName & pageUri  are also tracked
 
+		const ipv4 = (await publicIp.v4()) || "";
 		const isBrowser = typeof window !== "undefined";
 		const hutk = isBrowser ? Cookies.get("hubspotutk") : null;
 		const pageUri = isBrowser ? window.location.href : null;
@@ -117,6 +118,7 @@ function RegistrationPage() {
 				pageUri,
 				pageName,
 			},
+			ipAddress: ipv4,
 		};
 
 		// These specific headers are required for whatever reason,
@@ -249,7 +251,7 @@ function RegistrationPage() {
 												className={classes.checkbox}
 											/>
 										}
-										label="By registering you agree to receive conference updates and some promotional emails from Chaos Carnival and its sponsors."
+										label="By registering I agree to receive conference updates and some promotional emails from Chaos Carnival and its sponsors."
 									/>
 									<div className={classes.buttons}>
 										<Button
