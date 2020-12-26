@@ -1,10 +1,26 @@
 import { Button, Hidden, Typography } from "@material-ui/core";
+import gtag from "ga-gtag";
 import React from "react";
 import { useStyles } from "./styles";
 import Timer from "./timer";
 
 const JoinCarnival = () => {
 	const classes = useStyles();
+
+	function gtag_report_conversion(url) {
+		var callback = function () {
+			if (typeof url != "undefined") {
+				window.location = url;
+			}
+		};
+		gtag("event", "conversion", {
+			send_to: "AW-453907965/x9FXCNje-e4BEP2ruNgB",
+			event_callback: callback,
+		});
+		gtag("config", "AW-453907965");
+		return false;
+	}
+
 	return (
 		<div className={classes.root}>
 			<div className={classes.mainDiv}>
@@ -37,6 +53,9 @@ const JoinCarnival = () => {
 							variant="contained"
 							style={{ marginRight: "1.5rem" }}
 							onClick={() => {
+								gtag_report_conversion(
+									"https://chaoscarnival.io/register"
+								);
 								window.location.href =
 									"https://chaoscarnival.io/register";
 							}}

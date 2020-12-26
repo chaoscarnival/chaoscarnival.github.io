@@ -66,6 +66,26 @@
 			gtag("event", "conversion", {
 				send_to: "AW-453907965/RvddCLm28O4BEP2ruNgB",
 			});
+			gtag("config", "AW-453907965", { page_path: "/register" });
+		</script>
+
+		<!-- Event snippet for Registrations - Chaos Carnival - 26 Dec 2020 conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+		<script>
+			function gtag_report_conversion(url) {
+				var callback = function () {
+					if (typeof url != "undefined") {
+						window.location = url;
+					}
+				};
+				gtag("event", "conversion", {
+					send_to: "AW-453907965/x9FXCNje-e4BEP2ruNgB",
+					event_callback: callback,
+				});
+				gtag("config", "AW-453907965", {
+					page_path: "/register",
+				});
+				return false;
+			}
 		</script>
 
 		<!-- Start of HubSpot Embed Code -->
