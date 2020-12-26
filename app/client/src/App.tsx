@@ -1,3 +1,4 @@
+import { install } from "ga-gtag";
 import React, { lazy, Suspense } from "react";
 import { Redirect, Route, Router, Switch } from "react-router-dom";
 import { useStyles } from "./App-styles";
@@ -44,6 +45,8 @@ const Routes: React.FC = () => {
 
 function App() {
 	const classes = useStyles();
+
+	install("AW-453907965");
 
 	return (
 		<Suspense fallback={<Loader />}>
