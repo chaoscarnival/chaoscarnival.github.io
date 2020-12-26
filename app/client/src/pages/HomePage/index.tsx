@@ -1,4 +1,5 @@
 import { Button, Typography } from "@material-ui/core";
+import gtag from "ga-gtag";
 import * as React from "react";
 import CallForPapers from "../../components/CallForPapers";
 import Footer from "../../components/Footer";
@@ -16,6 +17,20 @@ function HomePage() {
 	React.useEffect(() => {
 		window.scrollTo(0, 0);
 	});
+
+	function gtag_report_conversion(url) {
+		var callback = function () {
+			if (typeof url != "undefined") {
+				window.location = url;
+			}
+		};
+		gtag("event", "conversion", {
+			send_to: "AW-453907965/x9FXCNje-e4BEP2ruNgB",
+			event_callback: callback,
+		});
+		gtag("config", "AW-453907965");
+		return false;
+	}
 
 	return (
 		<div className="scrollbar scrollbar-primary">
@@ -69,6 +84,9 @@ function HomePage() {
 										width: "100%",
 									}}
 									onClick={() => {
+										gtag_report_conversion(
+											"https://chaoscarnival.io/register"
+										);
 										window.location.href =
 											"https://chaoscarnival.io/register";
 									}}
