@@ -28,6 +28,11 @@ const imgLink = [
 		alt: "Percona",
 		link: "https://www.percona.com",
 	},
+	{
+		img: "/icons/Epsagon.svg",
+		alt: "Epsagon",
+		link: "https://epsagon.com",
+	},
 	// {
 	// 	img: "/icons/intuit.png",
 	// 	alt: "intuit",
