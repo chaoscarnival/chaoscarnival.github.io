@@ -19,7 +19,7 @@ function CardContent(props: CardProps) {
 			<div className={classes.mainTitle}>
 				<p className={classes.speakerName}>{name}</p>
 				{name !== "To be\n announced" ? (
-					<p className={classes.speakerTitle}>{title}</p>
+					<p style={{ whiteSpace: "pre-line"}} className={classes.speakerTitle}>{title}</p>
 				) : (
 					<p />
 				)}
