@@ -37,18 +37,18 @@ export const useStyles = makeStyles((theme) => ({
 	},
 
 	imgIcon: {
-		width: "70px",
-		height: "45px",
+		width: "65px",
+		height: "30px",
 		marginTop: theme.spacing(-0.5),
-		objectFit: "scale-down",
+		objectFit: "fill",
 		[theme.breakpoints.down("md")]: {
-			width: "35px",
-			height: "35px",
+			width: "45px",
+			height: "25px",
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: 0,
 			paddingTop: theme.spacing(1),
-			width: "25px",
+			width: "45px",
 			height: "25px",
 		},
 	},
