@@ -37,8 +37,8 @@ export const useStyles = makeStyles((theme) => ({
 	},
 
 	imgIcon: {
-		width: "50px",
-		height: "50px",
+		width: "70px",
+		height: "45px",
 		marginTop: theme.spacing(-0.5),
 		objectFit: "scale-down",
 		[theme.breakpoints.down("md")]: {
