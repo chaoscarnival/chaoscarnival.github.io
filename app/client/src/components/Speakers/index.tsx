@@ -1,4 +1,3 @@
-import { Button, Typography } from "@material-ui/core";
 import React from "react";
 import CustomCard from "../CustomCard";
 import KeyNoteCard from "../KeyNoteCards";
@@ -52,7 +51,7 @@ export function Speakers() {
 						/>
 					))}
 				</div>
-				<div className={classes.cfpSection}>
+				{/* <div className={classes.cfpSection}>
 					<div>
 						<div className={classes.moreText}>
 							And more to come. Interested in Speaking ?
@@ -85,7 +84,7 @@ export function Speakers() {
 							</Button>
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
