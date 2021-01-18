@@ -88,7 +88,7 @@ export const useStyles = makeStyles((theme) => ({
 			marginTop: "8vh",
 		},
 	},
-	isOpenText: {
+	isNowClosedText: {
 		fontWeight: 700,
 		fontSize: "70px",
 		textAlign: "left",

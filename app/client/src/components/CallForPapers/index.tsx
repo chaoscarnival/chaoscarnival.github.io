@@ -1,4 +1,4 @@
-import { Button, Typography } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import * as React from "react";
 import LazyLoad from "react-lazy-load";
 import { useStyles } from "./styles";
@@ -20,18 +20,18 @@ function CallForPapers() {
 						<Typography className={classes.callForPapersText}>
 							Call for Papers
 						</Typography>
-						<Typography className={classes.isOpenText}>
-							is open
+						<Typography className={classes.isNowClosedText}>
+							is now closed
 						</Typography>
 						<div className={classes.info}>
 							<Typography
 								className={classes.infoText}
-							>{`You can speak on a wide range of topics such as chaos engineering in general, its benefits, introducing chaos into your DevOps setup, war stories, best practices and tools.`}</Typography>
+							>{`Thank you for submitting your CFPs. We are thrilled to see so many renowned speakers coming forward to speak at ChaosCarnival.`}</Typography>
 							{/* <Typography className={classes.infoText}>{`Speaking at this carnival is an opportunity to share your insights to the chaos community. You can speak on wide range of topics such as Chaos in CI/CD, DevOps in general, specific experiments, reliability, SLOs, cloud-native and of course chaos in general. Fill up your application on `}<a href="https://www.papercall.io" target="_blank" style={{ color: '#FFFFFF' }}>papercall.io</a></Typography> */}
 							<Typography
 								className={classes.dateText}
-							>{`Last date to submit is 15th Jan, 2021`}</Typography>
-							<Button
+							>{`Stay tuned for the announcement of speaker lineup.`}</Typography>
+							{/* <Button
 								className={classes.cfpButton}
 								color="primary"
 								variant="contained"
@@ -55,7 +55,7 @@ function CallForPapers() {
 								>
 									<b>Submit&nbsp;your&nbsp;CFP</b>
 								</Typography>
-							</Button>
+							</Button> */}
 						</div>
 					</div>
 				</div>
