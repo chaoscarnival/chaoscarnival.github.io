@@ -15,7 +15,7 @@ function CardContent(props: CardProps) {
 						<img
 							src={urlToIcon}
 							className={classes.imgMedia}
-							alt="Speaker image"
+							alt="Speaker"
 						/>
 					</div>
 				) : (

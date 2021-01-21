@@ -272,29 +272,23 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	logoImg: {
 		marginTop: "15vh",
-		// height: '35vh',
 		padding: "1rem",
 		width: "25vh",
 		[theme.breakpoints.down("xl")]: {
-			// height: '35vh',
 			width: "25vh",
 		},
 		[theme.breakpoints.down("lg")]: {
-			// height: '35vh',
 			width: "20vh",
 		},
 		[theme.breakpoints.down("md")]: {
-			// height: '30vh',
 			width: "20vh",
 		},
 		[theme.breakpoints.down("sm")]: {
 			marginTop: "25vh",
-			// height: '27.5vh',
 			width: "20vh",
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: "20vh",
-			// height: '22.5vh',
 			width: "27.5vw",
 		},
 	},

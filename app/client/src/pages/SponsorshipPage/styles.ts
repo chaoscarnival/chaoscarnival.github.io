@@ -39,19 +39,11 @@ export const useStyles = makeStyles((theme) => ({
 		color: theme.palette.common.black,
 		textAlign: "left",
 		marginLeft: 70,
-		// [theme.breakpoints.down(981)]: {
-		// 	fontSize: "35px",
-		// },
 		[theme.breakpoints.down("sm")]: {
 			fontWeight: 700,
 			fontSize: "32px",
 			margin: "0 auto",
 		},
-		// [theme.breakpoints.down("xs")]: {
-		// 	fontSize: "25px",
-		// 	fontWeight: 500,
-		// 	marginBottom: 10,
-		// },
 	},
 	headerDesc: {
 		fontSize: "24px",

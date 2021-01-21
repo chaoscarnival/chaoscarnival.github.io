@@ -2,7 +2,7 @@ import { install } from "ga-gtag";
 import React, { lazy, Suspense } from "react";
 import { Redirect, Route, Router, Switch } from "react-router-dom";
 import { useStyles } from "./App-styles";
-import { Loader } from "./components";
+import { Loader } from "./components/Loader";
 import history from "./history";
 import withTheme from "./theme";
 

@@ -10,7 +10,7 @@ function CardContent(props: CardProps) {
 	return (
 		<div
 			className={
-				id == 0
+				id === 0
 					? classes.cardContent
 					: `${classes.cardContent} ${classes.topMargin}`
 			}
@@ -19,7 +19,7 @@ function CardContent(props: CardProps) {
 				<img
 					src={urlToIcon}
 					className={classes.imgMedia}
-					alt="Speaker image"
+					alt="Speaker"
 				/>
 			</div>
 			<div className={classes.mainTitle}>
@@ -39,7 +39,7 @@ function CardContent(props: CardProps) {
 						<img
 							src={companyIcon}
 							className={classes.imgIcon}
-							alt="Company image"
+							alt="Company"
 						/>
 					</p>
 				) : (

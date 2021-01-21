@@ -52,7 +52,9 @@ function SponsorshipPage() {
 						}}
 						className={classes.sponsorSectionContainer}
 					>
-						<a id="sponsors" href="sponsors"></a>
+						<a id="sponsors" href="sponsors">
+							{" "}
+						</a>
 						<div className={classes.sponsorSection}>
 							<Sponsors />
 						</div>
