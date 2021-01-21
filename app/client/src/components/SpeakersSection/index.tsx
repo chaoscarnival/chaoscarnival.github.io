@@ -67,7 +67,7 @@ export function SpeakersSection() {
 					className={classes.detailText}
 					style={{ display: "inline" }}
 				>
-					Detail
+					Detailed
 				</div>
 				<div
 					className={classes.agendaText}
