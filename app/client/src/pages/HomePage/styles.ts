@@ -137,7 +137,7 @@ export const useStyles = makeStyles((theme) => ({
 		marginTop: "20rem",
 		[theme.breakpoints.down("xs")]: {
 			width: "100vw",
-			marginTop: "1.25rem",
+			marginTop: "4rem",
 		},
 	},
 	letsTalkAboutText: {
