@@ -3,9 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
 	root: {
 		width: "100%",
-		paddingTop: 120,
-		paddingBottom: 120,
-		backgroundColor: "#FFFFFF",
+		paddingTop: 100,
+		paddingBottom: 60,
+		backgroundColor: "#070E23",
 		[theme.breakpoints.down("sm")]: {
 			paddingTop: 10,
 		},
@@ -14,22 +14,34 @@ export const useStyles = makeStyles((theme) => ({
 		fontWeight: 700,
 		fontSize: 60,
 		textAlign: "left",
-		background: "linear-gradient(to right, #C94CA8 0%, #2C84F9 50%)",
+		background: "linear-gradient(to right, #C94CA8 0%, #F39242 50%)",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
 		marginLeft: theme.spacing(2.5),
+		[theme.breakpoints.down("md")]: {
+			fontSize: "50px",
+		},
+		[theme.breakpoints.down("sm")]: {
+			fontSize: "45px",
+		},
 		[theme.breakpoints.down("xs")]: {
 			fontSize: 40,
 			marginLeft: theme.spacing(2),
 		},
 	},
 	sponsorText: {
-		color: "#000000",
+		color: "#FFFFFF",
 		fontWeight: 700,
 		fontSize: 60,
 		textAlign: "left",
+		[theme.breakpoints.down("md")]: {
+			fontSize: "50px",
+		},
+		[theme.breakpoints.down("sm")]: {
+			fontSize: "45px",
+		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: 40,
+			fontSize: "40px",
 		},
 	},
 	mainDiv: {
@@ -46,7 +58,7 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	sponsorDiv: {
 		width: "100%",
-		paddingLeft: "20%",
+		margin: "0 auto",
 		paddingTop: 20,
 		[theme.breakpoints.down("md")]: {
 			width: "80%",
@@ -57,7 +69,11 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("xs")]: {
 			width: "100%",
-			marginLeft: 20,
+			marginLeft: "-8vw",
+		},
+		[theme.breakpoints.down(285)]: {
+			width: "100%",
+			marginLeft: 0,
 		},
 	},
 	sponsorImgMainDiv: {
@@ -65,7 +81,7 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "column",
 		paddingLeft: "12%",
-		paddingTop: theme.spacing(3),
+		paddingTop: theme.spacing(4),
 		[theme.breakpoints.down("md")]: {
 			width: "80%",
 		},
@@ -84,10 +100,10 @@ export const useStyles = makeStyles((theme) => ({
 		marginLeft: "10%",
 		[theme.breakpoints.down("xs")]: {
 			width: "100%",
-			marginLeft: "-8.5%",
+			marginLeft: "-10vw",
 			alignItems: "center",
-			flexDirection: "column",
-			justifyContent: "center",
+			flexDirection: "row",
+			justifyContent: "space-around",
 		},
 	},
 	sponsorImg: {
@@ -109,19 +125,25 @@ export const useStyles = makeStyles((theme) => ({
 			minWidth: 300,
 		},
 		[theme.breakpoints.down("xs")]: {
-			maxWidth: 200,
-			maxHeight: 80,
+			maxWidth: "44vw",
+			maxHeight: 100,
 			marginRight: 0,
 		},
 	},
 	footerText: {
 		color: "#8193B2",
 		paddingTop: theme.spacing(5),
-		fontSize: "1.2rem",
+		fontSize: "1.4rem",
+		paddingLeft: "5%",
 		textAlign: "center",
-		marginLeft: "10%",
+		margin: "0 auto",
 		[theme.breakpoints.down("xs")]: {
-			marginLeft: "-8.5%",
+			textAlign: "left",
+			marginLeft: "-8vw",
+			fontSize: "1rem",
 		},
+	},
+	link: {
+		color: "#488FDF",
 	},
 }));

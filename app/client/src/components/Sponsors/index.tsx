@@ -14,14 +14,14 @@ const imgLink = [
 		link: "https://www.cncf.io",
 	},
 	{
-		img: "/icons/Elastic.svg",
-		alt: "Elastic",
-		link: "https://www.elastic.co",
-	},
-	{
 		img: "/icons/Wipro.svg",
 		alt: "Wipro",
 		link: "https://www.wipro.com",
+	},
+	{
+		img: "/icons/Elastic.svg",
+		alt: "Elastic",
+		link: "https://www.elastic.co",
 	},
 	{
 		img: "/icons/Percona.svg",
@@ -33,16 +33,6 @@ const imgLink = [
 		alt: "Epsagon",
 		link: "https://epsagon.com",
 	},
-	// {
-	// 	img: "/icons/intuit.png",
-	// 	alt: "intuit",
-	// 	link: "https://www.intuit.com/",
-	// },
-	// {
-	// 	img: "/icons/Okteto.svg",
-	// 	alt: "okteto",
-	// 	link: "https://okteto.com/",
-	// },
 ];
 
 const Sponsor = () => {
@@ -85,7 +75,10 @@ const Sponsor = () => {
 					</div>
 					<Typography className={classes.footerText}>
 						Interested in sponsoring? Email us at <br></br>
-						<a href="mailto:sponsorship@chaoscarnival.io">
+						<a
+							href="mailto:sponsorship@chaoscarnival.io"
+							className={classes.link}
+						>
 							sponsorship@chaoscarnival.io
 						</a>
 					</Typography>

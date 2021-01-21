@@ -82,7 +82,7 @@ function AcknowledgementPage() {
 										}}
 										onClick={() => {
 											window.open(
-												"https://calendar.google.com/calendar/r/eventedit?text=Chaos+Carnival&dates=20210209T230000Z/20210211T030000Z&details=For+updates,+Join:+https://join.slack.com/t/chaoscarnival"
+												"https://calendar.google.com/calendar/r/eventedit?text=Chaos+Carnival&dates=20210210T110000/20210211T170000&details=For+updates,+Join:+https://join.slack.com/t/chaoscarnival"
 											);
 										}}
 									>

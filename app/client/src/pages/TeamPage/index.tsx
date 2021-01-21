@@ -1,5 +1,4 @@
 import * as React from "react";
-import LazyLoad from "react-lazy-load";
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/Header";
 import "../../scrollbar.css";
@@ -60,9 +59,6 @@ function TeamPage() {
 							Great&nbsp;Team.
 						</span>
 					</p>
-					{/* <p className={classes.mainContent}>
-						Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mAliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-					</p> */}
 				</div>
 				<div className={classes.teamContainer}>
 					{imgLink.map((team) => (
@@ -71,14 +67,11 @@ function TeamPage() {
 							style={{ marginRight: 0 }}
 							key={Math.random() * 99999}
 						>
-							{/* <a href={team.githublink} target="_blank" rel="noopener noreferrer"> */}
-							<LazyLoad offsetTop={100}>
-								<img
-									src={team.img}
-									alt={team.name}
-									className={classes.teamImg}
-								/>
-							</LazyLoad>
+							<img
+								src={team.img}
+								alt={team.name}
+								className={classes.teamImg}
+							/>
 							<div className={classes.teamDetails}>
 								<div className={classes.teamName}>
 									{team.name}

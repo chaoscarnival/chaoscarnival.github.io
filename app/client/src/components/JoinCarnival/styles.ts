@@ -3,9 +3,11 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
 	root: {
 		width: "100%",
-		background: "rgba(248, 249, 253, 0.98)",
-		paddingTop: 100,
-		paddingBottom: 100,
+		background: "#070E23",
+		paddingTop: 50,
+		[theme.breakpoints.down("xs")]: {
+			paddingTop: 0,
+		},
 	},
 	mainDiv: {
 		marginTop: 40,
@@ -28,9 +30,18 @@ export const useStyles = makeStyles((theme) => ({
 			margin: "0 auto",
 		},
 		[theme.breakpoints.down("xs")]: {
-			marginLeft: 10,
-			marginRight: 10,
+			marginLeft: 0,
 			margin: "0 auto",
+		},
+	},
+	divider: {
+		borderBottom: "2px solid rgba(255, 255, 255, 0.2)",
+		width: "85%",
+		margin: "0 auto",
+		paddingTop: 120,
+		background: "#070E23",
+		[theme.breakpoints.down("xs")]: {
+			paddingTop: 0,
 		},
 	},
 	dateDiv: {
@@ -59,14 +70,14 @@ export const useStyles = makeStyles((theme) => ({
 	joinText: {
 		writingMode: "vertical-lr",
 		WebkitTransform: "rotate(180deg)",
-		color: "#262626",
+		color: "#FFFFFF",
 		fontWeight: 800,
 		fontSize: 100,
 		fontStyle: "italic",
 		marginTop: "2rem",
 	},
 	joinTextSM: {
-		color: "#262626",
+		color: "#FFFFFF",
 		fontWeight: 800,
 		fontSize: 60,
 		fontStyle: "italic",
@@ -91,7 +102,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	descText: {
-		color: "#262626",
+		color: "#FFFFFF",
 		textAlign: "left",
 		marginLeft: 30,
 		fontSize: "0.9rem",
@@ -99,11 +110,9 @@ export const useStyles = makeStyles((theme) => ({
 		marginBottom: theme.spacing(2.5),
 	},
 	logoImg: {
-		// height: "200px",
 		padding: "1rem 2rem",
 		width: "400px",
 		[theme.breakpoints.up("xl")]: {
-			// height: "200px",
 			width: "400px",
 		},
 		[theme.breakpoints.down("xs")]: {
@@ -111,29 +120,32 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	textDay: {
-		color: "#262626",
+		color: "#FFFFFF",
 		fontWeight: 400,
 		fontSize: 20,
 		marginBottom: 6,
 		textAlign: "left",
 	},
 	hrLine: {
-		background: "#262626",
+		background: "#FFFFFF",
 		width: "4px",
+		borderRadius: "4px",
+		marginLeft: 50,
+		marginRight: 70,
+		marginTop: 30,
 		[theme.breakpoints.down("sm")]: {
 			width: "95%",
 			height: "4px",
 		},
 		[theme.breakpoints.down("sm")]: {
-			width: "77.5%",
+			width: "82.5%",
 			height: "4px",
+			marginLeft: 30,
+			marginRight: 0,
 		},
-		marginLeft: 50,
-		marginRight: 70,
-		marginTop: 30,
 	},
 	textDate: {
-		color: "#262626",
+		color: "#FFFFFF",
 		fontWeight: 700,
 		fontSize: 29,
 		marginBottom: 10,
@@ -175,14 +187,14 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	timerText: {
-		color: "#262626",
+		color: "#FFFFFF",
 		fontSize: "16px",
 		[theme.breakpoints.down("xl")]: {
 			fontSize: "16px",
 		},
 	},
 	timerBtn: {
-		color: "#262626",
+		color: "#FFFFFF",
 		height: 46,
 		width: "fit-content",
 		marginTop: 12,
