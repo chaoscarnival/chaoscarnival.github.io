@@ -332,7 +332,9 @@ function RegistrationPage() {
 					}}
 					className={classes.sponsorSection}
 				>
-					<a id="sponsors" href="sponsors"></a>
+					<a id="sponsors" href="sponsors">
+						{" "}
+					</a>
 					<Sponsors />
 					<Divider className={classes.divider} />
 				</div>

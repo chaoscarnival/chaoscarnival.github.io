@@ -45,7 +45,6 @@ function HomePage() {
 									<Typography className={classes.headerDesc}>
 										February 10-11, 2021
 									</Typography>
-
 									<Typography
 										className={classes.letsTalkAboutText}
 									>
@@ -56,7 +55,6 @@ function HomePage() {
 									>
 										Chaos Engineering
 									</Typography>
-
 									<Typography className={classes.descText}>
 										Chaos carnival is a global two-day
 										virtual conference for Cloud Native
@@ -96,13 +94,11 @@ function HomePage() {
 											>
 												Registration closes in
 											</Typography>
-
 											<Timer />
 										</div>
 									</div>
 								</div>
 							</div>
-
 							<div className={classes.flexItemImage}>
 								<img
 									src="icons/homeBackground.svg"
@@ -115,7 +111,9 @@ function HomePage() {
 
 					<div style={{ marginTop: "auto" }}>
 						<div className={classes.speakersDiv}>
-							<a id="speakers" href="speakers"></a>
+							<a id="speakers" href="speakers">
+								{" "}
+							</a>
 							<SpeakersSection />
 						</div>
 					</div>
@@ -125,12 +123,16 @@ function HomePage() {
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
-						<a id="bootcamp" href="bootcamp"></a>
+						<a id="bootcamps" href="bootcamps">
+							{" "}
+						</a>
 						<Bootcamps />
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
-						<a id="sponsors" href="sponsors"></a>
+						<a id="sponsors" href="sponsors">
+							{" "}
+						</a>
 						<Sponsors />
 					</div>
 				</div>

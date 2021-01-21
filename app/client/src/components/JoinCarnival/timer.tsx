@@ -4,9 +4,9 @@ import React, { useEffect, useState } from "react";
 import { useStyles } from "./styles";
 
 const Timer = () => {
+	const classes = useStyles();
 	const [now, setNow] = useState(moment());
 	const [over, setOver] = useState(false);
-
 	const then = moment("02 10 2021, 11:00 am", "MM DD YYYY, h:mm a");
 	const days = then.diff(now, "days");
 	now.add(days, "days");
@@ -23,8 +23,8 @@ const Timer = () => {
 		setInterval(() => {
 			setNow(moment());
 		}, 1000);
-	}, []);
-	const classes = useStyles();
+	}, [days]);
+
 	return (
 		<>
 			{!over ? (

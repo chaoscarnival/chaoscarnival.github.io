@@ -88,13 +88,13 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 								<a
 									href={
 										inHomePage && linksActive
-											? "#cfp"
-											: "https://chaoscarnival.io/#cfp"
+											? "#bootcamps"
+											: "https://chaoscarnival.io/#bootcamps"
 									}
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
-										CFP
+										Bootcamps
 									</Typography>
 								</a>
 							</div>
@@ -242,7 +242,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 								<MenuItem
 									className={classes.menuItem}
 									button={false}
-									key="cfp"
+									key="bootcamps"
 								>
 									<Typography
 										className={classes.contributeBtn}
@@ -251,8 +251,8 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 										<a
 											href={
 												inHomePage && linksActive
-													? "#cfp"
-													: "https://chaoscarnival.io/#cfp"
+													? "#bootcamps"
+													: "https://chaoscarnival.io/#bootcamps"
 											}
 											style={{
 												textDecoration: "none",
@@ -260,7 +260,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 												fontWeight: "bold",
 											}}
 										>
-											CFP
+											Bootcamps
 										</a>
 									</Typography>
 								</MenuItem>
