@@ -3,12 +3,12 @@ import { makeStyles } from "@material-ui/core/styles";
 // Component styles
 export const useStyles = makeStyles((theme) => ({
 	root: {
-		minHeight: "110vh",
+		height: "100%",
 		display: "flex",
 		flexDirection: "column",
 		justifyContent: "center",
 		marginTop: "-4px",
-		background: "linear-gradient(180deg, #070d1d 56.2%, #000000 100%)",
+		background: "#070E23",
 		[theme.breakpoints.down("sm")]: {
 			height: "fit-content",
 		},
@@ -17,15 +17,18 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "row",
 		justifyContent: "center",
+		width: "85vw",
+		margin: "0 auto",
 		[theme.breakpoints.down("sm")]: {
 			flexDirection: "column",
 		},
 		[theme.breakpoints.down("xs")]: {
+			width: "100%",
 			flexDirection: "column",
+			marginLeft: "5vw",
 		},
 	},
 	whyToAttend: {
-		// width: '60vw',
 		marginTop: "20vh",
 		[theme.breakpoints.up("xl")]: {
 			width: "44vw !important",
@@ -35,7 +38,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("sm")]: {
 			width: "100vw",
-			marginTop: "50vh",
+			marginTop: "20vh",
 		},
 		[theme.breakpoints.down("xs")]: {
 			width: "100vw",
@@ -47,14 +50,14 @@ export const useStyles = makeStyles((theme) => ({
 		fontWeight: 700,
 		marginTop: "-40vh",
 		textAlign: "left",
-		fontSize: "70px",
+		fontSize: "60px",
 		marginLeft: "10vw",
 		[theme.breakpoints.down("md")]: {
 			fontSize: "50px",
 			marginLeft: "8vw",
 		},
 		[theme.breakpoints.down("sm")]: {
-			fontSize: "50px",
+			fontSize: "45px",
 			marginLeft: "3vw",
 		},
 		[theme.breakpoints.down("xs")]: {
@@ -67,7 +70,7 @@ export const useStyles = makeStyles((theme) => ({
 		background: "linear-gradient(to right, #B4F59E 0%, #71BCF6 55%)",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
-		fontSize: "70px",
+		fontSize: "60px",
 		textAlign: "left",
 		marginLeft: "10vw",
 		[theme.breakpoints.down("md")]: {
@@ -75,7 +78,7 @@ export const useStyles = makeStyles((theme) => ({
 			marginLeft: "8vw",
 		},
 		[theme.breakpoints.down("sm")]: {
-			fontSize: "50px",
+			fontSize: "45px",
 			marginLeft: "3vw",
 		},
 		[theme.breakpoints.down("xs")]: {
@@ -100,16 +103,20 @@ export const useStyles = makeStyles((theme) => ({
 			width: "90vw",
 		},
 		[theme.breakpoints.down("xs")]: {
-			marginTop: "-12vh",
-			marginLeft: "3vw",
-			paddingRight: "3vw",
-			width: "90vw",
+			marginTop: "-18vh",
+			paddingRight: "5vw",
+			width: "95vw",
+		},
+		[theme.breakpoints.down(285)]: {
+			marginTop: "-5vh",
+			paddingRight: "5vw",
+			width: "95vw",
 		},
 	},
 	infoText: {
 		fontSize: "18px",
 		textAlign: "left",
-		color: "#8193B2",
+		color: "#FFFFFF",
 		[theme.breakpoints.down("sm")]: {
 			fontSize: "15px",
 		},
@@ -118,22 +125,19 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "row",
 		justifyContent: "left",
-		// marginLeft: '10vw',
-		// marginRight: '9vw',
-		width: "80%",
+		width: "65vw",
 		margin: "0 auto",
-		[theme.breakpoints.down("md")]: {
-			marginLeft: "8vw",
-			marginRight: "6vw",
-		},
+		paddingBottom: theme.spacing(8),
+		marginTop: theme.spacing(-10),
 		[theme.breakpoints.down("sm")]: {
 			marginTop: "5vh",
 			flexDirection: "column",
-			marginBottom: "14rem",
 		},
 		[theme.breakpoints.down("xs")]: {
+			width: "85%",
 			marginTop: "5vh",
 			flexDirection: "column",
+			paddingBottom: theme.spacing(3),
 		},
 	},
 	advantageElements: {
@@ -147,7 +151,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: "5vh",
-			marginLeft: "-5vw",
+			marginLeft: 0,
 			marginRight: "3vw",
 		},
 	},
@@ -157,47 +161,41 @@ export const useStyles = makeStyles((theme) => ({
 		fontWeight: 500,
 		paddingRight: theme.spacing(1),
 		[theme.breakpoints.down("md")]: {
-			fontSize: "0.8rem",
+			fontSize: "0.9rem",
 		},
 		[theme.breakpoints.down("sm")]: {
-			fontSize: "0.8rem",
+			fontSize: "0.9rem",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "0.8rem",
+			fontSize: "0.9rem",
 		},
 	},
 	advantageHead: {
-		fontSize: "2rem",
+		fontSize: "1.8rem",
 		fontWeight: 500,
 		textAlign: "left",
 		[theme.breakpoints.down("md")]: {
 			fontSize: "1.5rem",
 		},
 		[theme.breakpoints.down("sm")]: {
-			fontSize: "1.5rem",
+			fontSize: "1.4rem",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "1.5rem",
+			fontSize: "1.4rem",
 		},
 	},
 	advantageInfo: {
 		color: "#8193B2",
-		fontSize: "1.25rem",
+		fontSize: "1.2rem",
 		textAlign: "left",
 		[theme.breakpoints.down("xl")]: {
-			fontSize: "1.25rem",
+			fontSize: "1.2rem",
 		},
 		[theme.breakpoints.down("lg")]: {
-			fontSize: "1.25rem",
+			fontSize: "1.15rem",
 		},
-		// [theme.breakpoints.down("md")]: {
-		//   fontSize: '0.8rem',
-		// },
-		// [theme.breakpoints.down("sm")]: {
-		//   fontSize: '0.8rem',
-		// },
-		// [theme.breakpoints.down("xs")]: {
-		//   fontSize: '0.8rem',
-		// },
+		[theme.breakpoints.down("lg")]: {
+			fontSize: "1.05rem",
+		},
 	},
 }));
