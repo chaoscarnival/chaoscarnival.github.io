@@ -22,18 +22,9 @@ export const useStyles = makeStyles((theme) => ({
 	mainDiv: {
 		marginTop: theme.spacing(-10),
 		background: "#fff",
-		// backgroundImage: "url(/images/herobgdesktop.jpeg)",
-		// backgroundRepeat: 'no-repeat',
-		// backgroundSize: "cover",
-		// backgroundPosition: "center",
 		height: "100vh",
 		display: "flex",
 		flexDirection: "column",
-		// [theme.breakpoints.down("sm")]: {
-		// 	// background: 'linear-gradient(180deg,rgba(255, 136, 0, 0.65),rgba(229, 46, 113, 0.65))',
-		// 	// backgroundImage: "url(/images/herobgphone.jpeg)",
-		// 	backgroundSize: "cover",
-		// },
 		[theme.breakpoints.down("xs")]: {
 			marginTop: 0,
 		},
@@ -116,8 +107,6 @@ export const useStyles = makeStyles((theme) => ({
 			justifyContent: "center",
 			width: "45%",
 		},
-		// [theme.breakpoints.down("sm")]: {
-		// },
 		[theme.breakpoints.down("xs")]: {
 			minWidth: "0px",
 		},

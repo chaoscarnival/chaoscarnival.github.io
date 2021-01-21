@@ -30,9 +30,10 @@ function RegistrationPage() {
 
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(false);
-	const [registrationDetails, setRegistrationDetails] = useState<
-		RegistrationDetails
-	>({
+	const [
+		registrationDetails,
+		setRegistrationDetails,
+	] = useState<RegistrationDetails>({
 		firstname: "",
 		lastname: "",
 		email: "",
@@ -332,7 +333,9 @@ function RegistrationPage() {
 					}}
 					className={classes.sponsorSection}
 				>
-					<a id="sponsors" href="sponsors"></a>
+					<a id="sponsors" href="sponsors">
+						{" "}
+					</a>
 					<Sponsors />
 					<Divider className={classes.divider} />
 				</div>

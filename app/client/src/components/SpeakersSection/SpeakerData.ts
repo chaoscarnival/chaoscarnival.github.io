@@ -1,17 +1,17 @@
 export const SpeakerData = [
 	{
 		id: 0,
-		name: "Jason Yee",
-		title: "Director of Advocacy",
+		name: "Vadim Tkachenko",
+		title: "Co-Founder & CTO",
 		company: "",
-		urlToIcon: "/speakers/Jason_Gremlin.png",
+		urlToIcon: "/speakers/VadimPercona.png",
 	},
 	{
 		id: 1,
-		name: "Ramiro Berrelleza",
-		title: "Founder & CEO",
+		name: "Andreas Krivas",
+		title: "Engineering Manager",
 		company: "",
-		urlToIcon: "/speakers/Ramero_Okteto.png",
+		urlToIcon: "/speakers/Andreas_ContainerSolutions.png",
 	},
 	{
 		id: 2,
@@ -43,10 +43,10 @@ export const SpeakerData = [
 	},
 	{
 		id: 6,
-		name: "Piyush Verma",
-		title: "Co-Founder & CTO",
+		name: "Michael Knyazev",
+		title: "DevOps Consultant",
 		company: "",
-		urlToIcon: "/speakers/Piyush_Last9.png",
+		urlToIcon: "/speakers/Michael_Iag.png",
 	},
 	{
 		id: 7,
@@ -57,17 +57,17 @@ export const SpeakerData = [
 	},
 	{
 		id: 8,
-		name: "Soumya Ghosh Dastidar",
-		title: "Software Engineer",
+		name: "Julie Gunderson",
+		title: "DevOps Advocate",
 		company: "",
-		urlToIcon: "/speakers/Soumya_Mayadata.png",
+		urlToIcon: "/speakers/Julie_PagerDuty.png",
 	},
 	{
 		id: 9,
-		name: "Vadim Tkachenko",
-		title: "Co-Founder & CTO",
+		name: "Jason Yee",
+		title: "Director of Advocacy",
 		company: "",
-		urlToIcon: "/speakers/VadimPercona.png",
+		urlToIcon: "/speakers/Jason_Gremlin.png",
 	},
 	{
 		id: 10,
@@ -78,10 +78,10 @@ export const SpeakerData = [
 	},
 	{
 		id: 11,
-		name: "Andreas Krivas",
-		title: "Engineering Manager",
+		name: "Ramiro Berrelleza",
+		title: "Founder & CEO",
 		company: "",
-		urlToIcon: "/speakers/Andreas_ContainerSolutions.png",
+		urlToIcon: "/speakers/Ramero_Okteto.png",
 	},
 	{
 		id: 12,
@@ -113,10 +113,10 @@ export const SpeakerData = [
 	},
 	{
 		id: 16,
-		name: "Julie Gunderson",
-		title: "DevOps Advocate",
+		name: "Soumya Ghosh Dastidar",
+		title: "Software Engineer",
 		company: "",
-		urlToIcon: "/speakers/Julie_PagerDuty.png",
+		urlToIcon: "/speakers/Soumya_Mayadata.png",
 	},
 	{
 		id: 17,
@@ -155,10 +155,10 @@ export const SpeakerData = [
 	},
 	{
 		id: 22,
-		name: "Michael Knyazev",
-		title: "DevOps Consultant",
+		name: "Piyush Verma",
+		title: "Co-Founder & CTO",
 		company: "",
-		urlToIcon: "/speakers/Michael_Iag.png",
+		urlToIcon: "/speakers/Piyush_Last9.png",
 	},
 	{
 		id: 23,
