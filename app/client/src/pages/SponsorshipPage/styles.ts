@@ -154,4 +154,25 @@ export const useStyles = makeStyles((theme) => ({
 			margin: "0 auto",
 		},
 	},
+	divider: {
+		borderBottom: "2px solid rgba(255, 255, 255, 0.2)",
+		width: "85%",
+		margin: "0 auto",
+		paddingTop: 120,
+		background: "#070E23",
+		[theme.breakpoints.down("xs")]: {
+			paddingTop: 0,
+		},
+	},
+	sponsorSectionContainer: {
+		background: "#070E23",
+	},
+	sponsorSection: {
+		width: "85vw",
+		margin: "0 auto",
+		[theme.breakpoints.down("xs")]: {
+			width: "80vw",
+			margin: "0 auto",
+		},
+	},
 }));

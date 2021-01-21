@@ -1,11 +1,12 @@
 import { Button, Typography } from "@material-ui/core";
 import gtag from "ga-gtag";
 import * as React from "react";
-import CallForPapers from "../../components/CallForPapers";
+import Bootcamps from "../../components/Bootcamps/index";
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/Header";
 import JoinCarnival from "../../components/JoinCarnival";
-import { Speakers } from "../../components/Speakers";
+import Timer from "../../components/JoinCarnival/timer";
+import { SpeakersSection } from "../../components/SpeakersSection/index";
 import Sponsors from "../../components/Sponsors";
 import WhyToAttend from "../../components/WhyToAttend";
 import "../../scrollbar.css";
@@ -38,72 +39,84 @@ function HomePage() {
 				<MainHeader inHomePage={true} linksActive={true} />
 				<div className={classes.root}>
 					<div className={classes.mainDiv}>
-						<a id="home" href="home"></a>
-						<div className={classes.headerDiv}>
-							<div style={{ margin: "auto" }}>
+						<div className={classes.flexContainer}>
+							<div className={classes.flexItemText}>
+								<div style={{ margin: "auto" }}>
+									<Typography className={classes.headerDesc}>
+										February 10-11, 2021
+									</Typography>
+
+									<Typography
+										className={classes.letsTalkAboutText}
+									>
+										Let’s talk about
+									</Typography>
+									<Typography
+										className={classes.chaosEngineeringText}
+									>
+										Chaos Engineering
+									</Typography>
+
+									<Typography className={classes.descText}>
+										Chaos carnival is a global two-day
+										virtual conference for Cloud Native
+										Chaos Engineering which aims to to
+										achieve reliability in systems by
+										breaking things on purpose.
+									</Typography>
+
+									<div className={classes.regNow}>
+										<Button
+											className={classes.registerButton}
+											color="primary"
+											variant="contained"
+											style={{ marginRight: "1.5rem" }}
+											onClick={() => {
+												gtag_report_conversion(
+													"https://chaoscarnival.io/register"
+												);
+												window.location.href =
+													"https://chaoscarnival.io/register";
+											}}
+										>
+											<Typography
+												className={classes.registerText}
+												style={{
+													textTransform: "none",
+												}}
+											>
+												<b>
+													Register&nbsp;Now&nbsp;for&nbsp;Free
+												</b>
+											</Typography>
+										</Button>
+										<div>
+											<Typography
+												className={classes.closesText}
+											>
+												Registration closes in
+											</Typography>
+
+											<Timer />
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className={classes.flexItemImage}>
 								<img
-									src="icons/chaoscarnival-header.png"
-									alt="Chaos Bird Experiment"
-									className={classes.logoImg}
+									src="icons/homeBackground.svg"
+									alt="Chaos Carnival Home"
+									className={classes.homeBackgroundImg}
 								/>
 							</div>
-							<div style={{ margin: "auto" }}>
-								<Typography
-									className={classes.mainHeader}
-									style={{ margin: "auto" }}
-								>
-									A global two-day virtual conference
-								</Typography>
+						</div>
+					</div>
 
-								<Typography
-									className={classes.mainHeader}
-									style={{ margin: "auto" }}
-								>
-									for Cloud Native Chaos Engineering
-								</Typography>
-							</div>
-
-							<div style={{ margin: "auto" }}>
-								<Typography
-									className={classes.headerDesc}
-									style={{ margin: "auto" }}
-								>
-									February 10-11, 2021
-								</Typography>
-							</div>
-
-							<div style={{ margin: "auto" }}>
-								<Button
-									className={classes.registerButton}
-									color="primary"
-									variant="contained"
-									style={{
-										margin: "auto",
-										padding: "2rem",
-										marginTop: "2rem",
-										width: "100%",
-									}}
-									onClick={() => {
-										gtag_report_conversion(
-											"https://chaoscarnival.io/register"
-										);
-										window.location.href =
-											"https://chaoscarnival.io/register";
-									}}
-								>
-									<Typography
-										className={classes.registerText}
-										style={{
-											textTransform: "none",
-											fontSize: "1.15rem",
-										}}
-									>
-										<b>
-											Register&nbsp;Now&nbsp;for&nbsp;Free
-										</b>
-									</Typography>
-								</Button>
-							</div>
+					<div style={{ marginTop: "auto" }}>
+						<div className={classes.speakersDiv}>
+							<a id="speakers" href="speakers"></a>
+							<SpeakersSection />
 						</div>
 					</div>
 
@@ -112,25 +125,18 @@ function HomePage() {
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
-						<a id="cfp" href="cfp"></a>
-						<CallForPapers />
+						<a id="bootcamp" href="bootcamp"></a>
+						<Bootcamps />
 					</div>
 
 					<div style={{ marginTop: "auto" }}>
-						<div className={classes.speakersDiv}>
-							<a id="speakers" href="speakers"></a>
-							<Speakers />
-						</div>
-					</div>
-
-					<div style={{ marginTop: "auto" }}>
-						<JoinCarnival />
+						<a id="sponsors" href="sponsors"></a>
+						<Sponsors />
 					</div>
 				</div>
 
 				<div style={{ marginTop: "auto" }}>
-					<a id="sponsors" href="sponsors"></a>
-					<Sponsors />
+					<JoinCarnival />
 				</div>
 
 				<div style={{ marginTop: "auto" }}>

@@ -1,4 +1,4 @@
-import { Typography } from "@material-ui/core";
+import { Divider, Typography } from "@material-ui/core";
 import * as React from "react";
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/Header";
@@ -44,8 +44,19 @@ function SponsorshipPage() {
 						<CustomizedTables />
 					</div>
 					<SponsorBenefits />
-					<div style={{ marginTop: "auto" }}>
-						<Sponsors />
+					<div
+						style={{
+							marginTop: "auto",
+							marginLeft: "auto",
+							marginRight: "auto",
+						}}
+						className={classes.sponsorSectionContainer}
+					>
+						<a id="sponsors" href="sponsors"></a>
+						<div className={classes.sponsorSection}>
+							<Sponsors />
+						</div>
+						<Divider className={classes.divider} />
 					</div>
 				</div>
 				<div style={{ marginTop: "auto" }}>

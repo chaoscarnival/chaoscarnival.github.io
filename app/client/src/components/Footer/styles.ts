@@ -5,9 +5,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 		width: "100vw",
 		margin: "auto",
 		height: "fit-content",
-		background:
-			"linear-gradient(159.14deg, #042C69 0%, #041739 22.21%, #040D21 51.09%, #1B132F 84.08%, #471F48 101.53%)",
-		boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.05)",
+		background: "#070E23",
 		display: "flex",
 		flexDirection: "column",
 		justifyContent: "center",
@@ -16,7 +14,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 	toolbarDiv: {
 		width: "100vw",
 		margin: "auto",
-		marginTop: theme.spacing(2.75),
+		marginTop: theme.spacing(1),
 		display: "flex",
 		flexDirection: "row",
 		justifyContent: "center",
@@ -28,10 +26,10 @@ const useStyles = makeStyles((theme: Theme) => ({
 		},
 	},
 	mainLogo: {
-		width: 165,
-		padding: "1.4rem",
-		marginLeft: 30,
-		marginRight: 30,
+		width: 155,
+		paddingTop: "1.4rem",
+		paddingBottom: "1.4rem",
+		marginRight: 60,
 		cursor: "pointer",
 		[theme.breakpoints.up("xl")]: {
 			marginLeft: 0,
@@ -83,13 +81,13 @@ const useStyles = makeStyles((theme: Theme) => ({
 		textAlign: "center",
 		[theme.breakpoints.down("sm")]: {
 			marginTop: theme.spacing(8),
-			// marginBottom: theme.spacing(3),
-			marginBottom: "-26px",
+			paddingBottom: theme.spacing(3),
 			marginLeft: "15vw",
 			marginRight: "15vw",
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: theme.spacing(8),
+			paddingBottom: theme.spacing(3),
 			marginLeft: "15vw",
 			marginRight: "15vw",
 		},

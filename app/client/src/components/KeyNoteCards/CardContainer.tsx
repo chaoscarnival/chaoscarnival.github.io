@@ -1,6 +1,6 @@
+import clsx from "clsx";
 import React from "react";
 import { useStyles } from "./styles";
-import clsx from "clsx";
 
 function CardContainer(props: any) {
 	const classes = useStyles();

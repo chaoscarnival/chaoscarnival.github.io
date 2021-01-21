@@ -7,30 +7,32 @@ const useStyles = makeStyles((theme: Theme) => ({
 		background: "rgba(0,0,0,0.001)",
 	},
 	toolbarDiv: {
-		width: "100vw",
+		width: "80vw",
 		margin: "auto",
-		// paddingLeft: "5vw",
 		display: "flex",
 		flexDirection: "row",
 		justifyContent: "center",
 		alignItems: "center",
 		[theme.breakpoints.down("sm")]: {
-			justifyContent: "flex-start",
+			justifyContent: "space-between",
 			position: "absolute",
+			width: "85vw",
+			marginLeft: "6vw",
+		},
+		[theme.breakpoints.down("xs")]: {
+			justifyContent: "space-between",
+			position: "absolute",
+			width: "100vw",
+			marginLeft: 0,
 		},
 	},
 	menu: {
-		// paddingLeft: "40vw",
 		marginTop: theme.spacing(2),
 		[theme.breakpoints.down("md")]: {
-			// paddingLeft: "32vw",
 			textAlign: "center",
 		},
-		[theme.breakpoints.down("sm")]: {
-			// paddingLeft: "27vw",
-		},
 		[theme.breakpoints.down("xs")]: {
-			// paddingLeft: "17vw",
+			paddingTop: theme.spacing(4),
 		},
 	},
 	mainLogo: {
@@ -46,6 +48,12 @@ const useStyles = makeStyles((theme: Theme) => ({
 		[theme.breakpoints.down("sm")]: {
 			marginLeft: 10,
 			marginRight: 30,
+			marginTop: 20,
+		},
+		[theme.breakpoints.down("xs")]: {
+			marginLeft: 0,
+			marginRight: 30,
+			marginTop: 50,
 		},
 	},
 	registerButton: {

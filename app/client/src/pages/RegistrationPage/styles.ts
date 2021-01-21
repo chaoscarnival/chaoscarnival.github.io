@@ -350,6 +350,22 @@ export const useStyles = makeStyles((theme) => ({
 			fontSize: "12px",
 		},
 	},
+	divider: {
+		borderBottom: "2px solid rgba(255, 255, 255, 0.2)",
+		width: "85%",
+		margin: "0 auto",
+		paddingTop: 120,
+		background: "#070E23",
+		[theme.breakpoints.down("xs")]: {
+			paddingTop: 0,
+		},
+	},
+	sponsorSection: {
+		width: "85vw",
+		[theme.breakpoints.down("xs")]: {
+			width: "80vw",
+		},
+	},
 }));
 
 export const CustomInputField = withStyles({
