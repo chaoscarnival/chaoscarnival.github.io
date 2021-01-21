@@ -227,9 +227,11 @@ export const useStyles = makeStyles((theme) => ({
 		margin: "0 auto",
 		width: "52.5vw",
 		marginRight: "-17.5rem",
+		[theme.breakpoints.up("lg")]: {
+			width: "55vw",
+		},
 		[theme.breakpoints.down("lg")]: {
-			width: "52.5vw",
-			marginRight: "-17.5rem",
+			width: "52vw",
 		},
 		[theme.breakpoints.down("md")]: {
 			width: "50vw",

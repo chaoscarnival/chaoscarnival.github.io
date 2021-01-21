@@ -46,9 +46,6 @@ export const useStyles = makeStyles((theme: Theme) => ({
 		marginLeft: "7.5vw",
 		margin: "0 auto",
 		paddingBottom: theme.spacing(2),
-		[theme.breakpoints.up("xl")]: {
-			marginLeft: "20vw",
-		},
 		[theme.breakpoints.down("xs")]: {
 			flexDirection: "column-reverse",
 			width: "95%",
