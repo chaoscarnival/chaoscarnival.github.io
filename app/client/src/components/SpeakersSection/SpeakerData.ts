@@ -179,7 +179,7 @@ export const SpeakerData = [
 		name: "Delphine Joyneer",
 		title: "Senior Software Engineer",
 		company: "",
-		urlToIcon: "/images/dummy8.jpeg",
+		urlToIcon: "/speakers/Delphine_Wipro.png",
 	},
 	{
 		id: 26,
