@@ -45,9 +45,8 @@ export function SpeakersSection() {
 				</div>
 
 				<div className={classes.speakersInfoText}>
-					We have exciting lineup for the 2 days of chaos carnival
-					featuring various chaos experts from AWS, Intuit, Mayadata,
-					Litmus, Elastic, Okteto, Percona and many more.
+					We have exciting lineup for the 2 days of Chaos Carnival
+					featuring various chaos experts from all over the globe.
 				</div>
 			</div>
 			<div className={classes.speakerRoot}>

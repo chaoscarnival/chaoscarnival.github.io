@@ -98,7 +98,7 @@ const JoinCarnival = () => {
 							marginBottom: "1rem",
 						}}
 					>
-						11AM-5PM EST
+						8AM &#8211; 4PM PT
 					</Typography>
 					<Button
 						className={classes.registerButtonOutline}
@@ -106,7 +106,7 @@ const JoinCarnival = () => {
 						variant="outlined"
 						onClick={() => {
 							window.open(
-								"https://calendar.google.com/calendar/r/eventedit?text=Chaos+Carnival&dates=20210210T110000/20210211T170000&details=For+updates,+Join:+https://join.slack.com/t/chaoscarnival"
+								"https://calendar.google.com/calendar/r/eventedit?text=Chaos+Carnival&dates=20210210T080000/20210211T160000&details=For+updates,+Join:+https://join.slack.com/t/chaoscarnival"
 							);
 						}}
 					>
