@@ -72,7 +72,7 @@ export const useStyles = makeStyles((theme: Theme) => ({
 			marginRight: "30%",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "0.8rem",
+			fontSize: "0.9rem",
 			marginRight: "12.5%",
 		},
 	},
@@ -192,7 +192,7 @@ export const useStyles = makeStyles((theme: Theme) => ({
 			fontSize: "0.8rem",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "0.8rem",
+			fontSize: "0.9rem",
 			width: "85vw",
 			marginLeft: "-5vw",
 		},
