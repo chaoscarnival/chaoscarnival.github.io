@@ -36,7 +36,7 @@ export const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("xs")]: {
 			paddingTop: 0,
 			height: "100vh",
-			marginTop: "3vh",
+			marginTop: "4rem",
 			flexDirection: "column-reverse",
 		},
 	},
@@ -129,7 +129,7 @@ export const useStyles = makeStyles((theme) => ({
 			fontSize: "1.2rem",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "1rem",
+			fontSize: "1.1rem",
 			marginRight: theme.spacing(10),
 		},
 	},
@@ -151,7 +151,7 @@ export const useStyles = makeStyles((theme) => ({
 			marginRight: "15%",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "0.75rem",
+			fontSize: "0.85rem",
 		},
 	},
 }));

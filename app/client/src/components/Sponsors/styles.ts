@@ -69,7 +69,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("xs")]: {
 			width: "100%",
-			marginLeft: "-8vw",
+			marginLeft: "-10vw",
 		},
 		[theme.breakpoints.down(285)]: {
 			width: "100%",

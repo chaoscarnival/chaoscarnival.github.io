@@ -102,6 +102,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 			marginLeft: theme.spacing(-3),
 		},
 		[theme.breakpoints.down("xs")]: {
+			fontSize: "1.85rem",
 			marginLeft: theme.spacing(-3),
 		},
 	},

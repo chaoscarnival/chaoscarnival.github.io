@@ -50,8 +50,8 @@ export const useStyles = makeStyles((theme) => ({
 		paddingTop: "4rem",
 		[theme.breakpoints.down("sm")]: {
 			marginTop: 20,
-			marginLeft: 35,
-			marginRight: 35,
+			marginLeft: "8vw",
+			marginRight: "8vw",
 			paddingTop: "0rem",
 		},
 	},
@@ -97,7 +97,7 @@ export const useStyles = makeStyles((theme) => ({
 		width: "450px",
 		paddingTop: "2.3rem",
 		[theme.breakpoints.down("xs")]: {
-			width: "90%",
+			width: "92.5vw",
 			paddingTop: "0rem",
 		},
 	},
@@ -108,6 +108,9 @@ export const useStyles = makeStyles((theme) => ({
 		fontSize: "0.9rem",
 		marginTop: theme.spacing(2.75),
 		marginBottom: theme.spacing(2.5),
+		[theme.breakpoints.down("xs")]: {
+			fontSize: "1rem",
+		},
 	},
 	logoImg: {
 		padding: "1rem 2rem",
@@ -134,13 +137,10 @@ export const useStyles = makeStyles((theme) => ({
 		marginRight: 70,
 		marginTop: 30,
 		[theme.breakpoints.down("sm")]: {
-			width: "95%",
-			height: "4px",
-		},
-		[theme.breakpoints.down("sm")]: {
-			width: "82.5%",
-			height: "4px",
-			marginLeft: 30,
+			width: "85%",
+			height: "5px",
+			borderRadius: "5px",
+			marginLeft: "8vw",
 			marginRight: 0,
 		},
 	},
@@ -198,13 +198,14 @@ export const useStyles = makeStyles((theme) => ({
 		height: 46,
 		width: "fit-content",
 		marginTop: 12,
-		fontSize: "1.45rem",
+		fontSize: "1.75rem",
 		fontWeight: 700,
 		overflow: "hidden",
 		textOverflow: "",
 		whiteSpace: "nowrap",
 		[theme.breakpoints.down("xs")]: {
 			textAlign: "left",
+			fontSize: "1.85rem",
 		},
 	},
 }));
