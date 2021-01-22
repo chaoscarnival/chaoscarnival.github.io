@@ -72,17 +72,17 @@ export const useStyles = makeStyles((theme) => ({
 			width: "16.5rem",
 		},
 		[theme.breakpoints.down("md")]: {
-			height: "2.5rem",
+			height: "3rem",
 			width: "14.5rem",
 		},
 		[theme.breakpoints.down("sm")]: {
 			marginTop: 0,
-			height: "2rem",
+			height: "3rem",
 			width: "9.75rem",
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: 0,
-			height: "3rem",
+			height: "3.15rem",
 			width: "90vw",
 		},
 	},
@@ -137,7 +137,7 @@ export const useStyles = makeStyles((theme) => ({
 		marginTop: "20rem",
 		[theme.breakpoints.down("xs")]: {
 			width: "100vw",
-			marginTop: "4rem",
+			marginTop: "5rem",
 		},
 	},
 	letsTalkAboutText: {
@@ -207,7 +207,7 @@ export const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("xs")]: {
 			marginTop: theme.spacing(3),
 			marginBottom: theme.spacing(-1),
-			fontSize: "0.8rem",
+			fontSize: "0.9rem",
 		},
 	},
 

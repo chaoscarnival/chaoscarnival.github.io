@@ -70,7 +70,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("xs")]: {
 			width: "40vw",
-			height: "260px",
+			height: "265px",
 			marginTop: 0,
 			marginBottom: 0,
 		},
@@ -107,7 +107,7 @@ export const useStyles = makeStyles((theme) => ({
 			fontSize: "0.85rem",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "0.75rem",
+			fontSize: "0.8rem",
 		},
 	},
 
@@ -131,7 +131,7 @@ export const useStyles = makeStyles((theme) => ({
 			fontSize: "0.85rem",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "0.75rem",
+			fontSize: "0.8rem",
 		},
 	},
 
@@ -146,10 +146,10 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("sm")]: {
 			marginTop: theme.spacing(0.5),
-			fontSize: "0.7rem",
+			fontSize: "0.8rem",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "0.7rem",
+			fontSize: "0.75rem",
 		},
 	},
 }));
