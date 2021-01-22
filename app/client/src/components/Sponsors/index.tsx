@@ -33,6 +33,11 @@ const imgLink = [
 		alt: "Epsagon",
 		link: "https://epsagon.com",
 	},
+	{
+		img: "/icons/Gremlin.svg",
+		alt: "Gremlin",
+		link: "https://www.gremlin.com",
+	},
 ];
 
 const Sponsor = () => {

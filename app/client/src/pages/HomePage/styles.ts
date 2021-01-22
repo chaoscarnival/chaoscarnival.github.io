@@ -61,23 +61,23 @@ export const useStyles = makeStyles((theme) => ({
 	},
 
 	registerButton: {
-		height: "3.5rem",
+		height: "3.65rem",
 		width: "18.5rem",
 		[theme.breakpoints.down("xl")]: {
-			height: "3.5rem",
+			height: "3.65rem",
 			width: "18.5rem",
 		},
 		[theme.breakpoints.down("lg")]: {
-			height: "3rem",
+			height: "3.15rem",
 			width: "16.5rem",
 		},
 		[theme.breakpoints.down("md")]: {
-			height: "3rem",
+			height: "3.15rem",
 			width: "14.5rem",
 		},
 		[theme.breakpoints.down("sm")]: {
 			marginTop: 0,
-			height: "3rem",
+			height: "3.15rem",
 			width: "9.75rem",
 		},
 		[theme.breakpoints.down("xs")]: {

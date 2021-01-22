@@ -118,7 +118,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 						<Hidden smDown>
 							<div className={classes.headerDivCount}>
 								<CountDown
-									timeTillDate="02 10 2021, 11:00 am"
+									timeTillDate="02 10 2021, 8:00 am"
 									timeFormat="MM DD YYYY, h:mm a"
 									inHomePage={inHomePage}
 								/>
@@ -154,7 +154,6 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 										width: "100%",
 										backgroundColor: "transparent",
 										filter: "drop-shadow(0)",
-										// borderRadius: 4,
 										justifyContent: "center",
 									},
 								}}
