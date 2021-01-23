@@ -42,6 +42,7 @@ export const useStyles = makeStyles((theme: Theme) => ({
 		display: "flex",
 		flexDirection: "row",
 		flexWrap: "wrap",
+		justifyContent: "space-between",
 		width: "80%",
 		marginLeft: "7.5vw",
 		margin: "0 auto",
@@ -138,6 +139,9 @@ export const useStyles = makeStyles((theme: Theme) => ({
 		alignSelf: "left",
 		marginTop: "7vh",
 		width: "61%",
+		[theme.breakpoints.up("xl")]: {
+			margin: "auto",
+		},
 		[theme.breakpoints.down("xl")]: {
 			maxWidth: "1200px",
 		},

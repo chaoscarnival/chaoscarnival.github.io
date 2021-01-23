@@ -7,11 +7,11 @@ const useStyles = makeStyles((theme: Theme) => ({
 		background: "rgba(0,0,0,0.001)",
 	},
 	toolbarDiv: {
-		width: "80vw",
+		width: "70vw",
 		margin: "auto",
 		display: "flex",
 		flexDirection: "row",
-		justifyContent: "center",
+		justifyContent: "space-between",
 		alignItems: "center",
 		[theme.breakpoints.down("sm")]: {
 			justifyContent: "space-between",
@@ -37,16 +37,15 @@ const useStyles = makeStyles((theme: Theme) => ({
 	},
 	mainLogo: {
 		width: 165,
-		marginLeft: 110,
-		marginRight: 30,
+		marginLeft: (props) => (props ? 0 : -100),
+		marginRight: (props) => (props ? 30 : 130),
 		padding: "0.5rem",
 		cursor: "pointer",
-		[theme.breakpoints.up("xl")]: {
-			marginLeft: 0,
-			marginRight: 30,
+		[theme.breakpoints.down("md")]: {
+			marginRight: (props) => (props ? 30 : -10),
 		},
 		[theme.breakpoints.down("sm")]: {
-			marginLeft: 10,
+			marginLeft: (props) => (props ? 10 : 0),
 			marginRight: 30,
 			marginTop: 20,
 		},

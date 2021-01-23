@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
 	root: {
 		width: "100%",
-		paddingTop: 100,
+		paddingTop: 70,
 		paddingBottom: 60,
 		backgroundColor: "#070E23",
 		[theme.breakpoints.down("sm")]: {
@@ -60,34 +60,21 @@ export const useStyles = makeStyles((theme) => ({
 		width: "100%",
 		margin: "0 auto",
 		paddingTop: 20,
-		[theme.breakpoints.down("md")]: {
-			width: "80%",
-		},
-		[theme.breakpoints.down("sm")]: {
-			marginLeft: "10%",
-			paddingLeft: 0,
-		},
 		[theme.breakpoints.down("xs")]: {
-			width: "100%",
-			marginLeft: "-10vw",
-		},
-		[theme.breakpoints.down(285)]: {
-			width: "100%",
-			marginLeft: 0,
+			paddingBottom: 30,
 		},
 	},
 	sponsorImgMainDiv: {
-		width: "85%",
+		width: "95%",
 		display: "flex",
 		flexDirection: "column",
-		paddingLeft: "12%",
+		paddingLeft: "5%",
 		paddingTop: theme.spacing(4),
-		[theme.breakpoints.down("md")]: {
-			width: "80%",
-		},
 		[theme.breakpoints.down("xs")]: {
-			width: "100%",
+			width: "100vw",
 			paddingTop: 0,
+			marginLeft: "10vw",
+			paddingLeft: 0,
 		},
 	},
 	sponsorImgDiv: {
@@ -106,44 +93,138 @@ export const useStyles = makeStyles((theme) => ({
 			justifyContent: "space-around",
 		},
 	},
-	sponsorImg: {
-		maxWidth: 300,
-		maxHeight: 100,
+	sponsorImgDiamond: {
+		maxWidth: 520,
+		maxHeight: 160,
+		padding: 20,
+		marginTop: 25,
+		marginBottom: 25,
+		[theme.breakpoints.up("sm")]: {
+			minWidth: 300,
+			maxWidth: 300,
+		},
+		[theme.breakpoints.up("md")]: {
+			minWidth: 350,
+			maxWidth: 350,
+		},
+		[theme.breakpoints.up("lg")]: {
+			minWidth: 380,
+			maxWidth: 520,
+		},
+		[theme.breakpoints.up("xl")]: {
+			minWidth: 450,
+		},
+		[theme.breakpoints.down("xs")]: {
+			maxWidth: "68vw",
+			maxHeight: 165,
+			marginRight: 0,
+			marginTop: 5,
+			marginBottom: 5,
+		},
+	},
+	sponsorImgPlatinum: {
+		maxWidth: 350,
+		maxHeight: 135,
 		padding: 20,
 		marginTop: 25,
 		marginBottom: 25,
 		[theme.breakpoints.up("sm")]: {
 			minWidth: 200,
+			maxWidth: 200,
 		},
 		[theme.breakpoints.up("md")]: {
-			minWidth: 220,
+			minWidth: 250,
+			maxWidth: 250,
 		},
 		[theme.breakpoints.up("lg")]: {
-			minWidth: 230,
+			minWidth: 280,
+			maxWidth: 350,
 		},
 		[theme.breakpoints.up("xl")]: {
-			minWidth: 300,
+			minWidth: 340,
 		},
 		[theme.breakpoints.down("xs")]: {
-			maxWidth: "44vw",
-			maxHeight: 100,
+			maxWidth: "50vw",
+			maxHeight: 150,
 			marginRight: 0,
+			marginTop: 5,
+			marginBottom: 5,
+		},
+	},
+	sponsorImgGold: {
+		maxWidth: 270,
+		maxHeight: 110,
+		padding: 20,
+		marginTop: 25,
+		marginBottom: 25,
+		[theme.breakpoints.up("sm")]: {
+			minWidth: 120,
+			maxWidth: 120,
+		},
+		[theme.breakpoints.up("md")]: {
+			minWidth: 180,
+			maxWidth: 180,
+		},
+		[theme.breakpoints.up("lg")]: {
+			minWidth: 200,
+			maxWidth: 270,
+		},
+		[theme.breakpoints.up("xl")]: {
+			minWidth: 250,
+		},
+		[theme.breakpoints.down("xs")]: {
+			maxWidth: "40vw",
+			maxHeight: 85,
+			marginRight: 0,
+			marginTop: 5,
+			marginBottom: 5,
 		},
 	},
 	footerText: {
 		color: "#8193B2",
 		paddingTop: theme.spacing(5),
 		fontSize: "1.4rem",
-		paddingLeft: "5%",
+		paddingLeft: "4%",
 		textAlign: "center",
 		margin: "0 auto",
 		[theme.breakpoints.down("xs")]: {
-			textAlign: "left",
-			marginLeft: "-8vw",
-			fontSize: "1rem",
+			fontSize: "1.25rem",
+			marginLeft: "-3vw",
 		},
 	},
 	link: {
 		color: "#488FDF",
+	},
+	sponsorTierHeading: {
+		width: "100%",
+		margin: "0 auto",
+		paddingTop: 20,
+		fontSize: "2.25rem",
+		LetterSpacing: "0.2px",
+		marginLeft: "2%",
+		textAlign: "center",
+		fontStyle: "medium",
+		[theme.breakpoints.down("xs")]: {
+			fontSize: "1.4rem",
+			marginLeft: "-10vw",
+		},
+	},
+	diamond: {
+		background:
+			"linear-gradient(90deg, #CFB0F5 -27.59%, rgba(207, 176, 245, 0.49) 7.17%, #A37CF8 47.32%, rgba(207, 176, 245, 0.5) 120.69%)",
+		WebkitBackgroundClip: "text",
+		WebkitTextFillColor: "transparent",
+	},
+	platinum: {
+		background:
+			"linear-gradient(90deg, rgba(105, 201, 183, 0.5464) 0%, #7DB7AF 50.52%, rgba(105, 201, 183, 0.5368) 100%)",
+		WebkitBackgroundClip: "text",
+		WebkitTextFillColor: "transparent",
+	},
+	gold: {
+		background:
+			"linear-gradient(90deg, rgba(201, 146, 47, 0.5464) 0%, #EBAD34 50.52%, rgba(201, 146, 47, 0.5368) 100%)",
+		WebkitBackgroundClip: "text",
+		WebkitTextFillColor: "transparent",
 	},
 }));

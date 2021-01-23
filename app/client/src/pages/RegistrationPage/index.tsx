@@ -331,12 +331,14 @@ function RegistrationPage() {
 						marginLeft: "auto",
 						marginRight: "auto",
 					}}
-					className={classes.sponsorSection}
+					className={classes.sponsorSectionContainer}
 				>
 					<a id="sponsors" href="sponsors">
 						{" "}
 					</a>
-					<Sponsors />
+					<div className={classes.sponsorSection}>
+						<Sponsors />
+					</div>
 					<Divider className={classes.divider} />
 				</div>
 

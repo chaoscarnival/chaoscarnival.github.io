@@ -20,6 +20,9 @@ export const useStyles = makeStyles((theme) => ({
 			width: 1550,
 			margin: "0 auto",
 		},
+		[theme.breakpoints.down("md")]: {
+			paddingTop: 100,
+		},
 		[theme.breakpoints.down("xs")]: {
 			display: "flex",
 			flexDirection: "column-reverse",
@@ -163,8 +166,8 @@ export const useStyles = makeStyles((theme) => ({
 		width: "85vw",
 		margin: "0 auto",
 		[theme.breakpoints.down("xs")]: {
-			width: "80vw",
-			margin: "0 auto",
+			width: "95vw",
+			marginLeft: 0,
 		},
 	},
 }));
