@@ -38,7 +38,7 @@ export const useStyles = makeStyles((theme) => ({
 		color: "#FAFF53",
 		maxWidth: 500,
 		marginTop: "2vh",
-		marginLeft: "2vw",
+		marginLeft: 30,
 		fontWeight: 700,
 		[theme.breakpoints.down("xl")]: {
 			fontSize: "26px",
@@ -135,16 +135,19 @@ export const useStyles = makeStyles((theme) => ({
 	flexItemImage: {
 		width: "40vw",
 		marginTop: "20rem",
+		[theme.breakpoints.up("xl")]: {
+			marginTop: "30rem",
+		},
 		[theme.breakpoints.down("xs")]: {
 			width: "100vw",
-			marginTop: "5rem",
+			paddingTop: "18.5rem",
 		},
 	},
 	letsTalkAboutText: {
 		fontWeight: 700,
 		textAlign: "left",
 		fontSize: 55,
-		marginLeft: "2vw",
+		marginLeft: 30,
 		[theme.breakpoints.down("md")]: {
 			fontSize: "50px",
 		},
@@ -161,7 +164,7 @@ export const useStyles = makeStyles((theme) => ({
 		fontWeight: 700,
 		fontSize: 55,
 		textAlign: "left",
-		marginLeft: "2vw",
+		marginLeft: 30,
 		marginRight: "-5vw",
 		background:
 			"linear-gradient(89.08deg, #3BF0E4 4.54%, #9867F0 25.3%, #C2A0FD 41.12%, #EA5DAD 57.44%, #FF7571 75.24%, #FFE580 99.46%)",

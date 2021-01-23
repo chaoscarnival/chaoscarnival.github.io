@@ -78,7 +78,7 @@ export function SpeakersSection() {
 					className={classes.detailText}
 					style={{ display: "inline" }}
 				>
-					to come soon
+					coming soon
 				</div>
 			</div>
 		</div>

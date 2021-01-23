@@ -19,6 +19,9 @@ export const useStyles = makeStyles((theme) => ({
 		justifyContent: "center",
 		width: "85vw",
 		margin: "0 auto",
+		[theme.breakpoints.up("xl")]: {
+			marginTop: "15vh",
+		},
 		[theme.breakpoints.down("sm")]: {
 			flexDirection: "column",
 		},
@@ -129,6 +132,9 @@ export const useStyles = makeStyles((theme) => ({
 		margin: "0 auto",
 		paddingBottom: theme.spacing(8),
 		marginTop: theme.spacing(-10),
+		[theme.breakpoints.up("xl")]: {
+			marginTop: "-20vh",
+		},
 		[theme.breakpoints.down("sm")]: {
 			marginTop: "5vh",
 			flexDirection: "column",
