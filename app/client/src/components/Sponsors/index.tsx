@@ -80,7 +80,7 @@ const Sponsor = () => {
 				</div>
 				<div className={classes.sponsorImgMainDiv}>
 					{sponsorsList.map((sponsorTier) => (
-						<div>
+						<div key={Math.random() * 99999}>
 							<Typography
 								className={`${classes.sponsorTierHeading} 
 					${
