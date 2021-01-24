@@ -1,4 +1,4 @@
-import { Button, FormControl, Typography } from "@material-ui/core";
+import { Button, Divider, FormControl, Typography } from "@material-ui/core";
 import Cookies from "js-cookie";
 import publicIp from "public-ip";
 import React, { useState } from "react";
@@ -30,9 +30,10 @@ function RegistrationPage() {
 
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(false);
-	const [registrationDetails, setRegistrationDetails] = useState<
-		RegistrationDetails
-	>({
+	const [
+		registrationDetails,
+		setRegistrationDetails,
+	] = useState<RegistrationDetails>({
 		firstname: "",
 		lastname: "",
 		email: "",
@@ -162,7 +163,10 @@ function RegistrationPage() {
 	};
 
 	return (
-		<div className="scrollbar scrollbar-primary">
+		<div
+			className="scrollbar scrollbar-primary"
+			style={{ background: "#070E23" }}
+		>
 			<div className={classes.rootContainer}>
 				<MainHeader inHomePage={true} linksActive={false} />
 				<div className={classes.root}>
@@ -321,9 +325,21 @@ function RegistrationPage() {
 					</div>
 				</div>
 
-				<div style={{ marginTop: "auto" }}>
-					<a id="sponsors" href="sponsors"></a>
-					<Sponsors />
+				<div
+					style={{
+						marginTop: "auto",
+						marginLeft: "auto",
+						marginRight: "auto",
+					}}
+					className={classes.sponsorSectionContainer}
+				>
+					<a id="sponsors" href="sponsors">
+						{" "}
+					</a>
+					<div className={classes.sponsorSection}>
+						<Sponsors />
+					</div>
+					<Divider className={classes.divider} />
 				</div>
 
 				<div style={{ marginTop: "auto" }}>

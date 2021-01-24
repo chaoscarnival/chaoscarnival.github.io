@@ -7,45 +7,52 @@ const useStyles = makeStyles((theme: Theme) => ({
 		background: "rgba(0,0,0,0.001)",
 	},
 	toolbarDiv: {
-		width: "100vw",
+		width: "70vw",
 		margin: "auto",
-		// paddingLeft: "5vw",
 		display: "flex",
 		flexDirection: "row",
-		justifyContent: "center",
+		justifyContent: "space-between",
 		alignItems: "center",
 		[theme.breakpoints.down("sm")]: {
-			justifyContent: "flex-start",
+			justifyContent: "space-between",
 			position: "absolute",
+			width: "85vw",
+			marginLeft: "6vw",
+		},
+		[theme.breakpoints.down("xs")]: {
+			justifyContent: "space-between",
+			position: "absolute",
+			width: "100vw",
+			marginLeft: 0,
 		},
 	},
 	menu: {
-		// paddingLeft: "40vw",
 		marginTop: theme.spacing(2),
 		[theme.breakpoints.down("md")]: {
-			// paddingLeft: "32vw",
 			textAlign: "center",
 		},
-		[theme.breakpoints.down("sm")]: {
-			// paddingLeft: "27vw",
-		},
 		[theme.breakpoints.down("xs")]: {
-			// paddingLeft: "17vw",
+			paddingTop: theme.spacing(4),
 		},
 	},
 	mainLogo: {
 		width: 165,
-		marginLeft: 110,
-		marginRight: 30,
+		marginLeft: (props) => (props ? 0 : -100),
+		marginRight: (props) => (props ? 30 : 130),
 		padding: "0.5rem",
 		cursor: "pointer",
-		[theme.breakpoints.up("xl")]: {
-			marginLeft: 0,
-			marginRight: 30,
+		[theme.breakpoints.down("md")]: {
+			marginRight: (props) => (props ? 30 : -10),
 		},
 		[theme.breakpoints.down("sm")]: {
-			marginLeft: 10,
+			marginLeft: (props) => (props ? 10 : 0),
 			marginRight: 30,
+			marginTop: 20,
+		},
+		[theme.breakpoints.down("xs")]: {
+			marginLeft: 0,
+			marginRight: 30,
+			marginTop: 50,
 		},
 	},
 	registerButton: {

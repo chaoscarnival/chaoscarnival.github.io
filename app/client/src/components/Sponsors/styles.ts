@@ -3,9 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
 	root: {
 		width: "100%",
-		paddingTop: 120,
-		paddingBottom: 120,
-		backgroundColor: "#FFFFFF",
+		paddingTop: 70,
+		paddingBottom: 60,
+		backgroundColor: "#070E23",
 		[theme.breakpoints.down("sm")]: {
 			paddingTop: 10,
 		},
@@ -14,22 +14,34 @@ export const useStyles = makeStyles((theme) => ({
 		fontWeight: 700,
 		fontSize: 60,
 		textAlign: "left",
-		background: "linear-gradient(to right, #C94CA8 0%, #2C84F9 50%)",
+		background: "linear-gradient(to right, #C94CA8 0%, #F39242 50%)",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
 		marginLeft: theme.spacing(2.5),
+		[theme.breakpoints.down("md")]: {
+			fontSize: "50px",
+		},
+		[theme.breakpoints.down("sm")]: {
+			fontSize: "45px",
+		},
 		[theme.breakpoints.down("xs")]: {
 			fontSize: 40,
 			marginLeft: theme.spacing(2),
 		},
 	},
 	sponsorText: {
-		color: "#000000",
+		color: "#FFFFFF",
 		fontWeight: 700,
 		fontSize: 60,
 		textAlign: "left",
+		[theme.breakpoints.down("md")]: {
+			fontSize: "50px",
+		},
+		[theme.breakpoints.down("sm")]: {
+			fontSize: "45px",
+		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: 40,
+			fontSize: "40px",
 		},
 	},
 	mainDiv: {
@@ -46,32 +58,23 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	sponsorDiv: {
 		width: "100%",
-		paddingLeft: "20%",
+		margin: "0 auto",
 		paddingTop: 20,
-		[theme.breakpoints.down("md")]: {
-			width: "80%",
-		},
-		[theme.breakpoints.down("sm")]: {
-			marginLeft: "10%",
-			paddingLeft: 0,
-		},
 		[theme.breakpoints.down("xs")]: {
-			width: "100%",
-			marginLeft: 20,
+			paddingBottom: 30,
 		},
 	},
 	sponsorImgMainDiv: {
-		width: "85%",
+		width: "95%",
 		display: "flex",
 		flexDirection: "column",
-		paddingLeft: "12%",
-		paddingTop: theme.spacing(3),
-		[theme.breakpoints.down("md")]: {
-			width: "80%",
-		},
+		paddingLeft: "5%",
+		paddingTop: theme.spacing(4),
 		[theme.breakpoints.down("xs")]: {
-			width: "100%",
+			width: "100vw",
 			paddingTop: 0,
+			marginLeft: "10vw",
+			paddingLeft: 0,
 		},
 	},
 	sponsorImgDiv: {
@@ -84,44 +87,144 @@ export const useStyles = makeStyles((theme) => ({
 		marginLeft: "10%",
 		[theme.breakpoints.down("xs")]: {
 			width: "100%",
-			marginLeft: "-8.5%",
+			marginLeft: "-10vw",
 			alignItems: "center",
-			flexDirection: "column",
-			justifyContent: "center",
+			flexDirection: "row",
+			justifyContent: "space-around",
 		},
 	},
-	sponsorImg: {
-		maxWidth: 300,
-		maxHeight: 100,
+	sponsorImgDiamond: {
+		maxWidth: 520,
+		maxHeight: 160,
+		padding: 20,
+		marginTop: 25,
+		marginBottom: 25,
+		[theme.breakpoints.up("sm")]: {
+			minWidth: 300,
+			maxWidth: 300,
+		},
+		[theme.breakpoints.up("md")]: {
+			minWidth: 350,
+			maxWidth: 350,
+		},
+		[theme.breakpoints.up("lg")]: {
+			minWidth: 380,
+			maxWidth: 520,
+		},
+		[theme.breakpoints.up("xl")]: {
+			minWidth: 450,
+		},
+		[theme.breakpoints.down("xs")]: {
+			maxWidth: "68vw",
+			maxHeight: 165,
+			marginRight: 0,
+			marginTop: 5,
+			marginBottom: 5,
+		},
+	},
+	sponsorImgPlatinum: {
+		maxWidth: 350,
+		maxHeight: 135,
 		padding: 20,
 		marginTop: 25,
 		marginBottom: 25,
 		[theme.breakpoints.up("sm")]: {
 			minWidth: 200,
+			maxWidth: 200,
 		},
 		[theme.breakpoints.up("md")]: {
-			minWidth: 220,
+			minWidth: 250,
+			maxWidth: 250,
 		},
 		[theme.breakpoints.up("lg")]: {
-			minWidth: 230,
+			minWidth: 280,
+			maxWidth: 350,
 		},
 		[theme.breakpoints.up("xl")]: {
-			minWidth: 300,
+			minWidth: 340,
 		},
 		[theme.breakpoints.down("xs")]: {
-			maxWidth: 200,
-			maxHeight: 80,
+			maxWidth: "50vw",
+			maxHeight: 150,
 			marginRight: 0,
+			marginTop: 5,
+			marginBottom: 5,
+		},
+	},
+	sponsorImgGold: {
+		maxWidth: 270,
+		maxHeight: 110,
+		padding: 20,
+		marginTop: 25,
+		marginBottom: 25,
+		[theme.breakpoints.up("sm")]: {
+			minWidth: 120,
+			maxWidth: 120,
+		},
+		[theme.breakpoints.up("md")]: {
+			minWidth: 180,
+			maxWidth: 180,
+		},
+		[theme.breakpoints.up("lg")]: {
+			minWidth: 200,
+			maxWidth: 270,
+		},
+		[theme.breakpoints.up("xl")]: {
+			minWidth: 250,
+		},
+		[theme.breakpoints.down("xs")]: {
+			maxWidth: "40vw",
+			maxHeight: 85,
+			marginRight: 0,
+			marginTop: 5,
+			marginBottom: 5,
 		},
 	},
 	footerText: {
 		color: "#8193B2",
 		paddingTop: theme.spacing(5),
-		fontSize: "1.2rem",
+		fontSize: "1.4rem",
+		paddingLeft: "4%",
 		textAlign: "center",
-		marginLeft: "10%",
+		margin: "0 auto",
 		[theme.breakpoints.down("xs")]: {
-			marginLeft: "-8.5%",
+			fontSize: "1.25rem",
+			marginLeft: "-3vw",
 		},
+	},
+	link: {
+		color: "#488FDF",
+	},
+	sponsorTierHeading: {
+		width: "100%",
+		margin: "0 auto",
+		paddingTop: 20,
+		fontSize: "2.25rem",
+		LetterSpacing: "0.2px",
+		marginLeft: "2%",
+		textAlign: "center",
+		fontStyle: "medium",
+		[theme.breakpoints.down("xs")]: {
+			fontSize: "1.4rem",
+			marginLeft: "-10vw",
+		},
+	},
+	diamond: {
+		background:
+			"linear-gradient(90deg, #CFB0F5 -27.59%, rgba(207, 176, 245, 0.49) 7.17%, #A37CF8 47.32%, rgba(207, 176, 245, 0.5) 120.69%)",
+		WebkitBackgroundClip: "text",
+		WebkitTextFillColor: "transparent",
+	},
+	platinum: {
+		background:
+			"linear-gradient(90deg, rgba(105, 201, 183, 0.5464) 0%, #7DB7AF 50.52%, rgba(105, 201, 183, 0.5368) 100%)",
+		WebkitBackgroundClip: "text",
+		WebkitTextFillColor: "transparent",
+	},
+	gold: {
+		background:
+			"linear-gradient(90deg, rgba(201, 146, 47, 0.5464) 0%, #EBAD34 50.52%, rgba(201, 146, 47, 0.5368) 100%)",
+		WebkitBackgroundClip: "text",
+		WebkitTextFillColor: "transparent",
 	},
 }));

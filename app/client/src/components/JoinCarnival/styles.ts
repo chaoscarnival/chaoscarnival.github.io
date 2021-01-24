@@ -3,9 +3,11 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
 	root: {
 		width: "100%",
-		background: "rgba(248, 249, 253, 0.98)",
-		paddingTop: 100,
-		paddingBottom: 100,
+		background: "#070E23",
+		paddingTop: 50,
+		[theme.breakpoints.down("xs")]: {
+			paddingTop: 0,
+		},
 	},
 	mainDiv: {
 		marginTop: 40,
@@ -28,9 +30,18 @@ export const useStyles = makeStyles((theme) => ({
 			margin: "0 auto",
 		},
 		[theme.breakpoints.down("xs")]: {
-			marginLeft: 10,
-			marginRight: 10,
+			marginLeft: 0,
 			margin: "0 auto",
+		},
+	},
+	divider: {
+		borderBottom: "2px solid rgba(255, 255, 255, 0.2)",
+		width: "85%",
+		margin: "0 auto",
+		paddingTop: 120,
+		background: "#070E23",
+		[theme.breakpoints.down("xs")]: {
+			paddingTop: 0,
 		},
 	},
 	dateDiv: {
@@ -39,8 +50,8 @@ export const useStyles = makeStyles((theme) => ({
 		paddingTop: "4rem",
 		[theme.breakpoints.down("sm")]: {
 			marginTop: 20,
-			marginLeft: 35,
-			marginRight: 35,
+			marginLeft: "8vw",
+			marginRight: "8vw",
 			paddingTop: "0rem",
 		},
 	},
@@ -59,14 +70,14 @@ export const useStyles = makeStyles((theme) => ({
 	joinText: {
 		writingMode: "vertical-lr",
 		WebkitTransform: "rotate(180deg)",
-		color: "#262626",
+		color: "#FFFFFF",
 		fontWeight: 800,
 		fontSize: 100,
 		fontStyle: "italic",
 		marginTop: "2rem",
 	},
 	joinTextSM: {
-		color: "#262626",
+		color: "#FFFFFF",
 		fontWeight: 800,
 		fontSize: 60,
 		fontStyle: "italic",
@@ -86,24 +97,25 @@ export const useStyles = makeStyles((theme) => ({
 		width: "450px",
 		paddingTop: "2.3rem",
 		[theme.breakpoints.down("xs")]: {
-			width: "90%",
+			width: "92.5vw",
 			paddingTop: "0rem",
 		},
 	},
 	descText: {
-		color: "#262626",
+		color: "#FFFFFF",
 		textAlign: "left",
 		marginLeft: 30,
 		fontSize: "0.9rem",
 		marginTop: theme.spacing(2.75),
 		marginBottom: theme.spacing(2.5),
+		[theme.breakpoints.down("xs")]: {
+			fontSize: "1rem",
+		},
 	},
 	logoImg: {
-		// height: "200px",
 		padding: "1rem 2rem",
 		width: "400px",
 		[theme.breakpoints.up("xl")]: {
-			// height: "200px",
 			width: "400px",
 		},
 		[theme.breakpoints.down("xs")]: {
@@ -111,29 +123,29 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	textDay: {
-		color: "#262626",
+		color: "#FFFFFF",
 		fontWeight: 400,
 		fontSize: 20,
 		marginBottom: 6,
 		textAlign: "left",
 	},
 	hrLine: {
-		background: "#262626",
+		background: "#FFFFFF",
 		width: "4px",
-		[theme.breakpoints.down("sm")]: {
-			width: "95%",
-			height: "4px",
-		},
-		[theme.breakpoints.down("sm")]: {
-			width: "77.5%",
-			height: "4px",
-		},
+		borderRadius: "4px",
 		marginLeft: 50,
 		marginRight: 70,
 		marginTop: 30,
+		[theme.breakpoints.down("sm")]: {
+			width: "85%",
+			height: "5px",
+			borderRadius: "5px",
+			marginLeft: "8vw",
+			marginRight: 0,
+		},
 	},
 	textDate: {
-		color: "#262626",
+		color: "#FFFFFF",
 		fontWeight: 700,
 		fontSize: 29,
 		marginBottom: 10,
@@ -175,24 +187,25 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	timerText: {
-		color: "#262626",
+		color: "#FFFFFF",
 		fontSize: "16px",
 		[theme.breakpoints.down("xl")]: {
 			fontSize: "16px",
 		},
 	},
 	timerBtn: {
-		color: "#262626",
+		color: "#FFFFFF",
 		height: 46,
 		width: "fit-content",
 		marginTop: 12,
-		fontSize: "1.45rem",
+		fontSize: "1.75rem",
 		fontWeight: 700,
 		overflow: "hidden",
 		textOverflow: "",
 		whiteSpace: "nowrap",
 		[theme.breakpoints.down("xs")]: {
 			textAlign: "left",
+			fontSize: "1.85rem",
 		},
 	},
 }));

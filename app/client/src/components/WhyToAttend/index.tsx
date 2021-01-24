@@ -12,7 +12,7 @@ function WhyToAttend() {
 			<div className={classes.heading}>
 				<div className={classes.whyToAttend}>
 					<Typography className={classes.whyToAttendText}>
-						Why To attend
+						Why attend
 					</Typography>
 					<Typography className={classes.chaosCarnivalText}>
 						Chaos Carnival

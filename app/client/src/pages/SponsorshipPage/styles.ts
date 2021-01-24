@@ -20,6 +20,9 @@ export const useStyles = makeStyles((theme) => ({
 			width: 1550,
 			margin: "0 auto",
 		},
+		[theme.breakpoints.down("md")]: {
+			paddingTop: 100,
+		},
 		[theme.breakpoints.down("xs")]: {
 			display: "flex",
 			flexDirection: "column-reverse",
@@ -39,19 +42,11 @@ export const useStyles = makeStyles((theme) => ({
 		color: theme.palette.common.black,
 		textAlign: "left",
 		marginLeft: 70,
-		// [theme.breakpoints.down(981)]: {
-		// 	fontSize: "35px",
-		// },
 		[theme.breakpoints.down("sm")]: {
 			fontWeight: 700,
 			fontSize: "32px",
 			margin: "0 auto",
 		},
-		// [theme.breakpoints.down("xs")]: {
-		// 	fontSize: "25px",
-		// 	fontWeight: 500,
-		// 	marginBottom: 10,
-		// },
 	},
 	headerDesc: {
 		fontSize: "24px",
@@ -152,6 +147,27 @@ export const useStyles = makeStyles((theme) => ({
 			marginLeft: 10,
 			marginRight: 10,
 			margin: "0 auto",
+		},
+	},
+	divider: {
+		borderBottom: "2px solid rgba(255, 255, 255, 0.2)",
+		width: "85%",
+		margin: "0 auto",
+		paddingTop: 120,
+		background: "#070E23",
+		[theme.breakpoints.down("xs")]: {
+			paddingTop: 0,
+		},
+	},
+	sponsorSectionContainer: {
+		background: "#070E23",
+	},
+	sponsorSection: {
+		width: "85vw",
+		margin: "0 auto",
+		[theme.breakpoints.down("xs")]: {
+			width: "95vw",
+			marginLeft: 0,
 		},
 	},
 }));

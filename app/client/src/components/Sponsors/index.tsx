@@ -2,46 +2,62 @@ import { Typography } from "@material-ui/core";
 import React from "react";
 import { useStyles } from "./styles";
 
-const imgLink = [
+const sponsorsList = [
 	{
-		img: "/icons/MayadataFoundingSponsor.svg",
-		alt: "MayaData",
-		link: "https://mayadata.io",
+		tier: "Diamond",
+		sponsors: [
+			{
+				img: "/icons/MayadataFoundingSponsor.svg",
+				alt: "MayaData",
+				link: "https://mayadata.io",
+			},
+		],
 	},
 	{
-		img: "/icons/CNCF.svg",
-		alt: "CNCF",
-		link: "https://www.cncf.io",
+		tier: "Platinum",
+		sponsors: [
+			{
+				img: "/icons/Percona.svg",
+				alt: "Percona",
+				link: "https://www.percona.com",
+			},
+			{
+				img: "/icons/Wipro.svg",
+				alt: "Wipro",
+				link: "https://www.wipro.com",
+			},
+			{
+				img: "/icons/Epsagon.svg",
+				alt: "Epsagon",
+				link: "https://epsagon.com",
+			},
+		],
 	},
 	{
-		img: "/icons/Elastic.svg",
-		alt: "Elastic",
-		link: "https://www.elastic.co",
-	},
-	{
-		img: "/icons/Wipro.svg",
-		alt: "Wipro",
-		link: "https://www.wipro.com",
-	},
-	{
-		img: "/icons/Percona.svg",
-		alt: "Percona",
-		link: "https://www.percona.com",
-	},
-	{
-		img: "/icons/Epsagon.svg",
-		alt: "Epsagon",
-		link: "https://epsagon.com",
+		tier: "Gold",
+		sponsors: [
+			{
+				img: "/icons/CNCF.svg",
+				alt: "CNCF",
+				link: "https://www.cncf.io",
+			},
+
+			{
+				img: "/icons/Elastic.svg",
+				alt: "Elastic",
+				link: "https://www.elastic.co",
+			},
+
+			{
+				img: "/icons/Gremlin.svg",
+				alt: "Gremlin",
+				link: "https://www.gremlin.com",
+			},
+		],
 	},
 	// {
-	// 	img: "/icons/intuit.png",
-	// 	alt: "intuit",
-	// 	link: "https://www.intuit.com/",
-	// },
-	// {
-	// 	img: "/icons/Okteto.svg",
-	// 	alt: "okteto",
-	// 	link: "https://okteto.com/",
+	// 	tier: "Silver",
+	// 	sponsors: []
 	// },
 ];
 
@@ -63,29 +79,60 @@ const Sponsor = () => {
 					</Typography>
 				</div>
 				<div className={classes.sponsorImgMainDiv}>
-					<div className={classes.sponsorImgDiv}>
-						{imgLink.map((sponsor) => (
+					{sponsorsList.map((sponsorTier) => (
+						<div key={Math.random() * 99999}>
+							<Typography
+								className={`${classes.sponsorTierHeading} 
+					${
+						sponsorTier.tier === "Diamond"
+							? classes.diamond
+							: sponsorTier.tier === "Platinum"
+							? classes.platinum
+							: classes.gold
+					}`}
+							>
+								{sponsorTier.tier}
+							</Typography>
 							<div
-								style={{ marginRight: 0 }}
+								className={classes.sponsorImgDiv}
+								id={sponsorTier.tier}
 								key={Math.random() * 99999}
 							>
-								<a
-									href={sponsor.link}
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									<img
-										src={sponsor.img}
-										alt={sponsor.alt}
-										className={classes.sponsorImg}
-									/>
-								</a>
+								{sponsorTier.sponsors.map((sponsor) => (
+									<div
+										style={{ marginRight: 0 }}
+										key={Math.random() * 99999}
+									>
+										<a
+											href={sponsor.link}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<img
+												src={sponsor.img}
+												alt={sponsor.alt}
+												className={`${
+													sponsorTier.tier ===
+													"Diamond"
+														? classes.sponsorImgDiamond
+														: sponsorTier.tier ===
+														  "Platinum"
+														? classes.sponsorImgPlatinum
+														: classes.sponsorImgGold
+												}`}
+											/>
+										</a>
+									</div>
+								))}
 							</div>
-						))}
-					</div>
+						</div>
+					))}
 					<Typography className={classes.footerText}>
 						Interested in sponsoring? Email us at <br></br>
-						<a href="mailto:sponsorship@chaoscarnival.io">
+						<a
+							href="mailto:sponsorship@chaoscarnival.io"
+							className={classes.link}
+						>
 							sponsorship@chaoscarnival.io
 						</a>
 					</Typography>

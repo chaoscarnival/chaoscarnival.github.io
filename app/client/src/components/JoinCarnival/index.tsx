@@ -1,4 +1,4 @@
-import { Button, Hidden, Typography } from "@material-ui/core";
+import { Button, Divider, Hidden, Typography } from "@material-ui/core";
 import gtag from "ga-gtag";
 import React from "react";
 import { useStyles } from "./styles";
@@ -36,7 +36,7 @@ const JoinCarnival = () => {
 				</Hidden>
 				<div className={classes.imageDiv}>
 					<img
-						src="images/chaoscarnival_black_logo.svg"
+						src="icons/chaoscarnival-header.png"
 						alt="chaos carnival logo"
 						className={classes.logoImg}
 					/>
@@ -98,7 +98,7 @@ const JoinCarnival = () => {
 							marginBottom: "1rem",
 						}}
 					>
-						8AM-5PM EST
+						8AM &#8211; 4PM PT
 					</Typography>
 					<Button
 						className={classes.registerButtonOutline}
@@ -106,7 +106,7 @@ const JoinCarnival = () => {
 						variant="outlined"
 						onClick={() => {
 							window.open(
-								"https://calendar.google.com/calendar/r/eventedit?text=Chaos+Carnival&dates=20210209T230000Z/20210211T030000Z&details=For+updates,+Join:+https://join.slack.com/t/chaoscarnival"
+								"https://calendar.google.com/calendar/r/eventedit?text=Chaos+Carnival&dates=20210210T080000/20210211T160000&details=For+updates,+Join:+https://join.slack.com/t/chaoscarnival"
 							);
 						}}
 					>
@@ -119,6 +119,7 @@ const JoinCarnival = () => {
 					</Button>
 				</div>
 			</div>
+			<Divider className={classes.divider} />
 		</div>
 	);
 };

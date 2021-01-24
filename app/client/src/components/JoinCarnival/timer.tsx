@@ -1,14 +1,13 @@
 import { Typography } from "@material-ui/core";
 import moment from "moment";
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useStyles } from "./styles";
 
 const Timer = () => {
+	const classes = useStyles();
 	const [now, setNow] = useState(moment());
 	const [over, setOver] = useState(false);
-
-	const then = moment("02 10 2021, 6:00 am", "MM DD YYYY, h:mm a");
+	const then = moment("02 10 2021, 8:00 am", "MM DD YYYY, h:mm a");
 	const days = then.diff(now, "days");
 	now.add(days, "days");
 	const hours = then.diff(now, "hours");
@@ -24,8 +23,8 @@ const Timer = () => {
 		setInterval(() => {
 			setNow(moment());
 		}, 1000);
-	}, []);
-	const classes = useStyles();
+	}, [days]);
+
 	return (
 		<>
 			{!over ? (

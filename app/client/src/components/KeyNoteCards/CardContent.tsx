@@ -3,23 +3,34 @@ import { CardProps } from "./model";
 import { useStyles } from "./styles";
 
 function CardContent(props: CardProps) {
-	const { name, title, urlToIcon, companyIcon } = props;
+	const { id, name, title, urlToIcon, companyIcon } = props;
 
 	const classes = useStyles();
 
 	return (
-		<div className={classes.cardContent}>
+		<div
+			className={
+				id === 0
+					? classes.cardContent
+					: `${classes.cardContent} ${classes.topMargin}`
+			}
+		>
 			<div>
 				<img
 					src={urlToIcon}
 					className={classes.imgMedia}
-					alt="Speaker image"
+					alt="Speaker"
 				/>
 			</div>
 			<div className={classes.mainTitle}>
 				<p className={classes.speakerName}>{name}</p>
 				{name !== "To be\n announced" ? (
-					<p style={{ whiteSpace: "pre-line"}} className={classes.speakerTitle}>{title}</p>
+					<p
+						style={{ whiteSpace: "pre-line" }}
+						className={classes.speakerTitle}
+					>
+						{title}
+					</p>
 				) : (
 					<p />
 				)}
@@ -28,7 +39,7 @@ function CardContent(props: CardProps) {
 						<img
 							src={companyIcon}
 							className={classes.imgIcon}
-							alt="Company image"
+							alt="Company"
 						/>
 					</p>
 				) : (

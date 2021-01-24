@@ -180,7 +180,16 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("xs")]: {
 			width: "93%",
-			marginTop: "50vh",
+			marginTop: "25rem",
+		},
+		[theme.breakpoints.down(365)]: {
+			marginTop: "22.5rem",
+		},
+		[theme.breakpoints.down(325)]: {
+			marginTop: "17.5rem",
+		},
+		[theme.breakpoints.down(300)]: {
+			marginTop: "22.5rem",
 		},
 	},
 	formFields: {
@@ -348,6 +357,27 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("xs")]: {
 			fontSize: "12px",
+		},
+	},
+	divider: {
+		borderBottom: "2px solid rgba(255, 255, 255, 0.2)",
+		width: "100%",
+		margin: "0 auto",
+		paddingTop: 120,
+		background: "#070E23",
+		[theme.breakpoints.down("xs")]: {
+			paddingTop: 0,
+		},
+	},
+	sponsorSectionContainer: {
+		background: "#070E23",
+	},
+	sponsorSection: {
+		width: "85vw",
+		margin: "0 auto",
+		[theme.breakpoints.down("xs")]: {
+			width: "95vw",
+			marginLeft: "-5vw",
 		},
 	},
 }));

@@ -31,4 +31,4 @@ spec:
         spec:
             containers:
                 - name: chaoscarnival-client
-                  image: 'mayadata/www-staging-chaoscarnival-io:ci'
+                  image: "mayadata/www-staging-chaoscarnival-io:ci"
