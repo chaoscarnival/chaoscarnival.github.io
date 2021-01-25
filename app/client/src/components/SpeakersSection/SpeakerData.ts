@@ -25,7 +25,7 @@ export const SpeakerData = [
 		name: "Shelby Spees",
 		title: "Developer Advocate",
 		company: "",
-		urlToIcon: "/speakers/Shelby_HoneyComb.svg",
+		urlToIcon: "/speakers/Shelby_Honeycomb.svg",
 	},
 	{
 		id: 4,
@@ -144,7 +144,7 @@ export const SpeakerData = [
 		name: "Gunnard Engebreth",
 		title: "Senior Developer ",
 		company: "",
-		urlToIcon: "/speakers/gunnard_PowerCode.svg",
+		urlToIcon: "/speakers/Gunnard_PowerCode.svg",
 	},
 	{
 		id: 21,
