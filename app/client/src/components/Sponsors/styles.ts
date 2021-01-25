@@ -14,9 +14,12 @@ export const useStyles = makeStyles((theme) => ({
 		fontWeight: 700,
 		fontSize: 60,
 		textAlign: "left",
-		background: "linear-gradient(to right, #C94CA8 0%, #F39242 50%)",
+		width: "fit-content",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
+		color: "transparent",
+		backgroundClip: "text",
+		background: "linear-gradient(to right, #C94CA8 0%, #F39242 50%)",
 		marginLeft: theme.spacing(2.5),
 		[theme.breakpoints.down("md")]: {
 			fontSize: "50px",
@@ -201,30 +204,43 @@ export const useStyles = makeStyles((theme) => ({
 		paddingTop: 20,
 		fontSize: "2.25rem",
 		LetterSpacing: "0.2px",
-		marginLeft: "2%",
+		paddingLeft: "4%",
 		textAlign: "center",
 		fontStyle: "medium",
 		[theme.breakpoints.down("xs")]: {
 			fontSize: "1.4rem",
-			marginLeft: "-10vw",
+			paddingLeft: 0,
+			marginLeft: "29.5vw",
 		},
 	},
 	diamond: {
+		width: "fit-content",
+		WebkitBackgroundClip: "text",
+		WebkitTextFillColor: "transparent",
+		color: "transparent",
+		backgroundClip: "text",
 		background:
 			"linear-gradient(90deg, #CFB0F5 -27.59%, rgba(207, 176, 245, 0.49) 7.17%, #A37CF8 47.32%, rgba(207, 176, 245, 0.5) 120.69%)",
-		WebkitBackgroundClip: "text",
-		WebkitTextFillColor: "transparent",
 	},
 	platinum: {
+		width: "fit-content",
+		WebkitBackgroundClip: "text",
+		WebkitTextFillColor: "transparent",
+		color: "transparent",
+		backgroundClip: "text",
 		background:
 			"linear-gradient(90deg, rgba(105, 201, 183, 0.5464) 0%, #7DB7AF 50.52%, rgba(105, 201, 183, 0.5368) 100%)",
-		WebkitBackgroundClip: "text",
-		WebkitTextFillColor: "transparent",
 	},
 	gold: {
-		background:
-			"linear-gradient(90deg, rgba(201, 146, 47, 0.5464) 0%, #EBAD34 50.52%, rgba(201, 146, 47, 0.5368) 100%)",
+		width: "fit-content",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
+		color: "transparent",
+		backgroundClip: "text",
+		background:
+			"linear-gradient(90deg, rgba(201, 146, 47, 0.5464) 0%, #EBAD34 50.52%, rgba(201, 146, 47, 0.5368) 100%)",
+		[theme.breakpoints.down("xs")]: {
+			paddingLeft: "3.5vw",
+		},
 	},
 }));

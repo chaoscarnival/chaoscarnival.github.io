@@ -38,11 +38,11 @@ const useStyles = makeStyles((theme: Theme) => ({
 	mainLogo: {
 		width: 165,
 		marginLeft: (props) => (props ? 0 : -100),
-		marginRight: (props) => (props ? 30 : 130),
+		marginRight: (props) => (props ? -180 : 130),
 		padding: "0.5rem",
 		cursor: "pointer",
 		[theme.breakpoints.down("md")]: {
-			marginRight: (props) => (props ? 30 : -10),
+			marginRight: (props) => (props ? -120 : -10),
 		},
 		[theme.breakpoints.down("sm")]: {
 			marginLeft: (props) => (props ? 10 : 0),

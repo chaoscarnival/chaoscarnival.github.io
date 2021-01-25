@@ -140,7 +140,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("xs")]: {
 			width: "100vw",
-			paddingTop: "18.5rem",
+			marginTop: "5vh",
 		},
 	},
 	letsTalkAboutText: {
@@ -166,10 +166,13 @@ export const useStyles = makeStyles((theme) => ({
 		textAlign: "left",
 		marginLeft: 30,
 		marginRight: "-5vw",
-		background:
-			"linear-gradient(89.08deg, #3BF0E4 4.54%, #9867F0 25.3%, #C2A0FD 41.12%, #EA5DAD 57.44%, #FF7571 75.24%, #FFE580 99.46%)",
+		width: "fit-content",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
+		color: "transparent",
+		backgroundClip: "text",
+		background:
+			"linear-gradient(89.08deg, #3BF0E4 4.54%, #9867F0 25.3%, #C2A0FD 41.12%, #EA5DAD 57.44%, #FF7571 75.24%, #FFE580 99.46%)",
 		[theme.breakpoints.down("md")]: {
 			fontSize: "50px",
 		},
@@ -229,15 +232,17 @@ export const useStyles = makeStyles((theme) => ({
 	homeBackgroundImg: {
 		margin: "0 auto",
 		width: "52.5vw",
-		marginRight: "-17.5rem",
+		marginRight: "-15rem",
 		[theme.breakpoints.up("lg")]: {
 			width: "55vw",
+			marginRight: "-17.5rem",
 		},
 		[theme.breakpoints.down("lg")]: {
-			width: "52vw",
+			width: "49vw",
+			marginRight: "-17.5rem",
 		},
 		[theme.breakpoints.down("md")]: {
-			width: "50vw",
+			width: "45vw",
 			marginRight: "-10rem",
 		},
 		[theme.breakpoints.down(1100)]: {
@@ -251,6 +256,7 @@ export const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("xs")]: {
 			width: "100%",
 			marginRight: 0,
+			marginBottom: "-7.5rem",
 		},
 	},
 }));

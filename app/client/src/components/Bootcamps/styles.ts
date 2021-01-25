@@ -93,9 +93,12 @@ export const useStyles = makeStyles((theme) => ({
 		fontWeight: 700,
 		fontSize: 55,
 		textAlign: "left",
-		background: "linear-gradient(89.85deg, #BCA1F7 0.13%, #EE759C 98.01%)",
+		width: "fit-content",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
+		color: "transparent",
+		backgroundClip: "text",
+		background: "linear-gradient(89.85deg, #BCA1F7 0.13%, #EE759C 98.01%)",
 		[theme.breakpoints.down("md")]: {
 			fontSize: "50px",
 		},
