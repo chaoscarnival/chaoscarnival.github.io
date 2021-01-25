@@ -166,10 +166,13 @@ export const useStyles = makeStyles((theme) => ({
 		textAlign: "left",
 		marginLeft: 30,
 		marginRight: "-5vw",
-		background:
-			"linear-gradient(89.08deg, #3BF0E4 4.54%, #9867F0 25.3%, #C2A0FD 41.12%, #EA5DAD 57.44%, #FF7571 75.24%, #FFE580 99.46%)",
+		width: "fit-content",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
+		color: "transparent",
+		backgroundClip: "text",
+		background:
+			"linear-gradient(89.08deg, #3BF0E4 4.54%, #9867F0 25.3%, #C2A0FD 41.12%, #EA5DAD 57.44%, #FF7571 75.24%, #FFE580 99.46%)",
 		[theme.breakpoints.down("md")]: {
 			fontSize: "50px",
 		},

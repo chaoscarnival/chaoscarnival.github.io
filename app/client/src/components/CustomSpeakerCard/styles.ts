@@ -80,17 +80,25 @@ export const useStyles = makeStyles((theme) => ({
 		margin: "8px 0",
 		display: "flex",
 		flexDirection: "column",
-		color: theme.palette.common.black,
 		[theme.breakpoints.down("sm")]: {
+			margin: 0,
+		},
+		[theme.breakpoints.down(550)]: {
+			marginLeft: theme.spacing(2.5),
+		},
+		[theme.breakpoints.down(500)]: {
 			margin: 0,
 		},
 	},
 
 	speakerName: {
-		background:
-			"linear-gradient(89.08deg, #3BF0E4 4.54%, #9867F0 25.3%, #C2A0FD 41.12%, #EA5DAD 57.44%, #FF7571 75.24%, #FFE580 99.46%)",
+		width: "fit-content",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
+		color: "transparent",
+		backgroundClip: "text",
+		background:
+			"linear-gradient(89.08deg, #3BF0E4 4.54%, #9867F0 25.3%, #C2A0FD 41.12%, #EA5DAD 57.44%, #FF7571 75.24%, #FFE580 99.46%)",
 		fontWeight: 700,
 		textAlign: "left",
 		marginTop: theme.spacing(1),
@@ -98,7 +106,7 @@ export const useStyles = makeStyles((theme) => ({
 		textOverflow: "ellipsis",
 		overflow: "hidden",
 		textDecoration: "none",
-		fontSize: "1.2rem",
+		fontSize: "1.15rem",
 		[theme.breakpoints.down("md")]: {
 			fontSize: "0.9rem",
 		},
@@ -112,9 +120,12 @@ export const useStyles = makeStyles((theme) => ({
 	},
 
 	speaker2Name: {
-		background: "linear-gradient(89.85deg, #BCA1F7 0.13%, #EE759C 98.01%)",
+		width: "fit-content",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
+		color: "transparent",
+		backgroundClip: "text",
+		background: "linear-gradient(89.85deg, #BCA1F7 0.13%, #EE759C 98.01%)",
 		fontWeight: 700,
 		textAlign: "left",
 		marginTop: theme.spacing(1),
@@ -122,7 +133,7 @@ export const useStyles = makeStyles((theme) => ({
 		textOverflow: "ellipsis",
 		overflow: "hidden",
 		textDecoration: "none",
-		fontSize: "1.2rem",
+		fontSize: "1.15rem",
 		[theme.breakpoints.down("md")]: {
 			fontSize: "0.9rem",
 		},
