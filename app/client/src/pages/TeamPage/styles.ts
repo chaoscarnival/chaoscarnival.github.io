@@ -68,10 +68,13 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	greatTeam: {
-		background:
-			"linear-gradient(270.88deg, #2C84F9 70.04%, #C94CA8 100.95%)",
+		width: "fit-content",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
+		color: "transparent",
+		backgroundClip: "text",
+		background:
+			"linear-gradient(270.88deg, #2C84F9 70.04%, #C94CA8 100.95%)",
 	},
 	teamContainer: {
 		alignItems: "center",

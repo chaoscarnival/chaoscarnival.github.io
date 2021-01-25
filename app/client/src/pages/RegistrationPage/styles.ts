@@ -300,9 +300,12 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	chaosCarnivalText: {
 		fontWeight: 700,
-		background: "linear-gradient(to right, #B4F59E 0%, #71BCF6 55%)",
+		width: "fit-content",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
+		color: "transparent",
+		backgroundClip: "text",
+		background: "linear-gradient(to right, #B4F59E 0%, #71BCF6 55%)",
 		fontSize: "60px",
 		textAlign: "left",
 		marginLeft: "10vw",
