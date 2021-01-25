@@ -198,7 +198,7 @@ export const useStyles = makeStyles((theme) => ({
 		height: 46,
 		width: "fit-content",
 		marginTop: 12,
-		fontSize: "1.75rem",
+		fontSize: "1.7rem",
 		fontWeight: 700,
 		overflow: "hidden",
 		textOverflow: "",

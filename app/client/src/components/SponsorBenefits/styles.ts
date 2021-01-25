@@ -44,9 +44,12 @@ export const useStyles = makeStyles((theme) => ({
 		paddingBottom: 40,
 		fontWeight: 700,
 		textAlign: "left",
-		background: "linear-gradient(270.8deg, #FFDC7E 8.38%, #FF7C71 96.25%)",
+		width: "fit-content",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
+		color: "transparent",
+		backgroundClip: "text",
+		background: "linear-gradient(270.8deg, #FFDC7E 8.38%, #FF7C71 96.25%)",
 		fontSize: "52px",
 		[theme.breakpoints.down("sm")]: {
 			width: "100%",

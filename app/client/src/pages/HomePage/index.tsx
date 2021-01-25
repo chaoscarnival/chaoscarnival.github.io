@@ -109,7 +109,7 @@ function HomePage() {
 								</Hidden>
 								<Hidden xsDown>
 									<img
-										src="icons/homeBackground.svg"
+										src="icons/homeBackground.png"
 										alt="Chaos Carnival Home"
 										className={classes.homeBackgroundImg}
 									/>
