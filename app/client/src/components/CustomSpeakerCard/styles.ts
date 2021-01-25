@@ -84,6 +84,12 @@ export const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("sm")]: {
 			margin: 0,
 		},
+		[theme.breakpoints.down(550)]: {
+			marginLeft: theme.spacing(2.5),
+		},
+		[theme.breakpoints.down(500)]: {
+			margin: 0,
+		},
 	},
 
 	speakerName: {
@@ -98,7 +104,7 @@ export const useStyles = makeStyles((theme) => ({
 		textOverflow: "ellipsis",
 		overflow: "hidden",
 		textDecoration: "none",
-		fontSize: "1.2rem",
+		fontSize: "1.15rem",
 		[theme.breakpoints.down("md")]: {
 			fontSize: "0.9rem",
 		},
@@ -122,7 +128,7 @@ export const useStyles = makeStyles((theme) => ({
 		textOverflow: "ellipsis",
 		overflow: "hidden",
 		textDecoration: "none",
-		fontSize: "1.2rem",
+		fontSize: "1.15rem",
 		[theme.breakpoints.down("md")]: {
 			fontSize: "0.9rem",
 		},
