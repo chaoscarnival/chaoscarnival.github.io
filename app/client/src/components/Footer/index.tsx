@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
 				<Toolbar className={classes.toolbarDiv}>
 					<div className={classes.toolbarDiv}>
 						<img
-							src={"/icons/chaoscarnival-header.png"}
+							src={"/icons/chaoscarnival-header-min.png"}
 							alt=" header"
 							className={classes.mainLogo}
 						/>

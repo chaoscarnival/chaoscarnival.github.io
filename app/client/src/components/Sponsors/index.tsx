@@ -1,5 +1,6 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
+import LazyLoad from "react-lazy-load";
 import { useStyles } from "./styles";
 
 const sponsorsList = [
@@ -7,7 +8,7 @@ const sponsorsList = [
 		tier: "Diamond",
 		sponsors: [
 			{
-				img: "/icons/MayadataFoundingSponsor.svg",
+				img: "/icons/MayadataFoundingSponsor-min.png",
 				alt: "MayaData",
 				link: "https://mayadata.io",
 			},
@@ -17,17 +18,17 @@ const sponsorsList = [
 		tier: "Platinum",
 		sponsors: [
 			{
-				img: "/icons/Percona.svg",
+				img: "/icons/Percona-min.png",
 				alt: "Percona",
 				link: "https://www.percona.com",
 			},
 			{
-				img: "/icons/Wipro.svg",
+				img: "/icons/Wipro-min.png",
 				alt: "Wipro",
 				link: "https://www.wipro.com",
 			},
 			{
-				img: "/icons/Epsagon.svg",
+				img: "/icons/Epsagon-min.png",
 				alt: "Epsagon",
 				link: "https://epsagon.com",
 			},
@@ -37,19 +38,19 @@ const sponsorsList = [
 		tier: "Gold",
 		sponsors: [
 			{
-				img: "/icons/CNCF.svg",
+				img: "/icons/CNCF-min.png",
 				alt: "CNCF",
 				link: "https://www.cncf.io",
 			},
 
 			{
-				img: "/icons/Elastic.svg",
+				img: "/icons/Elastic-min.png",
 				alt: "Elastic",
 				link: "https://www.elastic.co",
 			},
 
 			{
-				img: "/icons/Gremlin.svg",
+				img: "/icons/Gremlin-min.png",
 				alt: "Gremlin",
 				link: "https://www.gremlin.com",
 			},
@@ -78,11 +79,12 @@ const Sponsor = () => {
 						Sponsors
 					</Typography>
 				</div>
-				<div className={classes.sponsorImgMainDiv}>
-					{sponsorsList.map((sponsorTier) => (
-						<div key={Math.random() * 99999}>
-							<Typography
-								className={`${classes.sponsorTierHeading} 
+				<LazyLoad offsetVertical={0} offsetHorizontal={0} offsetTop={0}>
+					<div className={classes.sponsorImgMainDiv}>
+						{sponsorsList.map((sponsorTier) => (
+							<div key={Math.random() * 99999}>
+								<Typography
+									className={`${classes.sponsorTierHeading} 
 					${
 						sponsorTier.tier === "Diamond"
 							? classes.diamond
@@ -90,53 +92,54 @@ const Sponsor = () => {
 							? classes.platinum
 							: classes.gold
 					}`}
-							>
-								{sponsorTier.tier}
-							</Typography>
-							<div
-								className={classes.sponsorImgDiv}
-								id={sponsorTier.tier}
-								key={Math.random() * 99999}
-							>
-								{sponsorTier.sponsors.map((sponsor) => (
-									<div
-										style={{ marginRight: 0 }}
-										key={Math.random() * 99999}
-									>
-										<a
-											href={sponsor.link}
-											target="_blank"
-											rel="noopener noreferrer"
+								>
+									{sponsorTier.tier}
+								</Typography>
+								<div
+									className={classes.sponsorImgDiv}
+									id={sponsorTier.tier}
+									key={Math.random() * 99999}
+								>
+									{sponsorTier.sponsors.map((sponsor) => (
+										<div
+											style={{ marginRight: 0 }}
+											key={Math.random() * 99999}
 										>
-											<img
-												src={sponsor.img}
-												alt={sponsor.alt}
-												className={`${
-													sponsorTier.tier ===
-													"Diamond"
-														? classes.sponsorImgDiamond
-														: sponsorTier.tier ===
-														  "Platinum"
-														? classes.sponsorImgPlatinum
-														: classes.sponsorImgGold
-												}`}
-											/>
-										</a>
-									</div>
-								))}
+											<a
+												href={sponsor.link}
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												<img
+													src={sponsor.img}
+													alt={sponsor.alt}
+													className={`${
+														sponsorTier.tier ===
+														"Diamond"
+															? classes.sponsorImgDiamond
+															: sponsorTier.tier ===
+															  "Platinum"
+															? classes.sponsorImgPlatinum
+															: classes.sponsorImgGold
+													}`}
+												/>
+											</a>
+										</div>
+									))}
+								</div>
 							</div>
-						</div>
-					))}
-					<Typography className={classes.footerText}>
-						Interested in sponsoring? Email us at <br></br>
-						<a
-							href="mailto:sponsorship@chaoscarnival.io"
-							className={classes.link}
-						>
-							sponsorship@chaoscarnival.io
-						</a>
-					</Typography>
-				</div>
+						))}
+						<Typography className={classes.footerText}>
+							Interested in sponsoring? Email us at <br></br>
+							<a
+								href="mailto:sponsorship@chaoscarnival.io"
+								className={classes.link}
+							>
+								sponsorship@chaoscarnival.io
+							</a>
+						</Typography>
+					</div>
+				</LazyLoad>
 			</div>
 		</div>
 	);
