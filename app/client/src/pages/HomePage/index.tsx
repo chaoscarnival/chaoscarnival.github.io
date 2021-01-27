@@ -1,4 +1,4 @@
-import { Button, Hidden, Typography } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import gtag from "ga-gtag";
 import * as React from "react";
 import Bootcamps from "../../components/Bootcamps/index";
@@ -100,20 +100,11 @@ function HomePage() {
 								</div>
 							</div>
 							<div className={classes.flexItemImage}>
-								<Hidden smUp>
-									<img
-										src="icons/homeBackgroundMobile.svg"
-										alt="Chaos Carnival Home"
-										className={classes.homeBackgroundImg}
-									/>
-								</Hidden>
-								<Hidden xsDown>
-									<img
-										src="icons/homeBackground.png"
-										alt="Chaos Carnival Home"
-										className={classes.homeBackgroundImg}
-									/>
-								</Hidden>
+								<img
+									src="icons/homeBackground-min.png"
+									alt="Chaos Carnival Home"
+									className={classes.homeBackgroundImg}
+								/>
 							</div>
 						</div>
 					</div>

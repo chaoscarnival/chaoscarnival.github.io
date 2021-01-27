@@ -30,7 +30,7 @@ export const useStyles = makeStyles((theme) => ({
 		width: "100%",
 		height: "100%",
 		objectFit: "scale-down",
-		borderRadius: "10px",
+		borderRadius: "15px",
 	},
 
 	imgIcon: {
