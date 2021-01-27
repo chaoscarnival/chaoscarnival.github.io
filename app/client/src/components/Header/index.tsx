@@ -44,8 +44,8 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 						<img
 							src={
 								inHomePage
-									? "/icons/chaoscarnival-header.png"
-									: "/icons/chaoscarnival-header-dark.png"
+									? "/icons/chaoscarnival-header-min.png"
+									: "/icons/chaoscarnival-header-dark-min.png"
 							}
 							alt=" header"
 							className={classes.mainLogo}
@@ -177,11 +177,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 									style={{ justifyContent: "center" }}
 								>
 									<img
-										src={
-											inHomePage
-												? "/icons/chaoscarnival-header.png"
-												: "/icons/chaoscarnival-header.png"
-										}
+										src="/icons/chaoscarnival-header-min.png"
 										style={{ margin: 0 }}
 										alt="logo"
 										className={classes.mainLogo}

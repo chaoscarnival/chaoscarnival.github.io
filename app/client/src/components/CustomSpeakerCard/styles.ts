@@ -37,7 +37,7 @@ export const useStyles = makeStyles((theme) => ({
 		height: "100%",
 		background: "#070E23",
 		objectFit: "scale-down",
-		borderRadius: "21.5px",
+		borderRadius: "25px",
 		[theme.breakpoints.down("sm")]: {
 			borderRadius: "7.5px",
 		},

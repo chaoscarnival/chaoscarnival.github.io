@@ -34,7 +34,7 @@ function SponsorshipPage() {
 						</div>
 						<div className={classes.imgDiv}>
 							<img
-								src="icons/chaos-carnival-logo.png"
+								src="icons/chaos-carnival-logo-min.png"
 								alt="Chaos Carnival Logo"
 								className={classes.headerImg}
 							/>
