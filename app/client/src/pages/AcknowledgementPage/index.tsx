@@ -20,7 +20,7 @@ function AcknowledgementPage() {
 						<div className={classes.headerDiv}>
 							<div style={{ margin: "auto" }}>
 								<img
-									src="icons/CCIcon.svg"
+									src="icons/CCIcon-min.svg"
 									alt="Chaos Bird Experiment"
 									className={classes.logoImg}
 								/>

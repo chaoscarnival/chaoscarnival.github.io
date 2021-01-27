@@ -8,7 +8,7 @@ const sponsorsList = [
 		tier: "Diamond",
 		sponsors: [
 			{
-				img: "/icons/MayadataFoundingSponsor.svg",
+				img: "/icons/MayadataFoundingSponsor-min.png",
 				alt: "MayaData",
 				link: "https://mayadata.io",
 			},
@@ -18,17 +18,17 @@ const sponsorsList = [
 		tier: "Platinum",
 		sponsors: [
 			{
-				img: "/icons/Percona.svg",
+				img: "/icons/Percona-min.png",
 				alt: "Percona",
 				link: "https://www.percona.com",
 			},
 			{
-				img: "/icons/Wipro.svg",
+				img: "/icons/Wipro-min.png",
 				alt: "Wipro",
 				link: "https://www.wipro.com",
 			},
 			{
-				img: "/icons/Epsagon.svg",
+				img: "/icons/Epsagon-min.png",
 				alt: "Epsagon",
 				link: "https://epsagon.com",
 			},
@@ -38,19 +38,19 @@ const sponsorsList = [
 		tier: "Gold",
 		sponsors: [
 			{
-				img: "/icons/CNCF.svg",
+				img: "/icons/CNCF-min.png",
 				alt: "CNCF",
 				link: "https://www.cncf.io",
 			},
 
 			{
-				img: "/icons/Elastic.svg",
+				img: "/icons/Elastic-min.png",
 				alt: "Elastic",
 				link: "https://www.elastic.co",
 			},
 
 			{
-				img: "/icons/Gremlin.svg",
+				img: "/icons/Gremlin-min.png",
 				alt: "Gremlin",
 				link: "https://www.gremlin.com",
 			},
