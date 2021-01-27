@@ -13,7 +13,7 @@ function Bootcamps() {
 				<div className={classes.bootcamps}>
 					<div className={classes.image}>
 						<img
-							src="icons/bootcampImg.svg"
+							src="icons/bootcampImg.png"
 							alt="chaos carnival bootcamps"
 							className={classes.bootcampImg}
 						/>

@@ -102,7 +102,7 @@ function HomePage() {
 							<div className={classes.flexItemImage}>
 								<Hidden smUp>
 									<img
-										src="icons/homeBackgroundMobile.svg"
+										src="icons/homeBackgroundMobile.png"
 										alt="Chaos Carnival Home"
 										className={classes.homeBackgroundImg}
 									/>

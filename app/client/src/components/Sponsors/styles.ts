@@ -66,6 +66,9 @@ export const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("xs")]: {
 			paddingBottom: 30,
 		},
+		[theme.breakpoints.down(350)]: {
+			paddingTop: 70,
+		},
 	},
 	sponsorImgMainDiv: {
 		width: "95%",
@@ -192,7 +195,19 @@ export const useStyles = makeStyles((theme) => ({
 		margin: "0 auto",
 		[theme.breakpoints.down("xs")]: {
 			fontSize: "1.25rem",
+			marginLeft: 0,
+			paddingLeft: 0,
+		},
+		[theme.breakpoints.down(400)]: {
+			fontSize: "1.2rem",
 			marginLeft: "-3vw",
+		},
+		[theme.breakpoints.down(340)]: {
+			fontSize: "1rem",
+			marginLeft: "-2vw",
+		},
+		[theme.breakpoints.down(300)]: {
+			fontSize: "0.9rem",
 		},
 	},
 	link: {
