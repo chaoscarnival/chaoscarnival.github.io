@@ -5,7 +5,8 @@ jobs:
       - image: circleci/node:alpine
     steps:
       - checkout
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 19.03.13
       - run:
           name: Login to dockerhub
           command: docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}
