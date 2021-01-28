@@ -15,10 +15,10 @@ export const SpeakerData = [
 	},
 	{
 		id: 2,
-		name: "Delphine Joyneer",
-		title: "Senior Software Engineer",
+		name: "Shelby Spees",
+		title: "Developer Advocate",
 		company: "",
-		urlToIcon: "/speakers/Delphine_Wipro-min.jpg",
+		urlToIcon: "/speakers/Shelby_Honeycomb-min.jpg",
 	},
 	{
 		id: 3,
@@ -36,24 +36,24 @@ export const SpeakerData = [
 	},
 	{
 		id: 5,
-		name: "Shelby Spees",
-		title: "Developer Advocate",
+		name: "Delphine Joyneer",
+		title: "Senior Software Engineer",
 		company: "",
-		urlToIcon: "/speakers/Shelby_Honeycomb-min.jpg",
+		urlToIcon: "/speakers/Delphine_Wipro-min.jpg",
 	},
 	{
 		id: 6,
-		name: "Jason Yee",
-		title: "Director of Advocacy",
-		company: "",
-		urlToIcon: "/speakers/Jason_Gremlin-min.jpg",
-	},
-	{
-		id: 7,
 		name: "Raj Babu Das",
 		title: "Software Engineer",
 		company: "",
 		urlToIcon: "/speakers/Raj_Mayadata-min.jpg",
+	},
+	{
+		id: 7,
+		name: "Jason Yee",
+		title: "Director of Advocacy",
+		company: "",
+		urlToIcon: "/speakers/Jason_Gremlin-min.jpg",
 	},
 	{
 		id: 8,
@@ -64,10 +64,10 @@ export const SpeakerData = [
 	},
 	{
 		id: 9,
-		name: "Oliver Kracht",
-		title: "Implementation Lead",
+		name: "Michael Knyazev",
+		title: "DevOps Consultant",
 		company: "",
-		urlToIcon: "/speakers/Oliver_DB-min.jpg",
+		urlToIcon: "/speakers/Michael_IAG-min.jpg",
 	},
 	{
 		id: 10,
@@ -197,10 +197,10 @@ export const SpeakerData = [
 	},
 	{
 		id: 28,
-		name: "Michael Knyazev",
-		title: "DevOps Consultant",
+		name: "Oliver Kracht",
+		title: "Implementation Lead",
 		company: "",
-		urlToIcon: "/speakers/Michael_IAG-min.jpg",
+		urlToIcon: "/speakers/Oliver_DB-min.jpg",
 	},
 	{
 		id: 29,
