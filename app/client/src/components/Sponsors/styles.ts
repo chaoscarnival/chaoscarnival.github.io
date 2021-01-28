@@ -71,10 +71,10 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	sponsorImgMainDiv: {
-		width: "95%",
+		width: "92.5%",
 		display: "flex",
 		flexDirection: "column",
-		paddingLeft: "5%",
+		paddingLeft: "3%",
 		paddingTop: theme.spacing(4),
 		[theme.breakpoints.down("xs")]: {
 			width: "100vw",
