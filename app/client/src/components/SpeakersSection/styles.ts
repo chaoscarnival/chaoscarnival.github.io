@@ -14,13 +14,6 @@ export const useStyles = makeStyles((theme: Theme) => ({
 			paddingBottom: 0,
 		},
 	},
-	lazyLoadDiv: {
-		width: "100vw",
-		display: "flex",
-		flexDirection: "row",
-		justifyContent: "center",
-		alignItems: "center",
-	},
 	speakerRoot: {
 		display: "flex",
 		flexDirection: "row",
