@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build-and-publish:
     docker:
-      - image: circleci/node:alpine
+      - image: circleci/node:latest
     steps:
       - checkout
       - setup_remote_docker:
