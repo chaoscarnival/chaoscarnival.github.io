@@ -119,6 +119,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.up("xl")]: {
 			minWidth: 450,
+			maxHeight: 180,
 		},
 		[theme.breakpoints.down("xs")]: {
 			maxWidth: "68vw",
@@ -148,6 +149,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.up("xl")]: {
 			minWidth: 340,
+			maxHeight: 155,
 		},
 		[theme.breakpoints.down("xs")]: {
 			maxWidth: "50vw",
@@ -177,6 +179,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.up("xl")]: {
 			minWidth: 250,
+			maxHeight: 125,
 		},
 		[theme.breakpoints.down("xs")]: {
 			maxWidth: "40vw",

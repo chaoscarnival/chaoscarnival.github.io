@@ -1,6 +1,5 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
-import LazyLoad from "react-lazy-load";
 import { useStyles } from "./styles";
 
 const sponsorsList = [
@@ -79,12 +78,11 @@ const Sponsor = () => {
 						Sponsors
 					</Typography>
 				</div>
-				<LazyLoad offsetVertical={0} offsetHorizontal={0} offsetTop={0}>
-					<div className={classes.sponsorImgMainDiv}>
-						{sponsorsList.map((sponsorTier) => (
-							<div key={Math.random() * 99999}>
-								<Typography
-									className={`${classes.sponsorTierHeading} 
+				<div className={classes.sponsorImgMainDiv}>
+					{sponsorsList.map((sponsorTier) => (
+						<div key={Math.random() * 99999}>
+							<Typography
+								className={`${classes.sponsorTierHeading} 
 					${
 						sponsorTier.tier === "Diamond"
 							? classes.diamond
@@ -92,54 +90,53 @@ const Sponsor = () => {
 							? classes.platinum
 							: classes.gold
 					}`}
-								>
-									{sponsorTier.tier}
-								</Typography>
-								<div
-									className={classes.sponsorImgDiv}
-									id={sponsorTier.tier}
-									key={Math.random() * 99999}
-								>
-									{sponsorTier.sponsors.map((sponsor) => (
-										<div
-											style={{ marginRight: 0 }}
-											key={Math.random() * 99999}
-										>
-											<a
-												href={sponsor.link}
-												target="_blank"
-												rel="noopener noreferrer"
-											>
-												<img
-													src={sponsor.img}
-													alt={sponsor.alt}
-													className={`${
-														sponsorTier.tier ===
-														"Diamond"
-															? classes.sponsorImgDiamond
-															: sponsorTier.tier ===
-															  "Platinum"
-															? classes.sponsorImgPlatinum
-															: classes.sponsorImgGold
-													}`}
-												/>
-											</a>
-										</div>
-									))}
-								</div>
-							</div>
-						))}
-						<Typography className={classes.footerText}>
-							Interested in sponsoring? Email us at <br></br>
-							<a
-								href="mailto:sponsorship@chaoscarnival.io"
-								className={classes.link}
 							>
-								sponsorship@chaoscarnival.io
-							</a>
-						</Typography>
-					</div>
-				</LazyLoad>
+								{sponsorTier.tier}
+							</Typography>
+							<div
+								className={classes.sponsorImgDiv}
+								id={sponsorTier.tier}
+								key={Math.random() * 99999}
+							>
+								{sponsorTier.sponsors.map((sponsor) => (
+									<div
+										style={{ marginRight: 0 }}
+										key={Math.random() * 99999}
+									>
+										<a
+											href={sponsor.link}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<img
+												src={sponsor.img}
+												alt={sponsor.alt}
+												className={`${
+													sponsorTier.tier ===
+													"Diamond"
+														? classes.sponsorImgDiamond
+														: sponsorTier.tier ===
+														  "Platinum"
+														? classes.sponsorImgPlatinum
+														: classes.sponsorImgGold
+												}`}
+											/>
+										</a>
+									</div>
+								))}
+							</div>
+						</div>
+					))}
+					<Typography className={classes.footerText}>
+						Interested in sponsoring? Email us at <br></br>
+						<a
+							href="mailto:sponsorship@chaoscarnival.io"
+							className={classes.link}
+						>
+							sponsorship@chaoscarnival.io
+						</a>
+					</Typography>
+				</div>
 			</div>
 		</div>
 	);
