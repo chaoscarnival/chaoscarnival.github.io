@@ -17,13 +17,17 @@ jobs:
       - build_and_deploy:
           name: Build and push application's Docker image
           command: |
+            docker build -t app -f Dockerfile .
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              docker build -t ${REPO}:${CIRCLE_SHA1::6} -f Dockerfile .
               docker tag app "${REPO}:${CIRCLE_SHA1::6}"
               docker push "${REPO}:${CIRCLE_SHA1::6}"
             fi
             if [ "${CIRCLE_BRANCH}" == "staging" ]; then
-              docker build -t ${STAG_REPO}:ci-${CIRCLE_SHA1::6} -f Dockerfile .
               docker tag app "${STAG_REPO}:ci-${CIRCLE_SHA1::6}"
               docker push "${STAG_REPO}:ci-${CIRCLE_SHA1::6}"
             fi
+workflows:
+  version: 2
+  build-and-push:
+    jobs:
+      - build-and-publish
