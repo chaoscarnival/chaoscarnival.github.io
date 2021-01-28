@@ -8,7 +8,6 @@ export const useStyles = makeStyles((theme) => ({
 	cardMedia: {
 		width: "220px",
 		height: "280px",
-		borderRadius: "10px",
 		background: "#070E23",
 		[theme.breakpoints.down("sm")]: {
 			width: "180px",
@@ -16,7 +15,7 @@ export const useStyles = makeStyles((theme) => ({
 			borderRadius: "5px",
 		},
 		[theme.breakpoints.down("xs")]: {
-			width: "40vw",
+			width: "38vw",
 			height: "200px",
 			borderRadius: "5px",
 		},
@@ -38,12 +37,12 @@ export const useStyles = makeStyles((theme) => ({
 		height: "100%",
 		background: "#070E23",
 		objectFit: "scale-down",
-		borderRadius: "10px",
+		borderRadius: "25px",
 		[theme.breakpoints.down("sm")]: {
-			borderRadius: "5px",
+			borderRadius: "7.5px",
 		},
 		[theme.breakpoints.down("xs")]: {
-			borderRadius: "5px",
+			borderRadius: "7.5px",
 		},
 	},
 
@@ -52,7 +51,6 @@ export const useStyles = makeStyles((theme) => ({
 	mainCard: {
 		width: "220px",
 		height: "380px",
-		borderRadius: 3,
 		overflow: "hidden",
 		fontSize: 16,
 		marginLeft: theme.spacing(2),
@@ -69,7 +67,7 @@ export const useStyles = makeStyles((theme) => ({
 			height: "300px",
 		},
 		[theme.breakpoints.down("xs")]: {
-			width: "40vw",
+			width: "38vw",
 			height: "265px",
 			marginTop: 0,
 			marginBottom: 0,
