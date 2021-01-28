@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build-and-publish:
     docker:
-      - image: circleci/node:latest
+      - image: circleci/node:14.8
     steps:
       - checkout
       - setup_remote_docker
