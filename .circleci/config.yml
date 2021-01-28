@@ -11,10 +11,10 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
       - setup_remote_docker
-      - login:
+      - run:
           name: Login to dockerhub
           command: docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}
-      - build_and_deploy:
+      - run:
           name: Build and push application's Docker image
           command: |
             docker build -t app -f Dockerfile .
