@@ -46,7 +46,7 @@ export const SpeakerData = [
 		name: "Michael Knyazev",
 		title: "DevOps Consultant",
 		company: "",
-		urlToIcon: "/speakers/Michael_Iag-min.jpg",
+		urlToIcon: "/speakers/Michael_IAG-min.jpg",
 	},
 	{
 		id: 7,
