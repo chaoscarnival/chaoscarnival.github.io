@@ -1,0 +1,29 @@
+version: 2.1
+jobs:
+  build-and-publish:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+      - setup_remote_docker
+      - login:
+          name: Login to dockerhub
+          command: docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}
+      - build_and_deploy:
+          name: Build and push application's Docker image
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              docker build -t ${REPO}:${CIRCLE_SHA1::6} -f Dockerfile .
+              docker tag app "${REPO}:${CIRCLE_SHA1::6}"
+              docker push "${REPO}:${CIRCLE_SHA1::6}"
+            fi
+            if [ "${CIRCLE_BRANCH}" == "staging" ]; then
+              docker build -t ${STAG_REPO}:ci-${CIRCLE_SHA1::6} -f Dockerfile .
+              docker tag app "${STAG_REPO}:ci-${CIRCLE_SHA1::6}"
+              docker push "${STAG_REPO}:ci-${CIRCLE_SHA1::6}"
+            fi
