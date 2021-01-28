@@ -59,7 +59,7 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "row",
 		marginTop: 30,
-		marginLeft: 30,
+		marginLeft: 10,
 		[theme.breakpoints.down("xs")]: {
 			display: "flex",
 			flexDirection: "column",
