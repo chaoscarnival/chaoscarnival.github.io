@@ -1,6 +1,5 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
-import LazyLoad from "react-lazy-load";
 import CustomCard from "../CustomSpeakerCard";
 import KeyNoteCard from "../KeyNoteCards";
 import { KeyNoteSpeakerData } from "./KeyNoteSpeakerData";
@@ -50,25 +49,18 @@ export function SpeakersSection() {
 					featuring various chaos experts from all over the globe.
 				</div>
 			</div>
-			<LazyLoad
-				offsetVertical={0}
-				offsetHorizontal={0}
-				offsetTop={0}
-				className={classes.lazyLoadDiv}
-			>
-				<div className={classes.speakerRoot}>
-					{SpeakerData.map((speaker) => (
-						<CustomCard
-							key={speaker.id}
-							id={speaker.id}
-							name={speaker.name}
-							title={speaker.title}
-							urlToIcon={speaker.urlToIcon}
-							company={speaker.company}
-						/>
-					))}
-				</div>
-			</LazyLoad>
+			<div className={classes.speakerRoot}>
+				{SpeakerData.map((speaker) => (
+					<CustomCard
+						key={speaker.id}
+						id={speaker.id}
+						name={speaker.name}
+						title={speaker.title}
+						urlToIcon={speaker.urlToIcon}
+						company={speaker.company}
+					/>
+				))}
+			</div>
 			<div className={classes.agendaSection}>
 				<div
 					className={classes.detailText}
