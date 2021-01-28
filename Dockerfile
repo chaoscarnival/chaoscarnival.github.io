@@ -4,6 +4,7 @@ FROM node:alpine as build
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 COPY app/client/package.json /app/package.json
+RUN npm cache clean --force
 RUN npm install
 COPY app/client /app
 RUN npm run build
