@@ -71,6 +71,18 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 						<Hidden smDown>
 							<div className={classes.headerDiv}>
 								<a
+									href={"https://chaoscarnival.io/agenda"}
+									style={{ textDecoration: "none" }}
+								>
+									<Typography className={classes.headerFont}>
+										Agenda
+									</Typography>
+								</a>
+							</div>
+						</Hidden>
+						<Hidden smDown>
+							<div className={classes.headerDiv}>
+								<a
 									href={
 										inHomePage && linksActive
 											? "#speakers"
@@ -207,6 +219,29 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 											}}
 										>
 											Home
+										</a>
+									</Typography>
+								</MenuItem>
+								<MenuItem
+									className={classes.menuItem}
+									button={false}
+									key="agenda"
+								>
+									<Typography
+										className={classes.contributeBtn}
+										onClick={handleClose}
+									>
+										<a
+											href={
+												"https://chaoscarnival.io/agenda"
+											}
+											style={{
+												textDecoration: "none",
+												color: "#fff",
+												fontWeight: "bold",
+											}}
+										>
+											Agenda
 										</a>
 									</Typography>
 								</MenuItem>
