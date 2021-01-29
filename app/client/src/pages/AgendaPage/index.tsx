@@ -4,6 +4,25 @@ import "../../scrollbar.css";
 import data from "./data";
 import { useStyles } from "./styles";
 
+// interface SpeakerProps {
+// 	name: string;
+// 	role: string
+// 	speakerImage: string;
+// 	companyLogo: string;
+// }
+
+// interface SessionProps {
+// 	sessionName: string;
+// 	speaker: SpeakerProps;
+// 	time: string;
+// 	description: string;
+// 	tags: Array<String>
+// }
+
+// interface TotalSession {
+// 	session: Array<SessionProps>;
+// }
+
 const AgendaPage: React.FC = () => {
 	const classes = useStyles();
 
@@ -19,7 +38,7 @@ const AgendaPage: React.FC = () => {
 		);
 	};
 
-	const Keynote = (title, image, name, role, logo) => {
+	const Keynote = (title: string, speaker: Array<Object>) => {
 		return (
 			<>
 				<div
@@ -27,22 +46,32 @@ const AgendaPage: React.FC = () => {
 					style={{ background: "green" }}
 				>
 					<h1>{title}</h1>
-					{Speaker(image, name, role)}
+					{speaker.map((s) => (
+						<>
+							{Speaker(
+								Object.values(s)[2],
+								Object.values(s)[0],
+								Object.values(s)[1]
+							)}
+						</>
+					))}
 				</div>
 				<div
 					className={classes.keynoteRightDetail}
 					style={{ background: "blue" }}
 				>
-					<img
-						src={logo}
-						style={{
-							position: "absolute",
-							bottom: "30%",
-							right: 0,
-							width: "8rem",
-						}}
-						alt="company logo"
-					/>
+					{speaker.map((s) => (
+						<img
+							src={Object.values(s)[3]}
+							style={{
+								position: "absolute",
+								bottom: "30%",
+								right: 0,
+								width: "8rem",
+							}}
+							alt="company logo"
+						/>
+					))}
 				</div>
 			</>
 		);
@@ -76,22 +105,28 @@ const AgendaPage: React.FC = () => {
 								</div>
 								{i === 0 ? (
 									// For Keynote speaker
-									<>
-										{Keynote(
-											d.sessionName,
-											d.speakerImage,
-											d.speakerName,
-											d.role,
-											d.companyLogo
-										)}
-									</>
+									<>{Keynote(d.sessionName, d.speaker)}</>
 								) : (
 									// For Regular speakers
 									<>
 										<div
 											className={classes.speaker1details}
 											style={{ background: "green" }}
-										></div>
+										>
+											<h1>{d.sessionName}</h1>
+											{/* Tags */}
+											{d.speaker.map((s) => {
+												return (
+													<>
+														{Speaker(
+															Object.values(s)[2],
+															Object.values(s)[0],
+															Object.values(s)[1]
+														)}
+													</>
+												);
+											})}
+										</div>
 										<div
 											className={classes.speaker2details}
 											style={{ background: "blue" }}
