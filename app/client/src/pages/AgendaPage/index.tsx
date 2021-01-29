@@ -4,25 +4,6 @@ import "../../scrollbar.css";
 import data from "./data";
 import { useStyles } from "./styles";
 
-// interface SpeakerProps {
-// 	name: string;
-// 	role: string
-// 	speakerImage: string;
-// 	companyLogo: string;
-// }
-
-// interface SessionProps {
-// 	sessionName: string;
-// 	speaker: SpeakerProps;
-// 	time: string;
-// 	description: string;
-// 	tags: Array<String>
-// }
-
-// interface TotalSession {
-// 	session: Array<SessionProps>;
-// }
-
 const AgendaPage: React.FC = () => {
 	const classes = useStyles();
 
@@ -41,10 +22,7 @@ const AgendaPage: React.FC = () => {
 	const Keynote = (title?: string, speaker?: Array<Object>) => {
 		return (
 			<>
-				<div
-					className={classes.keynoteLeftDetail}
-					style={{ background: "green" }}
-				>
+				<div className={classes.keynoteLeftDetail}>
 					<h1>{title}</h1>
 					{speaker?.map((s) => (
 						<>
@@ -56,10 +34,7 @@ const AgendaPage: React.FC = () => {
 						</>
 					))}
 				</div>
-				<div
-					className={classes.keynoteRightDetail}
-					style={{ background: "blue" }}
-				>
+				<div className={classes.keynoteRightDetail}>
 					{speaker?.map((s) => (
 						<img
 							src={Object.values(s)[3]}
@@ -97,11 +72,17 @@ const AgendaPage: React.FC = () => {
 					{data.map((d, i) => {
 						return (
 							<div className={classes.block}>
-								<div
-									className={classes.time}
-									style={{ background: "red" }}
-								>
-									{d.speaker1?.time}
+								<div className={classes.time}>
+									{d.time}
+									<br />
+									<span
+										style={{
+											fontSize: "0.8rem",
+											color: "rgba(255, 255, 255, 0.6)",
+										}}
+									>
+										{d.duration}
+									</span>
 								</div>
 								{i === 0 ? (
 									// For Keynote speaker
@@ -113,7 +94,7 @@ const AgendaPage: React.FC = () => {
 											className={classes.speaker1details}
 											style={{ background: "green" }}
 										>
-											<h1>{d.speaker1?.sessionName}</h1>
+											<h2>{d.speaker1?.sessionName}</h2>
 											{/* Tags */}
 											{d.speaker1?.speaker.map((s) => {
 												return (
@@ -132,7 +113,7 @@ const AgendaPage: React.FC = () => {
 											className={classes.speaker2details}
 											style={{ background: "blue" }}
 										>
-											<h1>{d.speaker2?.sessionName}</h1>
+											<h2>{d.speaker2?.sessionName}</h2>
 											{/* Tags */}
 											{d.speaker2?.speaker.map((s) => {
 												return (

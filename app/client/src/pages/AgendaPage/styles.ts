@@ -26,12 +26,17 @@ export const useStyles = makeStyles((theme) => ({
 
 	block: {
 		display: "flex",
-		height: '10rem',
 		margin: '0.1rem 0'
 	},
 	time: {
 		width: "10%",
 		height: "5rem",
+		fontSize: "1rem",
+		marginLeft: '0.5rem',
+		paddingTop: '1.5%'
+	},
+	detailsBlock: {
+		paddingBottom: '1rem'
 	},
 
 	// For Keynote Speaker
@@ -49,15 +54,18 @@ export const useStyles = makeStyles((theme) => ({
 	// For regular Speaker
 	speaker1details: {
 		width: "35%",
+		padding: '0 1rem'
 	},
 
 	speaker2details: {
 		width: "35%",
+		padding: '0 1rem'
 	},
 
 	// Speaker Block
 	speaker: {
 		display: 'flex',
+		paddingBottom: '1rem',
 
 		'& #image': {
 			width: '3rem',

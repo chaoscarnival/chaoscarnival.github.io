@@ -13,6 +13,8 @@ export default [
         id: 0,
 	},
 	{
+        time: "9:00 AM",
+        duration: '(45min)',
 		speaker1: {
             sessionName: `[Session 1] A powerful framework for network chaos experiments note`,
             speaker: [{
@@ -21,7 +23,6 @@ export default [
                 speakerImage: "",
                 companyLogo: "",
             }],
-            time: "9:00 AM",
             description: "",
             tags: ["Chaos Engineering", "Observability"],
             id: 1,
@@ -34,13 +35,14 @@ export default [
                 speakerImage: "",
                 companyLogo: "",
             }],
-            time: "9:00 AM",
             description: "",
             tags: ["Chaos Engineering"],
             id: 2,
         }
 	},
 	{
+        time: "9:45 AM",
+        duration: "(45min)",
 		speaker1: {
             sessionName: `[Session 3] Create Chaos in Databases`,
             speaker: [{
@@ -49,7 +51,6 @@ export default [
                 speakerImage: "",
                 companyLogo: "",
             }],
-            time: "9:45 AM",
             description: "",
             tags: ["Chaos Engineering", "Observability"],
             id: 3,
@@ -62,13 +63,14 @@ export default [
                 speakerImage: "",
                 companyLogo: "",
             }],
-            time: "9:45 AM",
             description: "",
             tags: ["Chaos Engineering"],
             id: 4,
         }
 	},
 	{
+        time: "10:00 AM",
+        duration: "(45min)",
 	    speaker1: {	
             sessionName: `[Session 5] Improve Application Resiliency with AWS Fault Injection Simulator`,
             speaker: [{
@@ -77,7 +79,6 @@ export default [
                 speakerImage: "",
                 companyLogo: "",
             }],
-            time: "10:00 AM",
             description: "",
             tags: ["Chaos Engineering", "Observability"],
             id: 5,
@@ -90,13 +91,14 @@ export default [
                 speakerImage: "",
                 companyLogo: "",
             }],
-            time: "10:00 AM",
             description: "",
             tags: ["Chaos Engineering", "Observability"],
             id: 6,
         }
 	},
 	{
+        time: "10:45 AM",
+        duration: "(45min)",
 		speaker1: {
             sessionName: `[Session 7] Event-Driven Chaos Injection`,
             speaker: [{
@@ -110,7 +112,6 @@ export default [
                 speakerImage: "",
                 companyLogo: "",
             }],
-            time: "10:45 AM",
             description: "",
             tags: ["Chaos Engineering", "Observability"],
             id: 7,
@@ -123,13 +124,14 @@ export default [
                 speakerImage: "",
                 companyLogo: "",
             }],
-            time: "10:45 AM",
             description: "",
             tags: ["Chaos Engineering"],
             id: 8,
         }
 	},
 	{
+        time: "1:15 PM",
+        duration: '(45min)',
 		speaker1: {
             sessionName: `[Session 9] Chaos Engineering the Chaos Engineers`,
             speaker: [{
@@ -138,7 +140,6 @@ export default [
                 speakerImage: "",
                 companyLogo: "",
             }],
-            time: "1:15 PM",
             description: "",
             tags: ["Chaos Engineering", "Observability"],
             id: 9,
@@ -161,13 +162,14 @@ export default [
                 speakerImage: "",
                 companyLogo: "",
             }],
-            time: "1:15 PM",
             description: "",
             tags: ["Chaos Engineering"],
             id: 10,
         }
 	},
 	{
+        time: "2:00 PM",
+        duration: '30min',
 		speaker1: {
             sessionName: `[Session 11] The Psychology of Chaos Engineering`,
             speaker: [{
@@ -176,7 +178,6 @@ export default [
                 speakerImage: "",
                 companyLogo: "",
             }],
-            time: "2:00 PM",
             description: "",
             tags: ["Chaos Engineering", "Observability"],
             id: 11,
@@ -189,7 +190,6 @@ export default [
                 speakerImage: "",
                 companyLogo: "",
             }],
-            time: "2:00 AM",
             description: "",
             tags: ["Chaos Engineering"],
         }
