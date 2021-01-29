@@ -92,7 +92,9 @@ const AgendaPage: React.FC = () => {
 									<>
 										<div
 											className={classes.speaker1details}
-											style={{ background: "green" }}
+											style={{
+												background: `${d.speaker1?.background}`,
+											}}
 										>
 											<h2>{d.speaker1?.sessionName}</h2>
 											{/* Tags */}
@@ -111,7 +113,9 @@ const AgendaPage: React.FC = () => {
 
 										<div
 											className={classes.speaker2details}
-											style={{ background: "blue" }}
+											style={{
+												background: `${d.speaker2?.background}`,
+											}}
 										>
 											<h2>{d.speaker2?.sessionName}</h2>
 											{/* Tags */}

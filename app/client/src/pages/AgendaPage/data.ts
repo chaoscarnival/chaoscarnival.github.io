@@ -4,7 +4,7 @@ export default [
 		speaker: [{
             name: "Adrian Cockroft",
             role: "VP Cloud Architecture Strategy at AWS",
-            speakerImage: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fespnmediazone.com%2Fus%2Ffiles%2F2009%2F10%2FAdrian-Branch-e1352496048414.jpg&f=1&nofb=1",
+            speakerImage: "https://drive.google.com/file/d/1cFOVDMG_JQMOx0eVsGjC-Ek-U-ubfTVS/view?usp=sharing",
             companyLogo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Faawa.info%2Fwp-content%2Fuploads%2F2019%2F05%2Faws-logo.png&f=1&nofb=1",
         }],
 		time: "8:00 AM",
@@ -20,10 +20,11 @@ export default [
             speaker: [{
                 name: "Andreas Krivas",
                 role: "Engineering Manager",
-                speakerImage: "",
+                speakerImage: "https://drive.google.com/file/d/1qDTRIfc9A1H101VwS-LcWjKetwvmfZaU/view?usp=sharing",
                 companyLogo: "",
             }],
             description: "",
+            background: 'rgba(123, 143, 234, 0.12)',
             tags: ["Chaos Engineering", "Observability"],
             id: 1,
         },
@@ -32,10 +33,11 @@ export default [
             speaker: [{
                 name: "Renaldi Gondosubroto",
                 role: "Founder & Project Leader",
-                speakerImage: "",
+                speakerImage: "https://drive.google.com/file/d/1dgdQdmKKzHeGybhmLXuE4xNRIJzux1Q6/view?usp=sharing",
                 companyLogo: "",
             }],
             description: "",
+            background: 'rgba(255, 8, 88, 0.2)',
             tags: ["Chaos Engineering"],
             id: 2,
         }
@@ -46,12 +48,13 @@ export default [
 		speaker1: {
             sessionName: `[Session 3] Create Chaos in Databases`,
             speaker: [{
-                name: "Andreas Krivas",
-                role: "Engineering Manager",
-                speakerImage: "",
+                name: "Vadim Tkachenko",
+                role: "C0-Founder & CTO",
+                speakerImage: "https://drive.google.com/file/d/1VeXyT-J90GYxc36-dW37Vtz4Bmm-40EE/view?usp=sharing",
                 companyLogo: "",
             }],
             description: "",
+            background: 'rgba(234, 220, 133, 0.2)',
             tags: ["Chaos Engineering", "Observability"],
             id: 3,
         },
@@ -60,10 +63,11 @@ export default [
             speaker: [{
                 name: "Vaibhav Chopra",
                 role: "Engineering Manager",
-                speakerImage: "",
+                speakerImage: "https://drive.google.com/file/d/13OYd_o9sdyzQMSUVkT0GMAU6bQ4HPQ7Z/view?usp=sharing",
                 companyLogo: "",
             }],
             description: "",
+            background: 'rgba(226, 115, 23, 0.2)',
             tags: ["Chaos Engineering"],
             id: 4,
         }
@@ -80,6 +84,7 @@ export default [
                 companyLogo: "",
             }],
             description: "",
+            background: 'rgba(255, 142, 38, 0.3)',
             tags: ["Chaos Engineering", "Observability"],
             id: 5,
         },
@@ -92,6 +97,7 @@ export default [
                 companyLogo: "",
             }],
             description: "",
+            background: 'rgba(240, 31, 64, 0.15)',
             tags: ["Chaos Engineering", "Observability"],
             id: 6,
         }
@@ -113,6 +119,7 @@ export default [
                 companyLogo: "",
             }],
             description: "",
+            background: 'rgba(0, 99, 255, 0.05)',
             tags: ["Chaos Engineering", "Observability"],
             id: 7,
         },
@@ -125,6 +132,7 @@ export default [
                 companyLogo: "",
             }],
             description: "",
+            background: 'rgba(82, 145, 202, 0.2)',
             tags: ["Chaos Engineering"],
             id: 8,
         }
@@ -141,6 +149,7 @@ export default [
                 companyLogo: "",
             }],
             description: "",
+            background: 'rgba(12, 131, 95, 0.3)',
             tags: ["Chaos Engineering", "Observability"],
             id: 9,
         },
@@ -163,6 +172,7 @@ export default [
                 companyLogo: "",
             }],
             description: "",
+            background: 'rgba(128, 251, 198, 0.2)',
             tags: ["Chaos Engineering"],
             id: 10,
         }
@@ -179,6 +189,7 @@ export default [
                 companyLogo: "",
             }],
             description: "",
+            background: 'rgba(6, 172, 56, 0.2)',
             tags: ["Chaos Engineering", "Observability"],
             id: 11,
         },
@@ -191,6 +202,7 @@ export default [
                 companyLogo: "",
             }],
             description: "",
+            background: 'rgba(5, 167, 225, 0.08)',
             tags: ["Chaos Engineering"],
         }
 	},
