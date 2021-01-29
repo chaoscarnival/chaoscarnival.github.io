@@ -53,7 +53,7 @@ const AgendaPage: React.FC = () => {
 			</div>
 		);
 	};
-	console.log(modalStatus);
+
 	const handleClose = () => {
 		setModalStatus({
 			modalState: false,
