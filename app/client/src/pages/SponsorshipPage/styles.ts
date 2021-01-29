@@ -13,7 +13,7 @@ export const useStyles = makeStyles((theme) => ({
 	headerDiv: {
 		display: "flex",
 		flexDirection: "row",
-		paddingTop: 60,
+		paddingTop: 150,
 		marginLeft: 130,
 		marginRight: 130,
 		[theme.breakpoints.up("xl")]: {
@@ -131,6 +131,7 @@ export const useStyles = makeStyles((theme) => ({
 		marginLeft: 180,
 		marginRight: 180,
 		marginTop: 30,
+		paddingBottom: 50,
 		[theme.breakpoints.up("xl")]: {
 			maxWidth: 1420,
 			margin: "0 auto",
@@ -146,6 +147,7 @@ export const useStyles = makeStyles((theme) => ({
 			marginTop: 30,
 			marginLeft: 10,
 			marginRight: 10,
+			paddingBottom: 20,
 			margin: "0 auto",
 		},
 	},

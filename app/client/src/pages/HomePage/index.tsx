@@ -36,6 +36,9 @@ function HomePage() {
 	return (
 		<div className="scrollbar scrollbar-primary">
 			<div className={classes.rootContainer}>
+				<a id="home" href="home">
+					{" "}
+				</a>
 				<MainHeader inHomePage={true} linksActive={true} />
 				<div className={classes.root}>
 					<div className={classes.mainDiv}>
