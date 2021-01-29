@@ -99,11 +99,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 						<Hidden smDown>
 							<div className={classes.headerDiv}>
 								<a
-									href={
-										inHomePage && linksActive
-											? "#bootcamps"
-											: "https://chaoscarnival.io/#bootcamps"
-									}
+									href={"https://chaoscarnival.io/bootcamps"}
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>

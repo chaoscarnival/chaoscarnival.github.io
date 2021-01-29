@@ -14,25 +14,21 @@ const useStyles = makeStyles((theme: Theme) => ({
 		paddingTop: theme.spacing(1),
 		background: (props) => (props ? "#070E23" : "white"),
 		[theme.breakpoints.down(800)]: {
-			paddingTop: theme.spacing(11),
+			// paddingTop: theme.spacing(11),
 		},
 	},
 	toolbarDiv: {
-		width: "70vw",
 		margin: "auto",
 		display: "flex",
 		flexDirection: "row",
-		justifyContent: "space-between",
 		alignItems: "center",
 		background: (props) => (props ? "#070E23" : "white"),
 		[theme.breakpoints.down("sm")]: {
-			justifyContent: "space-between",
-			position: "absolute",
-			width: "85vw",
+			position: "sticky",
+			width: "100vw",
 		},
 		[theme.breakpoints.down("xs")]: {
-			justifyContent: "space-between",
-			position: "absolute",
+			position: "sticky",
 			width: "100vw",
 			marginLeft: 0,
 		},
@@ -41,9 +37,11 @@ const useStyles = makeStyles((theme: Theme) => ({
 		marginTop: theme.spacing(2),
 		[theme.breakpoints.down("md")]: {
 			textAlign: "center",
+			marginRight: theme.spacing(3.75),
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginTop: 25,
+			marginRight: theme.spacing(3.75),
 		},
 	},
 	mainLogo: {
@@ -61,7 +59,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 			marginTop: 20,
 		},
 		[theme.breakpoints.down(1050)]: {
-			marginLeft: (props) => (props ? -50 : -60),
+			marginLeft: (props) => (props ? 0 : 0),
 		},
 		[theme.breakpoints.down(800)]: {
 			marginLeft: (props) => (props ? 30 : 20),

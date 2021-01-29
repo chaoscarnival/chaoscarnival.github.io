@@ -21,7 +21,7 @@ export const useStyles = makeStyles((theme) => ({
 			margin: "0 auto",
 		},
 		[theme.breakpoints.down("md")]: {
-			paddingTop: 100,
+			marginTop: 20,
 		},
 		[theme.breakpoints.down("xs")]: {
 			display: "flex",
