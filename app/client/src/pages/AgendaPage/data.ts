@@ -4,8 +4,8 @@ export default [
 		speaker: [{
             name: "Adrian Cockroft",
             role: "VP Cloud Architecture Strategy at AWS",
-            speakerImage: "https://drive.google.com/file/d/1cFOVDMG_JQMOx0eVsGjC-Ek-U-ubfTVS/view?usp=sharing",
-            companyLogo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Faawa.info%2Fwp-content%2Fuploads%2F2019%2F05%2Faws-logo.png&f=1&nofb=1",
+            speakerImage: "https://i.ibb.co/Bcs2KFd/Adrian-AWS.png",
+            companyLogo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fphoenixnap.com%2Fwp-content%2Fuploads%2F2017%2F11%2Faws_logo_smile_white-250x163.png&f=1&nofb=1",
         }],
 		time: "8:00 AM",
 		description: "",
@@ -20,8 +20,8 @@ export default [
             speaker: [{
                 name: "Andreas Krivas",
                 role: "Engineering Manager",
-                speakerImage: "https://drive.google.com/file/d/1qDTRIfc9A1H101VwS-LcWjKetwvmfZaU/view?usp=sharing",
-                companyLogo: "",
+                speakerImage: "https://i.ibb.co/thXJGpp/Andreas-Container-Solutions.png",
+                companyLogo: "https://i.ibb.co/Jmy4RV4/container-Solutions.png",
             }],
             description: "",
             background: 'rgba(123, 143, 234, 0.12)',
@@ -33,8 +33,8 @@ export default [
             speaker: [{
                 name: "Renaldi Gondosubroto",
                 role: "Founder & Project Leader",
-                speakerImage: "https://drive.google.com/file/d/1dgdQdmKKzHeGybhmLXuE4xNRIJzux1Q6/view?usp=sharing",
-                companyLogo: "",
+                speakerImage: "https://i.ibb.co/GH58CRS/Renaldo-GRES.png",
+                companyLogo: "https://i.ibb.co/fxM2vMh/GRES-STUDIO.png",
             }],
             description: "",
             background: 'rgba(255, 8, 88, 0.2)',
@@ -50,8 +50,8 @@ export default [
             speaker: [{
                 name: "Vadim Tkachenko",
                 role: "C0-Founder & CTO",
-                speakerImage: "https://drive.google.com/file/d/1VeXyT-J90GYxc36-dW37Vtz4Bmm-40EE/view?usp=sharing",
-                companyLogo: "",
+                speakerImage: "https://i.ibb.co/p19dw98/Vadim-Percona.png",
+                companyLogo: "https://i.ibb.co/Cm4YkjD/Percona.png",
             }],
             description: "",
             background: 'rgba(234, 220, 133, 0.2)',
@@ -63,7 +63,7 @@ export default [
             speaker: [{
                 name: "Vaibhav Chopra",
                 role: "Engineering Manager",
-                speakerImage: "https://drive.google.com/file/d/13OYd_o9sdyzQMSUVkT0GMAU6bQ4HPQ7Z/view?usp=sharing",
+                speakerImage: "https://i.ibb.co/682wyTZ/Vaibhav-Orange.png",
                 companyLogo: "",
             }],
             description: "",
@@ -80,7 +80,7 @@ export default [
             speaker: [{
                 name: "Gunnar Grosch",
                 role: "Senior Developer Advocate",
-                speakerImage: "",
+                speakerImage: "https://i.ibb.co/bb1T6XL/Gunnar-AWS.png",
                 companyLogo: "",
             }],
             description: "",
@@ -93,7 +93,7 @@ export default [
             speaker: [{
                 name: "Amir Shaked",
                 role: "Senior VP of R&D",
-                speakerImage: "",
+                speakerImage: "https://i.ibb.co/wrz24c2/Amir-Perimeter-X.png",
                 companyLogo: "",
             }],
             description: "",
@@ -110,12 +110,12 @@ export default [
             speaker: [{
                 name: "Raj Babu Das",
                 role: "Software Engineer",
-                speakerImage: "",
+                speakerImage: "https://i.ibb.co/5LfXWMQ/Raj-Maydata.png",
                 companyLogo: "",
             }, {
                 name: "Soumya Ghosh Dastidar",
                 role: "Software Engineer",
-                speakerImage: "",
+                speakerImage: "https://i.ibb.co/fVRDQCS/Soumya-Mayadata.png",
                 companyLogo: "",
             }],
             description: "",
@@ -145,7 +145,7 @@ export default [
             speaker: [{
                 name: "Jason Yee",
                 role: "Director of Advocacy",
-                speakerImage: "",
+                speakerImage: "https://i.ibb.co/fGP0fPZ/Jason-Gremlin.png",
                 companyLogo: "",
             }],
             description: "",
@@ -158,17 +158,17 @@ export default [
             speaker: [{
                 name: "Maik Figura",
                 role: "IT Consultant",
-                speakerImage: "",
+                speakerImage: "https://i.ibb.co/cwFNVDF/Maik-Codecentric.png",
                 companyLogo: "",
             },{ 
                 name: "Oliver Kracht",
                 role: "Implementation Lead",
-                speakerImage: "",
+                speakerImage: "https://i.ibb.co/kGkTmJC/Oliver-DB.png",
                 companyLogo: "",
             },{ 
                 name: "Jonas vor dem Berge",
                 role: "Implementation Lead",
-                speakerImage: "",
+                speakerImage: "https://i.ibb.co/McKcyyy/Jonas-DB.png",
                 companyLogo: "",
             }],
             description: "",
@@ -179,13 +179,13 @@ export default [
 	},
 	{
         time: "2:00 PM",
-        duration: '30min',
+        duration: '(30min)',
 		speaker1: {
             sessionName: `[Session 11] The Psychology of Chaos Engineering`,
             speaker: [{
                 name: "Julie Gunderson",
                 role: "DevOps Advocate",
-                speakerImage: "",
+                speakerImage: "https://i.ibb.co/LkDH2Y8/Julie-Pagerduty.png",
                 companyLogo: "",
             }],
             description: "",
@@ -198,7 +198,7 @@ export default [
             speaker: [{
                 name: "Gunnard Engebreth",
                 role: "Senior Developer",
-                speakerImage: "",
+                speakerImage: "https://i.ibb.co/pyN9mhx/Gunnard-Power-Code.png",
                 companyLogo: "",
             }],
             description: "",

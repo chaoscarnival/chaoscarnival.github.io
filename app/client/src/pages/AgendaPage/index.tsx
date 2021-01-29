@@ -28,7 +28,13 @@ const AgendaPage: React.FC = () => {
 		sessionDescription: "",
 		sessionTags: [""],
 	});
-	const Speaker = (image: string, name: string, role: string, d: any) => {
+	const Speaker = (
+		image: string,
+		name: string,
+		role: string,
+		companyLogo: string | undefined,
+		d: any
+	) => {
 		return (
 			<div
 				className={classes.speaker}
@@ -45,11 +51,25 @@ const AgendaPage: React.FC = () => {
 					});
 				}}
 			>
-				<img src={image} id="image" alt="speakerImg" />
-				<div style={{ marginTop: "1rem" }}>
-					<Typography id="subtitle">{name}</Typography>
-					<Typography id="subtitle">{role}</Typography>
+				<div style={{ display: "flex" }}>
+					<img src={image} id="image" alt="speakerImg" />
+					<div style={{ marginTop: "0.5rem" }}>
+						<Typography id="subtitle">{name}</Typography>
+						<Typography id="subtitle">{role}</Typography>
+					</div>
 				</div>
+				{companyLogo !== undefined ? (
+					<img
+						style={{
+							marginTop: "0.5rem",
+							height: "15%",
+							width: "25%",
+							objectFit: "cover",
+						}}
+						src={companyLogo}
+						alt="companyLogo"
+					/>
+				) : null}
 			</div>
 		);
 	};
@@ -77,6 +97,7 @@ const AgendaPage: React.FC = () => {
 								Object.values(s)[2],
 								Object.values(s)[0],
 								Object.values(s)[1],
+								undefined,
 								speaker
 							)}
 						</>
@@ -153,6 +174,7 @@ const AgendaPage: React.FC = () => {
 															Object.values(s)[2],
 															Object.values(s)[0],
 															Object.values(s)[1],
+															Object.values(s)[3],
 															d.speaker1
 														)}
 													</>
@@ -175,6 +197,7 @@ const AgendaPage: React.FC = () => {
 															Object.values(s)[2],
 															Object.values(s)[0],
 															Object.values(s)[1],
+															Object.values(s)[3],
 															d.speaker2
 														)}
 													</>
@@ -186,7 +209,6 @@ const AgendaPage: React.FC = () => {
 							</div>
 						);
 					})}
-					s
 				</span>
 				<Modal
 					open={modalStatus.modalState}

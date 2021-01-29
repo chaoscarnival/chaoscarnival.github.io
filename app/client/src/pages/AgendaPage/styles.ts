@@ -67,13 +67,14 @@ export const useStyles = makeStyles((theme) => ({
 	speaker: {
 		display: "flex",
 		paddingBottom: "1rem",
+		justifyContent: "space-between",
 
 		"& #image": {
 			width: "3rem",
 		},
 		"& #subtitle": {
 			marginLeft: "1rem",
-			fontSize: "0.5rem",
+			fontSize: "0.8rem",
 			color: "rgba(255, 255, 255, 0.8)",
 		},
 		"&:hover": {
