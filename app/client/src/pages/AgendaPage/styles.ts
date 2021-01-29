@@ -26,55 +26,58 @@ export const useStyles = makeStyles((theme) => ({
 
 	block: {
 		display: "flex",
-		margin: '0.1rem 0',
-		minHeight: '10rem'
+		margin: "0.1rem 0",
+		minHeight: "10rem",
 	},
 	time: {
 		width: "10%",
 		height: "5rem",
 		fontSize: "1rem",
-		marginLeft: '0.5rem',
-		paddingTop: '1.5%'
+		marginLeft: "0.5rem",
+		paddingTop: "1.5%",
 	},
 	detailsBlock: {
-		paddingBottom: '1rem'
+		paddingBottom: "1rem",
 	},
 
 	// For Keynote Speaker
 	keynoteLeftDetail: {
 		float: "left",
-		paddingLeft: '1rem',
+		paddingLeft: "1rem",
 		width: "35%",
 	},
 
 	keynoteRightDetail: {
-		position: 'relative',
+		position: "relative",
 		width: "35%",
 	},
 
 	// For regular Speaker
 	speaker1details: {
 		width: "35%",
-		padding: '0 1rem'
+		padding: "0 1rem",
 	},
 
 	speaker2details: {
 		width: "35%",
-		padding: '0 1rem'
+		padding: "0 1rem",
 	},
 
 	// Speaker Block
 	speaker: {
-		display: 'flex',
-		paddingBottom: '1rem',
+		display: "flex",
+		paddingBottom: "1rem",
 
-		'& #image': {
-			width: '3rem',
+		"& #image": {
+			width: "3rem",
 		},
-		'& #subtitle': {
-			marginLeft: '1rem',
-			fontSize: '0.5rem',
-			color: 'rgba(255, 255, 255, 0.8)'
-		}
-	}
+		"& #subtitle": {
+			marginLeft: "1rem",
+			fontSize: "0.5rem",
+			color: "rgba(255, 255, 255, 0.8)",
+		},
+		"&:hover": {
+			cursor: "pointer",
+		},
+	},
 }));
