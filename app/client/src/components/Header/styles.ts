@@ -13,9 +13,6 @@ const useStyles = makeStyles((theme: Theme) => ({
 		margin: "0 auto",
 		paddingTop: theme.spacing(1),
 		background: (props) => (props ? "#070E23" : "white"),
-		[theme.breakpoints.down(800)]: {
-			// paddingTop: theme.spacing(11),
-		},
 	},
 	toolbarDiv: {
 		margin: "auto",
