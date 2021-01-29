@@ -4,7 +4,18 @@ const useStyles = makeStyles((theme: Theme) => ({
 	appBar: {
 		width: "100vw",
 		margin: "auto",
-		background: "rgba(0,0,0,0.001)",
+		position: "absolute",
+		background: (props) => (props ? "#070E23" : "white"),
+	},
+	divider: {
+		borderBottom: "2px solid rgba(255, 255, 255, 0.2)",
+		width: "85%",
+		margin: "0 auto",
+		paddingTop: theme.spacing(1),
+		background: (props) => (props ? "#070E23" : "white"),
+		[theme.breakpoints.down(800)]: {
+			paddingTop: theme.spacing(11),
+		},
 	},
 	toolbarDiv: {
 		width: "70vw",
@@ -13,11 +24,11 @@ const useStyles = makeStyles((theme: Theme) => ({
 		flexDirection: "row",
 		justifyContent: "space-between",
 		alignItems: "center",
+		background: (props) => (props ? "#070E23" : "white"),
 		[theme.breakpoints.down("sm")]: {
 			justifyContent: "space-between",
 			position: "absolute",
 			width: "85vw",
-			marginLeft: "6vw",
 		},
 		[theme.breakpoints.down("xs")]: {
 			justifyContent: "space-between",
@@ -32,7 +43,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 			textAlign: "center",
 		},
 		[theme.breakpoints.down("xs")]: {
-			paddingTop: theme.spacing(4),
+			marginTop: 25,
 		},
 	},
 	mainLogo: {
@@ -49,10 +60,19 @@ const useStyles = makeStyles((theme: Theme) => ({
 			marginRight: 30,
 			marginTop: 20,
 		},
+		[theme.breakpoints.down(1050)]: {
+			marginLeft: (props) => (props ? -50 : -60),
+		},
+		[theme.breakpoints.down(800)]: {
+			marginLeft: (props) => (props ? 30 : 20),
+		},
+		[theme.breakpoints.down(500)]: {
+			marginLeft: (props) => (props ? 10 : 0),
+		},
 		[theme.breakpoints.down("xs")]: {
 			marginLeft: 0,
 			marginRight: 30,
-			marginTop: 50,
+			marginTop: 25,
 		},
 	},
 	registerButton: {

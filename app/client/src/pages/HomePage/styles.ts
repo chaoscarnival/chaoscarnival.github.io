@@ -5,7 +5,6 @@ export const useStyles = makeStyles((theme) => ({
 		height: "100vh",
 		display: "flex",
 		flexDirection: "column",
-		background: "#070E23",
 	},
 	root: {
 		textAlign: "center",
