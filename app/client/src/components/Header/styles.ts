@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 			marginTop: 20,
 		},
 		[theme.breakpoints.down(1050)]: {
-			marginLeft: (props) => (props ? 0 : 0),
+			marginLeft: (props) => (props ? 30 : 0),
 		},
 		[theme.breakpoints.down(800)]: {
 			marginLeft: (props) => (props ? 30 : 20),
