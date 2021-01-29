@@ -10,7 +10,7 @@ export const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 	},
 	mainDiv: {
-		marginTop: theme.spacing(-10),
+		marginTop: 0,
 		background: "#070E23",
 		height: "100vh",
 		display: "flex",
