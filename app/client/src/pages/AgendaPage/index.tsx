@@ -38,7 +38,7 @@ const AgendaPage: React.FC = () => {
 		);
 	};
 
-	const Keynote = (title: string, speaker: Array<Object>) => {
+	const Keynote = (title?: string, speaker?: Array<Object>) => {
 		return (
 			<>
 				<div
@@ -46,7 +46,7 @@ const AgendaPage: React.FC = () => {
 					style={{ background: "green" }}
 				>
 					<h1>{title}</h1>
-					{speaker.map((s) => (
+					{speaker?.map((s) => (
 						<>
 							{Speaker(
 								Object.values(s)[2],
@@ -60,7 +60,7 @@ const AgendaPage: React.FC = () => {
 					className={classes.keynoteRightDetail}
 					style={{ background: "blue" }}
 				>
-					{speaker.map((s) => (
+					{speaker?.map((s) => (
 						<img
 							src={Object.values(s)[3]}
 							style={{
@@ -101,7 +101,7 @@ const AgendaPage: React.FC = () => {
 									className={classes.time}
 									style={{ background: "red" }}
 								>
-									{d.time}
+									{d.speaker1?.time}
 								</div>
 								{i === 0 ? (
 									// For Keynote speaker
@@ -113,9 +113,9 @@ const AgendaPage: React.FC = () => {
 											className={classes.speaker1details}
 											style={{ background: "green" }}
 										>
-											<h1>{d.sessionName}</h1>
+											<h1>{d.speaker1?.sessionName}</h1>
 											{/* Tags */}
-											{d.speaker.map((s) => {
+											{d.speaker1?.speaker.map((s) => {
 												return (
 													<>
 														{Speaker(
@@ -127,10 +127,25 @@ const AgendaPage: React.FC = () => {
 												);
 											})}
 										</div>
+
 										<div
 											className={classes.speaker2details}
 											style={{ background: "blue" }}
-										></div>
+										>
+											<h1>{d.speaker2?.sessionName}</h1>
+											{/* Tags */}
+											{d.speaker2?.speaker.map((s) => {
+												return (
+													<>
+														{Speaker(
+															Object.values(s)[2],
+															Object.values(s)[0],
+															Object.values(s)[1]
+														)}
+													</>
+												);
+											})}
+										</div>
 									</>
 								)}
 							</div>
