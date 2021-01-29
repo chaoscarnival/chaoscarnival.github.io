@@ -19,6 +19,26 @@ export const useStyles = makeStyles((theme) => ({
 		marginLeft: '-7%'
 	},
 	details: {
+		width: '100%',
 		height: '20rem',
+
+		'& #block': {
+			display: "flex",
+		},
+
+		'& #time': {
+			width: '10%',
+			height: '5rem'
+		},
+
+		'& #speaker1details': {
+			width: '35%',
+			height: '5rem'
+		},
+
+		'& #speaker2details': {
+			width: '35%',
+			height: '5rem'
+		},
 	}
 }));

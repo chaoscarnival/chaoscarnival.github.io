@@ -1,5 +1,6 @@
 import * as React from "react";
 import "../../scrollbar.css";
+import data from "./data";
 import { useStyles } from "./styles";
 
 function AgendaPage() {
@@ -21,7 +22,26 @@ function AgendaPage() {
 					</div>
 				</div>
 				{/* Agenda Table */}
-				<div className={classes.details} />
+				<span className={classes.details}>
+					{data.map((d) => {
+						return (
+							<span id="block">
+								<div
+									id="time"
+									style={{ background: "red" }}
+								></div>
+								<div
+									id="speaker1details"
+									style={{ background: "green" }}
+								></div>
+								<div
+									id="speaker2details"
+									style={{ background: "blue" }}
+								></div>
+							</span>
+						);
+					})}
+				</span>
 			</div>
 			<br />
 			{/* Footer */}
