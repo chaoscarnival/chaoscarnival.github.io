@@ -15,6 +15,7 @@ export const useStyles = makeStyles((theme) => ({
 		width: "70vw",
 		display: "flex",
 		flexFlow: "column wrap",
+		marginTop: 50,
 		[theme.breakpoints.down("md")]: {
 			width: "90vw",
 		},

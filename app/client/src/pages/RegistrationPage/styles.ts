@@ -11,32 +11,35 @@ export const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 	},
 	mainDiv: {
-		marginTop: theme.spacing(-10),
+		marginTop: theme.spacing(-5),
+		paddingTop: theme.spacing(10),
 		background:
 			"linear-gradient(160.34deg, #042C69 0%, #041739 21.78%, #040D21 50.11%, #1B132F 82.45%, #471F48 99.57%)",
 		backgroundRepeat: "no-repeat",
 		backgroundSize: "cover",
 		backgroundPosition: "center",
-		height: "105vh",
+		height: "fit-content",
 		display: "flex",
 		flexDirection: "column",
 		[theme.breakpoints.down("sm")]: {
 			background:
 				"linear-gradient(160.34deg, #042C69 0%, #041739 21.78%, #040D21 50.11%, #1B132F 82.45%, #471F48 99.57%)",
 			backgroundSize: "cover",
-			height: "115vh",
 		},
 		[theme.breakpoints.down("xs")]: {
-			marginTop: 0,
-			height: "130vh",
+			paddingTop: theme.spacing(5),
+			marginTop: theme.spacing(3),
+			height: "fit-content",
 		},
 	},
 	buttons: {
 		display: "flex",
 		flexDirection: "row",
 		justifyContent: "space-between",
+		paddingBottom: theme.spacing(20),
 		[theme.breakpoints.down("xs")]: {
 			flexDirection: "column",
+			paddingBottom: theme.spacing(10),
 		},
 	},
 	registerButtonActive: {
@@ -166,17 +169,11 @@ export const useStyles = makeStyles((theme) => ({
 		width: "45%",
 		flexDirection: "column",
 		marginTop: "65vh",
-		[theme.breakpoints.down("xl")]: {
-			marginTop: "65vh",
+		[theme.breakpoints.down(1150)]: {
+			marginTop: "45vh",
 		},
-		[theme.breakpoints.down("lg")]: {
-			marginTop: "65vh",
-		},
-		[theme.breakpoints.down("md")]: {
-			marginTop: "57.5vh",
-		},
-		[theme.breakpoints.down("sm")]: {
-			marginTop: "60vh",
+		[theme.breakpoints.down(800)]: {
+			marginTop: "45vh",
 		},
 		[theme.breakpoints.down("xs")]: {
 			width: "93%",
@@ -198,8 +195,11 @@ export const useStyles = makeStyles((theme) => ({
 		width: "50%",
 		marginTop: "15%",
 		marginRight: "-12.5%",
-		[theme.breakpoints.down(1080)]: {
-			marginTop: "25%",
+		[theme.breakpoints.down(1150)]: {
+			marginTop: 0,
+		},
+		[theme.breakpoints.down(800)]: {
+			marginTop: 0,
 		},
 		[theme.breakpoints.down("xs")]: {
 			width: "93%",

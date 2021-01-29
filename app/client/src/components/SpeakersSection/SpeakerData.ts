@@ -141,10 +141,10 @@ export const SpeakerData = [
 	},
 	{
 		id: 20,
-		name: "Eugenio Marzo",
-		title: "DevOps Engineer",
+		name: "Oliver Kracht",
+		title: "Implementation Lead",
 		company: "",
-		urlToIcon: "/speakers/Eugenio_SourceSense-min.jpg",
+		urlToIcon: "/speakers/Oliver_DB-min.jpg",
 	},
 	{
 		id: 21,
@@ -197,10 +197,10 @@ export const SpeakerData = [
 	},
 	{
 		id: 28,
-		name: "Oliver Kracht",
-		title: "Implementation Lead",
+		name: "Eugenio Marzo",
+		title: "DevOps Engineer",
 		company: "",
-		urlToIcon: "/speakers/Oliver_DB-min.jpg",
+		urlToIcon: "/speakers/Eugenio_SourceSense-min.jpg",
 	},
 	{
 		id: 29,
