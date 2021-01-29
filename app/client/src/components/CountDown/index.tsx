@@ -1,4 +1,3 @@
-import { Button } from "@material-ui/core";
 import moment from "moment";
 import React, { useEffect, useState } from "react";
 import useStyles from "./styles";
@@ -38,9 +37,9 @@ const CountDown: React.FC<CountDownProps> = ({
 	return (
 		<div>
 			{!over ? (
-				<Button variant="outlined" className={classes.timerBtn}>
+				<div className={classes.timerBtn}>
 					{`${days}d ${hours}h ${minutes}m ${seconds}s`}
-				</Button>
+				</div>
 			) : (
 				<div />
 			)}
