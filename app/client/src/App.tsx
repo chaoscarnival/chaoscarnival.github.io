@@ -12,6 +12,9 @@ const ErrorPage = lazy(() => import("./pages/ErrorPage"));
 const TeamPage = lazy(() => import("./pages/TeamPage"));
 const RegistrationPage = lazy(() => import("./pages/RegistrationPage"));
 const AcknowledgementPage = lazy(() => import("./pages/AcknowledgementPage"));
+const AgendaPage = lazy(() => import("./pages/AgendaPage"));
+const BootcampPage = lazy(() => import("./pages/BootcampPage"));
+const SponsorBoothsPage = lazy(() => import("./pages/SponsorBoothsPage"));
 
 const Routes: React.FC = () => {
 	const classes = useStyles();
@@ -36,6 +39,17 @@ const Routes: React.FC = () => {
 					component={SponsorshipPage}
 				/>
 				<Route exact={true} path="/Team" component={TeamPage} />
+				<Route exact={true} path="/agenda" component={AgendaPage} />
+				<Route
+					exact={true}
+					path="/bootcamps"
+					component={BootcampPage}
+				/>
+				<Route
+					exact={true}
+					path="/sponsorbooths"
+					component={SponsorBoothsPage}
+				/>
 				<Route exact={true} path="/404" component={ErrorPage} />
 				<Redirect to="/404" />
 			</Switch>
