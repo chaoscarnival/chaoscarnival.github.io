@@ -1,6 +1,7 @@
 import {
 	AppBar,
 	Button,
+	Divider,
 	Fade,
 	Hidden,
 	IconButton,
@@ -196,7 +197,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 										<a
 											href={
 												inHomePage && linksActive
-													? "#speakers"
+													? "#home"
 													: "https://chaoscarnival.io/#home"
 											}
 											style={{
@@ -328,6 +329,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 						</div>
 					</Hidden>
 				</Toolbar>
+				<Divider className={classes.divider} />
 			</AppBar>
 		</div>
 	);
