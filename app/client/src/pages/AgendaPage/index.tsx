@@ -5,6 +5,7 @@ import MainHeader from "../../components/Header";
 import JoinCarnival from "../../components/JoinCarnival";
 import Sponsors from "../../components/Sponsors";
 import "../../scrollbar.css";
+import bootcamps from "../../utils/bootcampData";
 import { useStyles } from "./styles";
 
 function AgendaPage() {
@@ -20,13 +21,13 @@ function AgendaPage() {
 				<a id="home" href="home">
 					{" "}
 				</a>
-				<MainHeader inHomePage={true} linksActive={true} />
+				<MainHeader />
 				<div className={classes.root}>
 					<div style={{ marginTop: "auto" }}>
 						<a id="bootcamps" href="bootcamps">
 							{" "}
 						</a>
-						<Bootcamps />
+						<Bootcamps bootcamps={bootcamps} />
 					</div>
 
 					<div style={{ marginTop: "auto" }}>

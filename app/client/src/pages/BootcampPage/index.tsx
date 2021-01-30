@@ -1,49 +1,24 @@
 import * as React from "react";
-import Bootcamps from "../../components/Bootcamps/index";
+import Bootcamps from "../../components/Bootcamps";
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/Header";
 import JoinCarnival from "../../components/JoinCarnival";
 import Sponsors from "../../components/Sponsors";
 import "../../scrollbar.css";
+import bootcamps from "../../utils/bootcampData";
 import { useStyles } from "./styles";
 
 function BootcampPage() {
 	const classes = useStyles();
 
-	React.useEffect(() => {
-		window.scrollTo(0, 0);
-	});
-
 	return (
 		<div className="scrollbar scrollbar-primary">
-			<div className={classes.rootContainer}>
-				<a id="home" href="home">
-					{" "}
-				</a>
-				<MainHeader inHomePage={true} linksActive={true} />
-				<div className={classes.root}>
-					<div style={{ marginTop: "auto" }}>
-						<a id="bootcamps" href="bootcamps">
-							{" "}
-						</a>
-						<Bootcamps />
-					</div>
-
-					<div style={{ marginTop: "auto" }}>
-						<a id="sponsors" href="sponsors">
-							{" "}
-						</a>
-						<Sponsors />
-					</div>
-				</div>
-
-				<div style={{ marginTop: "auto" }}>
-					<JoinCarnival />
-				</div>
-
-				<div style={{ marginTop: "auto" }}>
-					<Footer />
-				</div>
+			<MainHeader />
+			<div className={classes.root}>
+				<Bootcamps bootcamps={bootcamps} />
+				<Sponsors />
+				<JoinCarnival />
+				<Footer />
 			</div>
 		</div>
 	);

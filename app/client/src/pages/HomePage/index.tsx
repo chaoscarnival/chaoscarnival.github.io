@@ -10,6 +10,7 @@ import { SpeakersSection } from "../../components/SpeakersSection/index";
 import Sponsors from "../../components/Sponsors";
 import WhyToAttend from "../../components/WhyToAttend";
 import "../../scrollbar.css";
+import bootcamps from "../../utils/bootcampData";
 import { useStyles } from "./styles";
 
 function HomePage() {
@@ -39,7 +40,7 @@ function HomePage() {
 				<a id="home" href="home">
 					{" "}
 				</a>
-				<MainHeader inHomePage={true} linksActive={true} />
+				<MainHeader />
 				<div className={classes.root}>
 					<div className={classes.mainDiv}>
 						<div className={classes.flexContainer}>
@@ -129,7 +130,7 @@ function HomePage() {
 						<a id="bootcamps" href="bootcamps">
 							{" "}
 						</a>
-						<Bootcamps />
+						<Bootcamps bootcamps={bootcamps} />
 					</div>
 
 					<div style={{ marginTop: "auto" }}>

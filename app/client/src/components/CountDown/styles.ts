@@ -4,8 +4,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 	timerBtn: {
 		width: "13.25rem",
 		border: `3px solid ${theme.palette.primary.main}`,
-		color: (props) =>
-			props ? theme.palette.common.white : theme.palette.common.black,
+		color: theme.palette.common.white,
 		textTransform: "none",
 		display: "flex",
 		justifyContent: "center",
