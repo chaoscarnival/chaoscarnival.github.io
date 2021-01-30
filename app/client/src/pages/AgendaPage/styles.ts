@@ -90,7 +90,21 @@ export const useStyles = makeStyles((theme) => ({
 			cursor: "pointer",
 		},
 	},
-
+	//Tags styles
+	tagsDiv: {
+		display: "flex",
+		flexDirection: "row",
+		marginRight: 10,
+	},
+	tagsText: {
+		color: "#FFFFFF",
+		marginLeft: 5,
+		fontSize: 12,
+	},
+	tagsField: {
+		marginTop: 5,
+		marginBottom: 30,
+	},
 	//Modal Styles
 	modal: {
 		margin: "auto",

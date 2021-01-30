@@ -97,6 +97,35 @@ const AgendaPage: React.FC = () => {
 		);
 	};
 
+	const Tags = (tags: string[] | undefined) => {
+		return (
+			<div style={{ display: "flex", flexDirection: "row" }}>
+				{tags?.map((tag) => (
+					<div className={classes.tagsDiv}>
+						<div
+							style={{
+								height: 10,
+								width: 10,
+								marginTop: 4.2,
+								backgroundColor:
+									tag === "Chaos Engineering"
+										? "#10B180"
+										: tag === "Observability"
+										? "#3168DA"
+										: "#FF0858",
+								borderRadius: "50%",
+								display: "inline-block",
+							}}
+						/>
+						<Typography className={classes.tagsText}>
+							{tag}
+						</Typography>
+					</div>
+				))}
+			</div>
+		);
+	};
+
 	const handleClose = () => {
 		setModalStatus({
 			modalState: false,
@@ -110,7 +139,6 @@ const AgendaPage: React.FC = () => {
 	const Keynote = (keynote: any) => {
 		return (
 			<>
-				{console.log(keynote)}
 				<div className={classes.keynoteLeftDetail}>
 					<h1>{keynote.sessionName}</h1>
 					{keynote.speaker?.map((s) => (
@@ -186,13 +214,28 @@ const AgendaPage: React.FC = () => {
 														background: `${d.speaker1?.background}`,
 													}}
 												>
-													<h2>
+													<Typography
+														style={{
+															fontWeight: "bold",
+															fontSize: 18,
+															paddingTop: 10,
+														}}
+													>
 														{
 															d.speaker1
 																?.sessionName
 														}
-													</h2>
+													</Typography>
+
 													{/* Tags */}
+													<div
+														className={
+															classes.tagsField
+														}
+													>
+														{Tags(d.speaker1?.tags)}
+													</div>
+
 													{d.speaker1?.speaker.map(
 														(s) => {
 															return (
@@ -216,13 +259,28 @@ const AgendaPage: React.FC = () => {
 														background: `${d.speaker2?.background}`,
 													}}
 												>
-													<h2>
+													<Typography
+														style={{
+															fontWeight: "bold",
+															fontSize: 18,
+															paddingTop: 10,
+														}}
+													>
 														{
 															d.speaker2
 																?.sessionName
 														}
-													</h2>
+													</Typography>
+
 													{/* Tags */}
+													<div
+														className={
+															classes.tagsField
+														}
+													>
+														{Tags(d.speaker2?.tags)}
+													</div>
+
 													{d.speaker2?.speaker.map(
 														(s) => {
 															return (
@@ -269,7 +327,7 @@ const AgendaPage: React.FC = () => {
 							>
 								<img
 									src={modalStatus.speakerData.modalLogo}
-									alt="Speaker Image"
+									alt="Speakers"
 									style={{
 										height: "220px",
 										width: "192px",
@@ -295,13 +353,7 @@ const AgendaPage: React.FC = () => {
 								>
 									{modalStatus.sessionName}
 								</Typography>
-								{modalStatus.sessionTags?.map((a) => {
-									return (
-										<Typography style={{ color: "white" }}>
-											{a}
-										</Typography>
-									);
-								})}
+								{Tags(modalStatus.sessionTags)}
 								<Typography
 									style={{
 										color: "white",
