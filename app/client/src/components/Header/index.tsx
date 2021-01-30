@@ -11,6 +11,7 @@ import {
 	Typography,
 } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
+import gtag from "ga-gtag";
 import React from "react";
 import history from "../../history";
 import CountDown from "../CountDown";
@@ -33,6 +34,21 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 	const handleClose = () => {
 		setAnchorEl(null);
 	};
+
+	function gtag_report_conversion(url) {
+		var callback = function () {
+			if (typeof url != "undefined") {
+				window.location = url;
+			}
+		};
+		gtag("event", "conversion", {
+			send_to: "AW-453907965/x9FXCNje-e4BEP2ruNgB",
+			event_callback: callback,
+		});
+		gtag("config", "AW-453907965");
+		return false;
+	}
+
 	return (
 		<div>
 			<AppBar
@@ -42,327 +58,364 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 			>
 				<Toolbar className={classes.toolbarDiv}>
 					<div className={classes.toolbarDiv}>
-						<img
-							src={
-								inHomePage
-									? "/icons/chaoscarnival-header-min.png"
-									: "/icons/chaoscarnival-header-dark-min.png"
-							}
-							alt=" header"
-							className={classes.mainLogo}
-							onClick={() => history.push("/")}
-						/>
-						<Hidden smDown>
-							<div className={classes.headerHomeDiv}>
-								<a
-									href={
-										inHomePage && linksActive
-											? "#home"
-											: "https://chaoscarnival.io/#home"
-									}
-									style={{ textDecoration: "none" }}
+						<div>
+							<img
+								src={
+									inHomePage
+										? "/icons/chaoscarnival-header-min.png"
+										: "/icons/chaoscarnival-header-dark-min.png"
+								}
+								alt=" header"
+								className={classes.mainLogo}
+								onClick={() => history.push("/")}
+							/>
+							<Hidden smDown>
+								<Button
+									className={classes.registerButtonSmall}
+									color="primary"
+									variant="contained"
+									onClick={() => {
+										gtag_report_conversion(
+											"https://chaoscarnival.io/register"
+										);
+										window.location.href =
+											"https://chaoscarnival.io/register";
+									}}
 								>
-									<Typography className={classes.headerFont}>
-										Home
+									<Typography
+										className={classes.registerText}
+										style={{
+											textTransform: "none",
+										}}
+									>
+										<b>Register&nbsp;Now</b>
 									</Typography>
-								</a>
-							</div>
-						</Hidden>
-						<Hidden smDown>
+								</Button>
+							</Hidden>
+						</div>
+						<div className={classes.flexLinks}>
+							<Hidden smDown>
+								<div>
+									<a
+										href={
+											inHomePage && linksActive
+												? "#home"
+												: "https://chaoscarnival.io/#home"
+										}
+										style={{ textDecoration: "none" }}
+									>
+										<Typography
+											className={classes.headerFont}
+										>
+											Home
+										</Typography>
+									</a>
+								</div>
+							</Hidden>
+							<Hidden smDown>
+								<div className={classes.headerDiv}>
+									<a
+										href={"https://chaoscarnival.io/agenda"}
+										style={{ textDecoration: "none" }}
+									>
+										<Typography
+											className={classes.headerFont}
+										>
+											Agenda
+										</Typography>
+									</a>
+								</div>
+							</Hidden>
+							<Hidden smDown>
+								<div className={classes.headerDiv}>
+									<a
+										href={
+											inHomePage && linksActive
+												? "#speakers"
+												: "https://chaoscarnival.io/#speakers"
+										}
+										style={{ textDecoration: "none" }}
+									>
+										<Typography
+											className={classes.headerFont}
+										>
+											Speakers
+										</Typography>
+									</a>
+								</div>
+							</Hidden>
+							<Hidden smDown>
+								<div className={classes.headerDiv}>
+									<a
+										href={
+											"https://chaoscarnival.io/bootcamps"
+										}
+										style={{ textDecoration: "none" }}
+									>
+										<Typography
+											className={classes.headerFont}
+										>
+											Bootcamps
+										</Typography>
+									</a>
+								</div>
+							</Hidden>
+							<Hidden smDown>
+								<div className={classes.headerDiv}>
+									<a
+										href={
+											inHomePage && linksActive
+												? "#sponsors"
+												: "https://chaoscarnival.io/#sponsors"
+										}
+										style={{ textDecoration: "none" }}
+									>
+										<Typography
+											className={classes.headerFont}
+										>
+											Sponsors
+										</Typography>
+									</a>
+								</div>
+							</Hidden>
+							<Hidden smDown>
+								<div className={classes.headerDivCount}>
+									<CountDown
+										timeTillDate="02 10 2021, 8:00 am"
+										timeFormat="MM DD YYYY, h:mm a"
+										inHomePage={inHomePage}
+									/>
+								</div>
+							</Hidden>
+						</div>
+						<Hidden mdUp>
 							<div className={classes.headerDiv}>
-								<a
-									href={"https://chaoscarnival.io/agenda"}
-									style={{ textDecoration: "none" }}
+								<IconButton
+									onClick={handleClick}
+									className={classes.menu}
 								>
-									<Typography className={classes.headerFont}>
-										Agenda
-									</Typography>
-								</a>
-							</div>
-						</Hidden>
-						<Hidden smDown>
-							<div className={classes.headerDiv}>
-								<a
-									href={
-										inHomePage && linksActive
-											? "#speakers"
-											: "https://chaoscarnival.io/#speakers"
-									}
-									style={{ textDecoration: "none" }}
+									<img
+										src={
+											inHomePage
+												? "/icons/menu.svg"
+												: "/icons/menud.svg"
+										}
+										alt="menu"
+									/>
+								</IconButton>
+
+								<Menu
+									anchorEl={anchorEl}
+									keepMounted
+									open={open}
+									onClose={handleClose}
+									TransitionComponent={Fade}
+									className={classes.backdrop}
+									PaperProps={{
+										style: {
+											marginTop: 50,
+											width: "100%",
+											backgroundColor: "transparent",
+											filter: "drop-shadow(0)",
+											justifyContent: "center",
+										},
+									}}
 								>
-									<Typography className={classes.headerFont}>
-										Speakers
-									</Typography>
-								</a>
-							</div>
-						</Hidden>
-						<Hidden smDown>
-							<div className={classes.headerDiv}>
-								<a
-									href={
-										inHomePage && linksActive
-											? "#bootcamps"
-											: "https://chaoscarnival.io/#bootcamps"
-									}
-									style={{ textDecoration: "none" }}
-								>
-									<Typography className={classes.headerFont}>
-										Bootcamps
-									</Typography>
-								</a>
-							</div>
-						</Hidden>
-						<Hidden smDown>
-							<div className={classes.headerDiv}>
-								<a
-									href={
-										inHomePage && linksActive
-											? "#sponsors"
-											: "https://chaoscarnival.io/#sponsors"
-									}
-									style={{ textDecoration: "none" }}
-								>
-									<Typography className={classes.headerFont}>
-										Sponsors
-									</Typography>
-								</a>
-							</div>
-						</Hidden>
-						<Hidden smDown>
-							<div className={classes.headerDivCount}>
-								<CountDown
-									timeTillDate="02 10 2021, 8:00 am"
-									timeFormat="MM DD YYYY, h:mm a"
-									inHomePage={inHomePage}
-								/>
+									<MenuItem
+										className={classes.menuItemClose}
+										button={false}
+										key="close"
+									>
+										<IconButton onClick={handleClose}>
+											<CloseIcon
+												fontSize="large"
+												className={classes.closeBtn}
+											/>
+										</IconButton>
+									</MenuItem>
+									<MenuItem
+										className={classes.menuItem}
+										button={false}
+										key="logo"
+										style={{ justifyContent: "center" }}
+									>
+										<img
+											src="/icons/chaoscarnival-header-min.png"
+											style={{ margin: 0 }}
+											alt="logo"
+											className={classes.mainLogo}
+											onClick={() => history.push("/")}
+										/>
+									</MenuItem>
+									<MenuItem
+										className={classes.menuItem}
+										button={false}
+										key="home"
+									>
+										<Typography
+											className={classes.contributeBtn}
+											onClick={handleClose}
+										>
+											<a
+												href={
+													inHomePage && linksActive
+														? "#home"
+														: "https://chaoscarnival.io/#home"
+												}
+												style={{
+													textDecoration: "none",
+													color: "#fff",
+													fontWeight: "bold",
+												}}
+											>
+												Home
+											</a>
+										</Typography>
+									</MenuItem>
+									<MenuItem
+										className={classes.menuItem}
+										button={false}
+										key="agenda"
+									>
+										<Typography
+											className={classes.contributeBtn}
+											onClick={handleClose}
+										>
+											<a
+												href={
+													"https://chaoscarnival.io/agenda"
+												}
+												style={{
+													textDecoration: "none",
+													color: "#fff",
+													fontWeight: "bold",
+												}}
+											>
+												Agenda
+											</a>
+										</Typography>
+									</MenuItem>
+									<MenuItem
+										className={classes.menuItem}
+										button={false}
+										key="speakers"
+									>
+										<Typography
+											className={classes.contributeBtn}
+											onClick={handleClose}
+										>
+											<a
+												href={
+													inHomePage && linksActive
+														? "#speakers"
+														: "https://chaoscarnival.io/#speakers"
+												}
+												style={{
+													textDecoration: "none",
+													color: "#fff",
+													fontWeight: "bold",
+												}}
+											>
+												Speakers
+											</a>
+										</Typography>
+									</MenuItem>
+									<MenuItem
+										className={classes.menuItem}
+										button={false}
+										key="bootcamps"
+									>
+										<Typography
+											className={classes.contributeBtn}
+											onClick={handleClose}
+										>
+											<a
+												href={
+													"https://chaoscarnival.io/bootcamps"
+												}
+												style={{
+													textDecoration: "none",
+													color: "#fff",
+													fontWeight: "bold",
+												}}
+											>
+												Bootcamps
+											</a>
+										</Typography>
+									</MenuItem>
+									<MenuItem
+										className={classes.menuItem}
+										button={false}
+										key="sponsors"
+									>
+										<Typography
+											className={classes.contributeBtn}
+											onClick={handleClose}
+										>
+											<a
+												href={
+													inHomePage && linksActive
+														? "#sponsors"
+														: "https://chaoscarnival.io/#sponsors"
+												}
+												style={{
+													textDecoration: "none",
+													color: "#fff",
+													fontWeight: "bold",
+												}}
+											>
+												Sponsors
+											</a>
+										</Typography>
+									</MenuItem>
+									<MenuItem
+										className={classes.menuItem}
+										button={false}
+										key="timer"
+										style={{
+											justifyContent: "center",
+											color: "#000",
+											margin: 0,
+										}}
+									>
+										<div style={{ margin: "auto" }}>
+											<Button
+												className={
+													classes.registerButton
+												}
+												color="primary"
+												variant="contained"
+												style={{
+													margin: "auto",
+													padding: "2rem",
+													marginTop: "2rem",
+													width: "100%",
+												}}
+												onClick={() => {
+													window.location.href =
+														"https://chaoscarnival.io/register";
+												}}
+											>
+												<Typography
+													className={
+														classes.registerText
+													}
+													style={{
+														textTransform: "none",
+														fontSize: "1.15rem",
+													}}
+												>
+													<b>
+														Register&nbsp;Now&nbsp;for&nbsp;Free
+													</b>
+												</Typography>
+											</Button>
+										</div>
+									</MenuItem>
+								</Menu>
 							</div>
 						</Hidden>
 					</div>
-					<Hidden mdUp>
-						<div className={classes.headerDiv}>
-							<IconButton
-								onClick={handleClick}
-								className={classes.menu}
-							>
-								<img
-									src={
-										inHomePage
-											? "/icons/menu.svg"
-											: "/icons/menud.svg"
-									}
-									alt="menu"
-								/>
-							</IconButton>
-
-							<Menu
-								anchorEl={anchorEl}
-								keepMounted
-								open={open}
-								onClose={handleClose}
-								TransitionComponent={Fade}
-								className={classes.backdrop}
-								PaperProps={{
-									style: {
-										marginTop: 50,
-										width: "100%",
-										backgroundColor: "transparent",
-										filter: "drop-shadow(0)",
-										justifyContent: "center",
-									},
-								}}
-							>
-								<MenuItem
-									className={classes.menuItemClose}
-									button={false}
-									key="close"
-								>
-									<IconButton onClick={handleClose}>
-										<CloseIcon
-											fontSize="large"
-											className={classes.closeBtn}
-										/>
-									</IconButton>
-								</MenuItem>
-								<MenuItem
-									className={classes.menuItem}
-									button={false}
-									key="logo"
-									style={{ justifyContent: "center" }}
-								>
-									<img
-										src="/icons/chaoscarnival-header-min.png"
-										style={{ margin: 0 }}
-										alt="logo"
-										className={classes.mainLogo}
-										onClick={() => history.push("/")}
-									/>
-								</MenuItem>
-								<MenuItem
-									className={classes.menuItem}
-									button={false}
-									key="home"
-								>
-									<Typography
-										className={classes.contributeBtn}
-										onClick={handleClose}
-									>
-										<a
-											href={
-												inHomePage && linksActive
-													? "#home"
-													: "https://chaoscarnival.io/#home"
-											}
-											style={{
-												textDecoration: "none",
-												color: "#fff",
-												fontWeight: "bold",
-											}}
-										>
-											Home
-										</a>
-									</Typography>
-								</MenuItem>
-								<MenuItem
-									className={classes.menuItem}
-									button={false}
-									key="agenda"
-								>
-									<Typography
-										className={classes.contributeBtn}
-										onClick={handleClose}
-									>
-										<a
-											href={
-												"https://chaoscarnival.io/agenda"
-											}
-											style={{
-												textDecoration: "none",
-												color: "#fff",
-												fontWeight: "bold",
-											}}
-										>
-											Agenda
-										</a>
-									</Typography>
-								</MenuItem>
-								<MenuItem
-									className={classes.menuItem}
-									button={false}
-									key="speakers"
-								>
-									<Typography
-										className={classes.contributeBtn}
-										onClick={handleClose}
-									>
-										<a
-											href={
-												inHomePage && linksActive
-													? "#speakers"
-													: "https://chaoscarnival.io/#speakers"
-											}
-											style={{
-												textDecoration: "none",
-												color: "#fff",
-												fontWeight: "bold",
-											}}
-										>
-											Speakers
-										</a>
-									</Typography>
-								</MenuItem>
-								<MenuItem
-									className={classes.menuItem}
-									button={false}
-									key="bootcamps"
-								>
-									<Typography
-										className={classes.contributeBtn}
-										onClick={handleClose}
-									>
-										<a
-											href={
-												inHomePage && linksActive
-													? "#bootcamps"
-													: "https://chaoscarnival.io/#bootcamps"
-											}
-											style={{
-												textDecoration: "none",
-												color: "#fff",
-												fontWeight: "bold",
-											}}
-										>
-											Bootcamps
-										</a>
-									</Typography>
-								</MenuItem>
-								<MenuItem
-									className={classes.menuItem}
-									button={false}
-									key="sponsors"
-								>
-									<Typography
-										className={classes.contributeBtn}
-										onClick={handleClose}
-									>
-										<a
-											href={
-												inHomePage && linksActive
-													? "#sponsors"
-													: "https://chaoscarnival.io/#sponsors"
-											}
-											style={{
-												textDecoration: "none",
-												color: "#fff",
-												fontWeight: "bold",
-											}}
-										>
-											Sponsors
-										</a>
-									</Typography>
-								</MenuItem>
-								<MenuItem
-									className={classes.menuItem}
-									button={false}
-									key="timer"
-									style={{
-										justifyContent: "center",
-										color: "#000",
-										margin: 0,
-									}}
-								>
-									<div style={{ margin: "auto" }}>
-										<Button
-											className={classes.registerButton}
-											color="primary"
-											variant="contained"
-											style={{
-												margin: "auto",
-												padding: "2rem",
-												marginTop: "2rem",
-												width: "100%",
-											}}
-											onClick={() => {
-												window.location.href =
-													"https://chaoscarnival.io/register";
-											}}
-										>
-											<Typography
-												className={classes.registerText}
-												style={{
-													textTransform: "none",
-													fontSize: "1.15rem",
-												}}
-											>
-												<b>
-													Register&nbsp;Now&nbsp;for&nbsp;Free
-												</b>
-											</Typography>
-										</Button>
-									</div>
-								</MenuItem>
-							</Menu>
-						</div>
-					</Hidden>
 				</Toolbar>
 				<Divider className={classes.divider} />
 			</AppBar>

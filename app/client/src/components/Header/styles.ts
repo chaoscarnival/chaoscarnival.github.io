@@ -13,65 +13,51 @@ const useStyles = makeStyles((theme: Theme) => ({
 		margin: "0 auto",
 		paddingTop: theme.spacing(1),
 		background: (props) => (props ? "#070E23" : "white"),
-		[theme.breakpoints.down(800)]: {
-			paddingTop: theme.spacing(11),
-		},
 	},
 	toolbarDiv: {
-		width: "70vw",
 		margin: "auto",
 		display: "flex",
 		flexDirection: "row",
-		justifyContent: "space-between",
 		alignItems: "center",
+		justifyContent: "space-between",
+		width: "70vw",
 		background: (props) => (props ? "#070E23" : "white"),
+		[theme.breakpoints.down("md")]: {
+			position: "sticky",
+			width: "100vw",
+		},
 		[theme.breakpoints.down("sm")]: {
-			justifyContent: "space-between",
-			position: "absolute",
+			position: "sticky",
 			width: "85vw",
 		},
 		[theme.breakpoints.down("xs")]: {
-			justifyContent: "space-between",
-			position: "absolute",
-			width: "100vw",
+			position: "sticky",
+			width: "90vw",
 			marginLeft: 0,
 		},
+	},
+	flexLinks: {
+		display: "flex",
+		flexDirection: "row",
+		alignItems: "center",
 	},
 	menu: {
 		marginTop: theme.spacing(2),
-		[theme.breakpoints.down("md")]: {
-			textAlign: "center",
-		},
-		[theme.breakpoints.down("xs")]: {
-			marginTop: 25,
-		},
 	},
 	mainLogo: {
 		width: 165,
-		marginLeft: (props) => (props ? 0 : -100),
-		marginRight: (props) => (props ? -180 : 130),
+		marginLeft: 0,
 		padding: "0.5rem",
 		cursor: "pointer",
-		[theme.breakpoints.down("md")]: {
-			marginRight: (props) => (props ? -120 : -10),
+		[theme.breakpoints.down(1050)]: {
+			marginLeft: 0,
+			marginTop: 12,
 		},
 		[theme.breakpoints.down("sm")]: {
-			marginLeft: (props) => (props ? 10 : 0),
-			marginRight: 30,
-			marginTop: 20,
-		},
-		[theme.breakpoints.down(1050)]: {
-			marginLeft: (props) => (props ? -50 : -60),
-		},
-		[theme.breakpoints.down(800)]: {
-			marginLeft: (props) => (props ? 30 : 20),
-		},
-		[theme.breakpoints.down(500)]: {
-			marginLeft: (props) => (props ? 10 : 0),
+			marginLeft: "-3vw",
 		},
 		[theme.breakpoints.down("xs")]: {
-			marginLeft: 0,
-			marginRight: 30,
+			marginLeft: "3vw",
 			marginTop: 25,
 		},
 	},
@@ -99,6 +85,39 @@ const useStyles = makeStyles((theme: Theme) => ({
 			marginTop: "20vh",
 			height: "2rem",
 			width: "7.5rem",
+		},
+	},
+	registerButtonSmall: {
+		height: "2.15rem",
+		width: "10rem",
+		[theme.breakpoints.up("lg")]: {
+			marginTop: (props) =>
+				props ? theme.spacing(-7) : theme.spacing(-10),
+			marginLeft: theme.spacing(15),
+			paddingLeft: theme.spacing(10),
+			paddingRight: theme.spacing(10),
+		},
+		[theme.breakpoints.down("lg")]: {
+			marginTop: (props) =>
+				props ? theme.spacing(-8) : theme.spacing(-11),
+			marginLeft: theme.spacing(20),
+			paddingLeft: theme.spacing(10),
+			paddingRight: theme.spacing(10),
+		},
+		[theme.breakpoints.down(1800)]: {
+			marginTop: (props) =>
+				props ? theme.spacing(-10) : theme.spacing(-12),
+			marginLeft: theme.spacing(25),
+			paddingLeft: theme.spacing(10),
+			paddingRight: theme.spacing(10),
+		},
+		[theme.breakpoints.down(1050)]: {
+			paddingLeft: theme.spacing(6.5),
+			paddingRight: theme.spacing(6.5),
+			width: "5rem",
+			marginLeft: theme.spacing(22.5),
+			marginTop: (props) =>
+				props ? theme.spacing(-12) : theme.spacing(-14),
 		},
 	},
 	registerText: {
@@ -153,59 +172,6 @@ const useStyles = makeStyles((theme: Theme) => ({
 			marginLeft: "1vw",
 		},
 	},
-	headerHomeDiv: {
-		marginLeft: "47vw",
-		[theme.breakpoints.down("xl")]: {
-			marginLeft: "37vw",
-		},
-		[theme.breakpoints.down("lg")]: {
-			marginLeft: "27vw",
-		},
-		[theme.breakpoints.down("md")]: {
-			marginLeft: "13vw",
-		},
-	},
-	whiteColor: {
-		color: "white",
-		paddingLeft: 20,
-	},
-	whiteColor1: {
-		color: "white",
-	},
-	starImg: {
-		width: 20,
-		height: 20,
-	},
-	select: {
-		"& ul": {
-			backgroundColor: theme.palette.common.white,
-		},
-		"& li": {
-			color: theme.palette.common.black,
-			fontSize: 14,
-		},
-	},
-	versionSelect: {
-		width: 95,
-		height: 40,
-		backgroundColor: "rgba(0, 0, 0, 0.1)",
-		borderRadius: 3,
-	},
-	starsBtn: {
-		marginTop: 4,
-		textTransform: "none",
-		width: 95,
-		height: 40,
-		backgroundColor: "rgba(0, 0, 0, 0.1)",
-		borderRadius: 3,
-		"&:hover": {
-			background: "rgba(0, 0, 0, 0.1)",
-		},
-	},
-	starsText: {
-		color: theme.palette.common.white,
-		paddingLeft: 7,
-	},
 	contributeBtn: {
 		margin: "auto",
 		color: "#000000",
@@ -232,35 +198,10 @@ const useStyles = makeStyles((theme: Theme) => ({
 		fontSize: "1.25rem",
 		fontWeight: 700,
 	},
-	getStarted: {
-		backgroundColor: "#5B44BA",
-		borderRadius: 4,
-		width: 230,
-		height: 51,
-		color: theme.palette.common.white,
-		margin: "auto",
-		textTransform: "none",
-		"&:hover": {
-			backgroundColor: "#5B44BA",
-		},
-	},
-	handleStar: {
-		borderRadius: 4,
-		width: 230,
-		height: 51,
-		margin: "auto",
-		textTransform: "none",
-		color: theme.palette.common.black,
-		border: "2px solid #000000",
-	},
 	backdrop: {
 		background:
 			"linear-gradient(180deg,rgba(255, 136, 0, 0.65),rgba(229, 46, 113, 0.65))",
 		backdropFilter: "blur(20px)",
-	},
-	menuStarBtn: {
-		paddingLeft: 10,
-		paddingBottom: 5,
 	},
 	menuItem: {
 		outline: "none",
