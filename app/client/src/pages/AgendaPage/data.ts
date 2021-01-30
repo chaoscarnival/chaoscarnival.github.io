@@ -170,7 +170,10 @@ export default [
 			tags: ["Chaos Engineering"],
 			id: 8,
 		},
-	},
+    },
+    {
+        content: 'break'
+    },
 	{
 		time: "1:15 PM",
 		duration: "(45min)",

@@ -1,10 +1,11 @@
 import { Button, Modal, Typography } from "@material-ui/core";
+import ClearIcon from "@material-ui/icons/Clear";
 import * as React from "react";
 import { useState } from "react";
 import "../../scrollbar.css";
+import Break from "./Break";
 import data from "./data";
 import { useStyles } from "./styles";
-import ClearIcon from "@material-ui/icons/Clear";
 
 interface PopOverModal {
 	modalState: boolean;
@@ -142,84 +143,109 @@ const AgendaPage: React.FC = () => {
 				{/* Header */}
 				<h1 className={classes.title}>Agenda</h1>
 				{/* Day wise schedule */}
-				<div>
-					<div className={classes.header}>
-						<h1 style={{ marginLeft: "7%", lineHeight: "5rem" }}>
-							Wednesday, Feb 10
-						</h1>
-					</div>
+
+				<div className={classes.header}>
+					<h1 style={{ marginLeft: "7%", lineHeight: "5rem" }}>
+						Wednesday, Feb 10
+					</h1>
 				</div>
+
 				{/* Agenda Table */}
-				<span className={classes.details}>
+				<div className={classes.details}>
 					{data.map((d, i) => {
 						return (
-							<div className={classes.block}>
-								<div className={classes.time}>
-									{d.time}
-									<br />
-									<span
-										style={{
-											fontSize: "0.8rem",
-											color: "rgba(255, 255, 255, 0.6)",
-										}}
-									>
-										{d.duration}
-									</span>
-								</div>
-								{i === 0 ? (
-									// For Keynote speaker
-									<>{Keynote(d)}</>
+							<>
+								{d.content === "break" ? (
+									<Break />
 								) : (
-									// For Regular speakers
-									<>
-										<div
-											className={classes.speaker1details}
-											style={{
-												background: `${d.speaker1?.background}`,
-											}}
-										>
-											<h2>{d.speaker1?.sessionName}</h2>
-											{/* Tags */}
-											{d.speaker1?.speaker.map((s) => {
-												return (
-													<>
-														{Speaker(
-															s,
-															s.companyLogo,
+									<div className={classes.block}>
+										<div className={classes.time}>
+											{d.time}
+											<br />
+											<span
+												style={{
+													fontSize: "0.8rem",
+													color:
+														"rgba(255, 255, 255, 0.6)",
+												}}
+											>
+												{d.duration}
+											</span>
+										</div>
+										{i === 0 ? (
+											// For Keynote speaker
+											<>{Keynote(d)}</>
+										) : (
+											// For Regular speakers
+											<>
+												<div
+													className={
+														classes.speaker1details
+													}
+													style={{
+														background: `${d.speaker1?.background}`,
+													}}
+												>
+													<h2>
+														{
 															d.speaker1
-														)}
-													</>
-												);
-											})}
-										</div>
+																?.sessionName
+														}
+													</h2>
+													{/* Tags */}
+													{d.speaker1?.speaker.map(
+														(s) => {
+															return (
+																<>
+																	{Speaker(
+																		s,
+																		s.companyLogo,
+																		d.speaker1
+																	)}
+																</>
+															);
+														}
+													)}
+												</div>
 
-										<div
-											className={classes.speaker2details}
-											style={{
-												background: `${d.speaker2?.background}`,
-											}}
-										>
-											<h2>{d.speaker2?.sessionName}</h2>
-											{/* Tags */}
-											{d.speaker2?.speaker.map((s) => {
-												return (
-													<>
-														{Speaker(
-															s,
-															s.companyLogo,
+												<div
+													className={
+														classes.speaker2details
+													}
+													style={{
+														background: `${d.speaker2?.background}`,
+													}}
+												>
+													<h2>
+														{
 															d.speaker2
-														)}
-													</>
-												);
-											})}
-										</div>
-									</>
+																?.sessionName
+														}
+													</h2>
+													{/* Tags */}
+													{d.speaker2?.speaker.map(
+														(s) => {
+															return (
+																<>
+																	{Speaker(
+																		s,
+																		s.companyLogo,
+																		d.speaker2
+																	)}
+																</>
+															);
+														}
+													)}
+												</div>
+											</>
+										)}
+									</div>
 								)}
-							</div>
+							</>
 						);
 					})}
 					{Closing("3:00 PM", "(10min)", "Day 1 Closing Remarks")}
-				</span>
+				</div>
 				<Modal
 					open={modalStatus.modalState}
 					onClose={handleClose}

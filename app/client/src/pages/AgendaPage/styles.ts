@@ -40,6 +40,14 @@ export const useStyles = makeStyles((theme) => ({
 		paddingBottom: "1rem",
 	},
 
+	// Break
+	breakTime: {
+		height: "5rem",
+		fontSize: "1rem",
+		marginLeft: "0.5rem",
+		paddingTop: "1.5%",
+	},
+
 	// For Keynote Speaker
 	keynoteLeftDetail: {
 		float: "left",
