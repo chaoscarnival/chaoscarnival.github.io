@@ -71,7 +71,7 @@ export const useStyles = makeStyles((theme) => ({
 
 		"& #image": {
 			width: "3rem",
-			height: '3rem'
+			height: "3rem",
 		},
 		"& #subtitle": {
 			marginLeft: "1rem",
@@ -81,5 +81,52 @@ export const useStyles = makeStyles((theme) => ({
 		"&:hover": {
 			cursor: "pointer",
 		},
+	},
+
+	//Modal Styles
+	modal: {
+		margin: "auto",
+		padding: 50,
+		height: "80%",
+		width: "65%",
+		backgroundColor: "#161A1D",
+		border: "2px solid rgba(255, 255, 255, 0.2)",
+	},
+	modalCloseBtn: {
+		display: "block",
+		marginLeft: "auto",
+		border: "1px solid #777777",
+		minWidth: "36px",
+		minHeight: "36px",
+		"&:hover": {
+			backgroundColor: "transparent !important",
+			border: "1px solid #777777 !important",
+		},
+	},
+	modalContent: {
+		display: "flex",
+		flexDirection: "row",
+		margin: "auto",
+		marginTop: 40,
+		marginLeft: 40,
+	},
+	modalTitle: {
+		fontSize: "18px",
+		fontWeight: 700,
+		WebkitBackgroundClip: "text",
+		WebkitTextFillColor: "transparent",
+		background:
+			"-webkit-linear-gradient(89.85deg, #BCA1F7 0%, #EE759C 98.01%)",
+	},
+	modalRole: {
+		fontSize: "16px",
+		color: "#FFFFFF",
+	},
+	modalSessionName: {
+		fontSize: "26px",
+		fontWeight: 500,
+		width: "500px",
+		color: "#FFFFFF",
+		lineHeight: "36.4px",
 	},
 }));

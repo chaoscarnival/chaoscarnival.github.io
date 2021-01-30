@@ -1,15 +1,14 @@
-import { Modal, Typography } from "@material-ui/core";
+import { Button, Modal, Typography } from "@material-ui/core";
 import * as React from "react";
 import { useState } from "react";
 import "../../scrollbar.css";
 import data from "./data";
 import { useStyles } from "./styles";
+import ClearIcon from "@material-ui/icons/Clear";
 
 interface PopOverModal {
 	modalState: boolean;
-	speakerImg: string;
-	speakerName: string;
-	speakerRole: string;
+	speakerData: any;
 	sessionName: string;
 	sessionTime: string;
 	sessionDescription: string;
@@ -20,30 +19,23 @@ const AgendaPage: React.FC = () => {
 	const classes = useStyles();
 	const [modalStatus, setModalStatus] = useState<PopOverModal>({
 		modalState: false,
-		speakerImg: "",
-		speakerName: "",
-		speakerRole: "",
+		speakerData: "",
 		sessionName: "",
 		sessionTime: "",
 		sessionDescription: "",
 		sessionTags: [""],
 	});
-	const Speaker = (
-		image: string,
-		name: string,
-		role: string,
-		companyLogo: string | undefined,
-		d: any
-	) => {
+
+	console.log(modalStatus);
+
+	const Speaker = (s: any, companyLogo: string | undefined, d: any) => {
 		return (
 			<div
 				className={classes.speaker}
 				onClick={() => {
 					setModalStatus({
 						modalState: true,
-						speakerName: name,
-						speakerRole: role,
-						speakerImg: image,
+						speakerData: s,
 						sessionName: d.sessionName,
 						sessionTime: "",
 						sessionDescription: d.description,
@@ -52,10 +44,10 @@ const AgendaPage: React.FC = () => {
 				}}
 			>
 				<div style={{ display: "flex" }}>
-					<img src={image} id="image" alt="speakerImg" />
+					<img src={s.speakerImage} id="image" alt="speakerImg" />
 					<div style={{ marginTop: "0.5rem" }}>
-						<Typography id="subtitle">{name}</Typography>
-						<Typography id="subtitle">{role}</Typography>
+						<Typography id="subtitle">{s.name}</Typography>
+						<Typography id="subtitle">{s.role}</Typography>
 					</div>
 				</div>
 				{companyLogo !== undefined ? (
@@ -107,36 +99,27 @@ const AgendaPage: React.FC = () => {
 	const handleClose = () => {
 		setModalStatus({
 			modalState: false,
-			speakerImg: "",
-			speakerName: "",
-			speakerRole: "",
+			speakerData: "",
 			sessionName: "",
 			sessionTime: "",
 			sessionDescription: "",
 			sessionTags: [""],
 		});
 	};
-	const Keynote = (title?: string, speaker?: Array<Object>) => {
+	const Keynote = (keynote: any) => {
 		return (
 			<>
+				{console.log(keynote)}
 				<div className={classes.keynoteLeftDetail}>
-					<h1>{title}</h1>
-					{speaker?.map((s) => (
-						<>
-							{Speaker(
-								Object.values(s)[2],
-								Object.values(s)[0],
-								Object.values(s)[1],
-								undefined,
-								speaker
-							)}
-						</>
+					<h1>{keynote.sessionName}</h1>
+					{keynote.speaker?.map((s) => (
+						<>{Speaker(s, undefined, keynote)}</>
 					))}
 				</div>
 				<div className={classes.keynoteRightDetail}>
-					{speaker?.map((s) => (
+					{keynote.speaker?.map((s) => (
 						<img
-							src={Object.values(s)[3]}
+							src={s.companyLogo}
 							style={{
 								position: "absolute",
 								bottom: "30%",
@@ -185,7 +168,7 @@ const AgendaPage: React.FC = () => {
 								</div>
 								{i === 0 ? (
 									// For Keynote speaker
-									<>{Keynote(d.sessionName, d.speaker)}</>
+									<>{Keynote(d)}</>
 								) : (
 									// For Regular speakers
 									<>
@@ -201,10 +184,8 @@ const AgendaPage: React.FC = () => {
 												return (
 													<>
 														{Speaker(
-															Object.values(s)[2],
-															Object.values(s)[0],
-															Object.values(s)[1],
-															Object.values(s)[3],
+															s,
+															s.companyLogo,
 															d.speaker1
 														)}
 													</>
@@ -224,10 +205,8 @@ const AgendaPage: React.FC = () => {
 												return (
 													<>
 														{Speaker(
-															Object.values(s)[2],
-															Object.values(s)[0],
-															Object.values(s)[1],
-															Object.values(s)[3],
+															s,
+															s.companyLogo,
 															d.speaker2
 														)}
 													</>
@@ -244,29 +223,77 @@ const AgendaPage: React.FC = () => {
 				<Modal
 					open={modalStatus.modalState}
 					onClose={handleClose}
-					style={{
-						margin: "auto",
-						padding: 50,
-						height: "70%",
-						width: "60%",
-						backgroundColor: "#161A1D",
-					}}
+					className={classes.modal}
 				>
 					<>
-						<Typography className={classes.title}>
-							{modalStatus.speakerName}
-						</Typography>
-						<Typography>{modalStatus.sessionName}</Typography>
-						{modalStatus.sessionTags.map((a) => {
-							return (
-								<Typography style={{ color: "white" }}>
-									{a}
+						<div style={{ width: "100%" }}>
+							<Button
+								onClick={handleClose}
+								className={classes.modalCloseBtn}
+							>
+								<ClearIcon style={{ color: "#777777" }} />
+							</Button>
+						</div>
+						<div className={classes.modalContent}>
+							<div
+								style={{
+									display: "flex",
+									flexDirection: "column",
+								}}
+							>
+								<img
+									src={modalStatus.speakerData.modalLogo}
+									alt="Speaker Image"
+									style={{
+										height: "220px",
+										width: "192px",
+										borderRadius: 5,
+									}}
+								/>
+								<Typography className={classes.modalTitle}>
+									{modalStatus.speakerData.name}
 								</Typography>
-							);
-						})}
-						<Typography style={{ color: "white" }}>
-							{modalStatus.sessionTime}
-						</Typography>
+								<Typography className={classes.modalRole}>
+									{modalStatus.speakerData.role}
+								</Typography>
+							</div>
+							<div
+								style={{
+									display: "flex",
+									flexDirection: "column",
+									marginLeft: 40,
+								}}
+							>
+								<Typography
+									className={classes.modalSessionName}
+								>
+									{modalStatus.sessionName}
+								</Typography>
+								{modalStatus.sessionTags?.map((a) => {
+									return (
+										<Typography style={{ color: "white" }}>
+											{a}
+										</Typography>
+									);
+								})}
+								<Typography
+									style={{
+										color: "white",
+										width: "500px",
+										fontSize: "16px",
+									}}
+								>
+									Join the pre-show before the Google Keynote
+									starts which will bring two AI Experiments
+									to life: NSynth, a synthesizer that
+									generates new sounds using neural networks
+									and World Draw, a live interactive
+									experience to draw the world together using
+									the same technology behind QuickDraw and
+									AutoDraw.
+								</Typography>
+							</div>
+						</div>
 					</>
 				</Modal>
 			</div>
