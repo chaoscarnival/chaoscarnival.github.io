@@ -71,6 +71,7 @@ export const useStyles = makeStyles((theme) => ({
 
 		"& #image": {
 			width: "3rem",
+			height: '3rem'
 		},
 		"& #subtitle": {
 			marginLeft: "1rem",

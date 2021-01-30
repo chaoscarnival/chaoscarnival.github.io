@@ -62,14 +62,44 @@ const AgendaPage: React.FC = () => {
 					<img
 						style={{
 							marginTop: "0.5rem",
-							height: "15%",
-							width: "25%",
-							objectFit: "cover",
+							height: "10%",
+							objectFit: "contain",
 						}}
 						src={companyLogo}
 						alt="companyLogo"
 					/>
 				) : null}
+			</div>
+		);
+	};
+
+	const Closing = (time: string, duration: string, text: string) => {
+		return (
+			<div className={classes.block}>
+				<div className={classes.time}>
+					{time}
+					<br />
+					<span
+						style={{
+							fontSize: "0.8rem",
+							color: "rgba(255, 255, 255, 0.6)",
+						}}
+					>
+						{duration}
+					</span>
+				</div>
+				<div
+					style={{
+						background: "rgba(255, 255, 255, 0.05)",
+						width: "70%",
+						height: "5rem",
+						lineHeight: "3rem",
+					}}
+				>
+					<span>
+						<h2 style={{ paddingLeft: "1rem" }}>{text}</h2>
+					</span>
+				</div>
 			</div>
 		);
 	};
@@ -209,6 +239,7 @@ const AgendaPage: React.FC = () => {
 							</div>
 						);
 					})}
+					{Closing("3:00 PM", "(10min)", "Day 1 Closing Remarks")}
 				</span>
 				<Modal
 					open={modalStatus.modalState}
