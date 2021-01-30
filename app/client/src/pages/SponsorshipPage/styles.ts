@@ -14,8 +14,9 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexDirection: "row",
 		paddingTop: 150,
-		marginLeft: 130,
+		marginLeft: "13vw",
 		marginRight: 130,
+		width: "75vw",
 		[theme.breakpoints.up("xl")]: {
 			width: 1550,
 			margin: "0 auto",
@@ -128,10 +129,11 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	customizedTable: {
-		marginLeft: 180,
+		marginLeft: "15vw",
 		marginRight: 180,
 		marginTop: 30,
 		paddingBottom: 50,
+		width: "70vw",
 		[theme.breakpoints.up("xl")]: {
 			maxWidth: 1420,
 			margin: "0 auto",
