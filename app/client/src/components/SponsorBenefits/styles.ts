@@ -7,7 +7,7 @@ export const useStyles = makeStyles((theme) => ({
 		marginTop: 40,
 	},
 	mainDiv: {
-		marginLeft: 140,
+		marginLeft: "15vw",
 		marginRight: 140,
 		paddingBottom: 60,
 		[theme.breakpoints.up("xl")]: {

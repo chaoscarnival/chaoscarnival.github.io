@@ -169,6 +169,9 @@ export const useStyles = makeStyles((theme) => ({
 		width: "45%",
 		flexDirection: "column",
 		marginTop: "65vh",
+		[theme.breakpoints.up("sm")]: {
+			marginLeft: "5vw",
+		},
 		[theme.breakpoints.down(1150)]: {
 			marginTop: "45vh",
 		},
