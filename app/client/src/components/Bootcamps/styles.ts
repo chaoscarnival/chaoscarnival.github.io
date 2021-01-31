@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
 	root: {
 		width: "85%",
+		maxWidth: "70rem",
 		margin: "0 auto",
 		[theme.breakpoints.down("sm")]: {
 			width: "90%",
