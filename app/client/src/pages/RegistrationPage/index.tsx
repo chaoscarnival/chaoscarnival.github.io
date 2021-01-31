@@ -168,7 +168,7 @@ function RegistrationPage() {
 			style={{ background: "#070E23" }}
 		>
 			<div className={classes.rootContainer}>
-				<MainHeader inHomePage={true} linksActive={false} />
+				<MainHeader />
 				<div className={classes.root}>
 					<div className={classes.mainDiv}>
 						<div className={classes.formArea}>

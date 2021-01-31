@@ -13,19 +13,19 @@ import {
 import CloseIcon from "@material-ui/icons/Close";
 import gtag from "ga-gtag";
 import React from "react";
+import { useLocation } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import history from "../../history";
 import CountDown from "../CountDown";
 import useStyles from "./styles";
 
-interface MainHeaderProps {
-	inHomePage: boolean;
-	linksActive: boolean;
-}
-
-const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
-	const classes = useStyles(inHomePage);
+const MainHeader: React.FC = () => {
+	const classes = useStyles();
 	const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 	const open = Boolean(anchorEl);
+
+	const { pathname } = useLocation();
+	const inHomePage = pathname === "/";
 
 	const handleClick = (event: React.MouseEvent<HTMLElement>) => {
 		setAnchorEl(event.currentTarget);
@@ -60,11 +60,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 					<div className={classes.toolbarDiv}>
 						<div>
 							<img
-								src={
-									inHomePage
-										? "/icons/chaoscarnival-header-min.png"
-										: "/icons/chaoscarnival-header-dark-min.png"
-								}
+								src="/icons/chaoscarnival-header-min.png"
 								alt=" header"
 								className={classes.mainLogo}
 								onClick={() => history.push("/")}
@@ -78,8 +74,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 										gtag_report_conversion(
 											"https://chaoscarnival.io/register"
 										);
-										window.location.href =
-											"https://chaoscarnival.io/register";
+										history.push("/register");
 									}}
 								>
 									<Typography
@@ -93,15 +88,13 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 								</Button>
 							</Hidden>
 						</div>
+
 						<div className={classes.flexLinks}>
 							<Hidden smDown>
 								<div>
-									<a
-										href={
-											inHomePage && linksActive
-												? "#home"
-												: "https://chaoscarnival.io/#home"
-										}
+									<Link
+										to="/#home"
+										smooth
 										style={{ textDecoration: "none" }}
 									>
 										<Typography
@@ -109,13 +102,13 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 										>
 											Home
 										</Typography>
-									</a>
+									</Link>
 								</div>
 							</Hidden>
 							<Hidden smDown>
 								<div className={classes.headerDiv}>
-									<a
-										href={"https://chaoscarnival.io/agenda"}
+									<Link
+										to="/agenda"
 										style={{ textDecoration: "none" }}
 									>
 										<Typography
@@ -123,17 +116,14 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 										>
 											Agenda
 										</Typography>
-									</a>
+									</Link>
 								</div>
 							</Hidden>
 							<Hidden smDown>
 								<div className={classes.headerDiv}>
-									<a
-										href={
-											inHomePage && linksActive
-												? "#speakers"
-												: "https://chaoscarnival.io/#speakers"
-										}
+									<Link
+										to="/#speakers"
+										smooth
 										style={{ textDecoration: "none" }}
 									>
 										<Typography
@@ -141,33 +131,26 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 										>
 											Speakers
 										</Typography>
-									</a>
+									</Link>
 								</div>
 							</Hidden>
+
 							<Hidden smDown>
 								<div className={classes.headerDiv}>
-									<a
-										href={
-											"https://chaoscarnival.io/bootcamps"
-										}
-										style={{ textDecoration: "none" }}
-									>
+									<Link to="/bootcamps">
 										<Typography
 											className={classes.headerFont}
 										>
 											Bootcamps
 										</Typography>
-									</a>
+									</Link>
 								</div>
 							</Hidden>
 							<Hidden smDown>
 								<div className={classes.headerDiv}>
-									<a
-										href={
-											inHomePage && linksActive
-												? "#sponsors"
-												: "https://chaoscarnival.io/#sponsors"
-										}
+									<Link
+										to="/#sponsors"
+										smooth
 										style={{ textDecoration: "none" }}
 									>
 										<Typography
@@ -175,7 +158,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 										>
 											Sponsors
 										</Typography>
-									</a>
+									</Link>
 								</div>
 							</Hidden>
 							<Hidden smDown>
@@ -183,7 +166,6 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 									<CountDown
 										timeTillDate="02 10 2021, 8:00 am"
 										timeFormat="MM DD YYYY, h:mm a"
-										inHomePage={inHomePage}
 									/>
 								</div>
 							</Hidden>
@@ -194,14 +176,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 									onClick={handleClick}
 									className={classes.menu}
 								>
-									<img
-										src={
-											inHomePage
-												? "/icons/menu.svg"
-												: "/icons/menud.svg"
-										}
-										alt="menu"
-									/>
+									<img src="/icons/menu.svg" alt="menu" />
 								</IconButton>
 
 								<Menu
@@ -247,6 +222,8 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 											onClick={() => history.push("/")}
 										/>
 									</MenuItem>
+
+									{/* Nav links */}
 									<MenuItem
 										className={classes.menuItem}
 										button={false}
@@ -256,12 +233,9 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 											className={classes.contributeBtn}
 											onClick={handleClose}
 										>
-											<a
-												href={
-													inHomePage && linksActive
-														? "#home"
-														: "https://chaoscarnival.io/#home"
-												}
+											<Link
+												to="/#home"
+												smooth
 												style={{
 													textDecoration: "none",
 													color: "#fff",
@@ -269,7 +243,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 												}}
 											>
 												Home
-											</a>
+											</Link>
 										</Typography>
 									</MenuItem>
 									<MenuItem
@@ -281,10 +255,9 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 											className={classes.contributeBtn}
 											onClick={handleClose}
 										>
-											<a
-												href={
-													"https://chaoscarnival.io/agenda"
-												}
+											<Link
+												to="/#agenda"
+												smooth
 												style={{
 													textDecoration: "none",
 													color: "#fff",
@@ -292,7 +265,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 												}}
 											>
 												Agenda
-											</a>
+											</Link>
 										</Typography>
 									</MenuItem>
 									<MenuItem
@@ -304,12 +277,9 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 											className={classes.contributeBtn}
 											onClick={handleClose}
 										>
-											<a
-												href={
-													inHomePage && linksActive
-														? "#speakers"
-														: "https://chaoscarnival.io/#speakers"
-												}
+											<Link
+												to="/#speakers"
+												smooth
 												style={{
 													textDecoration: "none",
 													color: "#fff",
@@ -317,7 +287,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 												}}
 											>
 												Speakers
-											</a>
+											</Link>
 										</Typography>
 									</MenuItem>
 									<MenuItem
@@ -329,10 +299,8 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 											className={classes.contributeBtn}
 											onClick={handleClose}
 										>
-											<a
-												href={
-													"https://chaoscarnival.io/bootcamps"
-												}
+											<Link
+												to="/bootcamps"
 												style={{
 													textDecoration: "none",
 													color: "#fff",
@@ -340,7 +308,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 												}}
 											>
 												Bootcamps
-											</a>
+											</Link>
 										</Typography>
 									</MenuItem>
 									<MenuItem
@@ -352,12 +320,9 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 											className={classes.contributeBtn}
 											onClick={handleClose}
 										>
-											<a
-												href={
-													inHomePage && linksActive
-														? "#sponsors"
-														: "https://chaoscarnival.io/#sponsors"
-												}
+											<Link
+												to="/#sponsors"
+												smooth
 												style={{
 													textDecoration: "none",
 													color: "#fff",
@@ -365,7 +330,7 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 												}}
 											>
 												Sponsors
-											</a>
+											</Link>
 										</Typography>
 									</MenuItem>
 									<MenuItem
@@ -391,10 +356,9 @@ const MainHeader: React.FC<MainHeaderProps> = ({ inHomePage, linksActive }) => {
 													marginTop: "2rem",
 													width: "100%",
 												}}
-												onClick={() => {
-													window.location.href =
-														"https://chaoscarnival.io/register";
-												}}
+												onClick={() =>
+													history.push("/register")
+												}
 											>
 												<Typography
 													className={
