@@ -5,7 +5,7 @@ import MainHeader from "../../components/Header";
 import JoinCarnival from "../../components/JoinCarnival";
 import Sponsors from "../../components/Sponsors";
 import "../../scrollbar.css";
-import bootcamps from "../../utils/bootcampData";
+import bootcamps from "../../data/bootcampData";
 import { useStyles } from "./styles";
 
 function BootcampPage() {
