@@ -11,6 +11,7 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	// Title text
 	title: {
+		fontSize: 60,
 		fontWeight: 700,
 		width: "fit-content",
 		WebkitBackgroundClip: "text",
