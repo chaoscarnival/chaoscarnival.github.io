@@ -34,14 +34,22 @@ const Bootcamps: React.FC<BootcampsProps> = ({ bootcamps }) => {
 					const { time: endTime } = getLocale(endDateTime);
 					return (
 						<div className={classes.bootcampCard}>
-							<Typography variant="h2">{title}</Typography>
-							<Typography>{description}</Typography>
-							<Button href={joinUrl}>Join the Bootcamp</Button>
 							<div>
+								<Typography variant="h2">{title}</Typography>
+								<Typography>{description}</Typography>
+							</div>
+							<div>
+								<Button
+									onClick={() =>
+										(window.location.href = joinUrl)
+									}
+								>
+									Join the Bootcamp
+								</Button>
 								<Typography>{dateString}</Typography>
-								<Typography>{startTime}</Typography>
-								<Typography>{endTime}</Typography>
-								<Typography>{timeZone}</Typography>
+								<Typography>
+									{startTime} - {endTime} ({timeZone})
+								</Typography>
 							</div>
 						</div>
 					);
