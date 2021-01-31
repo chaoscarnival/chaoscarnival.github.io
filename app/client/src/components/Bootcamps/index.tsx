@@ -1,4 +1,5 @@
 import { Button, Typography } from "@material-ui/core";
+import OpenInNewIcon from "@material-ui/icons/OpenInNew";
 import React from "react";
 import { getLocale } from "../../utils/getLocale";
 import { useStyles } from "./styles";
@@ -20,6 +21,7 @@ const Bootcamps: React.FC<BootcampsProps> = ({ bootcamps }) => {
 
 	return (
 		<div className={classes.root}>
+			<Typography className={classes.title}>Bootcamps</Typography>
 			{bootcamps.map(
 				({
 					title,
@@ -34,17 +36,17 @@ const Bootcamps: React.FC<BootcampsProps> = ({ bootcamps }) => {
 					const { time: endTime } = getLocale(endDateTime);
 					return (
 						<div className={classes.bootcampCard}>
-							<div>
-								<Typography variant="h2">{title}</Typography>
+							<div className={classes.info}>
+								<Typography variant="h4">{title}</Typography>
 								<Typography>{description}</Typography>
 							</div>
-							<div>
+							<div className={classes.action}>
 								<Button
 									onClick={() =>
 										(window.location.href = joinUrl)
 									}
 								>
-									Join the Bootcamp
+									Join the Bootcamp <OpenInNewIcon />
 								</Button>
 								<Typography>{dateString}</Typography>
 								<Typography>
