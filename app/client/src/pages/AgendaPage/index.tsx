@@ -6,6 +6,9 @@ import "../../scrollbar.css";
 import Break from "./Break";
 import data from "./data";
 import { useStyles } from "./styles";
+import MainHeader from "../../components/Header";
+import JoinCarnival from "../../components/JoinCarnival";
+import Footer from "../../components/Footer";
 
 interface PopOverModal {
 	modalState: boolean;
@@ -165,7 +168,7 @@ const AgendaPage: React.FC = () => {
 
 	return (
 		<>
-			{/* <MainHeader inHomePage={true} linksActive={true} /> */}
+			<MainHeader />
 			{/* Agenda Page Content */}
 			<div className={classes.root}>
 				{/* Header */}
@@ -173,7 +176,7 @@ const AgendaPage: React.FC = () => {
 				{/* Day wise schedule */}
 
 				<div className={classes.header}>
-					<h1 style={{ marginLeft: "7%", lineHeight: "5rem" }}>
+					<h1 style={{ marginLeft: "17%", lineHeight: "5rem" }}>
 						Wednesday, Feb 10
 					</h1>
 				</div>
@@ -376,6 +379,13 @@ const AgendaPage: React.FC = () => {
 				</Modal>
 			</div>
 			<br />
+			<div style={{ marginTop: "auto" }}>
+				<JoinCarnival />
+			</div>
+
+			<div style={{ marginTop: "auto" }}>
+				<Footer />
+			</div>
 			{/* Footer */}
 			{/* <Footer /> */}
 		</>

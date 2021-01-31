@@ -18,7 +18,7 @@ function SponsorshipPage() {
 	return (
 		<div className="scrollbar scrollbar-primary">
 			<div className={classes.rootContainer}>
-				<MainHeader inHomePage={false} linksActive={true} />
+				<MainHeader />
 				<div>
 					{/* Header component */}
 					<div className={classes.headerDiv}>
