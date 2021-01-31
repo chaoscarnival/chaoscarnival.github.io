@@ -26,7 +26,6 @@ export const useStyles = makeStyles((theme) => ({
 
 	block: {
 		display: "flex",
-		margin: "0.1rem 0",
 		minHeight: "10rem",
 	},
 	time: {
