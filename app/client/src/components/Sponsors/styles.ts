@@ -60,9 +60,9 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	sponsorDiv: {
+		textAlign: "center",
 		width: "100%",
 		margin: "0 auto",
-		textAlign: "center",
 		paddingTop: 20,
 		[theme.breakpoints.down("xs")]: {
 			paddingBottom: 30,

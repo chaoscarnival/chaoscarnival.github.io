@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
 	root: {
 		background: "#070E23",
-		paddingTop: "10rem",
 		paddingLeft: "7%",
 	},
 	title: {
@@ -16,9 +15,8 @@ export const useStyles = makeStyles((theme) => ({
 	header: {
 		background:
 			"linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%)",
-		width: "107%",
 		height: "5rem",
-		marginLeft: "-7%",
+		marginLeft: "-20%",
 	},
 	details: {
 		width: "100%",

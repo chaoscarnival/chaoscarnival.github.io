@@ -2,9 +2,6 @@ import { makeStyles, Theme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme: Theme) => ({
 	appBar: {
-		width: "100vw",
-		margin: "auto",
-		position: "absolute",
 		background: (props) => (props ? "#070E23" : "white"),
 	},
 	divider: {

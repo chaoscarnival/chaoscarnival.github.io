@@ -47,7 +47,7 @@ function TeamPage() {
 
 	return (
 		<div className="scrollbar scrollbar-primary">
-			<MainHeader inHomePage={false} linksActive={true} />
+			<MainHeader />
 			<div className={classes.rootContainer}>
 				<div className={classes.wrapContainer}>
 					<p className={classes.mainHeader}>

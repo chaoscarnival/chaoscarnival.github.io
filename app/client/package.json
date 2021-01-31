@@ -6,11 +6,12 @@
 		"@material-ui/icons": "4.11.2",
 		"ga-gtag": "^1.0.1",
 		"js-cookie": "^2.2.1",
-		"moment": "^2.29.1",
+		"moment-timezone": "^0.5.32",
 		"public-ip": "^4.0.3",
 		"react": "16.12.0",
 		"react-dom": "16.12.0",
 		"react-router-dom": "5.1.2",
+		"react-router-hash-link": "^2.3.1",
 		"react-scripts": "^3.4.4",
 		"typescript": "3.7.5"
 	},

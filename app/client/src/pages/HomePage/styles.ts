@@ -15,17 +15,10 @@ export const useStyles = makeStyles((theme) => ({
 		height: "100vh",
 		display: "flex",
 		flexDirection: "column",
-		[theme.breakpoints.down(1450)]: {
-			marginTop: 0,
-		},
 		[theme.breakpoints.down(1200)]: {
 			height: "fit-content",
 		},
-		[theme.breakpoints.down("md")]: {
-			marginTop: theme.spacing(5),
-		},
 		[theme.breakpoints.down("xs")]: {
-			marginTop: 0,
 			height: "47.5rem",
 		},
 	},

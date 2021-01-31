@@ -3,158 +3,80 @@ import { makeStyles } from "@material-ui/core/styles";
 // Component styles
 export const useStyles = makeStyles((theme) => ({
 	root: {
-		minHeight: "fit-content",
-		height: "100%",
-		display: "flex",
-		flexDirection: "row",
-		justifyContent: "center",
-		alignItems: "center",
-		alignContent: "center",
-		background: "#070E23",
-	},
-	heading: {
-		display: "flex",
-		position: "relative",
-		flexDirection: "row",
-		justifyContent: "center",
-		alignItems: "center",
-		[theme.breakpoints.down("sm")]: {
-			flexDirection: "column",
-		},
-		[theme.breakpoints.down("xs")]: {
-			flexDirection: "column",
-		},
-	},
-	bootcamps: {
-		width: "80vw",
-		minHeight: "fit-content",
-		display: "flex",
-		flexDirection: "row",
-		justifyContent: "center",
-		alignItems: "center",
-		paddingTop: theme.spacing(10),
-		[theme.breakpoints.down("xs")]: {
-			paddingTop: 0,
-			height: "100vh",
-			marginTop: "4rem",
-			flexDirection: "column-reverse",
-		},
-	},
-	text: {
-		width: "50%",
-		[theme.breakpoints.down("xs")]: {
-			width: "100%",
-		},
-	},
-
-	image: {
-		width: "50%",
-		[theme.breakpoints.down("xs")]: {
-			width: "100%",
-		},
-	},
-
-	bootcampImg: {
+		width: "85%",
+		maxWidth: "70rem",
 		margin: "0 auto",
-		width: "500px",
-		[theme.breakpoints.up("xl")]: {
-			width: "500px",
-		},
-		[theme.breakpoints.down("lg")]: {
-			width: "500px",
-		},
-		[theme.breakpoints.down("md")]: {
-			width: "400px",
-		},
 		[theme.breakpoints.down("sm")]: {
-			width: "300px",
-		},
-		[theme.breakpoints.down("xs")]: {
-			width: "100%",
+			width: "90%",
 		},
 	},
-
-	chaosEngineeringText: {
+	// Title text
+	title: {
+		fontSize: 60,
 		fontWeight: 700,
-		textAlign: "left",
-		fontSize: 55,
-		[theme.breakpoints.down("md")]: {
-			fontSize: "50px",
-		},
-		[theme.breakpoints.down("sm")]: {
-			fontSize: "45px",
-		},
-		[theme.breakpoints.down("xs")]: {
-			fontSize: "40px",
-			marginLeft: "-3vw",
-		},
-	},
-	bootcampsText: {
-		fontWeight: 700,
-		fontSize: 55,
-		textAlign: "left",
 		width: "fit-content",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
-		color: "transparent",
-		backgroundClip: "text",
-		background: "linear-gradient(89.85deg, #BCA1F7 0.13%, #EE759C 98.01%)",
+		marginBottom: theme.spacing(2),
+		background:
+			"linear-gradient(270.88deg, #71BCF6 3.66%, #B4F59E 100.95%)",
+
 		[theme.breakpoints.down("md")]: {
-			fontSize: "50px",
+			fontSize: 50,
 		},
 		[theme.breakpoints.down("sm")]: {
-			fontSize: "50px",
+			fontSize: 45,
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "40px",
-			marginLeft: "-3vw",
+			fontSize: 40,
 		},
+	},
+	// Card design
+	bootcampCard: {
+		display: "flex",
+		flexWrap: "wrap",
+		justifyContent: "space-between",
+		padding: theme.spacing(6, 8),
+		[theme.breakpoints.down("sm")]: {
+			padding: theme.spacing(2),
+		},
+		background: "rgba(255, 255, 255, 0.05)",
+		backdropFilter: "blur(10px)",
+
+		// Border
+		border: "2.03px solid transparent",
+		borderImageSource:
+			"linear-gradient(89.08deg, #9867F0 7.01%, #EA5DAD 35.68%, #FF7571 71.78%, #FFE580 99.46%)",
+		borderImageSlice: 10,
+		borderRadius: 10,
 	},
 	info: {
-		marginTop: "5vh",
-		width: "50vw",
-		marginRight: "8vw",
-		[theme.breakpoints.down("xs")]: {
-			marginLeft: "-3vw",
-			marginRight: 0,
-			width: "100vw",
+		width: "70%",
+		"& h4": {
+			fontWeight: "bold",
+			marginBottom: theme.spacing(4),
+		},
+
+		[theme.breakpoints.down("sm")]: {
+			width: "auto",
+			"& h4": {
+				marginBottom: theme.spacing(3),
+			},
+			"& p": {
+				marginBottom: theme.spacing(4),
+			},
 		},
 	},
-	infoText: {
-		fontSize: "1.6rem",
-		textAlign: "left",
-		fontWeight: "bold",
-		[theme.breakpoints.down("md")]: {
-			fontSize: "1.4rem",
-			marginRight: theme.spacing(15),
-		},
-		[theme.breakpoints.down("sm")]: {
-			fontSize: "1.2rem",
-		},
-		[theme.breakpoints.down("xs")]: {
-			fontSize: "1.1rem",
-			marginRight: theme.spacing(10),
-		},
-	},
-	detailedInfoText: {
-		fontSize: "1.2rem",
-		textAlign: "left",
-		marginTop: theme.spacing(5),
-		marginBottom: theme.spacing(5),
-		marginRight: "30%",
-		[theme.breakpoints.down("lg")]: {
-			marginRight: "30%",
-		},
-		[theme.breakpoints.down("md")]: {
-			fontSize: "1rem",
-			marginRight: "25%",
-		},
-		[theme.breakpoints.down("sm")]: {
-			fontSize: "1.05rem",
-			marginRight: "15%",
-		},
-		[theme.breakpoints.down("xs")]: {
-			fontSize: "0.85rem",
+	action: {
+		"& button": {
+			background: "#FE1C65",
+			color: "#fff",
+			fontWeight: "bold",
+			marginBottom: theme.spacing(3),
+
+			"& svg": {
+				marginLeft: theme.spacing(1),
+			},
 		},
 	},
 }));

@@ -1,7 +1,6 @@
 import { Button, Typography } from "@material-ui/core";
 import gtag from "ga-gtag";
 import * as React from "react";
-import Bootcamps from "../../components/Bootcamps/index";
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/Header";
 import JoinCarnival from "../../components/JoinCarnival";
@@ -10,6 +9,7 @@ import { SpeakersSection } from "../../components/SpeakersSection/index";
 import Sponsors from "../../components/Sponsors";
 import WhyToAttend from "../../components/WhyToAttend";
 import "../../scrollbar.css";
+import Bootcamps from "./Bootcamps";
 import { useStyles } from "./styles";
 
 function HomePage() {
@@ -39,7 +39,7 @@ function HomePage() {
 				<a id="home" href="home">
 					{" "}
 				</a>
-				<MainHeader inHomePage={true} linksActive={true} />
+				<MainHeader />
 				<div className={classes.root}>
 					<div className={classes.mainDiv}>
 						<div className={classes.flexContainer}>

@@ -2,6 +2,7 @@ import { Button, Modal, Typography } from "@material-ui/core";
 import ClearIcon from "@material-ui/icons/Clear";
 import * as React from "react";
 import { useState } from "react";
+import MainHeader from "../../components/Header";
 import JoinCarnival from "../../components/JoinCarnival";
 import Sponsors from "../../components/Sponsors";
 import "../../scrollbar.css";
@@ -179,7 +180,7 @@ const AgendaPage: React.FC = () => {
 
 	return (
 		<>
-			{/* <MainHeader inHomePage={true} linksActive={true} /> */}
+			<MainHeader />
 			{/* Agenda Page Content */}
 			<div className={classes.root}>
 				{/* Header */}
@@ -187,7 +188,7 @@ const AgendaPage: React.FC = () => {
 				{/* Day 1 Agenda Table */}
 
 				<div className={classes.header}>
-					<h1 style={{ marginLeft: "7%", lineHeight: "5rem" }}>
+					<h1 style={{ marginLeft: "17%", lineHeight: "5rem" }}>
 						Wednesday, Feb 10
 					</h1>
 				</div>
@@ -323,7 +324,7 @@ const AgendaPage: React.FC = () => {
 				<br />
 				{/* Day 2 */}
 				<div className={classes.header}>
-					<h1 style={{ marginLeft: "7%", lineHeight: "5rem" }}>
+					<h1 style={{ marginLeft: "17%", lineHeight: "5rem" }}>
 						Thursday, Feb 11
 					</h1>
 				</div>
@@ -525,9 +526,11 @@ const AgendaPage: React.FC = () => {
 					</>
 				</Modal>
 			</div>
-			{/* Sponsors */}
+
 			<Sponsors />
+
 			<JoinCarnival />
+
 			{/* Footer */}
 			{/* <Footer /> */}
 		</>
