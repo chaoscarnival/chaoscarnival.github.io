@@ -13,7 +13,6 @@ import {
 import CloseIcon from "@material-ui/icons/Close";
 import gtag from "ga-gtag";
 import React from "react";
-import { useLocation } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import history from "../../history";
 import CountDown from "../CountDown";
@@ -23,9 +22,6 @@ const MainHeader: React.FC = () => {
 	const classes = useStyles();
 	const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 	const open = Boolean(anchorEl);
-
-	const { pathname } = useLocation();
-	const inHomePage = pathname === "/";
 
 	const handleClick = (event: React.MouseEvent<HTMLElement>) => {
 		setAnchorEl(event.currentTarget);

@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // Component styles
 export const useStyles = makeStyles((theme) => ({
 	// Card design
-	bootcampCard: {
+	sponsorBoothCard: {
 		display: "flex",
 		flexWrap: "wrap",
 		justifyContent: "space-between",
@@ -24,18 +24,22 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	info: {
 		width: "70%",
-		"& h4": {
-			fontWeight: "bold",
+		"& img": {
 			marginBottom: theme.spacing(4),
 		},
 
+		"& p": {
+			marginBottom: theme.spacing(4),
+		},
+
+		"& a, svg": {
+			color: "#488FDF",
+		},
+
 		[theme.breakpoints.down("md")]: {
-			width: "auto",
-			"& h4": {
+			"& img": {
 				marginBottom: theme.spacing(3),
-			},
-			"& p": {
-				marginBottom: theme.spacing(4),
+				width: "13.4375rem",
 			},
 		},
 
@@ -46,15 +50,31 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	action: {
-		"& button": {
+		"& button:first-child": {
 			background: "#FE1C65",
 			color: "#fff",
 			fontWeight: "bold",
 			marginBottom: theme.spacing(3),
 			padding: theme.spacing(2.25, 4),
+		},
+		"& p:nth-child(3)": {
+			marginBottom: theme.spacing(3),
+		},
+		"& #Slack": {
+			color: "#fff",
+			marginTop: theme.spacing(4),
+			padding: theme.spacing(1.5, 4),
+			textTransform: "none",
+			border: `1px solid #FE1C65`,
+		},
+		"& img": {
+			width: "1.4375rem",
+			marginRight: theme.spacing(1),
+		},
 
-			"& svg": {
-				marginLeft: theme.spacing(1),
+		[theme.breakpoints.down("md")]: {
+			"& button:first-child": {
+				marginTop: theme.spacing(3),
 			},
 		},
 	},
