@@ -267,13 +267,12 @@ export default [
 		time: "2:30 PM",
 		duration: "(45min)",
 		speaker1: {
-			sessionName: '',
+			sessionName: "",
 			speaker: [
 				{
 					name: "",
 					role: "",
-					speakerImage:
-						"",
+					speakerImage: "",
 					companyLogo: "",
 					modalLogo: "",
 				},
@@ -288,10 +287,9 @@ export default [
 				{
 					name: "Michael Knyazev",
 					role: "DevOps Consultant",
-					speakerImage:
-						"https://i.ibb.co/s3YB7Ly/Michael-IAG.png",
+					speakerImage: "https://i.ibb.co/s3YB7Ly/Michael-IAG.png",
 					companyLogo: "https://i.ibb.co/BnsWkPN/IAG.png",
-					modalLogo: "/speakers/Gunnard_PowerCode-min.jpg",
+					modalLogo: "/speakers/Michael_IAG-min.jpg",
 				},
 			],
 			description: "",

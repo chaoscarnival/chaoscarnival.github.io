@@ -9,7 +9,7 @@ export default [
 					"Maintainer of LitmusChaos project, Co-founder & COO at MayaData",
 				speakerImage: "https://i.ibb.co/6nF3D6L/Uma-Mayadata.png",
 				companyLogo: "https://i.ibb.co/X35X6hP/Mayadata.png",
-				modalLogo: "/images/keynote_speaker1.jpg",
+				modalLogo: "/images/keynote_speaker2.jpg",
 			},
 		],
 		time: "8:00 AM",
@@ -26,11 +26,9 @@ export default [
 				{
 					name: "Robert Barron",
 					role: "AIOps Lead",
-					speakerImage:
-						"https://i.ibb.co/dJBPhDH/Robert-IBM.png",
-					companyLogo:
-						"https://i.ibb.co/Ss17hJx/IBM.png",
-					modalLogo: "/speakers/Andreas_ContainerSolutions-min.jpg",
+					speakerImage: "https://i.ibb.co/dJBPhDH/Robert-IBM.png",
+					companyLogo: "https://i.ibb.co/Ss17hJx/IBM.png",
+					modalLogo: "/speakers/Robert_IBM-min.jpg",
 				},
 			],
 			description: "",
@@ -46,7 +44,7 @@ export default [
 					role: "Developer Advocate",
 					speakerImage: "https://i.ibb.co/kxCV8vd/Aravind-Intuit.png",
 					companyLogo: "https://i.ibb.co/hg13RFp/elastic.png",
-					modalLogo: "/speakers/Renaldi_GRES-min.jpg",
+					modalLogo: "/speakers/Aravind_Elastic-min.jpg",
 				},
 			],
 			description: "",
@@ -66,7 +64,7 @@ export default [
 					role: "Senior Software Engineer",
 					speakerImage: "https://i.ibb.co/vcKY5Bq/Delphine-Wipro.png",
 					companyLogo: "https://i.ibb.co/gMJkYDw/Wipro.png",
-					modalLogo: "/speakers/Vadim_Percona-min.jpg",
+					modalLogo: "/speakers/Delphine_Wipro-min.jpg",
 				},
 			],
 			description: "",
@@ -80,9 +78,10 @@ export default [
 				{
 					name: "Ana Margarita Medina",
 					role: "Senior Chaos Engineer",
-					speakerImage: "https://i.ibb.co/mTD915T/Aravind-Intuit-1.png",
+					speakerImage:
+						"https://i.ibb.co/mTD915T/Aravind-Intuit-1.png",
 					companyLogo: "https://i.ibb.co/DK17SWq/gremlin.png",
-					modalLogo: "/speakers/Vaibhav_Orange-min.jpg",
+					modalLogo: "/speakers/Ana_Gremlin-min.jpg",
 				},
 			],
 			description: "",
@@ -102,7 +101,7 @@ export default [
 					role: "Global Head, Amazon Video Availabilty",
 					speakerImage: "https://i.ibb.co/2FN5GZF/Olga-Amazon.png",
 					companyLogo: "https://i.ibb.co/FwRttVk/Amazon.png",
-					modalLogo: "/speakers/Gunnar_AWS-min.jpg",
+					modalLogo: "/speakers/Olga_Amazon-min.jpg",
 				},
 			],
 			description: "",
@@ -116,10 +115,9 @@ export default [
 				{
 					name: "Piyush Verma",
 					role: "Co-Founder & CTO",
-					speakerImage:
-						"https://i.ibb.co/d0trDJZ/Piyush-Last9.png",
+					speakerImage: "https://i.ibb.co/d0trDJZ/Piyush-Last9.png",
 					companyLogo: "https://i.ibb.co/hMbZ82Q/Last9.png",
-					modalLogo: "/speakers/Amir_PerimeterX-min.jpg",
+					modalLogo: "/speakers/Piyush_Last9-min.jpg",
 				},
 			],
 			description: "",
@@ -139,7 +137,7 @@ export default [
 					role: "Developer Advocate",
 					speakerImage: "https://i.ibb.co/ss7h8m4/Group-3187.png",
 					companyLogo: "https://i.ibb.co/xm8G0VP/Honeycomb.png",
-					modalLogo: "/speakers/Raj_Mayadata-min.jpg",
+					modalLogo: "/speakers/Shelby_Honeycomb-min.jpg",
 				},
 			],
 			description: "",
@@ -153,9 +151,10 @@ export default [
 				{
 					name: "Jürgen Etzlstorfer",
 					role: "Technology Strategist",
-					speakerImage: "https://i.ibb.co/yR1D8jH/Dynatrace-Speaker.png",
+					speakerImage:
+						"https://i.ibb.co/yR1D8jH/Dynatrace-Speaker.png",
 					companyLogo: "https://i.ibb.co/mG1WDb1/Dynatrace.png",
-					modalLogo: "/images/dummy-min.jpg",
+					modalLogo: "/speakers/Dynatrace_Speaker-min.jpg",
 				},
 			],
 			description: "",
@@ -178,7 +177,7 @@ export default [
 					role: "Senior Site Reliability Engineer",
 					speakerImage: "https://i.ibb.co/R29hpSs/Yury-ADL.png",
 					companyLogo: "https://i.ibb.co/C9q0pY8/ADLLogo.png",
-					modalLogo: "/speakers/Jason_Gremlin-min.jpg",
+					modalLogo: "/speakers/Yury_ADL-min.jpg",
 				},
 			],
 			description: "",
@@ -194,8 +193,9 @@ export default [
 					role: "DevOps Engineer",
 					speakerImage:
 						"https://i.ibb.co/KmxQ1nS/Eugenio-Source-Sense.png",
-					companyLogo: "https://i.ibb.co/zNqkz5n/source-Sense-Logo.png",
-					modalLogo: "/speakers/Maik_Codecentric-min.jpg",
+					companyLogo:
+						"https://i.ibb.co/zNqkz5n/source-Sense-Logo.png",
+					modalLogo: "/speakers/Eugenio_SourceSense-min.jpg",
 				},
 			],
 			description: "",
@@ -213,10 +213,9 @@ export default [
 				{
 					name: "Ramiro Berrelleza ",
 					role: "Founder & CEO",
-					speakerImage:
-						"https://i.ibb.co/C6LdPjR/Ramiro-Okteto.png",
+					speakerImage: "https://i.ibb.co/C6LdPjR/Ramiro-Okteto.png",
 					companyLogo: "https://i.ibb.co/XzsKTY3/Okteto.png",
-					modalLogo: "/speakers/Julie_PagerDuty-min.jpg",
+					modalLogo: "/speakers/Ramiro_Okteto-min.jpg",
 				},
 			],
 			description: "",
@@ -230,10 +229,9 @@ export default [
 				{
 					name: "Sumit Nagal",
 					role: "Principal Engineer",
-					speakerImage:
-						"https://i.ibb.co/rf2Hwv7/Sumit-Intuit.png",
+					speakerImage: "https://i.ibb.co/rf2Hwv7/Sumit-Intuit.png",
 					companyLogo: "https://i.ibb.co/R2sN5Vy/Intuit.png",
-					modalLogo: "/speakers/Gunnard_PowerCode-min.jpg",
+					modalLogo: "/speakers/Sumit_Intuit-min.jpg",
 				},
 			],
 			description: "",
@@ -246,13 +244,12 @@ export default [
 		time: "2:30 PM",
 		duration: "(45min)",
 		speaker1: {
-			sessionName: '',
+			sessionName: "",
 			speaker: [
 				{
 					name: "",
 					role: "",
-					speakerImage:
-						"",
+					speakerImage: "",
 					companyLogo: "",
 					modalLogo: "",
 				},
@@ -267,10 +264,9 @@ export default [
 				{
 					name: "Carl Chesser",
 					role: "Principal Engineer",
-					speakerImage:
-						"https://i.ibb.co/5L1bPw9/Carl-Cerner.png",
+					speakerImage: "https://i.ibb.co/5L1bPw9/Carl-Cerner.png",
 					companyLogo: "https://i.ibb.co/jr4hN1m/Cerner.png",
-					modalLogo: "/speakers/Gunnard_PowerCode-min.jpg",
+					modalLogo: "/speakers/Carl_Cerner-min.jpg",
 				},
 			],
 			description: "",
@@ -279,4 +275,4 @@ export default [
 			id: 29,
 		},
 	},
-]
+];

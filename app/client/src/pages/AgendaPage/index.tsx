@@ -1,15 +1,18 @@
-import { Button, Modal, Typography } from "@material-ui/core";
+import { Button, IconButton, Modal, Typography } from "@material-ui/core";
 import ClearIcon from "@material-ui/icons/Clear";
 import * as React from "react";
 import { useState } from "react";
-import MainHeader from "../../components/Header";
-import JoinCarnival from "../../components/JoinCarnival";
-import Sponsors from "../../components/Sponsors";
 import "../../scrollbar.css";
 import Break from "./Break";
 import day1 from "./day1";
 import day2 from "./day2";
 import { useStyles } from "./styles";
+import MainHeader from "../../components/Header";
+import JoinCarnival from "../../components/JoinCarnival";
+import Sponsors from "../../components/Sponsors";
+import JoinSession from "./JoinSession";
+import AddCalendar from "./AddCalendar";
+import Footer from "../../components/Footer";
 
 interface PopOverModal {
 	modalState: boolean;
@@ -33,7 +36,12 @@ const AgendaPage: React.FC = () => {
 
 	console.log(modalStatus);
 
-	const Speaker = (s: any, companyLogo: string | undefined, d: any) => {
+	const Speaker = (
+		data: any,
+		s: any,
+		companyLogo: string | undefined,
+		d: any
+	) => {
 		return (
 			<>
 				{d.id === 13 || d.id === 28 ? (
@@ -46,7 +54,7 @@ const AgendaPage: React.FC = () => {
 								modalState: true,
 								speakerData: s,
 								sessionName: d.sessionName,
-								sessionTime: "",
+								sessionTime: data.time,
 								sessionDescription: d.description,
 								sessionTags: d.tags,
 							});
@@ -157,7 +165,7 @@ const AgendaPage: React.FC = () => {
 				<div className={classes.keynoteLeftDetail}>
 					<h1>{keynote.sessionName}</h1>
 					{keynote.speaker?.map((s) => (
-						<>{Speaker(s, undefined, keynote)}</>
+						<>{Speaker(keynote, s, undefined, keynote)}</>
 					))}
 				</div>
 				<div className={classes.keynoteRightDetail}>
@@ -256,6 +264,7 @@ const AgendaPage: React.FC = () => {
 															return (
 																<>
 																	{Speaker(
+																		d,
 																		s,
 																		s.companyLogo,
 																		d.speaker1
@@ -301,6 +310,7 @@ const AgendaPage: React.FC = () => {
 															return (
 																<>
 																	{Speaker(
+																		d,
 																		s,
 																		s.companyLogo,
 																		d.speaker2
@@ -392,6 +402,7 @@ const AgendaPage: React.FC = () => {
 															return (
 																<>
 																	{Speaker(
+																		d,
 																		s,
 																		s.companyLogo,
 																		d.speaker1
@@ -437,6 +448,7 @@ const AgendaPage: React.FC = () => {
 															return (
 																<>
 																	{Speaker(
+																		d,
 																		s,
 																		s.companyLogo,
 																		d.speaker2
@@ -470,18 +482,13 @@ const AgendaPage: React.FC = () => {
 							</Button>
 						</div>
 						<div className={classes.modalContent}>
-							<div
-								style={{
-									display: "flex",
-									flexDirection: "column",
-								}}
-							>
+							<div>
 								<img
 									src={modalStatus.speakerData.modalLogo}
 									alt="Speakers"
 									style={{
-										height: "220px",
-										width: "192px",
+										height: "200px",
+										width: "172px",
 										borderRadius: 5,
 									}}
 								/>
@@ -491,11 +498,31 @@ const AgendaPage: React.FC = () => {
 								<Typography className={classes.modalRole}>
 									{modalStatus.speakerData.role}
 								</Typography>
+								<div
+									style={{
+										display: "flex",
+										marginTop: 10,
+										marginLeft: -10,
+										width: 60,
+										justifyContent: "space-between",
+									}}
+								>
+									<IconButton>
+										<img
+											src="./icons/speaker-linkedin.svg"
+											alt="Linkedin"
+										/>
+									</IconButton>
+									<IconButton>
+										<img
+											src="./icons/speaker-twitter.svg"
+											alt="Twitter"
+										/>
+									</IconButton>
+								</div>
 							</div>
 							<div
 								style={{
-									display: "flex",
-									flexDirection: "column",
 									marginLeft: 40,
 								}}
 							>
@@ -504,12 +531,18 @@ const AgendaPage: React.FC = () => {
 								>
 									{modalStatus.sessionName}
 								</Typography>
-								{Tags(modalStatus.sessionTags)}
+								<Typography
+									style={{ color: "#FFFFFF", fontSize: 16 }}
+								>
+									{modalStatus.sessionTime}
+								</Typography>
 								<Typography
 									style={{
 										color: "white",
-										width: "500px",
+										maxWidth: "500px",
 										fontSize: "16px",
+										marginTop: 10,
+										marginBottom: 20,
 									}}
 								>
 									Join the pre-show before the Google Keynote
@@ -521,6 +554,32 @@ const AgendaPage: React.FC = () => {
 									the same technology behind QuickDraw and
 									AutoDraw.
 								</Typography>
+								{Tags(modalStatus.sessionTags)}
+								<div className={classes.modalBtnDiv}>
+									<JoinSession handleClick={() => {}} />
+									<AddCalendar handleClick={() => {}} />
+								</div>
+								<div style={{ display: "flex" }}>
+									<Typography
+										style={{ fontSize: 14, color: "white" }}
+									>
+										Share the session on{" "}
+									</Typography>
+									<img
+										src="./icons/twitter-blue.svg"
+										style={{ marginTop: -5, marginLeft: 2 }}
+										alt="twitter-blue"
+									/>
+									<Typography
+										style={{
+											fontSize: 14,
+											color: "#488FDF",
+										}}
+									>
+										{" "}
+										#chaoscarnival
+									</Typography>
+								</div>
 							</div>
 						</div>
 					</>
@@ -532,7 +591,7 @@ const AgendaPage: React.FC = () => {
 			<JoinCarnival />
 
 			{/* Footer */}
-			{/* <Footer /> */}
+			<Footer />
 		</>
 	);
 };

@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
 	root: {
 		background: "#070E23",
-		paddingLeft: "7%",
+		paddingLeft: "15%",
 	},
 	title: {
 		fontSize: "3rem",
@@ -104,10 +104,11 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	//Modal Styles
 	modal: {
+		width: "60%",
+		overflowY: "auto",
 		margin: "auto",
 		padding: 50,
 		height: "80%",
-		width: "65%",
 		backgroundColor: "#161A1D",
 		border: "2px solid rgba(255, 255, 255, 0.2)",
 	},
@@ -125,9 +126,10 @@ export const useStyles = makeStyles((theme) => ({
 	modalContent: {
 		display: "flex",
 		flexDirection: "row",
-		margin: "auto",
-		marginTop: 40,
+		margin: "0 auto",
+		marginTop: 20,
 		marginLeft: 40,
+		justifyContent: "center",
 	},
 	modalTitle: {
 		fontSize: "18px",
@@ -140,12 +142,22 @@ export const useStyles = makeStyles((theme) => ({
 	modalRole: {
 		fontSize: "16px",
 		color: "#FFFFFF",
+		maxWidth: 200,
 	},
 	modalSessionName: {
 		fontSize: "26px",
-		fontWeight: 500,
-		width: "500px",
+		fontWeight: "bold",
+		letterSpacing: "0.02em",
+		marginBottom: 10,
+		maxWidth: "500px",
 		color: "#FFFFFF",
 		lineHeight: "36.4px",
+	},
+	modalBtnDiv: {
+		display: "flex",
+		justifyContent: "space-between",
+		maxWidth: 380,
+		marginTop: 30,
+		marginBottom: 30,
 	},
 }));
