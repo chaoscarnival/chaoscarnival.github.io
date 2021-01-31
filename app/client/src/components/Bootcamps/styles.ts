@@ -17,7 +17,6 @@ export const useStyles = makeStyles((theme) => ({
 		width: "fit-content",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
-		marginBottom: theme.spacing(2),
 		background:
 			"linear-gradient(270.88deg, #71BCF6 3.66%, #B4F59E 100.95%)",
 
@@ -36,7 +35,8 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		flexWrap: "wrap",
 		justifyContent: "space-between",
-		padding: theme.spacing(6, 8),
+		marginTop: theme.spacing(6.25),
+		padding: theme.spacing(13, 13.75),
 		[theme.breakpoints.down("sm")]: {
 			padding: theme.spacing(2),
 		},
@@ -57,13 +57,19 @@ export const useStyles = makeStyles((theme) => ({
 			marginBottom: theme.spacing(4),
 		},
 
-		[theme.breakpoints.down("sm")]: {
+		[theme.breakpoints.down("md")]: {
 			width: "auto",
 			"& h4": {
 				marginBottom: theme.spacing(3),
 			},
 			"& p": {
 				marginBottom: theme.spacing(4),
+			},
+		},
+
+		[theme.breakpoints.up("md")]: {
+			"& p": {
+				width: "75%",
 			},
 		},
 	},
@@ -73,6 +79,7 @@ export const useStyles = makeStyles((theme) => ({
 			color: "#fff",
 			fontWeight: "bold",
 			marginBottom: theme.spacing(3),
+			padding: theme.spacing(2.25, 4),
 
 			"& svg": {
 				marginLeft: theme.spacing(1),
