@@ -7,6 +7,7 @@ import Sponsors from "../../components/Sponsors";
 import "../../scrollbar.css";
 import bootcamps from "../../data/bootcampData";
 import { useStyles } from "./styles";
+import { Typography } from "@material-ui/core";
 
 function BootcampPage() {
 	const classes = useStyles();
@@ -15,6 +16,7 @@ function BootcampPage() {
 		<div className="scrollbar scrollbar-primary">
 			<MainHeader />
 			<div className={classes.root}>
+				<Typography className={classes.title}>Bootcamps</Typography>
 				<Bootcamps bootcamps={bootcamps} />
 				<Sponsors />
 				<JoinCarnival />

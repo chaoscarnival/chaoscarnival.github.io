@@ -20,8 +20,7 @@ const Bootcamps: React.FC<BootcampsProps> = ({ bootcamps }) => {
 	const classes = useStyles();
 
 	return (
-		<div className={classes.root}>
-			<Typography className={classes.title}>Bootcamps</Typography>
+		<div>
 			{bootcamps.map(
 				({
 					title,
