@@ -1,19 +1,18 @@
 import { Typography } from "@material-ui/core";
-
 import * as React from "react";
 import { useState } from "react";
+import Footer from "../../components/Footer";
+import MainHeader from "../../components/Header";
+import JoinCarnival from "../../components/JoinCarnival";
+import Sponsors from "../../components/Sponsors";
 import "../../scrollbar.css";
 import Break from "./Break";
 import day1 from "./day1";
 import day2 from "./day2";
-import { useStyles } from "./styles";
-import MainHeader from "../../components/Header";
-import JoinCarnival from "../../components/JoinCarnival";
-import Sponsors from "../../components/Sponsors";
-import Footer from "../../components/Footer";
-import Tags from "./Tags";
-import SpeakerModal from "./SpeakerModal";
 import KeynoteModal from "./KeynoteModal";
+import SpeakerModal from "./SpeakerModal";
+import { useStyles } from "./styles";
+import Tags from "./Tags";
 
 interface PopOverModal {
 	modalState: boolean;
@@ -157,364 +156,379 @@ const AgendaPage: React.FC = () => {
 		);
 	};
 	return (
-		<>
-			<MainHeader />
-			{/* Agenda Page Content */}
-			<div className={classes.root}>
-				{/* Header */}
-				<h1 className={classes.title}>Agenda</h1>
-				{/* Day 1 Agenda Table */}
+		<div className="scrollbar scrollbar-primary">
+			<div className={classes.rootContainer}>
+				<MainHeader />
+				{/* Agenda Page Content */}
+				<div className={classes.root}>
+					{/* Header */}
+					<h1 className={classes.title}>Agenda</h1>
+					{/* Day 1 Agenda Table */}
 
-				<div className={classes.header}>
-					<h1 style={{ marginLeft: "17%", lineHeight: "5rem" }}>
-						Wednesday, Feb 10
-					</h1>
-				</div>
+					<div className={classes.header}>
+						<h1 style={{ marginLeft: "17%", lineHeight: "5rem" }}>
+							Wednesday, Feb 10
+						</h1>
+					</div>
 
-				{/* Agenda Table */}
-				<div className={classes.details}>
-					{day1.map((d, i) => {
-						return (
-							<>
-								{d.content === "break" ? (
-									<Break />
-								) : (
-									<div className={classes.block}>
-										<div className={classes.time}>
-											{d.time}
-											<br />
-											<span
-												style={{
-													fontSize: "0.8rem",
-													color:
-														"rgba(255, 255, 255, 0.6)",
-												}}
-											>
-												{d.duration}
-											</span>
+					{/* Agenda Table */}
+					<div className={classes.details}>
+						{day1.map((d, i) => {
+							return (
+								<>
+									{d.content === "break" ? (
+										<Break />
+									) : (
+										<div className={classes.block}>
+											<div className={classes.time}>
+												{d.time}
+												<br />
+												<span
+													style={{
+														fontSize: "0.8rem",
+														color:
+															"rgba(255, 255, 255, 0.6)",
+													}}
+												>
+													{d.duration}
+												</span>
+											</div>
+											{i === 0 ? (
+												// For Keynote speaker
+												<>{Keynote(d)}</>
+											) : (
+												// For Regular speakers
+												<>
+													<div
+														className={
+															classes.speaker1details
+														}
+														style={{
+															background: `${d.speaker1?.background}`,
+														}}
+														onClick={() => {
+															return d.speaker1
+																?.sessionName ===
+																""
+																? null
+																: setModalStatus(
+																		{
+																			modalState: true,
+																			speakerData:
+																				d.speaker1,
+
+																			sessionTime:
+																				d.time,
+																		}
+																  );
+														}}
+													>
+														<Typography
+															style={{
+																fontWeight:
+																	"bold",
+																fontSize: 18,
+																paddingTop: 10,
+															}}
+														>
+															{
+																d.speaker1
+																	?.sessionName
+															}
+														</Typography>
+
+														{/* Tags */}
+														<div
+															className={
+																classes.tagsField
+															}
+														>
+															<Tags
+																tags={
+																	d.speaker1
+																		?.tags
+																}
+															/>
+														</div>
+
+														{d.speaker1?.speaker.map(
+															(s) => {
+																return (
+																	<>
+																		{Speaker(
+																			d,
+																			s,
+																			s.companyLogo,
+																			d.speaker1
+																		)}
+																	</>
+																);
+															}
+														)}
+													</div>
+
+													<div
+														className={
+															classes.speaker2details
+														}
+														style={{
+															background: `${d.speaker2?.background}`,
+														}}
+														onClick={() => {
+															setModalStatus({
+																modalState: true,
+																speakerData:
+																	d.speaker2,
+																sessionTime:
+																	d.time,
+															});
+														}}
+													>
+														<Typography
+															style={{
+																fontWeight:
+																	"bold",
+																fontSize: 18,
+																paddingTop: 10,
+															}}
+														>
+															{
+																d.speaker2
+																	?.sessionName
+															}
+														</Typography>
+
+														{/* Tags */}
+														<div
+															className={
+																classes.tagsField
+															}
+														>
+															<Tags
+																tags={
+																	d.speaker2
+																		?.tags
+																}
+															/>
+														</div>
+
+														{d.speaker2?.speaker.map(
+															(s) => {
+																return (
+																	<>
+																		{Speaker(
+																			d,
+																			s,
+																			s.companyLogo,
+																			d.speaker2
+																		)}
+																	</>
+																);
+															}
+														)}
+													</div>
+												</>
+											)}
 										</div>
-										{i === 0 ? (
-											// For Keynote speaker
-											<>{Keynote(d)}</>
-										) : (
-											// For Regular speakers
-											<>
-												<div
-													className={
-														classes.speaker1details
-													}
-													style={{
-														background: `${d.speaker1?.background}`,
-													}}
-													onClick={() => {
-														return d.speaker1
-															?.sessionName === ""
-															? null
-															: setModalStatus({
-																	modalState: true,
-																	speakerData:
-																		d.speaker1,
+									)}
+								</>
+							);
+						})}
+						{Closing("3:00 PM", "(10min)", "Day 1 Closing Remarks")}
+					</div>
 
-																	sessionTime:
-																		d.time,
-															  });
+					<br />
+					<br />
+					{/* Day 2 */}
+					<div className={classes.header}>
+						<h1 style={{ marginLeft: "17%", lineHeight: "5rem" }}>
+							Thursday, Feb 11
+						</h1>
+					</div>
+
+					{/* Day 2 Table */}
+					<div className={classes.details}>
+						{day2.map((d, i) => {
+							return (
+								<>
+									{d.content === "break" ? (
+										<Break />
+									) : (
+										<div className={classes.block}>
+											<div className={classes.time}>
+												{d.time}
+												<br />
+												<span
+													style={{
+														fontSize: "0.8rem",
+														color:
+															"rgba(255, 255, 255, 0.6)",
 													}}
 												>
-													<Typography
-														style={{
-															fontWeight: "bold",
-															fontSize: 18,
-															paddingTop: 10,
-														}}
-													>
-														{
-															d.speaker1
-																?.sessionName
-														}
-													</Typography>
-
-													{/* Tags */}
+													{d.duration}
+												</span>
+											</div>
+											{i === 0 ? (
+												// For Keynote speaker
+												<>{Keynote(d)}</>
+											) : (
+												// For Regular speakers
+												<>
 													<div
 														className={
-															classes.tagsField
+															classes.speaker1details
 														}
-													>
-														<Tags
-															tags={
-																d.speaker1?.tags
-															}
-														/>
-													</div>
-
-													{d.speaker1?.speaker.map(
-														(s) => {
-															return (
-																<>
-																	{Speaker(
-																		d,
-																		s,
-																		s.companyLogo,
-																		d.speaker1
-																	)}
-																</>
-															);
-														}
-													)}
-												</div>
-
-												<div
-													className={
-														classes.speaker2details
-													}
-													style={{
-														background: `${d.speaker2?.background}`,
-													}}
-													onClick={() => {
-														setModalStatus({
-															modalState: true,
-															speakerData:
-																d.speaker2,
-															sessionTime: d.time,
-														});
-													}}
-												>
-													<Typography
 														style={{
-															fontWeight: "bold",
-															fontSize: 18,
-															paddingTop: 10,
+															background: `${d.speaker1?.background}`,
+														}}
+														onClick={() => {
+															return d.speaker1
+																?.sessionName ===
+																""
+																? null
+																: setModalStatus(
+																		{
+																			modalState: true,
+																			speakerData:
+																				d.speaker1,
+
+																			sessionTime:
+																				d.time,
+																		}
+																  );
 														}}
 													>
-														{
-															d.speaker2
-																?.sessionName
-														}
-													</Typography>
-
-													{/* Tags */}
-													<div
-														className={
-															classes.tagsField
-														}
-													>
-														<Tags
-															tags={
-																d.speaker2?.tags
+														<Typography
+															style={{
+																fontWeight:
+																	"bold",
+																fontSize: 18,
+																paddingTop: 10,
+															}}
+														>
+															{
+																d.speaker1
+																	?.sessionName
 															}
-														/>
+														</Typography>
+
+														{/* Tags */}
+														<div
+															className={
+																classes.tagsField
+															}
+														>
+															<Tags
+																tags={
+																	d.speaker1
+																		?.tags
+																}
+															/>
+														</div>
+
+														{d.speaker1?.speaker.map(
+															(s) => {
+																return (
+																	<>
+																		{Speaker(
+																			d,
+																			s,
+																			s.companyLogo,
+																			d.speaker1
+																		)}
+																	</>
+																);
+															}
+														)}
 													</div>
 
-													{d.speaker2?.speaker.map(
-														(s) => {
-															return (
-																<>
-																	{Speaker(
-																		d,
-																		s,
-																		s.companyLogo,
-																		d.speaker2
-																	)}
-																</>
-															);
+													<div
+														className={
+															classes.speaker2details
 														}
-													)}
-												</div>
-											</>
-										)}
-									</div>
-								)}
-							</>
-						);
-					})}
-					{Closing("3:00 PM", "(10min)", "Day 1 Closing Remarks")}
-				</div>
+														style={{
+															background: `${d.speaker2?.background}`,
+														}}
+														onClick={() => {
+															setModalStatus({
+																modalState: true,
+																speakerData:
+																	d.speaker2,
 
-				<br />
-				<br />
-				{/* Day 2 */}
-				<div className={classes.header}>
-					<h1 style={{ marginLeft: "17%", lineHeight: "5rem" }}>
-						Thursday, Feb 11
-					</h1>
-				</div>
+																sessionTime:
+																	d.time,
+															});
+														}}
+													>
+														<Typography
+															style={{
+																fontWeight:
+																	"bold",
+																fontSize: 18,
+																paddingTop: 10,
+															}}
+														>
+															{
+																d.speaker2
+																	?.sessionName
+															}
+														</Typography>
 
-				{/* Day 2 Table */}
-				<div className={classes.details}>
-					{day2.map((d, i) => {
-						return (
-							<>
-								{d.content === "break" ? (
-									<Break />
-								) : (
-									<div className={classes.block}>
-										<div className={classes.time}>
-											{d.time}
-											<br />
-											<span
-												style={{
-													fontSize: "0.8rem",
-													color:
-														"rgba(255, 255, 255, 0.6)",
-												}}
-											>
-												{d.duration}
-											</span>
+														{/* Tags */}
+														<div
+															className={
+																classes.tagsField
+															}
+														>
+															<Tags
+																tags={
+																	d.speaker2
+																		?.tags
+																}
+															/>
+														</div>
+
+														{d.speaker2?.speaker.map(
+															(s) => {
+																return (
+																	<>
+																		{Speaker(
+																			d,
+																			s,
+																			s.companyLogo,
+																			d.speaker2
+																		)}
+																	</>
+																);
+															}
+														)}
+													</div>
+												</>
+											)}
 										</div>
-										{i === 0 ? (
-											// For Keynote speaker
-											<>{Keynote(d)}</>
-										) : (
-											// For Regular speakers
-											<>
-												<div
-													className={
-														classes.speaker1details
-													}
-													style={{
-														background: `${d.speaker1?.background}`,
-													}}
-													onClick={() => {
-														return d.speaker1
-															?.sessionName === ""
-															? null
-															: setModalStatus({
-																	modalState: true,
-																	speakerData:
-																		d.speaker1,
-
-																	sessionTime:
-																		d.time,
-															  });
-													}}
-												>
-													<Typography
-														style={{
-															fontWeight: "bold",
-															fontSize: 18,
-															paddingTop: 10,
-														}}
-													>
-														{
-															d.speaker1
-																?.sessionName
-														}
-													</Typography>
-
-													{/* Tags */}
-													<div
-														className={
-															classes.tagsField
-														}
-													>
-														<Tags
-															tags={
-																d.speaker1?.tags
-															}
-														/>
-													</div>
-
-													{d.speaker1?.speaker.map(
-														(s) => {
-															return (
-																<>
-																	{Speaker(
-																		d,
-																		s,
-																		s.companyLogo,
-																		d.speaker1
-																	)}
-																</>
-															);
-														}
-													)}
-												</div>
-
-												<div
-													className={
-														classes.speaker2details
-													}
-													style={{
-														background: `${d.speaker2?.background}`,
-													}}
-													onClick={() => {
-														setModalStatus({
-															modalState: true,
-															speakerData:
-																d.speaker2,
-
-															sessionTime: d.time,
-														});
-													}}
-												>
-													<Typography
-														style={{
-															fontWeight: "bold",
-															fontSize: 18,
-															paddingTop: 10,
-														}}
-													>
-														{
-															d.speaker2
-																?.sessionName
-														}
-													</Typography>
-
-													{/* Tags */}
-													<div
-														className={
-															classes.tagsField
-														}
-													>
-														<Tags
-															tags={
-																d.speaker2?.tags
-															}
-														/>
-													</div>
-
-													{d.speaker2?.speaker.map(
-														(s) => {
-															return (
-																<>
-																	{Speaker(
-																		d,
-																		s,
-																		s.companyLogo,
-																		d.speaker2
-																	)}
-																</>
-															);
-														}
-													)}
-												</div>
-											</>
-										)}
-									</div>
-								)}
-							</>
-						);
-					})}
-					{Closing("3:00 PM", "(10min)", "Day 2 Closing Remarks")}
+									)}
+								</>
+							);
+						})}
+						{Closing("3:00 PM", "(10min)", "Day 2 Closing Remarks")}
+					</div>
+					<KeynoteModal
+						modalState={keynoteModal.modalState}
+						handleClose={handleKeynoteModalClose}
+						speaker={keynoteModal.speakerData}
+					/>
+					<SpeakerModal
+						modalState={modalStatus.modalState}
+						handleClose={handleClose}
+						speaker={modalStatus.speakerData}
+					/>
 				</div>
-				<KeynoteModal
-					modalState={keynoteModal.modalState}
-					handleClose={handleKeynoteModalClose}
-					speaker={keynoteModal.speakerData}
-				/>
-				<SpeakerModal
-					modalState={modalStatus.modalState}
-					handleClose={handleClose}
-					speaker={modalStatus.speakerData}
-				/>
+
+				<Sponsors />
+				<JoinCarnival />
+				<Footer />
 			</div>
-
-			<Sponsors />
-
-			<JoinCarnival />
-
-			{/* Footer */}
-			<Footer />
-		</>
+		</div>
 	);
 };
 
