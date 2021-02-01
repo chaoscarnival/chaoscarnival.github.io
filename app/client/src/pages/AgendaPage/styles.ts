@@ -84,7 +84,7 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		paddingBottom: "1rem",
 		justifyContent: "space-between",
-
+		marginTop: "auto",
 		"& #image": {
 			width: "3rem",
 			height: "3rem",
@@ -94,6 +94,17 @@ export const useStyles = makeStyles((theme) => ({
 			fontSize: "0.8rem",
 			color: "rgba(255, 255, 255, 0.8)",
 		},
+	},
+
+	speakerValue: {
+		borderRadius: "50%",
+		display: "inline-block",
+		width: 30,
+		height: 30,
+		backgroundColor: "rgba(255, 255, 255, 0.4)",
+		color: "white",
+		margin: "auto",
+		marginLeft: 10,
 	},
 	//Tags styles
 
