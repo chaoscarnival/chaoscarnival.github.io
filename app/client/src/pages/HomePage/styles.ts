@@ -20,6 +20,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("xs")]: {
 			height: "47.5rem",
+			paddingTop: theme.spacing(4),
 		},
 	},
 

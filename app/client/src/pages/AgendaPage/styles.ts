@@ -1,9 +1,13 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
+	rootContainer: {
+		height: "100vh",
+	},
 	root: {
 		background: "#070E23",
 		paddingLeft: "15%",
+		paddingTop: theme.spacing(17.5),
 	},
 	title: {
 		fontSize: "3rem",
