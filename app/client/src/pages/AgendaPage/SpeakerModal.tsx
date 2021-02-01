@@ -10,6 +10,7 @@ import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import ClearIcon from "@material-ui/icons/Clear";
 import React from "react";
+import { getLocale } from "../../utils/getLocale";
 import AddCalendar from "./AddCalendar";
 import JoinSession from "./JoinSession";
 import { useStyles } from "./styles";
@@ -29,12 +30,14 @@ const MobileSlider = withStyles({
 interface SpeakerModalProps {
 	handleClose: () => void;
 	speaker: any;
+	session: any;
 	modalState: boolean;
 }
 
 const SpeakerModal: React.FC<SpeakerModalProps> = ({
 	handleClose,
 	speaker,
+	session,
 	modalState,
 }) => {
 	const classes = useStyles();
@@ -52,6 +55,13 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 		setActiveStep(0);
 		handleClose();
 	};
+	const { dateString, time: startTime, timeZone } = getLocale(
+		session.startDateTime
+	);
+	const { time: endTime } = getLocale(session.endDateTime);
+
+	const joinUrl =
+		"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1";
 
 	return (
 		<Modal open={modalState} onClose={handleModalClose}>
@@ -197,9 +207,10 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 								{speaker.sessionName}
 							</Typography>
 							<Typography
-								style={{ color: "#FFFFFF", fontSize: 16 }}
+								style={{ color: "#FFFFFF", opacity: 0.8 }}
 							>
-								{speaker.sessionTime}
+								{dateString} {startTime} - {endTime} ({timeZone}
+								)
 							</Typography>
 							<Typography
 								style={{
@@ -217,7 +228,11 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 						<Tags tags={speaker?.tags} />
 
 						<div className={classes.modalBtnDiv}>
-							<JoinSession handleClick={() => {}} />
+							<JoinSession
+								handleClick={() =>
+									(window.location.href = joinUrl)
+								}
+							/>
 							<AddCalendar handleClick={() => {}} />
 						</div>
 						<div style={{ display: "flex" }}>
