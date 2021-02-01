@@ -130,7 +130,7 @@ export default [
 			id: 5,
 		},
 		speaker2: {
-			sessionName: `Wild Card`,
+			sessionName: ``,
 			speaker: [
 				{
 					name: "",
@@ -142,7 +142,7 @@ export default [
 			],
 			description: "",
 			background: "rgba(240, 31, 64, 0.15)",
-			tags: [""],
+			tags: [],
 			id: 6,
 		},
 	},

@@ -130,7 +130,6 @@ export const useStyles = makeStyles((theme) => ({
 		color: "#FFFFFF",
 		fontWeight: 400,
 		fontSize: 20,
-		marginBottom: 6,
 		textAlign: "left",
 	},
 	hrLine: {
@@ -156,7 +155,6 @@ export const useStyles = makeStyles((theme) => ({
 		color: "#FFFFFF",
 		fontWeight: 700,
 		fontSize: 29,
-		marginBottom: 10,
 		textAlign: "left",
 		[theme.breakpoints.down("xs")]: {
 			fontSize: 24,
