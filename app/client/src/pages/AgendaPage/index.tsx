@@ -133,9 +133,13 @@ const AgendaPage: React.FC = () => {
 					display: "flex",
 					flexWrap: "wrap",
 					justifyContent: "space-between",
+					padding: "2rem 2rem",
+					background:
+						"linear-gradient(268.48deg, #2979E4 2.61%, #134B95 100%)",
 					width: "90%",
 				}}
 			>
+				<h1 style={{ fontSize: "2rem" }}>{keynote.sessionName}</h1>
 				<div
 					onClick={() => {
 						setKeynoteModal({
@@ -146,24 +150,79 @@ const AgendaPage: React.FC = () => {
 					}}
 					className={classes.keynoteLeftDetail}
 				>
-					<h1>{keynote.sessionName}</h1>
 					{keynote.speaker?.map((s) => (
-						<>{Speaker(s, undefined, keynote)}</>
+						<>
+							<img
+								src={s.speakerImage}
+								id="image"
+								alt="speakerImg"
+								style={{
+									height: "7rem",
+									width: "7rem",
+								}}
+							/>
+							<div
+								style={{
+									width: "100%",
+									height: "fit-content",
+									marginTop: "0.5rem",
+									marginLeft: "1rem",
+								}}
+							>
+								<div>
+									<Typography
+										style={{
+											fontSize: "1rem",
+											fontWeight: "bold",
+										}}
+									>
+										{s.name}
+									</Typography>
+									<Typography
+										style={{
+											fontSize: "0.8rem",
+										}}
+									>
+										{s.role}
+									</Typography>
+								</div>
+								{s.name.includes("Uma") ? (
+									<img
+										src={s.companyLogo}
+										style={{
+											width: "6rem",
+											objectFit: "contain",
+											margin: "0.5rem 0",
+										}}
+										alt="company logo"
+									/>
+								) : (
+									<img
+										src={s.companyLogo}
+										style={{
+											width: "3rem",
+											objectFit: "contain",
+											margin: "0.5rem 0",
+										}}
+										alt="company logo"
+									/>
+								)}
+							</div>
+						</>
 					))}
 				</div>
-				{keynote.speaker?.map((s) => (
-					<img
-						src={s.companyLogo}
-						style={{
-							width: "8rem",
-							objectFit: "contain",
-						}}
-						alt="company logo"
-					/>
-				))}
 			</div>
 		);
 	};
+
+	const Track = () => {
+		return (
+			<div>
+				<h3>Day 1 Session</h3>
+			</div>
+		);
+	};
+
 	return (
 		<div className="scrollbar scrollbar-primary">
 			<div>
@@ -221,9 +280,6 @@ const AgendaPage: React.FC = () => {
 														className={
 															classes.speaker1details
 														}
-														style={{
-															background: `${d.speaker1?.background}`,
-														}}
 														onClick={() => {
 															return d.speaker1
 																?.sessionName ===
@@ -286,9 +342,6 @@ const AgendaPage: React.FC = () => {
 														className={
 															classes.speaker2details
 														}
-														style={{
-															background: `${d.speaker2?.background}`,
-														}}
 														onClick={() => {
 															setModalStatus({
 																modalState: true,
@@ -404,9 +457,6 @@ const AgendaPage: React.FC = () => {
 														className={
 															classes.speaker1details
 														}
-														style={{
-															background: `${d.speaker1?.background}`,
-														}}
 														onClick={() => {
 															return d.speaker1
 																?.sessionName ===
@@ -467,9 +517,6 @@ const AgendaPage: React.FC = () => {
 														className={
 															classes.speaker2details
 														}
-														style={{
-															background: `${d.speaker2?.background}`,
-														}}
 														onClick={() => {
 															setModalStatus({
 																modalState: true,

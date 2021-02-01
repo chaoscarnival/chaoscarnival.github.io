@@ -5,7 +5,7 @@ export default [
 			{
 				name: "Adrian Cockroft",
 				role: "VP Cloud Architecture Strategy at AWS",
-				speakerImage: "https://i.ibb.co/Bcs2KFd/Adrian-AWS.png",
+				speakerImage: "https://i.ibb.co/2ZXTDWM/Adrian-AWS.png",
 				companyLogo:
 					"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fphoenixnap.com%2Fwp-content%2Fuploads%2F2017%2F11%2Faws_logo_smile_white-250x163.png&f=1&nofb=1",
 				modalLogo: "/images/keynote_speaker1.jpg",
