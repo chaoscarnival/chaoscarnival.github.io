@@ -118,6 +118,19 @@ export const useStyles = makeStyles((theme) => ({
 		padding: 50,
 		backgroundColor: "#161A1D",
 		border: "1px solid rgba(255, 255, 255, 0.2)",
+		top: "50%",
+		left: "50%",
+		transform: `translate(-50%, -50%)`,
+		outline: 0,
+		[theme.breakpoints.down("xs")]: {
+			top: "0%",
+			left: "0%",
+			padding: 10,
+			transform: `translate(0%, 0%)`,
+			height: "100%",
+			width: "100%",
+			overflowY: "scroll",
+		},
 	},
 	modalOutline: {
 		"&:focus": {
@@ -142,6 +155,17 @@ export const useStyles = makeStyles((theme) => ({
 		marginTop: 20,
 		marginLeft: 40,
 		justifyContent: "center",
+		[theme.breakpoints.down("xs")]: {
+			flexDirection: "column",
+			overflowY: "auto",
+			marginLeft: 10,
+		},
+	},
+	sessionDetails: {
+		marginLeft: 40,
+		[theme.breakpoints.down("xs")]: {
+			marginLeft: 0,
+		},
 	},
 	modalTitle: {
 		fontSize: "18px",
@@ -151,11 +175,20 @@ export const useStyles = makeStyles((theme) => ({
 		WebkitTextFillColor: "transparent",
 		background:
 			"-webkit-linear-gradient(89.85deg, #BCA1F7 0%, #EE759C 98.01%)",
+		[theme.breakpoints.down("xs")]: {
+			maxWidth: "100%",
+		},
 	},
 	modalRole: {
 		fontSize: "16px",
 		color: "#FFFFFF",
 		maxWidth: 200,
+	},
+	modalSpeakerData: {
+		display: "flex",
+		[theme.breakpoints.down("xs")]: {
+			flexDirection: "row",
+		},
 	},
 	modalSessionName: {
 		fontSize: "26px",
@@ -165,6 +198,10 @@ export const useStyles = makeStyles((theme) => ({
 		maxWidth: "500px",
 		color: "#FFFFFF",
 		lineHeight: "36.4px",
+		[theme.breakpoints.down("xs")]: {
+			fontSize: "20px",
+			lineHeight: "33.6px",
+		},
 	},
 	modalBtnDiv: {
 		display: "flex",
@@ -172,6 +209,25 @@ export const useStyles = makeStyles((theme) => ({
 		maxWidth: 380,
 		marginTop: 30,
 		marginBottom: 30,
+		[theme.breakpoints.down(1450)]: {
+			display: "flex",
+			flexDirection: "column",
+			height: 110,
+		},
+		[theme.breakpoints.down("xs")]: {
+			display: "flex",
+			flexDirection: "column",
+			height: 110,
+		},
+	},
+	modalSpeakerLogo: {
+		height: "200px",
+		width: "172px",
+		borderRadius: 5,
+		[theme.breakpoints.down("xs")]: {
+			height: "130px",
+			width: "112px",
+		},
 	},
 	sliderBtnLeft: {
 		top: theme.spacing(0),
