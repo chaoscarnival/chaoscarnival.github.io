@@ -42,7 +42,7 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 							style={{
 								height: "200px",
 								width: "172px",
-								borderRadius: 5,
+								borderRadius: 12,
 							}}
 						/>
 
@@ -89,18 +89,20 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 						<Typography
 							style={{
 								color: "white",
-								maxWidth: "500px",
+								maxWidth: "510px",
 								fontSize: "16px",
 								marginTop: 10,
 								marginBottom: 20,
 							}}
 						>
-							Join the pre-show before the Google Keynote starts
+							{speaker?.description !== ""
+								? speaker?.description
+								: `Join the pre-show before the Google Keynote starts
 							which will bring two AI Experiments to life: NSynth,
 							a synthesizer that generates new sounds using neural
 							networks and World Draw, a live interactive
 							experience to draw the world together using the same
-							technology behind QuickDraw and AutoDraw.
+							technology behind QuickDraw and AutoDraw.`}
 						</Typography>
 						<Tags tags={speaker?.tags} />
 
