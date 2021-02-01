@@ -33,12 +33,7 @@ const AgendaPage: React.FC = () => {
 		speakerData: "",
 		sessionTime: "",
 	});
-	const Speaker = (
-		data: any,
-		s: any,
-		companyLogo: string | undefined,
-		d: any
-	) => {
+	const Speaker = (s: any, companyLogo: string | undefined, d: any) => {
 		return (
 			<>
 				{d.id === 13 || d.id === 28 ? (
@@ -56,6 +51,17 @@ const AgendaPage: React.FC = () => {
 								<Typography id="subtitle">{s.name}</Typography>
 								<Typography id="subtitle">{s.role}</Typography>
 							</div>
+							{d.speaker.length > 1 ? (
+								<div className={classes.speakerValue}>
+									<Typography
+										style={{ marginLeft: 6, marginTop: 5 }}
+									>
+										+{d.speaker.length - 1}
+									</Typography>
+								</div>
+							) : (
+								<></>
+							)}
 						</div>
 						{companyLogo !== undefined ? (
 							<img
@@ -135,7 +141,7 @@ const AgendaPage: React.FC = () => {
 				>
 					<h1>{keynote.sessionName}</h1>
 					{keynote.speaker?.map((s) => (
-						<>{Speaker(keynote, s, undefined, keynote)}</>
+						<>{Speaker(s, undefined, keynote)}</>
 					))}
 				</div>
 				<div className={classes.keynoteRightDetail}>
@@ -251,20 +257,16 @@ const AgendaPage: React.FC = () => {
 															/>
 														</div>
 
-														{d.speaker1?.speaker.map(
-															(s) => {
-																return (
-																	<>
-																		{Speaker(
-																			d,
-																			s,
-																			s.companyLogo,
-																			d.speaker1
-																		)}
-																	</>
-																);
-															}
-														)}
+														<>
+															{Speaker(
+																d.speaker1
+																	?.speaker[0],
+																d.speaker1
+																	?.speaker[0]
+																	.companyLogo,
+																d.speaker1
+															)}
+														</>
 													</div>
 
 													<div
@@ -312,20 +314,16 @@ const AgendaPage: React.FC = () => {
 															/>
 														</div>
 
-														{d.speaker2?.speaker.map(
-															(s) => {
-																return (
-																	<>
-																		{Speaker(
-																			d,
-																			s,
-																			s.companyLogo,
-																			d.speaker2
-																		)}
-																	</>
-																);
-															}
-														)}
+														<>
+															{Speaker(
+																d.speaker2
+																	?.speaker[0],
+																d.speaker2
+																	?.speaker[0]
+																	.companyLogo,
+																d.speaker2
+															)}
+														</>
 													</div>
 												</>
 											)}
@@ -426,20 +424,16 @@ const AgendaPage: React.FC = () => {
 															/>
 														</div>
 
-														{d.speaker1?.speaker.map(
-															(s) => {
-																return (
-																	<>
-																		{Speaker(
-																			d,
-																			s,
-																			s.companyLogo,
-																			d.speaker1
-																		)}
-																	</>
-																);
-															}
-														)}
+														<>
+															{Speaker(
+																d.speaker1
+																	?.speaker[0],
+																d.speaker1
+																	?.speaker[0]
+																	.companyLogo,
+																d.speaker1
+															)}
+														</>
 													</div>
 
 													<div
@@ -488,20 +482,16 @@ const AgendaPage: React.FC = () => {
 															/>
 														</div>
 
-														{d.speaker2?.speaker.map(
-															(s) => {
-																return (
-																	<>
-																		{Speaker(
-																			d,
-																			s,
-																			s.companyLogo,
-																			d.speaker2
-																		)}
-																	</>
-																);
-															}
-														)}
+														<>
+															{Speaker(
+																d.speaker2
+																	?.speaker[0],
+																d.speaker2
+																	?.speaker[0]
+																	.companyLogo,
+																d.speaker2
+															)}
+														</>
 													</div>
 												</>
 											)}
