@@ -55,15 +55,7 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 
 	return (
 		<Modal open={modalState} onClose={handleModalClose}>
-			<div
-				style={{
-					top: "50%",
-					left: "50%",
-					transform: `translate(-50%, -50%)`,
-					outline: 0,
-				}}
-				className={classes.modal}
-			>
+			<div className={classes.modal}>
 				<div style={{ width: "100%" }}>
 					<Button
 						onClick={handleModalClose}
@@ -75,54 +67,59 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 				<div className={classes.modalContent}>
 					{speaker && speaker.speaker.length > 1 ? (
 						<div>
-							<img
-								src={
-									speaker &&
-									speaker.speaker[activeStep]?.modalLogo
-								}
-								alt="Speakers"
-								style={{
-									height: "200px",
-									width: "172px",
-									borderRadius: 5,
-								}}
-							/>
-							<MobileSlider
-								steps={maxSteps}
-								variant="dots"
-								position="static"
-								activeStep={activeStep}
-								nextButton={
-									<IconButton
-										className={classes.sliderBtnLeft}
-										aria-label="next-button"
-										onClick={handleNext}
-										disabled={activeStep === maxSteps - 1}
-									>
-										<ArrowForwardIcon
-											fontSize="small"
-											style={{
-												color: "#FFFFFF",
-											}}
-										/>
-									</IconButton>
-								}
-								backButton={
-									<IconButton
-										aria-label="next-button"
-										onClick={handleBack}
-										disabled={activeStep === 0}
-										className={classes.sliderBtnRight}
-									>
-										<ArrowBackIcon
-											fontSize="small"
-											style={{
-												color: "#FFFFFF",
-											}}
-										/>
-									</IconButton>
-								}
-							/>
+							<div>
+								<img
+									src={
+										speaker &&
+										speaker.speaker[activeStep]?.modalLogo
+									}
+									alt="Speakers"
+									style={{
+										height: "200px",
+										width: "172px",
+										borderRadius: 5,
+									}}
+								/>
+								<MobileSlider
+									steps={maxSteps}
+									variant="dots"
+									position="static"
+									activeStep={activeStep}
+									style={{ width: "172px" }}
+									nextButton={
+										<IconButton
+											className={classes.sliderBtnLeft}
+											aria-label="next-button"
+											onClick={handleNext}
+											disabled={
+												activeStep === maxSteps - 1
+											}
+										>
+											<ArrowForwardIcon
+												fontSize="small"
+												style={{
+													color: "#FFFFFF",
+												}}
+											/>
+										</IconButton>
+									}
+									backButton={
+										<IconButton
+											aria-label="next-button"
+											onClick={handleBack}
+											disabled={activeStep === 0}
+											className={classes.sliderBtnRight}
+										>
+											<ArrowBackIcon
+												fontSize="small"
+												style={{
+													color: "#FFFFFF",
+												}}
+											/>
+										</IconButton>
+									}
+								/>
+							</div>
 							<Typography className={classes.modalTitle}>
 								{speaker && speaker.speaker[activeStep]?.name}
 							</Typography>
@@ -194,11 +191,7 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 							</div>
 						</div>
 					)}
-					<div
-						style={{
-							marginLeft: 40,
-						}}
-					>
+					<div className={classes.sessionDetails}>
 						<Typography className={classes.modalSessionName}>
 							{speaker.sessionName}
 						</Typography>

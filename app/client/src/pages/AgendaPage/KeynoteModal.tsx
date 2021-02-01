@@ -20,15 +20,7 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 	const classes = useStyles();
 	return (
 		<Modal open={modalState} onClose={handleClose}>
-			<div
-				style={{
-					top: "50%",
-					left: "50%",
-					transform: `translate(-50%, -50%)`,
-					outline: 0,
-				}}
-				className={classes.modal}
-			>
+			<div className={classes.modal}>
 				<div style={{ width: "100%" }}>
 					<Button
 						onClick={handleClose}
@@ -78,11 +70,7 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 							</IconButton>
 						</div>
 					</div>
-					<div
-						style={{
-							marginLeft: 40,
-						}}
-					>
+					<div className={classes.sessionDetails}>
 						<Typography className={classes.modalSessionName}>
 							{speaker.sessionName}
 						</Typography>
