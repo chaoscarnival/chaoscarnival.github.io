@@ -2,7 +2,11 @@ import React from "react";
 import { getLocale } from "../../utils/getLocale";
 import { useStyles } from "./styles";
 
-const Break: React.FC = () => {
+interface BreakProps {
+	title: string;
+}
+
+const Break: React.FC<BreakProps> = ({ title }) => {
 	const classes = useStyles();
 	return (
 		<span
@@ -79,7 +83,7 @@ const Break: React.FC = () => {
 						textAlign: "left",
 					}}
 				>
-					BOOT CAMP 1 AWS-KAFKA
+					{title}
 					<br />
 					{getLocale("10 Feb 2021 12:30:00 -0800").time}-
 					{getLocale("10 Feb 2021 13:15:00 -0800").time}

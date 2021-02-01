@@ -183,7 +183,9 @@ const AgendaPage: React.FC = () => {
 							return (
 								<>
 									{d.content === "break" ? (
-										<Break />
+										<Break
+											title={"BOOT CAMP 1 AWS-KAFKA"}
+										/>
 									) : (
 										<div className={classes.block}>
 											<div className={classes.time}>
@@ -358,7 +360,9 @@ const AgendaPage: React.FC = () => {
 							return (
 								<>
 									{d.content === "break" ? (
-										<Break />
+										<Break
+											title={"BOOT CAMP 1 AKS-PERCONA"}
+										/>
 									) : (
 										<div className={classes.block}>
 											<div className={classes.time}>
