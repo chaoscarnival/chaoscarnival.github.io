@@ -103,13 +103,15 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	//Modal Styles
 	modal: {
-		width: "60%",
-		overflowY: "auto",
-		margin: "auto",
+		position: "absolute",
 		padding: 50,
-		height: "80%",
 		backgroundColor: "#161A1D",
-		border: "2px solid rgba(255, 255, 255, 0.2)",
+		border: "1px solid rgba(255, 255, 255, 0.2)",
+	},
+	modalOutline: {
+		"&:focus": {
+			outline: "none",
+		},
 	},
 	modalCloseBtn: {
 		display: "block",

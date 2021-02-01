@@ -36,12 +36,14 @@ export const useStyles = makeStyles((theme) => ({
 			},
 			"& p": {
 				marginBottom: theme.spacing(4),
+				whiteSpace: "pre-line",
 			},
 		},
 
 		[theme.breakpoints.up("md")]: {
 			"& p": {
 				width: "75%",
+				whiteSpace: "pre-line",
 			},
 		},
 	},
