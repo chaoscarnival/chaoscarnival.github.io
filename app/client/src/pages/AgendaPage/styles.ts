@@ -122,7 +122,7 @@ export const useStyles = makeStyles((theme) => ({
 
 		"&:hover": {
 			cursor: "pointer",
-			background: 'linear-gradient(268.48deg, #2979E4 2.61%, #134B95 100%)'
+			background: 'linear-gradient(268.48deg, #2979E4 2.61%, #134B95 100%)',
 		},
 
 		[theme.breakpoints.down("sm")]: {
@@ -140,7 +140,7 @@ export const useStyles = makeStyles((theme) => ({
 
 		"&:hover": {
 			cursor: "pointer",
-			background: 'linear-gradient(268.48deg, #2979E4 2.61%, #134B95 100%)'
+			background: 'linear-gradient(268.48deg, #2979E4 2.61%, #134B95 100%)',
 		},
 
 		[theme.breakpoints.down("sm")]: {
