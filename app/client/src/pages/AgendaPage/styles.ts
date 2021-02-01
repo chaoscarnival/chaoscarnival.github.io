@@ -15,7 +15,7 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	header: {
 		background:
-			"linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%)",
+			"linear-gradient(89deg, #5291CA 0%, #B086CC 99.41%)",
 		height: "5rem",
 	},
 	details: {
@@ -32,6 +32,7 @@ export const useStyles = makeStyles((theme) => ({
 		height: "5rem",
 		fontSize: "1rem",
 		paddingTop: "1.5%",
+		borderTop: '1px solid rgba(255, 255, 255, 0.4)',
 
 		[theme.breakpoints.down("sm")]: {
 			width: "auto",
@@ -82,17 +83,17 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	breakItem1: {
 		width: "27.5%",
-		background: "rgba(82, 145, 202, 0.4)",
+		background: "#3168DA",
 	},
 	breakItem2: {
 		width: "45%",
 		textAlign: "left",
 		alignItems: "center",
-		background: "rgba(100, 10, 146, 0.5)",
+		background: "rgba(49, 104, 218, 0.8)",
 	},
 	breakItem3: {
 		width: "27.5%",
-		background: "rgba(255, 255, 255, 0.2)",
+		background: "rgba(82, 145, 202, 0.4)",
 	},
 
 	events: {
@@ -105,8 +106,9 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	// For Keynote Speaker
 	keynoteLeftDetail: {
-		paddingLeft: "1rem",
 		cursor: "pointer",
+		display: "flex",
+		width: '40%'
 	},
 
 	// For regular Speaker
@@ -114,11 +116,13 @@ export const useStyles = makeStyles((theme) => ({
 		width: "50%",
 		padding: "0 1rem",
 		display: "flex",
+		border: '1px solid rgba(255, 255, 255, 0.4)',
 		flexDirection: "column",
 		justifyContent: "space-between",
 
 		"&:hover": {
 			cursor: "pointer",
+			background: 'linear-gradient(268.48deg, #2979E4 2.61%, #134B95 100%)'
 		},
 
 		[theme.breakpoints.down("sm")]: {
@@ -130,11 +134,13 @@ export const useStyles = makeStyles((theme) => ({
 		width: "50%",
 		padding: "0 1rem",
 		display: "flex",
+		border: '1px solid rgba(255, 255, 255, 0.4)',
 		flexDirection: "column",
 		justifyContent: "space-between",
 
 		"&:hover": {
 			cursor: "pointer",
+			background: 'linear-gradient(268.48deg, #2979E4 2.61%, #134B95 100%)'
 		},
 
 		[theme.breakpoints.down("sm")]: {

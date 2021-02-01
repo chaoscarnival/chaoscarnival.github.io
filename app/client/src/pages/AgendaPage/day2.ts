@@ -7,7 +7,7 @@ export default [
 				name: "Uma Mukkara",
 				role:
 					"Maintainer of LitmusChaos project, Co-founder & COO at MayaData",
-				speakerImage: "https://i.ibb.co/6nF3D6L/Uma-Mayadata.png",
+				speakerImage: "https://i.ibb.co/GsXnxnC/Group-3278.png",
 				companyLogo: "https://i.ibb.co/X35X6hP/Mayadata.png",
 				modalLogo: "/images/keynote_speaker2.jpg",
 			},

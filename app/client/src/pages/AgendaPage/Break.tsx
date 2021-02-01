@@ -13,7 +13,6 @@ const Break: React.FC<BreakProps> = ({ title }) => {
 			style={{
 				display: "flex",
 				minHeight: "10rem",
-				margin: "3rem 0",
 			}}
 		>
 			<div className={classes.breakTimes}>
