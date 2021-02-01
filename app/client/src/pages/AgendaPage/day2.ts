@@ -13,6 +13,8 @@ export default [
 			},
 		],
 		time: "8:00 AM",
+		startDateTime: "10 Feb 2021 08:00:00 -0800",
+		endDateTime: "10 Feb 2021 09:00:00 -0800",
 		description:
 			"A large chunk of challenges in the Kubernetes production environments is how to run stateful applications reliably. Each stateful application has many micro services and there is a mesh of such applications creating a tight dependency for running the stateful services successfully. Cloud Native Chaos Engineering is a modern approach to get a shot at predictable resilience in Kubernetes production at scale. Uma Mukkara, maintainer at LitmusChaos project discusses best practices to roll out Cloud Native Chaos Engineering and achieve desired SLOs for Kubernetes platform and applications.",
 		tags: ["Keynote"],
@@ -21,6 +23,8 @@ export default [
 	{
 		time: "9:00 AM",
 		duration: "(45min)",
+		startDateTime: "10 Feb 2021 09:00:00 -0800",
+		endDateTime: "10 Feb 2021 09:45:00 -0800",
 		speaker1: {
 			sessionName: `[Session 1] IBM's Principles of Chaos Engineering`,
 			speaker: [
@@ -35,11 +39,7 @@ export default [
 			description:
 				"IBM has spent over a century improving the reliability of systems ranging from the largest of mainframes to the smallest of microservices. As part of cultural and organisational improvements we’ve codified a list of principles which define our view of Chaos Engineering.\r\n\r\nIBM's Principles of Chaos Engineering do not replace existing principles, but adapt them and match them to the requirements we have from our clients and from our own internal services. In this session we will describe a little of the process of getting engineers from across to agree on these principles (herding cats is child’s play in comparison) and present the principles and lessons which we agreed upon.\r\n\r\nMost Chaos Engineering examples come from either born-on-the-cloud examples or companies which are significantly smaller than IBM. In this session attendees will learn about adopting Chaos Engineering in a highly complex environment - both from a technical and a cultural perspective. We believe that the principles we present will be relevant to all types of environments and organisations of all sizes.\r\n\r\nWe will also touch on IBM's Chaos Engineering method that allowed internal IBM SREs to successfully build and maintain reliable mission critical services and showcase the benefits of a well formed and measurable Chaos Engineering program for digital transformation engagements.\r\n",
 			background: "rgba(31, 112, 193, 0.15)",
-			tags: [
-				"chaos-engineering",
-				"benefits-of-chaos-engineering",
-				"chaos-engineering-best-practices",
-			],
+			tags: ["chaos-engineering"],
 			id: 16,
 		},
 		speaker2: {
@@ -56,18 +56,15 @@ export default [
 			description:
 				'You might be running an eCommerce, Food Delivery, or a SaaS service. But the common possibility of all these risks or otherwise \n"Chaos" a simple outage might create to your customers, partners, or even internal platform users.\r\n\r\nYou might be running an eCommerce, Food Delivery, or a SaaS service. But the common possibility of all these risks or otherwise \r\n"Chaos" a simple outage might create to your customers, partners, or even internal platform users.\r\n\r\n"Chaos" is an interesting concept of getting ready for the outage day and minimizing the blast radius by using specific methods. \r\n\r\nIn this talk, we\'ll take a look at the story of chaos in an application, "free & open" tools available, some best practices! ',
 			background: "rgba(166, 210, 96, 0.3)",
-			tags: [
-				"chaos-engineering",
-				"elastic-stack",
-				"war-stories",
-				"chaos-engineering-tools",
-			],
+			tags: ["chaos-engineering", "elastic-stack"],
 			id: 17,
 		},
 	},
 	{
 		time: "9:45 AM",
 		duration: "(45min)",
+		startDateTime: "10 Feb 2021 09:45:00 -0800",
+		endDateTime: "10 Feb 2021 10:30:00 -0800",
 		speaker1: {
 			sessionName: `[Session 3] Chaos on VMWare Infrastructure using Litmus`,
 			speaker: [
@@ -100,20 +97,15 @@ export default [
 			description:
 				"Learn by fire! Chaos and Learning!\r\n\r\nHow do you ensure your food tastes good? Or maybe you don't and everyone hates your cooking. How do you learn to avoid burning or cutting yourself while cooking? Is the kitchen on fire or is the smoke alarm just complaining that it needs a new battery? \r\n\r\n\r\nWhat does all of this have to do with the cloud? Chaos and Learning!  She will talk about her favorite ingredient for shipping resilient cloud-native applications. \r\n",
 			background: "rgba(12, 131, 95, 0.3)",
-			tags: [
-				"SRE",
-				"chaos engineering",
-				"cloud native",
-				"chaos-engineering",
-				"introducing-chaos-engineering-into-devops",
-				"chaos-engineering-best-practices",
-			],
+			tags: ["SRE", "Chaos Engineering", "cloud native"],
 			id: 19,
 		},
 	},
 	{
-		time: "10:00 AM",
+		time: "10:45 AM",
 		duration: "(45min)",
+		startDateTime: "10 Feb 2021 10:45:00 -0800",
+		endDateTime: "10 Feb 2021 11:30:00 -0800",
 		speaker1: {
 			sessionName: `[Session 5] Improving Business Resiliency with Chaos Engineering`,
 			speaker: [
@@ -128,12 +120,7 @@ export default [
 			description:
 				"An uninterrupted, enjoyable customer experience is our main goal in Prime Video, but we operate in a world of distributed services, network interruptions, and variable workload on our services. How do you run a reliable service in a world full of so much chaos? Embrace it!\r\n\r\nAn uninterrupted, enjoyable customer experience is our main goal in Prime Video, but we operate in a world of distributed services, network interruptions, and variable workload on our services. How do you run a reliable service in a world full of so much chaos? Embrace it!\r\n\r\nIn this session, you will learn how and why adding Chaos Engineering to DevOps practices helps us to build better and more resilient applications. We will share examples of how setting organizational goals for Chaos Engineering transformed engineering culture and helped us delight our customers. In short, Chaos Engineering goals mean delivering on business goals. ",
 			background: "rgba(255, 142, 38, 0.3)",
-			tags: [
-				"chaos-engineering",
-				"benefits-of-chaos-engineering",
-				"introducing-chaos-engineering-into-devops",
-				"chaos-engineering-best-practices",
-			],
+			tags: ["chaos-engineering", "benefits-of-chaos-engineering"],
 			id: 20,
 		},
 		speaker2: {
@@ -150,20 +137,15 @@ export default [
 			description:
 				"Systems fail but the real failures are the ones from those we learn nothing. This talk is a tale of few such failures that went right under our noses and what we did to prevent those. The techniques covered range from Heterogenous systems, unordered events, missing correlations, and human errors.\r\n\r\nEvery time there is a failure there is a root cause analysis and there is a vow to not repeat the mistake. I will take some curious failures that I have dealt with in the past decade of my work with Infrastructure systems and the steps we had to undertake to:\r\n\r\n1. Isolate\r\n2. Limit the spread\r\n3. Prevent from happening again\r\n\r\n## Failure 1 ##\r\nAn un-replicated consul configuration results in data loss 25 hours before a countrywide launch. Took a staggering 5 engineers and 20 hours to find one single line of change.\r\n\r\n## Failure 2 ##\r\nA failed distributed lock in etcD. Forcing us to re-write the whole storage on Consul and hours of migration. Only to find later that it was a clock Issue.\r\n\r\nThe above Isolation and immediate fixes were painfully long, yet doable. \r\nThe real ambition was to prevent *similar* such Incidents from repeating. I will share samples of some of our RCAs and what was missing with each one of those versions. And what the resultant RCA looks like. This section does touch briefly upon blameless RCA but real point of focus is action-ability of an RCA.\r\n\r\n## Failure3 ##\r\nIn this section, I will showcase some of the in-house frameworks and technologies (easy to replicate) that were built to turn the prevention/alert section of RCAs into lines of code rather than lines of blurb of text. The goal of this section is to advertise and advocate the need to build/adopt toolchains which promise early-detection and not just faster-resolution.",
 			background: "rgba(10, 255, 179, 0.1)",
-			tags: [
-				"distributed systems",
-				"engineering",
-				"scale",
-				"chaos-engineering",
-				"war-stories",
-				"chaos-engineering-best-practices",
-			],
+			tags: ["distributed systems", "engineering", "scale"],
 			id: 21,
 		},
 	},
 	{
-		time: "10:45 AM",
+		time: "11:30 AM",
 		duration: "(45min)",
+		startDateTime: "10 Feb 2021 11:30:00 -0800",
+		endDateTime: "10 Feb 2021 12:15:00 -0800",
 		speaker1: {
 			sessionName: `[Session 7] Getting Started with Observability for Chaos Engineering`,
 			speaker: [
@@ -196,13 +178,7 @@ export default [
 			description:
 				"We will discuss how you can construct continuous delivery pipelines that include chaos experimentation while simulating real-world load to test the resilience of applications. On top, we implement quality gates based on SLOs to ensure resilient applications are deployed into production.\r\n\r\nContinuous Delivery practices have evolved significantly with the cloud-native paradigm. GitOps & Chaos Engineering are at the forefront of this new CD approach, with an ever-increasing pattern involving Git-backed pipeline definitions that implement “chaos stages” in pre-prod environments to gauge SLO compliance. In this talk, we will discuss how you can construct pipelines that include chaos experimentation (mapped to declarative hypothesis around application steady-state) while simulating real-world load and implement quality gates to ensure resilient applications are deployed into production. All this - in a GitOps native manner. We will also demonstrate how you can include chaos tests to your existing CD pipelines without the need of rewriting them.",
 			background: "rgba(128, 52, 193, 0.2)",
-			tags: [
-				"chaos-engineering",
-				"Continuous Delivery",
-				"Orchestration",
-				"Keptn",
-				"Open-Source",
-			],
+			tags: ["Orchestration", "Keptn", "Open-Source"],
 			id: 23,
 		},
 	},
@@ -210,8 +186,10 @@ export default [
 		content: "break",
 	},
 	{
-		time: "1:15 PM",
+		time: "1:45 PM",
 		duration: "(45min)",
+		startDateTime: "10 Feb 2021 13:45:00 -0800",
+		endDateTime: "10 Feb 2021 14:30:00 -0800",
 		speaker1: {
 			sessionName: `[Session 9] Tulp: Integrating Artificial Intelligence and Chaos Engineering to Learn from the Incidents`,
 			speaker: [
@@ -250,8 +228,10 @@ export default [
 		},
 	},
 	{
-		time: "2:00 PM",
+		time: "2:30 PM",
 		duration: "(30min)",
+		startDateTime: "10 Feb 2021 14:30:00 -0800",
+		endDateTime: "10 Feb 2021 15:15:00 -0800",
 		speaker1: {
 			sessionName: `[Session 11] Bring Chaos into your Development Environment`,
 			speaker: [
@@ -287,8 +267,10 @@ export default [
 		},
 	},
 	{
-		time: "2:30 PM",
-		duration: "(45min)",
+		time: "3:15 PM",
+		duration: "(30min)",
+		startDateTime: "10 Feb 2021 15:15:00 -0800",
+		endDateTime: "10 Feb 2021 15:45:00 -0800",
 		speaker1: {
 			sessionName: "",
 			speaker: [

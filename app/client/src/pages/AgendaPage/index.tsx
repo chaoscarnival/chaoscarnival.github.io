@@ -6,6 +6,7 @@ import MainHeader from "../../components/Header";
 import JoinCarnival from "../../components/JoinCarnival";
 import Sponsors from "../../components/Sponsors";
 import "../../scrollbar.css";
+import { getLocale } from "../../utils/getLocale";
 import Break from "./Break";
 import day1 from "./day1";
 import day2 from "./day2";
@@ -17,8 +18,7 @@ import Tags from "./Tags";
 interface PopOverModal {
 	modalState: boolean;
 	speakerData: any;
-
-	sessionTime: string | undefined;
+	sessionData: any;
 }
 
 const AgendaPage: React.FC = () => {
@@ -26,12 +26,12 @@ const AgendaPage: React.FC = () => {
 	const [modalStatus, setModalStatus] = useState<PopOverModal>({
 		modalState: false,
 		speakerData: "",
-		sessionTime: "",
+		sessionData: "",
 	});
 	const [keynoteModal, setKeynoteModal] = useState<PopOverModal>({
 		modalState: false,
 		speakerData: "",
-		sessionTime: "",
+		sessionData: "",
 	});
 	const Speaker = (s: any, companyLogo: string | undefined, d: any) => {
 		return (
@@ -85,7 +85,7 @@ const AgendaPage: React.FC = () => {
 		return (
 			<div className={classes.block}>
 				<div className={classes.time}>
-					{time}
+					{getLocale(time).time}
 					<br />
 					<span
 						style={{
@@ -116,14 +116,14 @@ const AgendaPage: React.FC = () => {
 		setModalStatus({
 			modalState: false,
 			speakerData: "",
-			sessionTime: "",
+			sessionData: "",
 		});
 	};
 	const handleKeynoteModalClose = () => {
 		setKeynoteModal({
 			modalState: false,
 			speakerData: "",
-			sessionTime: "",
+			sessionData: "",
 		});
 	};
 	const Keynote = (keynote: any) => {
@@ -134,7 +134,7 @@ const AgendaPage: React.FC = () => {
 						setKeynoteModal({
 							modalState: true,
 							speakerData: keynote,
-							sessionTime: keynote.time,
+							sessionData: "",
 						});
 					}}
 					className={classes.keynoteLeftDetail}
@@ -183,11 +183,20 @@ const AgendaPage: React.FC = () => {
 							return (
 								<>
 									{d.content === "break" ? (
-										<Break />
+										<Break
+											title={"BOOT CAMP 1 AWS-KAFKA"}
+										/>
 									) : (
 										<div className={classes.block}>
 											<div className={classes.time}>
-												{d.time}
+												{
+													getLocale(
+														d.startDateTime !==
+															undefined
+															? d.startDateTime
+															: ""
+													).time
+												}
 												<br />
 												<span
 													style={{
@@ -222,9 +231,7 @@ const AgendaPage: React.FC = () => {
 																			modalState: true,
 																			speakerData:
 																				d.speaker1,
-
-																			sessionTime:
-																				d.time,
+																			sessionData: d,
 																		}
 																  );
 														}}
@@ -281,8 +288,7 @@ const AgendaPage: React.FC = () => {
 																modalState: true,
 																speakerData:
 																	d.speaker2,
-																sessionTime:
-																	d.time,
+																sessionData: d,
 															});
 														}}
 													>
@@ -332,7 +338,11 @@ const AgendaPage: React.FC = () => {
 								</>
 							);
 						})}
-						{Closing("3:00 PM", "(10min)", "Day 1 Closing Remarks")}
+						{Closing(
+							"10 Feb 2021 15:45:00 -0800",
+							"(10min)",
+							"Day 1 Closing Remarks"
+						)}
 					</div>
 
 					<br />
@@ -350,11 +360,20 @@ const AgendaPage: React.FC = () => {
 							return (
 								<>
 									{d.content === "break" ? (
-										<Break />
+										<Break
+											title={"BOOT CAMP 1 AKS-PERCONA"}
+										/>
 									) : (
 										<div className={classes.block}>
 											<div className={classes.time}>
-												{d.time}
+												{
+													getLocale(
+														d.startDateTime !==
+															undefined
+															? d.startDateTime
+															: ""
+													).time
+												}
 												<br />
 												<span
 													style={{
@@ -390,8 +409,7 @@ const AgendaPage: React.FC = () => {
 																			speakerData:
 																				d.speaker1,
 
-																			sessionTime:
-																				d.time,
+																			sessionData: d,
 																		}
 																  );
 														}}
@@ -449,8 +467,7 @@ const AgendaPage: React.FC = () => {
 																speakerData:
 																	d.speaker2,
 
-																sessionTime:
-																	d.time,
+																sessionData: d,
 															});
 														}}
 													>
@@ -500,7 +517,11 @@ const AgendaPage: React.FC = () => {
 								</>
 							);
 						})}
-						{Closing("3:00 PM", "(10min)", "Day 2 Closing Remarks")}
+						{Closing(
+							"11 Feb 2021 15:45:00 -0800",
+							"(10min)",
+							"Day 2 Closing Remarks"
+						)}
 					</div>
 					<KeynoteModal
 						modalState={keynoteModal.modalState}
@@ -511,6 +532,7 @@ const AgendaPage: React.FC = () => {
 						modalState={modalStatus.modalState}
 						handleClose={handleClose}
 						speaker={modalStatus.speakerData}
+						session={modalStatus.sessionData}
 					/>
 				</div>
 

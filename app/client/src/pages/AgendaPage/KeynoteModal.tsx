@@ -5,6 +5,7 @@ import AddCalendar from "./AddCalendar";
 import JoinSession from "./JoinSession";
 import { useStyles } from "./styles";
 import Tags from "./Tags";
+import { getLocale } from "../../utils/getLocale";
 
 interface KeynoteModalProps {
 	handleClose: () => void;
@@ -18,6 +19,15 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 	modalState,
 }) => {
 	const classes = useStyles();
+
+	const { dateString, time: startTime, timeZone } = getLocale(
+		speaker.startDateTime
+	);
+
+	const { time: endTime } = getLocale(speaker.endDateTime);
+
+	const joinUrl =
+		"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1";
 	return (
 		<Modal open={modalState} onClose={handleClose}>
 			<div className={classes.modal}>
@@ -74,8 +84,8 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 						<Typography className={classes.modalSessionName}>
 							{speaker.sessionName}
 						</Typography>
-						<Typography style={{ color: "#FFFFFF", fontSize: 16 }}>
-							{speaker.time}
+						<Typography style={{ color: "#FFFFFF", opacity: 0.8 }}>
+							{dateString} {startTime} - {endTime} ({timeZone})
 						</Typography>
 						<Typography
 							style={{
@@ -94,7 +104,11 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 						<Tags tags={speaker?.tags} />
 
 						<div className={classes.modalBtnDiv}>
-							<JoinSession handleClick={() => {}} />
+							<JoinSession
+								handleClick={() =>
+									(window.location.href = joinUrl)
+								}
+							/>
 							<AddCalendar handleClick={() => {}} />
 						</div>
 						<div style={{ display: "flex" }}>
