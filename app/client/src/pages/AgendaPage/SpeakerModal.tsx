@@ -1,19 +1,19 @@
 import {
-	Modal,
 	Button,
-	Typography,
 	IconButton,
 	MobileStepper,
+	Modal,
+	Typography,
 	withStyles,
 } from "@material-ui/core";
-import React from "react";
-import { useStyles } from "./styles";
-import JoinSession from "./JoinSession";
-import AddCalendar from "./AddCalendar";
-import Tags from "./Tags";
-import ClearIcon from "@material-ui/icons/Clear";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import ClearIcon from "@material-ui/icons/Clear";
+import React from "react";
+import AddCalendar from "./AddCalendar";
+import JoinSession from "./JoinSession";
+import { useStyles } from "./styles";
+import Tags from "./Tags";
 
 const MobileSlider = withStyles({
 	root: {
@@ -192,28 +192,28 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 						</div>
 					)}
 					<div className={classes.sessionDetails}>
-						<Typography className={classes.modalSessionName}>
-							{speaker.sessionName}
-						</Typography>
-						<Typography style={{ color: "#FFFFFF", fontSize: 16 }}>
-							{speaker.sessionTime}
-						</Typography>
-						<Typography
-							style={{
-								color: "white",
-								maxWidth: "500px",
-								fontSize: "16px",
-								marginTop: 10,
-								marginBottom: 20,
-							}}
-						>
-							Join the pre-show before the Google Keynote starts
-							which will bring two AI Experiments to life: NSynth,
-							a synthesizer that generates new sounds using neural
-							networks and World Draw, a live interactive
-							experience to draw the world together using the same
-							technology behind QuickDraw and AutoDraw.
-						</Typography>
+						<div style={{ maxHeight: "40vh", overflowY: "scroll" }}>
+							<Typography className={classes.modalSessionName}>
+								{speaker.sessionName}
+							</Typography>
+							<Typography
+								style={{ color: "#FFFFFF", fontSize: 16 }}
+							>
+								{speaker.sessionTime}
+							</Typography>
+							<Typography
+								style={{
+									color: "white",
+									maxWidth: "500px",
+									fontSize: "16px",
+									marginTop: 10,
+									marginBottom: 20,
+									whiteSpace: "pre-line",
+								}}
+							>
+								{speaker.description}
+							</Typography>
+						</div>
 						<Tags tags={speaker?.tags} />
 
 						<div className={classes.modalBtnDiv}>
