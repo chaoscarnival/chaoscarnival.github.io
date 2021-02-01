@@ -14,7 +14,7 @@ function AcknowledgementPage() {
 	return (
 		<div className="scrollbar scrollbar-primary">
 			<div className={classes.rootContainer}>
-				<MainHeader inHomePage={true} linksActive={false} />
+				<MainHeader />
 				<div className={classes.root}>
 					<div className={classes.mainDiv}>
 						<div className={classes.headerDiv}>

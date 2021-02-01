@@ -25,8 +25,8 @@ export const useStyles = makeStyles((theme) => ({
 			display: "flex",
 			flexDirection: "column",
 			maxWidth: "100%",
-			marginLeft: 10,
-			marginRight: 10,
+			marginLeft: "8vw",
+			marginRight: "8vw",
 			margin: "0 auto",
 		},
 		[theme.breakpoints.down("xs")]: {
@@ -50,9 +50,13 @@ export const useStyles = makeStyles((theme) => ({
 		paddingTop: "4rem",
 		[theme.breakpoints.down("sm")]: {
 			marginTop: 20,
+			marginLeft: "2vw",
+			marginRight: "2vw",
+			paddingTop: "0rem",
+		},
+		[theme.breakpoints.down("xs")]: {
 			marginLeft: "8vw",
 			marginRight: "8vw",
-			paddingTop: "0rem",
 		},
 	},
 	regNow: {
@@ -137,11 +141,15 @@ export const useStyles = makeStyles((theme) => ({
 		marginRight: 70,
 		marginTop: 30,
 		[theme.breakpoints.down("sm")]: {
-			width: "85%",
+			width: "95%",
 			height: "5px",
 			borderRadius: "5px",
-			marginLeft: "8vw",
+			marginLeft: "2vw",
 			marginRight: 0,
+		},
+		[theme.breakpoints.down("xs")]: {
+			width: "85%",
+			marginLeft: "8vw",
 		},
 	},
 	textDate: {

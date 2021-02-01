@@ -1,22 +1,16 @@
-import { Button } from "@material-ui/core";
-import moment from "moment";
+import moment from "moment-timezone";
 import React, { useEffect, useState } from "react";
 import useStyles from "./styles";
 
 interface CountDownProps {
 	timeTillDate: string;
 	timeFormat: string;
-	inHomePage: boolean;
 }
 
-const CountDown: React.FC<CountDownProps> = ({
-	timeTillDate,
-	timeFormat,
-	inHomePage,
-}) => {
+const CountDown: React.FC<CountDownProps> = ({ timeTillDate, timeFormat }) => {
 	const [now, setNow] = useState(moment());
 	const [over, setOver] = useState(false);
-	const classes = useStyles(inHomePage);
+	const classes = useStyles();
 	const then = moment(timeTillDate, timeFormat);
 	const days = then.diff(now, "days");
 	now.add(days, "days");
@@ -38,9 +32,9 @@ const CountDown: React.FC<CountDownProps> = ({
 	return (
 		<div>
 			{!over ? (
-				<Button variant="outlined" className={classes.timerBtn}>
+				<div className={classes.timerBtn}>
 					{`${days}d ${hours}h ${minutes}m ${seconds}s`}
-				</Button>
+				</div>
 			) : (
 				<div />
 			)}

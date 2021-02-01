@@ -20,7 +20,7 @@ const StyledTableCell = withStyles((theme: Theme) =>
 			color: theme.palette.common.white,
 		},
 		body: {
-			color: theme.palette.common.black,
+			color: theme.palette.common.white,
 			borderRadius: 4,
 			fontSize: 18,
 		},
