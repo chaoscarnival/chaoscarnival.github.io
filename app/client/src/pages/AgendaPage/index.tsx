@@ -1,4 +1,4 @@
-import { Hidden, Typography, useTheme } from "@material-ui/core";
+import { Hidden, Typography } from "@material-ui/core";
 import * as React from "react";
 import { useState } from "react";
 import Footer from "../../components/Footer";
@@ -209,8 +209,6 @@ const AgendaPage: React.FC = () => {
 			</div>
 		);
 	};
-
-	const theme = useTheme();
 
 	return (
 		<div className="scrollbar scrollbar-primary">
