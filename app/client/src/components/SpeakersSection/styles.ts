@@ -14,6 +14,15 @@ export const useStyles = makeStyles((theme: Theme) => ({
 			paddingBottom: 0,
 		},
 	},
+
+	viewAgendaButton: {
+		fontWeight: "bold",
+		background: "#FE1C65",
+		color: "#fff",
+		padding: theme.spacing(1, 4),
+		marginTop: theme.spacing(2.5),
+	},
+
 	speakerRoot: {
 		display: "flex",
 		flexDirection: "row",

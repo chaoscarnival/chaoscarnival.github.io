@@ -1,5 +1,6 @@
-import { Typography } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import React from "react";
+import history from "../../history";
 import CustomCard from "../CustomSpeakerCard";
 import KeyNoteCard from "../KeyNoteCards";
 import { KeyNoteSpeakerData } from "./KeyNoteSpeakerData";
@@ -45,8 +46,16 @@ export function SpeakersSection() {
 				</div>
 
 				<div className={classes.speakersInfoText}>
-					We have exciting lineup for the 2 days of Chaos Carnival
-					featuring various chaos experts from all over the globe.
+					We have an exciting lineup for the 2 days of Chaos Carnival
+					featuring various chaos experts from all over the globe. See
+					the full Agenda.
+					<br />
+					<Button
+						onClick={() => history.push("/agenda")}
+						className={classes.viewAgendaButton}
+					>
+						View the Agenda
+					</Button>
 				</div>
 			</div>
 			<div className={classes.speakerRoot}>

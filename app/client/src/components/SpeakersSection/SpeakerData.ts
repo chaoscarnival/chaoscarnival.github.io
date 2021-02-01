@@ -148,10 +148,10 @@ export const SpeakerData = [
 	},
 	{
 		id: 21,
-		name: "Vaibhav Chopra",
-		title: "Engineering Manager ",
+		name: "Gunnard Engebreth",
+		title: "Senior Developer ",
 		company: "",
-		urlToIcon: "/speakers/Vaibhav_Orange-min.jpg",
+		urlToIcon: "/speakers/Gunnard_PowerCode-min.jpg",
 	},
 	{
 		id: 22,
@@ -162,10 +162,10 @@ export const SpeakerData = [
 	},
 	{
 		id: 23,
-		name: "Gunnard Engebreth",
-		title: "Senior Developer ",
+		name: "Vaibhav Chopra",
+		title: "Engineering Manager ",
 		company: "",
-		urlToIcon: "/speakers/Gunnard_PowerCode-min.jpg",
+		urlToIcon: "/speakers/Vaibhav_Orange-min.jpg",
 	},
 	{
 		id: 24,
@@ -197,10 +197,10 @@ export const SpeakerData = [
 	},
 	{
 		id: 28,
-		name: "Piyush Verma",
-		title: "Co-Founder & CTO",
+		name: "Samar",
+		title: "Cloud Security Engineer",
 		company: "",
-		urlToIcon: "/speakers/Piyush_Last9-min.jpg",
+		urlToIcon: "/speakers/Samar_Orange-min.jpg",
 	},
 	{
 		id: 29,
@@ -208,5 +208,12 @@ export const SpeakerData = [
 		title: "Implementation Lead",
 		company: "",
 		urlToIcon: "/speakers/Jonas_DB-min.jpg",
+	},
+	{
+		id: 30,
+		name: "Piyush Verma",
+		title: "Co-Founder & CTO",
+		company: "",
+		urlToIcon: "/speakers/Piyush_Last9-min.jpg",
 	},
 ];

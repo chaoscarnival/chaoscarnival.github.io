@@ -1,5 +1,6 @@
-import { Typography } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import * as React from "react";
+import history from "../../../history";
 import { useStyles } from "./styles";
 
 function Bootcamps() {
@@ -32,9 +33,16 @@ function Bootcamps() {
 							<Typography
 								className={classes.detailedInfoText}
 							>{`A lot of us want to experience running that first chaos experiment. Well, we run the CE-101 sessions just for that purpose. In these tutorial sessions, you will learn why chaos engineering, and how to get started on it. A cloud based infrastructure will be provided for each attendee and experience how easy it is to run chaos with  the  the modern chaos engineering toolset.`}</Typography>
-							<Typography
-								className={classes.detailedInfoText}
-							>{`This tutorial sessions will be run on both day1 and day2.`}</Typography>
+							<Typography className={classes.detailedInfoText}>
+								{`This tutorial sessions will be run on both day1 and day2.`}
+								<br />
+								<Button
+									onClick={() => history.push("/bootcamps")}
+									className={classes.joinBootcampsButton}
+								>
+									Join the Bootcamps
+								</Button>
+							</Typography>
 						</div>
 					</div>
 				</div>
