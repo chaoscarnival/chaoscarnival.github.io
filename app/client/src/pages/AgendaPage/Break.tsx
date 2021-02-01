@@ -1,4 +1,5 @@
 import React from "react";
+import { getLocale } from "../../utils/getLocale";
 import { useStyles } from "./styles";
 
 const Break: React.FC = () => {
@@ -18,7 +19,7 @@ const Break: React.FC = () => {
 				}}
 			>
 				<div className={classes.breakTime}>
-					11:30 AM
+					{getLocale("10 Feb 2021 12:15:00 -0800").time}
 					<br />
 					<span
 						style={{
@@ -30,7 +31,7 @@ const Break: React.FC = () => {
 					</span>
 				</div>
 				<div className={classes.breakTime}>
-					12:15 PM
+					{getLocale("10 Feb 2021 13:00:00 -0800").time}
 					<br />
 					<span
 						style={{
@@ -80,7 +81,8 @@ const Break: React.FC = () => {
 				>
 					BOOT CAMP 1 AWS-KAFKA
 					<br />
-					(12-12.45)
+					{getLocale("10 Feb 2021 12:30:00 -0800").time}-
+					{getLocale("10 Feb 2021 13:15:00 -0800").time}
 				</h2>
 			</div>
 			<div

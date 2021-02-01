@@ -12,6 +12,8 @@ export default [
 			},
 		],
 		time: "8:00 AM",
+		startDateTime: "10 Feb 2021 08:00:00 -0800",
+		endDateTime: "10 Feb 2021 09:00:00 -0800",
 		description: "",
 		tags: ["Keynote"],
 		id: 0,
@@ -19,6 +21,8 @@ export default [
 	{
 		time: "9:00 AM",
 		duration: "(45min)",
+		startDateTime: "10 Feb 2021 09:00:00 -0800",
+		endDateTime: "10 Feb 2021 09:45:00 -0800",
 		speaker1: {
 			sessionName: `[Session 1] A powerful framework for network chaos experiments note`,
 			speaker: [
@@ -57,6 +61,8 @@ export default [
 	{
 		time: "9:45 AM",
 		duration: "(45min)",
+		startDateTime: "10 Feb 2021 09:45:00 -0800",
+		endDateTime: "10 Feb 2021 10:30:00 -0800",
 		speaker1: {
 			sessionName: `[Session 3] Create Chaos in Databases`,
 			speaker: [
@@ -91,8 +97,10 @@ export default [
 		},
 	},
 	{
-		time: "10:00 AM",
+		time: "10:45 AM",
 		duration: "(45min)",
+		startDateTime: "10 Feb 2021 10:45:00 -0800",
+		endDateTime: "10 Feb 2021 11:30:00 -0800",
 		speaker1: {
 			sessionName: `[Session 5] Improve Application Resiliency with AWS Fault Injection Simulator`,
 			speaker: [
@@ -128,8 +136,10 @@ export default [
 		},
 	},
 	{
-		time: "10:45 AM",
+		time: "11:30 AM",
 		duration: "(45min)",
+		startDateTime: "10 Feb 2021 11:30:00 -0800",
+		endDateTime: "10 Feb 2021 12:15:00 -0800",
 		speaker1: {
 			sessionName: `[Session 7] Event-Driven Chaos Injection`,
 			speaker: [
@@ -175,8 +185,10 @@ export default [
 		content: "break",
 	},
 	{
-		time: "1:15 PM",
+		time: "1:45 PM",
 		duration: "(45min)",
+		startDateTime: "10 Feb 2021 13:45:00 -0800",
+		endDateTime: "10 Feb 2021 14:30:00 -0800",
 		speaker1: {
 			sessionName: `[Session 9] Chaos Engineering the Chaos Engineers`,
 			speaker: [
@@ -226,8 +238,10 @@ export default [
 		},
 	},
 	{
-		time: "2:00 PM",
-		duration: "(30min)",
+		time: "2:30 PM",
+		duration: "(45min)",
+		startDateTime: "10 Feb 2021 14:30:00 -0800",
+		endDateTime: "10 Feb 2021 15:15:00 -0800",
 		speaker1: {
 			sessionName: `[Session 11] The Psychology of Chaos Engineering`,
 			speaker: [
@@ -264,8 +278,10 @@ export default [
 		},
 	},
 	{
-		time: "2:30 PM",
-		duration: "(45min)",
+		time: "3:15 PM",
+		duration: "(30min)",
+		startDateTime: "10 Feb 2021 15:15:00 -0800",
+		endDateTime: "10 Feb 2021 15:45:00 -0800",
 		speaker1: {
 			sessionName: "",
 			speaker: [
