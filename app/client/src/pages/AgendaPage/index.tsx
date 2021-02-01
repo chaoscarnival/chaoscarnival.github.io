@@ -51,6 +51,7 @@ const AgendaPage: React.FC = () => {
 								src={s.speakerImage}
 								id="image"
 								alt="speakerImg"
+								style={{ objectFit: "scale-down" }}
 							/>
 							<div style={{ marginTop: "0.5rem" }}>
 								<Typography id="subtitle">{s.name}</Typography>

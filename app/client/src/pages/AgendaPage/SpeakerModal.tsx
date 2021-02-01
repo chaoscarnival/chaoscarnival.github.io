@@ -65,7 +65,7 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 						onClick={handleModalClose}
 						className={classes.modalCloseBtn}
 					>
-						<ClearIcon style={{ color: "#777777" }} />
+						<ClearIcon style={{ color: "#777777", marginTop: 5 }} />
 					</Button>
 				</div>
 				<div className={classes.modalContent}>

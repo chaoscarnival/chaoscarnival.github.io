@@ -31,7 +31,7 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 						onClick={handleClose}
 						className={classes.modalCloseBtn}
 					>
-						<ClearIcon style={{ color: "#777777" }} />
+						<ClearIcon style={{ color: "#777777", marginTop: 5 }} />
 					</Button>
 				</div>
 				<div className={classes.modalContent}>
