@@ -79,7 +79,7 @@ export default [
 			speaker: [
 				{
 					name: "Vadim Tkachenko",
-					role: "C0-Founder & CTO",
+					role: "Co-Founder & CTO",
 					speakerImage: "https://i.ibb.co/p19dw98/Vadim-Percona.png",
 					companyLogo: "https://i.ibb.co/Cm4YkjD/Percona.png",
 					modalLogo: "/speakers/Vadim_Percona-min.jpg",

@@ -40,7 +40,7 @@ const AgendaPage: React.FC = () => {
 					<></>
 				) : (
 					<div className={classes.speaker}>
-						<div style={{ display: "flex" }}>
+						<div style={{ display: "flex", flexWrap: "wrap" }}>
 							<img
 								src={s.speakerImage}
 								id="image"
@@ -67,8 +67,8 @@ const AgendaPage: React.FC = () => {
 							<img
 								style={{
 									marginTop: "0.5rem",
-									height: "2rem",
-									width: "10rem",
+									maxHeight: "2rem",
+									maxWidth: "10rem",
 									objectFit: "contain",
 								}}
 								src={companyLogo}
@@ -99,7 +99,7 @@ const AgendaPage: React.FC = () => {
 				<div
 					style={{
 						background: "rgba(255, 255, 255, 0.05)",
-						width: "70%",
+						width: "90%",
 						height: "5rem",
 						lineHeight: "3rem",
 					}}
@@ -128,7 +128,14 @@ const AgendaPage: React.FC = () => {
 	};
 	const Keynote = (keynote: any) => {
 		return (
-			<>
+			<div
+				style={{
+					display: "flex",
+					flexWrap: "wrap",
+					justifyContent: "space-between",
+					width: "90%",
+				}}
+			>
 				<div
 					onClick={() => {
 						setKeynoteModal({
@@ -144,26 +151,22 @@ const AgendaPage: React.FC = () => {
 						<>{Speaker(s, undefined, keynote)}</>
 					))}
 				</div>
-				<div className={classes.keynoteRightDetail}>
-					{keynote.speaker?.map((s) => (
-						<img
-							src={s.companyLogo}
-							style={{
-								position: "absolute",
-								bottom: "30%",
-								right: 0,
-								width: "8rem",
-							}}
-							alt="company logo"
-						/>
-					))}
-				</div>
-			</>
+				{keynote.speaker?.map((s) => (
+					<img
+						src={s.companyLogo}
+						style={{
+							width: "8rem",
+							objectFit: "contain",
+						}}
+						alt="company logo"
+					/>
+				))}
+			</div>
 		);
 	};
 	return (
 		<div className="scrollbar scrollbar-primary">
-			<div className={classes.rootContainer}>
+			<div>
 				<MainHeader />
 				{/* Agenda Page Content */}
 				<div className={classes.root}>
@@ -172,7 +175,7 @@ const AgendaPage: React.FC = () => {
 					{/* Day 1 Agenda Table */}
 
 					<div className={classes.header}>
-						<h1 style={{ marginLeft: "17%", lineHeight: "5rem" }}>
+						<h1 style={{ marginLeft: "10%", lineHeight: "5rem" }}>
 							Wednesday, Feb 10
 						</h1>
 					</div>
@@ -213,7 +216,7 @@ const AgendaPage: React.FC = () => {
 												<>{Keynote(d)}</>
 											) : (
 												// For Regular speakers
-												<>
+												<div className={classes.events}>
 													<div
 														className={
 															classes.speaker1details
@@ -236,32 +239,35 @@ const AgendaPage: React.FC = () => {
 																  );
 														}}
 													>
-														<Typography
-															style={{
-																fontWeight:
-																	"bold",
-																fontSize: 18,
-																paddingTop: 10,
-															}}
-														>
-															{
-																d.speaker1
-																	?.sessionName
-															}
-														</Typography>
-
-														{/* Tags */}
-														<div
-															className={
-																classes.tagsField
-															}
-														>
-															<Tags
-																tags={
+														<div>
+															<Typography
+																style={{
+																	fontWeight:
+																		"bold",
+																	fontSize: 18,
+																	paddingTop: 10,
+																}}
+															>
+																{
 																	d.speaker1
-																		?.tags
+																		?.sessionName
 																}
-															/>
+															</Typography>
+
+															{/* Tags */}
+															<div
+																className={
+																	classes.tagsField
+																}
+															>
+																<Tags
+																	tags={
+																		d
+																			.speaker1
+																			?.tags
+																	}
+																/>
+															</div>
 														</div>
 
 														<>
@@ -292,32 +298,35 @@ const AgendaPage: React.FC = () => {
 															});
 														}}
 													>
-														<Typography
-															style={{
-																fontWeight:
-																	"bold",
-																fontSize: 18,
-																paddingTop: 10,
-															}}
-														>
-															{
-																d.speaker2
-																	?.sessionName
-															}
-														</Typography>
-
-														{/* Tags */}
-														<div
-															className={
-																classes.tagsField
-															}
-														>
-															<Tags
-																tags={
+														<div>
+															<Typography
+																style={{
+																	fontWeight:
+																		"bold",
+																	fontSize: 18,
+																	paddingTop: 10,
+																}}
+															>
+																{
 																	d.speaker2
-																		?.tags
+																		?.sessionName
 																}
-															/>
+															</Typography>
+
+															{/* Tags */}
+															<div
+																className={
+																	classes.tagsField
+																}
+															>
+																<Tags
+																	tags={
+																		d
+																			.speaker2
+																			?.tags
+																	}
+																/>
+															</div>
 														</div>
 
 														<>
@@ -331,7 +340,7 @@ const AgendaPage: React.FC = () => {
 															)}
 														</>
 													</div>
-												</>
+												</div>
 											)}
 										</div>
 									)}
@@ -349,7 +358,7 @@ const AgendaPage: React.FC = () => {
 					<br />
 					{/* Day 2 */}
 					<div className={classes.header}>
-						<h1 style={{ marginLeft: "17%", lineHeight: "5rem" }}>
+						<h1 style={{ marginLeft: "10%", lineHeight: "5rem" }}>
 							Thursday, Feb 11
 						</h1>
 					</div>
@@ -390,7 +399,7 @@ const AgendaPage: React.FC = () => {
 												<>{Keynote(d)}</>
 											) : (
 												// For Regular speakers
-												<>
+												<div className={classes.events}>
 													<div
 														className={
 															classes.speaker1details
@@ -510,7 +519,7 @@ const AgendaPage: React.FC = () => {
 															)}
 														</>
 													</div>
-												</>
+												</div>
 											)}
 										</div>
 									)}

@@ -1,12 +1,8 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
-	rootContainer: {
-		height: "100vh",
-	},
 	root: {
 		background: "#070E23",
-		paddingLeft: "15%",
 		paddingTop: theme.spacing(17.5),
 	},
 	title: {
@@ -15,15 +11,16 @@ export const useStyles = makeStyles((theme) => ({
 		WebkitTextFillColor: "transparent",
 		background:
 			"-webkit-linear-gradient(89.85deg, #BCA1F7 0%, #EE759C 98.01%)",
+		marginLeft: "10%",
 	},
 	header: {
 		background:
 			"linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%)",
 		height: "5rem",
-		marginLeft: "-20%",
 	},
 	details: {
-		width: "100%",
+		width: "80%",
+		margin: "0 auto",
 	},
 
 	block: {
@@ -34,54 +31,121 @@ export const useStyles = makeStyles((theme) => ({
 		width: "10%",
 		height: "5rem",
 		fontSize: "1rem",
-		marginLeft: "0.5rem",
 		paddingTop: "1.5%",
+
+		[theme.breakpoints.down("sm")]: {
+			width: "auto",
+			marginRight: theme.spacing(1),
+		},
 	},
 	detailsBlock: {
 		paddingBottom: "1rem",
 	},
 
 	// Break
+	breakTimes: {
+		width: "10%",
+		[theme.breakpoints.down("sm")]: {
+			width: "auto",
+			marginRight: theme.spacing(1),
+		},
+	},
+
 	breakTime: {
 		height: "5rem",
 		fontSize: "1rem",
-		marginLeft: "0.5rem",
 		paddingTop: "1.5%",
+
+		"& span": {
+			fontSize: "0.8rem",
+			color: "rgba(255, 255, 255, 0.6)",
+		},
+	},
+	breakEvents: {
+		display: "flex",
+		width: "90%",
+		textAlign: "center",
+
+		[theme.breakpoints.down("sm")]: {
+			flexDirection: "column",
+		},
 	},
 
+	breakItem: {
+		display: "flex",
+		flexDirection: "column",
+		justifyContent: "center",
+
+		[theme.breakpoints.down("sm")]: {
+			width: "100% !important",
+		},
+	},
+	breakItem1: {
+		width: "27.5%",
+		background: "rgba(82, 145, 202, 0.4)",
+	},
+	breakItem2: {
+		width: "45%",
+		textAlign: "left",
+		alignItems: "center",
+		background: "rgba(100, 10, 146, 0.5)",
+	},
+	breakItem3: {
+		width: "27.5%",
+		background: "rgba(255, 255, 255, 0.2)",
+	},
+
+	events: {
+		display: "flex",
+		width: "90%",
+
+		[theme.breakpoints.down("sm")]: {
+			flexDirection: "column",
+		},
+	},
 	// For Keynote Speaker
 	keynoteLeftDetail: {
-		float: "left",
 		paddingLeft: "1rem",
-		width: "35%",
 		cursor: "pointer",
-	},
-
-	keynoteRightDetail: {
-		position: "relative",
-		width: "35%",
 	},
 
 	// For regular Speaker
 	speaker1details: {
-		width: "35%",
+		width: "50%",
 		padding: "0 1rem",
+		display: "flex",
+		flexDirection: "column",
+		justifyContent: "space-between",
+
 		"&:hover": {
 			cursor: "pointer",
+		},
+
+		[theme.breakpoints.down("sm")]: {
+			width: "100%",
 		},
 	},
 
 	speaker2details: {
-		width: "35%",
+		width: "50%",
 		padding: "0 1rem",
+		display: "flex",
+		flexDirection: "column",
+		justifyContent: "space-between",
+
 		"&:hover": {
 			cursor: "pointer",
+		},
+
+		[theme.breakpoints.down("sm")]: {
+			width: "100%",
 		},
 	},
 
 	// Speaker Block
 	speaker: {
 		display: "flex",
+		flexWrap: "wrap",
 		paddingBottom: "1rem",
 		justifyContent: "space-between",
 		marginTop: "auto",
@@ -93,6 +157,10 @@ export const useStyles = makeStyles((theme) => ({
 			marginLeft: "1rem",
 			fontSize: "0.8rem",
 			color: "rgba(255, 255, 255, 0.8)",
+
+			[theme.breakpoints.down("sm")]: {
+				marginLeft: "0",
+			},
 		},
 	},
 
@@ -111,6 +179,8 @@ export const useStyles = makeStyles((theme) => ({
 	tagsField: {
 		marginTop: 5,
 		marginBottom: 30,
+		display: "flex",
+		flexWrap: "wrap",
 	},
 	//Modal Styles
 	modal: {
