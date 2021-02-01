@@ -18,14 +18,17 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 	modalState,
 }) => {
 	const classes = useStyles();
-	console.log(speaker.time);
 	return (
-		<Modal
-			open={modalState}
-			onClose={handleClose}
-			className={classes.modal}
-		>
-			<>
+		<Modal open={modalState} onClose={handleClose}>
+			<div
+				style={{
+					top: "50%",
+					left: "50%",
+					transform: `translate(-50%, -50%)`,
+					outline: 0,
+				}}
+				className={classes.modal}
+			>
 				<div style={{ width: "100%" }}>
 					<Button
 						onClick={handleClose}
@@ -133,7 +136,7 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 						</div>
 					</div>
 				</div>
-			</>
+			</div>
 		</Modal>
 	);
 };

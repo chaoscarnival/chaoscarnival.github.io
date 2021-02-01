@@ -18,7 +18,7 @@ import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 const MobileSlider = withStyles({
 	root: {
 		padding: 0,
-		backgroundColor: "black",
+		backgroundColor: "#161A1D",
 	},
 	dot: {
 		color: "transparent",
@@ -54,12 +54,16 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 	};
 
 	return (
-		<Modal
-			open={modalState}
-			onClose={handleModalClose}
-			className={classes.modal}
-		>
-			<>
+		<Modal open={modalState} onClose={handleModalClose}>
+			<div
+				style={{
+					top: "50%",
+					left: "50%",
+					transform: `translate(-50%, -50%)`,
+					outline: 0,
+				}}
+				className={classes.modal}
+			>
 				<div style={{ width: "100%" }}>
 					<Button
 						onClick={handleModalClose}
@@ -246,7 +250,7 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 						</div>
 					</div>
 				</div>
-			</>
+			</div>
 		</Modal>
 	);
 };

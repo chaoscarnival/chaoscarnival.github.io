@@ -17,7 +17,9 @@ function BootcampPage() {
 			<div className={classes.rootContainer}>
 				<MainHeader />
 				<div className={classes.root}>
-					<Typography className={classes.title}>Bootcamps</Typography>
+					<Typography className={classes.title}>
+						Chaos Engineering Bootcamps
+					</Typography>
 					<Bootcamps bootcamps={bootcamps} />
 				</div>
 				<Sponsors />
