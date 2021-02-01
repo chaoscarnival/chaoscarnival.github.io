@@ -14,7 +14,7 @@ export const useStyles = makeStyles((theme: Theme) => ({
 		color: theme.palette.primary.contrastText,
 	},
 	content: {
-		backgroundColor: theme.palette.background.default,
+		background: "#070E23",
 		width: "100%",
 	},
 	routeBody: {

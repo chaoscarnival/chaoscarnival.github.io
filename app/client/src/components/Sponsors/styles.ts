@@ -60,6 +60,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	sponsorDiv: {
+		textAlign: "center",
 		width: "100%",
 		margin: "0 auto",
 		paddingTop: 20,

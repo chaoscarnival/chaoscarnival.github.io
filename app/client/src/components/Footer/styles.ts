@@ -19,8 +19,8 @@ const useStyles = makeStyles((theme: Theme) => ({
 		flexDirection: "row",
 		justifyContent: "center",
 		alignItems: "center",
-		paddingLeft: "2vw",
-		paddingRight: "2vw",
+		paddingLeft: "4vw",
+		paddingRight: "4vw",
 		[theme.breakpoints.down("sm")]: {
 			flexDirection: "column",
 		},
@@ -55,15 +55,30 @@ const useStyles = makeStyles((theme: Theme) => ({
 		},
 	},
 	headerHomeDiv: {
-		marginLeft: "47vw",
+		marginLeft: "40vw",
+		[theme.breakpoints.up("xl")]: {
+			marginLeft: "80vw",
+		},
 		[theme.breakpoints.down("xl")]: {
-			marginLeft: "37vw",
+			marginLeft: "50vw",
+		},
+		[theme.breakpoints.down(2500)]: {
+			marginLeft: "40vw",
+		},
+		[theme.breakpoints.down(2300)]: {
+			marginLeft: "35vw",
 		},
 		[theme.breakpoints.down("lg")]: {
-			marginLeft: "27vw",
+			marginLeft: "25vw",
+		},
+		[theme.breakpoints.down(1600)]: {
+			marginLeft: "20vw",
+		},
+		[theme.breakpoints.down(1400)]: {
+			marginLeft: "12vw",
 		},
 		[theme.breakpoints.down("md")]: {
-			marginLeft: "13vw",
+			marginLeft: 0,
 		},
 	},
 	headerFont: {
@@ -98,12 +113,19 @@ const useStyles = makeStyles((theme: Theme) => ({
 		marginTop: theme.spacing(0.5),
 		fontSize: "1.5rem",
 		fontWeight: 500,
-		[theme.breakpoints.down("sm")]: {
-			marginLeft: theme.spacing(-3),
+		width: "15rem",
+		[theme.breakpoints.down("md")]: {
+			marginLeft: 0,
 		},
-		[theme.breakpoints.down("xs")]: {
-			fontSize: "1.85rem",
-			marginLeft: theme.spacing(-3),
+		[theme.breakpoints.down("sm")]: {
+			marginLeft: theme.spacing(0.5),
+		},
+		[theme.breakpoints.down(600)]: {
+			marginLeft: theme.spacing(1),
+		},
+		[theme.breakpoints.down(450)]: {
+			fontSize: "1.7rem",
+			marginLeft: theme.spacing(-2),
 		},
 	},
 }));

@@ -6,10 +6,12 @@
 		"@material-ui/icons": "4.11.2",
 		"ga-gtag": "^1.0.1",
 		"js-cookie": "^2.2.1",
+		"moment-timezone": "^0.5.32",
 		"public-ip": "^4.0.3",
 		"react": "16.12.0",
 		"react-dom": "16.12.0",
 		"react-router-dom": "5.1.2",
+		"react-router-hash-link": "^2.3.1",
 		"react-scripts": "^3.4.4",
 		"typescript": "3.7.5"
 	},
@@ -18,8 +20,6 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"cy:run": "cypress run",
-		"cyrun": "start-server-and-test start http://localhost:3000 cy:run",
 		"format": "prettier --write \"**/*.+(ts|tsx|js|jsx|json|yml|yaml|css|md|vue)\""
 	},
 	"lint-staged": {
@@ -47,7 +47,6 @@
 		"@types/react-dom": "^17.0.0",
 		"@types/react-router-dom": "5.1.2",
 		"@types/webpack-env": "1.16.0",
-		"cypress": "^6.3.0",
 		"eslint-plugin-react": "7.22.0",
 		"prettier": "^2.0.5",
 		"start-server-and-test": "^1.11.7"

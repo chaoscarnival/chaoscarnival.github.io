@@ -1,6 +1,7 @@
 import { Button, Divider, Hidden, Typography } from "@material-ui/core";
 import gtag from "ga-gtag";
 import React from "react";
+import { getLocale } from "../../utils/getLocale";
 import { useStyles } from "./styles";
 import Timer from "./timer";
 
@@ -20,6 +21,17 @@ const JoinCarnival = () => {
 		gtag("config", "AW-453907965");
 		return false;
 	}
+
+	const { date: day1StartDate, time: day1StartTime, timeZone } = getLocale(
+		"10 Feb 2021 08:00:00 -0800"
+	);
+	const { time: day1EndTime } = getLocale("10 Feb 2021 16:00:00 -0800");
+
+	// Day 2
+	const { date: day2StartDate, time: day2StartTime } = getLocale(
+		"11 Feb 2021 08:00:00 -0800"
+	);
+	const { time: day2EndTime } = getLocale("11 Feb 2021 16:00:00 -0800");
 
 	return (
 		<div className={classes.root}>
@@ -73,22 +85,10 @@ const JoinCarnival = () => {
 				<hr className={classes.hrLine}></hr>
 				<div className={classes.dateDiv}>
 					<Typography className={classes.textDay}>
-						Day 1 - Wednesday
+						Day 1 - {day1StartDate.format("dddd")}
 					</Typography>
-					<Typography
-						className={classes.textDate}
-						style={{ marginBottom: "2rem" }}
-					>
-						February 10th, 2021
-					</Typography>
-					<Typography className={classes.textDay}>
-						Day 2 - Thursday
-					</Typography>
-					<Typography
-						className={classes.textDate}
-						style={{ marginBottom: "2rem" }}
-					>
-						February 11th, 2021
+					<Typography className={classes.textDate}>
+						{day1StartDate.format("MMMM Do, YYYY")}
 					</Typography>
 					<Typography
 						className={classes.textDay}
@@ -98,7 +98,24 @@ const JoinCarnival = () => {
 							marginBottom: "1rem",
 						}}
 					>
-						8AM &#8211; 4PM PT
+						{day1StartTime} &#8211; {day1EndTime} {timeZone}
+					</Typography>
+					<br />
+					<Typography className={classes.textDay}>
+						Day 2 - {day2StartDate.format("dddd")}
+					</Typography>
+					<Typography className={classes.textDate}>
+						{day2StartDate.format("MMMM Do, YYYY")}
+					</Typography>
+					<Typography
+						className={classes.textDay}
+						style={{
+							textAlign: "left",
+							fontWeight: 700,
+							marginBottom: "1rem",
+						}}
+					>
+						{day2StartTime} &#8211; {day2EndTime} {timeZone}
 					</Typography>
 					<Button
 						className={classes.registerButtonOutline}
