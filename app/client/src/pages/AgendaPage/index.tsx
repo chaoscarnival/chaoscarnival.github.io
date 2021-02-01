@@ -2,17 +2,17 @@ import { Button, IconButton, Modal, Typography } from "@material-ui/core";
 import ClearIcon from "@material-ui/icons/Clear";
 import * as React from "react";
 import { useState } from "react";
-import "../../scrollbar.css";
-import Break from "./Break";
-import day1 from "./day1";
-import day2 from "./day2";
-import { useStyles } from "./styles";
+import Footer from "../../components/Footer";
 import MainHeader from "../../components/Header";
 import JoinCarnival from "../../components/JoinCarnival";
 import Sponsors from "../../components/Sponsors";
-import JoinSession from "./JoinSession";
+import "../../scrollbar.css";
 import AddCalendar from "./AddCalendar";
-import Footer from "../../components/Footer";
+import Break from "./Break";
+import day1 from "./day1";
+import day2 from "./day2";
+import JoinSession from "./JoinSession";
+import { useStyles } from "./styles";
 
 interface PopOverModal {
 	modalState: boolean;
@@ -187,412 +187,432 @@ const AgendaPage: React.FC = () => {
 	};
 
 	return (
-		<>
-			<MainHeader />
-			{/* Agenda Page Content */}
-			<div className={classes.root}>
-				{/* Header */}
-				<h1 className={classes.title}>Agenda</h1>
-				{/* Day 1 Agenda Table */}
+		<div className="scrollbar scrollbar-primary">
+			<div className={classes.rootContainer}>
+				<MainHeader />
+				{/* Agenda Page Content */}
+				<div className={classes.root}>
+					{/* Header */}
+					<h1 className={classes.title}>Agenda</h1>
+					{/* Day 1 Agenda Table */}
 
-				<div className={classes.header}>
-					<h1 style={{ marginLeft: "17%", lineHeight: "5rem" }}>
-						Wednesday, Feb 10
-					</h1>
-				</div>
+					<div className={classes.header}>
+						<h1 style={{ marginLeft: "17%", lineHeight: "5rem" }}>
+							Wednesday, Feb 10
+						</h1>
+					</div>
 
-				{/* Agenda Table */}
-				<div className={classes.details}>
-					{day1.map((d, i) => {
-						return (
-							<>
-								{d.content === "break" ? (
-									<Break />
-								) : (
-									<div className={classes.block}>
-										<div className={classes.time}>
-											{d.time}
-											<br />
-											<span
-												style={{
-													fontSize: "0.8rem",
-													color:
-														"rgba(255, 255, 255, 0.6)",
-												}}
-											>
-												{d.duration}
-											</span>
+					{/* Agenda Table */}
+					<div className={classes.details}>
+						{day1.map((d, i) => {
+							return (
+								<>
+									{d.content === "break" ? (
+										<Break />
+									) : (
+										<div className={classes.block}>
+											<div className={classes.time}>
+												{d.time}
+												<br />
+												<span
+													style={{
+														fontSize: "0.8rem",
+														color:
+															"rgba(255, 255, 255, 0.6)",
+													}}
+												>
+													{d.duration}
+												</span>
+											</div>
+											{i === 0 ? (
+												// For Keynote speaker
+												<>{Keynote(d)}</>
+											) : (
+												// For Regular speakers
+												<>
+													<div
+														className={
+															classes.speaker1details
+														}
+														style={{
+															background: `${d.speaker1?.background}`,
+														}}
+													>
+														<Typography
+															style={{
+																fontWeight:
+																	"bold",
+																fontSize: 18,
+																paddingTop: 10,
+															}}
+														>
+															{
+																d.speaker1
+																	?.sessionName
+															}
+														</Typography>
+
+														{/* Tags */}
+														<div
+															className={
+																classes.tagsField
+															}
+														>
+															{Tags(
+																d.speaker1?.tags
+															)}
+														</div>
+
+														{d.speaker1?.speaker.map(
+															(s) => {
+																return (
+																	<>
+																		{Speaker(
+																			d,
+																			s,
+																			s.companyLogo,
+																			d.speaker1
+																		)}
+																	</>
+																);
+															}
+														)}
+													</div>
+
+													<div
+														className={
+															classes.speaker2details
+														}
+														style={{
+															background: `${d.speaker2?.background}`,
+														}}
+													>
+														<Typography
+															style={{
+																fontWeight:
+																	"bold",
+																fontSize: 18,
+																paddingTop: 10,
+															}}
+														>
+															{
+																d.speaker2
+																	?.sessionName
+															}
+														</Typography>
+
+														{/* Tags */}
+														<div
+															className={
+																classes.tagsField
+															}
+														>
+															{Tags(
+																d.speaker2?.tags
+															)}
+														</div>
+
+														{d.speaker2?.speaker.map(
+															(s) => {
+																return (
+																	<>
+																		{Speaker(
+																			d,
+																			s,
+																			s.companyLogo,
+																			d.speaker2
+																		)}
+																	</>
+																);
+															}
+														)}
+													</div>
+												</>
+											)}
 										</div>
-										{i === 0 ? (
-											// For Keynote speaker
-											<>{Keynote(d)}</>
-										) : (
-											// For Regular speakers
-											<>
-												<div
-													className={
-														classes.speaker1details
-													}
+									)}
+								</>
+							);
+						})}
+						{Closing("3:00 PM", "(10min)", "Day 1 Closing Remarks")}
+					</div>
+
+					<br />
+					<br />
+					{/* Day 2 */}
+					<div className={classes.header}>
+						<h1 style={{ marginLeft: "17%", lineHeight: "5rem" }}>
+							Thursday, Feb 11
+						</h1>
+					</div>
+
+					{/* Day 2 Table */}
+					<div className={classes.details}>
+						{day2.map((d, i) => {
+							return (
+								<>
+									{d.content === "break" ? (
+										<Break />
+									) : (
+										<div className={classes.block}>
+											<div className={classes.time}>
+												{d.time}
+												<br />
+												<span
 													style={{
-														background: `${d.speaker1?.background}`,
+														fontSize: "0.8rem",
+														color:
+															"rgba(255, 255, 255, 0.6)",
 													}}
 												>
-													<Typography
-														style={{
-															fontWeight: "bold",
-															fontSize: 18,
-															paddingTop: 10,
-														}}
-													>
-														{
-															d.speaker1
-																?.sessionName
-														}
-													</Typography>
-
-													{/* Tags */}
+													{d.duration}
+												</span>
+											</div>
+											{i === 0 ? (
+												// For Keynote speaker
+												<>{Keynote(d)}</>
+											) : (
+												// For Regular speakers
+												<>
 													<div
 														className={
-															classes.tagsField
+															classes.speaker1details
 														}
-													>
-														{Tags(d.speaker1?.tags)}
-													</div>
-
-													{d.speaker1?.speaker.map(
-														(s) => {
-															return (
-																<>
-																	{Speaker(
-																		d,
-																		s,
-																		s.companyLogo,
-																		d.speaker1
-																	)}
-																</>
-															);
-														}
-													)}
-												</div>
-
-												<div
-													className={
-														classes.speaker2details
-													}
-													style={{
-														background: `${d.speaker2?.background}`,
-													}}
-												>
-													<Typography
 														style={{
-															fontWeight: "bold",
-															fontSize: 18,
-															paddingTop: 10,
+															background: `${d.speaker1?.background}`,
 														}}
 													>
-														{
-															d.speaker2
-																?.sessionName
-														}
-													</Typography>
+														<Typography
+															style={{
+																fontWeight:
+																	"bold",
+																fontSize: 18,
+																paddingTop: 10,
+															}}
+														>
+															{
+																d.speaker1
+																	?.sessionName
+															}
+														</Typography>
 
-													{/* Tags */}
-													<div
-														className={
-															classes.tagsField
-														}
-													>
-														{Tags(d.speaker2?.tags)}
+														{/* Tags */}
+														<div
+															className={
+																classes.tagsField
+															}
+														>
+															{Tags(
+																d.speaker1?.tags
+															)}
+														</div>
+
+														{d.speaker1?.speaker.map(
+															(s) => {
+																return (
+																	<>
+																		{Speaker(
+																			d,
+																			s,
+																			s.companyLogo,
+																			d.speaker1
+																		)}
+																	</>
+																);
+															}
+														)}
 													</div>
 
-													{d.speaker2?.speaker.map(
-														(s) => {
-															return (
-																<>
-																	{Speaker(
-																		d,
-																		s,
-																		s.companyLogo,
-																		d.speaker2
-																	)}
-																</>
-															);
+													<div
+														className={
+															classes.speaker2details
 														}
-													)}
-												</div>
-											</>
-										)}
-									</div>
-								)}
-							</>
-						);
-					})}
-					{Closing("3:00 PM", "(10min)", "Day 1 Closing Remarks")}
-				</div>
+														style={{
+															background: `${d.speaker2?.background}`,
+														}}
+													>
+														<Typography
+															style={{
+																fontWeight:
+																	"bold",
+																fontSize: 18,
+																paddingTop: 10,
+															}}
+														>
+															{
+																d.speaker2
+																	?.sessionName
+															}
+														</Typography>
 
-				<br />
-				<br />
-				{/* Day 2 */}
-				<div className={classes.header}>
-					<h1 style={{ marginLeft: "17%", lineHeight: "5rem" }}>
-						Thursday, Feb 11
-					</h1>
-				</div>
+														{/* Tags */}
+														<div
+															className={
+																classes.tagsField
+															}
+														>
+															{Tags(
+																d.speaker2?.tags
+															)}
+														</div>
 
-				{/* Day 2 Table */}
-				<div className={classes.details}>
-					{day2.map((d, i) => {
-						return (
-							<>
-								{d.content === "break" ? (
-									<Break />
-								) : (
-									<div className={classes.block}>
-										<div className={classes.time}>
-											{d.time}
-											<br />
-											<span
-												style={{
-													fontSize: "0.8rem",
-													color:
-														"rgba(255, 255, 255, 0.6)",
-												}}
-											>
-												{d.duration}
-											</span>
+														{d.speaker2?.speaker.map(
+															(s) => {
+																return (
+																	<>
+																		{Speaker(
+																			d,
+																			s,
+																			s.companyLogo,
+																			d.speaker2
+																		)}
+																	</>
+																);
+															}
+														)}
+													</div>
+												</>
+											)}
 										</div>
-										{i === 0 ? (
-											// For Keynote speaker
-											<>{Keynote(d)}</>
-										) : (
-											// For Regular speakers
-											<>
-												<div
-													className={
-														classes.speaker1details
-													}
-													style={{
-														background: `${d.speaker1?.background}`,
-													}}
-												>
-													<Typography
-														style={{
-															fontWeight: "bold",
-															fontSize: 18,
-															paddingTop: 10,
-														}}
-													>
-														{
-															d.speaker1
-																?.sessionName
-														}
-													</Typography>
-
-													{/* Tags */}
-													<div
-														className={
-															classes.tagsField
-														}
-													>
-														{Tags(d.speaker1?.tags)}
-													</div>
-
-													{d.speaker1?.speaker.map(
-														(s) => {
-															return (
-																<>
-																	{Speaker(
-																		d,
-																		s,
-																		s.companyLogo,
-																		d.speaker1
-																	)}
-																</>
-															);
-														}
-													)}
-												</div>
-
-												<div
-													className={
-														classes.speaker2details
-													}
-													style={{
-														background: `${d.speaker2?.background}`,
-													}}
-												>
-													<Typography
-														style={{
-															fontWeight: "bold",
-															fontSize: 18,
-															paddingTop: 10,
-														}}
-													>
-														{
-															d.speaker2
-																?.sessionName
-														}
-													</Typography>
-
-													{/* Tags */}
-													<div
-														className={
-															classes.tagsField
-														}
-													>
-														{Tags(d.speaker2?.tags)}
-													</div>
-
-													{d.speaker2?.speaker.map(
-														(s) => {
-															return (
-																<>
-																	{Speaker(
-																		d,
-																		s,
-																		s.companyLogo,
-																		d.speaker2
-																	)}
-																</>
-															);
-														}
-													)}
-												</div>
-											</>
-										)}
-									</div>
-								)}
-							</>
-						);
-					})}
-					{Closing("3:00 PM", "(10min)", "Day 2 Closing Remarks")}
-				</div>
-				<Modal
-					open={modalStatus.modalState}
-					onClose={handleClose}
-					className={classes.modal}
-				>
-					<>
-						<div style={{ width: "100%" }}>
-							<Button
-								onClick={handleClose}
-								className={classes.modalCloseBtn}
-							>
-								<ClearIcon style={{ color: "#777777" }} />
-							</Button>
-						</div>
-						<div className={classes.modalContent}>
-							<div>
-								<img
-									src={modalStatus.speakerData.modalLogo}
-									alt="Speakers"
-									style={{
-										height: "200px",
-										width: "172px",
-										borderRadius: 5,
-									}}
-								/>
-								<Typography className={classes.modalTitle}>
-									{modalStatus.speakerData.name}
-								</Typography>
-								<Typography className={classes.modalRole}>
-									{modalStatus.speakerData.role}
-								</Typography>
-								<div
-									style={{
-										display: "flex",
-										marginTop: 10,
-										marginLeft: -10,
-										width: 60,
-										justifyContent: "space-between",
-									}}
+									)}
+								</>
+							);
+						})}
+						{Closing("3:00 PM", "(10min)", "Day 2 Closing Remarks")}
+					</div>
+					<Modal
+						open={modalStatus.modalState}
+						onClose={handleClose}
+						className={classes.modal}
+					>
+						<>
+							<div style={{ width: "100%" }}>
+								<Button
+									onClick={handleClose}
+									className={classes.modalCloseBtn}
 								>
-									<IconButton>
-										<img
-											src="./icons/speaker-linkedin.svg"
-											alt="Linkedin"
-										/>
-									</IconButton>
-									<IconButton>
-										<img
-											src="./icons/speaker-twitter.svg"
-											alt="Twitter"
-										/>
-									</IconButton>
-								</div>
+									<ClearIcon style={{ color: "#777777" }} />
+								</Button>
 							</div>
-							<div
-								style={{
-									marginLeft: 40,
-								}}
-							>
-								<Typography
-									className={classes.modalSessionName}
-								>
-									{modalStatus.sessionName}
-								</Typography>
-								<Typography
-									style={{ color: "#FFFFFF", fontSize: 16 }}
-								>
-									{modalStatus.sessionTime}
-								</Typography>
-								<Typography
-									style={{
-										color: "white",
-										maxWidth: "500px",
-										fontSize: "16px",
-										marginTop: 10,
-										marginBottom: 20,
-									}}
-								>
-									Join the pre-show before the Google Keynote
-									starts which will bring two AI Experiments
-									to life: NSynth, a synthesizer that
-									generates new sounds using neural networks
-									and World Draw, a live interactive
-									experience to draw the world together using
-									the same technology behind QuickDraw and
-									AutoDraw.
-								</Typography>
-								{Tags(modalStatus.sessionTags)}
-								<div className={classes.modalBtnDiv}>
-									<JoinSession handleClick={() => {}} />
-									<AddCalendar handleClick={() => {}} />
-								</div>
-								<div style={{ display: "flex" }}>
-									<Typography
-										style={{ fontSize: 14, color: "white" }}
-									>
-										Share the session on{" "}
-									</Typography>
+							<div className={classes.modalContent}>
+								<div>
 									<img
-										src="./icons/twitter-blue.svg"
-										style={{ marginTop: -5, marginLeft: 2 }}
-										alt="twitter-blue"
-									/>
-									<Typography
+										src={modalStatus.speakerData.modalLogo}
+										alt="Speakers"
 										style={{
-											fontSize: 14,
-											color: "#488FDF",
+											height: "200px",
+											width: "172px",
+											borderRadius: 5,
+										}}
+									/>
+									<Typography className={classes.modalTitle}>
+										{modalStatus.speakerData.name}
+									</Typography>
+									<Typography className={classes.modalRole}>
+										{modalStatus.speakerData.role}
+									</Typography>
+									<div
+										style={{
+											display: "flex",
+											marginTop: 10,
+											marginLeft: -10,
+											width: 60,
+											justifyContent: "space-between",
 										}}
 									>
-										{" "}
-										#chaoscarnival
+										<IconButton>
+											<img
+												src="./icons/speaker-linkedin.svg"
+												alt="Linkedin"
+											/>
+										</IconButton>
+										<IconButton>
+											<img
+												src="./icons/speaker-twitter.svg"
+												alt="Twitter"
+											/>
+										</IconButton>
+									</div>
+								</div>
+								<div
+									style={{
+										marginLeft: 40,
+									}}
+								>
+									<Typography
+										className={classes.modalSessionName}
+									>
+										{modalStatus.sessionName}
 									</Typography>
+									<Typography
+										style={{
+											color: "#FFFFFF",
+											fontSize: 16,
+										}}
+									>
+										{modalStatus.sessionTime}
+									</Typography>
+									<Typography
+										style={{
+											color: "white",
+											maxWidth: "500px",
+											fontSize: "16px",
+											marginTop: 10,
+											marginBottom: 20,
+										}}
+									>
+										Join the pre-show before the Google
+										Keynote starts which will bring two AI
+										Experiments to life: NSynth, a
+										synthesizer that generates new sounds
+										using neural networks and World Draw, a
+										live interactive experience to draw the
+										world together using the same technology
+										behind QuickDraw and AutoDraw.
+									</Typography>
+									{Tags(modalStatus.sessionTags)}
+									<div className={classes.modalBtnDiv}>
+										<JoinSession handleClick={() => {}} />
+										<AddCalendar handleClick={() => {}} />
+									</div>
+									<div style={{ display: "flex" }}>
+										<Typography
+											style={{
+												fontSize: 14,
+												color: "white",
+											}}
+										>
+											Share the session on{" "}
+										</Typography>
+										<img
+											src="./icons/twitter-blue.svg"
+											style={{
+												marginTop: -5,
+												marginLeft: 2,
+											}}
+											alt="twitter-blue"
+										/>
+										<Typography
+											style={{
+												fontSize: 14,
+												color: "#488FDF",
+											}}
+										>
+											{" "}
+											#chaoscarnival
+										</Typography>
+									</div>
 								</div>
 							</div>
-						</div>
-					</>
-				</Modal>
+						</>
+					</Modal>
+				</div>
+
+				<Sponsors />
+				<JoinCarnival />
+				<Footer />
 			</div>
-
-			<Sponsors />
-
-			<JoinCarnival />
-
-			{/* Footer */}
-			<Footer />
-		</>
+		</div>
 	);
 };
 

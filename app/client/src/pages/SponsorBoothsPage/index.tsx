@@ -1,23 +1,27 @@
+import { Typography } from "@material-ui/core";
 import * as React from "react";
-import SponsorBooth from "../../components/SponsorBooth";
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/Header";
 import JoinCarnival from "../../components/JoinCarnival";
+import SponsorBooth from "../../components/SponsorBooth";
 import Sponsors from "../../components/Sponsors";
-import "../../scrollbar.css";
 import sponsorBooth from "../../data/sponsorBoothData";
+import "../../scrollbar.css";
 import { useStyles } from "./styles";
-import { Typography } from "@material-ui/core";
 
 function SponsorBoothsPage() {
 	const classes = useStyles();
 
 	return (
 		<div className="scrollbar scrollbar-primary">
-			<MainHeader />
-			<div className={classes.root}>
-				<Typography className={classes.title}>Sponsor booths</Typography>
-				<SponsorBooth sponsorBooths={sponsorBooth} />
+			<div className={classes.rootContainer}>
+				<MainHeader />
+				<div className={classes.root}>
+					<Typography className={classes.title}>
+						Sponsor booths
+					</Typography>
+					<SponsorBooth sponsorBooths={sponsorBooth} />
+				</div>
 				<Sponsors />
 				<JoinCarnival />
 				<Footer />

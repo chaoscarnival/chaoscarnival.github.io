@@ -2,14 +2,15 @@ import { makeStyles, Theme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme: Theme) => ({
 	appBar: {
-		background: (props) => (props ? "#070E23" : "white"),
+		background: "#070E23",
+		position: "absolute",
 	},
 	divider: {
 		borderBottom: "2px solid rgba(255, 255, 255, 0.2)",
 		width: "85%",
 		margin: "0 auto",
 		paddingTop: theme.spacing(1),
-		background: (props) => (props ? "#070E23" : "white"),
+		background: "#070E23",
 	},
 	toolbarDiv: {
 		margin: "auto",
@@ -18,7 +19,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 		alignItems: "center",
 		justifyContent: "space-between",
 		width: "70vw",
-		background: (props) => (props ? "#070E23" : "white"),
+		background: "#070E23",
 		[theme.breakpoints.down("md")]: {
 			position: "sticky",
 			width: "100vw",
@@ -88,33 +89,31 @@ const useStyles = makeStyles((theme: Theme) => ({
 		height: "2.15rem",
 		width: "10rem",
 		[theme.breakpoints.up("lg")]: {
-			marginTop: (props) =>
-				props ? theme.spacing(-7) : theme.spacing(-10),
+			marginTop: theme.spacing(-7),
 			marginLeft: theme.spacing(15),
 			paddingLeft: theme.spacing(10),
 			paddingRight: theme.spacing(10),
 		},
 		[theme.breakpoints.down("lg")]: {
-			marginTop: (props) =>
-				props ? theme.spacing(-8) : theme.spacing(-11),
+			marginTop: theme.spacing(-8),
 			marginLeft: theme.spacing(20),
 			paddingLeft: theme.spacing(10),
 			paddingRight: theme.spacing(10),
 		},
-		[theme.breakpoints.down(1800)]: {
-			marginTop: (props) =>
-				props ? theme.spacing(-10) : theme.spacing(-12),
+		[theme.breakpoints.down(1900)]: {
+			marginTop: theme.spacing(-8),
+			marginLeft: theme.spacing(20),
+		},
+		[theme.breakpoints.down(1750)]: {
+			marginTop: theme.spacing(-10),
 			marginLeft: theme.spacing(25),
-			paddingLeft: theme.spacing(10),
-			paddingRight: theme.spacing(10),
 		},
 		[theme.breakpoints.down(1050)]: {
 			paddingLeft: theme.spacing(6.5),
 			paddingRight: theme.spacing(6.5),
 			width: "5rem",
 			marginLeft: theme.spacing(22.5),
-			marginTop: (props) =>
-				props ? theme.spacing(-12) : theme.spacing(-14),
+			marginTop: theme.spacing(-12),
 		},
 	},
 	registerText: {
@@ -177,8 +176,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 		cursor: "pointer",
 	},
 	headerFont: {
-		color: (props) =>
-			props ? theme.palette.common.white : theme.palette.common.black,
+		color: theme.palette.common.white,
 		marginLeft: theme.spacing(3),
 		marginTop: theme.spacing(0.5),
 		fontSize: "1rem",
