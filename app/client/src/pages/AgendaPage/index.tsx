@@ -1,4 +1,4 @@
-import { Typography } from "@material-ui/core";
+import { Hidden, Typography, useTheme } from "@material-ui/core";
 import * as React from "react";
 import { useState } from "react";
 import Footer from "../../components/Footer";
@@ -139,7 +139,7 @@ const AgendaPage: React.FC = () => {
 					padding: "2rem 2rem",
 					background:
 						"linear-gradient(268.48deg, #2979E4 2.61%, #134B95 100%)",
-					width: "90%",
+					width: "100%",
 					cursor: "pointer",
 				}}
 			>
@@ -210,13 +210,7 @@ const AgendaPage: React.FC = () => {
 		);
 	};
 
-	const Track = () => {
-		return (
-			<div>
-				<h3>Day 1 Session</h3>
-			</div>
-		);
-	};
+	const theme = useTheme();
 
 	return (
 		<div className="scrollbar scrollbar-primary">
@@ -267,7 +261,55 @@ const AgendaPage: React.FC = () => {
 											</div>
 											{i === 0 ? (
 												// For Keynote speaker
-												<>{Keynote(d)}</>
+												<span
+													style={{
+														width: "100%",
+														marginLeft: "1rem", //Hacks
+													}}
+												>
+													{Keynote(d)}
+													<div
+														style={{
+															textAlign: "center",
+														}}
+													>
+														<h1>Day 1 Sessions</h1>
+													</div>
+													<Hidden smDown>
+														<div
+															style={{
+																display: "flex",
+																textAlign:
+																	"center",
+															}}
+														>
+															<div
+																style={{
+																	background:
+																		"linear-gradient(278.93deg, #0043F0 10.62%, #0043F0 10.63%, #0035BD 86.42%)",
+																	width:
+																		"50%",
+																	padding:
+																		"1rem 0",
+																}}
+															>
+																<h2>Track 1</h2>
+															</div>
+															<div
+																style={{
+																	background:
+																		"linear-gradient(213.54deg, #00B399 4.68%, #004D42 100%)",
+																	width:
+																		"50%",
+																	padding:
+																		"1rem 0",
+																}}
+															>
+																<h2>Track 2</h2>
+															</div>
+														</div>
+													</Hidden>
+												</span>
 											) : (
 												// For Regular speakers
 												<div className={classes.events}>
@@ -444,7 +486,55 @@ const AgendaPage: React.FC = () => {
 											</div>
 											{i === 0 ? (
 												// For Keynote speaker
-												<>{Keynote(d)}</>
+												<span
+													style={{
+														width: "100%",
+														marginLeft: "1rem", //Hacks
+													}}
+												>
+													{Keynote(d)}
+													<div
+														style={{
+															textAlign: "center",
+														}}
+													>
+														<h1>Day 2 Sessions</h1>
+													</div>
+													<Hidden smDown>
+														<div
+															style={{
+																display: "flex",
+																textAlign:
+																	"center",
+															}}
+														>
+															<div
+																style={{
+																	background:
+																		"linear-gradient(278.93deg, #0043F0 10.62%, #0043F0 10.63%, #0035BD 86.42%)",
+																	width:
+																		"50%",
+																	padding:
+																		"1rem 0",
+																}}
+															>
+																<h2>Track 1</h2>
+															</div>
+															<div
+																style={{
+																	background:
+																		"linear-gradient(213.54deg, #00B399 4.68%, #004D42 100%)",
+																	width:
+																		"50%",
+																	padding:
+																		"1rem 0",
+																}}
+															>
+																<h2>Track 2</h2>
+															</div>
+														</div>
+													</Hidden>
+												</span>
 											) : (
 												// For Regular speakers
 												<div className={classes.events}>
