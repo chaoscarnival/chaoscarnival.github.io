@@ -191,7 +191,7 @@ const AgendaPage: React.FC = () => {
 											<div className={classes.time}>
 												{
 													getLocale(
-														d.startDateTime !=
+														d.startDateTime !==
 															undefined
 															? d.startDateTime
 															: ""
@@ -368,7 +368,7 @@ const AgendaPage: React.FC = () => {
 											<div className={classes.time}>
 												{
 													getLocale(
-														d.startDateTime !=
+														d.startDateTime !==
 															undefined
 															? d.startDateTime
 															: ""
