@@ -9,7 +9,7 @@ interface TagsProp {
 const Tags: React.FC<TagsProp> = ({ tags }) => {
 	const classes = useStyles();
 	return (
-		<div style={{ display: "flex", flexDirection: "row" }}>
+		<>
 			{tags?.map((tag) => (
 				<div className={classes.tagsDiv}>
 					<div
@@ -30,7 +30,7 @@ const Tags: React.FC<TagsProp> = ({ tags }) => {
 					<Typography className={classes.tagsText}>{tag}</Typography>
 				</div>
 			))}
-		</div>
+		</>
 	);
 };
 
