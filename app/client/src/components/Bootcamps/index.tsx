@@ -10,6 +10,7 @@ export interface Bootcamp {
 	joinUrl: string;
 	startDateTime: string;
 	endDateTime: string;
+	slackLink: string;
 }
 
 interface BootcampsProps {
@@ -28,6 +29,7 @@ const Bootcamps: React.FC<BootcampsProps> = ({ bootcamps }) => {
 					joinUrl,
 					startDateTime,
 					endDateTime,
+					slackLink,
 				}) => {
 					const { dateString, time: startTime, timeZone } = getLocale(
 						startDateTime
@@ -51,6 +53,19 @@ const Bootcamps: React.FC<BootcampsProps> = ({ bootcamps }) => {
 								<Typography>
 									{startTime} - {endTime} ({timeZone})
 								</Typography>
+								<Button
+									id="Slack"
+									variant="outlined"
+									href={slackLink}
+									target="_blank"
+									rel="noopener"
+								>
+									<img
+										src="/icons/social/Slack.svg"
+										alt="Slack logo"
+									/>{" "}
+									Visit Slack channel
+								</Button>
 							</div>
 						</div>
 					);

@@ -9,6 +9,7 @@ const bootcamps: Bootcamp[] = [
 			"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1",
 		startDateTime: "10 Feb 2021 12:00:00 +0530",
 		endDateTime: "10 Feb 2021 12:45:00 +0530",
+		slackLink: "",
 	},
 	{
 		title: "Bootcamp #2 - Chaos for Percona on AKS",
@@ -18,6 +19,7 @@ const bootcamps: Bootcamp[] = [
 			"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1",
 		startDateTime: "11 Feb 2021 12:00:00 +0530",
 		endDateTime: "11 Feb 2021 12:45:00 +0530",
+		slackLink: "",
 	},
 ];
 

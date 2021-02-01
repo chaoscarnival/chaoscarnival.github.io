@@ -179,6 +179,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 		color: theme.palette.common.white,
 		marginLeft: theme.spacing(3),
 		marginTop: theme.spacing(0.5),
+		width: "max-content",
 		fontSize: "1rem",
 		fontWeight: 500,
 	},

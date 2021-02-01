@@ -152,7 +152,7 @@ const MainHeader: React.FC = () => {
 										<Typography
 											className={classes.headerFont}
 										>
-											Sponsorbooth
+											Sponsor Booths
 										</Typography>
 									</Link>
 								</div>
@@ -325,7 +325,7 @@ const MainHeader: React.FC = () => {
 													fontWeight: "bold",
 												}}
 											>
-												Sponsorbooth
+												Sponsor Booths
 											</Link>
 										</Typography>
 									</MenuItem>
