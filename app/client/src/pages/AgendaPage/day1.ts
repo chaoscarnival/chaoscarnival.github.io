@@ -208,9 +208,9 @@ export default [
 				{
 					name: "Chinmay Gaikwad",
 					role: "Technical Evangelist",
-					speakerImage: "https://i.ibb.co/fGP0fPZ/Jason-Gremlin.png",
-					companyLogo: "https://i.ibb.co/DK17SWq/gremlin.png",
-					modalLogo: "/speakers/Jason_Gremlin-min.jpg",
+					speakerImage: "https://i.ibb.co/bFsjYBG/Chinmay-Epsagon.png",
+					companyLogo: "https://i.ibb.co/NZQczQ1/Group-3510.png",
+					modalLogo: "/speakers/Chinmay_Epsagon-min.jpg",
 				},
 			],
 			description:
