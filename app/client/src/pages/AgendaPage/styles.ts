@@ -46,6 +46,7 @@ export const useStyles = makeStyles((theme) => ({
 	// Break
 	breakTimes: {
 		width: "10%",
+		borderTop: '1px solid rgba(255, 255, 255, 0.4)',
 		[theme.breakpoints.down("sm")]: {
 			width: "auto",
 			marginRight: theme.spacing(1),
