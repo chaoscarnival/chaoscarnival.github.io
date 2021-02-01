@@ -14,8 +14,7 @@ export const useStyles = makeStyles((theme) => ({
 		marginLeft: "10%",
 	},
 	header: {
-		background:
-			"linear-gradient(89deg, #5291CA 0%, #B086CC 99.41%)",
+		background: "linear-gradient(89deg, #5291CA 0%, #B086CC 99.41%)",
 		height: "5rem",
 	},
 	details: {
@@ -32,7 +31,7 @@ export const useStyles = makeStyles((theme) => ({
 		height: "5rem",
 		fontSize: "1rem",
 		paddingTop: "1.5%",
-		borderTop: '1px solid rgba(255, 255, 255, 0.4)',
+		borderTop: "1px solid rgba(255, 255, 255, 0.4)",
 
 		[theme.breakpoints.down("sm")]: {
 			width: "auto",
@@ -46,7 +45,7 @@ export const useStyles = makeStyles((theme) => ({
 	// Break
 	breakTimes: {
 		width: "10%",
-		borderTop: '1px solid rgba(255, 255, 255, 0.4)',
+		borderTop: "1px solid rgba(255, 255, 255, 0.4)",
 		[theme.breakpoints.down("sm")]: {
 			width: "auto",
 			marginRight: theme.spacing(1),
@@ -109,7 +108,7 @@ export const useStyles = makeStyles((theme) => ({
 	keynoteLeftDetail: {
 		cursor: "pointer",
 		display: "flex",
-		width: '40%'
+		width: "40%",
 	},
 
 	// For regular Speaker
@@ -117,13 +116,14 @@ export const useStyles = makeStyles((theme) => ({
 		width: "50%",
 		padding: "0 1rem",
 		display: "flex",
-		border: '1px solid rgba(255, 255, 255, 0.4)',
+		border: "1px solid rgba(255, 255, 255, 0.4)",
 		flexDirection: "column",
 		justifyContent: "space-between",
 
 		"&:hover": {
 			cursor: "pointer",
-			background: 'linear-gradient(268.48deg, #2979E4 2.61%, #134B95 100%)',
+			background:
+				"linear-gradient(268.48deg, #2979E4 2.61%, #134B95 100%)",
 		},
 
 		[theme.breakpoints.down("sm")]: {
@@ -135,13 +135,14 @@ export const useStyles = makeStyles((theme) => ({
 		width: "50%",
 		padding: "0 1rem",
 		display: "flex",
-		border: '1px solid rgba(255, 255, 255, 0.4)',
+		border: "1px solid rgba(255, 255, 255, 0.4)",
 		flexDirection: "column",
 		justifyContent: "space-between",
 
 		"&:hover": {
 			cursor: "pointer",
-			background: 'linear-gradient(268.48deg, #2979E4 2.61%, #134B95 100%)',
+			background:
+				"linear-gradient(268.48deg, #2979E4 2.61%, #134B95 100%)",
 		},
 
 		[theme.breakpoints.down("sm")]: {
