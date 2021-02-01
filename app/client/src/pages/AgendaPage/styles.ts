@@ -54,6 +54,7 @@ export const useStyles = makeStyles((theme) => ({
 		float: "left",
 		paddingLeft: "1rem",
 		width: "35%",
+		cursor: "pointer",
 	},
 
 	keynoteRightDetail: {
@@ -65,11 +66,17 @@ export const useStyles = makeStyles((theme) => ({
 	speaker1details: {
 		width: "35%",
 		padding: "0 1rem",
+		"&:hover": {
+			cursor: "pointer",
+		},
 	},
 
 	speaker2details: {
 		width: "35%",
 		padding: "0 1rem",
+		"&:hover": {
+			cursor: "pointer",
+		},
 	},
 
 	// Speaker Block
@@ -87,21 +94,9 @@ export const useStyles = makeStyles((theme) => ({
 			fontSize: "0.8rem",
 			color: "rgba(255, 255, 255, 0.8)",
 		},
-		"&:hover": {
-			cursor: "pointer",
-		},
 	},
 	//Tags styles
-	tagsDiv: {
-		display: "flex",
-		flexDirection: "row",
-		marginRight: 10,
-	},
-	tagsText: {
-		color: "#FFFFFF",
-		marginLeft: 5,
-		fontSize: 12,
-	},
+
 	tagsField: {
 		marginTop: 5,
 		marginBottom: 30,
@@ -120,7 +115,7 @@ export const useStyles = makeStyles((theme) => ({
 		display: "block",
 		marginLeft: "auto",
 		border: "1px solid #777777",
-		minWidth: "36px",
+		minWidth: "50px",
 		minHeight: "36px",
 		"&:hover": {
 			backgroundColor: "transparent !important",
@@ -138,6 +133,7 @@ export const useStyles = makeStyles((theme) => ({
 	modalTitle: {
 		fontSize: "18px",
 		fontWeight: 700,
+		maxWidth: 150,
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
 		background:
@@ -163,5 +159,11 @@ export const useStyles = makeStyles((theme) => ({
 		maxWidth: 380,
 		marginTop: 30,
 		marginBottom: 30,
+	},
+	sliderBtnLeft: {
+		top: theme.spacing(0),
+	},
+	sliderBtnRight: {
+		top: theme.spacing(0),
 	},
 }));

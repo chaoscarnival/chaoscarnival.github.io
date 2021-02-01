@@ -162,7 +162,7 @@ export default [
 					role: "Cloud Security Engineer",
 					speakerImage: "",
 					companyLogo: "",
-					modalLogo: "/images/dummy-min.jpg",
+					modalLogo: "/speakers/Kennedy_Mattermost-min.jpg",
 				},
 			],
 			description: "",

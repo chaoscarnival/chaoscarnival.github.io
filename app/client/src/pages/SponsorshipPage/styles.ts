@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
 	rootContainer: {
-		background: "#fff",
+		height: "100vh",
 	},
 	mainDiv: {
 		display: "flex",
@@ -11,7 +11,7 @@ export const useStyles = makeStyles((theme) => ({
 	headerDiv: {
 		display: "flex",
 		flexDirection: "row",
-		paddingTop: 150,
+		paddingTop: 200,
 		marginLeft: "13vw",
 		marginRight: 130,
 		width: "75vw",
@@ -23,9 +23,10 @@ export const useStyles = makeStyles((theme) => ({
 			marginTop: 20,
 		},
 		[theme.breakpoints.down("xs")]: {
+			width: "90vw",
 			display: "flex",
 			flexDirection: "column-reverse",
-			paddingTop: 20,
+			paddingTop: 70,
 			marginLeft: 20,
 			marginRight: 20,
 		},
@@ -38,7 +39,7 @@ export const useStyles = makeStyles((theme) => ({
 	mainHeader: {
 		fontSize: "50px",
 		fontWeight: 700,
-		color: theme.palette.common.black,
+		color: theme.palette.common.white,
 		textAlign: "left",
 		marginLeft: 70,
 		[theme.breakpoints.down("sm")]: {
@@ -51,7 +52,7 @@ export const useStyles = makeStyles((theme) => ({
 		fontSize: "24px",
 		marginBottom: 20,
 		marginLeft: 70,
-		color: theme.palette.common.black,
+		color: theme.palette.common.white,
 		textAlign: "left",
 		paddingTop: 20,
 		[theme.breakpoints.down("sm")]: {
@@ -144,6 +145,7 @@ export const useStyles = makeStyles((theme) => ({
 			margin: "0 auto",
 		},
 		[theme.breakpoints.down("xs")]: {
+			width: "92.5vw",
 			marginTop: 30,
 			marginLeft: 10,
 			marginRight: 10,

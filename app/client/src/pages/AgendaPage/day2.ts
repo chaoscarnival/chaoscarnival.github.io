@@ -13,7 +13,8 @@ export default [
 			},
 		],
 		time: "8:00 AM",
-		description: "",
+		description:
+			"A large chunk of challenges in the Kubernetes production environments is how to run stateful applications reliably. Each stateful application has many micro services and there is a mesh of such applications creating a tight dependency for running the stateful services successfully. Cloud Native Chaos Engineering is a modern approach to get a shot at predictable resilience in Kubernetes production at scale. Uma Mukkara, maintainer at LitmusChaos project discusses best practices to roll out Cloud Native Chaos Engineering and achieve desired SLOs for Kubernetes platform and applications.",
 		tags: ["Keynote"],
 		id: 15,
 	},
