@@ -31,8 +31,8 @@ const Break: React.FC<BreakProps> = ({ title }) => {
 			{/* Section 1 */}
 			<div className={classes.breakEvents}>
 				<div className={`${classes.breakItem1} ${classes.breakItem}`}>
-					<h2>Sponsor Booth</h2>
-					<h2>Sponsor Booth</h2>
+					<h2>Sponsor Booths</h2>
+					<h2>Sponsor Booths</h2>
 				</div>
 
 				{/* Section 2 */}
