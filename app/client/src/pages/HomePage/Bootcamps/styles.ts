@@ -40,6 +40,13 @@ export const useStyles = makeStyles((theme) => ({
 			flexDirection: "column-reverse",
 		},
 	},
+	joinBootcampsButton: {
+		fontWeight: "bold",
+		background: "#FE1C65",
+		color: "#fff",
+		padding: theme.spacing(1, 4),
+		marginTop: theme.spacing(3.5),
+	},
 	text: {
 		width: "50%",
 		[theme.breakpoints.down("xs")]: {

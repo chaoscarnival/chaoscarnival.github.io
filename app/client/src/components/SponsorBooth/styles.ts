@@ -12,7 +12,8 @@ export const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("sm")]: {
 			padding: theme.spacing(2),
 		},
-		background: "rgba(255, 255, 255, 0.05)",
+		background:
+			"linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%)",
 		backdropFilter: "blur(10px)",
 
 		// Border
