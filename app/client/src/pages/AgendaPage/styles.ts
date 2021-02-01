@@ -163,7 +163,6 @@ export const useStyles = makeStyles((theme) => ({
 			marginLeft: "1rem",
 			fontSize: "0.8rem",
 			color: "rgba(255, 255, 255, 0.8)",
-
 			[theme.breakpoints.down("sm")]: {
 				marginLeft: "0",
 			},
@@ -181,13 +180,13 @@ export const useStyles = makeStyles((theme) => ({
 		marginLeft: 10,
 	},
 	//Tags styles
-
 	tagsField: {
 		marginTop: 5,
 		marginBottom: 30,
 		display: "flex",
 		flexWrap: "wrap",
 	},
+
 	//Modal Styles
 	modal: {
 		position: "absolute",
@@ -198,6 +197,12 @@ export const useStyles = makeStyles((theme) => ({
 		left: "50%",
 		transform: `translate(-50%, -50%)`,
 		outline: 0,
+		height: "90%",
+		overflowY: "scroll",
+		width: 900,
+		[theme.breakpoints.down("md")]: {
+			width: "70%",
+		},
 		[theme.breakpoints.down("xs")]: {
 			top: "0%",
 			left: "0%",
@@ -213,6 +218,9 @@ export const useStyles = makeStyles((theme) => ({
 			outline: "none",
 		},
 	},
+	sessionDataDiv: {
+		height: "fit-content",
+	},
 	modalCloseBtn: {
 		display: "block",
 		marginLeft: "auto",
@@ -225,11 +233,10 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	modalContent: {
-		display: "flex",
-		flexDirection: "row",
 		margin: "0 auto",
 		marginTop: 20,
 		marginLeft: 40,
+
 		justifyContent: "center",
 		[theme.breakpoints.down("xs")]: {
 			flexDirection: "column",
@@ -238,15 +245,31 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	sessionDetails: {
-		marginLeft: 40,
+		marginTop: 20,
 		[theme.breakpoints.down("xs")]: {
 			marginLeft: 0,
+		},
+	},
+
+	//Speaker details in modal
+	speakerDiv: {
+		display: "flex",
+		flexDirection: "row",
+		[theme.breakpoints.down("xs")]: {
+			flexDirection: "column",
+		},
+	},
+	speakerData: {
+		marginLeft: 30,
+		marginTop: 50,
+		[theme.breakpoints.down("xs")]: {
+			marginLeft: 10,
+			marginTop: 20,
 		},
 	},
 	modalTitle: {
 		fontSize: "18px",
 		fontWeight: 700,
-		maxWidth: 150,
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
 		background:
@@ -271,12 +294,21 @@ export const useStyles = makeStyles((theme) => ({
 		fontWeight: "bold",
 		letterSpacing: "0.02em",
 		marginBottom: 10,
-		maxWidth: "500px",
 		color: "#FFFFFF",
 		lineHeight: "36.4px",
 		[theme.breakpoints.down("xs")]: {
 			fontSize: "20px",
 			lineHeight: "33.6px",
+		},
+	},
+	modalDescription: {
+		color: "white",
+		fontSize: "16px",
+		marginTop: 10,
+		marginBottom: 20,
+		whiteSpace: "pre-line",
+		[theme.breakpoints.down("xs")]: {
+			marginRight: 20,
 		},
 	},
 	modalBtnDiv: {
