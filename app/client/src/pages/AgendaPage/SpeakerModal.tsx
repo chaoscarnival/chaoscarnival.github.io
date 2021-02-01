@@ -1,13 +1,10 @@
 import {
 	Button,
-
 	IconButton,
-	MobileStepper, Modal,
-
+	MobileStepper,
+	Modal,
 	Typography,
-
-
-	withStyles
+	withStyles,
 } from "@material-ui/core";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
@@ -195,26 +192,28 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 						</div>
 					)}
 					<div className={classes.sessionDetails}>
-						<div style={{maxHeight: "40vh", overflowY: "scroll"}}>
-						<Typography className={classes.modalSessionName}>
-							{speaker.sessionName}
-						</Typography>
-						<Typography style={{ color: "#FFFFFF", fontSize: 16 }}>
-							{speaker.sessionTime}
-						</Typography>
-						<Typography
-							style={{
-								color: "white",
-								maxWidth: "500px",
-								fontSize: "16px",
-								marginTop: 10,
-								marginBottom: 20,
-								whiteSpace: "pre-line",
-							}}
-						>
-							{speaker.description}
+						<div style={{ maxHeight: "40vh", overflowY: "scroll" }}>
+							<Typography className={classes.modalSessionName}>
+								{speaker.sessionName}
 							</Typography>
-							</div>
+							<Typography
+								style={{ color: "#FFFFFF", fontSize: 16 }}
+							>
+								{speaker.sessionTime}
+							</Typography>
+							<Typography
+								style={{
+									color: "white",
+									maxWidth: "500px",
+									fontSize: "16px",
+									marginTop: 10,
+									marginBottom: 20,
+									whiteSpace: "pre-line",
+								}}
+							>
+								{speaker.description}
+							</Typography>
+						</div>
 						<Tags tags={speaker?.tags} />
 
 						<div className={classes.modalBtnDiv}>
