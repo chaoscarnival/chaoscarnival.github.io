@@ -48,7 +48,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	action: {
-		"& button": {
+		"& button:first-child": {
 			background: "#FE1C65",
 			color: "#fff",
 			fontWeight: "bold",
@@ -58,6 +58,17 @@ export const useStyles = makeStyles((theme) => ({
 			"& svg": {
 				marginLeft: theme.spacing(1),
 			},
+		},
+		"& #Slack": {
+			color: "#fff",
+			marginTop: theme.spacing(4),
+			padding: theme.spacing(1.5, 4),
+			textTransform: "none",
+			border: `1px solid #FE1C65`,
+		},
+		"& img": {
+			width: "1.4375rem",
+			marginRight: theme.spacing(1),
 		},
 	},
 }));

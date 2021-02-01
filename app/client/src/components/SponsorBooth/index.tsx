@@ -1,5 +1,4 @@
-import { Button, Link, Typography } from "@material-ui/core";
-import OpenInNewIcon from "@material-ui/icons/OpenInNew";
+import { Button, Typography } from "@material-ui/core";
 import React from "react";
 import { getLocale } from "../../utils/getLocale";
 import { useStyles } from "./styles";
@@ -61,15 +60,6 @@ const SponsorBooth: React.FC<SponsorBoothProps> = ({ sponsorBooths }) => {
 									alt={`${sponsorName}'s logo`}
 								/>
 								<Typography>{description}</Typography>
-								<Link
-									href={visitLink}
-									target="_blank"
-									rel="noopener"
-								>
-									{" "}
-									Visit the {sponsorName} website{" "}
-								</Link>
-								<OpenInNewIcon />
 							</div>
 							<div className={classes.action}>
 								<Button
@@ -98,7 +88,7 @@ const SponsorBooth: React.FC<SponsorBoothProps> = ({ sponsorBooths }) => {
 										src="/icons/social/Slack.svg"
 										alt="Slack logo"
 									/>{" "}
-									Join {`${sponsorName}'s`} Slack{" "}
+									Visit Slack channel
 								</Button>
 							</div>
 						</div>

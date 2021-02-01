@@ -18,7 +18,7 @@ function SponsorBoothsPage() {
 				<MainHeader />
 				<div className={classes.root}>
 					<Typography className={classes.title}>
-						Sponsor booths
+						Sponsor Booths
 					</Typography>
 					<SponsorBooth sponsorBooths={sponsorBooth} />
 				</div>
