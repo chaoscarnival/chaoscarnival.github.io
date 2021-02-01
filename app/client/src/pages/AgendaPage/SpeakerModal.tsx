@@ -76,7 +76,7 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 				</div>
 				<div className={classes.modalContent}>
 					{speaker && speaker.speaker.length > 1 ? (
-						<div>
+						<div className={classes.speakerDiv}>
 							<div>
 								<img
 									src={
@@ -130,37 +130,42 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 									}
 								/>
 							</div>
-							<Typography className={classes.modalTitle}>
-								{speaker && speaker.speaker[activeStep]?.name}
-							</Typography>
-							<Typography className={classes.modalRole}>
-								{speaker && speaker.speaker[activeStep]?.role}
-							</Typography>
-							<div
-								style={{
-									display: "flex",
-									marginTop: 10,
-									marginLeft: -10,
-									width: 60,
-									justifyContent: "space-between",
-								}}
-							>
-								<IconButton>
-									<img
-										src="./icons/speaker-linkedin.svg"
-										alt="Linkedin"
-									/>
-								</IconButton>
-								<IconButton>
-									<img
-										src="./icons/speaker-twitter.svg"
-										alt="Twitter"
-									/>
-								</IconButton>
+							<div className={classes.speakerData}>
+								<Typography className={classes.modalTitle}>
+									{speaker &&
+										speaker.speaker[activeStep]?.name}
+								</Typography>
+								<Typography className={classes.modalRole}>
+									{speaker &&
+										speaker.speaker[activeStep]?.role}
+								</Typography>
+
+								<div
+									style={{
+										display: "flex",
+										marginTop: 10,
+										marginLeft: -10,
+										width: 60,
+										justifyContent: "space-between",
+									}}
+								>
+									<IconButton>
+										<img
+											src="./icons/speaker-linkedin.svg"
+											alt="Linkedin"
+										/>
+									</IconButton>
+									<IconButton>
+										<img
+											src="./icons/speaker-twitter.svg"
+											alt="Twitter"
+										/>
+									</IconButton>
+								</div>
 							</div>
 						</div>
 					) : (
-						<div>
+						<div className={classes.speakerDiv}>
 							<img
 								src={speaker && speaker.speaker[0].modalLogo}
 								alt="Speakers"
@@ -170,39 +175,40 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 									borderRadius: 5,
 								}}
 							/>
-
-							<Typography className={classes.modalTitle}>
-								{speaker && speaker.speaker[0].name}
-							</Typography>
-							<Typography className={classes.modalRole}>
-								{speaker && speaker.speaker[0].role}
-							</Typography>
-							<div
-								style={{
-									display: "flex",
-									marginTop: 10,
-									marginLeft: -10,
-									width: 60,
-									justifyContent: "space-between",
-								}}
-							>
-								<IconButton>
-									<img
-										src="./icons/speaker-linkedin.svg"
-										alt="Linkedin"
-									/>
-								</IconButton>
-								<IconButton>
-									<img
-										src="./icons/speaker-twitter.svg"
-										alt="Twitter"
-									/>
-								</IconButton>
+							<div className={classes.speakerData}>
+								<Typography className={classes.modalTitle}>
+									{speaker && speaker.speaker[0].name}
+								</Typography>
+								<Typography className={classes.modalRole}>
+									{speaker && speaker.speaker[0].role}
+								</Typography>
+								<div
+									style={{
+										display: "flex",
+										marginTop: 10,
+										marginLeft: -10,
+										width: 60,
+										justifyContent: "space-between",
+									}}
+								>
+									<IconButton>
+										<img
+											src="./icons/speaker-linkedin.svg"
+											alt="Linkedin"
+										/>
+									</IconButton>
+									<IconButton>
+										<img
+											src="./icons/speaker-twitter.svg"
+											alt="Twitter"
+										/>
+									</IconButton>
+								</div>
 							</div>
 						</div>
 					)}
 					<div className={classes.sessionDetails}>
-						<div style={{ maxHeight: "40vh", overflowY: "scroll" }}>
+						<div className={classes.sessionDataDiv}>
 							<Typography className={classes.modalSessionName}>
 								{speaker.sessionName}
 							</Typography>
@@ -212,16 +218,7 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 								{dateString} {startTime} - {endTime} ({timeZone}
 								)
 							</Typography>
-							<Typography
-								style={{
-									color: "white",
-									maxWidth: "500px",
-									fontSize: "16px",
-									marginTop: 10,
-									marginBottom: 20,
-									whiteSpace: "pre-line",
-								}}
-							>
+							<Typography className={classes.modalDescription}>
 								{speaker.description}
 							</Typography>
 						</div>

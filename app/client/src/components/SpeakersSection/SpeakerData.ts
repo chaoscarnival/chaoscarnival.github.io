@@ -197,8 +197,8 @@ export const SpeakerData = [
 	},
 	{
 		id: 28,
-		name: "Samar",
-		title: "Cloud Security Engineer",
+		name: "Samar Sidharth",
+		title: "Lead Software Engineer",
 		company: "",
 		urlToIcon: "/speakers/Samar_Orange-min.jpg",
 	},

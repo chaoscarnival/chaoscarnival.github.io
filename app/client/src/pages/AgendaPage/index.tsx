@@ -36,47 +36,43 @@ const AgendaPage: React.FC = () => {
 	const Speaker = (s: any, companyLogo: string | undefined, d: any) => {
 		return (
 			<>
-				{d.id === 13 || d.id === 28 ? (
-					<></>
-				) : (
-					<div className={classes.speaker}>
-						<div style={{ display: "flex", flexWrap: "wrap" }}>
-							<img
-								src={s.speakerImage}
-								id="image"
-								alt="speakerImg"
-								style={{ objectFit: "scale-down" }}
-							/>
-							<div style={{ marginTop: "0.5rem" }}>
-								<Typography id="subtitle">{s.name}</Typography>
-								<Typography id="subtitle">{s.role}</Typography>
-							</div>
-							{d.speaker.length > 1 ? (
-								<div className={classes.speakerValue}>
-									<Typography
-										style={{ marginLeft: 6, marginTop: 5 }}
-									>
-										+{d.speaker.length - 1}
-									</Typography>
-								</div>
-							) : (
-								<></>
-							)}
+				<div className={classes.speaker}>
+					<div style={{ display: "flex", flexWrap: "wrap" }}>
+						<img
+							src={s.speakerImage}
+							id="image"
+							alt="speakerImg"
+							style={{ objectFit: "scale-down" }}
+						/>
+						<div style={{ marginTop: "0.5rem" }}>
+							<Typography id="subtitle">{s.name}</Typography>
+							<Typography id="subtitle">{s.role}</Typography>
 						</div>
-						{companyLogo !== undefined ? (
-							<img
-								style={{
-									marginTop: "0.5rem",
-									maxHeight: "2rem",
-									maxWidth: "10rem",
-									objectFit: "contain",
-								}}
-								src={companyLogo}
-								alt="companyLogo"
-							/>
-						) : null}
+						{d.speaker.length > 1 ? (
+							<div className={classes.speakerValue}>
+								<Typography
+									style={{ marginLeft: 6, marginTop: 5 }}
+								>
+									+{d.speaker.length - 1}
+								</Typography>
+							</div>
+						) : (
+							<></>
+						)}
 					</div>
-				)}
+					{companyLogo !== undefined ? (
+						<img
+							style={{
+								marginTop: "0.5rem",
+								maxHeight: "2rem",
+								maxWidth: "10rem",
+								objectFit: "contain",
+							}}
+							src={companyLogo}
+							alt="companyLogo"
+						/>
+					) : null}
+				</div>
 			</>
 		);
 	};
@@ -129,6 +125,13 @@ const AgendaPage: React.FC = () => {
 	const Keynote = (keynote: any) => {
 		return (
 			<div
+				onClick={() => {
+					setKeynoteModal({
+						modalState: true,
+						speakerData: keynote,
+						sessionData: "",
+					});
+				}}
 				style={{
 					display: "flex",
 					flexWrap: "wrap",
@@ -137,19 +140,11 @@ const AgendaPage: React.FC = () => {
 					background:
 						"linear-gradient(268.48deg, #2979E4 2.61%, #134B95 100%)",
 					width: "90%",
+					cursor: "pointer",
 				}}
 			>
 				<h1 style={{ fontSize: "2rem" }}>{keynote.sessionName}</h1>
-				<div
-					onClick={() => {
-						setKeynoteModal({
-							modalState: true,
-							speakerData: keynote,
-							sessionData: "",
-						});
-					}}
-					className={classes.keynoteLeftDetail}
-				>
+				<div className={classes.keynoteLeftDetail}>
 					{keynote.speaker?.map((s) => (
 						<>
 							<img

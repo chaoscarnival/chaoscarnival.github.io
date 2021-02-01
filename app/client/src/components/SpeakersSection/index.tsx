@@ -70,7 +70,7 @@ export function SpeakersSection() {
 					/>
 				))}
 			</div>
-			<div className={classes.agendaSection}>
+			{/* <div className={classes.agendaSection}>
 				<div
 					className={classes.detailText}
 					style={{ display: "inline" }}
@@ -89,7 +89,7 @@ export function SpeakersSection() {
 				>
 					coming soon
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 }

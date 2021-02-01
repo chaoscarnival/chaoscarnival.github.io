@@ -40,7 +40,7 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 					</Button>
 				</div>
 				<div className={classes.modalContent}>
-					<div>
+					<div className={classes.speakerDiv}>
 						<img
 							src={speaker && speaker.speaker[0].modalLogo}
 							alt="Speakers"
@@ -50,34 +50,35 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 								borderRadius: 12,
 							}}
 						/>
-
-						<Typography className={classes.modalTitle}>
-							{speaker && speaker.speaker[0].name}
-						</Typography>
-						<Typography className={classes.modalRole}>
-							{speaker && speaker.speaker[0].role}
-						</Typography>
-						<div
-							style={{
-								display: "flex",
-								marginTop: 10,
-								marginLeft: -10,
-								width: 60,
-								justifyContent: "space-between",
-							}}
-						>
-							<IconButton>
-								<img
-									src="./icons/speaker-linkedin.svg"
-									alt="Linkedin"
-								/>
-							</IconButton>
-							<IconButton>
-								<img
-									src="./icons/speaker-twitter.svg"
-									alt="Twitter"
-								/>
-							</IconButton>
+						<div className={classes.speakerData}>
+							<Typography className={classes.modalTitle}>
+								{speaker && speaker.speaker[0].name}
+							</Typography>
+							<Typography className={classes.modalRole}>
+								{speaker && speaker.speaker[0].role}
+							</Typography>
+							<div
+								style={{
+									display: "flex",
+									marginTop: 10,
+									marginLeft: -10,
+									width: 60,
+									justifyContent: "space-between",
+								}}
+							>
+								<IconButton>
+									<img
+										src="./icons/speaker-linkedin.svg"
+										alt="Linkedin"
+									/>
+								</IconButton>
+								<IconButton>
+									<img
+										src="./icons/speaker-twitter.svg"
+										alt="Twitter"
+									/>
+								</IconButton>
+							</div>
 						</div>
 					</div>
 					<div className={classes.sessionDetails}>
@@ -87,16 +88,7 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 						<Typography style={{ color: "#FFFFFF", opacity: 0.8 }}>
 							{dateString} {startTime} - {endTime} ({timeZone})
 						</Typography>
-						<Typography
-							style={{
-								color: "white",
-								maxWidth: "510px",
-								fontSize: "16px",
-								marginTop: 10,
-								marginBottom: 20,
-								whiteSpace: "pre-line",
-							}}
-						>
+						<Typography className={classes.modalDescription}>
 							{speaker?.description !== ""
 								? speaker?.description
 								: `Speaker Description.`}
