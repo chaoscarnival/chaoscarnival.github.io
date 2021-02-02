@@ -17,7 +17,7 @@ export default [
 		time: "8:00 AM",
 		startDateTime: "10 Feb 2021 08:00:00 -0800",
 		endDateTime: "10 Feb 2021 09:00:00 -0800",
-		description: "",
+		description: "A talk on cloud native Chaos Engineering.",
 		tags: ["Keynote"],
 		id: 0,
 	},
@@ -150,7 +150,7 @@ export default [
 			id: 5,
 		},
 		speaker2: {
-			sessionName: ``,
+			sessionName: `TBD`,
 			speaker: [
 				{
 					name: "",

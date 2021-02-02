@@ -1,14 +1,92 @@
-import React from "react";
+import React, { useState } from "react";
+import SpeakerModal from "../../pages/AgendaPage/SpeakerModal";
 import { CardProps } from "./model";
 import { useStyles } from "./styles";
 
+interface PopOverModal {
+	modalState: boolean;
+	speakerData: any;
+	sessionData: any;
+}
+
 function CardContent(props: CardProps) {
-	const { id, name, title, urlToIcon, company } = props;
+	const { id, name, title, urlToIcon, company, agenda } = props;
 
 	const classes = useStyles();
 
+	const [modalStatus, setModalStatus] = useState<PopOverModal>({
+		modalState: false,
+		speakerData: "",
+		sessionData: "",
+	});
+
+	const handleClose = () => {
+		setModalStatus({
+			modalState: false,
+			speakerData: "",
+			sessionData: "",
+		});
+	};
+
+	const FilterDataAndOpenModal = (speakerName: string) => {
+		let selectedSpeaker: any[] = [];
+		let selectedSession: any[] = [];
+		(agenda ?? []).forEach((sessionSet) => {
+			if (sessionSet && sessionSet.speaker1 && sessionSet.speaker2) {
+				if (selectedSpeaker.length === 0) {
+					selectedSpeaker = (
+						sessionSet.speaker1.speaker ?? []
+					).filter((identity) => {
+						return identity.name === speakerName;
+					});
+					if (selectedSpeaker.length > 0) {
+						let otherSelectedSpeakers: any[] = (
+							sessionSet.speaker1.speaker ?? []
+						).filter((identity) => {
+							return identity.name !== speakerName;
+						});
+						selectedSession.push(sessionSet.speaker1);
+						selectedSession[0].speaker = selectedSpeaker.concat(
+							otherSelectedSpeakers
+						);
+					}
+				}
+				if (selectedSpeaker.length === 0) {
+					selectedSpeaker = (
+						sessionSet.speaker2.speaker ?? []
+					).filter((identity) => {
+						return identity.name === speakerName;
+					});
+					if (selectedSpeaker.length > 0) {
+						let otherSelectedSpeakers: any[] = (
+							sessionSet.speaker2.speaker ?? []
+						).filter((identity) => {
+							return identity.name !== speakerName;
+						});
+						selectedSession.push(sessionSet.speaker2);
+						selectedSession[0].speaker = selectedSpeaker.concat(
+							otherSelectedSpeakers
+						);
+					}
+				}
+			}
+		});
+		if (selectedSession.length > 0 && !modalStatus.modalState) {
+			setModalStatus({
+				modalState: true,
+				speakerData: selectedSession[0],
+				sessionData: "",
+			});
+		}
+	};
+
 	return (
-		<div className={classes.cardContent}>
+		<div
+			className={classes.cardContent}
+			onClick={() => {
+				FilterDataAndOpenModal(name ?? "");
+			}}
+		>
 			<div>
 				{urlToIcon ? (
 					<div className={classes.cardMedia}>
@@ -40,6 +118,12 @@ function CardContent(props: CardProps) {
 					</div>
 				</div>
 			</div>
+			<SpeakerModal
+				modalState={modalStatus.modalState}
+				handleClose={handleClose}
+				speaker={modalStatus.speakerData}
+				session={modalStatus.sessionData}
+			/>
 		</div>
 	);
 }
