@@ -15,10 +15,6 @@ import { useStyles } from "./styles";
 function HomePage() {
 	const classes = useStyles();
 
-	React.useEffect(() => {
-		window.scrollTo(0, 0);
-	});
-
 	function gtag_report_conversion(url) {
 		var callback = function () {
 			if (typeof url != "undefined") {
