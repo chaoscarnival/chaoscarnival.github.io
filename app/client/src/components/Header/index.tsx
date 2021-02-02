@@ -253,7 +253,6 @@ const MainHeader: React.FC = () => {
 										>
 											<Link
 												to="/agenda"
-												smooth
 												style={{
 													textDecoration: "none",
 													color: "#fff",
