@@ -8,7 +8,7 @@ import {
 	Menu,
 	MenuItem,
 	Toolbar,
-	Typography,
+	Typography
 } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import gtag from "ga-gtag";
