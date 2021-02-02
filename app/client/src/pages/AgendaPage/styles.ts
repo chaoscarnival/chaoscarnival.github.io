@@ -24,6 +24,7 @@ export const useStyles = makeStyles((theme) => ({
 		letterSpacing: "0.02em",
 		color: "#A887CC",
 		marginLeft: "10%",
+		marginBottom: theme.spacing(2),
 	},
 	header: {
 		background: "linear-gradient(89deg, #5291CA 0%, #B086CC 99.41%)",
