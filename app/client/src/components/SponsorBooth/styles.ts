@@ -51,7 +51,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	action: {
-		"& button:first-child": {
+		"& #Booth": {
 			background: "#FE1C65",
 			color: "#fff",
 			fontWeight: "bold",
@@ -74,7 +74,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 
 		[theme.breakpoints.down("md")]: {
-			"& button:first-child": {
+			"& #Booth": {
 				marginTop: theme.spacing(3),
 			},
 		},
