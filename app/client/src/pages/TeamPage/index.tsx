@@ -41,10 +41,6 @@ const imgLink = [
 function TeamPage() {
 	const classes = useStyles();
 
-	React.useEffect(() => {
-		window.scrollTo(0, 0);
-	});
-
 	return (
 		<div className="scrollbar scrollbar-primary">
 			<MainHeader />
