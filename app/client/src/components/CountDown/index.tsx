@@ -8,10 +8,10 @@ interface CountDownProps {
 }
 
 const CountDown: React.FC<CountDownProps> = ({ timeTillDate, timeFormat }) => {
-	const [now, setNow] = useState(moment());
-	const [over, setOver] = useState(false);
 	const classes = useStyles();
-	const then = moment(timeTillDate, timeFormat);
+	const [now, setNow] = useState(moment().tz("America/Los_Angeles"));
+	const [over, setOver] = useState(false);
+	const then = moment("10 Feb 2021 08:00:00 -0800");
 	const days = then.diff(now, "days");
 	now.add(days, "days");
 	const hours = then.diff(now, "hours");

@@ -41,17 +41,20 @@ const sponsorsList = [
 				alt: "CNCF",
 				link: "https://www.cncf.io",
 			},
-
 			{
 				img: "/icons/Elastic-min.png",
 				alt: "Elastic",
 				link: "https://www.elastic.co",
 			},
-
 			{
 				img: "/icons/Gremlin-min.png",
 				alt: "Gremlin",
 				link: "https://www.gremlin.com",
+			},
+			{
+				img: "/icons/SodaFoundation-min.png",
+				alt: "Soda Foundation",
+				link: "https://sodafoundation.io",
 			},
 		],
 	},
