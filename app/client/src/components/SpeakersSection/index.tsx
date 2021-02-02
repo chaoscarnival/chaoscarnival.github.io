@@ -70,26 +70,6 @@ export function SpeakersSection() {
 					/>
 				))}
 			</div>
-			{/* <div className={classes.agendaSection}>
-				<div
-					className={classes.detailText}
-					style={{ display: "inline" }}
-				>
-					Detailed
-				</div>
-				<div
-					className={classes.agendaText}
-					style={{ display: "inline" }}
-				>
-					agenda
-				</div>
-				<div
-					className={classes.detailText}
-					style={{ display: "inline" }}
-				>
-					coming soon
-				</div>
-			</div> */}
 		</div>
 	);
 }
