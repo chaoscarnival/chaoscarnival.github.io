@@ -247,8 +247,7 @@ export default [
 					twitterProfileLink: "N/A",
 				},
 			],
-			description:
-				"Even when your entire business is Chaos Engineering, fully embracing the process can present challenges. I’ll share what we’ve learned & how we’ve adapted our approach to find success.\r\n\r\nEating your own dog food can be difficult, especially when you’re too busy to slow down and eat. Despite being proponents of Chaos Engineering for a very long time, running Chaos Engineering internally at Gremlin hasn’t always been easy. Like most companies, feature work takes high priority and reliability efforts were often a distant second, especially as the company grew.\r\n\r\nIn this talk, I’ll share how Gremlin experimented with our own Chaos Engineering practices, what we tried, what worked, and what didn’t. I’ll also discuss ways that you can keep your own Chaos Engineering practices lightweight and quick so you can strike the right balance between feature work and reliability in your own organization.\r\n\r\nThis talk focuses on our evolution from larger, traditional gamedays to smaller, more efficient ones that promote more regular practices.",
+			description: "A talk on Chaos Engineering and Observability.",
 			background: "rgba(12, 131, 95, 0.3)",
 			tags: ["Observability"],
 			id: 9,

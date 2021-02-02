@@ -34,15 +34,13 @@ const AgendaPage: React.FC = () => {
 		sessionData: "",
 	});
 
-	const { date: day1StartDate, time: day1StartTime, timeZone } = getLocale(
+	const { time: day1StartTime, timeZone } = getLocale(
 		"10 Feb 2021 08:00:00 -0800"
 	);
 	const { time: day1EndTime } = getLocale("10 Feb 2021 16:00:00 -0800");
 
 	// Day 2
-	const { date: day2StartDate, time: day2StartTime } = getLocale(
-		"11 Feb 2021 08:00:00 -0800"
-	);
+	const { time: day2StartTime } = getLocale("11 Feb 2021 08:00:00 -0800");
 	const { time: day2EndTime } = getLocale("11 Feb 2021 16:00:00 -0800");
 
 	const Speaker = (s: any, companyLogo: string | undefined, d: any) => {
