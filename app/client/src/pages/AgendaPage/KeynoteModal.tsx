@@ -1,11 +1,11 @@
 import { Button, IconButton, Modal, Typography } from "@material-ui/core";
 import ClearIcon from "@material-ui/icons/Clear";
 import React from "react";
+import { getLocale } from "../../utils/getLocale";
 import AddCalendar from "./AddCalendar";
 import JoinSession from "./JoinSession";
 import { useStyles } from "./styles";
 import Tags from "./Tags";
-import { getLocale } from "../../utils/getLocale";
 
 interface KeynoteModalProps {
 	handleClose: () => void;
@@ -93,7 +93,7 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 						<Typography className={classes.modalDescription}>
 							{speaker?.description !== ""
 								? speaker?.description
-								: `Speaker Description.`}
+								: `A talk on cloud native Chaos Engineering.`}
 						</Typography>
 						<Tags tags={speaker?.tags} />
 
