@@ -3,7 +3,7 @@ export default [
 		sessionName: `Day 1 Keynote`,
 		speaker: [
 			{
-				name: "Adrian Cockroft",
+				name: "Adrian Cockcroft",
 				role: "VP Cloud Architecture Strategy at AWS",
 				speakerImage: "https://i.ibb.co/2ZXTDWM/Adrian-AWS.png",
 				companyLogo:
@@ -17,7 +17,7 @@ export default [
 		time: "8:00 AM",
 		startDateTime: "10 Feb 2021 08:00:00 -0800",
 		endDateTime: "10 Feb 2021 09:00:00 -0800",
-		description: "",
+		description: "A talk on cloud native Chaos Engineering.",
 		tags: ["Keynote"],
 		id: 0,
 	},
@@ -150,7 +150,7 @@ export default [
 			id: 5,
 		},
 		speaker2: {
-			sessionName: ``,
+			sessionName: `TBD`,
 			speaker: [
 				{
 					name: "",
