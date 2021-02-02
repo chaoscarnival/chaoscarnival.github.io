@@ -9,6 +9,8 @@ export default [
 				companyLogo:
 					"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fphoenixnap.com%2Fwp-content%2Fuploads%2F2017%2F11%2Faws_logo_smile_white-250x163.png&f=1&nofb=1",
 				modalLogo: "/images/keynote_speaker1.jpg",
+				linkedInProfileLink: "",
+				twitterProfileLink: "",
 			},
 		],
 		time: "8:00 AM",
@@ -34,6 +36,9 @@ export default [
 					companyLogo:
 						"https://i.ibb.co/Jmy4RV4/container-Solutions.png",
 					modalLogo: "/speakers/Andreas_ContainerSolutions-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/andreas-krivas",
+					twitterProfileLink: "https://twitter.com/AndreasKrivas",
 				},
 			],
 			description:
@@ -51,6 +56,9 @@ export default [
 					speakerImage: "https://i.ibb.co/GH58CRS/Renaldo-GRES.png",
 					companyLogo: "https://i.ibb.co/fxM2vMh/GRES-STUDIO.png",
 					modalLogo: "/speakers/Renaldi_GRES-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/renaldigondosubroto",
+					twitterProfileLink: "http://twitter.com/Renaldig",
 				},
 			],
 			description:
@@ -74,6 +82,8 @@ export default [
 					speakerImage: "https://i.ibb.co/p19dw98/Vadim-Percona.png",
 					companyLogo: "https://i.ibb.co/Cm4YkjD/Percona.png",
 					modalLogo: "/speakers/Vadim_Percona-min.jpg",
+					linkedInProfileLink: "https://www.linkedin.com/in/vadimtk",
+					twitterProfileLink: "https://twitter.com/VadimTk",
 				},
 			],
 			description:
@@ -91,6 +101,9 @@ export default [
 					speakerImage: "https://i.ibb.co/682wyTZ/Vaibhav-Orange.png",
 					companyLogo: "https://i.ibb.co/GpG9PJg/image-43.png",
 					modalLogo: "/speakers/Vaibhav_Orange-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/vaibhav16dec",
+					twitterProfileLink: "https://twitter.com/VAIBHAV16DEC",
 				},
 				{
 					name: "Samar Sidharth",
@@ -98,6 +111,9 @@ export default [
 					speakerImage: "",
 					companyLogo: "",
 					modalLogo: "/speakers/Samar_Orange-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/samar-sidharth-82110a9b",
+					twitterProfileLink: "N/A",
 				},
 			],
 			description:
@@ -121,6 +137,9 @@ export default [
 					speakerImage: "https://i.ibb.co/bb1T6XL/Gunnar-AWS.png",
 					companyLogo: "https://i.ibb.co/6bTj0sH/Group.png",
 					modalLogo: "/speakers/Gunnar_AWS-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/gunnargrosch",
+					twitterProfileLink: "https://twitter.com/GunnarGrosch",
 				},
 			],
 			description:
@@ -138,6 +157,8 @@ export default [
 					speakerImage: "",
 					companyLogo: "",
 					modalLogo: "",
+					linkedInProfileLink: "",
+					twitterProfileLink: "",
 				},
 			],
 			description: "",
@@ -160,6 +181,8 @@ export default [
 					speakerImage: "https://i.ibb.co/5LfXWMQ/Raj-Maydata.png",
 					companyLogo: "https://i.ibb.co/X35X6hP/Mayadata.png",
 					modalLogo: "/speakers/Raj_Mayadata-min.jpg",
+					linkedInProfileLink: "https://www.linkedin.com/in/rajdas98",
+					twitterProfileLink: "https://twitter.com/rajdas98",
 				},
 				{
 					name: "Soumya Ghosh Dastidar",
@@ -168,6 +191,8 @@ export default [
 						"https://i.ibb.co/fVRDQCS/Soumya-Mayadata.png",
 					companyLogo: "https://i.ibb.co/X35X6hP/Mayadata.png",
 					modalLogo: "/speakers/Soumya_Mayadata-min.jpg",
+					linkedInProfileLink: "https://www.linkedin.com/in/gdsoumya",
+					twitterProfileLink: "https://twitter.com/gdsoumya",
 				},
 			],
 			description:
@@ -185,6 +210,9 @@ export default [
 					speakerImage: "https://i.ibb.co/rf2Hwv7/Sumit-Intuit.png",
 					companyLogo: "https://i.ibb.co/R2sN5Vy/Intuit.png",
 					modalLogo: "/speakers/Sumit_Intuit-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/sumitnagal",
+					twitterProfileLink: "https://twitter.com/sumitnagal",
 				},
 			],
 			description:
@@ -213,6 +241,9 @@ export default [
 						"https://i.ibb.co/bFsjYBG/Chinmay-Epsagon.png",
 					companyLogo: "https://i.ibb.co/NZQczQ1/Group-3510.png",
 					modalLogo: "/speakers/Chinmay_Epsagon-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/chinmay-gaikwad",
+					twitterProfileLink: "N/A",
 				},
 			],
 			description:
@@ -231,6 +262,9 @@ export default [
 						"https://i.ibb.co/cwFNVDF/Maik-Codecentric.png",
 					companyLogo: "https://i.ibb.co/WkmGnBH/codecentric.png",
 					modalLogo: "/speakers/Maik_Codecentric-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/maik-figura-ab308a4b",
+					twitterProfileLink: "https://twitter.com/maiksensi",
 				},
 				{
 					name: "Oliver Kracht",
@@ -238,6 +272,8 @@ export default [
 					speakerImage: "https://i.ibb.co/kGkTmJC/Oliver-DB.png",
 					companyLogo: "https://i.ibb.co/g7NczbR/DB.png",
 					modalLogo: "/speakers/Oliver_DB-min.jpg",
+					linkedInProfileLink: "N/A",
+					twitterProfileLink: "N/A",
 				},
 				{
 					name: "Jonas vor dem Berge",
@@ -245,6 +281,8 @@ export default [
 					speakerImage: "https://i.ibb.co/McKcyyy/Jonas-DB.png",
 					companyLogo: "https://i.ibb.co/g7NczbR/DB.png",
 					modalLogo: "/speakers/Jonas_DB-min.jpg",
+					linkedInProfileLink: "N/A",
+					twitterProfileLink: "N/A",
 				},
 			],
 			description:
@@ -269,6 +307,9 @@ export default [
 						"https://i.ibb.co/LkDH2Y8/Julie-Pagerduty.png",
 					companyLogo: "https://i.ibb.co/JrbQH5v/Pager-Duty.png",
 					modalLogo: "/speakers/Julie_PagerDuty-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/juliegunderson",
+					twitterProfileLink: "https://twitter.com/Julie_Gund",
 				},
 			],
 			description:
@@ -287,6 +328,9 @@ export default [
 						"https://i.ibb.co/pyN9mhx/Gunnard-Power-Code.png",
 					companyLogo: "https://i.ibb.co/Ht56Ws5/Power-Code.png",
 					modalLogo: "/speakers/Gunnard_PowerCode-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/%F0%9F%92%BB-gunnard-engebreth-ab446512",
+					twitterProfileLink: "https://twitter.com/gunnard",
 				},
 			],
 			description:
@@ -310,6 +354,9 @@ export default [
 					speakerImage: "https://i.ibb.co/fGP0fPZ/Jason-Gremlin.png",
 					companyLogo: "https://i.ibb.co/DK17SWq/gremlin.png",
 					modalLogo: "/speakers/Jason_Gremlin-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/gitbisect",
+					twitterProfileLink: "https://twitter.com/gitbisect",
 				},
 			],
 			description:
@@ -327,6 +374,9 @@ export default [
 					speakerImage: "https://i.ibb.co/s3YB7Ly/Michael-IAG.png",
 					companyLogo: "https://i.ibb.co/BnsWkPN/IAG.png",
 					modalLogo: "/speakers/Michael_IAG-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/mikhailkniazev",
+					twitterProfileLink: "N/A",
 				},
 			],
 			description:

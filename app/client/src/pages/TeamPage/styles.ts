@@ -36,7 +36,7 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	mainHeader: {
 		fontSize: "90px",
-		color: "#000",
+		color: "#fff",
 		textAlign: "left",
 		fontWeight: "bold",
 		padding: 20,
@@ -162,7 +162,7 @@ export const useStyles = makeStyles((theme) => ({
 		wordBreak: "break-word",
 	},
 	teaminfo: {
-		color: "#000",
+		color: "#fff",
 		fontSize: "0.9rem",
 		fontWeight: 300,
 		width: "100%",
