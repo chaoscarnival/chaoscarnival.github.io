@@ -70,13 +70,20 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 							>
 								<IconButton
 									disabled={
-										speaker &&
-										speaker[0].linkedInProfileLink !== "" &&
-										speaker[0].linkedInProfileLink !== "N/A"
+										(speaker &&
+											speaker.speaker[0]
+												.linkedInProfileLink === "") ||
+										(speaker &&
+											speaker.speaker[0]
+												.linkedInProfileLink === "N/A")
 									}
 									onClick={() => {
-										window.location.href =
-											speaker.speaker[0].linkedInProfileLink;
+										window.open(
+											speaker &&
+												speaker.speaker[0]
+													.linkedInProfileLink,
+											"_blank"
+										);
 									}}
 								>
 									<img
@@ -86,13 +93,20 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 								</IconButton>
 								<IconButton
 									disabled={
-										speaker &&
-										speaker[0].twitterProfileLink !== "" &&
-										speaker[0].twitterProfileLink !== "N/A"
+										(speaker &&
+											speaker.speaker[0]
+												.twitterProfileLink === "") ||
+										(speaker &&
+											speaker.speaker[0]
+												.twitterProfileLink === "N/A")
 									}
 									onClick={() => {
-										window.location.href =
-											speaker.speaker[0].twitterProfileLink;
+										window.open(
+											speaker &&
+												speaker.speaker[0]
+													.twitterProfileLink,
+											"_blank"
+										);
 									}}
 								>
 									<img
