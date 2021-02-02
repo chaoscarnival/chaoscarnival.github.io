@@ -3,7 +3,7 @@ export default [
 		sessionName: `Day 1 Keynote`,
 		speaker: [
 			{
-				name: "Adrian Cockroft",
+				name: "Adrian Cockcroft",
 				role: "VP Cloud Architecture Strategy at AWS",
 				speakerImage: "https://i.ibb.co/2ZXTDWM/Adrian-AWS.png",
 				companyLogo:

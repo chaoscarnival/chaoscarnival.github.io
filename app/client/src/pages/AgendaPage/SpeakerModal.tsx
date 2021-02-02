@@ -71,7 +71,7 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 		speaker.sessionName,
 		`${speaker.sessionName} by ${
 			speaker && speaker.speaker[0].name
-		} at ChaosCarnival.`
+		} at ChaosCarnival. Event link-${joinUrl}`
 	);
 
 	return (
