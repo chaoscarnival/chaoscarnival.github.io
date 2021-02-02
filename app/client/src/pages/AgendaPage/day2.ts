@@ -265,7 +265,7 @@ export default [
 			sessionName: `Bring Chaos into your Development Environment`,
 			speaker: [
 				{
-					name: "Ramiro Berrelleza ",
+					name: "Ramiro Berrelleza",
 					role: "Founder & CEO",
 					speakerImage: "https://i.ibb.co/C6LdPjR/Ramiro-Okteto.png",
 					companyLogo: "https://i.ibb.co/XzsKTY3/Okteto.png",

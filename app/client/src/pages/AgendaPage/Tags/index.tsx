@@ -11,7 +11,7 @@ const Tags: React.FC<TagsProp> = ({ tags }) => {
 	return (
 		<>
 			{tags?.map((tag) => (
-				<div className={classes.tagsDiv}>
+				<div className={classes.tagsDiv} key={Math.random()}>
 					<div
 						style={{
 							height: 10,
