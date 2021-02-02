@@ -21,6 +21,9 @@ export const useStyles = makeStyles((theme: Theme) => ({
 		color: "#fff",
 		padding: theme.spacing(1, 4),
 		marginTop: theme.spacing(2.5),
+		[theme.breakpoints.down("xs")]: {
+			width: "100%",
+		},
 	},
 
 	speakerRoot: {
