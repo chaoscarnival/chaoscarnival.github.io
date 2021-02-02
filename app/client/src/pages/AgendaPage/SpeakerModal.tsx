@@ -150,13 +150,50 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 										justifyContent: "space-between",
 									}}
 								>
-									<IconButton>
+									<IconButton
+										disabled={
+											(speaker &&
+												speaker.speaker[activeStep]
+													.linkedInProfileLink) ===
+												"" ||
+											(speaker &&
+												speaker.speaker[activeStep]
+													.linkedInProfileLink) ===
+												"N/A"
+										}
+										onClick={() => {
+											window.open(
+												speaker &&
+													speaker.speaker[activeStep]
+														.linkedInProfileLink,
+												"_blank"
+											);
+										}}
+									>
 										<img
 											src="./icons/speaker-linkedin.svg"
 											alt="Linkedin"
 										/>
 									</IconButton>
-									<IconButton>
+									<IconButton
+										disabled={
+											(speaker &&
+												speaker?.speaker[activeStep]
+													.twitterProfileLink) ===
+												"N/A" ||
+											(speaker &&
+												speaker?.speaker[activeStep]
+													.twitterProfileLink) === ""
+										}
+										onClick={() => {
+											window.open(
+												speaker &&
+													speaker.speaker[activeStep]
+														.twitterProfileLink,
+												"_blank"
+											);
+										}}
+									>
 										<img
 											src="./icons/speaker-twitter.svg"
 											alt="Twitter"
@@ -194,17 +231,22 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 								>
 									<IconButton
 										disabled={
-											speaker &&
-											speaker[activeStep]
-												?.linkedInProfileLink !== "" &&
-											speaker[activeStep]
-												?.linkedInProfileLink !== "N/A"
+											(speaker &&
+												speaker.speaker[0]
+													.linkedInProfileLink) ===
+												"" ||
+											(speaker &&
+												speaker.speaker[0]
+													.linkedInProfileLink) ===
+												"N/A"
 										}
 										onClick={() => {
-											window.location.href =
-												speaker[
-													activeStep
-												]?.linkedInProfileLink;
+											window.open(
+												speaker &&
+													speaker.speaker[0]
+														.linkedInProfileLink,
+												"_blank"
+											);
 										}}
 									>
 										<img
@@ -214,17 +256,21 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 									</IconButton>
 									<IconButton
 										disabled={
-											speaker &&
-											speaker[activeStep]
-												?.twitterProfileLink !== "" &&
-											speaker[activeStep]
-												?.twitterProfileLink !== "N/A"
+											(speaker &&
+												speaker?.speaker[0]
+													.twitterProfileLink) ===
+												"N/A" ||
+											(speaker &&
+												speaker?.speaker[0]
+													.twitterProfileLink) === ""
 										}
 										onClick={() => {
-											window.location.href =
-												speaker[
-													activeStep
-												]?.twitterProfileLink;
+											window.open(
+												speaker &&
+													speaker.speaker[0]
+														.twitterProfileLink,
+												"_blank"
+											);
 										}}
 									>
 										<img
