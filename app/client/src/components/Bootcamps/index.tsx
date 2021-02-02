@@ -43,9 +43,11 @@ const Bootcamps: React.FC<BootcampsProps> = ({ bootcamps }) => {
 							</div>
 							<div className={classes.action}>
 								<Button
-									onClick={() =>
-										(window.location.href = joinUrl)
-									}
+									id="Booth"
+									variant="contained"
+									href={joinUrl}
+									target="_blank"
+									rel="noopener"
 								>
 									Join the Bootcamp <OpenInNewIcon />
 								</Button>
