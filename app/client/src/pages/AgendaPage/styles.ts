@@ -16,9 +16,23 @@ export const useStyles = makeStyles((theme) => ({
 			"-webkit-linear-gradient(89.85deg, #BCA1F7 0%, #EE759C 98.01%)",
 		marginLeft: "10%",
 	},
+	note: {
+		fontStyle: "italic",
+		fontWeight: "normal",
+		fontSize: 18,
+		lineHeight: "140%",
+		letterSpacing: "0.02em",
+		color: "#A887CC",
+		marginLeft: "10%",
+		marginBottom: theme.spacing(2),
+	},
 	header: {
 		background: "linear-gradient(89deg, #5291CA 0%, #B086CC 99.41%)",
-		height: "5rem",
+	},
+	duration: {
+		marginLeft: "10%",
+		fontSize: 18,
+		paddingBottom: "1rem",
 	},
 	details: {
 		width: "80%",
