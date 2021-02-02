@@ -9,8 +9,9 @@ export default [
 				companyLogo:
 					"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fphoenixnap.com%2Fwp-content%2Fuploads%2F2017%2F11%2Faws_logo_smile_white-250x163.png&f=1&nofb=1",
 				modalLogo: "/images/keynote_speaker1.jpg",
-				linkedInProfileLink: "",
-				twitterProfileLink: "",
+				linkedInProfileLink:
+					"https://www.linkedin.com/in/adriancockcroft/",
+				twitterProfileLink: "https://twitter.com/adrianco",
 			},
 		],
 		time: "8:00 AM",
