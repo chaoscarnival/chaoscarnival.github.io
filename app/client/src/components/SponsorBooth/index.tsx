@@ -6,7 +6,6 @@ import { useStyles } from "./styles";
 export interface SponsorBooth {
 	logo: string;
 	description: string;
-	visitLink: string;
 	sponsorBoothLink: string;
 	startDateTime_One: string;
 	endDateTime_One: string;
@@ -29,7 +28,6 @@ const SponsorBooth: React.FC<SponsorBoothProps> = ({ sponsorBooths }) => {
 				({
 					logo,
 					description,
-					visitLink,
 					sponsorBoothLink,
 					startDateTime_One,
 					endDateTime_One,
@@ -63,9 +61,11 @@ const SponsorBooth: React.FC<SponsorBoothProps> = ({ sponsorBooths }) => {
 							</div>
 							<div className={classes.action}>
 								<Button
-									onClick={() =>
-										(window.location.href = sponsorBoothLink)
-									}
+									id="Booth"
+									variant="contained"
+									href={sponsorBoothLink}
+									target="_blank"
+									rel="noopener"
 								>
 									Visit the sponsor booth
 								</Button>

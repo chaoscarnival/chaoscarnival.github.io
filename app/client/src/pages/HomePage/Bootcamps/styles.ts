@@ -46,6 +46,12 @@ export const useStyles = makeStyles((theme) => ({
 		color: "#fff",
 		padding: theme.spacing(1, 4),
 		marginTop: theme.spacing(3.5),
+		fontSize: "1rem",
+		textTransform: "none",
+		[theme.breakpoints.down("xs")]: {
+			height: "3rem",
+			width: "100%",
+		},
 	},
 	text: {
 		width: "50%",

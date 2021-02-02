@@ -21,6 +21,12 @@ export const useStyles = makeStyles((theme: Theme) => ({
 		color: "#fff",
 		padding: theme.spacing(1, 4),
 		marginTop: theme.spacing(2.5),
+		fontSize: "1rem",
+		textTransform: "none",
+		[theme.breakpoints.down("xs")]: {
+			height: "3rem",
+			width: "100%",
+		},
 	},
 
 	speakerRoot: {
@@ -249,49 +255,6 @@ export const useStyles = makeStyles((theme: Theme) => ({
 		[theme.breakpoints.down("xs")]: {
 			fontSize: "37.5px",
 			marginLeft: "-5vw",
-		},
-	},
-	agendaSection: {
-		paddingTop: "5rem",
-		margin: "0 auto",
-		[theme.breakpoints.down("xs")]: {
-			marginLeft: "8vw",
-		},
-	},
-	detailText: {
-		fontSize: "1.8rem",
-		fontWeight: 500,
-		textAlign: "left",
-		[theme.breakpoints.down("md")]: {
-			fontSize: "1.5rem",
-		},
-		[theme.breakpoints.down("sm")]: {
-			fontSize: "1.4rem",
-		},
-		[theme.breakpoints.down("xs")]: {
-			fontSize: "1.4rem",
-		},
-	},
-	agendaText: {
-		fontSize: "1.8rem",
-		fontWeight: 700,
-		textAlign: "left",
-		width: "fit-content",
-		WebkitBackgroundClip: "text",
-		WebkitTextFillColor: "transparent",
-		color: "transparent",
-		backgroundClip: "text",
-		background: "linear-gradient(89.85deg, #BCA1F7 0.13%, #EE759C 98.01%)",
-		paddingLeft: theme.spacing(1),
-		paddingRight: theme.spacing(1),
-		[theme.breakpoints.down("md")]: {
-			fontSize: "1.5rem",
-		},
-		[theme.breakpoints.down("sm")]: {
-			fontSize: "1.4rem",
-		},
-		[theme.breakpoints.down("xs")]: {
-			fontSize: "1.4rem",
 		},
 	},
 }));

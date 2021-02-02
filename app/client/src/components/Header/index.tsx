@@ -252,8 +252,7 @@ const MainHeader: React.FC = () => {
 											onClick={handleClose}
 										>
 											<Link
-												to="/#agenda"
-												smooth
+												to="/agenda"
 												style={{
 													textDecoration: "none",
 													color: "#fff",

@@ -148,10 +148,10 @@ export const SpeakerData = [
 	},
 	{
 		id: 21,
-		name: "Gunnard Engebreth",
-		title: "Senior Developer ",
+		name: "Piyush Verma",
+		title: "Co-Founder & CTO",
 		company: "",
-		urlToIcon: "/speakers/Gunnard_PowerCode-min.jpg",
+		urlToIcon: "/speakers/Piyush_Last9-min.jpg",
 	},
 	{
 		id: 22,
@@ -211,9 +211,9 @@ export const SpeakerData = [
 	},
 	{
 		id: 30,
-		name: "Piyush Verma",
-		title: "Co-Founder & CTO",
+		name: "Gunnard Engebreth",
+		title: "",
 		company: "",
-		urlToIcon: "/speakers/Piyush_Last9-min.jpg",
+		urlToIcon: "/speakers/Gunnard-min.jpg",
 	},
 ];

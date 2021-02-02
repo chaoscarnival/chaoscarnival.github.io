@@ -1,6 +1,8 @@
 import { Button, Typography } from "@material-ui/core";
 import React from "react";
 import history from "../../history";
+import day1 from "../../pages/AgendaPage/day1";
+import day2 from "../../pages/AgendaPage/day2";
 import CustomCard from "../CustomSpeakerCard";
 import KeyNoteCard from "../KeyNoteCards";
 import { KeyNoteSpeakerData } from "./KeyNoteSpeakerData";
@@ -9,6 +11,8 @@ import { useStyles } from "./styles";
 
 export function SpeakersSection() {
 	const classes = useStyles();
+
+	const agenda = day1.concat(day2);
 
 	return (
 		<div className={classes.root}>
@@ -22,6 +26,7 @@ export function SpeakersSection() {
 							title={speaker.title}
 							urlToIcon={speaker.urlToIcon}
 							companyIcon={speaker.companyIcon}
+							agenda={agenda}
 						/>
 					))}
 				</div>
@@ -67,29 +72,10 @@ export function SpeakersSection() {
 						title={speaker.title}
 						urlToIcon={speaker.urlToIcon}
 						company={speaker.company}
+						agenda={agenda}
 					/>
 				))}
 			</div>
-			{/* <div className={classes.agendaSection}>
-				<div
-					className={classes.detailText}
-					style={{ display: "inline" }}
-				>
-					Detailed
-				</div>
-				<div
-					className={classes.agendaText}
-					style={{ display: "inline" }}
-				>
-					agenda
-				</div>
-				<div
-					className={classes.detailText}
-					style={{ display: "inline" }}
-				>
-					coming soon
-				</div>
-			</div> */}
 		</div>
 	);
 }

@@ -1,11 +1,12 @@
 import { Button, IconButton, Modal, Typography } from "@material-ui/core";
 import ClearIcon from "@material-ui/icons/Clear";
 import React from "react";
+import calenderTime from "../../utils/calenderTime";
+import { getLocale } from "../../utils/getLocale";
 import AddCalendar from "./AddCalendar";
 import JoinSession from "./JoinSession";
 import { useStyles } from "./styles";
 import Tags from "./Tags";
-import { getLocale } from "../../utils/getLocale";
 
 interface KeynoteModalProps {
 	handleClose: () => void;
@@ -28,6 +29,17 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 
 	const joinUrl =
 		"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1";
+	const twitterURL = `https://twitter.com/intent/tweet?text=Watch this session - ${speaker.sessionName} live at ChaosCarnival.io &hashtags=ChaosCarnival2021`;
+
+	const inviteLink = calenderTime(
+		speaker.startDateTime,
+		speaker.endDateTime,
+		speaker.sessionName,
+		`${speaker.sessionName} by ${
+			speaker && speaker.speaker[0].name
+		} at ChaosCarnival. Event link-${joinUrl}`
+	);
+
 	return (
 		<Modal open={modalState} onClose={handleClose}>
 			<div className={classes.modal}>
@@ -66,13 +78,47 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 									justifyContent: "space-between",
 								}}
 							>
-								<IconButton>
+								<IconButton
+									disabled={
+										(speaker &&
+											speaker.speaker[0]
+												.linkedInProfileLink === "") ||
+										(speaker &&
+											speaker.speaker[0]
+												.linkedInProfileLink === "N/A")
+									}
+									onClick={() => {
+										window.open(
+											speaker &&
+												speaker.speaker[0]
+													.linkedInProfileLink,
+											"_blank"
+										);
+									}}
+								>
 									<img
 										src="./icons/speaker-linkedin.svg"
 										alt="Linkedin"
 									/>
 								</IconButton>
-								<IconButton>
+								<IconButton
+									disabled={
+										(speaker &&
+											speaker.speaker[0]
+												.twitterProfileLink === "") ||
+										(speaker &&
+											speaker.speaker[0]
+												.twitterProfileLink === "N/A")
+									}
+									onClick={() => {
+										window.open(
+											speaker &&
+												speaker.speaker[0]
+													.twitterProfileLink,
+											"_blank"
+										);
+									}}
+								>
 									<img
 										src="./icons/speaker-twitter.svg"
 										alt="Twitter"
@@ -91,7 +137,7 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 						<Typography className={classes.modalDescription}>
 							{speaker?.description !== ""
 								? speaker?.description
-								: `Speaker Description.`}
+								: `A talk on cloud native Chaos Engineering.`}
 						</Typography>
 						<Tags tags={speaker?.tags} />
 
@@ -101,7 +147,11 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 									(window.location.href = joinUrl)
 								}
 							/>
-							<AddCalendar handleClick={() => {}} />
+							<AddCalendar
+								handleClick={() => {
+									window.open(inviteLink, "_blank");
+								}}
+							/>
 						</div>
 						<div style={{ display: "flex" }}>
 							<Typography
@@ -114,15 +164,19 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 								style={{ marginTop: -5, marginLeft: 2 }}
 								alt="twitter-blue"
 							/>
-							<Typography
+							<a
+								href={twitterURL}
 								style={{
 									fontSize: 14,
 									color: "#488FDF",
+									cursor: "pointer",
+									textDecoration: "none",
 								}}
+								target="_"
 							>
 								{" "}
-								#chaoscarnival
-							</Typography>
+								#chaoscarnival2021
+							</a>
 						</div>
 					</div>
 				</div>

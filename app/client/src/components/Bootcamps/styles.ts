@@ -48,7 +48,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	action: {
-		"& button:first-child": {
+		"& #Booth": {
 			background: "#FE1C65",
 			color: "#fff",
 			fontWeight: "bold",

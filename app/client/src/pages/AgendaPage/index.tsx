@@ -33,6 +33,16 @@ const AgendaPage: React.FC = () => {
 		speakerData: "",
 		sessionData: "",
 	});
+
+	const { time: day1StartTime, timeZone } = getLocale(
+		"10 Feb 2021 08:00:00 -0800"
+	);
+	const { time: day1EndTime } = getLocale("10 Feb 2021 16:00:00 -0800");
+
+	// Day 2
+	const { time: day2StartTime } = getLocale("11 Feb 2021 08:00:00 -0800");
+	const { time: day2EndTime } = getLocale("11 Feb 2021 16:00:00 -0800");
+
 	const Speaker = (s: any, companyLogo: string | undefined, d: any) => {
 		return (
 			<>
@@ -63,7 +73,7 @@ const AgendaPage: React.FC = () => {
 								<></>
 							)}
 						</div>
-						{companyLogo !== undefined ? (
+						{companyLogo !== undefined && companyLogo !== "N/A" ? (
 							<img
 								style={{
 									marginTop: "0.5rem",
@@ -216,18 +226,31 @@ const AgendaPage: React.FC = () => {
 
 	return (
 		<div className="scrollbar scrollbar-primary">
-			<div>
+			<div className={classes.rootContainer}>
 				<MainHeader />
 				{/* Agenda Page Content */}
 				<div className={classes.root}>
 					{/* Header */}
 					<h1 className={classes.title}>Agenda</h1>
+					<Typography className={classes.note}>
+						Note: All times shown below are as per your local
+						timezone
+					</Typography>
 					{/* Day 1 Agenda Table */}
 
 					<div className={classes.header}>
-						<h1 style={{ marginLeft: "10%", lineHeight: "5rem" }}>
+						<Typography
+							variant="h4"
+							style={{
+								marginLeft: "10%",
+								paddingTop: "1rem",
+							}}
+						>
 							Wednesday, Feb 10
-						</h1>
+						</Typography>
+						<Typography className={classes.duration}>
+							{day1StartTime} &#8211; {day1EndTime} {timeZone}
+						</Typography>
 					</div>
 
 					{/* Agenda Table */}
@@ -315,7 +338,6 @@ const AgendaPage: React.FC = () => {
 											) : (
 												// For Regular speakers
 												<div className={classes.events}>
-													{console.log(d)}
 													<div
 														className={
 															classes.speaker1details
@@ -456,9 +478,18 @@ const AgendaPage: React.FC = () => {
 					<br />
 					{/* Day 2 */}
 					<div className={classes.header}>
-						<h1 style={{ marginLeft: "10%", lineHeight: "5rem" }}>
+						<Typography
+							variant="h4"
+							style={{
+								marginLeft: "10%",
+								paddingTop: "1rem",
+							}}
+						>
 							Thursday, Feb 11
-						</h1>
+						</Typography>
+						<Typography className={classes.duration}>
+							{day2StartTime} &#8211; {day2EndTime} {timeZone}
+						</Typography>
 					</div>
 
 					{/* Day 2 Table */}

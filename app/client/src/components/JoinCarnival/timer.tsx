@@ -5,9 +5,9 @@ import { useStyles } from "./styles";
 
 const Timer = () => {
 	const classes = useStyles();
-	const [now, setNow] = useState(moment());
+	const [now, setNow] = useState(moment().tz("America/Los_Angeles"));
 	const [over, setOver] = useState(false);
-	const then = moment("02 10 2021, 8:00 am", "MM DD YYYY, h:mm a");
+	const then = moment("10 Feb 2021 08:00:00 -0800");
 	const days = then.diff(now, "days");
 	now.add(days, "days");
 	const hours = then.diff(now, "hours");

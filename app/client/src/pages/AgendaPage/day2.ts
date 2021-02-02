@@ -10,6 +10,8 @@ export default [
 				speakerImage: "https://i.ibb.co/GsXnxnC/Group-3278.png",
 				companyLogo: "https://i.ibb.co/X35X6hP/Mayadata.png",
 				modalLogo: "/images/keynote_speaker2.jpg",
+				linkedInProfileLink: "https://www.linkedin.com/in/uma-mukkara/",
+				twitterProfileLink: "https://twitter.com/Uma_Mukkara",
 			},
 		],
 		time: "8:00 AM",
@@ -34,6 +36,9 @@ export default [
 					speakerImage: "https://i.ibb.co/dJBPhDH/Robert-IBM.png",
 					companyLogo: "https://i.ibb.co/Ss17hJx/IBM.png",
 					modalLogo: "/speakers/Robert_IBM-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/flyingbarron",
+					twitterProfileLink: "https://twitter.com/flyingbarron",
 				},
 			],
 			description:
@@ -51,6 +56,9 @@ export default [
 					speakerImage: "https://i.ibb.co/kxCV8vd/Aravind-Intuit.png",
 					companyLogo: "https://i.ibb.co/hg13RFp/elastic.png",
 					modalLogo: "/speakers/Aravind_Elastic-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/aravindputrevu",
+					twitterProfileLink: "https://twitter.com/aravindputrevu",
 				},
 			],
 			description:
@@ -75,6 +83,9 @@ export default [
 						"https://i.ibb.co/mTD915T/Aravind-Intuit-1.png",
 					companyLogo: "https://i.ibb.co/DK17SWq/gremlin.png",
 					modalLogo: "/speakers/Ana_Gremlin-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/anammedina",
+					twitterProfileLink: "https://twitter.com/Ana_M_Medina",
 				},
 			],
 			description:
@@ -92,6 +103,9 @@ export default [
 					speakerImage: "https://i.ibb.co/vcKY5Bq/Delphine-Wipro.png",
 					companyLogo: "https://i.ibb.co/gMJkYDw/Wipro.png",
 					modalLogo: "/speakers/Delphine_Wipro-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/delphine-joyneer-golkonda-bb0386aa",
+					twitterProfileLink: "N/A",
 				},
 			],
 			description:
@@ -115,6 +129,8 @@ export default [
 					speakerImage: "https://i.ibb.co/2FN5GZF/Olga-Amazon.png",
 					companyLogo: "https://i.ibb.co/FwRttVk/Amazon.png",
 					modalLogo: "/speakers/Olga_Amazon-min.jpg",
+					linkedInProfileLink: "https://www.linkedin.com/in/olgahall",
+					twitterProfileLink: "https://twitter.com/ovhall",
 				},
 			],
 			description:
@@ -132,10 +148,12 @@ export default [
 					speakerImage: "https://i.ibb.co/d0trDJZ/Piyush-Last9.png",
 					companyLogo: "https://i.ibb.co/hMbZ82Q/Last9.png",
 					modalLogo: "/speakers/Piyush_Last9-min.jpg",
+					linkedInProfileLink: "https://www.linkedin.com/in/meson10",
+					twitterProfileLink: "https://twitter.com/realmeson10",
 				},
 			],
 			description:
-				"Systems fail but the real failures are the ones from those we learn nothing. This talk is a tale of few such failures that went right under our noses and what we did to prevent those. The techniques covered range from Heterogenous systems, unordered events, missing correlations, and human errors.\r\n\r\nEvery time there is a failure there is a root cause analysis and there is a vow to not repeat the mistake. I will take some curious failures that I have dealt with in the past decade of my work with Infrastructure systems and the steps we had to undertake to:\r\n\r\n1. Isolate\r\n2. Limit the spread\r\n3. Prevent from happening again\r\n\r\n## Failure 1 ##\r\nAn un-replicated consul configuration results in data loss 25 hours before a countrywide launch. Took a staggering 5 engineers and 20 hours to find one single line of change.\r\n\r\n## Failure 2 ##\r\nA failed distributed lock in etcD. Forcing us to re-write the whole storage on Consul and hours of migration. Only to find later that it was a clock Issue.\r\n\r\nThe above Isolation and immediate fixes were painfully long, yet doable. \r\nThe real ambition was to prevent *similar* such Incidents from repeating. I will share samples of some of our RCAs and what was missing with each one of those versions. And what the resultant RCA looks like. This section does touch briefly upon blameless RCA but real point of focus is action-ability of an RCA.\r\n\r\n## Failure3 ##\r\nIn this section, I will showcase some of the in-house frameworks and technologies (easy to replicate) that were built to turn the prevention/alert section of RCAs into lines of code rather than lines of blurb of text. The goal of this section is to advertise and advocate the need to build/adopt toolchains which promise early-detection and not just faster-resolution.",
+				"Systems fail but the real failures are the ones from those we learn nothing. This talk is a tale of few such failures that went right under our noses and what we did to prevent those. The techniques covered range from Heterogenous systems, unordered events, missing correlations, and human errors.\r\n\r\nEvery time there is a failure there is a root cause analysis and there is a vow to not repeat the mistake. I will take some curious failures that I have dealt with in the past decade of my work with Infrastructure systems and the steps we had to undertake to:\r\n\r\n1. Isolate\r\n2. Limit the spread\r\n3. Prevent from happening again\r\n\r\n\r\nFailure 1\r\n\r\nAn un-replicated consul configuration results in data loss 25 hours before a countrywide launch. Took a staggering 5 engineers and 20 hours to find one single line of change.\r\n\r\n\r\nFailure 2\r\n\r\nA failed distributed lock in etcD. Forcing us to re-write the whole storage on Consul and hours of migration. Only to find later that it was a clock Issue.\r\n\r\nThe above Isolation and immediate fixes were painfully long, yet doable. \r\nThe real ambition was to prevent *similar* such Incidents from repeating. I will share samples of some of our RCAs and what was missing with each one of those versions. And what the resultant RCA looks like. This section does touch briefly upon blameless RCA but real point of focus is action-ability of an RCA.\r\n\r\n\r\nFailure 3\r\n\r\nIn this section, I will showcase some of the in-house frameworks and technologies (easy to replicate) that were built to turn the prevention/alert section of RCAs into lines of code rather than lines of blurb of text. The goal of this section is to advertise and advocate the need to build/adopt toolchains which promise early-detection and not just faster-resolution.",
 			background: "rgba(10, 255, 179, 0.1)",
 			tags: ["Tools/Framework"],
 			id: 21,
@@ -155,10 +173,13 @@ export default [
 					speakerImage: "https://i.ibb.co/ss7h8m4/Group-3187.png",
 					companyLogo: "https://i.ibb.co/xm8G0VP/Honeycomb.png",
 					modalLogo: "/speakers/Shelby_Honeycomb-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/shelbyspees",
+					twitterProfileLink: "https://twitter.com/shelbyspees",
 				},
 			],
 			description:
-				"How much are you learning from your chaos experiments? How do you know it’s safe to perform them? Learn how to instrument your systems in order to gain confidence and get the most out of chaos, whether you’re injecting it on purpose or it’s already there in your system.\r\n\r\nHow much are you learning from your chaos experiments? How do you know it’s safe to perform them? Learn how to instrument your systems in order to gain confidence and get the most out of chaos, whether you’re injecting it on purpose or it’s already there in your system. This talk explores how Honeycomb’s engineering team leverages high-context telemetry data to measure service heath and risk in order to determine when it’s safe to perform experiments. You’ll also hear the lessons we learned about our backend ingest service after performing controlled experiments. Attendees will come away with next steps for instrumenting for observability in order to get the most out of their own chaos experiments.\r\n\r\nTopics to be covered:\r\nIntro: Honeycomb is a data storage engine and analytics tool\r\n    * Backend ingests structured event data and indexes on individual fields to support fast querying\r\n* We measure how well we’re doing with SLOs (examples of SLOs for different services)\r\n    * Error budget helps us decide when to take risks and when to invest in reliability\r\n* Structured events capture runtime context and benchmarking data in a format that supports trace visualizations and event-based SLOs\r\n    * Here’s what our instrumentation looks like\r\n*  (if time) Overview of experiment on our backend ingest service and what we learned\r\n    * Reference Graviton2 rollout and 40% cost savings\r\n* Outro: Here’s how to get started instrumenting for observability!\r\n\r\n",
+				"How much are you learning from your chaos experiments? How do you know it’s safe to perform them? Learn how to instrument your systems in order to gain confidence and get the most out of chaos, whether you’re injecting it on purpose or it’s already there in your system.\r\n\r\nHow much are you learning from your chaos experiments? How do you know it’s safe to perform them? Learn how to instrument your systems in order to gain confidence and get the most out of chaos, whether you’re injecting it on purpose or it’s already there in your system. This talk explores how Honeycomb’s engineering team leverages high-context telemetry data to measure service heath and risk in order to determine when it’s safe to perform experiments. You’ll also hear the lessons we learned about our backend ingest service after performing controlled experiments. Attendees will come away with next steps for instrumenting for observability in order to get the most out of their own chaos experiments.\r\n\r\nTopics to be covered:\r\n\r\nIntro: Honeycomb is a data storage engine and analytics tool\r\n    * Backend ingests structured event data and indexes on individual fields to support fast querying\r\n* We measure how well we’re doing with SLOs (examples of SLOs for different services)\r\n    * Error budget helps us decide when to take risks and when to invest in reliability\r\n* Structured events capture runtime context and benchmarking data in a format that supports trace visualizations and event-based SLOs\r\n    * Here’s what our instrumentation looks like\r\n*  (if time) Overview of experiment on our backend ingest service and what we learned\r\n    * Reference Graviton2 rollout and 40% cost savings\r\n* Outro: Here’s how to get started instrumenting for observability!\r\n\r\n",
 			background: "rgba(254, 210, 103, 0.3)",
 			tags: ["Observability"],
 			id: 22,
@@ -173,6 +194,9 @@ export default [
 						"https://i.ibb.co/yR1D8jH/Dynatrace-Speaker.png",
 					companyLogo: "https://i.ibb.co/mG1WDb1/Dynatrace.png",
 					modalLogo: "/speakers/Dynatrace_Speaker-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/juergenetzlstorfer",
+					twitterProfileLink: "https://twitter.com/jetzlstorfer",
 				},
 			],
 			description:
@@ -199,6 +223,8 @@ export default [
 					speakerImage: "https://i.ibb.co/R29hpSs/Yury-ADL.png",
 					companyLogo: "https://i.ibb.co/C9q0pY8/ADLLogo.png",
 					modalLogo: "/speakers/Yury_ADL-min.jpg",
+					linkedInProfileLink: "https://www.linkedin.com/in/yurynino",
+					twitterProfileLink: "https://twitter.com/yurynino",
 				},
 			],
 			description:
@@ -218,10 +244,13 @@ export default [
 					companyLogo:
 						"https://i.ibb.co/zNqkz5n/source-Sense-Logo.png",
 					modalLogo: "/speakers/Eugenio_SourceSense-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/eugenio-marzo-646a6742",
+					twitterProfileLink: "https://twitter.com/luckysideburn",
 				},
 			],
 			description:
-				"Hi everyone I would like share with you Kubeinvaders, a gamiefied chaos engineering tool called for Kubernetes. It is like space invaders but aliens are pods or k8s nodes.\nDuring the talk I will show you how you use the special features for doing chaos engineering with fun!",
+				"Hi everyone I would like share with you Kubeinvaders, a gamiefied chaos engineering tool called for Kubernetes. It is like space invaders but aliens are pods or k8s nodes.\r\n\r\nDuring the talk I will show you how you use the special features for doing chaos engineering with fun!",
 			background: "rgba(235, 28, 36, 0.2)",
 			tags: ["Culture"],
 			id: 25,
@@ -236,11 +265,14 @@ export default [
 			sessionName: `Bring Chaos into your Development Environment`,
 			speaker: [
 				{
-					name: "Ramiro Berrelleza ",
+					name: "Ramiro Berrelleza",
 					role: "Founder & CEO",
 					speakerImage: "https://i.ibb.co/C6LdPjR/Ramiro-Okteto.png",
 					companyLogo: "https://i.ibb.co/XzsKTY3/Okteto.png",
 					modalLogo: "/speakers/Ramiro_Okteto-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/ramiroberrelleza",
+					twitterProfileLink: "https://twitter.com/rberrelleza",
 				},
 			],
 			description:
@@ -260,6 +292,8 @@ export default [
 					companyLogo:
 						"https://i.ibb.co/QMhVBNw/Mattermost-Logo-Blue-1.png",
 					modalLogo: "/speakers/Kennedy_Mattermost-min.jpg",
+					linkedInProfileLink: "https://www.linkedin.com/in/aondona",
+					twitterProfileLink: "N/A",
 				},
 			],
 			description:
@@ -284,10 +318,13 @@ export default [
 						"https://i.ibb.co/wrz24c2/Amir-Perimeter-X.png",
 					companyLogo: "https://i.ibb.co/NWkPT2R/perimeterx-Logo.png",
 					modalLogo: "/speakers/Amir_PerimeterX-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/amirshaked",
+					twitterProfileLink: "https://twitter.com/amirshaked",
 				},
 			],
 			description:
-				"Building and marinating a five 9s system isn’t just about the tools and technologies.\nIn this talk, we will discuss how to create a learning culture using debriefs, what to avoid, and how to instill change in an engineering organization.\r\n\r\nBuilding and marinating a five 9s system isn’t just about the tools and technologies. Development culture has a big part in how you keep a system available while scaling it up and supporting more features, users, and locations.\r\nA healthy learning culture, supporting the development, not repairing mistakes, and identifying weak points is another tool in the engineering toolbox.\r\nIn this talk, we will discuss how to create a learning culture using debriefs, what to avoid, and how to instill change in an engineering organization.\r\n\r\nThe talk will cover our path to culture change, examples, common pitfalls to avoid.\r\nSparsely based on this blogpost: https://medium.com/perimeterx/how-to-create-a-learning-culture-using-debriefs-ee40b59f3558",
+				"Building and marinating a five 9s system isn’t just about the tools and technologies.\n\r\n\rIn this talk, we will discuss how to create a learning culture using debriefs, what to avoid, and how to instill change in an engineering organization.\r\n\r\nBuilding and marinating a five 9s system isn’t just about the tools and technologies. Development culture has a big part in how you keep a system available while scaling it up and supporting more features, users, and locations.\r\n\r\nA healthy learning culture, supporting the development, not repairing mistakes, and identifying weak points is another tool in the engineering toolbox.\r\n\r\nIn this talk, we will discuss how to create a learning culture using debriefs, what to avoid, and how to instill change in an engineering organization.\r\n\r\nThe talk will cover our path to culture change, examples, common pitfalls to avoid.",
 			background: "rgba(240, 31, 64, 0.15)",
 			tags: ["Culture"],
 			id: 28,
@@ -301,6 +338,9 @@ export default [
 					speakerImage: "https://i.ibb.co/5L1bPw9/Carl-Cerner.png",
 					companyLogo: "https://i.ibb.co/jr4hN1m/Cerner.png",
 					modalLogo: "/speakers/Carl_Cerner-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/carl-chesser",
+					twitterProfileLink: "https://twitter.com/che55er",
 				},
 			],
 			description:

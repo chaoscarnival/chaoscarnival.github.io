@@ -11,6 +11,7 @@ import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import ClearIcon from "@material-ui/icons/Clear";
 import React from "react";
 import { getLocale } from "../../utils/getLocale";
+import calenderTime from "../../utils/calenderTime";
 import AddCalendar from "./AddCalendar";
 import JoinSession from "./JoinSession";
 import { useStyles } from "./styles";
@@ -43,7 +44,6 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 	const classes = useStyles();
 	const [activeStep, setActiveStep] = React.useState(0);
 	const maxSteps = speaker && speaker.speaker.length;
-
 	const handleNext = () => {
 		setActiveStep((prevActiveStep) => prevActiveStep + 1);
 	};
@@ -62,6 +62,17 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 
 	const joinUrl =
 		"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1";
+
+	const twitterURL = `https://twitter.com/intent/tweet?text=Watch this session - ${speaker.sessionName} live at ChaosCarnival.io &hashtags=ChaosCarnival2021`;
+
+	const inviteLink = calenderTime(
+		session.startDateTime,
+		session.endDateTime,
+		speaker.sessionName,
+		`${speaker.sessionName} by ${
+			speaker && speaker.speaker[0].name
+		} at ChaosCarnival. Event link-${joinUrl}`
+	);
 
 	return (
 		<Modal open={modalState} onClose={handleModalClose}>
@@ -149,13 +160,50 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 										justifyContent: "space-between",
 									}}
 								>
-									<IconButton>
+									<IconButton
+										disabled={
+											(speaker &&
+												speaker.speaker[activeStep]
+													.linkedInProfileLink) ===
+												"" ||
+											(speaker &&
+												speaker.speaker[activeStep]
+													.linkedInProfileLink) ===
+												"N/A"
+										}
+										onClick={() => {
+											window.open(
+												speaker &&
+													speaker.speaker[activeStep]
+														.linkedInProfileLink,
+												"_blank"
+											);
+										}}
+									>
 										<img
 											src="./icons/speaker-linkedin.svg"
 											alt="Linkedin"
 										/>
 									</IconButton>
-									<IconButton>
+									<IconButton
+										disabled={
+											(speaker &&
+												speaker?.speaker[activeStep]
+													.twitterProfileLink) ===
+												"N/A" ||
+											(speaker &&
+												speaker?.speaker[activeStep]
+													.twitterProfileLink) === ""
+										}
+										onClick={() => {
+											window.open(
+												speaker &&
+													speaker.speaker[activeStep]
+														.twitterProfileLink,
+												"_blank"
+											);
+										}}
+									>
 										<img
 											src="./icons/speaker-twitter.svg"
 											alt="Twitter"
@@ -191,13 +239,50 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 										justifyContent: "space-between",
 									}}
 								>
-									<IconButton>
+									<IconButton
+										disabled={
+											(speaker &&
+												speaker.speaker[0]
+													.linkedInProfileLink) ===
+												"" ||
+											(speaker &&
+												speaker.speaker[0]
+													.linkedInProfileLink) ===
+												"N/A"
+										}
+										onClick={() => {
+											window.open(
+												speaker &&
+													speaker.speaker[0]
+														.linkedInProfileLink,
+												"_blank"
+											);
+										}}
+									>
 										<img
 											src="./icons/speaker-linkedin.svg"
 											alt="Linkedin"
 										/>
 									</IconButton>
-									<IconButton>
+									<IconButton
+										disabled={
+											(speaker &&
+												speaker?.speaker[0]
+													.twitterProfileLink) ===
+												"N/A" ||
+											(speaker &&
+												speaker?.speaker[0]
+													.twitterProfileLink) === ""
+										}
+										onClick={() => {
+											window.open(
+												speaker &&
+													speaker.speaker[0]
+														.twitterProfileLink,
+												"_blank"
+											);
+										}}
+									>
 										<img
 											src="./icons/speaker-twitter.svg"
 											alt="Twitter"
@@ -230,7 +315,11 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 									(window.location.href = joinUrl)
 								}
 							/>
-							<AddCalendar handleClick={() => {}} />
+							<AddCalendar
+								handleClick={() => {
+									window.open(inviteLink, "_blank");
+								}}
+							/>
 						</div>
 						<div style={{ display: "flex" }}>
 							<Typography
@@ -243,15 +332,19 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 								style={{ marginTop: -5, marginLeft: 2 }}
 								alt="twitter-blue"
 							/>
-							<Typography
+							<a
+								href={twitterURL}
 								style={{
 									fontSize: 14,
 									color: "#488FDF",
+									cursor: "pointer",
+									textDecoration: "none",
 								}}
+								target="_"
 							>
 								{" "}
-								#chaoscarnival
-							</Typography>
+								#chaoscarnival2021
+							</a>
 						</div>
 					</div>
 				</div>

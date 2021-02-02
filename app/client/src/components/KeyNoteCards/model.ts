@@ -4,4 +4,5 @@ export interface CardProps {
 	title?: string;
 	urlToIcon?: string;
 	companyIcon?: string;
+	agenda?: any;
 }
