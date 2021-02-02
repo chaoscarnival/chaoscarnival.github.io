@@ -75,12 +75,8 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 										speaker[0].linkedInProfileLink !== "N/A"
 									}
 									onClick={() => {
-										window.open(
-											speaker &&
-												speaker.speaker[0]
-													.linkedInProfileLink,
-											"_blank"
-										);
+										window.location.href =
+											speaker.speaker[0].linkedInProfileLink;
 									}}
 								>
 									<img
@@ -95,12 +91,8 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 										speaker[0].twitterProfileLink !== "N/A"
 									}
 									onClick={() => {
-										window.open(
-											speaker &&
-												speaker.speaker[0]
-													.twitterProfileLink,
-											"_blank"
-										);
+										window.location.href =
+											speaker.speaker[0].twitterProfileLink;
 									}}
 								>
 									<img

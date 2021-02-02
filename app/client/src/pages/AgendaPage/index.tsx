@@ -216,7 +216,7 @@ const AgendaPage: React.FC = () => {
 
 	return (
 		<div className="scrollbar scrollbar-primary">
-			<div>
+			<div className={classes.rootContainer}>
 				<MainHeader />
 				{/* Agenda Page Content */}
 				<div className={classes.root}>
@@ -315,7 +315,6 @@ const AgendaPage: React.FC = () => {
 											) : (
 												// For Regular speakers
 												<div className={classes.events}>
-													{console.log(d)}
 													<div
 														className={
 															classes.speaker1details

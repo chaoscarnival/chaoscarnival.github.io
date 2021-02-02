@@ -201,12 +201,10 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 												?.linkedInProfileLink !== "N/A"
 										}
 										onClick={() => {
-											window.open(
-												speaker &&
-													speaker[activeStep]
-														?.linkedInProfileLink,
-												"_blank"
-											);
+											window.location.href =
+												speaker[
+													activeStep
+												]?.linkedInProfileLink;
 										}}
 									>
 										<img
@@ -223,12 +221,10 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 												?.twitterProfileLink !== "N/A"
 										}
 										onClick={() => {
-											window.open(
-												speaker &&
-													speaker[activeStep]
-														?.twitterProfileLink,
-												"_blank"
-											);
+											window.location.href =
+												speaker[
+													activeStep
+												]?.twitterProfileLink;
 										}}
 									>
 										<img
