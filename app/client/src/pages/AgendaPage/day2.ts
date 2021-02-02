@@ -10,6 +10,8 @@ export default [
 				speakerImage: "https://i.ibb.co/GsXnxnC/Group-3278.png",
 				companyLogo: "https://i.ibb.co/X35X6hP/Mayadata.png",
 				modalLogo: "/images/keynote_speaker2.jpg",
+				linkedInProfileLink: "",
+				twitterProfileLink: "",
 			},
 		],
 		time: "8:00 AM",
@@ -34,6 +36,9 @@ export default [
 					speakerImage: "https://i.ibb.co/dJBPhDH/Robert-IBM.png",
 					companyLogo: "https://i.ibb.co/Ss17hJx/IBM.png",
 					modalLogo: "/speakers/Robert_IBM-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/flyingbarron",
+					twitterProfileLink: "https://twitter.com/flyingbarron",
 				},
 			],
 			description:
@@ -51,6 +56,9 @@ export default [
 					speakerImage: "https://i.ibb.co/kxCV8vd/Aravind-Intuit.png",
 					companyLogo: "https://i.ibb.co/hg13RFp/elastic.png",
 					modalLogo: "/speakers/Aravind_Elastic-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/aravindputrevu",
+					twitterProfileLink: "https://twitter.com/aravindputrevu",
 				},
 			],
 			description:
@@ -75,6 +83,9 @@ export default [
 						"https://i.ibb.co/mTD915T/Aravind-Intuit-1.png",
 					companyLogo: "https://i.ibb.co/DK17SWq/gremlin.png",
 					modalLogo: "/speakers/Ana_Gremlin-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/anammedina",
+					twitterProfileLink: "https://twitter.com/Ana_M_Medina",
 				},
 			],
 			description:
@@ -92,6 +103,9 @@ export default [
 					speakerImage: "https://i.ibb.co/vcKY5Bq/Delphine-Wipro.png",
 					companyLogo: "https://i.ibb.co/gMJkYDw/Wipro.png",
 					modalLogo: "/speakers/Delphine_Wipro-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/delphine-joyneer-golkonda-bb0386aa",
+					twitterProfileLink: "N/A",
 				},
 			],
 			description:
@@ -115,6 +129,8 @@ export default [
 					speakerImage: "https://i.ibb.co/2FN5GZF/Olga-Amazon.png",
 					companyLogo: "https://i.ibb.co/FwRttVk/Amazon.png",
 					modalLogo: "/speakers/Olga_Amazon-min.jpg",
+					linkedInProfileLink: "https://www.linkedin.com/in/olgahall",
+					twitterProfileLink: "https://twitter.com/ovhall",
 				},
 			],
 			description:
@@ -132,6 +148,8 @@ export default [
 					speakerImage: "https://i.ibb.co/d0trDJZ/Piyush-Last9.png",
 					companyLogo: "https://i.ibb.co/hMbZ82Q/Last9.png",
 					modalLogo: "/speakers/Piyush_Last9-min.jpg",
+					linkedInProfileLink: "https://www.linkedin.com/in/meson10",
+					twitterProfileLink: "https://twitter.com/realmeson10",
 				},
 			],
 			description:
@@ -155,6 +173,9 @@ export default [
 					speakerImage: "https://i.ibb.co/ss7h8m4/Group-3187.png",
 					companyLogo: "https://i.ibb.co/xm8G0VP/Honeycomb.png",
 					modalLogo: "/speakers/Shelby_Honeycomb-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/shelbyspees",
+					twitterProfileLink: "https://twitter.com/shelbyspees",
 				},
 			],
 			description:
@@ -173,6 +194,9 @@ export default [
 						"https://i.ibb.co/yR1D8jH/Dynatrace-Speaker.png",
 					companyLogo: "https://i.ibb.co/mG1WDb1/Dynatrace.png",
 					modalLogo: "/speakers/Dynatrace_Speaker-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/juergenetzlstorfer",
+					twitterProfileLink: "https://twitter.com/jetzlstorfer",
 				},
 			],
 			description:
@@ -199,6 +223,8 @@ export default [
 					speakerImage: "https://i.ibb.co/R29hpSs/Yury-ADL.png",
 					companyLogo: "https://i.ibb.co/C9q0pY8/ADLLogo.png",
 					modalLogo: "/speakers/Yury_ADL-min.jpg",
+					linkedInProfileLink: "https://www.linkedin.com/in/yurynino",
+					twitterProfileLink: "https://twitter.com/yurynino",
 				},
 			],
 			description:
@@ -218,6 +244,9 @@ export default [
 					companyLogo:
 						"https://i.ibb.co/zNqkz5n/source-Sense-Logo.png",
 					modalLogo: "/speakers/Eugenio_SourceSense-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/eugenio-marzo-646a6742",
+					twitterProfileLink: "https://twitter.com/luckysideburn",
 				},
 			],
 			description:
@@ -241,6 +270,9 @@ export default [
 					speakerImage: "https://i.ibb.co/C6LdPjR/Ramiro-Okteto.png",
 					companyLogo: "https://i.ibb.co/XzsKTY3/Okteto.png",
 					modalLogo: "/speakers/Ramiro_Okteto-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/ramiroberrelleza",
+					twitterProfileLink: "https://twitter.com/rberrelleza",
 				},
 			],
 			description:
@@ -260,6 +292,8 @@ export default [
 					companyLogo:
 						"https://i.ibb.co/QMhVBNw/Mattermost-Logo-Blue-1.png",
 					modalLogo: "/speakers/Kennedy_Mattermost-min.jpg",
+					linkedInProfileLink: "https://www.linkedin.com/in/aondona",
+					twitterProfileLink: "N/A",
 				},
 			],
 			description:
@@ -284,6 +318,9 @@ export default [
 						"https://i.ibb.co/wrz24c2/Amir-Perimeter-X.png",
 					companyLogo: "https://i.ibb.co/NWkPT2R/perimeterx-Logo.png",
 					modalLogo: "/speakers/Amir_PerimeterX-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/amirshaked",
+					twitterProfileLink: "https://twitter.com/amirshaked",
 				},
 			],
 			description:
@@ -301,6 +338,9 @@ export default [
 					speakerImage: "https://i.ibb.co/5L1bPw9/Carl-Cerner.png",
 					companyLogo: "https://i.ibb.co/jr4hN1m/Cerner.png",
 					modalLogo: "/speakers/Carl_Cerner-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/carl-chesser",
+					twitterProfileLink: "https://twitter.com/che55er",
 				},
 			],
 			description:

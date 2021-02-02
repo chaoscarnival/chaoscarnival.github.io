@@ -192,13 +192,45 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 										justifyContent: "space-between",
 									}}
 								>
-									<IconButton>
+									<IconButton
+										disabled={
+											speaker &&
+											speaker[activeStep]
+												?.linkedInProfileLink !== "" &&
+											speaker[activeStep]
+												?.linkedInProfileLink !== "N/A"
+										}
+										onClick={() => {
+											window.open(
+												speaker &&
+													speaker[activeStep]
+														?.linkedInProfileLink,
+												"_blank"
+											);
+										}}
+									>
 										<img
 											src="./icons/speaker-linkedin.svg"
 											alt="Linkedin"
 										/>
 									</IconButton>
-									<IconButton>
+									<IconButton
+										disabled={
+											speaker &&
+											speaker[activeStep]
+												?.twitterProfileLink !== "" &&
+											speaker[activeStep]
+												?.twitterProfileLink !== "N/A"
+										}
+										onClick={() => {
+											window.open(
+												speaker &&
+													speaker[activeStep]
+														?.twitterProfileLink,
+												"_blank"
+											);
+										}}
+									>
 										<img
 											src="./icons/speaker-twitter.svg"
 											alt="Twitter"

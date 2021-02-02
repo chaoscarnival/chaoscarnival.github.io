@@ -68,13 +68,41 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 									justifyContent: "space-between",
 								}}
 							>
-								<IconButton>
+								<IconButton
+									disabled={
+										speaker &&
+										speaker[0].linkedInProfileLink !== "" &&
+										speaker[0].linkedInProfileLink !== "N/A"
+									}
+									onClick={() => {
+										window.open(
+											speaker &&
+												speaker.speaker[0]
+													.linkedInProfileLink,
+											"_blank"
+										);
+									}}
+								>
 									<img
 										src="./icons/speaker-linkedin.svg"
 										alt="Linkedin"
 									/>
 								</IconButton>
-								<IconButton>
+								<IconButton
+									disabled={
+										speaker &&
+										speaker[0].twitterProfileLink !== "" &&
+										speaker[0].twitterProfileLink !== "N/A"
+									}
+									onClick={() => {
+										window.open(
+											speaker &&
+												speaker.speaker[0]
+													.twitterProfileLink,
+											"_blank"
+										);
+									}}
+								>
 									<img
 										src="./icons/speaker-twitter.svg"
 										alt="Twitter"
