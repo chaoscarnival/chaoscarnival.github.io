@@ -63,7 +63,7 @@ const AgendaPage: React.FC = () => {
 								<></>
 							)}
 						</div>
-						{companyLogo !== undefined ? (
+						{companyLogo !== undefined && companyLogo !== "N/A" ? (
 							<img
 								style={{
 									marginTop: "0.5rem",

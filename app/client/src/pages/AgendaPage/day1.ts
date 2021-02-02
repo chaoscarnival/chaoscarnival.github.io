@@ -326,7 +326,7 @@ export default [
 					role: "",
 					speakerImage:
 						"https://i.ibb.co/pyN9mhx/Gunnard-Power-Code.png",
-					companyLogo: "",
+					companyLogo: "N/A",
 					modalLogo: "/speakers/Gunnard-min.jpg",
 					linkedInProfileLink:
 						"https://www.linkedin.com/in/%F0%9F%92%BB-gunnard-engebreth-ab446512",
