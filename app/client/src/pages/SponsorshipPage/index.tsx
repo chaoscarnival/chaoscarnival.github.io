@@ -11,10 +11,6 @@ import CustomizedTables from "./TableContent";
 function SponsorshipPage() {
 	const classes = useStyles();
 
-	React.useEffect(() => {
-		window.scrollTo(0, 0);
-	});
-
 	return (
 		<div className="scrollbar scrollbar-primary">
 			<div className={classes.rootContainer}>

@@ -10,13 +10,12 @@ export const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 	},
 	mainDiv: {
-		marginTop: 0,
 		background:
 			"linear-gradient(160.34deg, #042C69 0%, #041739 21.78%, #040D21 50.11%, #1B132F 82.45%, #471F48 99.57%)",
 		backgroundRepeat: "no-repeat",
 		backgroundSize: "cover",
 		backgroundPosition: "center",
-		height: "101vh",
+		height: "100vh",
 		display: "flex",
 		flexDirection: "column",
 		[theme.breakpoints.down("sm")]: {

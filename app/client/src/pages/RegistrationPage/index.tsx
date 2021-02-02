@@ -24,10 +24,6 @@ interface RegistrationDetails {
 
 function RegistrationPage() {
 	const classes = useStyles();
-	React.useEffect(() => {
-		window.scrollTo(0, 0);
-	});
-
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(false);
 	const [
