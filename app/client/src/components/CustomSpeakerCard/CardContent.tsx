@@ -49,6 +49,9 @@ function CardContent(props: CardProps) {
 						selectedSession[0].speaker = selectedSpeaker.concat(
 							otherSelectedSpeakers
 						);
+						selectedSession[0].startDateTime =
+							sessionSet.startDateTime;
+						selectedSession[0].endDateTime = sessionSet.endDateTime;
 					}
 				}
 				if (selectedSpeaker.length === 0) {
@@ -67,6 +70,9 @@ function CardContent(props: CardProps) {
 						selectedSession[0].speaker = selectedSpeaker.concat(
 							otherSelectedSpeakers
 						);
+						selectedSession[0].startDateTime =
+							sessionSet.startDateTime;
+						selectedSession[0].endDateTime = sessionSet.endDateTime;
 					}
 				}
 			}
@@ -75,7 +81,7 @@ function CardContent(props: CardProps) {
 			setModalStatus({
 				modalState: true,
 				speakerData: selectedSession[0],
-				sessionData: "",
+				sessionData: selectedSession[0],
 			});
 		}
 	};
