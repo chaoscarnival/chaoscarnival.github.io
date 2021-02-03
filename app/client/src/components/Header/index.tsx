@@ -133,7 +133,10 @@ const MainHeader: React.FC = () => {
 
 							<Hidden smDown>
 								<div className={classes.headerDiv}>
-									<Link to="/bootcamps">
+									<Link
+										to="/bootcamps"
+										style={{ textDecoration: "none" }}
+									>
 										<Typography
 											className={classes.headerFont}
 										>

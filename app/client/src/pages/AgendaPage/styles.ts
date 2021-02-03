@@ -231,6 +231,29 @@ export const useStyles = makeStyles((theme) => ({
 			width: "100%",
 			overflowY: "scroll",
 		},
+		"&::-webkit-scrollbar": {
+			width: "0.5em",
+			scrollbarColor:
+				"linear-gradient(180deg, #ff8a00, #e52e71) transparent",
+			backgroundColor: "transparent",
+		},
+		"&::-webkit-scrollbar-track": {
+			width: "0.5em",
+			webkitBoxShadow: "inset 0 0 6px rgba(0,0,0,0.00)",
+			backgroundColor: "transparent",
+			background:
+				"linear-gradient(90deg, #201c29, #201c29 1px, #100e17 0, #100e17)",
+		},
+		"&::-webkit-scrollbar-thumb": {
+			outline: "1px solid slategrey",
+			borderRadius: "5px",
+			webkitBoxShadow: "inset 0 0 4px rgba(0, 0, 0, 0.1)",
+			boxShadow:
+				"inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25)",
+			background:
+				"-webkit-gradient(linear,left top, left bottom, from(#ff8a00), to(#e52e71))",
+			backgroundColor: "linear-gradient(180deg, #ff8a00, #e52e71)",
+		},
 	},
 	modalOutline: {
 		"&:focus": {
