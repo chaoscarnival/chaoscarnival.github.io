@@ -107,6 +107,15 @@ export default [
 						"https://www.linkedin.com/in/delphine-joyneer-golkonda-bb0386aa",
 					twitterProfileLink: "N/A",
 				},
+				{
+					name: "Ankur Ghosh",
+					role: "Lead Consultant",
+					speakerImage: "",
+					companyLogo: "https://i.ibb.co/gMJkYDw/Wipro.png",
+					modalLogo: "/speakers/Ankur_Wipro-min.jpg",
+					linkedInProfileLink: "N/A",
+					twitterProfileLink: "N/A",
+				},
 			],
 			description:
 				"To know the capability of VMware environment, we are introducing chaos in the VMware environment based on different parameters.  These chaos will be introduced using litmus which already has a well-defined console/UI to introduce chaos.\r\n\r\nOver three-quarters of all businesses make use of server virtualization and the most common and used solution for Server Virtualization is VMware . In order to check system's capability to withstand turbulent and unexpected conditions, we need to introduce chaos and check how it responds. We are designing the Workflows to test that test the VMware environment based on different parameters like compute, network and storage.\r\n\r\nLitmus  provides console or UI experience for managing, monitoring, and events round chaos workflows. This platform had experiments on non-kubernetes environment such as AWS. As an extension for this, we have added a new VMware experiments which can be used to induce Chaos on VMware virtual machines/Infra. Each work flow can be further improvised by inducing Litmus probes  inside the experiments to validate the resiliency of the virtual machine farm.\r\n\r\nSoon we will be submitting these experiments into Litmus Chaos Hub",
@@ -140,7 +149,7 @@ export default [
 			id: 20,
 		},
 		speaker2: {
-			sessionName: `It wont make a noise when it breaks`,
+			sessionName: `It won't make a noise when it breaks`,
 			speaker: [
 				{
 					name: "Piyush Verma",
