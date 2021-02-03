@@ -26,6 +26,17 @@ const Footer: React.FC = () => {
 						<Hidden smDown>
 							<div className={classes.headerHomeDiv}>
 								<a
+									href="https://join.slack.com/t/chaoscarnival/shared_invite/zt-jy0q3xxc-EIYmlEXqvqbRRxYQkvdRpw"
+									target="#"
+									style={{ textDecoration: "none" }}
+								>
+									<Typography className={classes.headerFont}>
+										Slack
+									</Typography>
+								</a>
+							</div>
+							<div className={classes.headerDiv}>
+								<a
 									href="https://www.facebook.com/Chaos-Carnival-108128454412853"
 									target="#"
 									style={{ textDecoration: "none" }}
@@ -92,6 +103,18 @@ const Footer: React.FC = () => {
 						</Hidden>
 						<Hidden mdUp>
 							<div className={classes.headerDiv}>
+								<a
+									href="https://join.slack.com/t/chaoscarnival/shared_invite/zt-jy0q3xxc-EIYmlEXqvqbRRxYQkvdRpw"
+									target="#"
+									style={{ textDecoration: "none" }}
+								>
+									<Typography
+										className={classes.headerFont}
+										display="inline"
+									>
+										Slack
+									</Typography>
+								</a>
 								<a
 									href="https://www.facebook.com/Chaos-Carnival-108128454412853"
 									target="#"

@@ -55,27 +55,27 @@ const useStyles = makeStyles((theme: Theme) => ({
 		},
 	},
 	headerHomeDiv: {
-		marginLeft: "40vw",
+		marginLeft: "35vw",
 		[theme.breakpoints.up("xl")]: {
-			marginLeft: "80vw",
+			marginLeft: "75vw",
 		},
 		[theme.breakpoints.down("xl")]: {
-			marginLeft: "50vw",
+			marginLeft: "45vw",
 		},
 		[theme.breakpoints.down(2500)]: {
-			marginLeft: "40vw",
-		},
-		[theme.breakpoints.down(2300)]: {
 			marginLeft: "35vw",
 		},
-		[theme.breakpoints.down("lg")]: {
-			marginLeft: "25vw",
+		[theme.breakpoints.down(2300)]: {
+			marginLeft: "30vw",
 		},
-		[theme.breakpoints.down(1600)]: {
+		[theme.breakpoints.down("lg")]: {
 			marginLeft: "20vw",
 		},
+		[theme.breakpoints.down(1600)]: {
+			marginLeft: "15vw",
+		},
 		[theme.breakpoints.down(1400)]: {
-			marginLeft: "12vw",
+			marginLeft: "8vw",
 		},
 		[theme.breakpoints.down("md")]: {
 			marginLeft: 0,
