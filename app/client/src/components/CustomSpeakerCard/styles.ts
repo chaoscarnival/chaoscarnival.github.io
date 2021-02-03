@@ -3,6 +3,13 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
 	card: {
 		background: "#070E23",
+		transition: "all .2s ease-in-out",
+		"&:hover": {
+			transform: "scale(1.1)",
+		},
+		"&:focus": {
+			transform: "scale(1.1)",
+		},
 	},
 	// CARD MEDIA
 	cardMedia: {
