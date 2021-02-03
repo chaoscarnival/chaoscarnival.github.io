@@ -3,6 +3,23 @@ import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
 	card: {
 		background: "#070E23",
+		marginTop: theme.spacing(0.5),
+		[theme.breakpoints.down("xs")]: {
+			marginTop: theme.spacing(3),
+		},
+		transition: "all .2s ease-in-out",
+		"&:hover": {
+			transform: "scale(1.075)",
+			[theme.breakpoints.down("xs")]: {
+				transform: "scale(1.05)",
+			},
+		},
+		"&:focus": {
+			transform: "scale(1.075)",
+			[theme.breakpoints.down("xs")]: {
+				transform: "scale(1.05)",
+			},
+		},
 	},
 	// CARD MEDIA
 	cardMedia: {
