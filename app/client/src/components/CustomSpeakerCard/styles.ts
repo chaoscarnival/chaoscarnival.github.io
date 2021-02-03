@@ -64,7 +64,7 @@ export const useStyles = makeStyles((theme) => ({
 		// Above tablet size
 		[theme.breakpoints.down("sm")]: {
 			width: "180px",
-			height: "300px",
+			height: "310px",
 		},
 		[theme.breakpoints.down("xs")]: {
 			width: "38vw",

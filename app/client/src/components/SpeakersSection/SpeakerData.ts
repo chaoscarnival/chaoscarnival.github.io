@@ -86,7 +86,7 @@ export const SpeakerData = [
 	{
 		id: 12,
 		name: "Robert Barron",
-		title: "AIOps Lead",
+		title: "AIOps, Technology Assets & Architecture",
 		company: "",
 		urlToIcon: "/speakers/Robert_IBM-min.jpg",
 	},
