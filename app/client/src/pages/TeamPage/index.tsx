@@ -24,7 +24,8 @@ const imgLink = [
 	{
 		img: "/images/abhishekcomp.jpeg",
 		name: "Abhishek Mishra",
-		description: "Software Engineer at @Saama Research Lab",
+		description:
+			"Software Engineer at Saama Research Lab | Organizer GDG Chennai | Co-organizer PyCon India",
 		githublink: "https://github.com/abhishekmishragithub",
 		linkedinlink: "https://www.linkedin.com/in/stalwartcoder",
 	},
