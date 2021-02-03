@@ -15,8 +15,8 @@ export default [
 			},
 		],
 		time: "8:00 AM",
-		startDateTime: "10 Feb 2021 08:00:00 -0800",
-		endDateTime: "10 Feb 2021 09:00:00 -0800",
+		startDateTime: "11 Feb 2021 08:00:00 -0800",
+		endDateTime: "11 Feb 2021 09:00:00 -0800",
 		description:
 			"A large chunk of challenges in the Kubernetes production environments is how to run stateful applications reliably. Each stateful application has many micro services and there is a mesh of such applications creating a tight dependency for running the stateful services successfully. Cloud Native Chaos Engineering is a modern approach to get a shot at predictable resilience in Kubernetes production at scale. Uma Mukkara, maintainer at LitmusChaos project discusses best practices to roll out Cloud Native Chaos Engineering and achieve desired SLOs for Kubernetes platform and applications.",
 		tags: ["Keynote"],
@@ -25,14 +25,14 @@ export default [
 	{
 		time: "9:00 AM",
 		duration: "(45min)",
-		startDateTime: "10 Feb 2021 09:00:00 -0800",
-		endDateTime: "10 Feb 2021 09:45:00 -0800",
+		startDateTime: "11 Feb 2021 09:00:00 -0800",
+		endDateTime: "11 Feb 2021 09:45:00 -0800",
 		speaker1: {
 			sessionName: `IBM's Principles of Chaos Engineering`,
 			speaker: [
 				{
 					name: "Robert Barron",
-					role: "AIOps Lead",
+					role: "AIOps, Technology Assets & Architecture",
 					speakerImage: "https://i.ibb.co/dJBPhDH/Robert-IBM.png",
 					companyLogo: "https://i.ibb.co/Ss17hJx/IBM.png",
 					modalLogo: "/speakers/Robert_IBM-min.jpg",
@@ -71,8 +71,8 @@ export default [
 	{
 		time: "9:45 AM",
 		duration: "(45min)",
-		startDateTime: "10 Feb 2021 09:45:00 -0800",
-		endDateTime: "10 Feb 2021 10:30:00 -0800",
+		startDateTime: "11 Feb 2021 09:45:00 -0800",
+		endDateTime: "11 Feb 2021 10:30:00 -0800",
 		speaker1: {
 			sessionName: `In the kitchen: A sprinkle of fire and chaos`,
 			speaker: [
@@ -118,8 +118,8 @@ export default [
 	{
 		time: "10:45 AM",
 		duration: "(45min)",
-		startDateTime: "10 Feb 2021 10:45:00 -0800",
-		endDateTime: "10 Feb 2021 11:30:00 -0800",
+		startDateTime: "11 Feb 2021 10:45:00 -0800",
+		endDateTime: "11 Feb 2021 11:30:00 -0800",
 		speaker1: {
 			sessionName: `Improving Business Resiliency with Chaos Engineering`,
 			speaker: [
@@ -162,8 +162,8 @@ export default [
 	{
 		time: "11:30 AM",
 		duration: "(45min)",
-		startDateTime: "10 Feb 2021 11:30:00 -0800",
-		endDateTime: "10 Feb 2021 12:15:00 -0800",
+		startDateTime: "11 Feb 2021 11:30:00 -0800",
+		endDateTime: "11 Feb 2021 12:15:00 -0800",
 		speaker1: {
 			sessionName: `Getting Started with Observability for Chaos Engineering`,
 			speaker: [
@@ -212,8 +212,8 @@ export default [
 	{
 		time: "1:45 PM",
 		duration: "(45min)",
-		startDateTime: "10 Feb 2021 13:45:00 -0800",
-		endDateTime: "10 Feb 2021 14:30:00 -0800",
+		startDateTime: "11 Feb 2021 13:45:00 -0800",
+		endDateTime: "11 Feb 2021 14:30:00 -0800",
 		speaker1: {
 			sessionName: `Tulp: Integrating Artificial Intelligence and Chaos Engineering to Learn from the Incidents`,
 			speaker: [
@@ -259,8 +259,8 @@ export default [
 	{
 		time: "2:30 PM",
 		duration: "(30min)",
-		startDateTime: "10 Feb 2021 14:30:00 -0800",
-		endDateTime: "10 Feb 2021 15:15:00 -0800",
+		startDateTime: "11 Feb 2021 14:30:00 -0800",
+		endDateTime: "11 Feb 2021 15:15:00 -0800",
 		speaker1: {
 			sessionName: `Bring Chaos into your Development Environment`,
 			speaker: [
@@ -306,8 +306,8 @@ export default [
 	{
 		time: "3:15 PM",
 		duration: "(30min)",
-		startDateTime: "10 Feb 2021 15:15:00 -0800",
-		endDateTime: "10 Feb 2021 15:45:00 -0800",
+		startDateTime: "11 Feb 2021 15:15:00 -0800",
+		endDateTime: "11 Feb 2021 15:45:00 -0800",
 		speaker1: {
 			sessionName: "Creating a learning culture",
 			speaker: [
