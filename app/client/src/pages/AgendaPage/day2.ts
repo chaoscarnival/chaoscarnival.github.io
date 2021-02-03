@@ -32,7 +32,7 @@ export default [
 			speaker: [
 				{
 					name: "Robert Barron",
-					role: "AIOps Lead",
+					role: "AIOps, Technology Assets & Architecture",
 					speakerImage: "https://i.ibb.co/dJBPhDH/Robert-IBM.png",
 					companyLogo: "https://i.ibb.co/Ss17hJx/IBM.png",
 					modalLogo: "/speakers/Robert_IBM-min.jpg",
