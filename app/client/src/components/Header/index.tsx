@@ -148,7 +148,7 @@ const MainHeader: React.FC = () => {
 							<Hidden smDown>
 								<div className={classes.headerDiv}>
 									<Link
-										to="/sponsorbooth"
+										to="/sponsorbooths"
 										smooth
 										style={{ textDecoration: "none" }}
 									>
@@ -319,7 +319,7 @@ const MainHeader: React.FC = () => {
 											onClick={handleClose}
 										>
 											<Link
-												to="/sponsorbooth"
+												to="/sponsorbooths"
 												smooth
 												style={{
 													textDecoration: "none",

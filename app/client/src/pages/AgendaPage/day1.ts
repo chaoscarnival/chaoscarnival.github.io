@@ -27,7 +27,7 @@ export default [
 		startDateTime: "10 Feb 2021 09:00:00 -0800",
 		endDateTime: "10 Feb 2021 09:45:00 -0800",
 		speaker1: {
-			sessionName: `A powerful framework for network chaos experiments note`,
+			sessionName: `A powerful framework for network chaos experiments`,
 			speaker: [
 				{
 					name: "Andreas Krivas",
@@ -247,7 +247,8 @@ export default [
 					twitterProfileLink: "N/A",
 				},
 			],
-			description: "A talk on Chaos Engineering and Observability.",
+			description:
+				"The evolution of architecture from monolithic to microservices-based has enabled organizations to meet the ever-evolving needs of their customers. The need for getting insights into these microservices has become critical for developers and operations teams alike. However, achieving reliability in microservices-based environments is not trivial. In this session, we will explore how observability plays a critical role in the microservices world and Chaos Engineering.We will deep dive into distributed tracing to achieve full observability and monitoring for production environments. Finally, we will discuss the checklist that every DevOps person shouldlook into for incorporating observability into their environment.",
 			background: "rgba(12, 131, 95, 0.3)",
 			tags: ["Observability"],
 			id: 9,

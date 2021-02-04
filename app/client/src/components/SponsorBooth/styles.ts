@@ -49,6 +49,10 @@ export const useStyles = makeStyles((theme) => ({
 				width: "75%",
 			},
 		},
+
+		[theme.breakpoints.down("sm")]: {
+			width: "100%",
+		},
 	},
 	action: {
 		"& #Booth": {

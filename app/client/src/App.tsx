@@ -47,7 +47,7 @@ const Routes: React.FC = () => {
 				/>
 				<Route
 					exact={true}
-					path="/sponsorbooth"
+					path="/sponsorbooths"
 					component={SponsorBoothsPage}
 				/>
 				<Route exact={true} path="/404" component={ErrorPage} />
