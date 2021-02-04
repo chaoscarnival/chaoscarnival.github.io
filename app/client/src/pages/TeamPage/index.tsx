@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/Header";
 import "../../scrollbar.css";
@@ -43,73 +44,91 @@ function TeamPage() {
 	const classes = useStyles();
 
 	return (
-		<div className="scrollbar scrollbar-primary">
-			<MainHeader />
-			<div className={classes.rootContainer}>
-				<div className={classes.wrapContainer}>
-					<p className={classes.mainHeader}>
-						Behind&nbsp;this&nbsp;great
-						<br />
-						event,&nbsp;there&nbsp;is&nbsp;a
-						<br />
-						<span className={classes.greatTeam}>
-							Great&nbsp;Team.
-						</span>
-					</p>
-				</div>
-				<div className={classes.teamContainer}>
-					{imgLink.map((team) => (
-						<div
-							className={classes.cardTeam}
-							style={{ marginRight: 0 }}
-							key={Math.random() * 99999}
-						>
-							<img
-								src={team.img}
-								alt={team.name}
-								className={classes.teamImg}
-							/>
-							<div className={classes.teamDetails}>
-								<div className={classes.teamName}>
-									{team.name}
-								</div>
-								<p className={classes.teaminfo}>
-									{team.description}
-								</p>
-								<div className={classes.teamLinks}>
-									<div className={classes.teamLink}>
-										<a
-											href={team.githublink}
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											<img
-												src="/icons/github.svg"
-												alt={team.name}
-												className={classes.teamlinkIcon}
-											/>
-										</a>
+		<div>
+			<Helmet>
+				<meta charSet="utf-8" />
+				<title>
+					Chaos Carnival 2021 | Cloud-Native Chaos Engineering
+					conference Team
+				</title>
+				<meta
+					name="keywords"
+					content="Chaos carnival 2021 Team, Chaos carnival 2021, chaos engineering, team, conference team, chaos conference, chaos conference 2021, chaosconf, chaos engineering bootcamps, chaos engineering 101, cloud native"
+				/>
+				<link rel="canonical" href="https://chaoscarvival.io/team" />
+			</Helmet>
+			<div className="scrollbar scrollbar-primary">
+				<MainHeader />
+				<div className={classes.rootContainer}>
+					<div className={classes.wrapContainer}>
+						<p className={classes.mainHeader}>
+							Behind&nbsp;this&nbsp;great
+							<br />
+							event,&nbsp;there&nbsp;is&nbsp;a
+							<br />
+							<span className={classes.greatTeam}>
+								Great&nbsp;Team.
+							</span>
+						</p>
+					</div>
+					<div className={classes.teamContainer}>
+						{imgLink.map((team) => (
+							<div
+								className={classes.cardTeam}
+								style={{ marginRight: 0 }}
+								key={Math.random() * 99999}
+							>
+								<img
+									src={team.img}
+									alt={team.name}
+									className={classes.teamImg}
+								/>
+								<div className={classes.teamDetails}>
+									<div className={classes.teamName}>
+										{team.name}
 									</div>
-									<div className={classes.teamLink}>
-										<a
-											href={team.linkedinlink}
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											<img
-												src="/icons/linkedin.svg"
-												alt={team.name}
-												className={classes.teamlinkIcon}
-											/>
-										</a>
+									<p className={classes.teaminfo}>
+										{team.description}
+									</p>
+									<div className={classes.teamLinks}>
+										<div className={classes.teamLink}>
+											<a
+												href={team.githublink}
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												<img
+													src="/icons/github.svg"
+													alt={team.name}
+													className={
+														classes.teamlinkIcon
+													}
+												/>
+											</a>
+										</div>
+										<div className={classes.teamLink}>
+											<a
+												href={team.linkedinlink}
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												<img
+													src="/icons/linkedin.svg"
+													alt={team.name}
+													className={
+														classes.teamlinkIcon
+													}
+												/>
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					))}
-				</div>
-				<div style={{ marginTop: "auto" }}>
-					<Footer />
+						))}
+					</div>
+					<div style={{ marginTop: "auto" }}>
+						<Footer />
+					</div>
 				</div>
 			</div>
 		</div>
