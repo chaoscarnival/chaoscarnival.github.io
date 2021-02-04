@@ -4,7 +4,7 @@ const sponsorBooth: SponsorBooth[] = [
 	{
 		logo: "/icons/MayadataFoundingSponsor.svg",
 		description:
-			"Join the pre-show before the Google Keynote starts which will bring two AI Experiments to life: NSynth, a synthesizer that generates new sounds using neural networks and World Draw, a live interactive experience to draw the world together using the same technology behind QuickDraw and AutoDraw.",
+			"Join MayaData's booth on the AirMeet platform at the specified time. The MayaData team will also be available on the Sponsor slack channel to answer your questions on Chaos and show you exciting demos of their products.",
 		sponsorBoothLink: "http://airmeet.com/",
 		startDateTime_One: "10 Feb 2021 12:15:00 +0530",
 		endDateTime_One: "10 Feb 2021 01:15:00 +0530",
@@ -16,7 +16,7 @@ const sponsorBooth: SponsorBooth[] = [
 	{
 		logo: "/icons/Percona.svg",
 		description:
-			"Join the pre-show before the Google Keynote starts which will bring two AI Experiments to life: NSynth, a synthesizer that generates new sounds using neural networks and World Draw, a live interactive experience to draw the world together using the same technology behind QuickDraw and AutoDraw.",
+			"Join Percona's booth on the AirMeet platform at the specified time. The Percona team will also be available on the Sponsor slack channel to answer your questions on Chaos and show you exciting demos of their products.",
 		sponsorBoothLink: "http://airmeet.com/",
 		startDateTime_One: "10 Feb 2021 12:15:00 +0530",
 		endDateTime_One: "10 Feb 2021 01:15:00 +0530",
@@ -28,7 +28,7 @@ const sponsorBooth: SponsorBooth[] = [
 	{
 		logo: "/icons/Wipro.svg",
 		description:
-			"Join the pre-show before the Google Keynote starts which will bring two AI Experiments to life: NSynth, a synthesizer that generates new sounds using neural networks and World Draw, a live interactive experience to draw the world together using the same technology behind QuickDraw and AutoDraw.",
+			"Join Wipro's booth on the AirMeet platform at the specified time. The Wipro team will also be available on the Sponsor slack channel to answer your questions on Chaos and show you exciting demos of their products.",
 		sponsorBoothLink: "http://airmeet.com/",
 		startDateTime_One: "10 Feb 2021 12:15:00 +0530",
 		endDateTime_One: "10 Feb 2021 01:15:00 +0530",
@@ -40,7 +40,7 @@ const sponsorBooth: SponsorBooth[] = [
 	{
 		logo: "/icons/Epsagon.svg",
 		description:
-			"Join the pre-show before the Google Keynote starts which will bring two AI Experiments to life: NSynth, a synthesizer that generates new sounds using neural networks and World Draw, a live interactive experience to draw the world together using the same technology behind QuickDraw and AutoDraw.",
+			"Join Epsagon's booth on the AirMeet platform at the specified time. The Epsagon team will also be available on the Sponsor slack channel to answer your questions on Chaos and show you exciting demos of their products.",
 		sponsorBoothLink: "http://airmeet.com/",
 		startDateTime_One: "10 Feb 2021 12:15:00 +0530",
 		endDateTime_One: "10 Feb 2021 01:15:00 +0530",
