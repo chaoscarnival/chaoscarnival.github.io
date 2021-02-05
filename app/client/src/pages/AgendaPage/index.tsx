@@ -46,47 +46,43 @@ const AgendaPage: React.FC = () => {
 	const Speaker = (s: any, companyLogo: string | undefined, d: any) => {
 		return (
 			<>
-				{d.id === 6 ? (
-					<></>
-				) : (
-					<div className={classes.speaker}>
-						<div style={{ display: "flex", flexWrap: "wrap" }}>
-							<img
-								src={s.speakerImage}
-								id="image"
-								alt="speakerImg"
-								style={{ objectFit: "scale-down" }}
-							/>
-							<div style={{ marginTop: "0.5rem" }}>
-								<Typography id="subtitle">{s.name}</Typography>
-								<Typography id="subtitle">{s.role}</Typography>
-							</div>
-							{d.speaker.length > 1 ? (
-								<div className={classes.speakerValue}>
-									<Typography
-										style={{ marginLeft: 6, marginTop: 5 }}
-									>
-										+{d.speaker.length - 1}
-									</Typography>
-								</div>
-							) : (
-								<></>
-							)}
+				<div className={classes.speaker}>
+					<div style={{ display: "flex", flexWrap: "wrap" }}>
+						<img
+							src={s.speakerImage}
+							id="image"
+							alt="speakerImg"
+							style={{ objectFit: "scale-down" }}
+						/>
+						<div style={{ marginTop: "0.5rem" }}>
+							<Typography id="subtitle">{s.name}</Typography>
+							<Typography id="subtitle">{s.role}</Typography>
 						</div>
-						{companyLogo !== undefined && companyLogo !== "N/A" ? (
-							<img
-								style={{
-									marginTop: "0.5rem",
-									maxHeight: "2rem",
-									maxWidth: "10rem",
-									objectFit: "contain",
-								}}
-								src={companyLogo}
-								alt="companyLogo"
-							/>
-						) : null}
+						{d.speaker.length > 1 ? (
+							<div className={classes.speakerValue}>
+								<Typography
+									style={{ marginLeft: 6, marginTop: 5 }}
+								>
+									+{d.speaker.length - 1}
+								</Typography>
+							</div>
+						) : (
+							<></>
+						)}
 					</div>
-				)}
+					{companyLogo !== undefined && companyLogo !== "N/A" ? (
+						<img
+							style={{
+								marginTop: "0.5rem",
+								maxHeight: "2rem",
+								maxWidth: "10rem",
+								objectFit: "contain",
+							}}
+							src={companyLogo}
+							alt="companyLogo"
+						/>
+					) : null}
+				</div>
 			</>
 		);
 	};
@@ -431,12 +427,7 @@ const AgendaPage: React.FC = () => {
 															}
 															onClick={() => {
 																setModalStatus({
-																	modalState: !(
-																		d
-																			.speaker2
-																			?.id ===
-																		6
-																	),
+																	modalState: true,
 																	speakerData:
 																		d.speaker2,
 																	sessionData: d,

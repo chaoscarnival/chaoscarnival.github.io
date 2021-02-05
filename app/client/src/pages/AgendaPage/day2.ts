@@ -113,7 +113,8 @@ export default [
 					speakerImage: "",
 					companyLogo: "https://i.ibb.co/gMJkYDw/Wipro.png",
 					modalLogo: "/speakers/Ankur_Wipro-min.jpg",
-					linkedInProfileLink: "N/A",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/ankur-ghosh-86b3a676",
 					twitterProfileLink: "N/A",
 				},
 			],
