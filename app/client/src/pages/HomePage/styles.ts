@@ -19,85 +19,74 @@ export const useStyles = makeStyles((theme) => ({
 			height: "fit-content",
 		},
 		[theme.breakpoints.down("xs")]: {
-			height: "47.5rem",
 			paddingTop: theme.spacing(3),
 		},
 	},
-
 	headerDesc: {
-		fontSize: "26px",
+		fontSize: "32.5px",
 		marginBottom: 20,
-		textAlign: "left",
+		textAlign: "center",
 		color: "#FAFF53",
-		maxWidth: 500,
-		marginTop: "2vh",
-		marginLeft: 30,
 		fontWeight: 700,
-		[theme.breakpoints.down("xl")]: {
-			fontSize: "26px",
-		},
-		[theme.breakpoints.down("lg")]: {
-			fontSize: "24px",
-		},
-		[theme.breakpoints.down("md")]: {
-			fontSize: "22px",
-		},
-		[theme.breakpoints.down("sm")]: {
-			marginTop: "20vh",
-			fontSize: "20px",
-		},
-		[theme.breakpoints.down("xs")]: {
-			marginTop: "20vh",
-			fontSize: "20px",
-			marginLeft: "3vw",
-		},
 	},
-
-	registerButton: {
-		height: "3.65rem",
-		width: "18.5rem",
-		[theme.breakpoints.down("xl")]: {
-			height: "3.65rem",
-			width: "18.5rem",
-		},
-		[theme.breakpoints.down("lg")]: {
-			height: "3.15rem",
-			width: "16.5rem",
-		},
-		[theme.breakpoints.down("md")]: {
-			height: "3.15rem",
-			width: "14.5rem",
-		},
-		[theme.breakpoints.down("sm")]: {
-			marginTop: 0,
-			height: "3.15rem",
-			width: "9.75rem",
-		},
-		[theme.breakpoints.down("xs")]: {
-			marginTop: 0,
-			height: "3.15rem",
-			width: "90vw",
-		},
+	slackIcon: {
+		width: 22,
+		height: 22,
+		marginRight: 5,
 	},
-	registerText: {
-		fontSize: "16px",
-		[theme.breakpoints.down("xl")]: {
-			fontSize: "16px",
-		},
-		[theme.breakpoints.down("lg")]: {
-			fontSize: "16px",
-		},
-		[theme.breakpoints.down("md")]: {
-			fontSize: "14px",
-		},
-		[theme.breakpoints.down("sm")]: {
-			fontSize: "12px",
-		},
-		[theme.breakpoints.down("xs")]: {
-			fontSize: "16px",
-		},
+	carnivalLiveText: {
+		fontSize: "110px",
+		fontWeight: 700,
+		width: 700,
+		lineHeight: "125px",
 	},
-
+	heroButtonSection: {
+		display: "flex",
+		justifyContent: "space-between",
+		width: "27rem",
+		margin: "auto",
+		marginTop: 20,
+	},
+	joinButton: {
+		height: "3.5rem",
+		width: "12.5rem",
+		textTransform: "none",
+		fontSize: 16,
+	},
+	slackButton: {
+		height: "3.5rem",
+		width: "12.5rem",
+		backgroundColor: "#FFFFFF",
+		textTransform: "none",
+		fontSize: 16,
+	},
+	happeningText: {
+		fontSize: 72,
+		fontWeight: 700,
+		marginTop: -20,
+		width: "fit-content",
+		WebkitBackgroundClip: "text",
+		WebkitTextFillColor: "transparent",
+		color: "transparent",
+		backgroundClip: "text",
+		background: "linear-gradient(to right, #B4F59E 0%, #71BCF6 55%)",
+	},
+	carnivalDesc: {
+		width: 500,
+		fontSize: 20,
+		color: " #8193B2",
+		marginTop: 20,
+	},
+	twitterBtn: {
+		backgroundColor: "#1D9CEA",
+		height: "3rem",
+		width: "8.5rem",
+		borderRadius: 30,
+		color: "#FFFFFF",
+		marginTop: 40,
+		textTransform: "none",
+		fontSize: 16,
+	},
 	speakersDiv: {
 		background: "#070E23",
 		paddingBottom: "12.5rem",
@@ -111,7 +100,7 @@ export const useStyles = makeStyles((theme) => ({
 		flexDirection: "row",
 		justifyContent: "space-between",
 		width: "70vw",
-		margin: "0 auto",
+		margin: "auto",
 		[theme.breakpoints.down("xs")]: {
 			flexDirection: "column",
 			width: "95vw",
