@@ -22,6 +22,10 @@ jobs:
               docker tag app "${STAG_REPO}:ci-${CIRCLE_SHA1::6}"
               docker push "${STAG_REPO}:ci-${CIRCLE_SHA1::6}"
             fi
+            if [ "${CIRCLE_BRANCH}" == "staging-live" ]; then
+              docker tag app "${STAG_LIVE_REPO}:ci-${CIRCLE_SHA1::6}"
+              docker push "${STAG_LIVE_REPO}:ci-${CIRCLE_SHA1::6}"
+            fi
 workflows:
   version: 2
   build-and-push:
