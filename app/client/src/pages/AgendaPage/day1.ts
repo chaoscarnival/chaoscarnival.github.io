@@ -150,21 +150,23 @@ export default [
 			id: 5,
 		},
 		speaker2: {
-			sessionName: `TBD`,
+			sessionName: "Chaos testing Red Hat Openshift Virtualization",
 			speaker: [
 				{
-					name: "",
-					role: "",
-					speakerImage: "",
-					companyLogo: "",
-					modalLogo: "",
-					linkedInProfileLink: "",
-					twitterProfileLink: "",
+					name: "Jordi Gil",
+					role: "Senior Software Engineer,",
+					speakerImage: "https://i.ibb.co/cQkyhCm/Jordi-Red-Hat.png",
+					companyLogo: "https://i.ibb.co/phNfHMW/Red-Hat-Logo.png",
+					modalLogo: "/speakers/Jordi_RedHat-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/jordigilh",
+					twitterProfileLink: "N/A",
 				},
 			],
-			description: "",
+			description:
+				"A talk on Chaos testing Red Hat Openshift Virtualization.",
 			background: "rgba(240, 31, 64, 0.15)",
-			tags: [],
+			tags: ["Chaos Engineering"],
 			id: 6,
 		},
 	},
