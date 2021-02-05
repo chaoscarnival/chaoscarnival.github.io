@@ -5,10 +5,10 @@ import { Helmet } from "react-helmet";
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/Header";
 import JoinCarnival from "../../components/JoinCarnival";
-import Timer from "../../components/JoinCarnival/timer";
 import { SpeakersSection } from "../../components/SpeakersSection/index";
 import Sponsors from "../../components/Sponsors";
-import WhyToAttend from "../../components/WhyToAttend";
+import { UpNext } from "../../components/UpNext";
+import { cardData } from "../../data/cardData";
 import "../../scrollbar.css";
 import Bootcamps from "./Bootcamps";
 import { useStyles } from "./styles";
@@ -127,12 +127,18 @@ function HomePage() {
 							</div>
 						</div>
 						<div style={{ marginTop: "auto" }}>
+							<UpNext cardData={cardData} />
+						</div>
+						<div style={{ marginTop: "auto" }}>
 							<div className={classes.speakersDiv}>
 								<a id="speakers" href="speakers">
 									{" "}
 								</a>
 								<SpeakersSection />
 							</div>
+						</div>
+						<div>
+							<Bootcamps />
 						</div>
 						<div style={{ marginTop: "auto" }}>
 							<a id="sponsors" href="sponsors">
