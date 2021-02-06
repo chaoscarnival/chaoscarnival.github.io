@@ -17,7 +17,7 @@ interface UpNextProps {
 const UpNext: React.FC<UpNextProps> = ({ cardData }) => {
 	const classes = useStyles();
 	return (
-		<div>
+		<div className={classes.rootContainer}>
 			<Typography className={classes.upNext}>Coming up next</Typography>
 			<Typography className={classes.desc}>
 				Watch the opening day keynote, featured sessions and daily
@@ -26,19 +26,21 @@ const UpNext: React.FC<UpNextProps> = ({ cardData }) => {
 			<div className={classes.cardSection}>
 				{cardData.map(({ desc, img, name, designation, logo }) => {
 					return (
-					<div className={classes.speakerCard}>
-						<Typography>{desc}</Typography>
-						<div className={classes.speakerSection}>
-							<div className={classes.speakerDetails}>
-								<img src={img} alt="speaker" />
-								<div id="info">
-									<Typography>{name}</Typography>
-									<Typography>{designation}</Typography>
+						<div className={classes.speakerCard}>
+							<Typography style={{ width: "100%" }}>
+								{desc}
+							</Typography>
+							<div className={classes.speakerSection}>
+								<div className={classes.speakerDetails}>
+									<img src={img} alt="speaker" />
+									<div id="info">
+										<Typography>{name}</Typography>
+										<Typography>{designation}</Typography>
+									</div>
 								</div>
+								<img id="Logo" src={logo} alt="company logo" />
 							</div>
-							<img id="Logo" src={logo} alt="company logo" />
 						</div>
-					</div>
 					);
 				})}
 			</div>

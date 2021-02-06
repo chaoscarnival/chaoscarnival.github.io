@@ -10,14 +10,10 @@ export const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 	},
 	mainDiv: {
-		marginTop: 0,
 		background: "#070E23",
 		height: "100vh",
 		display: "flex",
 		flexDirection: "column",
-		[theme.breakpoints.down(1200)]: {
-			height: "fit-content",
-		},
 		[theme.breakpoints.down("xs")]: {
 			paddingTop: theme.spacing(3),
 		},
@@ -28,6 +24,12 @@ export const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 		color: "#FAFF53",
 		fontWeight: 700,
+		[theme.breakpoints.down("md")]: {
+			fontSize: "30px",
+		},
+		[theme.breakpoints.down("sm")]: {
+			fontSize: "20px",
+		},
 	},
 	slackIcon: {
 		width: 22,
@@ -39,6 +41,13 @@ export const useStyles = makeStyles((theme) => ({
 		fontWeight: 700,
 		width: 700,
 		lineHeight: "125px",
+		[theme.breakpoints.down("sm")]: {
+			width: "100%",
+			fontSize: "85px",
+		},
+		[theme.breakpoints.down("xs")]: {
+			fontSize: "70px",
+		},
 	},
 	heroButtonSection: {
 		display: "flex",
@@ -46,12 +55,20 @@ export const useStyles = makeStyles((theme) => ({
 		width: "27rem",
 		margin: "auto",
 		marginTop: 20,
+		[theme.breakpoints.down("xs")]: {
+			flexDirection: "column",
+			width: "100%",
+			alignItems: "center",
+		},
 	},
 	joinButton: {
 		height: "3.5rem",
 		width: "12.5rem",
 		textTransform: "none",
 		fontSize: 16,
+		[theme.breakpoints.down("sm")]: {
+			marginBottom: 20,
+		},
 	},
 	slackButton: {
 		height: "3.5rem",
@@ -59,6 +76,13 @@ export const useStyles = makeStyles((theme) => ({
 		backgroundColor: "#FFFFFF",
 		textTransform: "none",
 		fontSize: 16,
+	},
+	happeningMainText: {
+		fontSize: 72,
+		fontWeight: 700,
+		[theme.breakpoints.down("xs")]: {
+			fontSize: 45,
+		},
 	},
 	happeningText: {
 		fontSize: 72,
@@ -70,12 +94,38 @@ export const useStyles = makeStyles((theme) => ({
 		color: "transparent",
 		backgroundClip: "text",
 		background: "linear-gradient(to right, #B4F59E 0%, #71BCF6 55%)",
+		[theme.breakpoints.down("xs")]: {
+			fontSize: 45,
+		},
 	},
 	carnivalDesc: {
 		width: 500,
 		fontSize: 20,
 		color: " #8193B2",
 		marginTop: 20,
+		[theme.breakpoints.down("xs")]: {
+			width: "90%",
+		},
+	},
+	twitterDiv: {
+		display: "flex",
+		[theme.breakpoints.down("sm")]: {
+			flexDirection: "column",
+		},
+		[theme.breakpoints.down("xs")]: {
+			marginLeft: 25,
+		},
+	},
+	embeddedTwitterDiv: {
+		marginRight: "auto",
+		[theme.breakpoints.down("sm")]: {
+			marginTop: 30,
+			margin: "auto",
+		},
+		[theme.breakpoints.down("xs")]: {
+			marginTop: 30,
+			paddingRight: 20,
+		},
 	},
 	twitterBtn: {
 		backgroundColor: "#1D9CEA",
@@ -101,9 +151,9 @@ export const useStyles = makeStyles((theme) => ({
 		justifyContent: "space-between",
 		width: "70vw",
 		margin: "auto",
-		[theme.breakpoints.down("xs")]: {
+		[theme.breakpoints.down("sm")]: {
 			flexDirection: "column",
-			width: "95vw",
+			width: "100%",
 		},
 	},
 	flexItemText: {

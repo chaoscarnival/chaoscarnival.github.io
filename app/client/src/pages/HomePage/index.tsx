@@ -52,45 +52,39 @@ function HomePage() {
 					<MainHeader />
 					<div className={classes.root}>
 						<div className={classes.mainDiv}>
-							<div className={classes.flexContainer}>
-								<div style={{ margin: "auto" }}>
-									<Typography className={classes.headerDesc}>
-										February 10-11,2021
-									</Typography>
-									<Typography
-										className={classes.carnivalLiveText}
+							<div style={{ margin: "auto" }}>
+								<Typography className={classes.headerDesc}>
+									February 10-11,2021
+								</Typography>
+								<Typography
+									className={classes.carnivalLiveText}
+								>
+									The Carnival is live
+								</Typography>
+								<div className={classes.heroButtonSection}>
+									<Button
+										className={classes.joinButton}
+										color="primary"
+										variant="contained"
 									>
-										The Carnival is live
-									</Typography>
-									<div className={classes.heroButtonSection}>
-										<Button
-											className={classes.joinButton}
-											color="primary"
-											variant="contained"
-										>
-											Join the carnival
-										</Button>
-										<Button
-											className={classes.slackButton}
-											variant="contained"
-										>
-											<img
-												src="./icons/slack.svg"
-												alt="Slack"
-												className={classes.slackIcon}
-											/>{" "}
-											Go to Slack
-										</Button>
-									</div>
+										Join the carnival
+									</Button>
+									<Button
+										className={classes.slackButton}
+										variant="contained"
+									>
+										<img
+											src="./icons/slack.svg"
+											alt="Slack"
+											className={classes.slackIcon}
+										/>{" "}
+										Go to Slack
+									</Button>
 								</div>
 							</div>
 						</div>
 
-						<div
-							style={{
-								display: "flex",
-							}}
-						>
+						<div className={classes.twitterDiv}>
 							<div
 								style={{
 									textAlign: "left",
@@ -98,7 +92,7 @@ function HomePage() {
 								}}
 							>
 								<Typography
-									style={{ fontSize: 72, fontWeight: 700 }}
+									className={classes.happeningMainText}
 								>
 									Oh yes! It’s
 								</Typography>
@@ -122,11 +116,11 @@ function HomePage() {
 									Tweet
 								</Button>
 							</div>
-							<div style={{ marginRight: "auto" }}>
+							<div className={classes.embeddedTwitterDiv}>
 								<TwitterTimeline />
 							</div>
 						</div>
-						<div style={{ marginTop: "auto" }}>
+						<div>
 							<UpNext cardData={cardData} />
 						</div>
 						<div style={{ marginTop: "auto" }}>
