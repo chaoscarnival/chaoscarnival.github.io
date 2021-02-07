@@ -17,6 +17,10 @@ export const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("xs")]: {
 			paddingTop: theme.spacing(3),
 		},
+		backgroundImage: "url(/icons/day-1-live.png)",
+		backgroundRepeat: "no-repeat",
+		backgroundSize: "auto",
+		backgroundPosition: "center",
 	},
 	headerDesc: {
 		fontSize: "32.5px",

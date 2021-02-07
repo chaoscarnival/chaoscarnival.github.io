@@ -8,6 +8,8 @@ export interface CardData {
 	name: string;
 	designation: string;
 	logo: string;
+	startDateTime: string;
+	endDateTime: string;
 }
 
 interface UpNextProps {
@@ -16,6 +18,12 @@ interface UpNextProps {
 
 const UpNext: React.FC<UpNextProps> = ({ cardData }) => {
 	const classes = useStyles();
+	const filteredData = cardData
+		.filter((data) => {
+			if (new Date().getTime() < new Date(data.startDateTime).getTime())
+				return data;
+		})
+		.slice(0, 3);
 	return (
 		<div className={classes.rootContainer}>
 			<Typography className={classes.upNext}>Coming up next</Typography>
@@ -24,25 +32,50 @@ const UpNext: React.FC<UpNextProps> = ({ cardData }) => {
 				highlights for a snapshot of Universe's biggest moments
 			</Typography>
 			<div className={classes.cardSection}>
-				{cardData.map(({ desc, img, name, designation, logo }) => {
-					return (
-						<div className={classes.speakerCard}>
-							<Typography style={{ width: "100%" }}>
-								{desc}
-							</Typography>
-							<div className={classes.speakerSection}>
-								<div className={classes.speakerDetails}>
-									<img src={img} alt="speaker" />
-									<div id="info">
-										<Typography>{name}</Typography>
-										<Typography>{designation}</Typography>
+				{filteredData.map(
+					({ desc, img, name, designation, logo, startDateTime }) => {
+						console.log(
+							new Date().getTime() <
+								new Date(startDateTime).getTime()
+						);
+						return (
+							<div className={classes.speakerCard}>
+								<Typography style={{ width: "100%" }}>
+									{desc}
+								</Typography>
+								<div className={classes.speakerSection}>
+									<div className={classes.speakerDetails}>
+										<img
+											src={img}
+											alt="speaker"
+											style={{
+												height: "3rem",
+												width: "3rem",
+											}}
+										/>
+										<div id="info">
+											<Typography>{name}</Typography>
+											<Typography>
+												{designation}
+											</Typography>
+										</div>
 									</div>
+									<img
+										id="Logo"
+										src={logo}
+										alt="company logo"
+										style={{
+											marginTop: "0.5rem",
+											maxHeight: "2rem",
+											maxWidth: "10rem",
+											objectFit: "contain",
+										}}
+									/>
 								</div>
-								<img id="Logo" src={logo} alt="company logo" />
 							</div>
-						</div>
-					);
-				})}
+						);
+					}
+				)}
 			</div>
 		</div>
 	);
