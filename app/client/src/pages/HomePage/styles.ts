@@ -11,7 +11,7 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	mainDiv: {
 		background: "#070E23",
-		height: "100vh",
+		paddingTop: theme.spacing(25),
 		display: "flex",
 		flexDirection: "column",
 		[theme.breakpoints.down("xs")]: {
@@ -99,17 +99,36 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	carnivalDesc: {
+		display: "flex",
+		flexWrap: "wrap",
 		width: 500,
+		justifyContent: "space-between",
 		fontSize: 20,
 		color: " #8193B2",
 		marginTop: 20,
 		[theme.breakpoints.down("xs")]: {
 			width: "90%",
+
+			"& p:first-child": {
+				fontSize: "2.5rem",
+				fontWeight: 300,
+			},
 		},
+		"& p:first-child": {
+			fontSize: "4.5rem",
+			fontWeight: 500,
+			textAlign: "center",
+			color: theme.palette.common.white,
+		},
+	},
+	videoBox: {
+		maxWidth: "100%",
+		maxHeight: `calc((60vw - 2.5rem) / (16 / 9))`,
 	},
 	twitterDiv: {
 		display: "flex",
 		[theme.breakpoints.down("sm")]: {
+			marginTop: 150,
 			flexDirection: "column",
 		},
 		[theme.breakpoints.down("xs")]: {
@@ -118,6 +137,8 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	embeddedTwitterDiv: {
 		marginRight: "auto",
+		display: "flex",
+		alignItems: "center",
 		[theme.breakpoints.down("sm")]: {
 			marginTop: 30,
 			margin: "auto",

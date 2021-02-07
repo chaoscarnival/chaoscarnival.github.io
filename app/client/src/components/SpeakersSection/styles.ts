@@ -192,7 +192,7 @@ export const useStyles = makeStyles((theme: Theme) => ({
 		[theme.breakpoints.down("xs")]: {
 			paddingTop: "4rem",
 			flexDirection: "column",
-			marginTop: "-11rem",
+			marginTop: "-8rem",
 		},
 	},
 	speakersInfoText: {

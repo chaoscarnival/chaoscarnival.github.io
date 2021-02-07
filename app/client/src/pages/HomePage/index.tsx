@@ -1,4 +1,4 @@
-import { Button, Typography } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import gtag from "ga-gtag";
 import * as React from "react";
 import { Helmet } from "react-helmet";
@@ -12,7 +12,6 @@ import { cardData } from "../../data/cardData";
 import "../../scrollbar.css";
 import Bootcamps from "./Bootcamps";
 import { useStyles } from "./styles";
-import TwitterTimeline from "./TwitterTimeline";
 
 function HomePage() {
 	const classes = useStyles();
@@ -52,77 +51,63 @@ function HomePage() {
 					<MainHeader />
 					<div className={classes.root}>
 						<div className={classes.mainDiv}>
-							<div style={{ margin: "auto" }}>
-								<Typography className={classes.headerDesc}>
-									February 10-11,2021
-								</Typography>
-								<Typography
-									className={classes.carnivalLiveText}
+							{/* Hero Section start */}
+							<div className={classes.twitterDiv}>
+								<div
+									style={{
+										textAlign: "left",
+										margin: "0 auto",
+									}}
 								>
-									The Carnival is live
-								</Typography>
-								<div className={classes.heroButtonSection}>
-									<Button
-										className={classes.joinButton}
-										color="primary"
-										variant="contained"
+									<Typography
+										className={classes.happeningMainText}
 									>
-										Join the carnival
-									</Button>
-									<Button
-										className={classes.slackButton}
-										variant="contained"
+										That's a
+									</Typography>
+									<Typography
+										className={classes.happeningText}
 									>
-										<img
-											src="./icons/slack.svg"
-											alt="Slack"
-											className={classes.slackIcon}
-										/>{" "}
-										Go to Slack
-									</Button>
+										wrap!
+									</Typography>
+									<Typography
+										className={classes.carnivalDesc}
+									>
+										<div>
+											<Typography>30</Typography>
+											<Typography>
+												Chaos Experts
+											</Typography>
+										</div>
+										<div>
+											<Typography>2</Typography>
+											<Typography>
+												Hand on workshops
+											</Typography>
+										</div>
+										<div>
+											<Typography>500</Typography>
+											<Typography>
+												WorldwideAttendess
+											</Typography>
+										</div>
+									</Typography>
+								</div>
+								<div className={classes.embeddedTwitterDiv}>
+									<iframe
+										src="https://www.youtube.com/embed/rOrKegj5ePI"
+										style={{ border: 'none' }}
+								        className={classes.videoBox}
+									></iframe>
 								</div>
 							</div>
 						</div>
 
-						<div className={classes.twitterDiv}>
-							<div
-								style={{
-									textAlign: "left",
-									margin: "0 auto",
-								}}
-							>
-								<Typography
-									className={classes.happeningMainText}
-								>
-									Oh yes! It’s
-								</Typography>
-								<Typography className={classes.happeningText}>
-									happening
-								</Typography>
-								<Typography className={classes.carnivalDesc}>
-									Chaos carnival is a global two-day virtual
-									conference for Cloud Native Chaos
-									Engineering which aims to to achieve
-									reliability in systems by breaking things on
-									purpose.{" "}
-								</Typography>
-
-								<Button
-									className={classes.twitterBtn}
-									onClick={() => {
-										window.open(twitterURL, "_blank");
-									}}
-								>
-									Tweet
-								</Button>
-							</div>
-							<div className={classes.embeddedTwitterDiv}>
-								<TwitterTimeline />
-							</div>
-						</div>
+						{/* coming up next section */}
 						<div>
 							<UpNext cardData={cardData} />
 						</div>
+
+						{/* constant on all pages:  */}
 						<div style={{ marginTop: "auto" }}>
 							<div className={classes.speakersDiv}>
 								<a id="speakers" href="speakers">

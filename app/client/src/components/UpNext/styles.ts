@@ -2,6 +2,7 @@ import { makeStyles } from "@material-ui/core";
 
 export const useStyles = makeStyles((theme) => ({
 	rootContainer: {
+		position: 'inherit',
 		margin: "auto",
 		width: "fit-content",
 		[theme.breakpoints.down("md")]: {
@@ -11,10 +12,8 @@ export const useStyles = makeStyles((theme) => ({
 			width: "70%",
 			margin: "auto",
 		},
-		[theme.breakpoints.down("xs")]: {
-			width: "100%",
-			marginLeft: 25,
-			marginTop: 40,
+		[theme.breakpoints.down(300)]: {
+			marginTop: 600,
 		},
 	},
 	upNext: {
