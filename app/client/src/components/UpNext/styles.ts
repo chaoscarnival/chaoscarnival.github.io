@@ -52,20 +52,29 @@ export const useStyles = makeStyles((theme) => ({
 			"linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%)",
 		backdropFilter: "blur(10px)",
 		borderRadius: "0.625rem",
-		width: "fit-content",
+		width: "28rem",
 		textAlign: "left",
 		marginRight: theme.spacing(3.75),
 		"& p": {
-			maxWidth: "23.0625rem",
 			fontWeight: 500,
 			fontSize: "1rem",
+			maxWidth: "23.0625rem",
+			[theme.breakpoints.down("md")]: {
+				width: "90%",
+				marginTop: theme.spacing(0.5),
+			},
 			[theme.breakpoints.down("sm")]: {
 				maxWidth: "90%",
 				fontWeight: 500,
 				fontSize: "1rem",
 			},
 		},
+		[theme.breakpoints.down("md")]: {
+			width: "90%",
+			marginTop: theme.spacing(3.75),
+		},
 		[theme.breakpoints.down("sm")]: {
+			width: "100%",
 			marginTop: theme.spacing(3.75),
 		},
 	},
@@ -88,6 +97,9 @@ export const useStyles = makeStyles((theme) => ({
 		display: "flex",
 		"& #info": {
 			marginLeft: theme.spacing(1.5),
+		},
+		[theme.breakpoints.down("md")]: {
+			marginTop: theme.spacing(2),
 		},
 	},
 }));
