@@ -5,10 +5,13 @@ import { Helmet } from "react-helmet";
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/Header";
 import JoinCarnival from "../../components/JoinCarnival";
+import { RecordedSessionCard } from "../../components/RecordedSessionCard";
 import { SpeakersSection } from "../../components/SpeakersSection/index";
 import Sponsors from "../../components/Sponsors";
-import { UpNext } from "../../components/UpNext";
-import { cardData } from "../../data/cardData";
+import {
+	recordedCardData_Day1,
+	recordedCardData_Day2,
+} from "../../data/recordedSessionCardData";
 import "../../scrollbar.css";
 import Bootcamps from "./Bootcamps";
 import { useStyles } from "./styles";
@@ -87,7 +90,7 @@ function HomePage() {
 										<div>
 											<Typography>500</Typography>
 											<Typography>
-												WorldwideAttendess
+												Worldwide Attendees
 											</Typography>
 										</div>
 									</Typography>
@@ -95,8 +98,8 @@ function HomePage() {
 								<div className={classes.embeddedTwitterDiv}>
 									<iframe
 										src="https://www.youtube.com/embed/rOrKegj5ePI"
-										style={{ border: 'none' }}
-								        className={classes.videoBox}
+										style={{ border: "none" }}
+										className={classes.videoBox}
 									></iframe>
 								</div>
 							</div>
@@ -104,7 +107,16 @@ function HomePage() {
 
 						{/* coming up next section */}
 						<div>
-							<UpNext cardData={cardData} />
+							<RecordedSessionCard
+								recordedCardData={recordedCardData_Day1}
+								day1
+							/>
+						</div>
+
+						<div>
+							<RecordedSessionCard
+								recordedCardData={recordedCardData_Day2}
+							/>
 						</div>
 
 						{/* constant on all pages:  */}
