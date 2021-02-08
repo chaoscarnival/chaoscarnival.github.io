@@ -78,7 +78,7 @@ function HomePage() {
 										>
 											Chaos carnival is a global two-day
 											virtual conference for Cloud Native
-											Chaos Engineering which aims to to
+											Chaos Engineering which aims to
 											achieve reliability in systems by
 											breaking things on purpose.
 										</Typography>

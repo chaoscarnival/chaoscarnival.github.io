@@ -40,7 +40,7 @@ export function SpeakersSection() {
 					<div className={classes.info}>
 						<Typography
 							className={classes.infoText}
-						>{`Chaos Carnival is more than a conference. It’s a experience that brings the most talented & passionate chaos engineering experts to same stage to share ideas about Chaos Engineering and Kubernetes. This year Adrian Cockcroft and Uma Mukkara will be joining us to share chaos engineering ideas in recent times.`}</Typography>
+						>{`Chaos Carnival is more than just a conference. It’s an experience that brings the most talented & passionate chaos engineering experts to the same stage to share ideas about Chaos Engineering and Kubernetes. This year Adrian Cockcroft and Uma Mukkara will be joining us to share chaos engineering ideas in recent times.`}</Typography>
 					</div>
 				</div>
 			</div>
