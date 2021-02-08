@@ -43,7 +43,8 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	cardSection: {
 		display: "flex",
-		marginTop: theme.spacing(8.75),
+		textAlign: "left",
+		marginTop: theme.spacing(3.75),
 		[theme.breakpoints.down("sm")]: {
 			flexDirection: "column",
 			marginTop: theme.spacing(3.75),
@@ -81,6 +82,32 @@ export const useStyles = makeStyles((theme) => ({
 			marginTop: theme.spacing(3.75),
 		},
 	},
+	speakerImage: {
+		height: 280,
+		width: 500,
+		transition: "all .2s ease-in-out",
+		"&:hover": {
+			transform: "scale(1.075)",
+		},
+		"&:focus": {
+			transform: "scale(1.075)",
+		},
+		borderRadius: 20,
+		[theme.breakpoints.down("sm")]: {
+			width: "100%",
+			height: "auto",
+		},
+	},
+	descText: {
+		width: 500,
+		fontSize: 26,
+		fontWeight: 500,
+		marginTop: 10,
+		marginBottom: 20,
+		[theme.breakpoints.down("sm")]: {
+			width: "100%",
+		},
+	},
 	speakerSection: {
 		display: "flex",
 		flexWrap: "wrap",
@@ -97,7 +124,6 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	speakerDetails: {
-		display: "flex",
 		"& #info": {
 			marginLeft: theme.spacing(1.5),
 		},

@@ -10,6 +10,7 @@ export interface CardData {
 	logo: string;
 	startDateTime: string;
 	endDateTime: string;
+	thumbnail?: string;
 }
 
 interface UpNextProps {

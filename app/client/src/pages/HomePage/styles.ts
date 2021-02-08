@@ -17,7 +17,12 @@ export const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("xs")]: {
 			paddingTop: theme.spacing(3),
 		},
-		backgroundImage: "url(/icons/day-1-live.png)",
+		backgroundImage:
+			new Date().getDate() === 10
+				? "url(/icons/day-1-live.png)"
+				: new Date().getDate() === 11
+				? "url(/icons/day-2-live.png)"
+				: "url(/icons/day-1-live.png)",
 		backgroundRepeat: "no-repeat",
 		backgroundSize: "auto",
 		backgroundPosition: "center",
