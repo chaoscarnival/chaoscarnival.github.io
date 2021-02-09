@@ -2,61 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
    <url>
       <loc>https://chaoscarnival.io/</loc>
-      <lastmod>2021-02-04T18:15:00+05:30</lastmod>
+      <lastmod>2021-02-08T18:15:00+05:30</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
       <loc>https://chaoscarnival.io</loc>
-      <lastmod>2021-02-04T18:15:00+05:30</lastmod>
+      <lastmod>2021-02-08T18:15:00+05:30</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
       <loc>https://chaoscarnival.io/agenda</loc>
-      <lastmod>2021-02-04T18:15:00+05:30</lastmod>
+      <lastmod>2021-02-08T18:15:00+05:30</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.6</priority>
    </url>
    <url>
       <loc>https://chaoscarnival.io/bootcamps</loc>
-      <lastmod>2021-02-04T18:15:00+05:30</lastmod>
+      <lastmod>2021-02-08T18:15:00+05:30</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.6</priority>
    </url>
    <url>
       <loc>https://chaoscarnival.io/sponsorbooths</loc>
-      <lastmod>2021-02-04T18:15:00+05:30</lastmod>
+      <lastmod>2021-02-08T18:15:00+05:30</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.6</priority>
    </url>
    <url>
       <loc>https://chaoscarnival.io/register</loc>
-      <lastmod>2021-02-04T18:15:00+05:30</lastmod>
+      <lastmod>2021-02-08T18:15:00+05:30</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.7</priority>
    </url>
    <url>
       <loc>https://chaoscarnival.io/sponsorship</loc>
-      <lastmod>2021-02-04T18:15:00+05:30</lastmod>
+      <lastmod>2021-02-08T18:15:00+05:30</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.6</priority>
    </url>
    <url>
       <loc>https://chaoscarnival.io/acknowledgement</loc>
-      <lastmod>2021-02-04T18:15:00+05:30</lastmod>
+      <lastmod>2021-02-08T18:15:00+05:30</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>https://chaoscarnival.io/team</loc>
-      <lastmod>2021-02-04T18:15:00+05:30</lastmod>
+      <lastmod>2021-02-08T18:15:00+05:30</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
-      <loc>https://chaoscarnival.io/404</loc>
-      <lastmod>2021-02-04T18:15:00+05:30</lastmod>
+      <loc>https://chaoscarnival.io/408</loc>
+      <lastmod>2021-02-08T18:15:00+05:30</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.3</priority>
    </url>
