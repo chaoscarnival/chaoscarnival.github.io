@@ -71,42 +71,12 @@ function AcknowledgementPage() {
 										}}
 									>
 										You’ll soon receive a confimation email
-										with event details. Meanwhile you can
-										save the dates to calendar and feel free
-										to join our slack community.
+										with event details. Feel free to join
+										our slack community.
 									</Typography>
 								</div>
 								<div style={{ margin: "auto" }}>
 									<div className={classes.buttons}>
-										<Button
-											className={
-												classes.registerButtonOutline
-											}
-											color="primary"
-											variant="outlined"
-											style={{
-												margin: "auto",
-												padding: "1.5rem",
-												marginTop: "2rem",
-												width: "46.5%",
-											}}
-											onClick={() => {
-												window.open(
-													"https://calendar.google.com/calendar/r/eventedit?text=Chaos+Carnival&dates=20210210T080000/20210211T160000&details=For+updates,+Join:+https://join.slack.com/t/chaoscarnival"
-												);
-											}}
-										>
-											<Typography
-												className={classes.timerText}
-												style={{
-													textTransform: "none",
-													fontWeight: 600,
-												}}
-											>
-												Save dates to calendar
-											</Typography>
-										</Button>
-
 										<Button
 											className={classes.registerButton}
 											color="primary"

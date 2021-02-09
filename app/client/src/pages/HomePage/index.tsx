@@ -57,7 +57,8 @@ function HomePage() {
 										<Typography
 											className={classes.headerDesc}
 										>
-											February 10-11, 2021
+											February 10-11, 2021{" "}
+											{" (4PM - 12AM UTC)"}
 										</Typography>
 										<Typography
 											className={
