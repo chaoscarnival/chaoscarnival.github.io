@@ -51,7 +51,7 @@ const Routes: React.FC = () => {
 					path="/sponsorbooths"
 					component={SponsorBoothsPage}
 				/>
-				<Route exact={true} path="/coc" component={COCPage} />
+				<Route exact={true} path="/COC" component={COCPage} />
 				<Route exact={true} path="/404" component={ErrorPage} />
 				<Redirect to="/404" />
 			</Switch>
