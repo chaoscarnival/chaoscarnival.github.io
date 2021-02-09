@@ -18,9 +18,15 @@ export const useStyles = makeStyles((theme) => ({
 			paddingTop: theme.spacing(3),
 		},
 		backgroundImage:
-			new Date().getDate() === 10
+			new Date("10 Feb 2021 08:00:00 -0800").getTime() <=
+				new Date().getTime() &&
+			new Date("10 Feb 2021 15:45:00 -0800").getTime() >=
+				new Date().getTime()
 				? "url(/icons/day-1-live.png)"
-				: new Date().getDate() === 11
+				: new Date("10 Feb 2021 16:00:00 -0800").getTime() <=
+						new Date().getTime() &&
+				  new Date("11 Feb 2021 15:45:00 -0800").getTime() >=
+						new Date().getTime()
 				? "url(/icons/day-2-live.png)"
 				: "url(/icons/day-1-live.png)",
 		backgroundRepeat: "no-repeat",

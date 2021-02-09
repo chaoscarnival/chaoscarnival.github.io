@@ -67,6 +67,12 @@ function HomePage() {
 										className={classes.joinButton}
 										color="primary"
 										variant="contained"
+										onClick={() => {
+											window.open(
+												"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1",
+												"_blank"
+											);
+										}}
 									>
 										Join the carnival
 									</Button>
@@ -78,6 +84,12 @@ function HomePage() {
 											src="./icons/slack.svg"
 											alt="Slack"
 											className={classes.slackIcon}
+											onClick={() => {
+												window.open(
+													"https://join.slack.com/t/chaoscarnival/shared_invite/zt-jy0q3xxc-EIYmlEXqvqbRRxYQkvdRpw",
+													"_blank"
+												);
+											}}
 										/>{" "}
 										Go to Slack
 									</Button>
