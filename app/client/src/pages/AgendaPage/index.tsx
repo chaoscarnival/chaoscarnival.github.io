@@ -34,13 +34,15 @@ const AgendaPage: React.FC = () => {
 		sessionData: "",
 	});
 
-	const { time: day1StartTime, timeZone } = getLocale(
+	const { time: day1StartTime, timeZone, date: day1Date } = getLocale(
 		"10 Feb 2021 08:00:00 -0800"
 	);
 	const { time: day1EndTime } = getLocale("10 Feb 2021 16:00:00 -0800");
 
 	// Day 2
-	const { time: day2StartTime } = getLocale("11 Feb 2021 08:00:00 -0800");
+	const { time: day2StartTime, date: day2Date } = getLocale(
+		"11 Feb 2021 08:00:00 -0800"
+	);
 	const { time: day2EndTime } = getLocale("11 Feb 2021 16:00:00 -0800");
 
 	const Speaker = (s: any, companyLogo: string | undefined, d: any) => {
@@ -252,7 +254,7 @@ const AgendaPage: React.FC = () => {
 									paddingTop: "1rem",
 								}}
 							>
-								Wednesday, Feb 10
+								{day1Date.format("dddd, MMM D")}
 							</Typography>
 							<Typography className={classes.duration}>
 								{day1StartTime} &#8211; {day1EndTime} {timeZone}
@@ -502,7 +504,7 @@ const AgendaPage: React.FC = () => {
 									paddingTop: "1rem",
 								}}
 							>
-								Thursday, Feb 11
+								{day2Date.format("dddd, MMM D")}
 							</Typography>
 							<Typography className={classes.duration}>
 								{day2StartTime} &#8211; {day2EndTime} {timeZone}
