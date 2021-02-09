@@ -17,6 +17,11 @@ export const useStyles = makeStyles((theme) => ({
 		flexDirection: "column",
 		[theme.breakpoints.down(1200)]: {
 			height: "fit-content",
+			paddingTop: theme.spacing(15),
+		},
+		[theme.breakpoints.down("sm")]: {
+			height: "fit-content",
+			paddingTop: 0,
 		},
 		[theme.breakpoints.down("xs")]: {
 			height: "47.5rem",

@@ -214,9 +214,9 @@ const cocData: COCInterface[] = [
 					},
 				],
 				images: [
-					"/coc/schedule.png",
-					"/coc/speedNetworking.png",
-					"/coc/eventChat.png",
+					"/coc/schedule-min.png",
+					"/coc/speedNetworking-min.png",
+					"/coc/eventChat-min.png",
 				],
 			},
 		],
