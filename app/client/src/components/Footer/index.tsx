@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
 							</div>
 							<div className={classes.headerDiv}>
 								<a
-									href="/coc"
+									href="/COC"
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
@@ -182,7 +182,7 @@ const Footer: React.FC = () => {
 									</Typography>
 								</a>
 								<a
-									href="https://chaoscarnival.io/coc"
+									href="https://chaoscarnival.io/COC"
 									style={{ textDecoration: "none" }}
 								>
 									<Typography className={classes.headerFont}>
