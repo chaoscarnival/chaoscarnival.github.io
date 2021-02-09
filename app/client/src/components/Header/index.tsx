@@ -67,10 +67,10 @@ const MainHeader: React.FC = () => {
 									color="primary"
 									variant="contained"
 									onClick={() => {
-										gtag_report_conversion(
-											"https://chaoscarnival.io/register"
+										window.open(
+											"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1",
+											"_blank"
 										);
-										history.push("/register");
 									}}
 								>
 									<Typography
@@ -79,7 +79,7 @@ const MainHeader: React.FC = () => {
 											textTransform: "none",
 										}}
 									>
-										<b>Register&nbsp;Now</b>
+										<b>Join&nbsp;us&nbsp;now</b>
 									</Typography>
 								</Button>
 							</Hidden>
@@ -160,14 +160,14 @@ const MainHeader: React.FC = () => {
 									</Link>
 								</div>
 							</Hidden>
-							<Hidden smDown>
+							{/* <Hidden smDown>
 								<div className={classes.headerDivCount}>
 									<CountDown
 										timeTillDate="02 10 2021, 8:00 am"
 										timeFormat="MM DD YYYY, h:mm a"
 									/>
 								</div>
-							</Hidden>
+							</Hidden> */}
 						</div>
 						<Hidden mdUp>
 							<div className={classes.headerDiv}>
@@ -354,9 +354,12 @@ const MainHeader: React.FC = () => {
 													marginTop: "2rem",
 													width: "100%",
 												}}
-												onClick={() =>
-													history.push("/register")
-												}
+												onClick={() => {
+													window.open(
+														"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1",
+														"_blank"
+													);
+												}}
 											>
 												<Typography
 													className={
@@ -368,7 +371,7 @@ const MainHeader: React.FC = () => {
 													}}
 												>
 													<b>
-														Register&nbsp;Now&nbsp;for&nbsp;Free
+														Join&nbsp;us&nbsp;now&nbsp;
 													</b>
 												</Typography>
 											</Button>
