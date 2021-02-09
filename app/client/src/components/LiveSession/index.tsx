@@ -3,11 +3,11 @@ import React from "react";
 import { useStyles } from "./styles";
 
 export interface CardData {
-	desc: string;
-	img: string;
+	sessionName: string;
+	speakerImage: string;
 	name: string;
-	designation: string;
-	logo: string;
+	role: string;
+	companyLogo: string;
 	startDateTime: string;
 	endDateTime: string;
 	thumbnail?: string;
@@ -43,11 +43,11 @@ const LiveSession: React.FC<UpNextProps> = ({ cardData }) => {
 					<div className={classes.cardSection}>
 						{filteredData.map(
 							({
-								desc,
-								img,
+								sessionName,
+								speakerImage,
 								name,
-								designation,
-								logo,
+								role,
+								companyLogo,
 								thumbnail,
 							}) => {
 								return (
@@ -63,7 +63,7 @@ const LiveSession: React.FC<UpNextProps> = ({ cardData }) => {
 											<Typography
 												className={classes.descText}
 											>
-												{desc}
+												{sessionName}
 											</Typography>
 											<div id="info">
 												<Typography
@@ -79,14 +79,14 @@ const LiveSession: React.FC<UpNextProps> = ({ cardData }) => {
 														fontSize: 18,
 													}}
 												>
-													{designation}
+													{role}
 												</Typography>
 											</div>
 										</div>
 										<img
-											id="Logo"
-											src={logo}
-											alt="company logo"
+											id="company Logo"
+											src={companyLogo}
+											alt="company Logo"
 											style={{
 												marginTop: "0.5rem",
 												maxHeight: "2rem",
