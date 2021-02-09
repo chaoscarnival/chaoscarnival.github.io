@@ -383,7 +383,7 @@ export default [
 				},
 			],
 			description:
-				"This talk describes how Chaos Engineering techniques were used at Insurance Australia Group to ensure better systems reliability.\nIt goes into architectural details of Reliability Pipeline, such as: the Kubernetes resources organization, Litmus components orchestration, leveraging Argo Workflows.\r\n\r\nThis talk describes how Chaos Engineering techniques were used at Insurance Australia Group to ensure better systems reliability.\r\nIt goes into architectural details of Reliability Pipeline, such as: the Kubernetes resources organization, Litmus components orchestration, leveraging Argo Workflows.",
+				"This talk describes how Chaos Engineering techniques were used at Insurance Australia Group to ensure better systems reliability.\nIt goes into architectural details of Reliability Pipeline, such as: the Kubernetes resources organization, Litmus components orchestration, leveraging Argo Workflows.",
 			background: "rgba(0, 124, 188, 0.25)",
 			tags: ["CI/CD"],
 			id: 14,
