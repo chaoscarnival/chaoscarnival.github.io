@@ -57,7 +57,8 @@ function HomePage() {
 										<Typography
 											className={classes.headerDesc}
 										>
-											February 10-11, 2021
+											February 10-11, 2021{" "}
+											{" (4PM - 12AM UTC)"}
 										</Typography>
 										<Typography
 											className={
@@ -78,7 +79,7 @@ function HomePage() {
 										>
 											Chaos carnival is a global two-day
 											virtual conference for Cloud Native
-											Chaos Engineering which aims to to
+											Chaos Engineering which aims to
 											achieve reliability in systems by
 											breaking things on purpose.
 										</Typography>

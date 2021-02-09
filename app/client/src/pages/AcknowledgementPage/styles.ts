@@ -87,56 +87,6 @@ export const useStyles = makeStyles((theme) => ({
 			marginLeft: "3vw",
 		},
 	},
-	registerButtonOutline: {
-		height: "3.5rem",
-		width: "12.5rem",
-		marginTop: theme.spacing(5),
-		borderColor: "#8B17A0",
-		"&:hover": {
-			backgroundColor: "#5B44BA",
-		},
-		[theme.breakpoints.down("xl")]: {
-			height: "3.5rem",
-			width: "12.5rem",
-		},
-		[theme.breakpoints.down("lg")]: {
-			height: "3rem",
-			width: "10.5rem",
-		},
-		[theme.breakpoints.down("md")]: {
-			height: "2.5rem",
-			width: "8.5rem",
-		},
-		[theme.breakpoints.down("sm")]: {
-			marginTop: "20vh",
-			height: "2rem",
-			width: "7.5rem",
-		},
-		[theme.breakpoints.down("xs")]: {
-			marginTop: "20vh",
-			height: "2rem",
-			width: "7rem",
-		},
-	},
-	timerText: {
-		fontSize: "14px",
-		color: "#FFFFFF",
-		[theme.breakpoints.down("xl")]: {
-			fontSize: "14px",
-		},
-		[theme.breakpoints.down("lg")]: {
-			fontSize: "14px",
-		},
-		[theme.breakpoints.down("md")]: {
-			fontSize: "10px",
-		},
-		[theme.breakpoints.down("sm")]: {
-			fontSize: "10px",
-		},
-		[theme.breakpoints.down("xs")]: {
-			fontSize: "10px",
-		},
-	},
 	mainHeaderCaption: {
 		fontSize: "24px",
 		fontWeight: 500,
