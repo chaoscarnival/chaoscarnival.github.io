@@ -230,4 +230,25 @@ export const SpeakerData = [
 		company: "",
 		urlToIcon: "/speakers/Gunnard-min.jpg",
 	},
+	{
+		id: 33,
+		name: "Ashit Kumar",
+		title: "SODA Foundation Lead Architect",
+		company: "",
+		urlToIcon: "/speakers/Asit_Soda.jpg",
+	},
+	{
+		id: 34,
+		name: "Kiran Mova",
+		title: "AWG, SODA Foundation",
+		company: "",
+		urlToIcon: "/speakers/Kiran_Soda.jpg",
+	},
+	{
+		id: 35,
+		name: "Sanil Kumar D",
+		title: "SODA Foundation Chief Architect",
+		company: "",
+		urlToIcon: "/speakers/Sanil_Soda.jpg",
+	},
 ];
