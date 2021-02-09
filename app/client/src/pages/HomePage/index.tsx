@@ -1,4 +1,4 @@
-import { Button, Typography } from "@material-ui/core";
+import { Button, Hidden, Typography } from "@material-ui/core";
 import gtag from "ga-gtag";
 import * as React from "react";
 import { Helmet } from "react-helmet";
@@ -58,6 +58,9 @@ function HomePage() {
 											className={classes.headerDesc}
 										>
 											February 10-11, 2021{" "}
+											<Hidden mdUp>
+												<br/>
+											</Hidden>
 											{" (4PM - 12AM UTC)"}
 										</Typography>
 										<Typography
