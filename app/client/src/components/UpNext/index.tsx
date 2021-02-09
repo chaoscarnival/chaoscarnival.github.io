@@ -3,11 +3,11 @@ import React from "react";
 import { useStyles } from "./styles";
 
 export interface CardData {
-	desc: string;
-	img: string;
+	sessionName: string;
+	speakerImage: string;
 	name: string;
-	designation: string;
-	logo: string;
+	role: string;
+	companyLogo: string;
 	startDateTime: string;
 	endDateTime: string;
 	thumbnail?: string;
@@ -34,20 +34,16 @@ const UpNext: React.FC<UpNextProps> = ({ cardData }) => {
 			</Typography>
 			<div className={classes.cardSection}>
 				{filteredData.map(
-					({ desc, img, name, designation, logo, startDateTime }) => {
-						console.log(
-							new Date().getTime() <
-								new Date(startDateTime).getTime()
-						);
+					({ sessionName, speakerImage, name, role, companyLogo }) => {
 						return (
 							<div className={classes.speakerCard}>
 								<Typography style={{ width: "100%" }}>
-									{desc}
+									{sessionName}
 								</Typography>
 								<div className={classes.speakerSection}>
 									<div className={classes.speakerDetails}>
 										<img
-											src={img}
+											src={speakerImage}
 											alt="speaker"
 											style={{
 												height: "3rem",
@@ -57,14 +53,14 @@ const UpNext: React.FC<UpNextProps> = ({ cardData }) => {
 										<div id="info">
 											<Typography>{name}</Typography>
 											<Typography>
-												{designation}
+												{role}
 											</Typography>
 										</div>
 									</div>
 									<img
-										id="Logo"
-										src={logo}
-										alt="company logo"
+										id="logo"
+										src={companyLogo}
+										alt="company Logo"
 										style={{
 											marginTop: "0.5rem",
 											maxHeight: "2rem",
