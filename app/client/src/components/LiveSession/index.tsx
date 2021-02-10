@@ -1,4 +1,4 @@
-import { IconButton, Typography } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import React from "react";
 import { useStyles } from "./styles";
 
@@ -54,15 +54,19 @@ const LiveSession: React.FC<UpNextProps> = ({ cardData }) => {
 										style={{ padding: 40, paddingLeft: 0 }}
 									>
 										<div>
-											<IconButton onClick = {() => {
-												// <Link>
-											}}>
+											<a
+												href="https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1"
+												target="_blank"
+												rel="noopener"
+											>
 												<img
 													src={thumbnail}
 													alt="speaker"
-													className={classes.speakerImage}
+													className={
+														classes.speakerImage
+													}
 												/>
-											</IconButton>
+											</a>
 											<Typography
 												className={classes.descText}
 											>
