@@ -31,13 +31,13 @@ export const useStyles = makeStyles((theme) => ({
 				new Date().getTime() &&
 			new Date("10 Feb 2021 15:45:00 -0800").getTime() >=
 				new Date().getTime()
-				? "url(/icons/day-1-live.png)"
+				? "url(/icons/day-1-live-min.png)"
 				: new Date("10 Feb 2021 16:00:00 -0800").getTime() <=
 						new Date().getTime() &&
 				  new Date("11 Feb 2021 15:45:00 -0800").getTime() >=
 						new Date().getTime()
-				? "url(/icons/day-2-live.png)"
-				: "url(/icons/day-1-live.png)",
+				? "url(/icons/day-2-live-min.png)"
+				: "url(/icons/day-1-live-min.png)",
 		backgroundRepeat: "no-repeat",
 		backgroundSize: "cover",
 		backgroundPosition: "center",
