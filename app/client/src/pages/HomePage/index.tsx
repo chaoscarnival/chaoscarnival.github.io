@@ -59,7 +59,7 @@ function HomePage() {
 										>
 											February 10-11, 2021{" "}
 											<Hidden mdUp>
-												<br/>
+												<br />
 											</Hidden>
 											{" (4PM - 12AM UTC)"}
 										</Typography>
