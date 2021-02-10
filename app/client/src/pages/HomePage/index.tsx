@@ -79,17 +79,17 @@ function HomePage() {
 									<Button
 										className={classes.slackButton}
 										variant="contained"
+										onClick={() => {
+											window.open(
+												"https://join.slack.com/t/chaoscarnival/shared_invite/zt-jy0q3xxc-EIYmlEXqvqbRRxYQkvdRpw",
+												"_blank"
+											);
+										}}
 									>
 										<img
 											src="./icons/slack.svg"
 											alt="Slack"
 											className={classes.slackIcon}
-											onClick={() => {
-												window.open(
-													"https://join.slack.com/t/chaoscarnival/shared_invite/zt-jy0q3xxc-EIYmlEXqvqbRRxYQkvdRpw",
-													"_blank"
-												);
-											}}
 										/>{" "}
 										Go to Slack
 									</Button>

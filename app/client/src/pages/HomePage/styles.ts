@@ -12,6 +12,7 @@ export const useStyles = makeStyles((theme) => ({
 	mainDiv: {
 		background: "#070E23",
 		height: "100vh",
+		marginTop: 50,
 		display: "flex",
 		flexDirection: "column",
 		[theme.breakpoints.down(1200)]: {
@@ -38,8 +39,11 @@ export const useStyles = makeStyles((theme) => ({
 				? "url(/icons/day-2-live.png)"
 				: "url(/icons/day-1-live.png)",
 		backgroundRepeat: "no-repeat",
-		backgroundSize: "auto",
+		backgroundSize: "cover",
 		backgroundPosition: "center",
+		[theme.breakpoints.down("sm")]: {
+			marginTop: 10,
+		},
 	},
 	headerDesc: {
 		fontSize: "32.5px",
