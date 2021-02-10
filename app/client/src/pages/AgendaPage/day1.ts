@@ -166,7 +166,7 @@ export default [
 			description:
 				"A talk on Chaos testing Red Hat Openshift Virtualization.",
 			background: "rgba(240, 31, 64, 0.15)",
-			tags: ["Chaos Engineering"],
+			tags: ["Chaos Engineering", "Case Study"],
 			id: 6,
 		},
 	},
@@ -219,9 +219,9 @@ export default [
 				},
 			],
 			description:
-				"A talk on evolution of cloud native Chaos Engineering.",
+				"Gone are the days when we lived on the stone edge; we have gone through the most significant evolution in humans. A similar shift is happening in chaos Engineering, wherein in the past, minimal visibility with a limited tool like chaos-monkey, Symbian army,  we were building finite solutions. Today we have Chaos tool-kit, litmus-chaos, Chaos Mesh type of open source & Gremlin, ChaosIQ like a commercial solution for more extensive adoption.  Thanks to massive growth in infrastructure, which made reliability as necessary attributed to the Application System Design.  Today, many companies participate in GAME Day, and Chaos is a company-wide initiative. On Chaos Many Open source and commercial solutions available on various platforms.CNCF has a couple of Chaos engineering solutions on sandbox projects, which brings awareness to Chaos.  Now, Application resiliency and service Stability has broadened to Technology,  Platform, and Cloud. It is an evolution from Netflix chaos-monkey to AWS FIS, creating a real buzz on cloud providers. Now, chaos engineering becomes a first-class citizen on CNCF radar. Chaos' conference and awareness on social media is another dimension where chaos Carnival is part of that evolution.",
 			background: "rgba(0, 119, 197, 0.15)",
-			tags: ["Chaos Engineering"],
+			tags: ["Chaos Engineering", "Culture"],
 
 			id: 8,
 		},
@@ -383,7 +383,7 @@ export default [
 				},
 			],
 			description:
-				"This talk describes how Chaos Engineering techniques were used at Insurance Australia Group to ensure better systems reliability.\nIt goes into architectural details of Reliability Pipeline, such as: the Kubernetes resources organization, Litmus components orchestration, leveraging Argo Workflows.\r\n\r\nThis talk describes how Chaos Engineering techniques were used at Insurance Australia Group to ensure better systems reliability.\r\nIt goes into architectural details of Reliability Pipeline, such as: the Kubernetes resources organization, Litmus components orchestration, leveraging Argo Workflows.",
+				"This talk describes how Chaos Engineering techniques were used at Insurance Australia Group to ensure better systems reliability.\nIt goes into architectural details of Reliability Pipeline, such as: the Kubernetes resources organization, Litmus components orchestration, leveraging Argo Workflows.",
 			background: "rgba(0, 124, 188, 0.25)",
 			tags: ["CI/CD"],
 			id: 14,

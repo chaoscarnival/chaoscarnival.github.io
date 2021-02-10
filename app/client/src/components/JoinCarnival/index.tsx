@@ -1,6 +1,7 @@
 import { Button, Divider, Hidden, Typography } from "@material-ui/core";
 import gtag from "ga-gtag";
 import React from "react";
+import calendarTime from "../../utils/calenderTime";
 import { getLocale } from "../../utils/getLocale";
 import { useStyles } from "./styles";
 import Timer from "./timer";
@@ -33,6 +34,9 @@ const JoinCarnival = () => {
 	);
 	const { time: day2EndTime } = getLocale("11 Feb 2021 16:00:00 -0800");
 
+	const startDateTime = "10 Feb 2021 08:00:00 -0800";
+	const endDateTime = "11 Feb 2021 16:00:00 -0800";
+
 	return (
 		<div className={classes.root}>
 			<div className={classes.mainDiv}>
@@ -48,7 +52,7 @@ const JoinCarnival = () => {
 				</Hidden>
 				<div className={classes.imageDiv}>
 					<img
-						src="icons/chaoscarnival-header-min.png"
+						src="/icons/chaoscarnival-header-min.png"
 						alt="chaos carnival logo"
 						className={classes.logoImg}
 					/>
@@ -123,7 +127,12 @@ const JoinCarnival = () => {
 						variant="outlined"
 						onClick={() => {
 							window.open(
-								"https://calendar.google.com/calendar/r/eventedit?text=Chaos+Carnival&dates=20210210T080000/20210211T160000&details=For+updates,+Join:+https://join.slack.com/t/chaoscarnival"
+								calendarTime(
+									startDateTime,
+									endDateTime,
+									"Chaos Carnival",
+									"For updates, Join: https://join.slack.com/t/chaoscarnival"
+								)
 							);
 						}}
 					>

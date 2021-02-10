@@ -360,4 +360,70 @@ export default [
 			id: 29,
 		},
 	},
+	{
+		time: "3:45 PM",
+		duration: "(45min)",
+		startDateTime: "11 Feb 2021 15:45:00 -0800",
+		endDateTime: "11 Feb 2021 16:30:00 -0800",
+		speaker1: {
+			sessionName: `Resilience and Reliability for SODA with Chaos`,
+			speaker: [
+				{
+					name: "Sanil Kumar D",
+					role: "TOC, AWG Lead & Chief Architect, Huawei",
+					speakerImage: "https://i.ibb.co/2sQ2bQn/Sanil-Soda.png",
+					companyLogo:
+						"https://i.ibb.co/3f4ZSV2/SODA-logo-outline-c.png",
+					modalLogo: "/speakers/Sanil_Soda-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/sanilkumard/",
+					twitterProfileLink: "https://twitter.com/sanilkumard",
+				},
+				{
+					name: "Ashit Kumar",
+					role: "Lead Architect",
+					speakerImage: "https://i.ibb.co/C1GqbD8/Asit-Soda.png",
+					companyLogo:
+						"https://i.ibb.co/3f4ZSV2/SODA-logo-outline-c.png",
+					modalLogo: "/speakers/Ashit_Soda-min.jpg",
+					linkedInProfileLink: "https://www.linkedin.com/in/ashitk/",
+					twitterProfileLink: "N/A",
+				},
+				{
+					name: "Kiran Mova",
+					role: "TOC, AWG, MayaData, OpenEBS",
+					speakerImage: "https://i.ibb.co/N7CpRG3/Kiran-Soda.png",
+					companyLogo:
+						"https://i.ibb.co/3f4ZSV2/SODA-logo-outline-c.png",
+					modalLogo: "/speakers/Kiran_Soda-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/kiranmova/",
+					twitterProfileLink: "https://twitter.com/kiranmova",
+				},
+			],
+			description:
+				"Introduction to SODA and How Chaos Engineering can support Resilience and Reliability for SODA Projects.",
+			background: "rgba(128, 251, 198, 0.2)",
+			tags: ["Chaos Engineering"],
+			id: 30,
+		},
+		speaker2: {
+			sessionName: ``,
+			speaker: [
+				{
+					name: "",
+					role: "",
+					speakerImage: "",
+					companyLogo: "",
+					modalLogo: "",
+					linkedInProfileLink: "N/A",
+					twitterProfileLink: "N/A",
+				},
+			],
+			description: "",
+			background: "rgba(128, 251, 198, 0.2)",
+			tags: [""],
+			id: 31,
+		},
+	},
 ];

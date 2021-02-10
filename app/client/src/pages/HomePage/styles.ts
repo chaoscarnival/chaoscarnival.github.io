@@ -14,6 +14,14 @@ export const useStyles = makeStyles((theme) => ({
 		height: "100vh",
 		display: "flex",
 		flexDirection: "column",
+		[theme.breakpoints.down(1200)]: {
+			height: "fit-content",
+			paddingTop: theme.spacing(15),
+		},
+		[theme.breakpoints.down("sm")]: {
+			height: "fit-content",
+			paddingTop: 0,
+		},
 		[theme.breakpoints.down("xs")]: {
 			paddingTop: theme.spacing(3),
 		},

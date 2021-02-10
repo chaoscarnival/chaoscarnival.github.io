@@ -15,6 +15,7 @@ const AcknowledgementPage = lazy(() => import("./pages/AcknowledgementPage"));
 const AgendaPage = lazy(() => import("./pages/AgendaPage"));
 const BootcampPage = lazy(() => import("./pages/BootcampPage"));
 const SponsorBoothsPage = lazy(() => import("./pages/SponsorBoothsPage"));
+const COCPage = lazy(() => import("./pages/CodeOfConductPage"));
 
 const Routes: React.FC = () => {
 	const classes = useStyles();
@@ -50,6 +51,7 @@ const Routes: React.FC = () => {
 					path="/sponsorbooths"
 					component={SponsorBoothsPage}
 				/>
+				<Route exact={true} path="/COC" component={COCPage} />
 				<Route exact={true} path="/404" component={ErrorPage} />
 				<Redirect to="/404" />
 			</Switch>
