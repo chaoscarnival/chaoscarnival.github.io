@@ -10,9 +10,9 @@ export const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 	},
 	mainDiv: {
-		marginTop: 0,
 		background: "#070E23",
 		height: "100vh",
+		marginTop: 50,
 		display: "flex",
 		flexDirection: "column",
 		[theme.breakpoints.down(1200)]: {
@@ -24,89 +24,160 @@ export const useStyles = makeStyles((theme) => ({
 			paddingTop: 0,
 		},
 		[theme.breakpoints.down("xs")]: {
-			height: "47.5rem",
 			paddingTop: theme.spacing(3),
 		},
+		backgroundImage:
+			new Date("10 Feb 2021 08:00:00 -0800").getTime() <=
+				new Date().getTime() &&
+			new Date("10 Feb 2021 15:45:00 -0800").getTime() >=
+				new Date().getTime()
+				? "url(/icons/day-1-live.png)"
+				: new Date("10 Feb 2021 16:00:00 -0800").getTime() <=
+						new Date().getTime() &&
+				  new Date("11 Feb 2021 15:45:00 -0800").getTime() >=
+						new Date().getTime()
+				? "url(/icons/day-2-live.png)"
+				: "url(/icons/day-1-live.png)",
+		backgroundRepeat: "no-repeat",
+		backgroundSize: "cover",
+		backgroundPosition: "center",
+		[theme.breakpoints.down("sm")]: {
+			marginTop: 10,
+		},
 	},
-
 	headerDesc: {
-		fontSize: "26px",
+		fontSize: "32.5px",
 		marginBottom: 20,
-		textAlign: "left",
+		textAlign: "center",
 		color: "#FAFF53",
-		maxWidth: 500,
-		marginTop: "2vh",
-		marginLeft: 30,
 		fontWeight: 700,
-		[theme.breakpoints.down("xl")]: {
-			fontSize: "26px",
-		},
-		[theme.breakpoints.down("lg")]: {
-			fontSize: "24px",
-		},
 		[theme.breakpoints.down("md")]: {
-			fontSize: "22px",
+			fontSize: "30px",
 		},
 		[theme.breakpoints.down("sm")]: {
-			marginTop: "20vh",
 			fontSize: "20px",
-		},
-		[theme.breakpoints.down("xs")]: {
-			marginTop: "20vh",
-			fontSize: "20px",
-			marginLeft: "3vw",
+			paddingTop: 180,
 		},
 	},
-
-	registerButton: {
-		height: "3.65rem",
-		width: "18.5rem",
-		[theme.breakpoints.down("xl")]: {
-			height: "3.65rem",
-			width: "18.5rem",
-		},
-		[theme.breakpoints.down("lg")]: {
-			height: "3.15rem",
-			width: "16.5rem",
-		},
-		[theme.breakpoints.down("md")]: {
-			height: "3.15rem",
-			width: "14.5rem",
-		},
+	slackIcon: {
+		width: 22,
+		height: 22,
+		marginRight: 5,
+	},
+	carnivalLiveText: {
+		fontSize: "110px",
+		fontWeight: 700,
+		width: 700,
+		lineHeight: "125px",
+		whiteSpace: "pre-line",
 		[theme.breakpoints.down("sm")]: {
-			marginTop: 0,
-			height: "3.15rem",
-			width: "9.75rem",
+			width: "100%",
+			fontSize: "85px",
 		},
 		[theme.breakpoints.down("xs")]: {
-			marginTop: 0,
-			height: "3.15rem",
-			width: "90vw",
+			fontSize: "54px",
 		},
 	},
-	registerText: {
-		fontSize: "16px",
-		[theme.breakpoints.down("xl")]: {
-			fontSize: "16px",
+	heroButtonSection: {
+		display: "flex",
+		justifyContent: "space-between",
+		width: "27rem",
+		margin: "auto",
+		marginTop: 20,
+		[theme.breakpoints.down("xs")]: {
+			flexDirection: "column",
+			width: "100%",
+			alignItems: "center",
 		},
-		[theme.breakpoints.down("lg")]: {
-			fontSize: "16px",
-		},
-		[theme.breakpoints.down("md")]: {
-			fontSize: "14px",
-		},
+	},
+	joinButton: {
+		height: "3.5rem",
+		width: "12.5rem",
+		textTransform: "none",
+		fontSize: 16,
 		[theme.breakpoints.down("sm")]: {
-			fontSize: "12px",
-		},
-		[theme.breakpoints.down("xs")]: {
-			fontSize: "16px",
+			marginBottom: 20,
 		},
 	},
-
+	slackButton: {
+		height: "3.5rem",
+		width: "12.5rem",
+		backgroundColor: "#FFFFFF",
+		textTransform: "none",
+		fontSize: 16,
+	},
+	happeningMainText: {
+		fontSize: 72,
+		fontWeight: 700,
+		[theme.breakpoints.down("xs")]: {
+			fontSize: 48,
+		},
+	},
+	happeningText: {
+		fontSize: 72,
+		fontWeight: 700,
+		marginTop: -20,
+		width: "fit-content",
+		WebkitBackgroundClip: "text",
+		WebkitTextFillColor: "transparent",
+		color: "transparent",
+		backgroundClip: "text",
+		background: "linear-gradient(to right, #B4F59E 0%, #71BCF6 55%)",
+		[theme.breakpoints.down("xs")]: {
+			fontSize: 48,
+		},
+	},
+	carnivalDesc: {
+		width: 500,
+		fontSize: 20,
+		color: " #8193B2",
+		marginTop: 20,
+		[theme.breakpoints.down("xs")]: {
+			width: "100%",
+		},
+	},
+	twitterDiv: {
+		display: "flex",
+		width: "85%",
+		marginLeft: "8%",
+		paddingTop: 80,
+		[theme.breakpoints.down("sm")]: {
+			flexDirection: "column",
+			width: "93.5%",
+			marginLeft: "5%",
+		},
+		[theme.breakpoints.down("xs")]: {
+			marginLeft: 25,
+			paddingTop: 50,
+		},
+	},
+	embeddedTwitterDiv: {
+		marginRight: "auto",
+		[theme.breakpoints.down("sm")]: {
+			marginTop: 30,
+			margin: "auto",
+		},
+		[theme.breakpoints.down("xs")]: {
+			marginTop: 30,
+			paddingRight: 20,
+		},
+	},
+	twitterBtn: {
+		backgroundColor: "#1D9CEA",
+		height: "3rem",
+		width: "8.5rem",
+		borderRadius: 30,
+		color: "#FFFFFF",
+		marginTop: 40,
+		textTransform: "none",
+		fontSize: 16,
+	},
 	speakersDiv: {
 		background: "#070E23",
 		paddingBottom: "12.5rem",
+		marginTop: "5rem",
 		[theme.breakpoints.down("xs")]: {
+			marginTop: "-6rem",
 			paddingBottom: 0,
 		},
 	},
@@ -116,10 +187,10 @@ export const useStyles = makeStyles((theme) => ({
 		flexDirection: "row",
 		justifyContent: "space-between",
 		width: "70vw",
-		margin: "0 auto",
-		[theme.breakpoints.down("xs")]: {
+		margin: "auto",
+		[theme.breakpoints.down("sm")]: {
 			flexDirection: "column",
-			width: "95vw",
+			width: "100%",
 		},
 	},
 	flexItemText: {
