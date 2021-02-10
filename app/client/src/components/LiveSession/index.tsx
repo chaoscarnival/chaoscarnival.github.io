@@ -1,4 +1,4 @@
-import { Typography } from "@material-ui/core";
+import { IconButton, Typography } from "@material-ui/core";
 import React from "react";
 import { useStyles } from "./styles";
 
@@ -44,7 +44,6 @@ const LiveSession: React.FC<UpNextProps> = ({ cardData }) => {
 						{filteredData.map(
 							({
 								sessionName,
-								speakerImage,
 								name,
 								role,
 								companyLogo,
@@ -55,11 +54,15 @@ const LiveSession: React.FC<UpNextProps> = ({ cardData }) => {
 										style={{ padding: 40, paddingLeft: 0 }}
 									>
 										<div>
-											<img
-												src={thumbnail}
-												alt="speaker"
-												className={classes.speakerImage}
-											/>
+											<IconButton onClick = {() => {
+												// <Link>
+											}}>
+												<img
+													src={thumbnail}
+													alt="speaker"
+													className={classes.speakerImage}
+												/>
+											</IconButton>
 											<Typography
 												className={classes.descText}
 											>
