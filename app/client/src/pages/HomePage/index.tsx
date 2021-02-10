@@ -85,6 +85,7 @@ function HomePage() {
 										src="https://www.youtube.com/embed/rOrKegj5ePI"
 										style={{ border: "none" }}
 										className={classes.videoBox}
+										title="video"
 									></iframe>
 								</div>
 							</div>
