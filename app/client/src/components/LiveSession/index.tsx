@@ -44,7 +44,6 @@ const LiveSession: React.FC<UpNextProps> = ({ cardData }) => {
 						{filteredData.map(
 							({
 								sessionName,
-								speakerImage,
 								name,
 								role,
 								companyLogo,
@@ -55,11 +54,19 @@ const LiveSession: React.FC<UpNextProps> = ({ cardData }) => {
 										style={{ padding: 40, paddingLeft: 0 }}
 									>
 										<div>
-											<img
-												src={thumbnail}
-												alt="speaker"
-												className={classes.speakerImage}
-											/>
+											<a
+												href="https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1"
+												target="_blank"
+												rel="noopener"
+											>
+												<img
+													src={thumbnail}
+													alt="speaker"
+													className={
+														classes.speakerImage
+													}
+												/>
+											</a>
 											<Typography
 												className={classes.descText}
 											>

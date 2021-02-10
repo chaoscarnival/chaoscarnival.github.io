@@ -131,9 +131,9 @@ export const cardData: CardData[] = [
 		endDateTime: "10 Feb 2021 15:15:00 -0800",
 		thumbnail: "./posters/Gunnard-Engebreth.png",
 		name: "Gunnard Engebreth",
-		role: "", ///////CHECK!
+		role: "",
 		speakerImage: "https://i.ibb.co/pyN9mhx/Gunnard-Power-Code.png",
-		companyLogo: "N/A",
+		companyLogo: "",
 	},
 	{
 		startDateTime: "10 Feb 2021 15:15:00 -0800",
