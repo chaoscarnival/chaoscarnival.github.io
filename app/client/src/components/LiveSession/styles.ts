@@ -2,22 +2,35 @@ import { makeStyles } from "@material-ui/core";
 
 export const useStyles = makeStyles((theme) => ({
 	rootContainer: {
-		width: "fit-content",
+		width: "70%",
 		marginLeft: "15%",
+		paddingTop: "5rem",
 		[theme.breakpoints.up("xl")]: {
-			marginLeft: "21%",
+			marginLeft: "28.5%",
+		},
+		[theme.breakpoints.up(4800)]: {
+			marginLeft: "37.5%",
+		},
+		[theme.breakpoints.down(2400)]: {
+			marginLeft: "18%",
+		},
+		[theme.breakpoints.down("lg")]: {
+			marginLeft: "16.5%",
 		},
 		[theme.breakpoints.down("md")]: {
-			marginLeft: 60,
+			marginLeft: 70,
+			width: "90%",
 		},
 		[theme.breakpoints.down("sm")]: {
-			width: "70%",
+			width: "90%",
+			marginLeft: "8%",
 			margin: "auto",
+			paddingTop: "2rem",
 		},
 		[theme.breakpoints.down("xs")]: {
-			width: "100%",
+			width: "97.5%",
 			marginLeft: 25,
-			marginTop: 40,
+			marginTop: 20,
 		},
 	},
 	upNext: {
@@ -31,6 +44,9 @@ export const useStyles = makeStyles((theme) => ({
 		fontSize: "2.75rem",
 		fontWeight: 700,
 		marginTop: 20,
+		[theme.breakpoints.down("sm")]: {
+			fontSize: "2.35rem",
+		},
 	},
 	desc: {
 		textAlign: "left",
@@ -38,7 +54,8 @@ export const useStyles = makeStyles((theme) => ({
 		fontSize: 20,
 		marginTop: 20,
 		[theme.breakpoints.down("sm")]: {
-			width: "85%",
+			width: "90%",
+			fontSize: 16,
 		},
 	},
 	cardSection: {

@@ -20,12 +20,12 @@ interface UpNextProps {
 const LiveSession: React.FC<UpNextProps> = ({ cardData }) => {
 	const classes = useStyles();
 	const filteredData = cardData.filter((data) => {
-		if (
-			new Date().getTime() >= new Date(data.startDateTime).getTime() &&
-			new Date().getTime() <= new Date(data.endDateTime).getTime()
-		) {
-			return data;
-		}
+		// if (
+		// 	new Date().getTime() >= new Date(data.startDateTime).getTime() &&
+		// 	new Date().getTime() <= new Date(data.endDateTime).getTime()
+		// ) {
+		return data;
+		// }
 	});
 	console.log(filteredData);
 	return (

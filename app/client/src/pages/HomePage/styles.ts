@@ -75,7 +75,7 @@ export const useStyles = makeStyles((theme) => ({
 			fontSize: "85px",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "52px",
+			fontSize: "54px",
 		},
 	},
 	heroButtonSection: {
@@ -110,7 +110,7 @@ export const useStyles = makeStyles((theme) => ({
 		fontSize: 72,
 		fontWeight: 700,
 		[theme.breakpoints.down("xs")]: {
-			fontSize: 45,
+			fontSize: 48,
 		},
 	},
 	happeningText: {
@@ -124,7 +124,7 @@ export const useStyles = makeStyles((theme) => ({
 		backgroundClip: "text",
 		background: "linear-gradient(to right, #B4F59E 0%, #71BCF6 55%)",
 		[theme.breakpoints.down("xs")]: {
-			fontSize: 45,
+			fontSize: 48,
 		},
 	},
 	carnivalDesc: {
@@ -133,7 +133,7 @@ export const useStyles = makeStyles((theme) => ({
 		color: " #8193B2",
 		marginTop: 20,
 		[theme.breakpoints.down("xs")]: {
-			width: "90%",
+			width: "100%",
 		},
 	},
 	twitterDiv: {

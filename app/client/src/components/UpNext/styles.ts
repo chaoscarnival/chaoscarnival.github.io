@@ -26,7 +26,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginLeft: 25,
-			marginTop: 40,
+			marginTop: 20,
 		},
 	},
 	upNext: {
@@ -40,6 +40,9 @@ export const useStyles = makeStyles((theme) => ({
 		fontSize: "2.75rem",
 		fontWeight: 700,
 		marginTop: 20,
+		[theme.breakpoints.down("sm")]: {
+			fontSize: "2.35rem",
+		},
 	},
 	desc: {
 		textAlign: "left",
@@ -47,7 +50,8 @@ export const useStyles = makeStyles((theme) => ({
 		fontSize: 20,
 		marginTop: 20,
 		[theme.breakpoints.down("sm")]: {
-			width: "85%",
+			width: "95%",
+			fontSize: 16,
 		},
 	},
 	cardSection: {
