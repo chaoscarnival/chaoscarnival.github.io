@@ -369,38 +369,36 @@ export default [
 			sessionName: `Resilience and Reliability for SODA with Chaos`,
 			speaker: [
 				{
+					name: "Sanil Kumar D",
+					role: "TOC, AWG Lead & Chief Architect, Huawei",
+					speakerImage: "https://i.ibb.co/2sQ2bQn/Sanil-Soda.png",
+					companyLogo:
+						"https://i.ibb.co/3f4ZSV2/SODA-logo-outline-c.png",
+					modalLogo: "/speakers/Sanil_Soda-min.jpg",
+					linkedInProfileLink:
+						"https://www.linkedin.com/in/sanilkumard/",
+					twitterProfileLink: "https://twitter.com/sanilkumard",
+				},
+				{
 					name: "Ashit Kumar",
-					role:
-						"Maintainer, India OC, SODA Foundation Lead Architect. Huawei",
+					role: "Lead Architect",
 					speakerImage: "https://i.ibb.co/C1GqbD8/Asit-Soda.png",
 					companyLogo:
-						"https://i.ibb.co/4RkZ61s/SODA-logo-outline-c-1.png",
-					modalLogo: "/speakers/Asit_Soda.jpg",
+						"https://i.ibb.co/3f4ZSV2/SODA-logo-outline-c.png",
+					modalLogo: "/speakers/Ashit_Soda-min.jpg",
 					linkedInProfileLink: "https://www.linkedin.com/in/ashitk/",
 					twitterProfileLink: "N/A",
 				},
 				{
 					name: "Kiran Mova",
-					role: "TOC, AWG, SODA Foundation MayaData, OpenEBS",
+					role: "TOC, AWG, MayaData, OpenEBS",
 					speakerImage: "https://i.ibb.co/N7CpRG3/Kiran-Soda.png",
 					companyLogo:
-						"https://i.ibb.co/BfzGbty/SODA-logo-outline-c-1.png",
-					modalLogo: "/speakers/Kiran_Soda.jpg",
+						"https://i.ibb.co/3f4ZSV2/SODA-logo-outline-c.png",
+					modalLogo: "/speakers/Kiran_Soda-min.jpg",
 					linkedInProfileLink:
 						"https://www.linkedin.com/in/kiranmova/",
 					twitterProfileLink: "https://twitter.com/kiranmova",
-				},
-				{
-					name: "Sanil Kumar D",
-					role:
-						"TOC, AWG Lead, SODA Foundation Chief Architect, Huawei",
-					speakerImage: "https://i.ibb.co/2sQ2bQn/Sanil-Soda.png",
-					companyLogo:
-						"https://i.ibb.co/hFw7PcV/SODA-logo-outline-c-1.png",
-					modalLogo: "/speakers/Sanil_Soda.jpg",
-					linkedInProfileLink:
-						"https://www.linkedin.com/in/sanilkumard/",
-					twitterProfileLink: "https://twitter.com/sanilkumard",
 				},
 			],
 			description:

@@ -9,16 +9,14 @@ const cocData: COCInterface[] = [
 	{
 		title: "How to attend",
 		text:
-			"Attendees and Speakers may refer to demo for attendee and demo for speakers for respective details.",
+			"Attendees and Speakers may refer to demo for attendees and demo for speakers for respective details.",
 		links: [
 			{
-				link:
-					"https://drive.google.com/file/d/1pzF0xczx3oj3r8kR-6Yah18pUoBIMZ1g/view?usp=sharing",
-				linkText: "Demo for attendee",
+				link: "https://youtu.be/4dFbleLqOtw",
+				linkText: "Demo for attendees",
 			},
 			{
-				link:
-					"https://files.slack.com/files-pri/T019LMKL4L8-F01M6NAFY8H/chaos_carnival_speaker_demo.mp4",
+				link: "https://youtu.be/Sjqd7dGnVHg",
 				linkText: "Demo for speakers",
 			},
 		],
@@ -64,7 +62,7 @@ const cocData: COCInterface[] = [
 				links: [
 					{
 						link:
-							"https://chaoscarnival.slack.com/archives/C018Q4T4F2A",
+							"https://chaoscarnival.slack.com/messages/general/",
 						linkText: "Join Slack channel",
 					},
 				],
@@ -100,7 +98,7 @@ const cocData: COCInterface[] = [
 			"Help For technical support or general event questions, head to the under Sessions. A member of the Events Team will be standing by to assist from 10:00 AM - 6:00 AM PT. If you need to, please send a message on Slack",
 		links: [
 			{
-				link: "https://app.slack.com/client/T019LMKL4L8/C01LY4PAXPU",
+				link: "https://chaoscarnival.slack.com/messages/helpdesk/",
 				linkText: "HelpDesk Slack channel",
 			},
 		],
@@ -114,8 +112,7 @@ const cocData: COCInterface[] = [
 					"Please refer to the demo for details. The navigation bar on the left side of your screen. You will see Reception, Sessions, Lounge and Arena, or search a session by name or tag in the search bar at the top of the screen.",
 				links: [
 					{
-						link:
-							"https://drive.google.com/file/d/1pzF0xczx3oj3r8kR-6Yah18pUoBIMZ1g/view?usp=sharing",
+						link: "https://youtu.be/4dFbleLqOtw",
 						linkText: "Demo link",
 					},
 				],
@@ -156,7 +153,7 @@ const cocData: COCInterface[] = [
 				links: [
 					{
 						link:
-							"https://chaoscarnival.slack.com/archives/C018Q4T4F2A",
+							"https://chaoscarnival.slack.com/messages/helpdesk/",
 						linkText: "Slack channel link",
 					},
 				],
@@ -253,23 +250,18 @@ const cocData: COCInterface[] = [
 				textHeading:
 					"What To Do If You Witness or Are Subject To Unacceptable Behaviour",
 				textDescription:
-					"If you are being harassed, notice that someone else is being harassed, or have any other concerns relating to harassment, please contact a member of the conference staff immediately. You are also encouraged to contact the following individuals:\r\n\r\nname,position(Events) ((contact number);(email))",
+					"If you are being harassed, notice that someone else is being harassed, or have any other concerns relating to harassment, please contact a member of the conference staff immediately. You are also encouraged to contact us by email.",
+				links: [
+					{
+						link: "mailto:coc@chaoscarnival.io",
+						linkText: "coc@chaoscarnival.io",
+					},
+				],
 			},
 			{
 				textHeading: "Event Concerns",
 				textDescription:
 					"Precautions will be taken to ensure your comfort and safety, including, but not limited to: providing an escort, prepping onsite event staff, keeping victim and harasser from attending the same talks/social events and providing onsite contact cell phone numbers for immediate contact.",
-			},
-		],
-	},
-	{
-		title: "Moderator's Contact",
-		text:
-			"For any queries or reporting the violations, reach out to us over email.",
-		links: [
-			{
-				link: "mailto:coc@chaoscarnival.io",
-				linkText: "coc@chaoscarnival.io",
 			},
 		],
 	},
