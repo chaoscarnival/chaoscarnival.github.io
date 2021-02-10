@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import { Typography } from "@material-ui/core";
 import React from "react";
 import { useStyles } from "./styles";
@@ -20,12 +21,12 @@ interface UpNextProps {
 const LiveSession: React.FC<UpNextProps> = ({ cardData }) => {
 	const classes = useStyles();
 	const filteredData = cardData.filter((data) => {
-		// if (
-		// 	new Date().getTime() >= new Date(data.startDateTime).getTime() &&
-		// 	new Date().getTime() <= new Date(data.endDateTime).getTime()
-		// ) {
-		return data;
-		// }
+		if (
+			new Date().getTime() >= new Date(data.startDateTime).getTime() &&
+			new Date().getTime() <= new Date(data.endDateTime).getTime()
+		) {
+			return data;
+		}
 	});
 	console.log(filteredData);
 	return (
@@ -57,7 +58,7 @@ const LiveSession: React.FC<UpNextProps> = ({ cardData }) => {
 											<a
 												href="https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1"
 												target="_blank"
-												rel="noopener"
+												rel="noopener noreferrer"
 											>
 												<img
 													src={thumbnail}

@@ -11,11 +11,9 @@ import {
 	Typography,
 } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
-import gtag from "ga-gtag";
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import history from "../../history";
-import CountDown from "../CountDown";
 import useStyles from "./styles";
 
 const MainHeader: React.FC = () => {
@@ -30,20 +28,6 @@ const MainHeader: React.FC = () => {
 	const handleClose = () => {
 		setAnchorEl(null);
 	};
-
-	function gtag_report_conversion(url) {
-		var callback = function () {
-			if (typeof url != "undefined") {
-				window.location = url;
-			}
-		};
-		gtag("event", "conversion", {
-			send_to: "AW-453907965/x9FXCNje-e4BEP2ruNgB",
-			event_callback: callback,
-		});
-		gtag("config", "AW-453907965");
-		return false;
-	}
 
 	return (
 		<div>
