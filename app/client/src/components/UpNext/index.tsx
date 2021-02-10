@@ -34,7 +34,13 @@ const UpNext: React.FC<UpNextProps> = ({ cardData }) => {
 			</Typography>
 			<div className={classes.cardSection}>
 				{filteredData.map(
-					({ sessionName, speakerImage, name, role, companyLogo }) => {
+					({
+						sessionName,
+						speakerImage,
+						name,
+						role,
+						companyLogo,
+					}) => {
 						return (
 							<div className={classes.speakerCard}>
 								<Typography style={{ width: "100%" }}>
@@ -52,9 +58,7 @@ const UpNext: React.FC<UpNextProps> = ({ cardData }) => {
 										/>
 										<div id="info">
 											<Typography>{name}</Typography>
-											<Typography>
-												{role}
-											</Typography>
+											<Typography>{role}</Typography>
 										</div>
 									</div>
 									<img

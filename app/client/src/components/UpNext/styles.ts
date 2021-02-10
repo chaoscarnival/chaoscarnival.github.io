@@ -51,8 +51,8 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	speakerCard: {
 		padding: theme.spacing(3.75, 2.5),
-		display: 'flex',
-		flexDirection: 'column',
+		display: "flex",
+		flexDirection: "column",
 		background:
 			"linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%)",
 		backdropFilter: "blur(10px)",
