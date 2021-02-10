@@ -34,13 +34,15 @@ const AgendaPage: React.FC = () => {
 		sessionData: "",
 	});
 
-	const { time: day1StartTime, timeZone } = getLocale(
+	const { time: day1StartTime, timeZone, date: day1Date } = getLocale(
 		"10 Feb 2021 08:00:00 -0800"
 	);
 	const { time: day1EndTime } = getLocale("10 Feb 2021 16:00:00 -0800");
 
 	// Day 2
-	const { time: day2StartTime } = getLocale("11 Feb 2021 08:00:00 -0800");
+	const { time: day2StartTime, date: day2Date } = getLocale(
+		"11 Feb 2021 08:00:00 -0800"
+	);
 	const { time: day2EndTime } = getLocale("11 Feb 2021 16:00:00 -0800");
 
 	const Speaker = (s: any, companyLogo: string | undefined, d: any) => {
@@ -56,7 +58,9 @@ const AgendaPage: React.FC = () => {
 						/>
 						<div style={{ marginTop: "0.5rem" }}>
 							<Typography id="subtitle">{s.name}</Typography>
-							<Typography id="subtitle">{s.role}</Typography>
+							<Typography style={{ maxWidth: 250 }} id="subtitle">
+								{s.role}
+							</Typography>
 						</div>
 						{d.speaker.length > 1 ? (
 							<div className={classes.speakerValue}>
@@ -74,7 +78,7 @@ const AgendaPage: React.FC = () => {
 						<img
 							style={{
 								marginTop: "0.5rem",
-								maxHeight: "2rem",
+								maxHeight: "2.5rem",
 								maxWidth: "10rem",
 								objectFit: "contain",
 							}}
@@ -252,7 +256,7 @@ const AgendaPage: React.FC = () => {
 									paddingTop: "1rem",
 								}}
 							>
-								Wednesday, Feb 10
+								{day1Date.format("dddd, MMM D")}
 							</Typography>
 							<Typography className={classes.duration}>
 								{day1StartTime} &#8211; {day1EndTime} {timeZone}
@@ -502,7 +506,7 @@ const AgendaPage: React.FC = () => {
 									paddingTop: "1rem",
 								}}
 							>
-								Thursday, Feb 11
+								{day2Date.format("dddd, MMM D")}
 							</Typography>
 							<Typography className={classes.duration}>
 								{day2StartTime} &#8211; {day2EndTime} {timeZone}
@@ -669,61 +673,74 @@ const AgendaPage: React.FC = () => {
 																)}
 															</>
 														</div>
-
-														<div
-															className={
-																classes.speaker2details
-															}
-															onClick={() => {
-																setModalStatus({
-																	modalState: true,
-																	speakerData:
-																		d.speaker2,
-
-																	sessionData: d,
-																});
-															}}
-														>
-															<Typography
-																style={{
-																	fontWeight:
-																		"bold",
-																	fontSize: 18,
-																	paddingTop: 10,
-																}}
-															>
-																{
-																	d.speaker2
-																		?.sessionName
-																}
-															</Typography>
-
-															{/* Tags */}
+														{d.speaker2?.id ===
+														31 ? (
 															<div
 																className={
-																	classes.tagsField
+																	classes.speaker2details
 																}
+															></div>
+														) : (
+															<div
+																className={
+																	classes.speaker2details
+																}
+																onClick={() => {
+																	setModalStatus(
+																		{
+																			modalState: true,
+																			speakerData:
+																				d.speaker2,
+
+																			sessionData: d,
+																		}
+																	);
+																}}
 															>
-																<Tags
-																	tags={
+																<Typography
+																	style={{
+																		fontWeight:
+																			"bold",
+																		fontSize: 18,
+																		paddingTop: 10,
+																	}}
+																>
+																	{
 																		d
 																			.speaker2
-																			?.tags
+																			?.sessionName
 																	}
-																/>
-															</div>
+																</Typography>
 
-															<>
-																{Speaker(
-																	d.speaker2
-																		?.speaker[0],
-																	d.speaker2
-																		?.speaker[0]
-																		.companyLogo,
-																	d.speaker2
-																)}
-															</>
-														</div>
+																{/* Tags */}
+																<div
+																	className={
+																		classes.tagsField
+																	}
+																>
+																	<Tags
+																		tags={
+																			d
+																				.speaker2
+																				?.tags
+																		}
+																	/>
+																</div>
+
+																<>
+																	{Speaker(
+																		d
+																			.speaker2
+																			?.speaker[0],
+																		d
+																			.speaker2
+																			?.speaker[0]
+																			.companyLogo,
+																		d.speaker2
+																	)}
+																</>
+															</div>
+														)}
 													</div>
 												)}
 											</div>
@@ -732,7 +749,7 @@ const AgendaPage: React.FC = () => {
 								);
 							})}
 							{Closing(
-								"11 Feb 2021 15:45:00 -0800",
+								"11 Feb 2021 16:30:00 -0800",
 								"(10min)",
 								"Day 2 Closing Remarks"
 							)}

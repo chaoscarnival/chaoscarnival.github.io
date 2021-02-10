@@ -55,27 +55,27 @@ const useStyles = makeStyles((theme: Theme) => ({
 		},
 	},
 	headerHomeDiv: {
-		marginLeft: "35vw",
+		marginLeft: "30vw",
 		[theme.breakpoints.up("xl")]: {
-			marginLeft: "75vw",
+			marginLeft: "70vw",
 		},
 		[theme.breakpoints.down("xl")]: {
-			marginLeft: "45vw",
+			marginLeft: "40vw",
 		},
 		[theme.breakpoints.down(2500)]: {
-			marginLeft: "35vw",
-		},
-		[theme.breakpoints.down(2300)]: {
 			marginLeft: "30vw",
 		},
-		[theme.breakpoints.down("lg")]: {
-			marginLeft: "20vw",
+		[theme.breakpoints.down(2300)]: {
+			marginLeft: "25vw",
 		},
-		[theme.breakpoints.down(1600)]: {
+		[theme.breakpoints.down("lg")]: {
 			marginLeft: "15vw",
 		},
+		[theme.breakpoints.down(1600)]: {
+			marginLeft: "10vw",
+		},
 		[theme.breakpoints.down(1400)]: {
-			marginLeft: "8vw",
+			marginLeft: "5vw",
 		},
 		[theme.breakpoints.down("md")]: {
 			marginLeft: 0,
@@ -116,17 +116,18 @@ const useStyles = makeStyles((theme: Theme) => ({
 		width: "15rem",
 		[theme.breakpoints.down("md")]: {
 			marginLeft: 0,
+			marginBottom: theme.spacing(1.5),
 		},
-		[theme.breakpoints.down("sm")]: {
-			marginLeft: theme.spacing(0.5),
-		},
-		[theme.breakpoints.down(600)]: {
-			marginLeft: theme.spacing(1),
-		},
-		[theme.breakpoints.down(450)]: {
-			fontSize: "1.7rem",
-			marginLeft: theme.spacing(-2),
-		},
+		// [theme.breakpoints.down("sm")]: {
+		// 	marginLeft: theme.spacing(0.5),
+		// },
+		// [theme.breakpoints.down(600)]: {
+		// 	marginLeft: theme.spacing(1),
+		// },
+		// [theme.breakpoints.down(450)]: {
+		// 	fontSize: "1.7rem",
+		// 	marginLeft: theme.spacing(-2),
+		// },
 	},
 }));
 

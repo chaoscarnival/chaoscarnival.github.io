@@ -1,26 +1,11 @@
 import { Button, Divider, Hidden, Typography } from "@material-ui/core";
-import gtag from "ga-gtag";
 import React from "react";
+import calendarTime from "../../utils/calenderTime";
 import { getLocale } from "../../utils/getLocale";
 import { useStyles } from "./styles";
-import Timer from "./timer";
 
 const JoinCarnival = () => {
 	const classes = useStyles();
-
-	function gtag_report_conversion(url) {
-		var callback = function () {
-			if (typeof url != "undefined") {
-				window.location = url;
-			}
-		};
-		gtag("event", "conversion", {
-			send_to: "AW-453907965/x9FXCNje-e4BEP2ruNgB",
-			event_callback: callback,
-		});
-		gtag("config", "AW-453907965");
-		return false;
-	}
 
 	const { date: day1StartDate, time: day1StartTime, timeZone } = getLocale(
 		"10 Feb 2021 08:00:00 -0800"
@@ -32,6 +17,9 @@ const JoinCarnival = () => {
 		"11 Feb 2021 08:00:00 -0800"
 	);
 	const { time: day2EndTime } = getLocale("11 Feb 2021 16:00:00 -0800");
+
+	const startDateTime = "10 Feb 2021 08:00:00 -0800";
+	const endDateTime = "11 Feb 2021 16:00:00 -0800";
 
 	return (
 		<div className={classes.root}>
@@ -48,7 +36,7 @@ const JoinCarnival = () => {
 				</Hidden>
 				<div className={classes.imageDiv}>
 					<img
-						src="icons/chaoscarnival-header-min.png"
+						src="/icons/chaoscarnival-header-min.png"
 						alt="chaos carnival logo"
 						className={classes.logoImg}
 					/>
@@ -65,11 +53,8 @@ const JoinCarnival = () => {
 							variant="contained"
 							style={{ marginRight: "1.5rem" }}
 							onClick={() => {
-								gtag_report_conversion(
-									"https://chaoscarnival.io/register"
-								);
 								window.location.href =
-									"https://chaoscarnival.io/register";
+									"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1";
 							}}
 						>
 							<Typography
@@ -79,7 +64,7 @@ const JoinCarnival = () => {
 								<b>Register&nbsp;Now</b>
 							</Typography>
 						</Button>
-						<Timer />
+						{/* <Timer /> */}
 					</div>
 				</div>
 				<hr className={classes.hrLine}></hr>
@@ -123,7 +108,12 @@ const JoinCarnival = () => {
 						variant="outlined"
 						onClick={() => {
 							window.open(
-								"https://calendar.google.com/calendar/r/eventedit?text=Chaos+Carnival&dates=20210210T080000/20210211T160000&details=For+updates,+Join:+https://join.slack.com/t/chaoscarnival"
+								calendarTime(
+									startDateTime,
+									endDateTime,
+									"Chaos Carnival",
+									"For updates, Join: https://join.slack.com/t/chaoscarnival"
+								)
 							);
 						}}
 					>

@@ -2,7 +2,6 @@ import { Button, Divider, FormControl, Typography } from "@material-ui/core";
 import Cookies from "js-cookie";
 import publicIp from "public-ip";
 import React, { useState } from "react";
-import { Helmet } from "react-helmet";
 import Footer from "../../components/Footer";
 import MainHeader from "../../components/Header";
 import Sponsors from "../../components/Sponsors";
@@ -160,217 +159,187 @@ function RegistrationPage() {
 	};
 
 	return (
-		<div>
-			<Helmet>
-				<meta charSet="utf-8" />
-				<title>
-					Chaos Carnival | Cloud-Native Chaos Engineering conference |
-					Register for 2021
-				</title>
-				<meta
-					name="keywords"
-					content="Chaos carnival 2021, chaos engineering, chaos engineering conference, chaos conference, chaos conference 2021, chaosconf, chaos engineering bootcamps, chaos engineering 101, cloud native, Register, 2021 conference"
-				/>
-				<link
-					rel="canonical"
-					href="https://chaoscarvival.io/register"
-				/>
-			</Helmet>
-			<div
-				className="scrollbar scrollbar-primary"
-				style={{ background: "#070E23" }}
-			>
-				<div className={classes.rootContainer}>
-					<MainHeader />
-					<div className={classes.root}>
-						<div className={classes.mainDiv}>
-							<div className={classes.formArea}>
-								<div className={classes.formDescription}>
-									<Typography
-										className={classes.registerForText}
-									>
-										Register for
-									</Typography>
-									<Typography
-										className={classes.chaosCarnivalText}
-									>
-										Chaos Carnival
-									</Typography>
-									<Typography
-										className={classes.infoText}
-									>{`Chaos Engineering is a discipline to achieve reliability in systems by breaking things on purpose. Chaos Carnival brings all the chaos practitioners together to share their experiences and learn together.`}</Typography>
-								</div>
-								<div className={classes.formFields}>
-									<FormControl
-										data-form-id={formId}
-										data-portal-id={portalId}
-										disabled={loading}
-										onSubmit={submitForm}
-									>
-										<CustomInputField
-											id="contact-first-name"
-											type="text"
-											required
-											name="firstname"
-											value={
-												registrationDetails.firstname
-											}
-											onChange={handleDetailsChange}
-											placeholder="First Name*"
-											className={classes.inputField}
-										/>
-										<CustomInputField
-											id="contact-last-name"
-											type="text"
-											required
-											name="lastname"
-											value={registrationDetails.lastname}
-											onChange={handleDetailsChange}
-											placeholder="Last Name*"
-											className={classes.inputField}
-										/>
-										<CustomInputField
-											id="contact-email"
-											type="email"
-											required
-											name="email"
-											value={registrationDetails.email}
-											onChange={handleDetailsChange}
-											placeholder="Email*"
-											className={classes.inputField}
-										/>
-										<CustomInputField
-											id="contact-company"
-											type="text"
-											required
-											name="company"
-											value={registrationDetails.company}
-											onChange={handleDetailsChange}
-											placeholder="Company*"
-											className={classes.inputField}
-										/>
-										<CustomInputField
-											id="contact-job-title"
-											type="text"
-											required
-											name="jobtitle"
-											value={registrationDetails.jobtitle}
-											onChange={handleDetailsChange}
-											placeholder="Job Title*"
-											className={classes.inputField}
-										/>
-										<CustomFormControlLabel
-											className={classes.checkboxLabel}
-											control={
-												<CustomCheckbox
-													checked={
-														registrationDetails.agree
-													}
-													onChange={
-														handleAgreementChange
-													}
-													name="agree"
-													required
-													className={classes.checkbox}
-												/>
-											}
-											label="By registering I agree to receive conference updates and some promotional emails from Chaos Carnival and its sponsors."
-										/>
-										<div className={classes.buttons}>
-											<Button
-												className={
-													registrationDetails.agree &&
-													registrationDetails.firstname !==
-														"" &&
-													registrationDetails.firstname !==
-														" " &&
-													registrationDetails.lastname !==
-														"" &&
-													registrationDetails.lastname !==
-														" " &&
-													registrationDetails.email !==
-														"" &&
-													registrationDetails.email !==
-														" " &&
-													registrationDetails.company !==
-														"" &&
-													registrationDetails.company !==
-														" " &&
-													registrationDetails.jobtitle !==
-														"" &&
-													registrationDetails.jobtitle !==
-														" "
-														? `${classes.registerButtonActive}`
-														: `${classes.registerButton}`
+		<div
+			className="scrollbar scrollbar-primary"
+			style={{ background: "#070E23" }}
+		>
+			<div className={classes.rootContainer}>
+				<MainHeader />
+				<div className={classes.root}>
+					<div className={classes.mainDiv}>
+						<div className={classes.formArea}>
+							<div className={classes.formDescription}>
+								<Typography className={classes.registerForText}>
+									Register for
+								</Typography>
+								<Typography
+									className={classes.chaosCarnivalText}
+								>
+									Chaos Carnival
+								</Typography>
+								<Typography
+									className={classes.infoText}
+								>{`Chaos Engineering is a discipline to achieve reliability in systems by breaking things on purpose. Chaos Carnival brings all the chaos practitioners together to share their experiences and learn together.`}</Typography>
+							</div>
+							<div className={classes.formFields}>
+								<FormControl
+									data-form-id={formId}
+									data-portal-id={portalId}
+									disabled={loading}
+									onSubmit={submitForm}
+								>
+									<CustomInputField
+										id="contact-first-name"
+										type="text"
+										required
+										name="firstname"
+										value={registrationDetails.firstname}
+										onChange={handleDetailsChange}
+										placeholder="First Name*"
+										className={classes.inputField}
+									/>
+									<CustomInputField
+										id="contact-last-name"
+										type="text"
+										required
+										name="lastname"
+										value={registrationDetails.lastname}
+										onChange={handleDetailsChange}
+										placeholder="Last Name*"
+										className={classes.inputField}
+									/>
+									<CustomInputField
+										id="contact-email"
+										type="email"
+										required
+										name="email"
+										value={registrationDetails.email}
+										onChange={handleDetailsChange}
+										placeholder="Email*"
+										className={classes.inputField}
+									/>
+									<CustomInputField
+										id="contact-company"
+										type="text"
+										required
+										name="company"
+										value={registrationDetails.company}
+										onChange={handleDetailsChange}
+										placeholder="Company*"
+										className={classes.inputField}
+									/>
+									<CustomInputField
+										id="contact-job-title"
+										type="text"
+										required
+										name="jobtitle"
+										value={registrationDetails.jobtitle}
+										onChange={handleDetailsChange}
+										placeholder="Job Title*"
+										className={classes.inputField}
+									/>
+									<CustomFormControlLabel
+										className={classes.checkboxLabel}
+										control={
+											<CustomCheckbox
+												checked={
+													registrationDetails.agree
 												}
-												color="primary"
-												variant="contained"
-												type="submit"
-												onClick={(event: any) => {
-													if (
-														registrationDetails.agree
-													) {
-														submitForm(event);
-													}
+												onChange={handleAgreementChange}
+												name="agree"
+												required
+												className={classes.checkbox}
+											/>
+										}
+										label="By registering I agree to receive conference updates and some promotional emails from Chaos Carnival and its sponsors."
+									/>
+									<div className={classes.buttons}>
+										<Button
+											className={
+												registrationDetails.agree &&
+												registrationDetails.firstname !==
+													"" &&
+												registrationDetails.firstname !==
+													" " &&
+												registrationDetails.lastname !==
+													"" &&
+												registrationDetails.lastname !==
+													" " &&
+												registrationDetails.email !==
+													"" &&
+												registrationDetails.email !==
+													" " &&
+												registrationDetails.company !==
+													"" &&
+												registrationDetails.company !==
+													" " &&
+												registrationDetails.jobtitle !==
+													"" &&
+												registrationDetails.jobtitle !==
+													" "
+													? `${classes.registerButtonActive}`
+													: `${classes.registerButton}`
+											}
+											color="primary"
+											variant="contained"
+											type="submit"
+											onClick={(event: any) => {
+												if (registrationDetails.agree) {
+													submitForm(event);
+												}
+											}}
+										>
+											<Typography
+												className={classes.registerText}
+												style={{
+													textTransform: "none",
 												}}
 											>
-												<Typography
-													className={
-														classes.registerText
-													}
-													style={{
-														textTransform: "none",
-													}}
-												>
-													<b>Register</b>
-												</Typography>
-											</Button>
-											{error ? (
-												<Typography
-													className={
-														classes.errorText
-													}
-													style={{
-														textTransform: "none",
-													}}
-												>
-													<b>
-														There was a problem
-														during registration !{" "}
-														<br />
-														Please try again.
-													</b>
-												</Typography>
-											) : (
-												<div />
-											)}
-										</div>
-									</FormControl>
-								</div>
+												<b>Register</b>
+											</Typography>
+										</Button>
+										{error ? (
+											<Typography
+												className={classes.errorText}
+												style={{
+													textTransform: "none",
+												}}
+											>
+												<b>
+													There was a problem during
+													registration ! <br />
+													Please try again.
+												</b>
+											</Typography>
+										) : (
+											<div />
+										)}
+									</div>
+								</FormControl>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<div
-						style={{
-							marginTop: "auto",
-							marginLeft: "auto",
-							marginRight: "auto",
-						}}
-						className={classes.sponsorSectionContainer}
-					>
-						<a id="sponsors" href="sponsors">
-							{" "}
-						</a>
-						<div className={classes.sponsorSection}>
-							<Sponsors />
-						</div>
-						<Divider className={classes.divider} />
+				<div
+					style={{
+						marginTop: "auto",
+						marginLeft: "auto",
+						marginRight: "auto",
+					}}
+					className={classes.sponsorSectionContainer}
+				>
+					<a id="sponsors" href="sponsors">
+						{" "}
+					</a>
+					<div className={classes.sponsorSection}>
+						<Sponsors />
 					</div>
+					<Divider className={classes.divider} />
+				</div>
 
-					<div style={{ marginTop: "auto" }}>
-						<Footer />
-					</div>
+				<div style={{ marginTop: "auto" }}>
+					<Footer />
 				</div>
 			</div>
 		</div>

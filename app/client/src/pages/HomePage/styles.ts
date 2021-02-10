@@ -11,11 +11,38 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	mainDiv: {
 		background: "#070E23",
-		paddingTop: theme.spacing(25),
+		height: "100vh",
+		marginTop: 50,
 		display: "flex",
 		flexDirection: "column",
+		[theme.breakpoints.down(1200)]: {
+			height: "fit-content",
+			paddingTop: theme.spacing(15),
+		},
+		[theme.breakpoints.down("sm")]: {
+			height: "fit-content",
+			paddingTop: 0,
+		},
 		[theme.breakpoints.down("xs")]: {
 			paddingTop: theme.spacing(3),
+		},
+		backgroundImage:
+			new Date("10 Feb 2021 08:00:00 -0800").getTime() <=
+				new Date().getTime() &&
+			new Date("10 Feb 2021 15:45:00 -0800").getTime() >=
+				new Date().getTime()
+				? "url(/icons/day-1-live-min.png)"
+				: new Date("10 Feb 2021 16:00:00 -0800").getTime() <=
+						new Date().getTime() &&
+				  new Date("11 Feb 2021 15:45:00 -0800").getTime() >=
+						new Date().getTime()
+				? "url(/icons/day-2-live-min.png)"
+				: "url(/icons/day-1-live-min.png)",
+		backgroundRepeat: "no-repeat",
+		backgroundSize: "cover",
+		backgroundPosition: "center",
+		[theme.breakpoints.down("sm")]: {
+			marginTop: 10,
 		},
 	},
 	headerDesc: {
@@ -29,6 +56,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("sm")]: {
 			fontSize: "20px",
+			paddingTop: 180,
 		},
 	},
 	slackIcon: {
@@ -41,12 +69,13 @@ export const useStyles = makeStyles((theme) => ({
 		fontWeight: 700,
 		width: 700,
 		lineHeight: "125px",
+		whiteSpace: "pre-line",
 		[theme.breakpoints.down("sm")]: {
 			width: "100%",
 			fontSize: "85px",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "70px",
+			fontSize: "54px",
 		},
 	},
 	heroButtonSection: {
@@ -81,7 +110,7 @@ export const useStyles = makeStyles((theme) => ({
 		fontSize: 72,
 		fontWeight: 700,
 		[theme.breakpoints.down("xs")]: {
-			fontSize: 45,
+			fontSize: 48,
 		},
 	},
 	happeningText: {
@@ -95,7 +124,7 @@ export const useStyles = makeStyles((theme) => ({
 		backgroundClip: "text",
 		background: "linear-gradient(to right, #B4F59E 0%, #71BCF6 55%)",
 		[theme.breakpoints.down("xs")]: {
-			fontSize: 45,
+			fontSize: 48,
 		},
 	},
 	carnivalDesc: {
@@ -161,7 +190,9 @@ export const useStyles = makeStyles((theme) => ({
 	speakersDiv: {
 		background: "#070E23",
 		paddingBottom: "12.5rem",
+		marginTop: "5rem",
 		[theme.breakpoints.down("xs")]: {
+			marginTop: "-6rem",
 			paddingBottom: 0,
 		},
 	},

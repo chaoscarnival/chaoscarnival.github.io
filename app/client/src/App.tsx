@@ -10,11 +10,11 @@ const HomePage = lazy(() => import("./pages/HomePage"));
 const SponsorshipPage = lazy(() => import("./pages/SponsorshipPage"));
 const ErrorPage = lazy(() => import("./pages/ErrorPage"));
 const TeamPage = lazy(() => import("./pages/TeamPage"));
-const RegistrationPage = lazy(() => import("./pages/RegistrationPage"));
 const AcknowledgementPage = lazy(() => import("./pages/AcknowledgementPage"));
 const AgendaPage = lazy(() => import("./pages/AgendaPage"));
 const BootcampPage = lazy(() => import("./pages/BootcampPage"));
 const SponsorBoothsPage = lazy(() => import("./pages/SponsorBoothsPage"));
+const COCPage = lazy(() => import("./pages/CodeOfConductPage"));
 
 const Routes: React.FC = () => {
 	const classes = useStyles();
@@ -23,11 +23,6 @@ const Routes: React.FC = () => {
 		<div className={classes.content}>
 			<Switch>
 				<Route exact={true} path="/" component={HomePage} />
-				<Route
-					exact={true}
-					path="/register"
-					component={RegistrationPage}
-				/>
 				<Route
 					exact={true}
 					path="/acknowledgement"
@@ -50,6 +45,7 @@ const Routes: React.FC = () => {
 					path="/sponsorbooths"
 					component={SponsorBoothsPage}
 				/>
+				<Route exact={true} path="/COC" component={COCPage} />
 				<Route exact={true} path="/404" component={ErrorPage} />
 				<Redirect to="/404" />
 			</Switch>

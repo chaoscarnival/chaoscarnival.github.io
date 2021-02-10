@@ -1,5 +1,4 @@
 import { Typography } from "@material-ui/core";
-import gtag from "ga-gtag";
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import Footer from "../../components/Footer";
@@ -10,7 +9,7 @@ import { SpeakersSection } from "../../components/SpeakersSection/index";
 import Sponsors from "../../components/Sponsors";
 import {
 	recordedCardData_Day1,
-	recordedCardData_Day2,
+	recordedCardData_Day2
 } from "../../data/recordedSessionCardData";
 import "../../scrollbar.css";
 import Bootcamps from "./Bootcamps";
@@ -19,20 +18,6 @@ import { useStyles } from "./styles";
 function HomePage() {
 	const classes = useStyles();
 
-	function gtag_report_conversion(url) {
-		var callback = function () {
-			if (typeof url != "undefined") {
-				window.location = url;
-			}
-		};
-		gtag("event", "conversion", {
-			send_to: "AW-453907965/x9FXCNje-e4BEP2ruNgB",
-			event_callback: callback,
-		});
-		gtag("config", "AW-453907965");
-		return false;
-	}
-	const twitterURL = `https://twitter.com/intent/tweet?text=We are live at ChaosCarnival.io &hashtags=ChaosCarnival2021`;
 	return (
 		<div>
 			<Helmet>
