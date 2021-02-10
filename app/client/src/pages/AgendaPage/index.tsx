@@ -749,7 +749,7 @@ const AgendaPage: React.FC = () => {
 								);
 							})}
 							{Closing(
-								"11 Feb 2021 15:45:00 -0800",
+								"11 Feb 2021 16:30:00 -0800",
 								"(10min)",
 								"Day 2 Closing Remarks"
 							)}
