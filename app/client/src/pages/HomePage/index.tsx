@@ -8,6 +8,7 @@ import JoinCarnival from "../../components/JoinCarnival";
 import { SpeakersSection } from "../../components/SpeakersSection/index";
 import Sponsors from "../../components/Sponsors";
 import { UpNext } from "../../components/UpNext";
+import { LiveSession } from "../../components/LiveSession";
 import { cardData } from "../../data/cardData";
 import "../../scrollbar.css";
 import Bootcamps from "./Bootcamps";
@@ -119,6 +120,9 @@ function HomePage() {
 							<div className={classes.embeddedTwitterDiv}>
 								<TwitterTimeline />
 							</div>
+						</div>
+						<div>
+							<LiveSession cardData={cardData} />
 						</div>
 						<div>
 							<UpNext cardData={cardData} />
