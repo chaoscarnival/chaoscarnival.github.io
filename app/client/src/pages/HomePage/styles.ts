@@ -56,6 +56,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("sm")]: {
 			fontSize: "20px",
+			paddingTop: 180,
 		},
 	},
 	slackIcon: {
@@ -68,12 +69,13 @@ export const useStyles = makeStyles((theme) => ({
 		fontWeight: 700,
 		width: 700,
 		lineHeight: "125px",
+		whiteSpace: "pre-line",
 		[theme.breakpoints.down("sm")]: {
 			width: "100%",
 			fontSize: "85px",
 		},
 		[theme.breakpoints.down("xs")]: {
-			fontSize: "70px",
+			fontSize: "52px",
 		},
 	},
 	heroButtonSection: {
@@ -136,11 +138,17 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	twitterDiv: {
 		display: "flex",
+		width: "85%",
+		marginLeft: "8%",
+		paddingTop: 80,
 		[theme.breakpoints.down("sm")]: {
 			flexDirection: "column",
+			width: "93.5%",
+			marginLeft: "5%",
 		},
 		[theme.breakpoints.down("xs")]: {
 			marginLeft: 25,
+			paddingTop: 50,
 		},
 	},
 	embeddedTwitterDiv: {
@@ -167,7 +175,9 @@ export const useStyles = makeStyles((theme) => ({
 	speakersDiv: {
 		background: "#070E23",
 		paddingBottom: "12.5rem",
+		marginTop: "5rem",
 		[theme.breakpoints.down("xs")]: {
+			marginTop: "-6rem",
 			paddingBottom: 0,
 		},
 	},

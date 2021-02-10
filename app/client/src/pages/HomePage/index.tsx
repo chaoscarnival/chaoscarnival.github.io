@@ -60,7 +60,7 @@ function HomePage() {
 								<Typography
 									className={classes.carnivalLiveText}
 								>
-									The Carnival is live
+									{`The Carnival \n is live`}
 								</Typography>
 								<div className={classes.heroButtonSection}>
 									<Button

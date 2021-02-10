@@ -2,20 +2,29 @@ import { makeStyles } from "@material-ui/core";
 
 export const useStyles = makeStyles((theme) => ({
 	rootContainer: {
-		width: "fit-content",
+		width: "70%",
 		marginLeft: "15%",
 		[theme.breakpoints.up("xl")]: {
-			marginLeft: "21%",
+			marginLeft: "28.5%",
+		},
+		[theme.breakpoints.up(4800)]: {
+			marginLeft: "37.5%",
+		},
+		[theme.breakpoints.down(2400)]: {
+			marginLeft: "18%",
+		},
+		[theme.breakpoints.down("lg")]: {
+			marginLeft: "16.5%",
 		},
 		[theme.breakpoints.down("md")]: {
-			marginLeft: 60,
+			marginLeft: 70,
+			width: "90%",
 		},
 		[theme.breakpoints.down("sm")]: {
-			width: "70%",
+			width: "87.5%",
 			margin: "auto",
 		},
 		[theme.breakpoints.down("xs")]: {
-			width: "100%",
 			marginLeft: 25,
 			marginTop: 40,
 		},
