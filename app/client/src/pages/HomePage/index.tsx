@@ -9,7 +9,7 @@ import { SpeakersSection } from "../../components/SpeakersSection/index";
 import Sponsors from "../../components/Sponsors";
 import {
 	recordedCardData_Day1,
-	recordedCardData_Day2
+	recordedCardData_Day2,
 } from "../../data/recordedSessionCardData";
 import "../../scrollbar.css";
 import Bootcamps from "./Bootcamps";
