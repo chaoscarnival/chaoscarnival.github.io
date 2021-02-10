@@ -1,27 +1,11 @@
 import { Button, Divider, Hidden, Typography } from "@material-ui/core";
-import gtag from "ga-gtag";
 import React from "react";
 import calendarTime from "../../utils/calenderTime";
 import { getLocale } from "../../utils/getLocale";
 import { useStyles } from "./styles";
-import Timer from "./timer";
 
 const JoinCarnival = () => {
 	const classes = useStyles();
-
-	function gtag_report_conversion(url) {
-		var callback = function () {
-			if (typeof url != "undefined") {
-				window.location = url;
-			}
-		};
-		gtag("event", "conversion", {
-			send_to: "AW-453907965/x9FXCNje-e4BEP2ruNgB",
-			event_callback: callback,
-		});
-		gtag("config", "AW-453907965");
-		return false;
-	}
 
 	const { date: day1StartDate, time: day1StartTime, timeZone } = getLocale(
 		"10 Feb 2021 08:00:00 -0800"
@@ -69,11 +53,8 @@ const JoinCarnival = () => {
 							variant="contained"
 							style={{ marginRight: "1.5rem" }}
 							onClick={() => {
-								gtag_report_conversion(
-									"https://chaoscarnival.io/register"
-								);
 								window.location.href =
-									"https://chaoscarnival.io/register";
+									"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1";
 							}}
 						>
 							<Typography
@@ -83,7 +64,7 @@ const JoinCarnival = () => {
 								<b>Register&nbsp;Now</b>
 							</Typography>
 						</Button>
-						<Timer />
+						{/* <Timer /> */}
 					</div>
 				</div>
 				<hr className={classes.hrLine}></hr>

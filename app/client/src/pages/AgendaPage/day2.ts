@@ -48,7 +48,7 @@ export default [
 			id: 16,
 		},
 		speaker2: {
-			sessionName: `Stand up for Chaos!`,
+			sessionName: `Observability in Chaos`,
 			speaker: [
 				{
 					name: "Aravind Putrevu",
