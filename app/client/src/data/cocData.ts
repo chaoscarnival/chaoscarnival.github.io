@@ -27,7 +27,8 @@ const cocData: COCInterface[] = [
 					"If you have not already, please make sure you are registered for the event. Link to see the registration options and secure your place.",
 				links: [
 					{
-						link: "https://chaoscarnival.io/register",
+						link:
+							"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1",
 						linkText: "Registration link",
 					},
 				],

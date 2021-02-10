@@ -10,7 +10,6 @@ const HomePage = lazy(() => import("./pages/HomePage"));
 const SponsorshipPage = lazy(() => import("./pages/SponsorshipPage"));
 const ErrorPage = lazy(() => import("./pages/ErrorPage"));
 const TeamPage = lazy(() => import("./pages/TeamPage"));
-const RegistrationPage = lazy(() => import("./pages/RegistrationPage"));
 const AcknowledgementPage = lazy(() => import("./pages/AcknowledgementPage"));
 const AgendaPage = lazy(() => import("./pages/AgendaPage"));
 const BootcampPage = lazy(() => import("./pages/BootcampPage"));
@@ -24,11 +23,6 @@ const Routes: React.FC = () => {
 		<div className={classes.content}>
 			<Switch>
 				<Route exact={true} path="/" component={HomePage} />
-				<Route
-					exact={true}
-					path="/register"
-					component={RegistrationPage}
-				/>
 				<Route
 					exact={true}
 					path="/acknowledgement"
