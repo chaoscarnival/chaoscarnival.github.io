@@ -58,7 +58,9 @@ const AgendaPage: React.FC = () => {
 						/>
 						<div style={{ marginTop: "0.5rem" }}>
 							<Typography id="subtitle">{s.name}</Typography>
-							<Typography id="subtitle">{s.role}</Typography>
+							<Typography style={{ maxWidth: 250 }} id="subtitle">
+								{s.role}
+							</Typography>
 						</div>
 						{d.speaker.length > 1 ? (
 							<div className={classes.speakerValue}>
@@ -76,7 +78,7 @@ const AgendaPage: React.FC = () => {
 						<img
 							style={{
 								marginTop: "0.5rem",
-								maxHeight: "2rem",
+								maxHeight: "2.5rem",
 								maxWidth: "10rem",
 								objectFit: "contain",
 							}}
@@ -671,61 +673,74 @@ const AgendaPage: React.FC = () => {
 																)}
 															</>
 														</div>
-
-														<div
-															className={
-																classes.speaker2details
-															}
-															onClick={() => {
-																setModalStatus({
-																	modalState: true,
-																	speakerData:
-																		d.speaker2,
-
-																	sessionData: d,
-																});
-															}}
-														>
-															<Typography
-																style={{
-																	fontWeight:
-																		"bold",
-																	fontSize: 18,
-																	paddingTop: 10,
-																}}
-															>
-																{
-																	d.speaker2
-																		?.sessionName
-																}
-															</Typography>
-
-															{/* Tags */}
+														{d.speaker2?.id ===
+														31 ? (
 															<div
 																className={
-																	classes.tagsField
+																	classes.speaker2details
 																}
+															></div>
+														) : (
+															<div
+																className={
+																	classes.speaker2details
+																}
+																onClick={() => {
+																	setModalStatus(
+																		{
+																			modalState: true,
+																			speakerData:
+																				d.speaker2,
+
+																			sessionData: d,
+																		}
+																	);
+																}}
 															>
-																<Tags
-																	tags={
+																<Typography
+																	style={{
+																		fontWeight:
+																			"bold",
+																		fontSize: 18,
+																		paddingTop: 10,
+																	}}
+																>
+																	{
 																		d
 																			.speaker2
-																			?.tags
+																			?.sessionName
 																	}
-																/>
-															</div>
+																</Typography>
 
-															<>
-																{Speaker(
-																	d.speaker2
-																		?.speaker[0],
-																	d.speaker2
-																		?.speaker[0]
-																		.companyLogo,
-																	d.speaker2
-																)}
-															</>
-														</div>
+																{/* Tags */}
+																<div
+																	className={
+																		classes.tagsField
+																	}
+																>
+																	<Tags
+																		tags={
+																			d
+																				.speaker2
+																				?.tags
+																		}
+																	/>
+																</div>
+
+																<>
+																	{Speaker(
+																		d
+																			.speaker2
+																			?.speaker[0],
+																		d
+																			.speaker2
+																			?.speaker[0]
+																			.companyLogo,
+																		d.speaker2
+																	)}
+																</>
+															</div>
+														)}
 													</div>
 												)}
 											</div>
