@@ -305,4 +305,14 @@ export const cardData: CardData[] = [
 		speakerImage: "https://i.ibb.co/5L1bPw9/Carl-Cerner.png",
 		companyLogo: "https://i.ibb.co/jr4hN1m/Cerner.png",
 	},
+	{
+		startDateTime: "11 Feb 2021 15:45:00 -0800",
+		endDateTime: "11 Feb 2021 16:30:00 -0800",
+		thumbnail: "./posters/Sanil-Kumar-min.png",
+		sessionName: `Resilience and Reliability for SODA with Chaos`,
+		name: "Sanil Kumar D",
+		role: "TOC, AWG Lead & Chief Architect, Huawei",
+		speakerImage: "https://i.ibb.co/2sQ2bQn/Sanil-Soda.png",
+		companyLogo: "https://i.ibb.co/3f4ZSV2/SODA-logo-outline-c.png",
+	},
 ];
