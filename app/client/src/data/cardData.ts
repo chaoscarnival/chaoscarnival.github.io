@@ -159,7 +159,7 @@ export const cardData: CardData[] = [
 		startDateTime: "11 Feb 2021 08:00:00 -0800",
 		endDateTime: "11 Feb 2021 09:00:00 -0800",
 		sessionName: `Day 2 Keynote`,
-		thumbnail: "./posters/Uma-Mukkara.png",
+		thumbnail: "./posters/Uma-Mukkara-min.png",
 		name: "Uma Mukkara",
 		role: "Maintainer of LitmusChaos project, Co-founder & COO at MayaData",
 		speakerImage: "https://i.ibb.co/GsXnxnC/Group-3278.png",
