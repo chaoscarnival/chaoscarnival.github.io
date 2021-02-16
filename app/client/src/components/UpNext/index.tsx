@@ -12,6 +12,7 @@ export interface CardData {
 	startDateTime: string;
 	endDateTime: string;
 	thumbnail?: string;
+	youTubeUrl?: string;
 }
 
 interface UpNextProps {

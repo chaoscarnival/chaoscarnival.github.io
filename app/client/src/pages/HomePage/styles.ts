@@ -13,28 +13,25 @@ export const useStyles = makeStyles((theme) => ({
 		height: "100vh",
 		display: "flex",
 		flexDirection: "column",
-		width: "77.5%",
 		margin: "0 auto",
 		marginTop: 50,
 		backgroundRepeat: "no-repeat",
 		backgroundSize: "cover",
 		backgroundPosition: "center",
 		backgroundImage: "url(/icons/hero-background-min.png)",
-		[theme.breakpoints.up("xl")]: {
-			marginTop: "20vh",
-		},
 		[theme.breakpoints.down(1200)]: {
 			height: "fit-content",
 			paddingTop: theme.spacing(15),
 		},
 		[theme.breakpoints.down("sm")]: {
-			backgroundSize: "150%",
 			height: "fit-content",
 			paddingTop: 0,
-			width: "100%",
 		},
 		[theme.breakpoints.down("xs")]: {
 			paddingTop: theme.spacing(3),
+		},
+		[theme.breakpoints.down("sm")]: {
+			marginTop: 10,
 		},
 	},
 	sessionsDiv: {
@@ -48,9 +45,9 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	heroSection: {
-		textAlign: "left",
+		textAlign: "center",
 		margin: "0 auto",
-		paddingTop: "10rem",
+		paddingTop: "15rem",
 		[theme.breakpoints.down("sm")]: {
 			paddingTop: 0,
 			paddingBottom: "3.5rem",
@@ -129,6 +126,7 @@ export const useStyles = makeStyles((theme) => ({
 		backgroundColor: "#FFFFFF",
 		textTransform: "none",
 		fontSize: 16,
+		marginTop: 40,
 	},
 	happeningMainText: {
 		fontSize: 56,
@@ -140,7 +138,6 @@ export const useStyles = makeStyles((theme) => ({
 	happeningText: {
 		fontSize: 56,
 		fontWeight: 700,
-		width: "fit-content",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
 		color: "transparent",
@@ -161,7 +158,6 @@ export const useStyles = makeStyles((theme) => ({
 	carnivalDesc: {
 		display: "flex",
 		flexWrap: "wrap",
-		width: 500,
 		justifyContent: "space-between",
 		fontSize: 20,
 		color: " #8193B2",
@@ -174,6 +170,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("xs")]: {
 			width: "90%",
+			margin: "auto",
 			"& p:first-child": {
 				fontSize: "2.5rem",
 				fontWeight: 300,
@@ -197,7 +194,7 @@ export const useStyles = makeStyles((theme) => ({
 			flexDirection: "column",
 		},
 		[theme.breakpoints.down("xs")]: {
-			marginLeft: 25,
+			marginLeft: 0,
 		},
 	},
 	embeddedTwitterDiv: {

@@ -11,6 +11,7 @@ export const cardData: CardData[] = [
 		thumbnail: "./posters/Adrian-Cockroft-min.png",
 		startDateTime: "10 Feb 2021 08:00:00 -0800",
 		endDateTime: "10 Feb 2021 09:00:00 -0800",
+		youTubeUrl: "https://www.youtube.com/embed/O2UzvvtHkL4",
 	},
 	{
 		sessionName: "A powerful framework for network chaos experiments",
@@ -22,6 +23,7 @@ export const cardData: CardData[] = [
 		thumbnail: "./posters/Andreas-Krivas-min.png",
 		startDateTime: "10 Feb 2021 09:00:00 -0800",
 		endDateTime: "10 Feb 2021 09:45:00 -0800",
+		youTubeUrl: "https://www.youtube.com/embed/whdDP41Omd8",
 	},
 	{
 		sessionName:
@@ -33,6 +35,7 @@ export const cardData: CardData[] = [
 		thumbnail: "./posters/Renaldi-Gondosubroto-min.png",
 		startDateTime: "10 Feb 2021 09:00:00 -0800",
 		endDateTime: "10 Feb 2021 09:45:00 -0800",
+		youTubeUrl: "https://www.youtube.com/embed/aAfJyyGtOeQ",
 	},
 	{
 		sessionName: "Create Chaos in Databases",
@@ -43,6 +46,7 @@ export const cardData: CardData[] = [
 		thumbnail: "./posters/Vadim-Tkachenko-min.png",
 		startDateTime: "10 Feb 2021 09:45:00 -0800",
 		endDateTime: "10 Feb 2021 10:30:00 -0800",
+		youTubeUrl: "https://www.youtube.com/embed/fSgtUflRqCU",
 	},
 	{
 		sessionName: "Chaos Engineering in Telco Cloudnative Infra",
@@ -53,6 +57,7 @@ export const cardData: CardData[] = [
 		thumbnail: "./posters/Vaibhav-Chopra-min.png",
 		startDateTime: "10 Feb 2021 09:45:00 -0800",
 		endDateTime: "10 Feb 2021 10:30:00 -0800",
+		youTubeUrl: "https://www.youtube.com/embed/UOhjFbCrncw",
 	},
 	{
 		sessionName:
@@ -64,6 +69,7 @@ export const cardData: CardData[] = [
 		thumbnail: "./posters/Gunnar-Grosch-min.png",
 		startDateTime: "10 Feb 2021 10:45:00 -0800",
 		endDateTime: "10 Feb 2021 11:30:00 -0800",
+		youTubeUrl: "https://www.youtube.com/embed/mZo4otVS6ZA",
 	},
 	{
 		sessionName: "Chaos testing Red Hat Openshift Virtualization",
@@ -74,6 +80,7 @@ export const cardData: CardData[] = [
 		thumbnail: "./posters/Jordi-Gil-min.png",
 		startDateTime: "10 Feb 2021 10:45:00 -0800",
 		endDateTime: "10 Feb 2021 11:30:00 -0800",
+		youTubeUrl: "https://www.youtube.com/embed/VITGHJ47gx8",
 	},
 	{
 		sessionName: "Event-Driven Chaos Injection",
@@ -84,6 +91,7 @@ export const cardData: CardData[] = [
 		thumbnail: "./posters/Raj-Babu-Das-min.png",
 		startDateTime: "10 Feb 2021 11:30:00 -0800",
 		endDateTime: "10 Feb 2021 12:15:00 -0800",
+		youTubeUrl: "https://www.youtube.com/embed/7cF3rwcZMcA",
 	},
 	{
 		name: "Sumit Nagal",
@@ -94,6 +102,7 @@ export const cardData: CardData[] = [
 		startDateTime: "10 Feb 2021 11:30:00 -0800",
 		thumbnail: "./posters/Sumit-Nagal-min.png",
 		endDateTime: "10 Feb 2021 12:15:00 -0800",
+		youTubeUrl: "https://www.youtube.com/embed/I6BOzBQTJ0w",
 	},
 	{
 		startDateTime: "10 Feb 2021 13:45:00 -0800",
@@ -104,6 +113,7 @@ export const cardData: CardData[] = [
 		thumbnail: "./posters/Chinmay-Gaikwad-min.png",
 		speakerImage: "https://i.ibb.co/bFsjYBG/Chinmay-Epsagon.png",
 		companyLogo: "https://i.ibb.co/NZQczQ1/Group-3510.png",
+		youTubeUrl: "https://www.youtube.com/embed/rcXdqGTrgos",
 	},
 	{
 		startDateTime: "10 Feb 2021 13:45:00 -0800",
@@ -114,6 +124,7 @@ export const cardData: CardData[] = [
 		thumbnail: "./posters/Maik-Figura-min.png",
 		speakerImage: "https://i.ibb.co/cwFNVDF/Maik-Codecentric.png",
 		companyLogo: "https://i.ibb.co/WkmGnBH/codecentric.png",
+		youTubeUrl: "https://www.youtube.com/embed/LnVXQzpaLYY",
 	},
 	{
 		startDateTime: "10 Feb 2021 14:30:00 -0800",
@@ -124,6 +135,7 @@ export const cardData: CardData[] = [
 		role: "DevOps Advocate",
 		speakerImage: "https://i.ibb.co/LkDH2Y8/Julie-Pagerduty.png",
 		companyLogo: "https://i.ibb.co/JrbQH5v/Pager-Duty.png",
+		youTubeUrl: "https://www.youtube.com/embed/KkNWpIDaaOI",
 	},
 	{
 		sessionName: `Introduction to OWASP`,
@@ -133,6 +145,7 @@ export const cardData: CardData[] = [
 		name: "Gunnard Engebreth",
 		role: "",
 		speakerImage: "https://i.ibb.co/pyN9mhx/Gunnard-Power-Code.png",
+		youTubeUrl: "https://www.youtube.com/embed/jI9C5o0haIY",
 		companyLogo: "",
 	},
 	{
@@ -144,6 +157,7 @@ export const cardData: CardData[] = [
 		role: "Director of Advocacy",
 		speakerImage: "https://i.ibb.co/fGP0fPZ/Jason-Gremlin.png",
 		companyLogo: "https://i.ibb.co/DK17SWq/gremlin.png",
+		youTubeUrl: "https://www.youtube.com/embed/tgVXdaXFHp8",
 	},
 	{
 		startDateTime: "10 Feb 2021 15:15:00 -0800",
@@ -154,6 +168,7 @@ export const cardData: CardData[] = [
 		role: "DevOps Consultant",
 		speakerImage: "https://i.ibb.co/s3YB7Ly/Michael-IAG.png",
 		companyLogo: "https://i.ibb.co/BnsWkPN/IAG.png",
+		youTubeUrl: "https://www.youtube.com/embed/7yBFgqUo01E",
 	},
 	{
 		startDateTime: "11 Feb 2021 08:00:00 -0800",
@@ -164,6 +179,7 @@ export const cardData: CardData[] = [
 		role: "Maintainer of LitmusChaos project, Co-founder & COO at MayaData",
 		speakerImage: "https://i.ibb.co/GsXnxnC/Group-3278.png",
 		companyLogo: "https://i.ibb.co/X35X6hP/Mayadata.png",
+		youTubeUrl: "https://www.youtube.com/embed/ZGGQ8LAWLuQ",
 	},
 	{
 		startDateTime: "11 Feb 2021 09:00:00 -0800",
@@ -174,6 +190,7 @@ export const cardData: CardData[] = [
 		role: "AIOps, Technology Assets & Architecture",
 		speakerImage: "https://i.ibb.co/dJBPhDH/Robert-IBM.png",
 		companyLogo: "https://i.ibb.co/Ss17hJx/IBM.png",
+		youTubeUrl: "https://www.youtube.com/embed/sEwsZZcvufg",
 	},
 	{
 		startDateTime: "11 Feb 2021 09:00:00 -0800",
@@ -184,6 +201,7 @@ export const cardData: CardData[] = [
 		role: "Developer Advocate",
 		speakerImage: "https://i.ibb.co/kxCV8vd/Aravind-Intuit.png",
 		companyLogo: "https://i.ibb.co/hg13RFp/elastic.png",
+		youTubeUrl: "https://www.youtube.com/embed/W_L38dIL1U4",
 	},
 	{
 		startDateTime: "11 Feb 2021 09:45:00 -0800",
@@ -194,6 +212,7 @@ export const cardData: CardData[] = [
 		role: "Senior Chaos Engineer",
 		speakerImage: "https://i.ibb.co/mTD915T/Aravind-Intuit-1.png",
 		companyLogo: "https://i.ibb.co/DK17SWq/gremlin.png",
+		youTubeUrl: "https://www.youtube.com/embed/9eXp7VOZzr0",
 	},
 	{
 		startDateTime: "11 Feb 2021 09:45:00 -0800",
@@ -204,6 +223,7 @@ export const cardData: CardData[] = [
 		role: "Senior Software Engineer",
 		speakerImage: "https://i.ibb.co/vcKY5Bq/Delphine-Wipro.png",
 		companyLogo: "https://i.ibb.co/gMJkYDw/Wipro.png",
+		youTubeUrl: "https://www.youtube.com/embed/Kq_HIsEA1JQ",
 	},
 	{
 		startDateTime: "11 Feb 2021 10:45:00 -0800",
@@ -214,6 +234,7 @@ export const cardData: CardData[] = [
 		role: "Global Head, Amazon Video Availabilty",
 		speakerImage: "https://i.ibb.co/2FN5GZF/Olga-Amazon.png",
 		companyLogo: "https://i.ibb.co/FwRttVk/Amazon.png",
+		youTubeUrl: "https://www.youtube.com/embed/OZsrvd709cE",
 	},
 	{
 		sessionName: `It won't make a noise when it breaks`,
@@ -224,6 +245,7 @@ export const cardData: CardData[] = [
 		role: "Co-Founder & CTO",
 		speakerImage: "https://i.ibb.co/d0trDJZ/Piyush-Last9.png",
 		companyLogo: "https://i.ibb.co/hMbZ82Q/Last9.png",
+		youTubeUrl: "https://www.youtube.com/embed/3Upnu1ENIjo",
 	},
 	{
 		startDateTime: "11 Feb 2021 11:30:00 -0800",
@@ -234,6 +256,7 @@ export const cardData: CardData[] = [
 		role: "Developer Advocate",
 		speakerImage: "https://i.ibb.co/ss7h8m4/Group-3187.png",
 		companyLogo: "https://i.ibb.co/xm8G0VP/Honeycomb.png",
+		youTubeUrl: "https://www.youtube.com/embed/8trr8gwxucw",
 	},
 	{
 		startDateTime: "11 Feb 2021 11:30:00 -0800",
@@ -244,6 +267,7 @@ export const cardData: CardData[] = [
 		role: "Technology Strategist",
 		speakerImage: "https://i.ibb.co/yR1D8jH/Dynatrace-Speaker.png",
 		companyLogo: "https://i.ibb.co/mG1WDb1/Dynatrace.png",
+		youTubeUrl: "https://www.youtube.com/embed/j7THMrIGKO4",
 	},
 	{
 		startDateTime: "11 Feb 2021 13:45:00 -0800",
@@ -254,6 +278,7 @@ export const cardData: CardData[] = [
 		role: "Senior Site Reliability Engineer",
 		speakerImage: "https://i.ibb.co/R29hpSs/Yury-ADL.png",
 		companyLogo: "https://i.ibb.co/C9q0pY8/ADLLogo.png",
+		youTubeUrl: "https://www.youtube.com/embed/2TR3REVgx4M",
 	},
 	{
 		startDateTime: "11 Feb 2021 13:45:00 -0800",
@@ -264,6 +289,7 @@ export const cardData: CardData[] = [
 		role: "DevOps Engineer",
 		speakerImage: "https://i.ibb.co/KmxQ1nS/Eugenio-Source-Sense.png",
 		companyLogo: "https://i.ibb.co/zNqkz5n/source-Sense-Logo.png",
+		youTubeUrl: "https://www.youtube.com/embed/10tHPl67A9I",
 	},
 	{
 		startDateTime: "11 Feb 2021 14:30:00 -0800",
@@ -274,6 +300,7 @@ export const cardData: CardData[] = [
 		role: "Founder & CEO",
 		speakerImage: "https://i.ibb.co/C6LdPjR/Ramiro-Okteto.png",
 		companyLogo: "https://i.ibb.co/XzsKTY3/Okteto.png",
+		youTubeUrl: "https://www.youtube.com/embed/3No4-1H6slc",
 	},
 	{
 		startDateTime: "11 Feb 2021 14:30:00 -0800",
@@ -284,6 +311,7 @@ export const cardData: CardData[] = [
 		role: "Cloud Security Engineer",
 		speakerImage: "https://i.ibb.co/48RnQ75/Kennedy-Mattermost.png",
 		companyLogo: "https://i.ibb.co/QMhVBNw/Mattermost-Logo-Blue-1.png",
+		youTubeUrl: "https://www.youtube.com/embed/pAmLXqQppDo",
 	},
 	{
 		startDateTime: "11 Feb 2021 15:15:00 -0800",
@@ -294,6 +322,7 @@ export const cardData: CardData[] = [
 		role: "Senior VP of R&D",
 		speakerImage: "https://i.ibb.co/wrz24c2/Amir-Perimeter-X.png",
 		companyLogo: "https://i.ibb.co/NWkPT2R/perimeterx-Logo.png",
+		youTubeUrl: "https://www.youtube.com/embed/_6EXY4Lr2IY",
 	},
 	{
 		startDateTime: "11 Feb 2021 15:15:00 -0800",
@@ -304,6 +333,7 @@ export const cardData: CardData[] = [
 		role: "Principal Engineer",
 		speakerImage: "https://i.ibb.co/5L1bPw9/Carl-Cerner.png",
 		companyLogo: "https://i.ibb.co/jr4hN1m/Cerner.png",
+		youTubeUrl: "https://www.youtube.com/embed/LiGVI0UzaNQ",
 	},
 	{
 		startDateTime: "11 Feb 2021 15:45:00 -0800",
@@ -314,5 +344,6 @@ export const cardData: CardData[] = [
 		role: "TOC, AWG Lead & Chief Architect, Huawei",
 		speakerImage: "https://i.ibb.co/2sQ2bQn/Sanil-Soda.png",
 		companyLogo: "https://i.ibb.co/3f4ZSV2/SODA-logo-outline-c.png",
+		youTubeUrl: "https://www.youtube.com/embed/KQbSHTRutBw",
 	},
 ];

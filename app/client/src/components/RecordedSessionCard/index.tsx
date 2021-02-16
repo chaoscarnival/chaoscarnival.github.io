@@ -1,5 +1,6 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
+import { CardData } from "../UpNext";
 import { useStyles } from "./styles";
 
 export interface RecordedCardData {
@@ -11,21 +12,20 @@ export interface RecordedCardData {
 }
 
 interface RecordedSessionCardProps {
-	recordedCardData: RecordedCardData[];
-	day1?: boolean;
+	recordedCardData: CardData[];
+	day?: number;
 }
 
 const RecordedSessionCard: React.FC<RecordedSessionCardProps> = ({
 	recordedCardData,
-	day1,
+	day,
 }) => {
 	const classes = useStyles();
-	const day = day1 ? "1" : "2";
 	return (
 		<div className={classes.rootContainer}>
 			<Typography
 				className={`${classes.RecordedSessionCard} ${
-					day1 ? classes.headDay1 : classes.headDay2
+					day === 1 ? classes.headDay1 : classes.headDay2
 				}`}
 			>
 				Day {day} recorded sessions
@@ -36,34 +36,32 @@ const RecordedSessionCard: React.FC<RecordedSessionCardProps> = ({
 			</Typography>
 			<div className={classes.cardSection}>
 				{recordedCardData.map(
-					({ src, desc, name, designation, logo }) => {
+					({ youTubeUrl, sessionName, name, role, companyLogo }) => {
 						return (
 							<div className={classes.speakerCard}>
 								<iframe
-									src={src}
-									style={{
-										border: "none",
-										width: "100%",
-										borderRadius: "0.75rem",
-										maxWidth: "20rem",
-									}}
+									src={youTubeUrl}
+									frameBorder="0"
+									allow="accelerometer"
+									allowFullScreen
 									title="Recording link"
+									className={classes.iframeDiv}
 								/>
-								<Typography style={{ width: "100%" }}>
-									{desc}
+								<Typography
+									style={{ width: "100%", marginTop: 10 }}
+								>
+									{sessionName}
 								</Typography>
 								<div className={classes.speakerSection}>
 									<div className={classes.speakerDetails}>
 										<div id="info">
 											<Typography>{name}</Typography>
-											<Typography>
-												{designation}
-											</Typography>
+											<Typography>{role}</Typography>
 										</div>
 									</div>
 									<img
 										id="Logo"
-										src={logo}
+										src={companyLogo}
 										alt="company logo"
 										className={classes.companyLogo}
 									/>
