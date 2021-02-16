@@ -10,11 +10,15 @@ export const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 	},
 	mainDiv: {
-		background: "#070E23",
 		height: "100vh",
-		marginTop: 50,
 		display: "flex",
 		flexDirection: "column",
+		margin: "0 auto",
+		marginTop: 50,
+		backgroundRepeat: "no-repeat",
+		backgroundSize: "cover",
+		backgroundPosition: "center",
+		backgroundImage: "url(/icons/hero-background-min.png)",
 		[theme.breakpoints.down(1200)]: {
 			height: "fit-content",
 			paddingTop: theme.spacing(15),
@@ -26,24 +30,41 @@ export const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("xs")]: {
 			paddingTop: theme.spacing(3),
 		},
-		backgroundImage:
-			new Date("10 Feb 2021 08:00:00 -0800").getTime() <=
-				new Date().getTime() &&
-			new Date("10 Feb 2021 15:45:00 -0800").getTime() >=
-				new Date().getTime()
-				? "url(/icons/day-1-live-min.png)"
-				: new Date("10 Feb 2021 16:00:00 -0800").getTime() <=
-						new Date().getTime() &&
-				  new Date("11 Feb 2021 15:45:00 -0800").getTime() >=
-						new Date().getTime()
-				? "url(/icons/day-2-live-min.png)"
-				: "url(/icons/day-1-live-min.png)",
-		backgroundRepeat: "no-repeat",
-		backgroundSize: "cover",
-		backgroundPosition: "center",
 		[theme.breakpoints.down("sm")]: {
 			marginTop: 10,
 		},
+	},
+	sessionsDiv: {
+		height: "fit-content",
+		display: "flex",
+		flexDirection: "column",
+		width: "77.5%",
+		margin: "0 auto",
+		[theme.breakpoints.down("sm")]: {
+			width: "100%",
+		},
+	},
+	heroSection: {
+		textAlign: "center",
+		margin: "0 auto",
+		paddingTop: "15rem",
+		[theme.breakpoints.down("sm")]: {
+			paddingTop: 0,
+			paddingBottom: "3.5rem",
+		},
+	},
+	sessions1: {
+		paddingTop: "2rem",
+		margin: "0 auto",
+		paddingLeft: "2rem",
+		[theme.breakpoints.down("sm")]: {
+			paddingTop: "3.5rem",
+		},
+	},
+	sessions2: {
+		margin: "0 auto",
+		paddingLeft: "2rem",
+		paddingTop: "3.5rem",
 	},
 	headerDesc: {
 		fontSize: "32.5px",
@@ -105,54 +126,81 @@ export const useStyles = makeStyles((theme) => ({
 		backgroundColor: "#FFFFFF",
 		textTransform: "none",
 		fontSize: 16,
+		marginTop: 40,
 	},
 	happeningMainText: {
-		fontSize: 72,
+		fontSize: 56,
 		fontWeight: 700,
 		[theme.breakpoints.down("xs")]: {
-			fontSize: 48,
+			fontSize: 32,
 		},
 	},
 	happeningText: {
-		fontSize: 72,
+		fontSize: 56,
 		fontWeight: 700,
-		marginTop: -20,
-		width: "fit-content",
 		WebkitBackgroundClip: "text",
 		WebkitTextFillColor: "transparent",
 		color: "transparent",
 		backgroundClip: "text",
-		background: "linear-gradient(to right, #B4F59E 0%, #71BCF6 55%)",
+		background:
+			"linear-gradient(89.08deg, #3BF0E4 4.54%, #9867F0 25.3%, #C2A0FD 41.12%, #EA5DAD 57.44%, #FF7571 75.24%, #FFE580 99.46%)",
 		[theme.breakpoints.down("xs")]: {
-			fontSize: 48,
+			fontSize: 32,
+		},
+	},
+	subHeadingText: {
+		whiteSpace: "pre-line",
+		fontSize: "1.25rem",
+		[theme.breakpoints.down("sm")]: {
+			fontSize: "1rem",
 		},
 	},
 	carnivalDesc: {
-		width: 500,
+		display: "flex",
+		flexWrap: "wrap",
+		justifyContent: "space-between",
 		fontSize: 20,
 		color: " #8193B2",
 		marginTop: 20,
+		"& p:first-child": {
+			fontSize: "3.5rem",
+			fontWeight: 500,
+			textAlign: "center",
+			color: theme.palette.common.white,
+		},
 		[theme.breakpoints.down("xs")]: {
-			width: "100%",
+			width: "90%",
+			margin: "auto",
+			"& p:first-child": {
+				fontSize: "2.5rem",
+				fontWeight: 300,
+			},
+		},
+	},
+	videoBox: {
+		minWidth: "27.5vw",
+		minHeight: "30vh",
+		borderRadius: "1rem",
+		[theme.breakpoints.down("sm")]: {
+			marginTop: -40,
+			minWidth: "80vw",
+			minHeight: "25vh",
 		},
 	},
 	twitterDiv: {
 		display: "flex",
-		width: "85%",
-		marginLeft: "8%",
-		paddingTop: 80,
 		[theme.breakpoints.down("sm")]: {
+			marginTop: 150,
 			flexDirection: "column",
-			width: "93.5%",
-			marginLeft: "5%",
 		},
 		[theme.breakpoints.down("xs")]: {
-			marginLeft: 25,
-			paddingTop: 50,
+			marginLeft: 0,
 		},
 	},
 	embeddedTwitterDiv: {
 		marginRight: "auto",
+		display: "flex",
+		alignItems: "center",
 		[theme.breakpoints.down("sm")]: {
 			marginTop: 30,
 			margin: "auto",
@@ -174,7 +222,7 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	speakersDiv: {
 		background: "#070E23",
-		paddingBottom: "12.5rem",
+		paddingBottom: "2.5rem",
 		marginTop: "5rem",
 		[theme.breakpoints.down("xs")]: {
 			marginTop: "-6rem",
