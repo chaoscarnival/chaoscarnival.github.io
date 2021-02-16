@@ -1,6 +1,5 @@
 import {
 	AppBar,
-	Button,
 	Divider,
 	Fade,
 	Hidden,
@@ -275,6 +274,7 @@ const MainHeader: React.FC = () => {
 										className={classes.menuItem}
 										button={false}
 										key="sponsors"
+										style={{ paddingBottom: "2.5rem" }}
 									>
 										<Typography
 											className={classes.contributeBtn}
@@ -292,52 +292,6 @@ const MainHeader: React.FC = () => {
 												Sponsor Booths
 											</Link>
 										</Typography>
-									</MenuItem>
-									<MenuItem
-										className={classes.menuItem}
-										button={false}
-										key="timer"
-										style={{
-											justifyContent: "center",
-											color: "#000",
-											margin: 0,
-										}}
-									>
-										<div style={{ margin: "auto" }}>
-											<Button
-												className={
-													classes.registerButton
-												}
-												color="primary"
-												variant="contained"
-												style={{
-													margin: "auto",
-													padding: "2rem",
-													marginTop: "2rem",
-													width: "100%",
-												}}
-												onClick={() => {
-													window.open(
-														"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1",
-														"_blank"
-													);
-												}}
-											>
-												<Typography
-													className={
-														classes.registerText
-													}
-													style={{
-														textTransform: "none",
-														fontSize: "1.15rem",
-													}}
-												>
-													<b>
-														Join&nbsp;us&nbsp;now&nbsp;
-													</b>
-												</Typography>
-											</Button>
-										</div>
 									</MenuItem>
 								</Menu>
 							</div>
