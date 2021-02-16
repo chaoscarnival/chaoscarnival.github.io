@@ -9,10 +9,14 @@ export const useStyles = makeStyles((theme) => ({
 			marginLeft: 40,
 		},
 		[theme.breakpoints.down("sm")]: {
-			width: "100%",
+			width: "25rem",
 			margin: "auto",
 		},
+		[theme.breakpoints.down("xs")]: {
+			width: "100%",
+		},
 		[theme.breakpoints.down(300)]: {
+			width: "100%",
 			marginTop: 600,
 		},
 	},
@@ -70,10 +74,20 @@ export const useStyles = makeStyles((theme) => ({
 		},
 	},
 	companyLogo: {
+		marginTop: "0.5rem",
+		maxHeight: "2rem",
+		maxWidth: "10rem",
+		objectFit: "contain",
+	},
+	iframeDiv: {
+		border: "none",
+		borderRadius: "0.75rem",
+		width: "23rem",
+		height: `calc(23rem / (16 / 9))`,
 		[theme.breakpoints.down("sm")]: {
-			height: "35%",
-			width: "35%",
-			marginTop: theme.spacing(-5),
+			width: "100%",
+			borderRadius: "0.75rem",
+			maxWidth: "20rem",
 		},
 	},
 	speakerCard: {

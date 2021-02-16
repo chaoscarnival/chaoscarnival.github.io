@@ -1,4 +1,4 @@
-import { Typography } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import Footer from "../../components/Footer";
@@ -7,17 +7,24 @@ import JoinCarnival from "../../components/JoinCarnival";
 import { RecordedSessionCard } from "../../components/RecordedSessionCard";
 import { SpeakersSection } from "../../components/SpeakersSection/index";
 import Sponsors from "../../components/Sponsors";
-import {
-	recordedCardData_Day1,
-	recordedCardData_Day2,
-} from "../../data/recordedSessionCardData";
+import { cardData } from "../../data/cardData";
+
 import "../../scrollbar.css";
 import Bootcamps from "./Bootcamps";
 import { useStyles } from "./styles";
 
 function HomePage() {
 	const classes = useStyles();
-
+	const day1_data = cardData.filter((data, index) => {
+		if (index < 15) {
+			return data;
+		}
+	});
+	const day2_data = cardData.filter((data, index) => {
+		if (index >= 15) {
+			return data;
+		}
+	});
 	return (
 		<div>
 			<Helmet>
@@ -45,12 +52,7 @@ function HomePage() {
 									<Typography
 										className={classes.happeningMainText}
 									>
-										Thanks for
-									</Typography>
-									<Typography
-										className={classes.happeningMainText}
-									>
-										being a part of
+										Thanks for being a part of
 									</Typography>
 									<Typography
 										className={classes.happeningText}
@@ -91,14 +93,23 @@ function HomePage() {
 											</Typography>
 										</div>
 									</Typography>
-								</div>
-								<div className={classes.embeddedTwitterDiv}>
-									<iframe
-										src="https://www.youtube.com/embed/4dFbleLqOtw"
-										style={{ border: "none" }}
-										className={classes.videoBox}
-										title="video"
-									></iframe>
+									<Button
+										className={classes.slackButton}
+										variant="contained"
+										onClick={() => {
+											window.open(
+												"https://join.slack.com/t/chaoscarnival/shared_invite/zt-jy0q3xxc-EIYmlEXqvqbRRxYQkvdRpw",
+												"_blank"
+											);
+										}}
+									>
+										<img
+											src="./icons/slack.svg"
+											alt="Slack"
+											className={classes.slackIcon}
+										/>{" "}
+										Join our Slack
+									</Button>
 								</div>
 							</div>
 						</div>
@@ -107,14 +118,15 @@ function HomePage() {
 							{/* coming up next section */}
 							<div className={classes.sessions1}>
 								<RecordedSessionCard
-									recordedCardData={recordedCardData_Day1}
-									day1
+									recordedCardData={day1_data}
+									day={1}
 								/>
 							</div>
 
 							<div className={classes.sessions2}>
 								<RecordedSessionCard
-									recordedCardData={recordedCardData_Day2}
+									recordedCardData={day2_data}
+									day={2}
 								/>
 							</div>
 						</div>
