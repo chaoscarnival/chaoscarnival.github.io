@@ -2,9 +2,9 @@ import { SponsorBooth } from "../components/SponsorBooth";
 
 const sponsorBooth: SponsorBooth[] = [
 	{
-		logo: "/icons/MayadataFoundingSponsor.svg",
+		logo: "/icons/ChaosNativeFoundingSponsor-min.png",
 		description:
-			"Join MayaData's booth on the AirMeet platform at the specified time. The MayaData team will also be available on the Sponsor slack channel to answer your questions on Chaos and show you exciting demos of their products.",
+			"Join ChaosNative's booth on the AirMeet platform at the specified time. The ChaosNative team will also be available on the Sponsor slack channel to answer your questions on Chaos and show you exciting demos of their products.",
 		sponsorBoothLink:
 			"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1",
 		startDateTime_One: "10 Feb 2021 12:15:00 +0530",
@@ -12,7 +12,7 @@ const sponsorBooth: SponsorBooth[] = [
 		startDateTime_Two: "10 Feb 2021 12:15:00 +0530",
 		endDateTime_Two: "10 Feb 2021 01:15:00 +0530",
 		slackLink: "https://chaoscarnival.slack.com/archives/C01LG4L25KP",
-		sponsorName: "MayaData",
+		sponsorName: "ChaosNative",
 	},
 	{
 		logo: "/icons/Percona.svg",

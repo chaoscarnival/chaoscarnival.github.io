@@ -19,7 +19,7 @@ function SponsorshipPage() {
 				<title>Chaos Carnival 2021 | Sponsorship</title>
 				<meta
 					name="keywords"
-					content="Chaos carnival 2021, chaos engineering, chaos conference, chaos conference 2021, chaosconf, sponsor booths, sponsorship benefits, sponsorship, chaos engineering 101, cloud native, MayaData, CNCF, Percona, Wipro, Epsagon, Elastic, Gremlin, Soda Foundation"
+					content="Chaos carnival 2021, chaos engineering, chaos conference, chaos conference 2021, chaosconf, sponsor booths, sponsorship benefits, sponsorship, chaos engineering 101, cloud native, ChaosNative, chaos native, CNCF, Percona, Wipro, Epsagon, Elastic, Gremlin, Soda Foundation"
 				/>
 				<link
 					rel="canonical"

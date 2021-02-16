@@ -9,14 +9,13 @@ export const useStyles = makeStyles((theme) => ({
 			marginLeft: 40,
 		},
 		[theme.breakpoints.down("sm")]: {
-			width: "25rem",
+			width: "85%",
 			margin: "auto",
 		},
 		[theme.breakpoints.down("xs")]: {
-			width: "100%",
+			width: "90%",
 		},
 		[theme.breakpoints.down(300)]: {
-			width: "100%",
 			marginTop: 600,
 		},
 	},
@@ -29,7 +28,6 @@ export const useStyles = makeStyles((theme) => ({
 		paddingLeft: "2rem",
 		[theme.breakpoints.down("sm")]: {
 			fontSize: "2rem",
-			marginLeft: "8vw",
 			paddingLeft: 0,
 		},
 	},
@@ -56,9 +54,8 @@ export const useStyles = makeStyles((theme) => ({
 		marginTop: 20,
 		paddingLeft: "2rem",
 		[theme.breakpoints.down("sm")]: {
-			width: "90%",
+			width: "85%",
 			fontSize: 16,
-			marginLeft: "8vw",
 			paddingLeft: 0,
 		},
 	},
@@ -67,10 +64,15 @@ export const useStyles = makeStyles((theme) => ({
 		flexWrap: "wrap",
 		maxWidth: "100rem",
 		marginTop: theme.spacing(8.75),
+		alignItems: "center",
+		justifyContent: "center",
 		[theme.breakpoints.down("sm")]: {
 			flexDirection: "column",
+			maxWidth: "100%",
 			marginTop: theme.spacing(3.75),
-			alignItems: "center",
+		},
+		[theme.breakpoints.down("xs")]: {
+			marginLeft: "-12vw",
 		},
 	},
 	companyLogo: {
@@ -111,19 +113,23 @@ export const useStyles = makeStyles((theme) => ({
 			marginTop: theme.spacing(3.75),
 		},
 	},
+	sessionName: {
+		width: "23rem",
+		marginTop: theme.spacing(1),
+		[theme.breakpoints.down("md")]: {
+			width: "20rem",
+		},
+	},
 	speakerSection: {
 		display: "flex",
 		flexWrap: "wrap",
 		justifyContent: "space-between",
-		marginTop: theme.spacing(4.5),
+		marginTop: theme.spacing(2.5),
 
 		[theme.breakpoints.down("md")]: {
 			"& #Logo": {
 				marginTop: theme.spacing(2),
 			},
-		},
-		[theme.breakpoints.down("xs")]: {
-			// display: "inline",
 		},
 	},
 	speakerDetails: {

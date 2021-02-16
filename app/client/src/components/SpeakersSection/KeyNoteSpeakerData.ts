@@ -9,8 +9,8 @@ export const KeyNoteSpeakerData = [
 	{
 		id: 1,
 		name: "Uma Mukkara",
-		title: "Maintainer of LitmusChaos,\nCOO & Co-founder",
-		companyIcon: "/images/mayadata_logo_color.svg",
+		title: "Maintainer of LitmusChaos,\nCEO",
+		companyIcon: "/images/chaosnative_logo_color.svg",
 		urlToIcon: "/images/keynote_speaker2.jpg",
 	},
 ];
