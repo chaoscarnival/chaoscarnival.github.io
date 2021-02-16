@@ -6,7 +6,6 @@ const TwitterTimeline = () => {
 		script.src = "https://platform.twitter.com/widgets.js";
 		document.getElementsByClassName("twitter-embed")[0].appendChild(script);
 	}, []);
-
 	return (
 		<section className="twitterContainer">
 			<div className="twitter-embed">

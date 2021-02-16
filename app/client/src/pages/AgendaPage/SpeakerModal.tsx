@@ -11,9 +11,6 @@ import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import ClearIcon from "@material-ui/icons/Clear";
 import React from "react";
 import { getLocale } from "../../utils/getLocale";
-import calenderTime from "../../utils/calenderTime";
-import AddCalendar from "./AddCalendar";
-import JoinSession from "./JoinSession";
 import { useStyles } from "./styles";
 import Tags from "./Tags";
 
@@ -47,7 +44,6 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 	const handleNext = () => {
 		setActiveStep((prevActiveStep) => prevActiveStep + 1);
 	};
-
 	const handleBack = () => {
 		setActiveStep((prevActiveStep) => prevActiveStep - 1);
 	};
@@ -59,20 +55,7 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 		session.startDateTime
 	);
 	const { time: endTime } = getLocale(session.endDateTime);
-
-	const joinUrl =
-		"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1";
-
 	const twitterURL = `https://twitter.com/intent/tweet?text=Watch this session - ${speaker.sessionName} live at ChaosCarnival.io &hashtags=ChaosCarnival2021`;
-
-	const inviteLink = calenderTime(
-		session.startDateTime,
-		session.endDateTime,
-		speaker.sessionName,
-		`${speaker.sessionName} by ${
-			speaker && speaker.speaker[0].name
-		} at ChaosCarnival. Event link-${joinUrl}`
-	);
 
 	return (
 		<Modal open={modalState} onClose={handleModalClose}>
@@ -308,19 +291,6 @@ const SpeakerModal: React.FC<SpeakerModalProps> = ({
 							</Typography>
 						</div>
 						<Tags tags={speaker?.tags} />
-
-						<div className={classes.modalBtnDiv}>
-							<JoinSession
-								handleClick={() =>
-									(window.location.href = joinUrl)
-								}
-							/>
-							<AddCalendar
-								handleClick={() => {
-									window.open(inviteLink, "_blank");
-								}}
-							/>
-						</div>
 						<div style={{ display: "flex" }}>
 							<Typography
 								style={{ fontSize: 14, color: "white" }}

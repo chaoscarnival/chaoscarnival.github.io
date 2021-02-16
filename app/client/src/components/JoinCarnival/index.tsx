@@ -1,6 +1,5 @@
-import { Button, Divider, Hidden, Typography } from "@material-ui/core";
+import { Divider, Typography } from "@material-ui/core";
 import React from "react";
-import calendarTime from "../../utils/calenderTime";
 import { getLocale } from "../../utils/getLocale";
 import { useStyles } from "./styles";
 
@@ -24,16 +23,6 @@ const JoinCarnival = () => {
 	return (
 		<div className={classes.root}>
 			<div className={classes.mainDiv}>
-				<Hidden smDown>
-					<Typography className={classes.joinText}>
-						Join&nbsp;the
-					</Typography>
-				</Hidden>
-				<Hidden mdUp>
-					<Typography className={classes.joinTextSM}>
-						Join&nbsp;the
-					</Typography>
-				</Hidden>
 				<div className={classes.imageDiv}>
 					<img
 						src="/icons/chaoscarnival-header-min.png"
@@ -46,26 +35,6 @@ const JoinCarnival = () => {
 						enthusiasts from all over the globe are joining this
 						carnival to share and learn.
 					</Typography>
-					<div className={classes.regNow}>
-						<Button
-							className={classes.registerButton}
-							color="primary"
-							variant="contained"
-							style={{ marginRight: "1.5rem" }}
-							onClick={() => {
-								window.location.href =
-									"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1";
-							}}
-						>
-							<Typography
-								className={classes.registerText}
-								style={{ textTransform: "none" }}
-							>
-								<b>Register&nbsp;Now</b>
-							</Typography>
-						</Button>
-						{/* <Timer /> */}
-					</div>
 				</div>
 				<hr className={classes.hrLine}></hr>
 				<div className={classes.dateDiv}>
@@ -102,28 +71,6 @@ const JoinCarnival = () => {
 					>
 						{day2StartTime} &#8211; {day2EndTime} {timeZone}
 					</Typography>
-					<Button
-						className={classes.registerButtonOutline}
-						color="primary"
-						variant="outlined"
-						onClick={() => {
-							window.open(
-								calendarTime(
-									startDateTime,
-									endDateTime,
-									"Chaos Carnival",
-									"For updates, Join: https://join.slack.com/t/chaoscarnival"
-								)
-							);
-						}}
-					>
-						<Typography
-							className={classes.timerText}
-							style={{ textTransform: "none", padding: "3rem" }}
-						>
-							<b>Add&nbsp;to&nbsp;Calender</b>
-						</Typography>
-					</Button>
 				</div>
 			</div>
 			<Divider className={classes.divider} />
