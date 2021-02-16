@@ -10,13 +10,16 @@ export const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 	},
 	mainDiv: {
-		background: "#070E23",
 		height: "100vh",
 		display: "flex",
 		flexDirection: "column",
 		width: "77.5%",
 		margin: "0 auto",
 		marginTop: 50,
+		backgroundRepeat: "no-repeat",
+		backgroundSize: "cover",
+		backgroundPosition: "center",
+		backgroundImage: "url(/icons/hero-background-min.png)",
 		[theme.breakpoints.up("xl")]: {
 			marginTop: "20vh",
 		},
@@ -25,10 +28,10 @@ export const useStyles = makeStyles((theme) => ({
 			paddingTop: theme.spacing(15),
 		},
 		[theme.breakpoints.down("sm")]: {
+			backgroundSize: "150%",
 			height: "fit-content",
 			paddingTop: 0,
 			width: "100%",
-			marginTop: 10,
 		},
 		[theme.breakpoints.down("xs")]: {
 			paddingTop: theme.spacing(3),
