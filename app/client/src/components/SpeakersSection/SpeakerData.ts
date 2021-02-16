@@ -46,7 +46,7 @@ export const SpeakerData = [
 		name: "Raj Babu Das",
 		title: "Software Engineer",
 		company: "",
-		urlToIcon: "/speakers/Raj_Mayadata-min.jpg",
+		urlToIcon: "/speakers/Raj_ChaosNative-min.jpg",
 	},
 	{
 		id: 7,
@@ -151,7 +151,7 @@ export const SpeakerData = [
 		name: "Soumya Ghosh Dastidar",
 		title: "Software Engineer",
 		company: "",
-		urlToIcon: "/speakers/Soumya_Mayadata-min.jpg",
+		urlToIcon: "/speakers/Soumya_ChaosNative-min.jpg",
 	},
 	{
 		id: 22,

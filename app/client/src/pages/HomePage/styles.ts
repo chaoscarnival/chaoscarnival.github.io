@@ -19,6 +19,9 @@ export const useStyles = makeStyles((theme) => ({
 		backgroundSize: "cover",
 		backgroundPosition: "center",
 		backgroundImage: "url(/icons/hero-background-min.png)",
+		[theme.breakpoints.up("xl")]: {
+			marginTop: "20vh",
+		},
 		[theme.breakpoints.down(1200)]: {
 			height: "fit-content",
 			paddingTop: theme.spacing(15),
@@ -26,19 +29,18 @@ export const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("sm")]: {
 			height: "fit-content",
 			paddingTop: 0,
+			backgroundSize: "150%",
+			marginTop: 10,
 		},
 		[theme.breakpoints.down("xs")]: {
 			paddingTop: theme.spacing(3),
-		},
-		[theme.breakpoints.down("sm")]: {
-			marginTop: 10,
 		},
 	},
 	sessionsDiv: {
 		height: "fit-content",
 		display: "flex",
 		flexDirection: "column",
-		width: "77.5%",
+		width: "90%",
 		margin: "0 auto",
 		[theme.breakpoints.down("sm")]: {
 			width: "100%",
@@ -47,7 +49,7 @@ export const useStyles = makeStyles((theme) => ({
 	heroSection: {
 		textAlign: "center",
 		margin: "0 auto",
-		paddingTop: "15rem",
+		paddingTop: "10rem",
 		[theme.breakpoints.down("sm")]: {
 			paddingTop: 0,
 			paddingBottom: "3.5rem",

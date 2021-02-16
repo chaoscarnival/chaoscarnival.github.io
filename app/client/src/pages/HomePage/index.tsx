@@ -8,7 +8,6 @@ import { RecordedSessionCard } from "../../components/RecordedSessionCard";
 import { SpeakersSection } from "../../components/SpeakersSection/index";
 import Sponsors from "../../components/Sponsors";
 import { cardData } from "../../data/cardData";
-
 import "../../scrollbar.css";
 import Bootcamps from "./Bootcamps";
 import { useStyles } from "./styles";
@@ -52,7 +51,12 @@ function HomePage() {
 									<Typography
 										className={classes.happeningMainText}
 									>
-										Thanks for being a part of
+										Thanks for
+									</Typography>
+									<Typography
+										className={classes.happeningMainText}
+									>
+										being a part of
 									</Typography>
 									<Typography
 										className={classes.happeningText}
