@@ -13,7 +13,7 @@ export const useStyles = makeStyles((theme) => ({
 			margin: "auto",
 		},
 		[theme.breakpoints.down("xs")]: {
-			width: "100%",
+			width: "90%",
 		},
 		[theme.breakpoints.down(300)]: {
 			marginTop: 600,
@@ -28,7 +28,6 @@ export const useStyles = makeStyles((theme) => ({
 		paddingLeft: "2rem",
 		[theme.breakpoints.down("sm")]: {
 			fontSize: "2rem",
-			marginLeft: "5vw",
 			paddingLeft: 0,
 		},
 	},
@@ -57,7 +56,6 @@ export const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down("sm")]: {
 			width: "85%",
 			fontSize: 16,
-			marginLeft: "5vw",
 			paddingLeft: 0,
 		},
 	},
@@ -70,7 +68,11 @@ export const useStyles = makeStyles((theme) => ({
 		justifyContent: "center",
 		[theme.breakpoints.down("sm")]: {
 			flexDirection: "column",
+			maxWidth: "100%",
 			marginTop: theme.spacing(3.75),
+		},
+		[theme.breakpoints.down("xs")]: {
+			marginLeft: "-12vw",
 		},
 	},
 	companyLogo: {

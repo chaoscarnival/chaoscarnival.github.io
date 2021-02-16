@@ -5,10 +5,9 @@ export default [
 		speaker: [
 			{
 				name: "Uma Mukkara",
-				role:
-					"Maintainer of LitmusChaos project, Co-founder & COO at MayaData",
+				role: "Maintainer of LitmusChaos project, CEO at ChaosNative",
 				speakerImage: "https://i.ibb.co/GsXnxnC/Group-3278.png",
-				companyLogo: "https://i.ibb.co/X35X6hP/Mayadata.png",
+				companyLogo: "/images/ChaosNative-min.png",
 				modalLogo: "/images/keynote_speaker2.jpg",
 				linkedInProfileLink: "https://www.linkedin.com/in/uma-mukkara/",
 				twitterProfileLink: "https://twitter.com/Uma_Mukkara",

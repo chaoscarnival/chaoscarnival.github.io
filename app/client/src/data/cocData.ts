@@ -121,7 +121,7 @@ const cocData: COCInterface[] = [
 			{
 				textHeading: "2. I missed a talk. Where can I find it?",
 				textDescription:
-					"Talks run at their scheduled times within the relevant track session; content will not be available again until postevent. All video content from the event will be available on the MayaData YouTube channel by early!",
+					"Talks run at their scheduled times within the relevant track session; content will not be available again until postevent. All video content from the event will be available on the Chaos Carnival YouTube channel by early!",
 			},
 			{
 				textHeading: "3. How do I chat with others event-wide?",

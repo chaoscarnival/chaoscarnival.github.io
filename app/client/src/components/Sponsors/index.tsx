@@ -7,9 +7,9 @@ const sponsorsList = [
 		tier: "Diamond",
 		sponsors: [
 			{
-				img: "/icons/MayadataFoundingSponsor-min.png",
-				alt: "MayaData",
-				link: "https://mayadata.io",
+				img: "/icons/ChaosNativeFoundingSponsor-min.png",
+				alt: "ChaosNative",
+				link: "https://chaosnative.com",
 			},
 		],
 	},
