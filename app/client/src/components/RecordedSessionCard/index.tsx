@@ -47,16 +47,20 @@ const RecordedSessionCard: React.FC<RecordedSessionCardProps> = ({
 									title="Recording link"
 									className={classes.iframeDiv}
 								/>
-								<Typography
-									style={{ width: "100%", marginTop: 10 }}
-								>
+								<Typography className={classes.sessionName}>
 									{sessionName}
 								</Typography>
 								<div className={classes.speakerSection}>
 									<div className={classes.speakerDetails}>
 										<div id="info">
 											<Typography>{name}</Typography>
-											<Typography>{role}</Typography>
+											<Typography
+												style={{
+													whiteSpace: "pre-line",
+												}}
+											>
+												{role}
+											</Typography>
 										</div>
 									</div>
 									<img

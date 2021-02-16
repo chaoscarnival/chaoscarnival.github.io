@@ -176,7 +176,7 @@ export const cardData: CardData[] = [
 		sessionName: `Day 2 Keynote`,
 		thumbnail: "./posters/Uma-Mukkara-min.png",
 		name: "Uma Mukkara",
-		role: "Maintainer of LitmusChaos project, Co-founder & COO at MayaData",
+		role: `Maintainer of LitmusChaos project,\n Co-founder & COO at MayaData`,
 		speakerImage: "https://i.ibb.co/GsXnxnC/Group-3278.png",
 		companyLogo: "https://i.ibb.co/X35X6hP/Mayadata.png",
 		youTubeUrl: "https://www.youtube.com/embed/ZGGQ8LAWLuQ",
