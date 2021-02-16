@@ -1,10 +1,7 @@
 import { Button, IconButton, Modal, Typography } from "@material-ui/core";
 import ClearIcon from "@material-ui/icons/Clear";
 import React from "react";
-import calenderTime from "../../utils/calenderTime";
 import { getLocale } from "../../utils/getLocale";
-import AddCalendar from "./AddCalendar";
-import JoinSession from "./JoinSession";
 import { useStyles } from "./styles";
 import Tags from "./Tags";
 
@@ -20,25 +17,11 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 	modalState,
 }) => {
 	const classes = useStyles();
-
 	const { dateString, time: startTime, timeZone } = getLocale(
 		speaker.startDateTime
 	);
-
 	const { time: endTime } = getLocale(speaker.endDateTime);
-
-	const joinUrl =
-		"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1";
 	const twitterURL = `https://twitter.com/intent/tweet?text=Watch this session - ${speaker.sessionName} live at ChaosCarnival.io &hashtags=ChaosCarnival2021`;
-
-	const inviteLink = calenderTime(
-		speaker.startDateTime,
-		speaker.endDateTime,
-		speaker.sessionName,
-		`${speaker.sessionName} by ${
-			speaker && speaker.speaker[0].name
-		} at ChaosCarnival. Event link-${joinUrl}`
-	);
 
 	return (
 		<Modal open={modalState} onClose={handleClose}>
@@ -140,19 +123,6 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 								: `A talk on cloud native Chaos Engineering.`}
 						</Typography>
 						<Tags tags={speaker?.tags} />
-
-						<div className={classes.modalBtnDiv}>
-							<JoinSession
-								handleClick={() =>
-									(window.location.href = joinUrl)
-								}
-							/>
-							<AddCalendar
-								handleClick={() => {
-									window.open(inviteLink, "_blank");
-								}}
-							/>
-						</div>
 						<div style={{ display: "flex" }}>
 							<Typography
 								style={{ fontSize: 14, color: "white" }}

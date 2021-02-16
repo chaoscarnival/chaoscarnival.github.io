@@ -41,41 +41,53 @@ function HomePage() {
 						<div className={classes.mainDiv}>
 							{/* Hero Section start */}
 							<div className={classes.twitterDiv}>
-								<div
-									style={{
-										textAlign: "left",
-										margin: "0 auto",
-									}}
-								>
+								<div className={classes.heroSection}>
 									<Typography
 										className={classes.happeningMainText}
 									>
-										That's a
+										Thanks for
+									</Typography>
+									<Typography
+										className={classes.happeningMainText}
+									>
+										being a part of
 									</Typography>
 									<Typography
 										className={classes.happeningText}
 									>
-										wrap!
+										Chaos Carnival 2021
 									</Typography>
 									<Typography
 										className={classes.carnivalDesc}
 									>
 										<div>
-											<Typography>30</Typography>
-											<Typography>
-												Chaos Experts
+											<Typography>30+</Typography>
+											<Typography
+												className={
+													classes.subHeadingText
+												}
+											>
+												{`Chaos \n Experts`}
 											</Typography>
 										</div>
 										<div>
 											<Typography>2</Typography>
-											<Typography>
-												Hand on workshops
+											<Typography
+												className={
+													classes.subHeadingText
+												}
+											>
+												{`Hands on\n workshops`}
 											</Typography>
 										</div>
 										<div>
-											<Typography>500</Typography>
-											<Typography>
-												Worldwide Attendees
+											<Typography>500+</Typography>
+											<Typography
+												className={
+													classes.subHeadingText
+												}
+											>
+												{`Worldwide \nAttendees`}
 											</Typography>
 										</div>
 									</Typography>
@@ -91,18 +103,20 @@ function HomePage() {
 							</div>
 						</div>
 
-						{/* coming up next section */}
-						<div>
-							<RecordedSessionCard
-								recordedCardData={recordedCardData_Day1}
-								day1
-							/>
-						</div>
+						<div className={classes.sessionsDiv}>
+							{/* coming up next section */}
+							<div className={classes.sessions1}>
+								<RecordedSessionCard
+									recordedCardData={recordedCardData_Day1}
+									day1
+								/>
+							</div>
 
-						<div>
-							<RecordedSessionCard
-								recordedCardData={recordedCardData_Day2}
-							/>
+							<div className={classes.sessions2}>
+								<RecordedSessionCard
+									recordedCardData={recordedCardData_Day2}
+								/>
+							</div>
 						</div>
 
 						{/* constant on all pages:  */}

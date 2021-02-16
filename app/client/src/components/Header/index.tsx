@@ -45,28 +45,6 @@ const MainHeader: React.FC = () => {
 								className={classes.mainLogo}
 								onClick={() => history.push("/")}
 							/>
-							<Hidden smDown>
-								<Button
-									className={classes.registerButtonSmall}
-									color="primary"
-									variant="contained"
-									onClick={() => {
-										window.open(
-											"https://www.airmeet.com/e/cabe9140-62c8-11eb-8a3f-5f90a373e3d1",
-											"_blank"
-										);
-									}}
-								>
-									<Typography
-										className={classes.registerText}
-										style={{
-											textTransform: "none",
-										}}
-									>
-										<b>Join&nbsp;us&nbsp;now</b>
-									</Typography>
-								</Button>
-							</Hidden>
 						</div>
 
 						<div className={classes.flexLinks}>

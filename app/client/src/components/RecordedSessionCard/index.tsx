@@ -23,7 +23,11 @@ const RecordedSessionCard: React.FC<RecordedSessionCardProps> = ({
 	const day = day1 ? "1" : "2";
 	return (
 		<div className={classes.rootContainer}>
-			<Typography className={classes.RecordedSessionCard}>
+			<Typography
+				className={`${classes.RecordedSessionCard} ${
+					day1 ? classes.headDay1 : classes.headDay2
+				}`}
+			>
 				Day {day} recorded sessions
 			</Typography>
 			<Typography className={classes.desc}>
@@ -37,7 +41,12 @@ const RecordedSessionCard: React.FC<RecordedSessionCardProps> = ({
 							<div className={classes.speakerCard}>
 								<iframe
 									src={src}
-									style={{ border: "none", width: "100%" }}
+									style={{
+										border: "none",
+										width: "100%",
+										borderRadius: "0.75rem",
+										maxWidth: "20rem",
+									}}
 									title="Recording link"
 								/>
 								<Typography style={{ width: "100%" }}>
@@ -56,6 +65,7 @@ const RecordedSessionCard: React.FC<RecordedSessionCardProps> = ({
 										id="Logo"
 										src={logo}
 										alt="company logo"
+										className={classes.companyLogo}
 									/>
 								</div>
 							</div>
