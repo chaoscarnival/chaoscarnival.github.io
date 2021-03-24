@@ -378,4 +378,82 @@ export const useStyles = makeStyles((theme) => ({
 			marginBottom: "-7.5rem",
 		},
 	},
+	RecordedSessionCard: {
+		width: "fit-content",
+		textAlign: "left",
+		fontSize: "2.75rem",
+		fontWeight: 700,
+		marginTop: 20,
+		paddingLeft: "2rem",
+		[theme.breakpoints.down("md")]: {
+			paddingLeft: "4rem",
+		},
+		[theme.breakpoints.down("sm")]: {
+			paddingLeft: "2rem",
+		},
+		[theme.breakpoints.down("xs")]: {
+			padding: 0,
+		},
+	},
+	headDay1: {
+		WebkitBackgroundClip: "text",
+		WebkitTextFillColor: "transparent",
+		color: "transparent",
+		backgroundClip: "text",
+		background:
+			"linear-gradient(89.08deg, #9867F0 6.51%, #EA5DAD 35.68%, #FF7571 70.79%, #FFE580 98.47%)",
+	},
+	headDay2: {
+		WebkitBackgroundClip: "text",
+		WebkitTextFillColor: "transparent",
+		color: "transparent",
+		backgroundClip: "text",
+		background:
+			"linear-gradient(270.88deg, #71BCF6 3.66%, #B4F59E 100.95%)",
+	},
+
+	speakerCard: {
+		padding: theme.spacing(3.75, 2.5),
+		background: "inherit",
+		backdropFilter: "blur(10px)",
+		width: "fit-content",
+		textAlign: "left",
+		marginLeft: theme.spacing(18),
+		"& p": {
+			maxWidth: "15rem",
+			fontWeight: 500,
+			fontSize: "1rem",
+			[theme.breakpoints.down("sm")]: {
+				maxWidth: "100%",
+				fontWeight: 500,
+				fontSize: "0.85rem",
+			},
+		},
+		[theme.breakpoints.down("sm")]: {
+			margin: "auto",
+		},
+		[theme.breakpoints.down("xs")]: {
+			marginTop: theme.spacing(3.75),
+			marginLeft: theme.spacing(0.5),
+			padding: 0,
+		},
+	},
+	sessionName: {
+		width: "23rem",
+		marginTop: theme.spacing(1),
+		[theme.breakpoints.down("md")]: {
+			width: "20rem",
+		},
+	},
+	iframeDiv: {
+		border: "none",
+		borderRadius: "0.75rem",
+		width: "23rem",
+		height: `calc(23rem / (16 / 9))`,
+		[theme.breakpoints.down("sm")]: {
+			width: "100%",
+			borderRadius: "0.75rem",
+			maxWidth: "20rem",
+		},
+	},
 }));

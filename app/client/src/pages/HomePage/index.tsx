@@ -125,6 +125,31 @@ function HomePage() {
 									recordedCardData={day1_data}
 									day={1}
 								/>
+								<>
+									<Typography
+										className={`${classes.RecordedSessionCard} ${classes.headDay1}`}
+									>
+										Day 1 Bootcamp
+									</Typography>
+
+									<div className={classes.speakerCard}>
+										<iframe
+											src={
+												"https://www.youtube.com/embed/i-paikImUCA"
+											}
+											frameBorder="0"
+											allow="accelerometer"
+											allowFullScreen
+											title="Recording link"
+											className={classes.iframeDiv}
+										/>
+										<Typography
+											className={classes.sessionName}
+										>
+											AWS Kafka Bootcamp
+										</Typography>
+									</div>
+								</>
 							</div>
 
 							<div className={classes.sessions2}>
@@ -132,6 +157,31 @@ function HomePage() {
 									recordedCardData={day2_data}
 									day={2}
 								/>
+								<>
+									<Typography
+										className={`${classes.RecordedSessionCard} ${classes.headDay1}`}
+									>
+										Day 2 Bootcamp
+									</Typography>
+
+									<div className={classes.speakerCard}>
+										<iframe
+											src={
+												"https://www.youtube.com/embed/Jlsjrr2F8Ok"
+											}
+											frameBorder="0"
+											allow="accelerometer"
+											allowFullScreen
+											title="Recording link"
+											className={classes.iframeDiv}
+										/>
+										<Typography
+											className={classes.sessionName}
+										>
+											AKS Percona Bootcamp
+										</Typography>
+									</div>
+								</>
 							</div>
 						</div>
 
