@@ -389,6 +389,7 @@ export const useStyles = makeStyles((theme) => ({
 			paddingLeft: "4rem",
 		},
 		[theme.breakpoints.down("sm")]: {
+			fontSize: "2rem",
 			paddingLeft: "2rem",
 		},
 		[theme.breakpoints.down("xs")]: {
