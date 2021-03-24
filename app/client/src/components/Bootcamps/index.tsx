@@ -49,7 +49,7 @@ const Bootcamps: React.FC<BootcampsProps> = ({ bootcamps }) => {
 									target="_blank"
 									rel="noopener"
 								>
-									Join the Bootcamp <OpenInNewIcon />
+									Watch the Bootcamp <OpenInNewIcon />
 								</Button>
 								<Typography>{dateString}</Typography>
 								<Typography>
