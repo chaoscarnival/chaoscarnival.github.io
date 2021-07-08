@@ -80,7 +80,7 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 									}}
 								>
 									<img
-										src="./icons/speaker-linkedin.svg"
+										src="/icons/speaker-linkedin.svg"
 										alt="Linkedin"
 									/>
 								</IconButton>
@@ -103,7 +103,7 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 									}}
 								>
 									<img
-										src="./icons/speaker-twitter.svg"
+										src="/icons/speaker-twitter.svg"
 										alt="Twitter"
 									/>
 								</IconButton>
@@ -130,7 +130,7 @@ const KeynoteModal: React.FC<KeynoteModalProps> = ({
 								Share the session on{" "}
 							</Typography>
 							<img
-								src="./icons/twitter-blue.svg"
+								src="/icons/twitter-blue.svg"
 								style={{ marginTop: -5, marginLeft: 2 }}
 								alt="twitter-blue"
 							/>

@@ -100,7 +100,7 @@ function AcknowledgementPage() {
 												}}
 											>
 												<img
-													src="./icons/social/Slack.svg"
+													src="/icons/social/Slack.svg"
 													alt="Slack Icon"
 													className={classes.slack}
 												/>
@@ -136,7 +136,7 @@ function AcknowledgementPage() {
 											style={{ textDecoration: "none" }}
 										>
 											<img
-												src="./icons/social/Fb.svg"
+												src="/icons/social/Fb.svg"
 												alt="Facebook"
 												className={
 													classes.footerIconImages
@@ -150,7 +150,7 @@ function AcknowledgementPage() {
 											style={{ textDecoration: "none" }}
 										>
 											<img
-												src="./icons/social/Twitter.svg"
+												src="/icons/social/Twitter.svg"
 												alt="Twitter"
 												className={
 													classes.footerIconImages
@@ -164,7 +164,7 @@ function AcknowledgementPage() {
 											style={{ textDecoration: "none" }}
 										>
 											<img
-												src="./icons/social/LinkedIn.svg"
+												src="/icons/social/LinkedIn.svg"
 												alt="Linkedin"
 												className={
 													classes.footerIconImages
@@ -178,7 +178,7 @@ function AcknowledgementPage() {
 											style={{ textDecoration: "none" }}
 										>
 											<img
-												src="./icons/social/Medium.svg"
+												src="/icons/social/Medium.svg"
 												alt="Medium"
 												className={
 													classes.footerIconImages
@@ -192,7 +192,7 @@ function AcknowledgementPage() {
 											style={{ textDecoration: "none" }}
 										>
 											<img
-												src="./icons/social/Youtube.svg"
+												src="/icons/social/Youtube.svg"
 												alt="Youtube"
 												className={
 													classes.footerIconImages
