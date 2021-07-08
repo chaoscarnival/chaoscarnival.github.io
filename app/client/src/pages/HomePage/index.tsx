@@ -108,7 +108,7 @@ function HomePage() {
 										}}
 									>
 										<img
-											src="./icons/slack.svg"
+											src="/icons/slack.svg"
 											alt="Slack"
 											className={classes.slackIcon}
 										/>{" "}

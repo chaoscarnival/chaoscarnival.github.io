@@ -1,6 +1,6 @@
 import { install } from "ga-gtag";
 import React, { lazy, Suspense } from "react";
-import { Redirect, Route, Router, Switch } from "react-router-dom";
+import { Redirect, Route, Router, Switch,BrowserRouter  } from "react-router-dom";
 import { useStyles } from "./App-styles";
 import { Loader } from "./components/Loader";
 import history from "./history";
@@ -61,6 +61,7 @@ function App() {
 	return (
 		<Suspense fallback={<Loader />}>
 			<Router history={history}>
+			<BrowserRouter basename="/2021">
 				<div className={classes.root}>
 					<div className={classes.appFrame}>
 						<div className={classes.routeBody}>
@@ -68,6 +69,7 @@ function App() {
 						</div>
 					</div>
 				</div>
+				</BrowserRouter>
 			</Router>
 		</Suspense>
 	);

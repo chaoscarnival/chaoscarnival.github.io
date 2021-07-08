@@ -13,7 +13,7 @@ const JoinSession: React.FC<JoinSessionProps> = ({ handleClick }) => {
 				<Typography className={classes.text}>
 					Join the session
 				</Typography>
-				<img src="./icons/external-link.svg" alt="External Link" />
+				<img src="/icons/external-link.svg" alt="External Link" />
 			</div>
 		</Button>
 	);

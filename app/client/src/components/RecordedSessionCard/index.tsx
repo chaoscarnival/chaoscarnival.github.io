@@ -63,12 +63,12 @@ const RecordedSessionCard: React.FC<RecordedSessionCardProps> = ({
 											</Typography>
 										</div>
 									</div>
-									<img
+									{companyLogo?<img
 										id="Logo"
 										src={companyLogo}
 										alt="company logo"
 										className={classes.companyLogo}
-									/>
+									/>:<></>}
 								</div>
 							</div>
 						);

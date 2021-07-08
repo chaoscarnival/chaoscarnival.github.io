@@ -64,7 +64,7 @@ export const useStyles = makeStyles((theme) => ({
 		flexWrap: "wrap",
 		maxWidth: "100rem",
 		marginTop: theme.spacing(8.75),
-		alignItems: "center",
+		alignItems: "flex-start",
 		justifyContent: "center",
 		[theme.breakpoints.down("sm")]: {
 			flexDirection: "column",
