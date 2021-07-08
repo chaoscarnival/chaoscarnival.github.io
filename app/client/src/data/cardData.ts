@@ -245,7 +245,7 @@ export const cardData: CardData[] = [
 		role: "Co-Founder & CTO",
 		speakerImage: "https://i.ibb.co/d0trDJZ/Piyush-Last9.png",
 		companyLogo: "https://i.ibb.co/hMbZ82Q/Last9.png",
-		youTubeUrl: "https://www.youtube.com/embed/3Upnu1ENIjo",
+		youTubeUrl: "https://www.youtube.com/embed/-Af6Q7zMcS4",
 	},
 	{
 		startDateTime: "11 Feb 2021 11:30:00 -0800",
