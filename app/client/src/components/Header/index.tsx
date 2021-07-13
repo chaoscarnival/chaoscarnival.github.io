@@ -37,15 +37,15 @@ const MainHeader: React.FC = () => {
 			>
 				<Toolbar className={classes.toolbarDiv}>
 					<div className={classes.toolbarDiv}>
-						<div>
+							<div>
+							<a href="https://chaoscarnival.io">
 							<img
 								src="/icons/chaoscarnival-header-min.png"
 								alt=" header"
 								className={classes.mainLogo}
-								onClick={() => history.push("/")}
 							/>
+							</a>
 						</div>
-
 						<div className={classes.flexLinks}>
 							<Hidden smDown>
 								<div>
