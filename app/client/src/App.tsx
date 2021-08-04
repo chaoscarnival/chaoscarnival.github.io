@@ -1,6 +1,12 @@
 import { install } from "ga-gtag";
 import React, { lazy, Suspense } from "react";
-import { Redirect, Route, Router, Switch,BrowserRouter  } from "react-router-dom";
+import {
+	Redirect,
+	Route,
+	Router,
+	Switch,
+	BrowserRouter,
+} from "react-router-dom";
 import { useStyles } from "./App-styles";
 import { Loader } from "./components/Loader";
 import history from "./history";
@@ -22,30 +28,34 @@ const Routes: React.FC = () => {
 	return (
 		<div className={classes.content}>
 			<Switch>
-				<Route exact={true} path="/" component={HomePage} />
+				<Route exact={true} path="/2021" component={HomePage} />
 				<Route
 					exact={true}
-					path="/acknowledgement"
+					path="/2021/acknowledgement"
 					component={AcknowledgementPage}
 				/>
 				<Route
 					exact={true}
-					path="/Sponsorship"
+					path="/2021/Sponsorship"
 					component={SponsorshipPage}
 				/>
-				<Route exact={true} path="/Team" component={TeamPage} />
-				<Route exact={true} path="/agenda" component={AgendaPage} />
+				<Route exact={true} path="/2021/Team" component={TeamPage} />
 				<Route
 					exact={true}
-					path="/bootcamps"
+					path="/2021/agenda"
+					component={AgendaPage}
+				/>
+				<Route
+					exact={true}
+					path="/2021/bootcamps"
 					component={BootcampPage}
 				/>
 				<Route
 					exact={true}
-					path="/sponsorbooths"
+					path="/2021/sponsorbooths"
 					component={SponsorBoothsPage}
 				/>
-				<Route exact={true} path="/COC" component={COCPage} />
+				<Route exact={true} path="/2021/COC" component={COCPage} />
 				<Route exact={true} path="/404" component={ErrorPage} />
 				<Redirect to="/404" />
 			</Switch>
@@ -61,7 +71,7 @@ function App() {
 	return (
 		<Suspense fallback={<Loader />}>
 			<Router history={history}>
-			<BrowserRouter basename="/2021">
+				{/* <BrowserRouter basename="/2021"> */}
 				<div className={classes.root}>
 					<div className={classes.appFrame}>
 						<div className={classes.routeBody}>
@@ -69,7 +79,7 @@ function App() {
 						</div>
 					</div>
 				</div>
-				</BrowserRouter>
+				{/* </BrowserRouter> */}
 			</Router>
 		</Suspense>
 	);

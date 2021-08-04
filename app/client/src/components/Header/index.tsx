@@ -37,20 +37,20 @@ const MainHeader: React.FC = () => {
 			>
 				<Toolbar className={classes.toolbarDiv}>
 					<div className={classes.toolbarDiv}>
-							<div>
+						<div>
 							<a href="https://chaoscarnival.io">
-							<img
-								src="/icons/chaoscarnival-header-min.png"
-								alt=" header"
-								className={classes.mainLogo}
-							/>
+								<img
+									src="/icons/chaoscarnival-header-min.png"
+									alt=" header"
+									className={classes.mainLogo}
+								/>
 							</a>
 						</div>
 						<div className={classes.flexLinks}>
 							<Hidden smDown>
 								<div>
 									<Link
-										to="/#home"
+										to="/2021/#home"
 										smooth
 										style={{ textDecoration: "none" }}
 									>
@@ -65,7 +65,7 @@ const MainHeader: React.FC = () => {
 							<Hidden smDown>
 								<div className={classes.headerDiv}>
 									<Link
-										to="/agenda"
+										to="/2021/agenda"
 										style={{ textDecoration: "none" }}
 									>
 										<Typography
@@ -79,7 +79,7 @@ const MainHeader: React.FC = () => {
 							<Hidden smDown>
 								<div className={classes.headerDiv}>
 									<Link
-										to="/#speakers"
+										to="/2021/#speakers"
 										smooth
 										style={{ textDecoration: "none" }}
 									>
@@ -95,7 +95,7 @@ const MainHeader: React.FC = () => {
 							<Hidden smDown>
 								<div className={classes.headerDiv}>
 									<Link
-										to="/bootcamps"
+										to="/2021/bootcamps"
 										style={{ textDecoration: "none" }}
 									>
 										<Typography
@@ -109,7 +109,7 @@ const MainHeader: React.FC = () => {
 							<Hidden smDown>
 								<div className={classes.headerDiv}>
 									<Link
-										to="/sponsorbooths"
+										to="/2021/sponsorbooths"
 										smooth
 										style={{ textDecoration: "none" }}
 									>
@@ -194,7 +194,7 @@ const MainHeader: React.FC = () => {
 											onClick={handleClose}
 										>
 											<Link
-												to="/#home"
+												to="/2021/#home"
 												smooth
 												style={{
 													textDecoration: "none",
@@ -216,7 +216,7 @@ const MainHeader: React.FC = () => {
 											onClick={handleClose}
 										>
 											<Link
-												to="/agenda"
+												to="/2021/agenda"
 												style={{
 													textDecoration: "none",
 													color: "#fff",
@@ -237,7 +237,7 @@ const MainHeader: React.FC = () => {
 											onClick={handleClose}
 										>
 											<Link
-												to="/#speakers"
+												to="/2021/#speakers"
 												smooth
 												style={{
 													textDecoration: "none",
@@ -259,7 +259,7 @@ const MainHeader: React.FC = () => {
 											onClick={handleClose}
 										>
 											<Link
-												to="/bootcamps"
+												to="/2021/bootcamps"
 												style={{
 													textDecoration: "none",
 													color: "#fff",
@@ -281,7 +281,7 @@ const MainHeader: React.FC = () => {
 											onClick={handleClose}
 										>
 											<Link
-												to="/sponsorbooths"
+												to="/2021/sponsorbooths"
 												smooth
 												style={{
 													textDecoration: "none",
